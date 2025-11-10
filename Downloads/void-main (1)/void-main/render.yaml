@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: void-editor
+    env: node
+    buildCommand: bash render-build.sh
+    startCommand: bash render-start.sh
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: $PORT
+      - key: VSCODE_SERVER_PORT
+        value: $PORT
+    plan: free
+    region: oregon
+
