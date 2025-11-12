@@ -286,6 +286,13 @@ const File = (
     fileIcon,
     children,
     ...props
+  }: React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    ref?: React.RefObject<HTMLButtonElement>;
+    value: string;
+    handleSelect?: (value: string) => void;
+    isSelectable?: boolean;
+    isSelect?: boolean;
+    fileIcon?: React.ReactNode;
   }
 ) => {
   const { direction, selectedId, selectItem } = useTree();
@@ -323,6 +330,10 @@ const CollapseButton = (
     expandAll = false,
     children,
     ...props
+  }: React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    ref?: React.RefObject<HTMLButtonElement>;
+    elements: TreeViewElement[];
+    expandAll?: boolean;
   }
 ) => {
   const { expandedItems, setExpandedItems } = useTree();
