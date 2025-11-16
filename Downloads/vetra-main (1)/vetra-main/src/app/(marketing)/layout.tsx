@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/marketing/footer";
 import Navbar from "@/components/marketing/navbar";
 import React from 'react';
@@ -5,6 +7,8 @@ import React from 'react';
 interface Props {
     children: React.ReactNode
 }
+
+export const dynamic = 'force-dynamic';
 
 const MarketingLayout = ({ children }: Props) => {
     return (

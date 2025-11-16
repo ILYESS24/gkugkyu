@@ -15,7 +15,7 @@ const LanguageSupport = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-start justify-start max-w-4xl mx-auto pt-10 relative w-full">
 
-                <div className="absolute top-1/2 -translate-y-1/2 right-1/4 w-3/5 h-14 lg:h-20 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full -rotate-12 blur-[10rem] -z-10"></div>
+                <div className="absolute top-1/2 -translate-y-1/2 right-1/4 w-3/5 h-14 lg:h-20 bg-white/10 rounded-full -rotate-12 blur-[10rem] -z-10"></div>
 
                 {SUPPORTED_LANGUAGES.map((language, idx) => (
                     <Container

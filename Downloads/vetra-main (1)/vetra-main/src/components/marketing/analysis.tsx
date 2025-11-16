@@ -22,12 +22,12 @@ const Analysis = () => {
                 <Container delay={0.2}>
                     <div className="rounded-2xl bg-background/40 relative border border-border/50">
                         <MagicCard
-                            gradientFrom="#38bdf8"
-                            gradientTo="#3b82f6"
-                            gradientColor="rgba(59,130,246,0.1)"
+                            gradientFrom="#ffffff"
+                            gradientTo="#ffffff"
+                            gradientColor="rgba(255,255,255,0.1)"
                             className="p-4 lg:p-8 w-full overflow-hidden"
                         >
-                            <div className="absolute bottom-0 right-0 bg-blue-500 w-1/4 h-1/4 blur-[8rem] z-20"></div>
+                            <div className="absolute bottom-0 right-0 bg-white/10 w-1/4 h-1/4 blur-[8rem] z-20"></div>
                             <div className="space-y-4">
                                 <h3 className="text-xl font-semibold">
                                     Campaign Insights
@@ -86,12 +86,12 @@ const Analysis = () => {
                 <Container delay={0.2}>
                     <div className="rounded-2xl bg-background/40 relative border border-border/50">
                         <MagicCard
-                            gradientFrom="#38bdf8"
-                            gradientTo="#3b82f6"
-                            gradientColor="rgba(59,130,246,0.1)"
+                            gradientFrom="#ffffff"
+                            gradientTo="#ffffff"
+                            gradientColor="rgba(255,255,255,0.1)"
                             className="p-4 lg:p-8 w-full overflow-hidden"
                         >
-                            <div className="absolute bottom-0 right-0 bg-sky-500 w-1/4 h-1/4 blur-[8rem] z-20"></div>
+                            <div className="absolute bottom-0 right-0 bg-white/10 w-1/4 h-1/4 blur-[8rem] z-20"></div>
                             <div className="space-y-4">
                                 <h3 className="text-xl font-semibold">
                                     Audience Metrics
