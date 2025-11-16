@@ -1,14 +1,15 @@
 import { NAV_LINKS } from "@/constants";
 import { NavBar } from "../ui/tubelight-navbar";
-import { Home, DollarSign, Zap, BookOpen, Mail } from "lucide-react";
+import { Home, DollarSign, Zap, Cpu, Plug, HelpCircle } from "lucide-react";
 
 const Navbar = () => {
     const navItems = [
         { name: "Home", url: "/", icon: Home },
-        { name: "Pricing", url: "#pricing", icon: DollarSign },
         { name: "Features", url: "#features", icon: Zap },
-        { name: "Blog", url: "#blog", icon: BookOpen },
-        { name: "Contact", url: "#contact", icon: Mail },
+        { name: "Technology", url: "#technology", icon: Cpu },
+        { name: "Integrations", url: "#integrations", icon: Plug },
+        { name: "Pricing", url: "#pricing", icon: DollarSign },
+        { name: "FAQ", url: "#faq", icon: HelpCircle },
     ];
 
     return <NavBar items={navItems} />;
