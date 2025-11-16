@@ -158,13 +158,25 @@ export function PromptingIsAllYouNeed() {
 
     const resizeCanvas = () => {
       const dpr = window.devicePixelRatio || 1
-      canvas.width = window.innerWidth * dpr
-      canvas.height = window.innerHeight * dpr
-      canvas.style.width = window.innerWidth + 'px'
-      canvas.style.height = window.innerHeight + 'px'
+      const container = canvas.parentElement
+      const width = container?.clientWidth || window.innerWidth
+      const height = container?.clientHeight || window.innerHeight
+      
+      canvas.width = width * dpr
+      canvas.height = height * dpr
+      canvas.style.width = width + 'px'
+      canvas.style.height = height + 'px'
       ctx.scale(dpr, dpr)
-      scaleRef.current = Math.min(window.innerWidth / 1000, window.innerHeight / 1000)
+      scaleRef.current = Math.min(width / 1000, height / 1000)
       initializeGame()
+    }
+
+    const getContainerDimensions = () => {
+      const container = canvas.parentElement
+      return {
+        width: container?.clientWidth || window.innerWidth,
+        height: container?.clientHeight || window.innerHeight
+      }
     }
 
     const initializeGame = () => {
@@ -172,6 +184,7 @@ export function PromptingIsAllYouNeed() {
       const LARGE_PIXEL_SIZE = Math.max(12 * scale, 8)
       const SMALL_PIXEL_SIZE = Math.max(6 * scale, 4)
       const BALL_SPEED = 8 * scale
+      const { width, height } = getContainerDimensions()
 
       pixelsRef.current = []
       const words = ["PROMPTING", "IS ALL YOU NEED"]
@@ -191,7 +204,7 @@ export function PromptingIsAllYouNeed() {
         return width + calculateWordWidth(word, SMALL_PIXEL_SIZE) + (index > 0 ? WORD_SPACING * SMALL_PIXEL_SIZE : 0)
       }, 0)
       const totalWidth = Math.max(totalWidthLarge, totalWidthSmall)
-      const scaleFactor = Math.min((window.innerWidth * 0.9) / totalWidth, 1.5)
+      const scaleFactor = Math.min((width * 0.9) / totalWidth, 1.5)
 
       const adjustedLargePixelSize = LARGE_PIXEL_SIZE * scaleFactor
       const adjustedSmallPixelSize = SMALL_PIXEL_SIZE * scaleFactor
@@ -201,7 +214,8 @@ export function PromptingIsAllYouNeed() {
       const spaceBetweenLines = 5 * adjustedLargePixelSize
       const totalTextHeight = largeTextHeight + spaceBetweenLines + smallTextHeight
 
-      let startY = (window.innerHeight - totalTextHeight) / 2
+      // Center text vertically in viewport, but ensure it's visible
+      let startY = Math.max(100, (height - totalTextHeight) / 2)
 
       words.forEach((word, wordIndex) => {
         const pixelSize = wordIndex === 0 ? adjustedLargePixelSize : adjustedSmallPixelSize
@@ -216,7 +230,7 @@ export function PromptingIsAllYouNeed() {
                 )
               }, 0)
 
-        let startX = (window.innerWidth - totalWidth) / 2
+        let startX = (width - totalWidth) / 2
 
         if (wordIndex === 1) {
           word.split(" ").forEach((subWord) => {
@@ -258,8 +272,8 @@ export function PromptingIsAllYouNeed() {
       })
 
       // Initialize ball position near the top right corner
-      const ballStartX = window.innerWidth * 0.9
-      const ballStartY = window.innerHeight * 0.1
+      const ballStartX = width * 0.9
+      const ballStartY = height * 0.1
 
       ballRef.current = {
         x: ballStartX,
@@ -271,38 +285,38 @@ export function PromptingIsAllYouNeed() {
 
       const paddleWidth = adjustedLargePixelSize
       const paddleLength = 10 * adjustedLargePixelSize
-
+      
       paddlesRef.current = [
         {
           x: 0,
-          y: window.innerHeight / 2 - paddleLength / 2,
+          y: height / 2 - paddleLength / 2,
           width: paddleWidth,
           height: paddleLength,
-          targetY: window.innerHeight / 2 - paddleLength / 2,
+          targetY: height / 2 - paddleLength / 2,
           isVertical: true,
         },
         {
-          x: window.innerWidth - paddleWidth,
-          y: window.innerHeight / 2 - paddleLength / 2,
+          x: width - paddleWidth,
+          y: height / 2 - paddleLength / 2,
           width: paddleWidth,
           height: paddleLength,
-          targetY: window.innerHeight / 2 - paddleLength / 2,
+          targetY: height / 2 - paddleLength / 2,
           isVertical: true,
         },
         {
-          x: window.innerWidth / 2 - paddleLength / 2,
+          x: width / 2 - paddleLength / 2,
           y: 0,
           width: paddleLength,
           height: paddleWidth,
-          targetY: window.innerWidth / 2 - paddleLength / 2,
+          targetY: width / 2 - paddleLength / 2,
           isVertical: false,
         },
         {
-          x: window.innerWidth / 2 - paddleLength / 2,
-          y: window.innerHeight - paddleWidth,
+          x: width / 2 - paddleLength / 2,
+          y: height - paddleWidth,
           width: paddleLength,
           height: paddleWidth,
-          targetY: window.innerWidth / 2 - paddleLength / 2,
+          targetY: width / 2 - paddleLength / 2,
           isVertical: false,
         },
       ]
@@ -311,14 +325,15 @@ export function PromptingIsAllYouNeed() {
     const updateGame = () => {
       const ball = ballRef.current
       const paddles = paddlesRef.current
+      const { width, height } = getContainerDimensions()
 
       ball.x += ball.dx
       ball.y += ball.dy
-
-      if (ball.y - ball.radius < 0 || ball.y + ball.radius > window.innerHeight) {
+      
+      if (ball.y - ball.radius < 0 || ball.y + ball.radius > height) {
         ball.dy = -ball.dy
       }
-      if (ball.x - ball.radius < 0 || ball.x + ball.radius > window.innerWidth) {
+      if (ball.x - ball.radius < 0 || ball.x + ball.radius > width) {
         ball.dx = -ball.dx
       }
 
@@ -347,11 +362,11 @@ export function PromptingIsAllYouNeed() {
       paddles.forEach((paddle) => {
         if (paddle.isVertical) {
           paddle.targetY = ball.y - paddle.height / 2
-          paddle.targetY = Math.max(0, Math.min(window.innerHeight - paddle.height, paddle.targetY))
+          paddle.targetY = Math.max(0, Math.min(height - paddle.height, paddle.targetY))
           paddle.y += (paddle.targetY - paddle.y) * 0.1
         } else {
           paddle.targetY = ball.x - paddle.width / 2
-          paddle.targetY = Math.max(0, Math.min(window.innerWidth - paddle.width, paddle.targetY))
+          paddle.targetY = Math.max(0, Math.min(width - paddle.width, paddle.targetY))
           paddle.x += (paddle.targetY - paddle.x) * 0.1
         }
       })
@@ -379,8 +394,10 @@ export function PromptingIsAllYouNeed() {
     const drawGame = () => {
       if (!ctx) return
 
+      const { width, height } = getContainerDimensions()
+
       ctx.fillStyle = BACKGROUND_COLOR
-      ctx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+      ctx.fillRect(0, 0, width, height)
 
       pixelsRef.current.forEach((pixel) => {
         ctx.fillStyle = pixel.hit ? HIT_COLOR : COLOR
@@ -418,7 +435,7 @@ export function PromptingIsAllYouNeed() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none"
+      className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"
       style={{ imageRendering: 'pixelated' }}
       aria-label="Prompting Is All You Need: Fullscreen Pong game with pixel text"
     />

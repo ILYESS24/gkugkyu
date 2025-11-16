@@ -26,7 +26,9 @@ const HomePage = () => {
     return (
         <div className="bg-black min-h-screen relative">
             <canvas id="canvas" className="fixed top-0 left-0 w-full h-full pointer-events-none z-0" />
-            <PromptingIsAllYouNeed />
+            <div className="relative w-full h-screen z-[1]">
+                <PromptingIsAllYouNeed />
+            </div>
             <Wrapper className="py-20 relative bg-black z-10">
                 <Companies />
                 <Features />
