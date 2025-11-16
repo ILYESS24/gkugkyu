@@ -1,10 +1,12 @@
 "use client";
 
 // @ts-ignore
-function n(e) {
+function n(e: any) {
   // @ts-ignore
   this.init(e || {});
 }
+// @ts-ignore
+n.prototype = {};
 n.prototype = {
   // @ts-ignore
   init: function (e) {
@@ -32,10 +34,12 @@ n.prototype = {
 };
 
 // @ts-ignore
-function Line(e) {
+function Line(e: any) {
   // @ts-ignore
   this.init(e || {});
 }
+// @ts-ignore
+Line.prototype = {};
 
 Line.prototype = {
   // @ts-ignore
@@ -123,8 +127,10 @@ Line.prototype = {
 function onMousemove(e) {
   function o() {
     lines = [];
-    for (let e = 0; e < E.trails; e++)
+    for (let e = 0; e < E.trails; e++) {
+      // @ts-ignore
       lines.push(new Line({ spring: 0.45 + (e / E.trails) * 0.025 }));
+    }
   }
   // @ts-ignore
   function c(e) {
