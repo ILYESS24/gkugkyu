@@ -203,6 +203,8 @@ function Node() {
   this.vy = 0;
   this.vx = 0;
 }
+// @ts-ignore
+Node.prototype = {};
 
 export const renderCanvas = function () {
   // @ts-ignore
