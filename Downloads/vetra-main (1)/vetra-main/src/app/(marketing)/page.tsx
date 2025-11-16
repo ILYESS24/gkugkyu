@@ -19,10 +19,10 @@ const HomePage = () => {
     const ModernButton = ({ children, onClick, className = "" }: { children: React.ReactNode; onClick?: () => void; className?: string }) => (
         <button
             onClick={onClick}
-            className={`flex items-center gap-3 bg-black text-white px-6 py-4 rounded-full font-normal text-base hover:bg-gray-900 transition-colors shadow-lg ${className}`}
+            className={`group flex items-center gap-3 bg-black text-white px-6 py-4 rounded-full font-normal text-base hover:bg-gray-900 transition-all duration-300 shadow-lg ${className}`}
         >
-            <span>{children}</span>
-            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+            <span className="transition-transform duration-300 ease-linear group-hover:translate-x-2">{children}</span>
+            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center transition-transform duration-300 ease-linear group-hover:-translate-x-2">
                 <ArrowUpRight className="w-4 h-4 text-black" />
             </div>
         </button>
@@ -60,10 +60,10 @@ const HomePage = () => {
             {/* Bouton de connexion en haut à droite */}
             <button
                 onClick={() => router.push("/login")}
-                className="fixed top-6 right-6 z-50 flex items-center gap-3 bg-black text-white px-6 py-4 rounded-full font-normal text-base hover:bg-gray-900 transition-colors shadow-lg"
+                className="group fixed top-6 right-6 z-50 flex items-center gap-3 bg-black text-white px-6 py-4 rounded-full font-normal text-base hover:bg-gray-900 transition-all duration-300 shadow-lg"
             >
-                <span>Let's Collaborate</span>
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                <span className="transition-transform duration-300 ease-linear group-hover:translate-x-2">Let's Collaborate</span>
+                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center transition-transform duration-300 ease-linear group-hover:-translate-x-2">
                     <ArrowUpRight className="w-4 h-4 text-black" />
                 </div>
             </button>
@@ -164,17 +164,17 @@ const HomePage = () => {
                         <div className="flex flex-col gap-3">
                             <button
                                 onClick={() => router.push("/login")}
-                                className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-normal hover:bg-gray-100 transition-colors"
+                                className="group flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-normal hover:bg-gray-100 transition-all duration-300"
                             >
-                                <span>Let's Collaborate</span>
-                                <ArrowUpRight className="w-4 h-4" />
+                                <span className="transition-transform duration-300 ease-linear group-hover:translate-x-2">Let's Collaborate</span>
+                                <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-linear group-hover:-translate-x-2" />
                             </button>
                             <button
                                 onClick={() => {}}
-                                className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-normal hover:bg-white/10 transition-colors"
+                                className="group flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-normal hover:bg-white/10 transition-all duration-300"
                             >
-                                <span>View Portfolio</span>
-                                <ArrowUpRight className="w-4 h-4" />
+                                <span className="transition-transform duration-300 ease-linear group-hover:translate-x-2">View Portfolio</span>
+                                <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-linear group-hover:-translate-x-2" />
                             </button>
                         </div>
                     </div>

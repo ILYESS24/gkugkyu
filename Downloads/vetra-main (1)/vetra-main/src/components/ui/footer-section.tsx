@@ -29,7 +29,7 @@ function Footerdemo() {
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900">Stay Connected</h2>
+            <h2 className="mb-4 text-3xl font-normal tracking-tight text-gray-900">Stay Connected</h2>
             <p className="mb-6 text-gray-600">
               Join our newsletter for the latest updates and exclusive offers.
             </p>
@@ -51,7 +51,7 @@ function Footerdemo() {
             <div className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-primary/10 blur-2xl" />
           </div>
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-gray-900">Quick Links</h3>
+            <h3 className="mb-4 text-lg font-normal text-gray-900">Quick Links</h3>
             <nav className="space-y-2 text-sm">
               <a href="#" className="block text-gray-600 transition-colors hover:text-gray-900">
                 Home
@@ -71,7 +71,7 @@ function Footerdemo() {
             </nav>
           </div>
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-gray-900">Contact Us</h3>
+            <h3 className="mb-4 text-lg font-normal text-gray-900">Contact Us</h3>
             <address className="space-y-2 text-sm not-italic text-gray-600">
               <p>123 Innovation Street</p>
               <p>Tech City, TC 12345</p>
@@ -80,7 +80,7 @@ function Footerdemo() {
             </address>
           </div>
           <div className="relative">
-            <h3 className="mb-4 text-lg font-semibold text-gray-900">Follow Us</h3>
+            <h3 className="mb-4 text-lg font-normal text-gray-900">Follow Us</h3>
             <div className="mb-6 flex space-x-4">
               <TooltipProvider>
                 <Tooltip>
@@ -167,7 +167,7 @@ function Footerdemo() {
         </div>
       </div>
       <div className="w-full text-center py-8 border-t border-gray-200">
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-gray-900">AURION</h1>
+        <h1 className="text-6xl md:text-8xl font-normal tracking-tight text-gray-900">AURION</h1>
       </div>
     </footer>
   )
