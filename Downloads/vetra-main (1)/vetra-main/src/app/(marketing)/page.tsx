@@ -6,6 +6,22 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowUpRight, Star, Check, Sparkles, Lightbulb, Target, Palette, Monitor, Megaphone, PenTool, BarChart3 } from "lucide-react";
 import { LogoCloud } from "@/components/logo-cloud-3";
+import { motion } from "framer-motion";
+
+// Animation variants for scroll animations
+const fadeInUp = {
+    initial: { opacity: 0, y: 30 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, margin: "-100px" },
+    transition: { duration: 0.6, ease: "easeOut" }
+};
+
+const fadeIn = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
+    viewport: { once: true, margin: "-100px" },
+    transition: { duration: 0.6, ease: "easeOut" }
+};
 
 const HomePage = () => {
     const router = useRouter();
@@ -110,7 +126,7 @@ const HomePage = () => {
             {/* Hero Section */}
             <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 px-6 z-10">
                 <div className="max-w-5xl mx-auto text-center">
-                    <div className="mb-8">
+                    <motion.div className="mb-8" {...fadeInUp}>
                         <p className="text-[clamp(3rem,8vw,5.5rem)] leading-[1.05] font-semibold text-gray-900">
                             Building bold brands with
                         </p>
@@ -120,10 +136,10 @@ const HomePage = () => {
                         >
                             thoughtful design
                         </p>
-                    </div>
-                    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10">
+                    </motion.div>
+                    <motion.p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10" {...fadeInUp}>
                         At Awake, we help small startups tackle the world's biggest challenges with tailored solutions, guiding you from strategy to success in a competitive market.
-                    </p>
+                    </motion.p>
                     <div className="flex items-center justify-center gap-8">
                         <button
                             onClick={() => router.push("/login")}
@@ -149,9 +165,9 @@ const HomePage = () => {
 
             {/* Logo Cloud Section */}
             <section className="w-full py-16 bg-white z-10 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 text-center mb-12">
+                <motion.div className="max-w-7xl mx-auto px-6 text-center mb-12" {...fadeInUp}>
                     <p className="text-gray-600 text-xl font-normal">Loved by 100,000+ big and small brands around the world</p>
-                </div>
+                </motion.div>
                 <div className="relative">
                     <LogoCloud
                         logos={brandLogos}
@@ -163,11 +179,11 @@ const HomePage = () => {
             {/* About Us Section */}
             <section id="about-us" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <motion.div className="text-center mb-16" {...fadeInUp}>
                         <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-8">
                             Crafting exceptional, well experienced & technology driven strategies to drive impactful results with
                         </h2>
-                        <div className="flex items-center justify-center gap-6 text-gray-900 font-normal">
+                        <motion.div className="flex items-center justify-center gap-6 text-gray-900 font-normal" {...fadeInUp}>
                             <div className="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#F3E7FF] text-[#6F3AFF]">
                                 <span className="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center text-[#6F3AFF]">
                                     <Sparkles className="w-6 h-6" strokeWidth={1.5} />
@@ -186,32 +202,39 @@ const HomePage = () => {
                                 </span>
                                 <span className="text-xl italic">Strategy</span>
                             </div>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        </motion.div>
+                    </motion.div>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...fadeInUp}>
                         {[
                             { value: "+40", label: "Happy Clients" },
                             { value: "+15", label: "Years of experience" },
                             { value: "+12", label: "Awards won" },
                         ].map((item, i) => (
-                            <div key={i} className="text-center">
+                            <motion.div 
+                                key={i} 
+                                className="text-center"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                            >
                                 <div className="text-[88px] leading-none font-light text-gray-900 mb-4 tracking-tight">
                                     {item.value}
                                 </div>
                                 <p className="text-lg text-gray-600">{item.label}</p>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Services Section */}
             <section id="services" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
+                    <motion.h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         Where Innovation meets <span className="italic">excellence</span>
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+                    </motion.h2>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16" {...fadeInUp}>
                         {[
                             { name: "Brand Strategy", color: "bg-[#F1E8FF]", Icon: Palette, iconColor: "#8452CF" },
                             { name: "Web Development", color: "bg-[#FCE7EC]", Icon: Monitor, iconColor: "#D16B7B" },
@@ -219,15 +242,22 @@ const HomePage = () => {
                             { name: "UI/UX Designing", color: "bg-[#FFEFD9]", Icon: PenTool, iconColor: "#E09549" },
                             { name: "Animation & Rendering", color: "bg-[#E7F6EA]", Icon: Sparkles, iconColor: "#1D855C" },
                         ].map(({ Icon, ...service }, i) => (
-                            <div key={i} className={`${service.color} p-6 rounded-[28px] shadow-sm`}>
+                            <motion.div 
+                                key={i} 
+                                className={`${service.color} p-6 rounded-[28px] shadow-sm`}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                            >
                                 <div className="w-12 h-12 bg-white rounded-2xl mb-4 flex items-center justify-center">
                                     <Icon className="w-6 h-6" strokeWidth={1.5} style={{ color: service.iconColor }} />
                                 </div>
                                 <p className="font-normal text-gray-900">{service.name}</p>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
-                    <div className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white">
+                    </motion.div>
+                    <motion.div className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white" {...fadeInUp}>
                         <div className="text-3xl font-normal leading-snug">
                             <div>Start Your Creative Journey with Us</div>
                         </div>
@@ -248,24 +278,31 @@ const HomePage = () => {
                                 </span>
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Work Section */}
             <section id="work" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
+                    <motion.h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         How we transformed a small business's <span className="italic">online presence</span>
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    </motion.h2>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6" {...fadeInUp}>
                         {[
                             { name: "FlowBank", tags: ["UX Research", "Interface Design"] },
                             { name: "Academy.co", tags: ["Product Design", "Interaction Design"] },
                             { name: "Genome", tags: ["Brand identity design", "UX Research"] },
                             { name: "Hotto", tags: ["Visual Story telling", "Web & Mobile Design"] },
                         ].map((project, i) => (
-                            <div key={i} className="bg-gray-100 rounded-2xl p-6">
+                            <motion.div 
+                                key={i} 
+                                className="bg-gray-100 rounded-2xl p-6"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                            >
                                 <div className="w-full h-64 rounded-xl mb-4 bg-gray-200"></div>
                                 <h3 className="text-xl font-normal text-gray-900 mb-4">{project.name}</h3>
                                 <div className="flex gap-2">
@@ -275,17 +312,23 @@ const HomePage = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Testimonials Section */}
             <section className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_1fr] mb-14">
-                        <div className="rounded-[32px] overflow-hidden bg-black text-white p-10 flex flex-col justify-end min-h-[360px]">
+                    <motion.div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_1fr] mb-14" {...fadeInUp}>
+                        <motion.div 
+                            className="rounded-[32px] overflow-hidden bg-black text-white p-10 flex flex-col justify-end min-h-[360px]"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-300 mb-4">Customer Stories</p>
                             <p className="text-2xl md:text-3xl font-normal leading-snug mb-8">
                                 Awake's expertise transformed my vision into success with usability, precision, and a deep understanding of my goals.
@@ -294,9 +337,15 @@ const HomePage = () => {
                                 <p className="font-normal">Sarah Mitchell</p>
                                 <p className="text-gray-400">CEO, Tech Solutions</p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="rounded-[32px] bg-[#F4E181] p-10 flex flex-col justify-between text-gray-900">
+                        <motion.div 
+                            className="rounded-[32px] bg-[#F4E181] p-10 flex flex-col justify-between text-gray-900"
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
                             <div>
                                 <p className="text-xs uppercase tracking-[0.2em] mb-6">Facts & Numbers</p>
                                 <p className="text-sm text-gray-800">
@@ -304,42 +353,60 @@ const HomePage = () => {
                                 </p>
                             </div>
                             <div className="text-[72px] leading-none font-light">91%</div>
-                        </div>
+                        </motion.div>
 
-                    </div>
+                    </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
-                        <div className="rounded-[32px] bg-[#181818] text-white p-10 flex flex-col gap-6">
+                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16" {...fadeInUp}>
+                        <motion.div 
+                            className="rounded-[32px] bg-[#181818] text-white p-10 flex flex-col gap-6"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div>
                                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">Customer Stories</p>
                                 <p className="text-2xl font-normal">Their creativity and attention to detail transformed our brand completely!</p>
                             </div>
                             <div className="rounded-2xl bg-white/10 border border-white/20 h-48 flex items-center justify-center">
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="rounded-[32px] bg-gray-50 p-10">
+                        <motion.div 
+                            className="rounded-[32px] bg-gray-50 p-10"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                        >
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">Customer Stories</p>
                             <p className="text-2xl text-gray-900 mb-6">
-                                “Awake Design Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations.”
+                                "Awake Design Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations."
                             </p>
                             <div className="text-sm text-gray-600">
                                 <p className="text-gray-900 font-normal">Sarah Mitchell</p>
                                 <p>Marketing Head at TalentConnect</p>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Pricing Section */}
             <section id="pricing" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
+                    <motion.h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         Pick the plan that fits your <span className="italic">needs</span>
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-[#F4E181] rounded-2xl p-8">
+                    </motion.h2>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8" {...fadeInUp}>
+                        <motion.div 
+                            className="bg-[#F4E181] rounded-2xl p-8"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
                             <div className="mb-6">
                                 <span className="px-4 py-2 bg-white/50 rounded-full text-sm text-gray-900">Basic Plan</span>
                             </div>
@@ -364,8 +431,14 @@ const HomePage = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </div>
-                        <div className="bg-[#1E3A5F] text-white rounded-2xl p-8">
+                        </motion.div>
+                        <motion.div 
+                            className="bg-[#1E3A5F] text-white rounded-2xl p-8"
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
                             <div className="mb-6">
                                 <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Pro Plan</span>
                             </div>
@@ -390,20 +463,27 @@ const HomePage = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* FAQ Section */}
             <section className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
+                    <motion.h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         Got questions?<br />We've got <span className="italic">answers</span>
-                    </h2>
-                    <div className="space-y-4">
+                    </motion.h2>
+                    <motion.div className="space-y-4" {...fadeInUp}>
                         {faqs.map((faq, i) => (
-                            <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
+                            <motion.div 
+                                key={i} 
+                                className="border border-gray-200 rounded-xl overflow-hidden"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                            >
                                 <button
                                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
                                     className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
@@ -418,46 +498,53 @@ const HomePage = () => {
                                         {faq.answer}
                                     </div>
                                 )}
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Awards Section */}
             <section id="award" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
+                    <motion.h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         Accolades and achievements celebration our <span className="italic">design excellence</span>
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    </motion.h2>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6" {...fadeInUp}>
                         {[
                             { title: "Webflow Awards", description: "Celebrated for cutting-edge interaction design and seamless user experiences.", year: "2025" },
                             { title: "Dribbble Awards", description: "Recognized for creative excellence and innovative design solutions", year: "2024" },
                             { title: "awwwards Awards", description: "Honored with the Best Website Design for creativity, usability, and innovation.", year: "2023" },
                         ].map((award, i) => (
-                            <div key={i} className="bg-gray-100 p-8 rounded-2xl">
+                            <motion.div 
+                                key={i} 
+                                className="bg-gray-100 p-8 rounded-2xl"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                            >
                                 <div className="w-10 h-10 rounded-lg mb-4 flex items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500">
                                     <span className="text-white text-xl">🏆</span>
                                 </div>
                                 <h3 className="text-xl font-normal text-gray-900 mb-2">{award.title}</h3>
                                 <p className="text-gray-600 mb-4">{award.description}</p>
                                 <p className="text-gray-900 font-normal">{award.year}</p>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* CTA Section */}
             <section className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h3 className="text-4xl md:text-6xl font-normal text-gray-900 mb-6">
+                    <motion.h3 className="text-4xl md:text-6xl font-normal text-gray-900 mb-6" {...fadeInUp}>
                         Innovative Solutions for <span className="italic">Your Brand</span>
-                    </h3>
-                    <p className="text-xl text-gray-600 mb-8">
+                    </motion.h3>
+                    <motion.p className="text-xl text-gray-600 mb-8" {...fadeInUp}>
                         Looking to elevate your brand? We craft immersive experiences that captivate, engage, and make your business unforgettable in every interaction.
-                    </p>
+                    </motion.p>
                     <button
                         onClick={() => router.push("/login")}
                         className="flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-colors mx-auto"
