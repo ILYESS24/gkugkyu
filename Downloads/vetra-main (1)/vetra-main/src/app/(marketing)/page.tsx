@@ -80,7 +80,7 @@ const HomePage = () => {
     ];
 
     return (
-        <div className="min-h-screen w-full relative">
+        <div className="min-h-screen w-full relative bg-white">
 
             {/* Logo AURION - Top Left */}
             <div className="fixed top-6 left-6 z-50">
