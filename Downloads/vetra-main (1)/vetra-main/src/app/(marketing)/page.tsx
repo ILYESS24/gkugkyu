@@ -180,23 +180,23 @@ const HomePage = () => {
                             Crafting exceptional, well experienced & technology driven strategies to drive impactful results with
                         </h2>
                         <div className="flex items-center justify-center gap-6 text-gray-900 font-normal">
-                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#F3E7FF] text-[#6F3AFF]">
-                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#6F3AFF]">
-                                    <Sparkles className="w-3.5 h-3.5" strokeWidth={1.5} />
+                            <div className="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#F3E7FF] text-[#6F3AFF]">
+                                <span className="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center text-[#6F3AFF]">
+                                    <Sparkles className="w-6 h-6" strokeWidth={1.5} />
                                 </span>
-                                Creativity
+                                <span className="text-xl italic">Creativity</span>
                             </div>
-                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#E0ECFF] text-[#2E61B5]">
-                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#2E61B5]">
-                                    <Lightbulb className="w-3.5 h-3.5" strokeWidth={1.5} />
+                            <div className="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#E0ECFF] text-[#2E61B5]">
+                                <span className="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center text-[#2E61B5]">
+                                    <Lightbulb className="w-6 h-6" strokeWidth={1.5} />
                                 </span>
-                                Innovation
+                                <span className="text-xl italic">Innovation</span>
                             </div>
-                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#DCF6E6] text-[#1B7A4F]">
-                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#1B7A4F]">
-                                    <Target className="w-3.5 h-3.5" strokeWidth={1.5} />
+                            <div className="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#DCF6E6] text-[#1B7A4F]">
+                                <span className="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center text-[#1B7A4F]">
+                                    <Target className="w-6 h-6" strokeWidth={1.5} />
                                 </span>
-                                Strategy
+                                <span className="text-xl italic">Strategy</span>
                             </div>
                         </div>
                     </div>
