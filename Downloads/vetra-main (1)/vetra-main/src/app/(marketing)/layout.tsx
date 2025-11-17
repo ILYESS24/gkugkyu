@@ -17,9 +17,8 @@ const MarketingLayout = ({ children }: Props) => {
                 className="fixed inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        linear-gradient(to right, #E8F4F8 0%, #F5F0E8 50%, #FFF8E7 100%)
+                        linear-gradient(to right, #D4E8F0 0%, #F0E8D8 50%, #FFE8C4 100%)
                     `,
-                    opacity: 0.6,
                 }}
             />
             {/* Additional soft glow effects */}
@@ -27,8 +26,8 @@ const MarketingLayout = ({ children }: Props) => {
                 className="fixed inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(circle at 20% 50%, rgba(232, 244, 248, 0.4) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 50%, rgba(255, 248, 231, 0.4) 0%, transparent 50%)
+                        radial-gradient(circle at 20% 50%, rgba(212, 232, 240, 0.6) 0%, transparent 60%),
+                        radial-gradient(circle at 80% 50%, rgba(255, 232, 196, 0.6) 0%, transparent 60%)
                     `,
                 }}
             />
