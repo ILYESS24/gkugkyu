@@ -318,13 +318,60 @@ const HomePage = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { name: "Logan Dang", role: "Wordpress Developer", bgColor: "bg-gray-200" },
-                            { name: "Ana Belić", role: "Social Media Specialist", bgColor: "bg-gray-200" },
-                            { name: "Brian Hanley", role: "Product Designer", bgColor: "bg-slate-300" },
-                            { name: "Darko Stanković", role: "UI Designer", bgColor: "bg-gray-900" },
+                            { 
+                                name: "Logan Dang", 
+                                role: "Wordpress Developer",
+                                shape: "eight-shape",
+                                color: "bg-blue-500"
+                            },
+                            { 
+                                name: "Ana Belić", 
+                                role: "Social Media Specialist",
+                                shape: "arch-shape",
+                                color: "bg-orange-400"
+                            },
+                            { 
+                                name: "Brian Hanley", 
+                                role: "Product Designer",
+                                shape: "circle-shape",
+                                color: "bg-yellow-300"
+                            },
+                            { 
+                                name: "Darko Stanković", 
+                                role: "UI Designer",
+                                shape: "stacked-shape",
+                                color: "bg-blue-600"
+                            },
                         ].map((member, i) => (
-                            <div key={i} className="bg-gray-50 rounded-2xl overflow-hidden">
-                                <div className={`w-full h-64 ${member.bgColor} flex items-center justify-center overflow-hidden rounded-t-2xl`}>
+                            <div key={i} className="bg-white rounded-2xl overflow-hidden">
+                                <div className="w-full h-64 relative flex items-center justify-center overflow-hidden rounded-t-2xl bg-white">
+                                    {/* Abstract shape background */}
+                                    <div className={`absolute inset-0 ${member.color} opacity-90`}>
+                                        {member.shape === "eight-shape" && (
+                                            <div className="relative w-full h-full">
+                                                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-blue-600 rounded-3xl"></div>
+                                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-blue-600 rounded-3xl -mt-4"></div>
+                                            </div>
+                                        )}
+                                        {member.shape === "arch-shape" && (
+                                            <div className="relative w-full h-full">
+                                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-40 h-40 bg-orange-500 rounded-t-full"></div>
+                                            </div>
+                                        )}
+                                        {member.shape === "circle-shape" && (
+                                            <div className="relative w-full h-full flex items-center justify-center">
+                                                <div className="w-48 h-48 bg-yellow-400 rounded-full"></div>
+                                            </div>
+                                        )}
+                                        {member.shape === "stacked-shape" && (
+                                            <div className="relative w-full h-full flex items-center justify-center gap-2">
+                                                <div className="w-24 h-32 bg-blue-700 rounded-2xl"></div>
+                                                <div className="w-24 h-32 bg-blue-700 rounded-2xl"></div>
+                                                <div className="w-24 h-32 bg-blue-700 rounded-2xl"></div>
+                                            </div>
+                                        )}
+                                    </div>
+                                    {/* Portrait image */}
                                     <img 
                                         src={[
                                             "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
@@ -333,18 +380,22 @@ const HomePage = () => {
                                             "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
                                         ][i]}
                                         alt={member.name}
-                                        className="w-full h-full object-cover rounded-t-2xl"
+                                        className="relative z-10 w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg"
                                     />
                                 </div>
-                                <div className="p-6 bg-gray-50">
+                                <div className="p-6 bg-white">
                                     <h3 className="text-xl font-normal text-gray-900 mb-1">{member.name}</h3>
                                     <p className="text-gray-600 mb-4">{member.role}</p>
                                     <div className="flex gap-3">
-                                        <a href="#" className="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                            <span className="text-white text-xs font-medium">L</span>
+                                        <a href="#" title="X (Twitter)" className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+                                            <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                            </svg>
                                         </a>
-                                        <a href="#" className="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                            <span className="text-white text-xs font-medium">T</span>
+                                        <a href="#" title="LinkedIn" className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+                                            <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
