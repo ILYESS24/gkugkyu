@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowUpRight, Star, Check } from "lucide-react";
+import { ArrowUpRight, Star, Check, Sparkles, Lightbulb, Target, Palette, Monitor, Megaphone, PenTool, BarChart3 } from "lucide-react";
 import Image from "next/image";
 
 const HomePage = () => {
@@ -122,18 +122,24 @@ const HomePage = () => {
                         <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-8">
                             Crafting exceptional, well experienced & technology driven strategies to drive impactful results with
                         </h2>
-                        <div className="flex items-center justify-center gap-6">
-                            <div className="flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full">
-                                <span className="text-2xl">✨</span>
-                                <span className="text-gray-900">Creativity</span>
+                        <div className="flex items-center justify-center gap-6 text-gray-900 font-normal">
+                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#F3E7FF] text-[#6F3AFF]">
+                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#6F3AFF]">
+                                    <Sparkles className="w-3.5 h-3.5" strokeWidth={1.5} />
+                                </span>
+                                Creativity
                             </div>
-                            <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                                <span className="text-2xl">💡</span>
-                                <span className="text-gray-900">Innovation</span>
+                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#E0ECFF] text-[#2E61B5]">
+                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#2E61B5]">
+                                    <Lightbulb className="w-3.5 h-3.5" strokeWidth={1.5} />
+                                </span>
+                                Innovation
                             </div>
-                            <div className="flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full">
-                                <span className="text-2xl">🎯</span>
-                                <span className="text-gray-900">Strategy</span>
+                            <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#DCF6E6] text-[#1B7A4F]">
+                                <span className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-[#1B7A4F]">
+                                    <Target className="w-3.5 h-3.5" strokeWidth={1.5} />
+                                </span>
+                                Strategy
                             </div>
                         </div>
                     </div>
@@ -162,36 +168,40 @@ const HomePage = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
                         {[
-                            { name: "Brand Strategy", color: "bg-purple-100" },
-                            { name: "Web Development", color: "bg-pink-100" },
-                            { name: "Digital Marketing", color: "bg-blue-100" },
-                            { name: "UI/UX Designing", color: "bg-orange-100" },
-                            { name: "Analytics & Reporting", color: "bg-green-100" },
-                        ].map((service, i) => (
-                            <div key={i} className={`${service.color} p-6 rounded-2xl`}>
-                                <div className="w-10 h-10 bg-white rounded-lg mb-4 flex items-center justify-center">
-                                    <span className="text-2xl">🎨</span>
+                            { name: "Brand Strategy", color: "bg-[#F1E8FF]", Icon: Palette, iconColor: "#8452CF" },
+                            { name: "Web Development", color: "bg-[#FCE7EC]", Icon: Monitor, iconColor: "#D16B7B" },
+                            { name: "Digital Marketing", color: "bg-[#E6F0FF]", Icon: Megaphone, iconColor: "#3A6BC8" },
+                            { name: "UI/UX Designing", color: "bg-[#FFEFD9]", Icon: PenTool, iconColor: "#E09549" },
+                            { name: "Analytics & Reporting", color: "bg-[#E7F6EA]", Icon: BarChart3, iconColor: "#1D855C" },
+                        ].map(({ Icon, ...service }, i) => (
+                            <div key={i} className={`${service.color} p-6 rounded-[28px] shadow-sm`}>
+                                <div className="w-12 h-12 bg-white rounded-2xl mb-4 flex items-center justify-center">
+                                    <Icon className="w-6 h-6" strokeWidth={1.5} style={{ color: service.iconColor }} />
                                 </div>
                                 <p className="font-normal text-gray-900">{service.name}</p>
                             </div>
                         ))}
                     </div>
-                    <div className="bg-gray-900 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="text-white text-2xl font-normal">
+                    <div className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white">
+                        <div className="text-3xl font-normal leading-snug">
                             <div>See Our Work in Action.</div>
                             <div>Start Your Creative Journey with Us!</div>
                         </div>
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col sm:flex-row gap-4">
                             <button
                                 onClick={() => router.push("/login")}
-                                className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+                                className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors"
                             >
                                 <span>Let's Collaborate</span>
-                                <ArrowUpRight className="w-4 h-4" />
+                                <span className="inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
                             </button>
-                            <button className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full hover:bg-white/10 transition-colors">
+                            <button className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
                                 <span>View Portfolio</span>
-                                <ArrowUpRight className="w-4 h-4" />
+                                <span className="inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -258,41 +268,70 @@ const HomePage = () => {
 
             {/* Testimonials Section */}
             <section className="py-20 px-6 bg-white z-10 relative">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
-                        What our satisfied customers are saying <span className="italic">about us</span>
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div className="bg-black text-white p-8 rounded-2xl">
-                            <p className="text-sm text-gray-400 mb-4">Customer Stories</p>
-                            <p className="text-xl mb-6">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_1fr] mb-14 relative">
+                        <div className="rounded-[32px] overflow-hidden bg-black text-white p-10 flex flex-col justify-end min-h-[360px]">
+                            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 mb-4">Customer Stories</p>
+                            <p className="text-2xl md:text-3xl font-normal leading-snug mb-8">
                                 Awake's expertise transformed my vision into success with creativity, precision, and a deep understanding of my goals.
                             </p>
-                            <div>
+                            <div className="text-sm">
                                 <p className="font-normal">Sarah Mitchell</p>
                                 <p className="text-gray-400">Founder of Chipsland</p>
                             </div>
                         </div>
-                        <div className="bg-gray-100 p-8 rounded-2xl">
-                            <p className="text-sm text-gray-600 mb-4">Facts & Numbers</p>
-                            <p className="text-6xl font-normal text-gray-900 mb-2">91%</p>
-                            <p className="text-gray-600">clients recommend our design services.</p>
+
+                        <div className="rounded-[32px] bg-[#F4E181] p-10 flex flex-col justify-between text-gray-900">
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.2em] mb-6">Facts & Numbers</p>
+                                <p className="text-sm text-gray-800">
+                                    clients recommend our design services.
+                                </p>
+                            </div>
+                            <div className="text-[72px] leading-none font-light">91%</div>
+                        </div>
+
+                        {/* Floating navigation pill */}
+                        <div className="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 bg-white shadow-xl border border-gray-200 rounded-full px-6 py-3 flex items-center gap-6 w-full md:w-auto">
+                            <div className="font-semibold">Awake</div>
+                            <div className="hidden md:flex items-center gap-5 text-sm text-gray-700">
+                                {["Home", "About us", "Services", "Work", "Team", "Pricing", "Awards"].map((item) => (
+                                    <a key={item} href={`#${item.toLowerCase().replace(/ /g, '-')}`} className="hover:text-gray-900">
+                                        {item}
+                                    </a>
+                                ))}
+                            </div>
+                            <button
+                                onClick={() => router.push("/login")}
+                                className="ml-auto flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900 transition-colors"
+                            >
+                                Let's Collaborate
+                                <span className="inline-flex w-6 h-6 rounded-full bg-white text-black items-center justify-center">
+                                    <ArrowUpRight className="w-3 h-3" />
+                                </span>
+                            </button>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-gray-100 p-8 rounded-2xl">
-                            <p className="text-sm text-gray-600 mb-4">Customer Stories</p>
-                            <p className="text-xl mb-6">Their creativity and attention to detail transformed our brand completely!</p>
-                            <div className="w-full h-48 bg-gray-300 rounded-xl" />
-                        </div>
-                        <div className="bg-white border border-gray-200 p-8 rounded-2xl">
-                            <p className="text-sm text-gray-600 mb-4">Customer Stories</p>
-                            <h3 className="text-2xl font-normal text-gray-900 mb-6">
-                                "Awake Design Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations."
-                            </h3>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+                        <div className="rounded-[32px] bg-[#181818] text-white p-10 flex flex-col gap-6">
                             <div>
-                                <p className="font-normal text-gray-900">Sarah Mitchell</p>
-                                <p className="text-gray-600">Marketing Head at TalentConnect</p>
+                                <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">Customer Stories</p>
+                                <p className="text-2xl font-normal">Their creativity and attention to detail transformed our brand completely!</p>
+                            </div>
+                            <div className="rounded-2xl bg-white/10 border border-white/20 h-48 flex items-center justify-center">
+                                <div className="w-32 h-24 bg-white/40 rounded-xl" />
+                            </div>
+                        </div>
+
+                        <div className="rounded-[32px] bg-gray-50 p-10">
+                            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">Customer Stories</p>
+                            <p className="text-2xl text-gray-900 mb-6">
+                                “Awake Design Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations.”
+                            </p>
+                            <div className="text-sm text-gray-600">
+                                <p className="text-gray-900 font-normal">Sarah Mitchell</p>
+                                <p>Marketing Head at TalentConnect</p>
                             </div>
                         </div>
                     </div>
