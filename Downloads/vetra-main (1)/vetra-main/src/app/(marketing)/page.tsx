@@ -208,9 +208,9 @@ const HomePage = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
-                            { value: "+40", label: "Total Projects Completed" },
-                            { value: "+15", label: "Years of Experience" },
-                            { value: "+12", label: "Design Awards" },
+                            { value: "+40", label: "Happy Clients" },
+                            { value: "+15", label: "Years of experience" },
+                            { value: "+12", label: "Awards won" },
                         ].map((item, i) => (
                             <div key={i} className="text-center">
                                 <div className="text-[88px] leading-none font-light text-gray-900 mb-4 tracking-tight">
@@ -227,7 +227,7 @@ const HomePage = () => {
             <section id="services" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
-                        Where innovation meets <span className="italic">aesthetics</span>
+                        Where Innovation meets <span className="italic">excellence</span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
                         {[
@@ -235,7 +235,7 @@ const HomePage = () => {
                             { name: "Web Development", color: "bg-[#FCE7EC]", Icon: Monitor, iconColor: "#D16B7B" },
                             { name: "Digital Marketing", color: "bg-[#E6F0FF]", Icon: Megaphone, iconColor: "#3A6BC8" },
                             { name: "UI/UX Designing", color: "bg-[#FFEFD9]", Icon: PenTool, iconColor: "#E09549" },
-                            { name: "Analytics & Reporting", color: "bg-[#E7F6EA]", Icon: BarChart3, iconColor: "#1D855C" },
+                            { name: "Animation & Rendering", color: "bg-[#E7F6EA]", Icon: Sparkles, iconColor: "#1D855C" },
                         ].map(({ Icon, ...service }, i) => (
                             <div key={i} className={`${service.color} p-6 rounded-[28px] shadow-sm`}>
                                 <div className="w-12 h-12 bg-white rounded-2xl mb-4 flex items-center justify-center">
@@ -247,21 +247,20 @@ const HomePage = () => {
                     </div>
                     <div className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white">
                         <div className="text-3xl font-normal leading-snug">
-                            <div>See Our Work in Action.</div>
-                            <div>Start Your Creative Journey with Us!</div>
+                            <div>Start Your Creative Journey with Us</div>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button
                                 onClick={() => router.push("/login")}
                                 className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors"
                             >
-                                <span>Let's Collaborate</span>
+                                <span>Get a Quote</span>
                                 <span className="inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
                             </button>
                             <button className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
-                                <span>View Portfolio</span>
+                                <span>View Our Portfolio</span>
                                 <span className="inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
@@ -362,11 +361,11 @@ const HomePage = () => {
                         <div className="rounded-[32px] overflow-hidden bg-black text-white p-10 flex flex-col justify-end min-h-[360px]">
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-300 mb-4">Customer Stories</p>
                             <p className="text-2xl md:text-3xl font-normal leading-snug mb-8">
-                                Awake's expertise transformed my vision into success with creativity, precision, and a deep understanding of my goals.
+                                Awake's expertise transformed my vision into success with usability, precision, and a deep understanding of my goals.
                             </p>
                             <div className="text-sm">
                                 <p className="font-normal">Sarah Mitchell</p>
-                                <p className="text-gray-400">Founder of Chipsland</p>
+                                <p className="text-gray-400">CEO, Tech Solutions</p>
                             </div>
                         </div>
 
@@ -415,14 +414,13 @@ const HomePage = () => {
             <section id="pricing" className="py-20 px-6 bg-white z-10 relative">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center">
-                        Pick the plan that fits your <span className="italic">start-up</span>
+                        Pick the plan that fits your <span className="italic">needs</span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-white border border-gray-200 rounded-2xl p-8">
+                        <div className="bg-[#F4E181] rounded-2xl p-8">
                             <div className="mb-6">
-                                <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-900">Starter</span>
+                                <span className="px-4 py-2 bg-white/50 rounded-full text-sm text-gray-900">Basic Plan</span>
                             </div>
-                            <p className="text-gray-600 mb-6">For companies who need design support. One request at a time</p>
                             <h3 className="text-5xl font-normal text-gray-900 mb-8">
                                 $2500<span className="text-2xl text-gray-600">/month</span>
                             </h3>
@@ -430,13 +428,13 @@ const HomePage = () => {
                                 onClick={() => router.push("/login")}
                                 className="w-full flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900 transition-colors mb-8"
                             >
-                                <span>Let's Collaborate</span>
+                                <span>Get Started</span>
                                 <ArrowUpRight className="w-4 h-4" />
                             </button>
                             <div>
                                 <p className="text-sm text-gray-600 mb-4">Features</p>
                                 <ul className="space-y-3">
-                                    {["Design Updates Every 2 Days", "Mid-level Designer", "SEO optimization", "Monthly analytics", "2x Calls Per Month", "License free assets"].map((feature, i) => (
+                                    {["20+ design concepts", "3-5 day delivery", "Monthly revisions", "Dedicated support", "Source files"].map((feature, i) => (
                                         <li key={i} className="flex items-center gap-3">
                                             <Check className="w-5 h-5 text-gray-900" />
                                             <span className="text-gray-700">{feature}</span>
@@ -445,25 +443,24 @@ const HomePage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="bg-gray-900 text-white rounded-2xl p-8">
+                        <div className="bg-[#1E3A5F] text-white rounded-2xl p-8">
                             <div className="mb-6">
-                                <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Pro</span>
+                                <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Pro Plan</span>
                             </div>
-                            <p className="text-gray-300 mb-6">2x the speed. Great for an MVP, Web App or complex problem</p>
                             <h3 className="text-5xl font-normal mb-8">
-                                $3500<span className="text-2xl text-gray-400">/month</span>
+                                $3500<span className="text-2xl text-gray-300">/month</span>
                             </h3>
                             <button
                                 onClick={() => router.push("/login")}
                                 className="w-full flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors mb-8"
                             >
-                                <span>Let's Collaborate</span>
+                                <span>Get Started</span>
                                 <ArrowUpRight className="w-4 h-4" />
                             </button>
                             <div>
                                 <p className="text-sm text-gray-300 mb-4">Features</p>
                                 <ul className="space-y-3">
-                                    {["Design Updates Daily", "Senior-level Designer", "AI Advisory Framework", "Full-service Creative Team", "4x Calls Per Month", "License free assets"].map((feature, i) => (
+                                    {["Unlimited design concepts", "Priority delivery", "Bi-weekly revisions", "24/7 premium support", "Advanced analytics", "Custom integrations"].map((feature, i) => (
                                         <li key={i} className="flex items-center gap-3">
                                             <Check className="w-5 h-5" />
                                             <span>{feature}</span>
@@ -532,9 +529,9 @@ const HomePage = () => {
 
             {/* CTA Section */}
             <section className="py-20 px-6 bg-white z-10 relative">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-3xl mx-auto text-center">
                     <h3 className="text-4xl md:text-6xl font-normal text-gray-900 mb-6">
-                        Innovative Solutions for <span className="italic">bold brands</span>
+                        Innovative Solutions for <span className="italic">Your Brand</span>
                     </h3>
                     <p className="text-xl text-gray-600 mb-8">
                         Looking to elevate your brand? We craft immersive experiences that captivate, engage, and make your business unforgettable in every interaction.
@@ -543,7 +540,7 @@ const HomePage = () => {
                         onClick={() => router.push("/login")}
                         className="flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-colors mx-auto"
                     >
-                        <span>Let's craft together</span>
+                        <span>Get a Free Proposal</span>
                         <ArrowUpRight className="w-4 h-4" />
                     </button>
                 </div>
