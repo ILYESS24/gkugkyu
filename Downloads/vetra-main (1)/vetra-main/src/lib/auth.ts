@@ -7,69 +7,70 @@ export interface User {
   role: string;
 }
 
+async function getSupabase() {
+  const { getSupabaseBrowserClient } = await import('./supabase-client');
+  return getSupabaseBrowserClient();
+}
+
 export async function login(email: string, password: string) {
-  const response = await fetch('/api/auth/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email, password }),
+  const supabase = await getSupabase();
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
   });
 
-  const data = await response.json();
-  
-  if (!response.ok) {
-    throw new Error(data.error || 'Erreur de connexion');
+  if (error) {
+    throw new Error(error.message || 'Erreur de connexion');
   }
 
   return data;
 }
 
 export async function register(email: string, password: string, name: string) {
-  const response = await fetch('/api/auth/register', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
+  const supabase = await getSupabase();
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+    options: {
+      data: {
+        full_name: name,
+      },
     },
-    body: JSON.stringify({ email, password, name }),
   });
 
-  const data = await response.json();
-  
-  if (!response.ok) {
-    throw new Error(data.error || 'Erreur d\'inscription');
+  if (error) {
+    throw new Error(error.message || "Erreur d'inscription");
   }
 
   return data;
 }
 
 export async function logout() {
-  const response = await fetch('/api/auth/logout', {
-    method: 'POST',
-  });
+  const supabase = await getSupabase();
+  const { error } = await supabase.auth.signOut();
 
-  const data = await response.json();
-  
-  if (!response.ok) {
-    throw new Error(data.error || 'Erreur de déconnexion');
+  if (error) {
+    throw new Error(error.message || 'Erreur de déconnexion');
   }
-
-  return data;
 }
 
 export async function getCurrentUser(): Promise<User | null> {
   try {
-    const response = await fetch('/api/auth/me', {
-      method: 'GET',
-      credentials: 'include',
-    });
+    const supabase = await getSupabase();
+    const { data, error } = await supabase.auth.getUser();
 
-    if (!response.ok) {
+    if (error || !data.user) {
       return null;
     }
 
-    const data = await response.json();
-    return data.user;
+    const { user } = data;
+
+    return {
+      id: user.id,
+      email: user.email ?? '',
+      name: (user.user_metadata?.full_name as string) ?? user.email ?? 'Utilisateur',
+      role: (user.app_metadata?.role as string) ?? 'user',
+    };
   } catch (error) {
     console.error('Get current user error:', error);
     return null;
