@@ -112,12 +112,16 @@ const HomePage = () => {
             <div className="fixed top-6 right-6 z-50">
                 <button
                     onClick={() => router.push("/register")}
-                    className="group inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-gray-900 transition-all duration-300 group-hover:flex-row-reverse"
+                    className="group relative inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-gray-900 transition-all duration-300 overflow-hidden"
                 >
-                    <span>Get Started</span>
-                    <span className="inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                    <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Get Started</span>
+                    <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                         <ArrowUpRight className="w-4 h-4" />
                     </span>
+                    <span className="absolute left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-0 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                        <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                    <span className="absolute right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-0">Get Started</span>
                 </button>
             </div>
 
@@ -149,12 +153,16 @@ const HomePage = () => {
                     <div className="flex items-center justify-center gap-8">
                         <button
                             onClick={() => router.push("/login")}
-                            className="group flex items-center gap-2 bg-gradient-to-r from-[#6C49F8] to-[#8A57FF] text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:opacity-90 transition-all duration-300 group-hover:flex-row-reverse"
+                            className="group relative flex items-center gap-2 bg-gradient-to-r from-[#6C49F8] to-[#8A57FF] text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:opacity-90 transition-all duration-300 overflow-hidden"
                         >
-                            <span>Get Started</span>
-                            <span className="inline-flex w-8 h-8 rounded-full bg-white text-gray-900 items-center justify-center">
+                            <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Get Started</span>
+                            <span className="relative z-10 inline-flex w-8 h-8 rounded-full bg-white text-gray-900 items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                 <ArrowUpRight className="w-4 h-4" />
                             </span>
+                            <span className="absolute left-8 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-0 inline-flex w-8 h-8 rounded-full bg-white text-gray-900 items-center justify-center">
+                                <ArrowUpRight className="w-4 h-4" />
+                            </span>
+                            <span className="absolute right-8 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-0">Get Started</span>
                         </button>
                         <div className="flex items-center gap-4">
                             <div className="flex items-center gap-1">
@@ -292,18 +300,26 @@ const HomePage = () => {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button
                                 onClick={() => router.push("/login")}
-                                className="group flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 group-hover:flex-row-reverse"
+                                className="group relative flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 overflow-hidden"
                             >
-                                <span>Get a Quote</span>
-                                <span className="inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Get a Quote</span>
+                                <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
+                                <span className="absolute left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-0 inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
+                                <span className="absolute right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-0">Get a Quote</span>
                             </button>
-                            <button className="group flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-all duration-300 group-hover:flex-row-reverse">
-                                <span>View Our Portfolio</span>
-                                <span className="inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                            <button className="group relative flex items-center gap-2 bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-all duration-300 overflow-hidden">
+                                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">View Our Portfolio</span>
+                                <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
+                                <span className="absolute left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-0 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
+                                <span className="absolute right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-0">View Our Portfolio</span>
                             </button>
                         </div>
                     </motion.div>
@@ -425,12 +441,16 @@ const HomePage = () => {
                             </h3>
                             <button
                                 onClick={() => router.push("/login")}
-                                className="group w-full flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 mb-8 group-hover:flex-row-reverse"
+                                className="group relative w-full flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 mb-8 overflow-hidden"
                             >
-                                <span>Let's Collaborate</span>
-                                <span className="inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Let's Collaborate</span>
+                                <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
+                                <span className="absolute left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-[-50%] inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
+                                <span className="absolute left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-[50%]">Let's Collaborate</span>
                             </button>
                             <div>
                                 <p className="text-sm text-gray-900 mb-4 font-normal">Features</p>
@@ -460,12 +480,16 @@ const HomePage = () => {
                             </h3>
                             <button
                                 onClick={() => router.push("/login")}
-                                className="group w-full flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 mb-8 group-hover:flex-row-reverse"
+                                className="group relative w-full flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 mb-8 overflow-hidden"
                             >
-                                <span>Let's Collaborate</span>
-                                <span className="inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Let's Collaborate</span>
+                                <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
+                                <span className="absolute left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-[-50%] inline-flex w-7 h-7 rounded-full bg-gray-900 text-white items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
+                                <span className="absolute left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-[50%]">Let's Collaborate</span>
                             </button>
                             <div>
                                 <p className="text-sm text-white mb-4 font-normal">Features</p>
@@ -550,12 +574,16 @@ const HomePage = () => {
                             </motion.div>
                             <button
                                 onClick={() => router.push("/login")}
-                                className="group inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-all duration-300 group-hover:flex-row-reverse"
+                                className="group relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-all duration-300 overflow-hidden"
                             >
-                                <span>Let's craft together</span>
-                                <span className="inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-120%]">Let's craft together</span>
+                                <span className="relative z-10 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center transition-transform duration-300 group-hover:translate-x-[120%]">
                                     <ArrowUpRight className="w-4 h-4" />
                                 </span>
+                                <span className="absolute left-8 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[120%] group-hover:translate-x-0 inline-flex w-7 h-7 rounded-full bg-white text-gray-900 items-center justify-center">
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </span>
+                                <span className="absolute right-8 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-120%] group-hover:translate-x-0">Let's craft together</span>
                             </button>
                         </div>
                     </motion.div>
