@@ -4,20 +4,20 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, Bot, Sparkles } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { apiRequest } from "@/lib/api-client";
 
-export default function AgentBuilderPage() {
+export default function BoltPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Enregistrer l'utilisation de open-agent-builder
+    // Enregistrer l'utilisation de bolt.new
     apiRequest("/api/tools", {
       method: "POST",
       body: JSON.stringify({
-        tool_name: "open-agent-builder",
-        tool_type: "ai_agent_builder",
+        tool_name: "bolt.new",
+        tool_type: "website_builder",
       }),
     });
 
@@ -25,7 +25,7 @@ export default function AgentBuilderPage() {
       method: "POST",
       body: JSON.stringify({
         activity_type: "tool-opened",
-        tool_name: "open-agent-builder",
+        tool_name: "bolt.new",
       }),
     });
 
@@ -45,12 +45,9 @@ export default function AgentBuilderPage() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Retour
             </Button>
-            <div className="flex items-center gap-3">
-              <Bot className="w-5 h-5" />
-              <div>
-                <h1 className="text-lg font-semibold">Open Agent Builder</h1>
-                <p className="text-sm text-white/60">Création d'agents IA avec workflows</p>
-              </div>
+            <div>
+              <h1 className="text-lg font-semibold">Bolt.new - Builder de Sites</h1>
+              <p className="text-sm text-white/60">Création de sites web avec IA</p>
             </div>
           </div>
         </div>
@@ -58,9 +55,9 @@ export default function AgentBuilderPage() {
 
       <div className="h-[calc(100vh-64px)] w-full">
         <iframe
-          src="https://open-agent-builder-lchp73l76-ibagencys-projects.vercel.app/?template=multi-company-stock-analysis"
+          src="https://a0984a33.ai-assistant-xlv.pages.dev/"
           className="w-full h-full border-0"
-          title="Open Agent Builder"
+          title="Bolt.new Builder"
           allow="clipboard-read; clipboard-write"
         />
       </div>
