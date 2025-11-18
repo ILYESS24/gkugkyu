@@ -254,7 +254,7 @@ const HomePage = () => {
                             wordClassName="text-4xl md:text-6xl"
                         />
                     </motion.div>
-                    <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16" {...fadeInUp}>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
                         {[
                             { name: "Brand Strategy", color: "bg-[#F1E8FF]", Icon: Palette, iconColor: "#8452CF" },
                             { name: "Web Development", color: "bg-[#FCE7EC]", Icon: Monitor, iconColor: "#D16B7B" },
@@ -265,10 +265,10 @@ const HomePage = () => {
                             <motion.div 
                                 key={i} 
                                 className={`${service.color} p-6 rounded-[28px] shadow-sm`}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                 viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                                transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
                             >
                                 <div className="w-12 h-12 bg-white rounded-2xl mb-4 flex items-center justify-center">
                                     <Icon className="w-6 h-6" strokeWidth={1.5} style={{ color: service.iconColor }} />
@@ -277,7 +277,13 @@ const HomePage = () => {
                             </motion.div>
                         ))}
                     </motion.div>
-                    <motion.div className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white" {...fadeInUp}>
+                    <motion.div 
+                        className="bg-[#0C0F1A] rounded-[32px] p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white"
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <div className="text-3xl font-normal leading-snug">
                             <MagicText 
                                 text="Start Your Creative Journey with Us"
@@ -316,7 +322,7 @@ const HomePage = () => {
                             wordClassName="text-4xl md:text-6xl"
                         />
                     </motion.div>
-                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6" {...fadeInUp}>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {[
                             { name: "FlowBank", tags: ["UX Research", "Interface Design"], color: "bg-[#E6F0FF]" },
                             { name: "Academy.co", tags: ["Product Design", "Interaction Design"], color: "bg-[#F1E8FF]" },
@@ -326,10 +332,10 @@ const HomePage = () => {
                             <motion.div 
                                 key={i} 
                                 className="bg-gray-50 rounded-2xl p-6 shadow-sm"
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.6, delay: Math.floor(i / 2) * 0.3 }}
                             >
                                 <div className={`w-full h-64 rounded-xl mb-4 ${project.color}`}></div>
                                 <h3 className="text-xl font-normal text-gray-900 mb-4">{project.name}</h3>
