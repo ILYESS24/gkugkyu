@@ -119,7 +119,7 @@ const HomePage = () => {
             {/* Get Started Button - Top Right */}
             <div className="fixed top-6 right-6 z-50">
                 <button
-                    onClick={() => router.push("/register")}
+                    onClick={() => router.push("/login")}
                     className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
                 >
                     <span>Get Started</span>

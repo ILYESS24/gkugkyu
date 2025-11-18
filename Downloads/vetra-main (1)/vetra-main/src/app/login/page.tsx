@@ -311,29 +311,23 @@ function LoginPage() {
     setError("");
     setIsLoading(true);
 
-    try {
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+    // Simulate API delay (quick)
+    await new Promise(resolve => setTimeout(resolve, 300));
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        setError(data.error || 'Email ou mot de passe incorrect');
-        setIsLoading(false);
-        return;
-      }
-
-      // Redirection vers le dashboard
-      window.location.href = '/dashboard';
-    } catch (err) {
-      setError('Erreur de connexion. Veuillez réessayer.');
-      setIsLoading(false);
+    // Mock authentication - validate against dummy credentials
+    if (email === "erik@gmail.com" && password === "1234") {
+      console.log("✅ Login successful!");
+      alert("Login successful! Welcome, Erik!");
+      // In a real app, you would:
+      // - Store auth token
+      // - Redirect to dashboard
+      // - Set user session
+    } else {
+      setError("Invalid email or password. Please try again.");
+      console.log("❌ Login failed");
     }
+
+    setIsLoading(false);
   };
 
   return (
