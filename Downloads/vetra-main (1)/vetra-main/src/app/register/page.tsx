@@ -1,11 +1,16 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Eye, EyeOff, Mail, Sparkles, User } from "lucide-react";
+import { Eye, EyeOff, Mail, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { register as registerUser, login as supabaseLogin } from "@/lib/auth";
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -14,6 +19,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,26 +27,12 @@ export default function RegisterPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, password }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        setError(data.error || 'Erreur lors de l\'inscription');
-        setIsLoading(false);
-        return;
-      }
-
-      // Redirection vers le dashboard
-      window.location.href = '/dashboard';
+      await registerUser(email, password, name);
+      await supabaseLogin(email, password);
+      router.push("/dashboard");
     } catch (err) {
-      setError('Erreur lors de l\'inscription. Veuillez réessayer.');
+      setError(err instanceof Error ? err.message : "Erreur lors de l'inscription. Veuillez réessayer.");
+    } finally {
       setIsLoading(false);
     }
   };
