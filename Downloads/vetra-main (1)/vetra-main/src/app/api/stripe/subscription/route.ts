@@ -5,7 +5,7 @@ import { stripe } from '@/lib/stripe';
 
 export async function GET(req: NextRequest) {
   try {
-    const { user } = await getAuthenticatedUser();
+    const { user } = await getAuthenticatedUser(req);
 
     if (!user) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -55,7 +55,7 @@ export async function GET(req: NextRequest) {
 
 export async function DELETE(req: NextRequest) {
   try {
-    const { user } = await getAuthenticatedUser();
+    const { user } = await getAuthenticatedUser(req);
 
     if (!user) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
