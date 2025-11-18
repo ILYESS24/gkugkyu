@@ -189,16 +189,24 @@ img {
   align-items: center;
   gap: 0.5rem;
   position: relative;
-  overflow: visible;
 }
 
-.button-swap:hover {
-  flex-direction: row-reverse;
-}
-
-.button-text,
-.button-icon {
-  transition: transform 0.3s ease-in-out;
+.button-text {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   position: relative;
+}
+
+.button-icon {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  position: relative;
+}
+
+.button-swap:hover .button-text {
+  transform: translateX(calc(100% + 0.5rem + 28px));
+}
+
+.button-swap:hover .button-icon {
+  transform: translateX(calc(-100% - 0.5rem));
 }
