@@ -187,11 +187,11 @@ export default function DashboardPage() {
             <div className="flex items-center gap-3">
               <Button
                 variant="outline"
-                onClick={() => router.push("/settings")}
+                onClick={() => router.push("/billing")}
                 className="border-white/10 text-white hover:bg-white/10"
               >
                 <Settings className="w-4 h-4 mr-2" />
-                Préférences
+                Billing
               </Button>
               <Button
                 variant="outline"

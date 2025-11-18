@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codesandbox/sandpack-react": "^2.20.0",
     "@hookform/resolvers": "^3.10.0",
     "@number-flow/react": "^0.5.5",
     "@paper-design/shaders-react": "^0.0.63",
@@ -42,9 +43,12 @@
     "@react-three/csg": "^4.0.0",
     "@react-three/fiber": "^9.4.0",
     "@react-three/postprocessing": "^3.0.4",
+    "@stripe/stripe-js": "^8.5.2",
+    "@supabase/supabase-js": "^2.81.1",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
+    "@xyflow/react": "^12.9.3",
     "canvas-confetti": "^1.9.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -67,6 +71,7 @@
     "react-use-measure": "^2.1.7",
     "recharts": "^2.15.0",
     "sonner": "^1.7.2",
+    "stripe": "^20.0.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.181.1",

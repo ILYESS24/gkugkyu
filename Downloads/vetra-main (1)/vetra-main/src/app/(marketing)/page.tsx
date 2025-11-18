@@ -275,7 +275,7 @@ const HomePage = () => {
             {/* Services Section */}
             <section id="services" className="py-20 px-6 bg-transparent z-10 relative">
                 <div className="max-w-7xl mx-auto relative">
-                    <GlowingEffect disabled={false} proximity={150} spread={35} blur={20} borderWidth={1} />
+                    <GlowingEffect disabled={false} proximity={150} spread={35} blur={20} borderWidth={2} />
                     <motion.div className="text-4xl md:text-6xl font-normal text-gray-900 mb-8 text-center" {...fadeInUp}>
                         <MagicText 
                             text="8 powerful tools. One seamless experience. Zero context switching."
@@ -299,12 +299,13 @@ const HomePage = () => {
                         ].map(({ Icon, ...service }, i) => (
                             <motion.div 
                                 key={i} 
-                                className={`${service.color} p-6 rounded-[28px] shadow-sm`}
+                                className={`${service.color} p-6 rounded-[28px] shadow-sm relative`}
                                 initial={{ opacity: 0, y: 30, scale: 0.9 }}
                                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
                             >
+                                <GlowingEffect disabled={false} proximity={60} spread={20} blur={12} borderWidth={1} />
                                 <div className="w-12 h-12 bg-white rounded-2xl mb-4 flex items-center justify-center">
                                     <Icon className="w-6 h-6" strokeWidth={1.5} style={{ color: service.iconColor }} />
                                 </div>
@@ -350,7 +351,7 @@ const HomePage = () => {
             {/* Testimonials Section */}
             <section className="py-20 px-6 bg-transparent z-10 relative">
                 <div className="max-w-6xl mx-auto relative">
-                    <GlowingEffect disabled={false} proximity={120} spread={30} blur={18} borderWidth={1} />
+                    <GlowingEffect disabled={false} proximity={120} spread={30} blur={18} borderWidth={2} />
                     {/* Mid-Section */}
                     <motion.div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_1fr] mb-6" {...fadeInUp}>
                         <motion.div 
@@ -360,6 +361,7 @@ const HomePage = () => {
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6 }}
                         >
+                            <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} variant="white" />
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black z-10"></div>
                             <div className="absolute inset-0 opacity-30 z-0">
                                 <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600"></div>
@@ -376,12 +378,13 @@ const HomePage = () => {
                         </motion.div>
 
                         <motion.div 
-                            className="rounded-[32px] bg-[#F4E181] p-10 flex flex-col justify-between text-gray-900"
+                            className="rounded-[32px] bg-[#F4E181] p-10 flex flex-col justify-between text-gray-900 relative"
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6 }}
                         >
+                            <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} />
                             <div>
                                 <p className="text-xs uppercase tracking-[0.2em] mb-6">FACTS & NUMBERS</p>
                             </div>
@@ -397,12 +400,13 @@ const HomePage = () => {
                     {/* Bottom Section */}
                     <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6" {...fadeInUp}>
                         <motion.div 
-                            className="rounded-[32px] bg-[#181818] text-white p-10 flex flex-col gap-6"
+                            className="rounded-[32px] bg-[#181818] text-white p-10 flex flex-col gap-6 relative"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5 }}
                         >
+                            <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} variant="white" />
                             <div>
                                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">SUCCESS STORY</p>
                                 <p className="text-2xl font-normal mb-6">"I canceled 6 subscriptions the day I joined AURION. Saved $300/month and built my MVP in 48 hours. Best decision I made this year."</p>
@@ -421,12 +425,13 @@ const HomePage = () => {
                         </motion.div>
 
                         <motion.div 
-                            className="rounded-[32px] bg-gray-50 p-10"
+                            className="rounded-[32px] bg-gray-50 p-10 relative"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: 0.1 }}
                         >
+                            <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} />
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">TRANSFORMATION</p>
                             <p className="text-2xl text-gray-900 mb-6">
                                 "Zero coding experience. Built a $50K/month app in 2 weeks. AURION's AI code editor made me feel like a senior developer. This is the future of building."
@@ -454,7 +459,46 @@ const HomePage = () => {
                     <motion.p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" {...fadeInUp}>
                         Stop paying for 10+ tools. <strong className="text-gray-900">AURION replaces them all at a fraction of the cost.</strong>
                     </motion.p>
-                    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8" {...fadeInUp}>
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...fadeInUp}>
+                        <motion.div 
+                            className="bg-white border-2 border-gray-200 rounded-2xl p-8"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <div className="mb-4 flex items-center justify-between">
+                                <span className="px-4 py-2 bg-gray-100 text-gray-900 rounded-full text-sm font-semibold">Basic</span>
+                                <span className="text-xs text-gray-500">Perfect Start</span>
+                            </div>
+                            <p className="text-sm text-gray-700 mb-6 font-medium">Perfect for trying out AURION. <strong className="text-gray-900">Get started for just €10/month.</strong></p>
+                            <div className="mb-4">
+                                <h3 className="text-5xl font-normal text-gray-900 inline">
+                                    €10<span className="text-2xl text-gray-600 font-normal">/month</span>
+                                </h3>
+                                <p className="text-sm text-gray-500 mt-2">Or €100/year (save 17%)</p>
+                            </div>
+                            <button
+                                onClick={() => router.push(`/checkout?plan=basic&billing=monthly`)}
+                                className="w-full inline-flex items-center justify-center gap-3 bg-[#212121] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-black mb-8"
+                            >
+                                <span>Subscribe Now</span>
+                                <span className="inline-flex w-7 h-7 rounded-full bg-white items-center justify-center flex-shrink-0">
+                                    <ArrowUpRight className="w-4 h-4 text-[#212121]" />
+                                </span>
+                            </button>
+                            <div>
+                                <p className="text-sm text-gray-900 mb-4 font-normal">Features</p>
+                                <ul className="space-y-3">
+                                    {["AI Website Builder (Basic)", "AI Content Generation (Limited)", "AI-Assisted Code Editor", "Component Library Access", "2 Projects", "Email Support"].map((feature, i) => (
+                                        <li key={i} className="flex items-center gap-3">
+                                            <Check className="w-5 h-5 text-gray-900" />
+                                            <span className="text-gray-700 font-normal">{feature}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </motion.div>
                         <motion.div 
                             className="bg-[#F4E181] rounded-2xl p-8"
                             initial={{ opacity: 0, x: -30 }}
@@ -474,10 +518,10 @@ const HomePage = () => {
                                 <p className="text-sm text-gray-500 mt-2">Save $170+/month vs. separate tools</p>
                             </div>
                             <button
-                                onClick={() => router.push("/login")}
+                                onClick={() => router.push(`/checkout?plan=starter&billing=monthly`)}
                                 className="w-full inline-flex items-center justify-center gap-3 bg-[#212121] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-black mb-8"
                             >
-                                <span>Let's Collaborate</span>
+                                <span>Subscribe Now</span>
                                 <span className="inline-flex w-7 h-7 rounded-full bg-white items-center justify-center flex-shrink-0">
                                     <ArrowUpRight className="w-4 h-4 text-[#212121]" />
                                 </span>
@@ -513,10 +557,10 @@ const HomePage = () => {
                                 <p className="text-sm text-white/80 mt-2">Save $400+/month vs. enterprise tools</p>
                             </div>
                             <button
-                                onClick={() => router.push("/login")}
+                                onClick={() => router.push(`/checkout?plan=pro&billing=monthly`)}
                                 className="w-full inline-flex items-center justify-center gap-3 bg-[#212121] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-black mb-8"
                             >
-                                <span>Let's Collaborate</span>
+                                <span>Subscribe Now</span>
                                 <span className="inline-flex w-7 h-7 rounded-full bg-white items-center justify-center flex-shrink-0">
                                     <ArrowUpRight className="w-4 h-4 text-[#212121]" />
                                 </span>
