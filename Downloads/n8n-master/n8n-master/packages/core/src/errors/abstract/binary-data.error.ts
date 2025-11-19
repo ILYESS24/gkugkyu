@@ -1,3 +1,3 @@
-import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@workflow-automation/errors';
 
 export abstract class BinaryDataError extends ApplicationError {}

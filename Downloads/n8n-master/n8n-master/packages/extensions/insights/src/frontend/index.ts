@@ -1,5 +1,5 @@
 import { markRaw } from 'vue';
-import { defineFrontendExtension } from '@n8n/extension-sdk/frontend';
+import { defineFrontendExtension } from '@workflow-automation/extension-sdk/frontend';
 import InsightsDashboard from './InsightsDashboard.vue';
 
 export default defineFrontendExtension({

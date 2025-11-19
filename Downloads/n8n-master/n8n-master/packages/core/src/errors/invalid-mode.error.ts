@@ -1,4 +1,4 @@
-import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@workflow-automation/errors';
 
 import { CONFIG_MODES } from '../binary-data/utils';
 

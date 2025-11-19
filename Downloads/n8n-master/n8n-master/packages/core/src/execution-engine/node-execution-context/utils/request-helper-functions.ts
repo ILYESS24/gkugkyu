@@ -12,8 +12,8 @@ import type {
 	ClientOAuth2RequestObject,
 	ClientOAuth2TokenData,
 	OAuth2CredentialData,
-} from '@n8n/client-oauth2';
-import { ClientOAuth2 } from '@n8n/client-oauth2';
+} from '@workflow-automation/client-oauth2';
+import { ClientOAuth2 } from '@workflow-automation/client-oauth2';
 import { Container } from '@workflow-automation/di';
 import type { AxiosError, AxiosHeaders, AxiosRequestConfig, AxiosResponse } from 'axios';
 import axios from 'axios';

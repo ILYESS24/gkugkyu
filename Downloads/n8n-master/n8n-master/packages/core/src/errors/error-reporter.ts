@@ -1,7 +1,7 @@
 ﻿import { inProduction, inTest, Logger } from '@workflow-automation/backend-common';
 import { type InstanceType } from '@workflow-automation/constants';
 import { Service } from '@workflow-automation/di';
-import type { ReportingOptions } from '@n8n/errors';
+import type { ReportingOptions } from '@workflow-automation/errors';
 import type { ErrorEvent, EventHint } from '@sentry/core';
 import type { NodeOptions } from '@sentry/node';
 import { AxiosError } from 'axios';

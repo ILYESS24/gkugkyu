@@ -1,5 +1,5 @@
 ﻿import { Service } from '@workflow-automation/di';
-import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@workflow-automation/errors';
 import type {
 	Workflow,
 	INode,

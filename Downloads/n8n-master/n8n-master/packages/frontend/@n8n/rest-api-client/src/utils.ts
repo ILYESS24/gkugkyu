@@ -1,5 +1,5 @@
 ﻿import { BROWSER_ID_STORAGE_KEY } from '@workflow-automation/constants';
-import { assert } from '@n8n/utils/assert';
+import { assert } from '@workflow-automation/utils/assert';
 import type { AxiosRequestConfig, Method, RawAxiosRequestHeaders } from 'axios';
 import axios from 'axios';
 import { ApplicationError, jsonParse } from 'workflow-automation-workflow';
