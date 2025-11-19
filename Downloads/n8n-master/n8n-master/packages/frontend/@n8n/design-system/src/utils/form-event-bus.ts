@@ -1,4 +1,4 @@
-import { createEventBus } from '@n8n/utils/event-bus';
+import { createEventBus } from '@workflow-automation/utils/event-bus';
 
 export interface FormEventBusEvents {
 	submit: never;
