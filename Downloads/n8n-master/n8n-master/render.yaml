@@ -4,8 +4,9 @@ services:
     env: node
     region: oregon
     plan: starter
+    rootDir: n8n-master
     buildCommand: pnpm install --frozen-lockfile && pnpm build
-    startCommand: bash scripts/render-start.sh
+    startCommand: cd packages/cli && node dist/index.js start
     envVars:
       - key: NODE_ENV
         value: production
