@@ -37,9 +37,9 @@
     "vue-i18n": "catalog:frontend"
   },
   "devDependencies": {
-    "@n8n/eslint-config": "workspace:*",
+    "@workflow-automation/eslint-config": "workspace:*",
     "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@workflow-automation/vitest-config": "workspace:*",
     "@testing-library/jest-dom": "catalog:frontend",
     "@testing-library/user-event": "catalog:frontend",
     "@testing-library/vue": "catalog:frontend",

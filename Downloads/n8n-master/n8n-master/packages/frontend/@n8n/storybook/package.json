@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/storybook",
+  "name": "@workflow-automation/storybook",
   "private": true,
   "version": "0.0.1",
   "devDependencies": {
