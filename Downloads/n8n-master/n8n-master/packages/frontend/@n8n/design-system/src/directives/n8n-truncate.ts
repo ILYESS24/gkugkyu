@@ -1,4 +1,4 @@
-import { truncate } from '@n8n/utils/string/truncate';
+import { truncate } from '@workflow-automation/utils/string/truncate';
 import type { DirectiveBinding, FunctionDirective } from 'vue';
 
 /**
