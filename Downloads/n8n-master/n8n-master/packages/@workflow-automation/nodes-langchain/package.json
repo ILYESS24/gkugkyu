@@ -210,7 +210,7 @@
     "@workflow-automation/json-schema-to-zod": "workspace:*",
     "@n8n/typeorm": "catalog:",
     "@workflow-automation/typescript-config": "workspace:*",
-    "@workflow-automation/vm2": "3.9.25",
+    "@n8n/vm2": "3.9.25",
     "@pinecone-database/pinecone": "^5.0.2",
     "@qdrant/js-client-rest": "1.14.1",
     "@supabase/supabase-js": "2.49.9",
