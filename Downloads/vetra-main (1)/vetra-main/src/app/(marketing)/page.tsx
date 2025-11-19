@@ -697,26 +697,30 @@ const HomePage = () => {
                         <div>
                             <h4 className="font-normal text-gray-900 mb-4">Resources</h4>
                             <ul className="space-y-2">
-                                <li><a href="/docs" className="text-gray-600 hover:text-gray-900">Documentation</a></li>
-                                <li><a href="/blog" className="text-gray-600 hover:text-gray-900">Blog</a></li>
+                                <li><a href="/about" className="text-gray-600 hover:text-gray-900">About Us</a></li>
                                 <li><a href="/contact" className="text-gray-600 hover:text-gray-900">Contact Us</a></li>
-                                <li><a href="/support" className="text-gray-600 hover:text-gray-900">Support</a></li>
+                                <li><a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a></li>
+                                <li><a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-normal text-gray-900 mb-4">Contact</h4>
-                            <ul className="space-y-2 text-gray-600">
-                                <li><a href="mailto:hello@aurion.ai" className="hover:text-gray-900">hello@aurion.ai</a></li>
-                                <li><a href="/contact" className="hover:text-gray-900">Get in Touch</a></li>
+                            <h4 className="font-normal text-gray-900 mb-4">Legal</h4>
+                            <ul className="space-y-2">
+                                <li><a href="/privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+                                <li><a href="/terms" className="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
+                                <li><a href="/cgv" className="text-gray-600 hover:text-gray-900">CGV</a></li>
+                                <li><a href="/cookies" className="text-gray-600 hover:text-gray-900">Cookie Policy</a></li>
+                                <li><a href="/legal" className="text-gray-600 hover:text-gray-900">Legal Notice</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-600 text-sm">©2025 AURION. All Rights Reserved.</p>
-                        <div className="flex gap-6 text-sm">
-                            <a href="/style-guide" className="text-gray-600 hover:text-gray-900">Style Guide</a>
-                            <a href="/licenses" className="text-gray-600 hover:text-gray-900">Licenses</a>
-                            <a href="/changelog" className="text-gray-600 hover:text-gray-900">Changelog</a>
+                        <div className="flex flex-wrap gap-4 text-sm">
+                            <a href="/privacy" className="text-gray-600 hover:text-gray-900">Privacy</a>
+                            <a href="/terms" className="text-gray-600 hover:text-gray-900">Terms</a>
+                            <a href="/legal" className="text-gray-600 hover:text-gray-900">Legal</a>
+                            <a href="/cookies" className="text-gray-600 hover:text-gray-900">Cookies</a>
                         </div>
                     </div>
                 </div>
