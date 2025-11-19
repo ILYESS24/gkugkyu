@@ -35,36 +35,36 @@ const HomePage = () => {
 
     const faqs = [
         {
-            question: "How much time will AURION actually save me?",
-            answer: "Our users report saving 20+ hours per week on average. Instead of switching between 10+ tools (website builder, content tools, code editors, design software), everything is in one place. One creator built their entire SaaS MVP in 48 hours—something that would have taken 3+ months with traditional tools."
+            question: "How much time will AURION save me?",
+            answer: "20+ hours per week. Everything in one place instead of switching between 10+ tools."
         },
         {
-            question: "Can AURION really replace all my existing tools?",
-            answer: "Yes. AURION consolidates website builders (like Webflow), content tools (like Jasper/Copy.ai), design tools (like Canva), code editors (like VS Code), AI image generators (like Midjourney), video tools, and more. Most users cancel 5-8 subscriptions within their first week. You get everything for a fraction of what you're paying now."
+            question: "Can AURION replace all my tools?",
+            answer: "Yes. Website builders, content tools, code editors, AI generators—all consolidated. Most users cancel 5-8 subscriptions in their first week."
         },
         {
-            question: "What if I'm not technical? Can I still build professional apps?",
-            answer: "Absolutely. AURION's AI handles the complexity. You describe what you want, and our AI builds it. Our AI code editor makes customizations accessible even for complete beginners. Many non-technical founders have built $50K+/month apps using AURION."
+            question: "What if I'm not technical?",
+            answer: "No problem. Describe what you want, AI builds it. Many non-technical founders have built $50K+/month apps."
         },
         {
-            question: "How powerful are the AI models? Are they really cutting-edge?",
-            answer: "We use the same advanced AI models powering the world's top AI companies—including GPT-4, Claude, and specialized models for code, images, and video. We continuously update to the latest models, so you always have access to state-of-the-art AI capabilities."
+            question: "How powerful are the AI models?",
+            answer: "We use GPT-4, Claude, and specialized models for code, images, and video. Always updated to the latest."
         },
         {
-            question: "What happens to my projects if I cancel?",
-            answer: "You own everything you create. All your code, content, and projects are yours to export at any time. We believe in creator ownership—no lock-in, no vendor dependency."
+            question: "What happens if I cancel?",
+            answer: "You own everything. Export all your code, content, and projects at any time. No lock-in."
         },
         {
-            question: "How does AURION compare to building with separate tools?",
-            answer: "Separate tools mean: 10+ subscriptions ($200-500/month), constant context switching (losing 2+ hours daily), files scattered across platforms, and no unified workflow. AURION gives you: one platform, one price, everything integrated, and 20+ hours saved weekly. The ROI is immediate."
+            question: "How does AURION compare to separate tools?",
+            answer: "Separate tools: 10+ subscriptions ($200-500/month), constant switching, scattered files. AURION: one platform, one price, 20+ hours saved weekly."
         },
         {
-            question: "Can I use AURION for client work or agencies?",
-            answer: "Yes! Many agencies use AURION to deliver client projects 3x faster. The Pro plan includes team collaboration, unlimited projects, and advanced features perfect for agencies managing multiple clients."
+            question: "Can I use AURION for client work?",
+            answer: "Yes. Many agencies deliver projects 3x faster. Pro plan includes team collaboration and unlimited projects."
         },
         {
-            question: "Is there a free trial? What's the refund policy?",
-            answer: "Yes, you can start building immediately with our free trial. If AURION doesn't save you time and money in your first 30 days, we'll refund 100%—no questions asked. We're that confident you'll love it."
+            question: "Is there a free trial?",
+            answer: "Yes. Start building immediately. 30-day money-back guarantee if we don't save you time and money."
         }
     ];
 
@@ -146,17 +146,13 @@ const HomePage = () => {
                     <GlowingEffect disabled={false} proximity={100} spread={40} blur={20} borderWidth={1} />
                     <motion.div className="mb-8" {...fadeInUp}>
                         <h1 className="text-[clamp(3rem,8vw,5.5rem)] leading-[1.1] font-bold text-gray-900 mb-2 text-left">
-                            <span className="block text-left">Stop losing time</span>
-                            <span className="block text-left">between 10+ tools.</span>
-                            <span className="block font-serif italic font-normal lowercase text-left">build everything in one place</span>
+                            <span className="block text-left">Build everything</span>
+                            <span className="block font-serif italic font-normal lowercase text-left">in one place</span>
                         </h1>
                     </motion.div>
                     <motion.div className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 text-left" {...fadeInUp}>
-                        <p className="text-lg md:text-xl leading-relaxed text-left mb-4">
-                            <strong className="text-gray-900">AURION is the only platform</strong> where you can create your entire business: professional websites, mobile apps, AI-generated content (text, images, videos), intelligent agents, and custom code—all powered by the world's most advanced AI models.
-                        </p>
-                        <p className="text-base text-gray-500 italic">
-                            Join 10,000+ creators who've eliminated tool-switching chaos and built their businesses 10x faster.
+                        <p className="text-lg md:text-xl leading-relaxed text-left">
+                            Websites, apps, content, AI agents. <strong className="text-gray-900">All powered by advanced AI.</strong>
                         </p>
                     </motion.div>
                     <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8">
@@ -224,14 +220,13 @@ const HomePage = () => {
                     <motion.div className="text-center mb-16" {...fadeInUp}>
                         <div className="text-4xl md:text-6xl font-normal text-gray-900 mb-6">
                             <MagicText 
-                                text="The platform that replaces 10+ tools and saves you 20+ hours per week"
+                                text="Replace 10+ tools. Save 20+ hours per week."
                                 className="text-4xl md:text-6xl"
                                 wordClassName="text-4xl md:text-6xl"
                             />
                         </div>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                            No more context switching. No more subscription fatigue. No more "where did I save that file?" 
-                            <strong className="text-gray-900"> Everything you need to build, launch, and scale your business—powered by cutting-edge AI.</strong>
+                            <strong className="text-gray-900">Everything you need to build your business—powered by AI.</strong>
                         </p>
                         <motion.div className="flex items-center justify-center gap-6 text-gray-900 font-normal flex-wrap" {...fadeInUp}>
                             <div className="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#F3E7FF] text-[#6F3AFF]">
@@ -285,24 +280,24 @@ const HomePage = () => {
                     <GlowingEffect disabled={false} proximity={150} spread={35} blur={20} borderWidth={2} />
                     <motion.div className="text-4xl md:text-6xl font-normal text-gray-900 mb-8 text-center" {...fadeInUp}>
                         <MagicText 
-                            text="8 powerful tools. One seamless experience. Zero context switching."
+                            text="8 tools. One platform."
                             className="text-4xl md:text-6xl"
                             wordClassName="text-4xl md:text-6xl"
                         />
                     </motion.div>
                     <motion.p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" {...fadeInUp}>
-                        Stop paying for 10+ separate subscriptions. <strong className="text-gray-900">Everything you need to build your business is here.</strong>
+                        <strong className="text-gray-900">Everything you need to build your business.</strong>
                     </motion.p>
                     <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                         {[
-                            { name: "AI Website Builder", description: "Launch professional sites in minutes, not weeks", benefit: "Save 40+ hours per project", color: "bg-[#F1E8FF]", Icon: Monitor, iconColor: "#8452CF" },
-                            { name: "App Creator", description: "Build mobile & web apps with AI that writes production-ready code", benefit: "Ship 10x faster", color: "bg-[#FCE7EC]", Icon: Code, iconColor: "#D16B7B" },
-                            { name: "AI Content Studio", description: "Generate blog posts, images, videos—all in one place", benefit: "Create 50+ pieces/day", color: "bg-[#E6F0FF]", Icon: FileText, iconColor: "#3A6BC8" },
-                            { name: "AI Agents", description: "Deploy intelligent agents that work 24/7 for your business", benefit: "Automate repetitive tasks", color: "bg-[#FFEFD9]", Icon: Bot, iconColor: "#E09549" },
-                            { name: "Smart Code Editor", description: "AI that understands your codebase and suggests improvements", benefit: "Code like a senior dev", color: "bg-[#E7F6EA]", Icon: Code, iconColor: "#1D855C" },
-                            { name: "AI Image Generator", description: "Create stunning visuals that match your brand instantly", benefit: "No design skills needed", color: "bg-[#F3E7FF]", Icon: Image, iconColor: "#6F3AFF" },
-                            { name: "AI Video Creator", description: "Generate professional videos for social media & marketing", benefit: "Pro videos in minutes", color: "bg-[#E0ECFF]", Icon: Video, iconColor: "#2E61B5" },
-                            { name: "Component Library", description: "10,000+ pre-built UI components ready to customize", benefit: "Build without starting from scratch", color: "bg-[#DCF6E6]", Icon: Layers, iconColor: "#1B7A4F" },
+                            { name: "AI Website Builder", description: "Launch sites in minutes", benefit: "Save 40+ hours", color: "bg-[#F1E8FF]", Icon: Monitor, iconColor: "#8452CF" },
+                            { name: "App Creator", description: "Build apps with AI", benefit: "Ship 10x faster", color: "bg-[#FCE7EC]", Icon: Code, iconColor: "#D16B7B" },
+                            { name: "AI Content Studio", description: "Generate text, images, videos", benefit: "50+ pieces/day", color: "bg-[#E6F0FF]", Icon: FileText, iconColor: "#3A6BC8" },
+                            { name: "AI Agents", description: "Automate your business", benefit: "Work 24/7", color: "bg-[#FFEFD9]", Icon: Bot, iconColor: "#E09549" },
+                            { name: "Smart Code Editor", description: "AI-powered coding", benefit: "Code like a pro", color: "bg-[#E7F6EA]", Icon: Code, iconColor: "#1D855C" },
+                            { name: "AI Image Generator", description: "Create visuals instantly", benefit: "No design skills", color: "bg-[#F3E7FF]", Icon: Image, iconColor: "#6F3AFF" },
+                            { name: "AI Video Creator", description: "Generate videos fast", benefit: "Pro videos in minutes", color: "bg-[#E0ECFF]", Icon: Video, iconColor: "#2E61B5" },
+                            { name: "Component Library", description: "10,000+ UI components", benefit: "Build faster", color: "bg-[#DCF6E6]", Icon: Layers, iconColor: "#1B7A4F" },
                         ].map(({ Icon, ...service }, i) => (
                             <motion.div 
                                 key={i} 
@@ -332,12 +327,12 @@ const HomePage = () => {
                         <GlowingEffect disabled={false} proximity={100} spread={50} blur={25} borderWidth={2} />
                         <div className="text-3xl font-normal leading-snug">
                             <MagicText 
-                                text="The average creator wastes 20+ hours per week switching between tools. You don't have to."
+                                text="Stop wasting 20+ hours per week switching tools."
                                 className="text-3xl"
                                 wordClassName="text-3xl"
                             />
                             <p className="text-lg text-white/80 mt-4">
-                                Join thousands who've consolidated everything into AURION and <strong>reclaimed their time.</strong>
+                                Join thousands who've <strong>reclaimed their time.</strong>
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -375,11 +370,11 @@ const HomePage = () => {
                             </div>
                             <div className="relative z-20">
                                 <p className="text-2xl md:text-3xl font-normal leading-snug mb-6">
-                                    "I was paying $500+/month for 8 different tools. AURION replaced them all. I built my entire SaaS in 3 days instead of 3 months. This platform is a game-changer."
+                                    "AURION replaced 8 tools. Built my SaaS in 3 days instead of 3 months."
                                 </p>
                                 <div className="text-sm">
                                     <p className="font-semibold text-white">Alex Chen</p>
-                                    <p className="text-gray-300">Founder of TechFlow • $2M ARR</p>
+                                    <p className="text-gray-300">Founder • $2M ARR</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -416,7 +411,7 @@ const HomePage = () => {
                             <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} variant="white" />
                             <div>
                                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">SUCCESS STORY</p>
-                                <p className="text-2xl font-normal mb-6">"I canceled 6 subscriptions the day I joined AURION. Saved $300/month and built my MVP in 48 hours. Best decision I made this year."</p>
+                                <p className="text-2xl font-normal mb-6">"Canceled 6 subscriptions. Saved $300/month. Built MVP in 48 hours."</p>
                                 <div className="text-sm text-gray-300 mt-4">
                                     <p className="font-semibold text-white">Sarah Martinez</p>
                                     <p>Indie Hacker • 50K+ users</p>
@@ -441,7 +436,7 @@ const HomePage = () => {
                             <GlowingEffect disabled={false} proximity={80} spread={25} blur={15} borderWidth={1.5} />
                             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">TRANSFORMATION</p>
                             <p className="text-2xl text-gray-900 mb-6">
-                                "Zero coding experience. Built a $50K/month app in 2 weeks. AURION's AI code editor made me feel like a senior developer. This is the future of building."
+                                "Zero coding. Built $50K/month app in 2 weeks. This is the future."
                             </p>
                             <div className="text-sm text-gray-600">
                                 <p className="text-gray-900 font-semibold">Maria Rodriguez</p>
@@ -458,13 +453,13 @@ const HomePage = () => {
                     <GlowingEffect disabled={false} proximity={150} spread={40} blur={20} borderWidth={1} />
                     <motion.div className="text-4xl md:text-6xl font-normal text-gray-900 mb-8 text-center" {...fadeInUp}>
                         <MagicText 
-                            text="One platform. One price. Everything included."
+                            text="One platform. One price."
                             className="text-4xl md:text-6xl"
                             wordClassName="text-4xl md:text-6xl"
                         />
                     </motion.div>
                     <motion.p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" {...fadeInUp}>
-                        Stop paying for 10+ tools. <strong className="text-gray-900">AURION replaces them all at a fraction of the cost.</strong>
+                        <strong className="text-gray-900">Replaces 10+ tools at a fraction of the cost.</strong>
                     </motion.p>
                     <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...fadeInUp}>
                         <motion.div 
@@ -478,7 +473,7 @@ const HomePage = () => {
                                 <span className="px-4 py-2 bg-gray-100 text-gray-900 rounded-full text-sm font-semibold">Basic</span>
                                 <span className="text-xs text-gray-500">Perfect Start</span>
                             </div>
-                            <p className="text-sm text-gray-700 mb-6 font-medium">Perfect for trying out AURION. <strong className="text-gray-900">Get started for just €10/month.</strong></p>
+                            <p className="text-sm text-gray-700 mb-6 font-medium"><strong className="text-gray-900">€10/month.</strong> Perfect start.</p>
                             <div className="mb-4">
                                 <h3 className="text-5xl font-normal text-gray-900 inline">
                                     €10<span className="text-2xl text-gray-600 font-normal">/month</span>
@@ -517,7 +512,7 @@ const HomePage = () => {
                                 <span className="px-4 py-2 bg-black text-white rounded-full text-sm font-semibold">Starter</span>
                                 <span className="text-xs text-gray-500">Most Popular</span>
                             </div>
-                            <p className="text-sm text-gray-700 mb-6 font-medium">Perfect for solo creators and small teams. <strong className="text-gray-900">Replaces $200+/month in tools.</strong></p>
+                            <p className="text-sm text-gray-700 mb-6 font-medium"><strong className="text-gray-900">$29/month.</strong> Replaces $200+/month in tools.</p>
                             <div className="mb-4">
                                 <h3 className="text-5xl font-normal text-gray-900 inline">
                                     $29<span className="text-2xl text-gray-600 font-normal">/month</span>
@@ -556,7 +551,7 @@ const HomePage = () => {
                                 <span className="px-4 py-2 bg-white text-[#2563EB] rounded-full text-sm font-semibold">Pro</span>
                                 <span className="text-xs text-white/90 bg-white/20 px-3 py-1 rounded-full">Best Value</span>
                             </div>
-                            <p className="text-sm text-white/90 mb-6 font-medium">For serious builders. <strong className="text-white">Replaces $500+/month in enterprise tools.</strong></p>
+                            <p className="text-sm text-white/90 mb-6 font-medium"><strong className="text-white">$99/month.</strong> Replaces $500+/month in tools.</p>
                             <div className="mb-4">
                                 <h3 className="text-5xl font-normal mb-2 inline">
                                     $99<span className="text-2xl text-white/80 font-normal">/month</span>
@@ -591,16 +586,13 @@ const HomePage = () => {
             {/* FAQ Section */}
             <section className="py-20 px-6 bg-transparent z-10 relative">
                 <div className="max-w-4xl mx-auto">
-                    <motion.div className="text-4xl md:text-6xl font-normal text-gray-900 mb-8 text-center" {...fadeInUp}>
+                    <motion.div className="text-4xl md:text-6xl font-normal text-gray-900 mb-16 text-center" {...fadeInUp}>
                         <MagicText 
-                            text="Everything you need to know"
+                            text="Questions?"
                             className="text-4xl md:text-6xl"
                             wordClassName="text-4xl md:text-6xl"
                         />
                     </motion.div>
-                    <motion.p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" {...fadeInUp}>
-                        Common questions from creators like you
-                    </motion.p>
                     <motion.div className="space-y-4" {...fadeInUp}>
                         {faqs.map((faq, i) => (
                             <motion.div 
@@ -645,17 +637,14 @@ const HomePage = () => {
                         <div className="text-center">
                             <motion.div className="text-4xl md:text-5xl font-normal text-gray-900 mb-6" {...fadeInUp}>
                                 <MagicText 
-                                    text="Stop paying for 10+ tools. Start building everything in one place."
+                                    text="Stop paying for 10+ tools."
                                     className="text-4xl md:text-5xl"
                                     wordClassName="text-4xl md:text-5xl"
                                 />
                             </motion.div>
                             <motion.div className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto" {...fadeInUp}>
-                                <p className="mb-4">
-                                    <strong className="text-gray-900">Join 10,000+ creators</strong> who've eliminated tool-switching chaos and reclaimed 20+ hours per week.
-                                </p>
-                                <p className="text-base text-gray-500">
-                                    Build your entire business—websites, apps, content, AI agents—powered by the world's most advanced AI. <strong className="text-gray-700">All in one platform. All for one price.</strong>
+                                <p>
+                                    <strong className="text-gray-900">Join 10,000+ creators</strong> who've reclaimed 20+ hours per week. <strong className="text-gray-700">All in one platform. One price.</strong>
                                 </p>
                             </motion.div>
                             <button
@@ -679,7 +668,7 @@ const HomePage = () => {
                         <div>
                             <div className="text-2xl font-bold mb-4">AURION</div>
                             <p className="text-gray-600 mb-4">
-                                The all-in-one AI platform that creates professional websites, applications, content, and AI agents. Build your entire business in one place.
+                                Build your entire business in one place. Powered by AI.
                             </p>
                             <div className="flex gap-4">
                                 <a href="#" className="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
