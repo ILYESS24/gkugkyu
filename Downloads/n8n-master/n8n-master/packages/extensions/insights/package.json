@@ -48,8 +48,8 @@
     "@n8n/extension-sdk": "workspace:*"
   },
   "devDependencies": {
-    "@n8n/stylelint-config": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
+    "@workflow-automation/stylelint-config": "workspace:*",
+    "@workflow-automation/typescript-config": "workspace:*",
     "@vitejs/plugin-vue": "catalog:frontend",
     "@vue/tsconfig": "catalog:frontend",
     "tsdown": "catalog:",
