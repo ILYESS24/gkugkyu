@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAuthenticatedUser } from '@/lib/supabase-server-api';
+import { z } from 'zod';
+import { secureAPI, getSecurityHeaders } from '@/lib/security/middleware';
+import { logAuditEvent } from '@/lib/security/audit-log';
 import { aiOrchestrator } from '@/lib/ai/orchestrator';
 import { canGenerateAI, trackAIGeneration, canMakeAPICall, trackAPICall } from '@/lib/subscription-checker';
 
@@ -8,44 +10,97 @@ import { canGenerateAI, trackAIGeneration, canMakeAPICall, trackAPICall } from '
  * Chat avec l'IA (streaming support)
  */
 export async function POST(request: NextRequest) {
+  const endpoint = '/api/ai/chat';
+  
+  // Sécurité : authentification, rate limiting, validation
+  const security = await secureAPI(request, {
+    requireAuth: true,
+    rateLimit: true,
+    validateSchema: z.object({
+      messages: z.array(z.object({
+        role: z.enum(['user', 'assistant', 'system']),
+        content: z.string().min(1).max(10000),
+      })).min(1).max(100),
+      model: z.enum(['deepseek', 'openai', 'ollama']).optional(),
+      stream: z.boolean().optional(),
+    }),
+    action: 'ai_chat',
+    resourceType: 'ai',
+  });
+
+  if (!security.success) {
+    return security.response;
+  }
+
+  const { context } = security;
+  let body: any;
+
   try {
-    const { user, supabase } = await getAuthenticatedUser(request);
+    body = await request.json();
+  } catch (error) {
+    await logAuditEvent({
+      user_id: context.user.id,
+      action: 'invalid_request',
+      resource_type: 'ai',
+      endpoint,
+      method: 'POST',
+      ip_address: context.ip,
+      user_agent: context.userAgent,
+      status: 'blocked',
+      error_message: 'Invalid JSON',
+    });
+    return NextResponse.json(
+      { error: 'Invalid JSON', code: 'INVALID_JSON' },
+      { status: 400, headers: getSecurityHeaders() }
+    );
+  }
 
-    if (!user) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const body = await request.json();
+  try {
     const { messages, model, stream } = body;
 
-    if (!messages || !Array.isArray(messages) || messages.length === 0) {
-      return NextResponse.json(
-        { error: 'Messages array is required' },
-        { status: 400 }
-      );
-    }
-
     // Vérifier les limites d'abonnement pour les générations AI (chat = text)
-    const limitCheck = await canGenerateAI(user.id, 'text');
+    const limitCheck = await canGenerateAI(context.user.id, 'text');
     if (!limitCheck.allowed) {
+      await logAuditEvent({
+        user_id: context.user.id,
+        action: 'subscription_limit_exceeded',
+        resource_type: 'ai',
+        endpoint,
+        method: 'POST',
+        ip_address: context.ip,
+        user_agent: context.userAgent,
+        status: 'blocked',
+        error_message: limitCheck.message,
+      });
       return NextResponse.json(
         { 
           error: limitCheck.message || 'Limite de génération IA atteinte',
           code: 'SUBSCRIPTION_LIMIT_EXCEEDED'
         },
-        { status: 403 }
+        { status: 403, headers: getSecurityHeaders() }
       );
     }
 
     // Vérifier les limites d'appels API
-    const apiLimitCheck = await canMakeAPICall(user.id);
+    const apiLimitCheck = await canMakeAPICall(context.user.id);
     if (!apiLimitCheck.allowed) {
+      await logAuditEvent({
+        user_id: context.user.id,
+        action: 'api_limit_exceeded',
+        resource_type: 'ai',
+        endpoint,
+        method: 'POST',
+        ip_address: context.ip,
+        user_agent: context.userAgent,
+        status: 'blocked',
+        error_message: apiLimitCheck.message,
+      });
       return NextResponse.json(
         { 
           error: apiLimitCheck.message || 'Limite d\'appels API atteinte',
           code: 'SUBSCRIPTION_LIMIT_EXCEEDED'
         },
-        { status: 403 }
+        { status: 403, headers: getSecurityHeaders() }
       );
     }
 
@@ -144,46 +199,66 @@ export async function POST(request: NextRequest) {
     });
 
     // Enregistrer la génération AI et l'appel API
-    await trackAIGeneration(user.id, 'text', {
+    await trackAIGeneration(context.user.id, 'text', {
       task: 'chat',
       model: response.model,
       tokens: response.tokens,
       cost: response.cost,
       messagesCount: messages.length,
     });
-    await trackAPICall(user.id, '/api/ai/chat');
+    await trackAPICall(context.user.id, '/api/ai/chat');
 
-    // Enregistrer l'activité
-    await (supabase as any)
-      .from('realtime_activity')
-      .insert({
-        user_id: user.id,
-        tool_name: 'ai_orchestrator',
-        activity_type: 'ai_chat',
-        activity_data: {
-          messagesCount: messages.length,
-          model: response.model,
-          tokens: response.tokens,
-        },
-      });
-
-    return NextResponse.json({
-      success: true,
-      message: {
-        role: 'assistant',
-        content: response.content,
-      },
+    // Audit log - succès
+    await logAuditEvent({
+      user_id: context.user.id,
+      action: 'ai_chat_success',
+      resource_type: 'ai',
+      endpoint,
+      method: 'POST',
+      ip_address: context.ip,
+      user_agent: context.userAgent,
+      status: 'success',
       metadata: {
+        messagesCount: messages.length,
         model: response.model,
         tokens: response.tokens,
-        cost: response.cost,
       },
     });
+
+    return NextResponse.json(
+      {
+        success: true,
+        message: {
+          role: 'assistant',
+          content: response.content,
+        },
+        metadata: {
+          model: response.model,
+          tokens: response.tokens,
+          cost: response.cost,
+        },
+      },
+      { headers: getSecurityHeaders() }
+    );
   } catch (error: any) {
     console.error('AI chat error:', error);
+    
+    // Audit log - erreur
+    await logAuditEvent({
+      user_id: context.user.id,
+      action: 'ai_chat_error',
+      resource_type: 'ai',
+      endpoint,
+      method: 'POST',
+      ip_address: context.ip,
+      user_agent: context.userAgent,
+      status: 'failure',
+      error_message: error.message || 'AI chat failed',
+    });
+
     return NextResponse.json(
-      { error: error.message || 'AI chat failed' },
-      { status: 500 }
+      { error: error.message || 'AI chat failed', code: 'INTERNAL_ERROR' },
+      { status: 500, headers: getSecurityHeaders() }
     );
   }
 }
