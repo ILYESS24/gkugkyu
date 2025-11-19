@@ -1,5 +1,5 @@
 import eslint from '@eslint/js';
-import { n8nCommunityNodesPlugin } from '@n8n/eslint-plugin-community-nodes';
+import { n8nCommunityNodesPlugin } from '@workflow-automation/eslint-plugin-community-nodes';
 import { globalIgnores } from 'eslint/config';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import importPlugin from 'eslint-plugin-import-x';
