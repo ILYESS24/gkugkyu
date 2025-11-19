@@ -4,7 +4,7 @@ import { renameSync, writeFileSync, readFileSync } from 'fs';
 import vue from '@vitejs/plugin-vue';
 import icons from 'unplugin-icons/vite';
 import dts from 'vite-plugin-dts';
-import { vitestConfig } from '@n8n/vitest-config/frontend';
+import { vitestConfig } from '@workflow-automation/vitest-config/frontend';
 import pkg from './package.json';
 
 const includeVue = process.env.INCLUDE_VUE === 'true';
