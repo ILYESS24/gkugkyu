@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@n8n/stylelint-config",
+  "name": "@workflow-automation/stylelint-config",
   "type": "module",
   "version": "0.0.1",
   "exports": {

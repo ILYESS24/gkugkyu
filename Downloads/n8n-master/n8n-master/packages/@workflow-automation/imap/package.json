@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/imap",
+  "name": "@workflow-automation/imap",
   "version": "0.15.0",
   "scripts": {
     "clean": "rimraf dist .turbo",

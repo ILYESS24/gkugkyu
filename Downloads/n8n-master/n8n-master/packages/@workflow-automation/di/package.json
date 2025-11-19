@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/di",
+  "name": "@workflow-automation/di",
   "version": "0.9.0",
   "scripts": {
     "clean": "rimraf dist .turbo",

@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/vitest-config",
+  "name": "@workflow-automation/vitest-config",
   "version": "1.5.0",
   "type": "module",
   "peerDependencies": {

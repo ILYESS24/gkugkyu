@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/backend-common",
+  "name": "@workflow-automation/backend-common",
   "version": "0.31.0",
   "scripts": {
     "clean": "rimraf dist .turbo",

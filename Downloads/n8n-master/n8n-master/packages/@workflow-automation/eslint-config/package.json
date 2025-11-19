@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@n8n/eslint-config",
+  "name": "@workflow-automation/eslint-config",
   "type": "module",
   "version": "0.0.1",
   "exports": {

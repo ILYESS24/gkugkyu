@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/node-cli",
+  "name": "@workflow-automation/node-cli",
   "version": "0.16.0",
   "description": "Official CLI for developing community nodes for n8n",
   "bin": {

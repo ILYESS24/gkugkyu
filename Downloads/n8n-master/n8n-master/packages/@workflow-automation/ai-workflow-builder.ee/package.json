@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/ai-workflow-builder",
+  "name": "@workflow-automation/ai-workflow-builder",
   "version": "0.31.0",
   "scripts": {
     "clean": "rimraf dist .turbo",

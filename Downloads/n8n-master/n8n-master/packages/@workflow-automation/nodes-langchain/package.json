@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/n8n-nodes-langchain",
+  "name": "@workflow-automation/n8n-nodes-langchain",
   "version": "1.120.0",
   "description": "",
   "main": "index.js",

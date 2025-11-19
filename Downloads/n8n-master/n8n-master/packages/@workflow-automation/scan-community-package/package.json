@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/scan-community-package",
+  "name": "@workflow-automation/scan-community-package",
   "version": "0.8.0",
   "description": "Static code analyser for n8n community packages",
   "license": "none",

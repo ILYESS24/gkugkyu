@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/eslint-plugin-community-nodes",
+  "name": "@workflow-automation/eslint-plugin-community-nodes",
   "type": "module",
   "version": "0.6.0",
   "main": "./dist/plugin.js",
