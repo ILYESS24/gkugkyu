@@ -1,0 +1,56 @@
+services:
+  - type: web
+    name: workflow-automation
+    env: node
+    nodeVersion: 22.16.0
+    region: oregon
+    plan: starter
+    buildCommand: pnpm install --frozen-lockfile && pnpm build
+    startCommand: cd packages/cli && node dist/index.js start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render fournit automatiquement PORT, n8n l'utilise via N8N_PORT ou PORT
+      - key: N8N_PORT
+        fromService:
+          type: web
+          name: workflow-automation
+          property: port
+      # Configuration de la base de données PostgreSQL
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        fromDatabase:
+          name: workflow-automation-db
+          property: host
+      - key: DB_POSTGRESDB_PORT
+        fromDatabase:
+          name: workflow-automation-db
+          property: port
+      - key: DB_POSTGRESDB_DATABASE
+        fromDatabase:
+          name: workflow-automation-db
+          property: database
+      - key: DB_POSTGRESDB_USER
+        fromDatabase:
+          name: workflow-automation-db
+          property: user
+      - key: DB_POSTGRESDB_PASSWORD
+        fromDatabase:
+          name: workflow-automation-db
+          property: password
+      # Configuration de l'URL de base (optionnel, Render le fait automatiquement)
+      - key: N8N_PROTOCOL
+        value: https
+      # Désactiver le tunnel (non nécessaire sur Render)
+      - key: N8N_DISABLE_PRODUCTION_MAIN_PROCESS
+        value: "false"
+    healthCheckPath: /healthz
+
+databases:
+  - name: workflow-automation-db
+    databaseName: workflow_automation
+    user: workflow_automation_user
+    plan: starter
+    region: oregon
+
