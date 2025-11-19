@@ -5,7 +5,7 @@ import { cx } from "class-variance-authority"
 import { type ClassValue } from "clsx"
 import { AnimatePresence, motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib"
+import { cn } from "@/lib/cn"
 import { apiRequest } from "@/lib/api-client"
 import { Lightbulb, Sparkles } from "lucide-react"
 
@@ -71,109 +71,7 @@ const ColorOrb: React.FC<OrbProps> = ({
         "--shadow": `${shadowRange}px`,
         "--mask": maskRadius,
       } as React.CSSProperties}
-    >
-      <style jsx>{`
-        @property --angle {
-          syntax: "<angle>";
-          inherits: false;
-          initial-value: 0deg;
-        }
-
-        .color-orb {
-          display: grid;
-          grid-template-areas: "stack";
-          overflow: hidden;
-          border-radius: 50%;
-          position: relative;
-          transform: scale(1.1);
-        }
-
-        .color-orb::before,
-        .color-orb::after {
-          content: "";
-          display: block;
-          grid-area: stack;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          transform: translateZ(0);
-        }
-
-        .color-orb::before {
-          background:
-            conic-gradient(
-              from calc(var(--angle) * 2) at 25% 70%,
-              var(--accent3),
-              transparent 20% 80%,
-              var(--accent3)
-            ),
-            conic-gradient(
-              from calc(var(--angle) * 2) at 45% 75%,
-              var(--accent2),
-              transparent 30% 60%,
-              var(--accent2)
-            ),
-            conic-gradient(
-              from calc(var(--angle) * -3) at 80% 20%,
-              var(--accent1),
-              transparent 40% 60%,
-              var(--accent1)
-            ),
-            conic-gradient(
-              from calc(var(--angle) * 2) at 15% 5%,
-              var(--accent2),
-              transparent 10% 90%,
-              var(--accent2)
-            ),
-            conic-gradient(
-              from calc(var(--angle) * 1) at 20% 80%,
-              var(--accent1),
-              transparent 10% 90%,
-              var(--accent1)
-            ),
-            conic-gradient(
-              from calc(var(--angle) * -2) at 85% 10%,
-              var(--accent3),
-              transparent 20% 80%,
-              var(--accent3)
-            );
-          box-shadow: inset var(--base) 0 0 var(--shadow) calc(var(--shadow) * 0.2);
-          filter: blur(var(--blur)) contrast(var(--contrast));
-          animation: spin var(--spin-duration) linear infinite;
-        }
-
-        .color-orb::after {
-          background-image: radial-gradient(
-            circle at center,
-            var(--base) var(--dot),
-            transparent var(--dot)
-          );
-          background-size: calc(var(--dot) * 2) calc(var(--dot) * 2);
-          backdrop-filter: blur(calc(var(--blur) * 2)) contrast(calc(var(--contrast) * 2));
-          mix-blend-mode: overlay;
-        }
-
-        .color-orb[style*="--mask: 0%"]::after {
-          mask-image: none;
-        }
-
-        .color-orb:not([style*="--mask: 0%"])::after {
-          mask-image: radial-gradient(black var(--mask), transparent 75%);
-        }
-
-        @keyframes spin {
-          to {
-            --angle: 360deg;
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          .color-orb::before {
-            animation: none;
-          }
-        }
-      `}</style>
-    </div>
+    />
   )
 }
 
@@ -368,7 +266,15 @@ function DockBar({ recommendations }: { recommendations: Recommendation[] }) {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <ColorOrb dimension="24px" tones={{ base: "oklch(22.64% 0 0)" }} />
+                <ColorOrb 
+                  dimension="24px" 
+                  tones={{ 
+                    base: "oklch(95% 0.02 264.695)",
+                    accent1: "oklch(75% 0.15 350)",
+                    accent2: "oklch(80% 0.12 200)",
+                    accent3: "oklch(78% 0.14 280)"
+                  }} 
+                />
               </motion.div>
             )}
           </AnimatePresence>
