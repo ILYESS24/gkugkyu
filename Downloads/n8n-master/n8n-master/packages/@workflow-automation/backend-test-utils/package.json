@@ -27,7 +27,7 @@
     "@workflow-automation/db": "workspace:^",
     "@workflow-automation/di": "workspace:^",
     "@workflow-automation/permissions": "workspace:^",
-    "@workflow-automation/typeorm": "catalog:",
+    "@n8n/typeorm": "catalog:",
     "jest-mock-extended": "^3.0.4",
     "workflow-automation-workflow": "workspace:^",
     "reflect-metadata": "catalog:",

@@ -208,7 +208,7 @@
     "@workflow-automation/di": "workspace:*",
     "@workflow-automation/errors": "workspace:^",
     "@workflow-automation/json-schema-to-zod": "workspace:*",
-    "@workflow-automation/typeorm": "catalog:",
+    "@n8n/typeorm": "catalog:",
     "@workflow-automation/typescript-config": "workspace:*",
     "@workflow-automation/vm2": "3.9.25",
     "@pinecone-database/pinecone": "^5.0.2",

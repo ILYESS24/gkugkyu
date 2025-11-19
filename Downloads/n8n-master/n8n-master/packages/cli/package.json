@@ -109,7 +109,7 @@
     "@workflow-automation/workflow-automation-nodes-langchain": "workspace:*",
     "@workflow-automation/permissions": "workspace:*",
     "@workflow-automation/task-runner": "workspace:*",
-    "@workflow-automation/typeorm": "catalog:",
+    "@n8n/typeorm": "catalog:",
     "@n8n_io/ai-assistant-sdk": "catalog:",
     "@workflow-automation_io/license-sdk": "2.24.1",
     "@rudderstack/rudder-sdk-node": "2.1.4",

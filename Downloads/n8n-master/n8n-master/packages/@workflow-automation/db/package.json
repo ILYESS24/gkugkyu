@@ -28,7 +28,7 @@
     "@workflow-automation/decorators": "workspace:^",
     "@workflow-automation/di": "workspace:^",
     "@workflow-automation/permissions": "workspace:^",
-    "@workflow-automation/typeorm": "catalog:",
+    "@n8n/typeorm": "catalog:",
     "class-validator": "0.14.0",
     "flatted": "catalog:",
     "lodash": "catalog:",
