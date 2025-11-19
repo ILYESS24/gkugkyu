@@ -1,5 +1,5 @@
-﻿import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@n8n/imap';
-import { connect as imapConnect, getParts } from '@n8n/imap';
+﻿import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@workflow-automation/imap';
+import { connect as imapConnect, getParts } from '@workflow-automation/imap';
 import find from 'lodash/find';
 import isEmpty from 'lodash/isEmpty';
 import type { Source as ParserSource } from 'mailparser';

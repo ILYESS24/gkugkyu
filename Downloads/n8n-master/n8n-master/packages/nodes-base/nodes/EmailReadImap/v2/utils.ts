@@ -4,7 +4,7 @@
 	type Message,
 	type MessagePart,
 	type SearchCriteria,
-} from '@n8n/imap';
+} from '@workflow-automation/imap';
 import find from 'lodash/find';
 import { simpleParser, type Source as ParserSource } from 'mailparser';
 import {

@@ -6,8 +6,8 @@ import type {
 	Message,
 	MessagePart,
 	SearchCriteria,
-} from '@n8n/imap';
-import { connect as imapConnect } from '@n8n/imap';
+} from '@workflow-automation/imap';
+import { connect as imapConnect } from '@workflow-automation/imap';
 import isEmpty from 'lodash/isEmpty';
 import { DateTime } from 'luxon';
 import type {
