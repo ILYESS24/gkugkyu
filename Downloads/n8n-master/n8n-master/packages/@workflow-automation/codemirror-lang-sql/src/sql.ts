@@ -9,7 +9,7 @@ import {
 import type { Extension } from '@codemirror/state';
 import { parseMixed } from '@lezer/common';
 import { styleTags, tags as t } from '@lezer/highlight';
-import { expressionParser } from '@n8n/codemirror-lang';
+import { expressionParser } from '@workflow-automation/codemirror-lang';
 
 import { completeFromSchema, completeKeywords } from './complete';
 import { parser as baseParser } from './grammar.sql';
