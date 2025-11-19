@@ -1,4 +1,4 @@
-import { Project, WithTimestampsAndStringId } from '@n8n/db';
+﻿import { Project, WithTimestampsAndStringId } from '@workflow-automation/db';
 import { Column, Entity, Index, JoinColumn, ManyToOne, OneToMany } from '@n8n/typeorm';
 
 import { DataTableColumn } from './data-table-column.entity';

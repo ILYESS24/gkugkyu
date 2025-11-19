@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions } from 'workflow-automation-workflow';
 
 import * as transport from '../../transport';
 import { modelSearch } from '../listSearch';

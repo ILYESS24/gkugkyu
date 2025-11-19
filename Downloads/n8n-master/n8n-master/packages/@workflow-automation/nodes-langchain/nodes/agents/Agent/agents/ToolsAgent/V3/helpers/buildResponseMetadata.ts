@@ -1,4 +1,4 @@
-import type { EngineResponse } from 'n8n-workflow';
+﻿import type { EngineResponse } from 'workflow-automation-workflow';
 
 import { buildSteps } from '@utils/agent-execution';
 

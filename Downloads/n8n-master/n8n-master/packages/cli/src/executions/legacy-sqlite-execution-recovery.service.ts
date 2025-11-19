@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { DbConnection, ExecutionRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { DbConnection, ExecutionRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import assert from 'assert';
 
 /**

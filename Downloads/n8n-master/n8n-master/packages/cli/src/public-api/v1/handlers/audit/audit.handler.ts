@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import type { Response } from 'express';
 
 import type { AuditRequest } from '@/public-api/types';

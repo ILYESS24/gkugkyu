@@ -1,8 +1,8 @@
-<script lang="ts" setup>
-import type { Role } from '@n8n/permissions';
+﻿<script lang="ts" setup>
+import type { Role } from '@workflow-automation/permissions';
 import { computed, ref, watch, onBeforeMount, onMounted, nextTick } from 'vue';
 import { useRouter } from 'vue-router';
-import { deepCopy } from 'n8n-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 import { useDebounceFn } from '@vueuse/core';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useI18n } from '@n8n/i18n';

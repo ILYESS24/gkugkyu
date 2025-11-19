@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 async function processCampaignSearchResponse(
 	this: IExecuteSingleFunctions,

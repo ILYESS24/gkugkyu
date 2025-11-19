@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ActionTypeDescription,
 	NodeCreateElement,
 	SectionCreateElement,
@@ -24,7 +24,7 @@ import { createTestingPinia } from '@pinia/testing';
 
 import { mock } from 'vitest-mock-extended';
 import type { ViewStack } from './composables/useViewStacks';
-import { SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+import { SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 import { DISCORD_NODE_TYPE, MICROSOFT_TEAMS_NODE_TYPE } from '@/app/constants';
 
 vi.mock('@/app/stores/settings.store', () => ({
@@ -354,7 +354,7 @@ describe('NodeCreator - utils', () => {
 			['Telegram Bot trigger', 'Telegram Bot'],
 			['Telegram TRIGGER', 'Telegram'],
 			['', ''],
-			['Telegram　Trigger', 'Telegram　Trigger'], // full-width space,
+			['Telegramã€€Trigger', 'Telegramã€€Trigger'], // full-width space,
 			['Telegram Trigger  ', 'Telegram Trigger'],
 			['Telegram   Trigger', 'Telegram'],
 		])('should transform "%s" to "%s"', (input, expected) => {

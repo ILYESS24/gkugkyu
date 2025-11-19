@@ -1,4 +1,4 @@
-import { N8N_IO_BASE_URL } from '@n8n/constants';
+﻿import { N8N_IO_BASE_URL } from '@workflow-automation/constants';
 
 import { get, post } from '../utils';
 

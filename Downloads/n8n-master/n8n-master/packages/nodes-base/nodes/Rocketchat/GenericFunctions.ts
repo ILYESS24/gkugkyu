@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function rocketchatApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

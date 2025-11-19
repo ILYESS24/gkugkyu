@@ -1,13 +1,13 @@
-import {
+﻿import {
 	createWorkflow,
 	shareWorkflowWithUsers,
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 import type {
 	WorkflowClosedMessage,

@@ -1,10 +1,10 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { DbConnection } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { DbConnection } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { Application } from 'express';
 import express from 'express';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 import { strict as assert } from 'node:assert';
 import http from 'node:http';
 import type { Server } from 'node:http';

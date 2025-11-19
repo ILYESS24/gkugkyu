@@ -1,10 +1,10 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { googleApiRequest } from './GenericFunctions';
 import type { IData } from './Interface';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
@@ -8,8 +8,8 @@ import type {
 	IDataObject,
 	IHttpRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 /**
  * Make an API request to Mattermost

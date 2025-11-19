@@ -1,7 +1,7 @@
-import { SecurityConfig } from '@n8n/config';
-import { CredentialsRepository, ExecutionDataRepository, ExecutionRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import type { IWorkflowBase } from 'n8n-workflow';
+﻿import { SecurityConfig } from '@workflow-automation/config';
+import { CredentialsRepository, ExecutionDataRepository, ExecutionRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 import { CREDENTIALS_REPORT } from '@/security-audit/constants';
 import type { RiskReporter, Risk } from '@/security-audit/types';

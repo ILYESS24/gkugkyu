@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, IDataObject, JsonObject, IRequestOptions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, IDataObject, JsonObject, IRequestOptions } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function googleApiRequest(
 	this: IExecuteFunctions,

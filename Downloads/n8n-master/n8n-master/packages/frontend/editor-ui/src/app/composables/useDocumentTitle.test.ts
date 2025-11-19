@@ -1,6 +1,6 @@
-import { mock } from 'vitest-mock-extended';
+﻿import { mock } from 'vitest-mock-extended';
 import { describe, it, expect } from 'vitest';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import { useDocumentTitle } from './useDocumentTitle';
 
 const settings = mock<FrontendSettings>({ releaseChannel: 'stable' });

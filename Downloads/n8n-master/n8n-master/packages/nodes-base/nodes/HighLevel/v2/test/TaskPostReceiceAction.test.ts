@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	IExecuteSingleFunctions,
 	INodeExecutionData,
 	IN8nHttpFullResponse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { taskPostReceiceAction } from '../GenericFunctions';
 

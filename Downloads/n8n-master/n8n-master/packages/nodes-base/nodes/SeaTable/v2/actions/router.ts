@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'workflow-automation-workflow';
 
 import * as asset from './asset';
 import * as base from './base';

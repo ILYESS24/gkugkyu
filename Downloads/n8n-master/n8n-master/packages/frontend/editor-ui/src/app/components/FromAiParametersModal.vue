@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import Modal from '@/app/components/Modal.vue';
 import { useI18n } from '@n8n/i18n';
 import { useRunWorkflow } from '@/app/composables/useRunWorkflow';
@@ -12,7 +12,7 @@ import {
 	type IDataObject,
 	NodeConnectionTypes,
 	traverseNodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { FormFieldValueUpdate, IFormInput } from '@n8n/design-system';
 import { computed, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';

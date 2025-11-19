@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	DeclarativeRestApiSettings,
 	IDataObject,
 	IExecuteFunctions,
@@ -7,7 +7,7 @@ import type {
 	ILoadOptionsFunctions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	getCursorPaginator,

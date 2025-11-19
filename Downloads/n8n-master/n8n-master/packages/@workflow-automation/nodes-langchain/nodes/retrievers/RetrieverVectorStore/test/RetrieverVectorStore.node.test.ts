@@ -1,8 +1,8 @@
-import type { BaseDocumentCompressor } from '@langchain/core/retrievers/document_compressors';
+﻿import type { BaseDocumentCompressor } from '@langchain/core/retrievers/document_compressors';
 import { VectorStore } from '@langchain/core/vectorstores';
 import { ContextualCompressionRetriever } from 'langchain/retrievers/contextual_compression';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { RetrieverVectorStore } from '../RetrieverVectorStore.node';
 

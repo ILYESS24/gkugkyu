@@ -1,9 +1,9 @@
-import { OidcConfigDto } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Body, Get, GlobalScope, Licensed, Post, RestController } from '@n8n/decorators';
+﻿import { OidcConfigDto } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Body, Get, GlobalScope, Licensed, Post, RestController } from '@workflow-automation/decorators';
 import { Request, Response } from 'express';
 
 import { AuthService } from '@/auth/auth.service';

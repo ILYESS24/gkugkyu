@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { DataSource } from '@n8n/typeorm';
 import type { SqlCreatePromptArgs } from 'langchain/agents/toolkits/sql';
@@ -10,7 +10,7 @@ import {
 	NodeConnectionTypes,
 	NodeOperationError,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getPromptInputByType, serializeChatHistory } from '@utils/helpers';
 import { getTracingConfig } from '@utils/tracing';
@@ -55,7 +55,7 @@ export async function sqlAgentAgentExecute(
 			}
 
 			if (input === undefined) {
-				throw new NodeOperationError(this.getNode(), 'The ‘prompt’ parameter is empty.');
+				throw new NodeOperationError(this.getNode(), 'The â€˜promptâ€™ parameter is empty.');
 			}
 
 			const options = this.getNodeParameter('options', i, {});

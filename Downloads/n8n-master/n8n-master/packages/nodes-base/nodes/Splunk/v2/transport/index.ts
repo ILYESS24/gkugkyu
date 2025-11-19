@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
@@ -6,8 +6,8 @@ import type {
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError, sleep } from 'workflow-automation-workflow';
 
 import type { SplunkCredentials, SplunkError } from '../helpers/interfaces';
 import { extractErrorDescription, formatEntry, parseXml } from '../helpers/utils';

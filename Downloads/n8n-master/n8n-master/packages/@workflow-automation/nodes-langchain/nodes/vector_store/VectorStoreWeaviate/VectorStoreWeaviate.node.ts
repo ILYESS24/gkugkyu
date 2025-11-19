@@ -1,4 +1,4 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import { WeaviateStore } from '@langchain/weaviate';
 import type { WeaviateLibArgs } from '@langchain/weaviate';
 import type {
@@ -6,7 +6,7 @@ import type {
 	INodeProperties,
 	INodePropertyCollection,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { type ProxiesParams, type TimeoutParams } from 'weaviate-client';
 
 import type { WeaviateCompositeFilter, WeaviateCredential } from './Weaviate.utils';

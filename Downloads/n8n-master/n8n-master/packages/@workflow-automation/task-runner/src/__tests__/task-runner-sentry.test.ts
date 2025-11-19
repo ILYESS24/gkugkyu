@@ -1,6 +1,6 @@
-import type { ErrorEvent } from '@sentry/core';
+﻿import type { ErrorEvent } from '@sentry/core';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
+import type { ErrorReporter } from 'workflow-automation-core';
 
 import { TaskRunnerSentry } from '../task-runner-sentry';
 

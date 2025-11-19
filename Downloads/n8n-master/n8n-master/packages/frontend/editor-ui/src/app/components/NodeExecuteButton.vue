@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { ref, computed } from 'vue';
 import {
 	WEBHOOK_NODE_TYPE,
@@ -13,7 +13,7 @@ import {
 	AI_TRANSFORM_JS_CODE,
 	AI_TRANSFORM_NODE_TYPE,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

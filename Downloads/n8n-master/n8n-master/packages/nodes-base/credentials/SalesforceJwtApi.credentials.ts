@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig } from 'axios';
+﻿import type { AxiosRequestConfig } from 'axios';
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
 import moment from 'moment-timezone';
@@ -8,7 +8,7 @@ import type {
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class SalesforceJwtApi implements ICredentialType {
 	name = 'salesforceJwtApi';

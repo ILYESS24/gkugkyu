@@ -1,6 +1,6 @@
-import { ListDataTableQueryDto } from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, GlobalScope, Query, RestController } from '@n8n/decorators';
+﻿import { ListDataTableQueryDto } from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, GlobalScope, Query, RestController } from '@workflow-automation/decorators';
 
 import { DataTableAggregateService } from './data-table-aggregate.service';
 import { DataTableService } from './data-table.service';

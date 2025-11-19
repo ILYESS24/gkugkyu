@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import { mkdtempSync, readFileSync } from 'fs';
 import { IncomingMessage } from 'http';
 import { mock } from 'jest-mock-extended';
@@ -7,7 +7,7 @@ import type {
 	INode,
 	ITaskDataConnections,
 	IWorkflowExecuteAdditionalData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { Readable } from 'stream';
@@ -277,7 +277,7 @@ describe('test binary data helper methods', () => {
 			binaryDataConfig.mode = 'default';
 			await binaryDataService.init();
 
-			const specialBuffer = Buffer.from('Hello 世界! 🚀 Special chars: àáâãäå', 'utf8');
+			const specialBuffer = Buffer.from('Hello ä¸–ç•Œ! ðŸš€ Special chars: Ã Ã¡Ã¢Ã£Ã¤Ã¥', 'utf8');
 			const binaryData = await setBinaryDataBuffer(
 				{ mimeType: 'text/plain', data: '' },
 				specialBuffer,
@@ -330,7 +330,7 @@ describe('test binary data helper methods', () => {
 describe('binaryToString', () => {
 	const ENCODING_SAMPLES = {
 		utf8: {
-			text: 'Hello, 世界! τεστ мир ⚡️ é à ü ñ',
+			text: 'Hello, ä¸–ç•Œ! Ï„ÎµÏƒÏ„ Ð¼Ð¸Ñ€ âš¡ï¸ Ã© Ã  Ã¼ Ã±',
 			buffer: Buffer.from([
 				0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0xe4, 0xb8, 0x96, 0xe7, 0x95, 0x8c, 0x21, 0x20,
 				0xcf, 0x84, 0xce, 0xb5, 0xcf, 0x83, 0xcf, 0x84, 0x20, 0xd0, 0xbc, 0xd0, 0xb8, 0xd1, 0x80,
@@ -340,7 +340,7 @@ describe('binaryToString', () => {
 		},
 
 		'iso-8859-15': {
-			text: 'Café € personnalité',
+			text: 'CafÃ© â‚¬ personnalitÃ©',
 			buffer: Buffer.from([
 				0x43, 0x61, 0x66, 0xe9, 0x20, 0xa4, 0x20, 0x70, 0x65, 0x72, 0x73, 0x6f, 0x6e, 0x6e, 0x61,
 				0x6c, 0x69, 0x74, 0xe9,
@@ -348,7 +348,7 @@ describe('binaryToString', () => {
 		},
 
 		latin1: {
-			text: 'señor année déjà',
+			text: 'seÃ±or annÃ©e dÃ©jÃ ',
 			buffer: Buffer.from([
 				0x73, 0x65, 0xf1, 0x6f, 0x72, 0x20, 0x61, 0x6e, 0x6e, 0xe9, 0x65, 0x20, 0x64, 0xe9, 0x6a,
 				0xe0,
@@ -364,7 +364,7 @@ describe('binaryToString', () => {
 		},
 
 		'windows-1252': {
-			text: '€ Smart "quotes" • bullet',
+			text: 'â‚¬ Smart "quotes" â€¢ bullet',
 			buffer: Buffer.from([
 				0x80, 0x20, 0x53, 0x6d, 0x61, 0x72, 0x74, 0x20, 0x22, 0x71, 0x75, 0x6f, 0x74, 0x65, 0x73,
 				0x22, 0x20, 0x95, 0x20, 0x62, 0x75, 0x6c, 0x6c, 0x65, 0x74,
@@ -372,19 +372,19 @@ describe('binaryToString', () => {
 		},
 
 		'shift-jis': {
-			text: 'こんにちは世界',
+			text: 'ã“ã‚“ã«ã¡ã¯ä¸–ç•Œ',
 			buffer: Buffer.from([
 				0x82, 0xb1, 0x82, 0xf1, 0x82, 0xc9, 0x82, 0xbf, 0x82, 0xcd, 0x90, 0xa2, 0x8a, 0x45,
 			]),
 		},
 
 		big5: {
-			text: '哈囉世界',
+			text: 'å“ˆå›‰ä¸–ç•Œ',
 			buffer: Buffer.from([0xab, 0xa2, 0xc5, 0x6f, 0xa5, 0x40, 0xac, 0xc9]),
 		},
 
 		'koi8-r': {
-			text: 'Привет мир',
+			text: 'ÐŸÑ€Ð¸Ð²ÐµÑ‚ Ð¼Ð¸Ñ€',
 			buffer: Buffer.from([0xf0, 0xd2, 0xc9, 0xd7, 0xc5, 0xd4, 0x20, 0xcd, 0xc9, 0xd2]),
 		},
 	};
@@ -433,12 +433,12 @@ describe('binaryToString', () => {
 
 describe('detectBinaryEncoding', () => {
 	it('should detect encoding for utf-8 buffers', () => {
-		const utf8Buffer = Buffer.from('Hello, 世界');
+		const utf8Buffer = Buffer.from('Hello, ä¸–ç•Œ');
 		expect(detectBinaryEncoding(utf8Buffer)).toBe('UTF-8');
 	});
 
 	it('should detect encoding for latin1 buffers', () => {
-		const latinBuffer = Buffer.from('señor', 'latin1');
+		const latinBuffer = Buffer.from('seÃ±or', 'latin1');
 		expect(detectBinaryEncoding(latinBuffer)).toBe('ISO-8859-1');
 	});
 

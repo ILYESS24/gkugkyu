@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
@@ -10,17 +10,17 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { User, ListQueryDb, WorkflowFolderUnionFull, Role } from '@n8n/db';
+import type { User, ListQueryDb, WorkflowFolderUnionFull, Role } from '@workflow-automation/db';
 import {
 	ProjectRepository,
 	WorkflowHistoryRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { Scope } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { Scope } from '@workflow-automation/permissions';
 import { DateTime } from 'luxon';
-import { PROJECT_ROOT, type INode, type IPinData, type IWorkflowBase } from 'n8n-workflow';
+import { PROJECT_ROOT, type INode, type IPinData, type IWorkflowBase } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';

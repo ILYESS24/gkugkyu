@@ -1,5 +1,5 @@
-import type { WorkflowEntity } from '@n8n/db';
-import { MANUAL_TRIGGER_NODE_TYPE, WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+﻿import type { WorkflowEntity } from '@workflow-automation/db';
+import { MANUAL_TRIGGER_NODE_TYPE, WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
 
 export const createWorkflow = (overrides: Partial<WorkflowEntity> = {}) => ({
 	id: 'wf-1',

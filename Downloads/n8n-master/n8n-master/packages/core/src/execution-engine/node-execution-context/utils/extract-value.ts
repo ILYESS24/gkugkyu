@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import {
 	ApplicationError,
 	LoggerProxy,
@@ -14,7 +14,7 @@ import {
 	type INodePropertyOptions,
 	type INodeType,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 function findPropertyFromParameterName(
 	parameterName: string,

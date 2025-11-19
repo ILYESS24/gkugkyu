@@ -1,4 +1,4 @@
-import type { IWorkflowBase } from 'n8n-workflow';
+﻿import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 export namespace Risk {
 	export type Category = 'database' | 'credentials' | 'nodes' | 'instance' | 'filesystem';

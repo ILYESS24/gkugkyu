@@ -1,5 +1,5 @@
-import basicAuth from 'basic-auth';
-import type { ICredentialDataDecryptedObject, IWebhookFunctions } from 'n8n-workflow';
+﻿import basicAuth from 'basic-auth';
+import type { ICredentialDataDecryptedObject, IWebhookFunctions } from 'workflow-automation-workflow';
 
 import { ChatTriggerAuthorizationError } from './error';
 import type { AuthenticationChatOption } from './types';

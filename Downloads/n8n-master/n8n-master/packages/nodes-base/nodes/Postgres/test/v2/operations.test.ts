@@ -1,11 +1,11 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	IGetNodeParameterOptions,
 	INode,
 	INodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import pgPromise from 'pg-promise';
 
 import * as deleteTable from '../../v2/actions/database/deleteTable.operation';

@@ -1,5 +1,5 @@
-import { useElementSize } from '@vueuse/core';
-import { jsonParse } from 'n8n-workflow';
+﻿import { useElementSize } from '@vueuse/core';
+import { jsonParse } from 'workflow-automation-workflow';
 import type { MaybeRefOrGetter } from 'vue';
 import { computed, ref, toRef, toValue, watch } from 'vue';
 import type { ResizeData, XYPosition } from '@/Interface';

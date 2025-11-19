@@ -1,11 +1,11 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useResolvedExpression } from '@/app/composables/useResolvedExpression';
 import { BINARY_DATA_ACCESS_TOOLTIP } from '@/app/constants';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import useEnvironmentsStore from '@/features/settings/environments.ee/environments.store';
 import type { IUpdateInformation } from '@/Interface';
 import { useI18n } from '@n8n/i18n';
-import type { AssignmentValue, INodeProperties } from 'n8n-workflow';
+import type { AssignmentValue, INodeProperties } from 'workflow-automation-workflow';
 import { computed, ref } from 'vue';
 import InputTriple from '../InputTriple/InputTriple.vue';
 import ParameterInputFull from '../ParameterInputFull.vue';

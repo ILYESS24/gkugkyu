@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	INodeProperties,
 	IExecuteFunctions,
 	INodeExecutionData,
 	IDataObject,
-} from 'n8n-workflow';
-import { ApplicationError, NodeOperationError, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeOperationError, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../../../transport';
 import { assistantRLC, modelRLC } from '../descriptions';

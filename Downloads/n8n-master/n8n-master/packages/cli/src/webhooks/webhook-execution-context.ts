@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IWebhookData,
 	INode,
 	IWorkflowDataProxyAdditionalKeys,
@@ -7,7 +7,7 @@ import type {
 	IExecuteData,
 	IWebhookDescription,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * A helper class that holds the context for the webhook execution.

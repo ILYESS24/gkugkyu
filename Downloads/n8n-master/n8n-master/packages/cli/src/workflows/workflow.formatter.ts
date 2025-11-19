@@ -1,4 +1,4 @@
-import type { IWorkflowBase } from 'n8n-workflow';
+﻿import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 /**
  * Display a workflow in a user-friendly format

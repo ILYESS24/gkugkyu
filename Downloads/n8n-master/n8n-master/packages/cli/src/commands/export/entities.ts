@@ -1,10 +1,10 @@
-import { Command } from '@n8n/decorators';
+﻿import { Command } from '@workflow-automation/decorators';
 import { z } from 'zod';
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 
 import { BaseCommand } from '../base-command';
 import { ExportService } from '@/services/export.service';
-import { safeJoinPath } from '@n8n/backend-common';
+import { safeJoinPath } from '@workflow-automation/backend-common';
 
 const flagsSchema = z.object({
 	outputDir: z
@@ -54,7 +54,7 @@ export class ExportEntitiesCommand extends BaseCommand<z.infer<typeof flagsSchem
 	}
 
 	catch(error: Error) {
-		this.logger.error('❌ Error exporting entities. See log messages for details. \n');
+		this.logger.error('âŒ Error exporting entities. See log messages for details. \n');
 		this.logger.error('Error details:');
 		this.logger.error('\n====================================\n');
 		this.logger.error(`${error.message} \n`);

@@ -1,4 +1,4 @@
-import { WikipediaQueryRun } from '@langchain/community/tools/wikipedia_query_run';
+﻿import { WikipediaQueryRun } from '@langchain/community/tools/wikipedia_query_run';
 import {
 	type IExecuteFunctions,
 	NodeConnectionTypes,
@@ -7,7 +7,7 @@ import {
 	type ISupplyDataFunctions,
 	type SupplyData,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

@@ -1,11 +1,11 @@
-/// <reference types="vite/client" />
+﻿/// <reference types="vite/client" />
 /// <reference types="vite-plugin-comlink/client" />
 
 import 'vue-router';
 import type { VNode, ComponentPublicInstance } from 'vue';
 import type { PartialDeep } from 'type-fest';
 import type { ExternalHooks } from '@/app/types/externalHooks';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import type { Plugin as PrettierPlugin } from 'prettier';
 import type { I18nClass } from '@n8n/i18n';
 import type { Route, Router, RouteLocation } from 'vue-router';

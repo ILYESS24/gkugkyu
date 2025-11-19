@@ -1,15 +1,15 @@
-import { RESPONSE_ERROR_MESSAGES } from '@/constants';
-import { inProduction } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { type BooleanLicenseFeature } from '@n8n/constants';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { ControllerRegistryMetadata } from '@n8n/decorators';
-import type { AccessScope, Controller, RateLimit, StaticRouterMetadata } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { RESPONSE_ERROR_MESSAGES } from '@/constants';
+import { inProduction } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { type BooleanLicenseFeature } from '@workflow-automation/constants';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { ControllerRegistryMetadata } from '@workflow-automation/decorators';
+import type { AccessScope, Controller, RateLimit, StaticRouterMetadata } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { Router } from 'express';
 import type { Application, Request, Response, RequestHandler } from 'express';
 import { rateLimit as expressRateLimit } from 'express-rate-limit';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 import type { ZodClass } from 'zod-class';
 
 import { NotFoundError } from './errors/response-errors/not-found.error';

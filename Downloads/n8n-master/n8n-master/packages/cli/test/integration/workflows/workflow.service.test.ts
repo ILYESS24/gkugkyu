@@ -1,6 +1,6 @@
-import { createWorkflowWithHistory, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { SharedWorkflowRepository, type WorkflowEntity, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createWorkflowWithHistory, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { SharedWorkflowRepository, type WorkflowEntity, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';

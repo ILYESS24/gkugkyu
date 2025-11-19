@@ -1,4 +1,4 @@
-import { MANUAL_TRIGGER_NODE_TYPE, TRIMMED_TASK_DATA_CONNECTIONS_KEY } from 'n8n-workflow';
+﻿import { MANUAL_TRIGGER_NODE_TYPE, TRIMMED_TASK_DATA_CONNECTIONS_KEY } from 'workflow-automation-workflow';
 import type {
 	ITaskData,
 	ExecutionStatus,
@@ -11,7 +11,7 @@ import type {
 	INodeExecutionData,
 	Workflow,
 	IWorkflowDataProxyAdditionalKeys,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import type {
 	ExecutionFilterType,
@@ -359,7 +359,7 @@ export function getExecutionErrorToastConfiguration({
 		const nodeErrorName = 'node' in error && error.node?.name ? error.node.name : '';
 
 		return {
-			title: nodeErrorName ? `Error in sub-node ‘${nodeErrorName}‘` : 'Problem executing workflow',
+			title: nodeErrorName ? `Error in sub-node â€˜${nodeErrorName}â€˜` : 'Problem executing workflow',
 			message: h(NodeExecutionErrorMessage, {
 				errorMessage: error.description ?? message,
 				nodeName: nodeErrorName,
@@ -369,7 +369,7 @@ export function getExecutionErrorToastConfiguration({
 
 	return {
 		title: lastNodeExecuted
-			? `Problem in node ‘${lastNodeExecuted}‘`
+			? `Problem in node â€˜${lastNodeExecuted}â€˜`
 			: 'Problem executing workflow',
 		message,
 	};

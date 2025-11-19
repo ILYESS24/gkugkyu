@@ -1,10 +1,10 @@
-// Function used in the inputs expression to figure out which inputs to
+﻿// Function used in the inputs expression to figure out which inputs to
 
 import {
 	type INodeInputConfiguration,
 	type INodeInputFilter,
 	type NodeConnectionType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 // display based on the agent type
 export function getInputs(

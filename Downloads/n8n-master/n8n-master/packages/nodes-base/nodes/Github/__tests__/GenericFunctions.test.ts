@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, IHookFunctions } from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, IHookFunctions } from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	githubApiRequest,

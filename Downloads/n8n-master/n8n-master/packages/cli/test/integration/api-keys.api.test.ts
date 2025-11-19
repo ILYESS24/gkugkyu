@@ -1,14 +1,14 @@
-import type { ApiKeyWithRawValue } from '@n8n/api-types';
+﻿import type { ApiKeyWithRawValue } from '@workflow-automation/api-types';
 import { testDb, randomValidPassword, mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { User } from '@n8n/db';
-import { ApiKeyRepository, GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User } from '@workflow-automation/db';
+import { ApiKeyRepository, GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import {
 	getApiKeyScopesForRole,
 	getOwnerOnlyApiKeyScopes,
 	type ApiKeyScope,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 import { mock } from 'jest-mock-extended';
 
 import type { License } from '@/license';

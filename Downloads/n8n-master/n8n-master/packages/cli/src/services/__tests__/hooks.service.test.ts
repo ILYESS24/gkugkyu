@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	AuthenticatedRequest,
 	SettingsRepository,
 	User,
 	CredentialsRepository,
 	WorkflowRepository,
 	UserRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import RudderStack from '@rudderstack/rudder-sdk-node';
 import type { Response } from 'express';
 import { mock } from 'jest-mock-extended';

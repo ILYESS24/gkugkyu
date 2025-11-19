@@ -1,4 +1,4 @@
-import type { CredentialsEntity } from '@n8n/db';
+﻿import type { CredentialsEntity } from '@workflow-automation/db';
 import {
 	User,
 	CredentialsRepository,
@@ -8,9 +8,9 @@ import {
 	SharedWorkflowRepository,
 	UserRepository,
 	GLOBAL_OWNER_ROLE,
-} from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 
 import { BaseCommand } from '../base-command';
 

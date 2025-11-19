@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import { LoggerProxy } from 'n8n-workflow';
-import type { IDataObject, IRunExecutionData, IWorkflowExecuteAdditionalData } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import { LoggerProxy } from 'workflow-automation-workflow';
+import type { IDataObject, IRunExecutionData, IWorkflowExecuteAdditionalData } from 'workflow-automation-workflow';
 
 import { PLACEHOLDER_EMPTY_EXECUTION_ID } from '@/constants';
 import type { ExternalSecretsProxy } from '@/execution-engine/external-secrets-proxy';

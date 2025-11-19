@@ -1,11 +1,11 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import {
 	sleep,
 	type IExecuteFunctions,
 	type INode,
 	type EngineRequest,
 	type EngineResponse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { toolsAgentExecute } from '../../agents/ToolsAgent/V3/execute';
 import type { RequestResponseMetadata } from '../../agents/ToolsAgent/V3/execute';

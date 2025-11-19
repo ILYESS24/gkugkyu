@@ -1,8 +1,8 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { outputSchemaField, parseJsonOutputField } from '../common/fields';
 import { parseJsonIfPresent } from '../common/output.utils';

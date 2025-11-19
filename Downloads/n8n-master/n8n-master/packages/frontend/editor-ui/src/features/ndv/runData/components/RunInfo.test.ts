@@ -1,5 +1,5 @@
-import { describe, it, expect, vi } from 'vitest';
-import type { ITaskData } from 'n8n-workflow';
+﻿import { describe, it, expect, vi } from 'vitest';
+import type { ITaskData } from 'workflow-automation-workflow';
 import RunInfo from './RunInfo.vue';
 import { createComponentRenderer } from '@/__tests__/render';
 import { mock } from 'vitest-mock-extended';

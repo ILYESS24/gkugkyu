@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeExecutionData,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	type NodeParameterValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { compareOperationFunctions, convertDateTime } from './GenericFunctions';
 

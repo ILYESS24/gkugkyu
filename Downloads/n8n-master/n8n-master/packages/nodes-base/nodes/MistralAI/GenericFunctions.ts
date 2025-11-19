@@ -1,12 +1,12 @@
-import type FormData from 'form-data';
+﻿import type FormData from 'form-data';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import type { Page } from './types';
 

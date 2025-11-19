@@ -1,9 +1,9 @@
-import {
+﻿import {
 	type CodeExecutionMode,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { validateNoDisallowedMethodsInRunForEach } from './JsCodeValidator';
 import type { TextKeys } from './result-validation';

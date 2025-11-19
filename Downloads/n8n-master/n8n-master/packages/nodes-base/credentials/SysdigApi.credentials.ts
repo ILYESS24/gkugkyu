@@ -1,4 +1,4 @@
-import type { IAuthenticateGeneric, ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿import type { IAuthenticateGeneric, ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class SysdigApi implements ICredentialType {
 	name = 'sysdigApi';

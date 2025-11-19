@@ -1,4 +1,4 @@
-import type { Request, Response } from 'express';
+﻿import type { Request, Response } from 'express';
 import { mock } from 'jest-mock-extended';
 import type {
 	Expression,
@@ -11,7 +11,7 @@ import type {
 	IWorkflowExecuteAdditionalData,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { WebhookContext } from '../webhook-context';
 

@@ -1,4 +1,4 @@
-import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+﻿import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
 
 import type { MysqlNodeCredentials } from '../helpers/interfaces';
 import { escapeSqlIdentifier } from '../helpers/utils';

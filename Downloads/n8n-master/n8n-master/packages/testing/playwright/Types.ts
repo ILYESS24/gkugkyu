@@ -1,4 +1,4 @@
-import type { FrontendSettings } from '@n8n/api-types';
+﻿import type { FrontendSettings } from '@workflow-automation/api-types';
 
 export class TestError extends Error {
 	constructor(message: string) {

@@ -1,4 +1,4 @@
-import { type Response } from 'express';
+﻿import { type Response } from 'express';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
 import {
@@ -7,7 +7,7 @@ import {
 	type NodeTypeAndVersion,
 	NodeOperationError,
 	FORM_TRIGGER_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { renderFormNode, getFormTriggerNode } from '../utils/formNodeUtils';
 

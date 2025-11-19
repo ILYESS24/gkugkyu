@@ -1,4 +1,4 @@
-import { UserError } from 'n8n-workflow';
+﻿import { UserError } from 'workflow-automation-workflow';
 
 export class TaskRejectError extends UserError {
 	constructor(public reason: string) {

@@ -1,4 +1,4 @@
-import type { SourceControlledFile } from '@n8n/api-types';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
 import type {
 	Folder,
 	FolderRepository,
@@ -14,11 +14,11 @@ import type {
 	WorkflowTagMapping,
 	WorkflowTagMappingRepository,
 	Variables,
-} from '@n8n/db';
-import { GLOBAL_ADMIN_ROLE, In, PROJECT_OWNER_ROLE, User } from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { GLOBAL_ADMIN_ROLE, In, PROJECT_OWNER_ROLE, User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { captor, mock } from 'jest-mock-extended';
-import { Cipher, type InstanceSettings } from 'n8n-core';
+import { Cipher, type InstanceSettings } from 'workflow-automation-core';
 import fsp from 'node:fs/promises';
 
 import type { VariablesService } from '../../variables/variables.service.ee';

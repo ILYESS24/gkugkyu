@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError } from 'workflow-automation-workflow';
 
 import { controlFields, controlOperations } from './ControlDescription';
 import { formulaFields, formulaOperations } from './FormulaDescription';

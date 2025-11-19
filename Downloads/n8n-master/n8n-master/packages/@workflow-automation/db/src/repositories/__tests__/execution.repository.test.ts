@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { Container } from '@n8n/di';
+﻿/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { Container } from '@workflow-automation/di';
 import { In, LessThan, And, Not } from '@n8n/typeorm';
 
 import type { IExecutionResponse } from 'entities/types-db';

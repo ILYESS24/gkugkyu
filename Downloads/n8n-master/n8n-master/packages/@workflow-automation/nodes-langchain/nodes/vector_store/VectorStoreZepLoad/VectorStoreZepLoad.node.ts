@@ -1,4 +1,4 @@
-import type { IZepConfig } from '@langchain/community/vectorstores/zep';
+﻿import type { IZepConfig } from '@langchain/community/vectorstores/zep';
 import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
 import type { Embeddings } from '@langchain/core/embeddings';
 import {
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getMetadataFiltersValues } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

@@ -1,6 +1,6 @@
-import { ChatVertexAI } from '@langchain/google-vertexai';
+﻿import { ChatVertexAI } from '@langchain/google-vertexai';
 import { createMockExecuteFunction } from 'n8n-nodes-base/test/nodes/Helpers';
-import type { INode, ISupplyDataFunctions } from 'n8n-workflow';
+import type { INode, ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import { makeN8nLlmFailedAttemptHandler } from '../../n8nLlmFailedAttemptHandler';
 import { N8nLlmTracing } from '../../N8nLlmTracing';

@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHookFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function wufooApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

@@ -1,9 +1,9 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type INode,
 	type INodeProperties,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export const WORKFLOW_INPUTS_TEST_PARAMETER_PATH = 'parameters.workflowInputs';
 
@@ -37,7 +37,7 @@ export const WORKFLOW_INPUTS_TEST_NODE: INode = {
 			__rl: true,
 			value: 'test123',
 			mode: 'list',
-			cachedResultName: 'Workflow inputs—test',
+			cachedResultName: 'Workflow inputsâ€”test',
 		},
 		workflowInputs: {
 			_custom: {

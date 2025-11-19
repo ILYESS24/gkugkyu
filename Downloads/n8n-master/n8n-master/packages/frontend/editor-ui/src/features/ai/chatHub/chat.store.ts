@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { CHAT_STORE } from './constants';
 import { computed, ref } from 'vue';
 import { v4 as uuidv4 } from 'uuid';
@@ -35,7 +35,7 @@ import {
 	type EnrichedStructuredChunk,
 	type ChatHubMessageStatus,
 	type ChatModelDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type {
 	CredentialsMap,
 	ChatMessage,
@@ -46,7 +46,7 @@ import { retry } from '@n8n/utils/retry';
 import { buildUiMessages, isMatchedAgent } from './chat.utils';
 import { createAiMessageFromStreamingState, flattenModel } from './chat.utils';
 import { useTelemetry } from '@/app/composables/useTelemetry';
-import { type INode } from 'n8n-workflow';
+import { type INode } from 'workflow-automation-workflow';
 
 export const useChatStore = defineStore(CHAT_STORE, () => {
 	const rootStore = useRootStore();

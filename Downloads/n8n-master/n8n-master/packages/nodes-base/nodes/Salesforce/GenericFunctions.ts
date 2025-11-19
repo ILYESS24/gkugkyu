@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+﻿import jwt from 'jsonwebtoken';
 import moment from 'moment-timezone';
 import { DateTime } from 'luxon';
 import type {
@@ -10,8 +10,8 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 function getOptions(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions,

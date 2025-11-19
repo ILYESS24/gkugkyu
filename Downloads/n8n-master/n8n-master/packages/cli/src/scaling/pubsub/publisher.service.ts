@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionsConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import type { Redis as SingleNodeClient, Cluster as MultiNodeClient } from 'ioredis';
-import { InstanceSettings } from 'n8n-core';
-import type { LogMetadata } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { LogMetadata } from 'workflow-automation-workflow';
 
 import { RedisClientService } from '@/services/redis-client.service';
 

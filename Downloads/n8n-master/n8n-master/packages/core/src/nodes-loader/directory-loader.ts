@@ -1,5 +1,5 @@
-import { isContainedWithin, Logger } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿import { isContainedWithin, Logger } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 import uniqBy from 'lodash/uniqBy';
 import type {
 	CodexData,
@@ -15,8 +15,8 @@ import type {
 	INodeTypeNameVersion,
 	IVersionedNodeType,
 	KnownNodesAndCredentials,
-} from 'n8n-workflow';
-import { ApplicationError, isExpression, isSubNodeType, UnexpectedError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, isExpression, isSubNodeType, UnexpectedError } from 'workflow-automation-workflow';
 import { realpathSync } from 'node:fs';
 import * as path from 'path';
 

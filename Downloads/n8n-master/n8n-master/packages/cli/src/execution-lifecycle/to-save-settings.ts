@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
-import type { IWorkflowSettings } from 'n8n-workflow';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
+import type { IWorkflowSettings } from 'workflow-automation-workflow';
 
 export type ExecutionSaveSettings = {
 	error: boolean | 'all' | 'none';

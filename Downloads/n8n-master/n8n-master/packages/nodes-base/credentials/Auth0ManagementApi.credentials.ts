@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IAuthenticateGeneric,
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
 	ICredentialType,
 	IHttpRequestHelper,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class Auth0ManagementApi implements ICredentialType {
 	name = 'auth0ManagementApi';

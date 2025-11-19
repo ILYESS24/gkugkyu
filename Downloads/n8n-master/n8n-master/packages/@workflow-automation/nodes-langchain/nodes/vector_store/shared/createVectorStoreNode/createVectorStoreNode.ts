@@ -1,6 +1,6 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import type { VectorStore } from '@langchain/core/vectorstores';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -9,7 +9,7 @@ import type {
 	ISupplyDataFunctions,
 	INodeType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

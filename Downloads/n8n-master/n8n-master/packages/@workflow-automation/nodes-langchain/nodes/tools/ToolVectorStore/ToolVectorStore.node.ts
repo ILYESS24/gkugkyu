@@ -1,4 +1,4 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { VectorStore } from '@langchain/core/vectorstores';
 import { VectorDBQAChain } from 'langchain/chains';
 import { VectorStoreQATool } from 'langchain/tools';
@@ -9,8 +9,8 @@ import type {
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, nodeNameToToolName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, nodeNameToToolName } from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, INodeListSearchResult } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions, INodeListSearchResult } from 'workflow-automation-workflow';
 import OpenAI from 'openai';
 
 import { shouldIncludeModel } from '../../../vendors/OpenAi/helpers/modelFiltering';

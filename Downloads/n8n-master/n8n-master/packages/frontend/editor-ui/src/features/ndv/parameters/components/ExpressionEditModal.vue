@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import ExpressionEditorModalInput from './ExpressionEditorModal/ExpressionEditorModalInput.vue';
 import { computed, ref, toRaw, watch } from 'vue';
 import Close from 'virtual:icons/mdi/close';
@@ -10,8 +10,8 @@ import { createExpressionTelemetryPayload } from '@/app/utils/telemetryUtils';
 
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import type { Segment } from '@/app/types/expressions';
-import type { INodeProperties } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { outputTheme } from './ExpressionEditorModal/theme';
 import ExpressionOutput from '@/features/shared/editors/components/InlineExpressionEditor/ExpressionOutput.vue';
 import VirtualSchema from '@/features/ndv/runData/components/VirtualSchema.vue';

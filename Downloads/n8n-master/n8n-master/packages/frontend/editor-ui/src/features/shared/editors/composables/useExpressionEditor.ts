@@ -1,4 +1,4 @@
-import {
+﻿import {
 	computed,
 	inject,
 	onBeforeUnmount,
@@ -14,8 +14,8 @@ import {
 } from 'vue';
 
 import { ensureSyntaxTree } from '@codemirror/language';
-import type { IDataObject } from 'n8n-workflow';
-import { Expression, ExpressionExtensions } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
+import { Expression, ExpressionExtensions } from 'workflow-automation-workflow';
 
 import {
 	EXPRESSION_EDITOR_PARSER_TIMEOUT,

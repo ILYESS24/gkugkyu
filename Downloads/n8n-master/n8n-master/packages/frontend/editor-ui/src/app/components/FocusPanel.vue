@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import CodeNodeEditor from '@/features/shared/editors/components/CodeNodeEditor/CodeNodeEditor.vue';
 import CssEditor from '@/features/shared/editors/components/CssEditor/CssEditor.vue';
 import ExpressionEditorModalInput from '@/features/ndv/parameters/components/ExpressionEditorModal/ExpressionEditorModalInput.vue';
@@ -31,7 +31,7 @@ import {
 	HTML_NODE_TYPE,
 	type INodeProperties,
 	isResourceLocatorValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useEnvironmentsStore } from '@/features/settings/environments.ee/environments.store';
 import { htmlEditorEventBus } from '@/app/event-bus';
 import { hasFocusOnInput, isFocusableEl } from '@/app/utils/typesUtils';

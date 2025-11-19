@@ -1,5 +1,5 @@
-import uniq from 'lodash/uniq';
-import { NodeOperationError, type IDataObject, type IExecuteFunctions } from 'n8n-workflow';
+﻿import uniq from 'lodash/uniq';
+import { NodeOperationError, type IDataObject, type IExecuteFunctions } from 'workflow-automation-workflow';
 
 import type { IEmail } from '@utils/sendAndWait/interfaces';
 

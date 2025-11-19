@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import get from 'lodash/get';
 import type {
 	Workflow,
@@ -23,7 +23,7 @@ import type {
 	NodeConnectionType,
 	Result,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	NodeHelpers,
@@ -31,7 +31,7 @@ import {
 	WAIT_INDEFINITELY,
 	WorkflowDataProxy,
 	createEnvProviderState,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { BinaryDataService } from '@/binary-data/binary-data.service';
 

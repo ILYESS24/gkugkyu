@@ -1,11 +1,11 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import type { RedisCredential } from './types';
 import {

@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class NotionOAuth2Api implements ICredentialType {
 	name = 'notionOAuth2Api';

@@ -1,8 +1,8 @@
-import type { IExecutionResponse, ExecutionRepository } from '@n8n/db';
+﻿import type { IExecutionResponse, ExecutionRepository } from '@workflow-automation/db';
 import type express from 'express';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
-import { generateUrlSignature, prepareUrlForSigning, WAITING_TOKEN_QUERY_PARAM } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
+import { generateUrlSignature, prepareUrlForSigning, WAITING_TOKEN_QUERY_PARAM } from 'workflow-automation-core';
 
 import { ConflictError } from '@/errors/response-errors/conflict.error';
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

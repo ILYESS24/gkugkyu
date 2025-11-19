@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 import * as fs from 'node:fs';
 import { vi } from 'vitest';
 
@@ -59,8 +59,8 @@ function createNodeCode(
 	includeTypeImport: boolean = false,
 ): string {
 	const typeImport = includeTypeImport
-		? "import type { INodeType, INodeTypeDescription } from 'n8n-workflow';"
-		: "import type { INodeType } from 'n8n-workflow';";
+		? "import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';"
+		: "import type { INodeType } from 'workflow-automation-workflow';";
 
 	const typeAnnotation = includeTypeImport ? ': INodeTypeDescription' : '';
 
@@ -111,7 +111,7 @@ function createCredentialCode(icon?: string | { light: string; dark: string }): 
 	}
 
 	return `
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class TestCredential implements ICredentialType {
 	name = 'testApi';
@@ -183,7 +183,7 @@ ruleTester.run('icon-validation', IconValidationRule, {
 						{
 							messageId: 'addPlaceholder',
 							output:
-								"\nimport type { INodeType, INodeTypeDescription } from 'n8n-workflow';\n\nexport class TestNode implements INodeType {\n\tdescription: INodeTypeDescription = {\n\t\tdisplayName: 'Test Node',\n\t\tname: 'testNode',\n\t\t\n\t\tgroup: ['input'],\n\t\tversion: 1,\n\t\tdescription: 'A test node',\n\t\tdefaults: {\n\t\t\tname: 'Test Node',\n\t\t},\n\t\tinputs: ['main'],\n\t\toutputs: ['main'],\n\t\tproperties: [],\n\t\ticon: \"file:./icon.svg\",\n\t};\n}",
+								"\nimport type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';\n\nexport class TestNode implements INodeType {\n\tdescription: INodeTypeDescription = {\n\t\tdisplayName: 'Test Node',\n\t\tname: 'testNode',\n\t\t\n\t\tgroup: ['input'],\n\t\tversion: 1,\n\t\tdescription: 'A test node',\n\t\tdefaults: {\n\t\t\tname: 'Test Node',\n\t\t},\n\t\tinputs: ['main'],\n\t\toutputs: ['main'],\n\t\tproperties: [],\n\t\ticon: \"file:./icon.svg\",\n\t};\n}",
 						},
 					],
 				},
@@ -218,7 +218,7 @@ ruleTester.run('icon-validation', IconValidationRule, {
 						{
 							messageId: 'addPlaceholder',
 							output:
-								"\nimport type { ICredentialType, INodeProperties } from 'n8n-workflow';\n\nexport class TestCredential implements ICredentialType {\n\tname = 'testApi';\n\tdisplayName = 'Test API';\n\t\n\tproperties: INodeProperties[] = [];\n\n\ticon = \"file:./icon.svg\";\n}",
+								"\nimport type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';\n\nexport class TestCredential implements ICredentialType {\n\tname = 'testApi';\n\tdisplayName = 'Test API';\n\t\n\tproperties: INodeProperties[] = [];\n\n\ticon = \"file:./icon.svg\";\n}",
 						},
 					],
 				},
@@ -252,7 +252,7 @@ ruleTester.run('icon-validation', IconValidationRule, {
 							messageId: 'similarIcon',
 							data: { suggestedName: 'icons/github.svg' },
 							output: `
-import type { INodeType } from 'n8n-workflow';
+import type { INodeType } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description = {

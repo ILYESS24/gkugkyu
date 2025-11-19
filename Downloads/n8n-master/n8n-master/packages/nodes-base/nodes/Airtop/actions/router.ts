@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import * as agent from './agent/Agent.resource';
 import { cleanOutputForToolUse } from './common/output.utils';

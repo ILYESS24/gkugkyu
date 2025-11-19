@@ -1,4 +1,4 @@
-import type { INodeParameters, INodePropertyOptions } from 'n8n-workflow';
+﻿import type { INodeParameters, INodePropertyOptions } from 'workflow-automation-workflow';
 
 // Import the function and property
 import { numberInputsProperty, configuredInputs } from '../helpers';

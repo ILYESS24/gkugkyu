@@ -1,11 +1,11 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionsConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { ExecutionRepository, DbConnection } from '@n8n/db';
-import { OnLeaderStepdown, OnLeaderTakeover, OnShutdown } from '@n8n/decorators';
-import { Service } from '@n8n/di';
-import { BinaryDataService, InstanceSettings } from 'n8n-core';
-import { ensureError } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { ExecutionRepository, DbConnection } from '@workflow-automation/db';
+import { OnLeaderStepdown, OnLeaderTakeover, OnShutdown } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
+import { BinaryDataService, InstanceSettings } from 'workflow-automation-core';
+import { ensureError } from 'workflow-automation-workflow';
 import { strict } from 'node:assert';
 
 /**

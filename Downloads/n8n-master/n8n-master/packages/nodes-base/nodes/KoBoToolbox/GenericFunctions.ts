@@ -1,4 +1,4 @@
-import clone from 'lodash/clone';
+﻿import clone from 'lodash/clone';
 import compact from 'lodash/compact';
 import concat from 'lodash/concat';
 import escapeRegExp from 'lodash/escapeRegExp';
@@ -22,7 +22,7 @@ import type {
 	INodeExecutionData,
 	INodePropertyOptions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function koBoToolboxApiRequest(
 	this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions,

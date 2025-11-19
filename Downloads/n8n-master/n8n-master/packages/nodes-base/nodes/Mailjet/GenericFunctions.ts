@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
 	IHookFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function mailjetApiRequest(
 	this: IExecuteFunctions | IHookFunctions | ILoadOptionsFunctions,

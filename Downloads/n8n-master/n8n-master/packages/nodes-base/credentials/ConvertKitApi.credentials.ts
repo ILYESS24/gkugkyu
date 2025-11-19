@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { getUrl } from './common/http';
 
 export class ConvertKitApi implements ICredentialType {

@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 
 import { createMessage, WHATSAPP_BASE_URL } from './GenericFunctions';
 import { mediaFields, mediaTypeFields } from './MediaDescription';
@@ -67,8 +67,8 @@ export class WhatsApp implements INodeType {
 			...mediaTypeFields,
 			...getSendAndWaitProperties([], 'message', undefined, {
 				noButtonStyle: true,
-				defaultApproveLabel: '✓ Approve',
-				defaultDisapproveLabel: '✗ Decline',
+				defaultApproveLabel: 'âœ“ Approve',
+				defaultDisapproveLabel: 'âœ— Decline',
 			}).filter((p) => p.name !== 'subject'),
 		],
 	};

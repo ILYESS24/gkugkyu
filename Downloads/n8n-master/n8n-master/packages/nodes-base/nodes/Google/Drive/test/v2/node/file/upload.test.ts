@@ -1,4 +1,4 @@
-import type { IHttpRequestMethods } from 'n8n-workflow';
+﻿import type { IHttpRequestMethods } from 'workflow-automation-workflow';
 
 import * as upload from '../../../../v2/actions/file/upload.operation';
 import * as utils from '../../../../v2/helpers/utils';

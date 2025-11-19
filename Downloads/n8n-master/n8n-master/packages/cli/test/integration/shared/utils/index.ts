@@ -1,6 +1,6 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { SettingsRepository, WorkflowEntity } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { SettingsRepository, WorkflowEntity } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import {
 	BinaryDataConfig,
@@ -8,7 +8,7 @@ import {
 	InstanceSettings,
 	UnrecognizedNodeTypeError,
 	type DirectoryLoader,
-} from 'n8n-core';
+} from 'workflow-automation-core';
 import { Ftp } from 'n8n-nodes-base/credentials/Ftp.credentials';
 import { GithubApi } from 'n8n-nodes-base/credentials/GithubApi.credentials';
 import { Cron } from 'n8n-nodes-base/nodes/Cron/Cron.node';
@@ -16,7 +16,7 @@ import { FormTrigger } from 'n8n-nodes-base/nodes/Form/FormTrigger.node';
 import { ScheduleTrigger } from 'n8n-nodes-base/nodes/Schedule/ScheduleTrigger.node';
 import { Set } from 'n8n-nodes-base/nodes/Set/Set.node';
 import { Start } from 'n8n-nodes-base/nodes/Start/Start.node';
-import type { INodeTypeData, INode } from 'n8n-workflow';
+import type { INodeTypeData, INode } from 'workflow-automation-workflow';
 import type request from 'supertest';
 import { v4 as uuid } from 'uuid';
 

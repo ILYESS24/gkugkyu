@@ -1,6 +1,6 @@
-import type { UsersListFilterDto } from '@n8n/api-types';
-import { Service } from '@n8n/di';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+﻿import type { UsersListFilterDto } from '@workflow-automation/api-types';
+import { Service } from '@workflow-automation/di';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 import type { DeepPartial, EntityManager, SelectQueryBuilder } from '@n8n/typeorm';
 import { Brackets, DataSource, In, IsNull, Not, Repository } from '@n8n/typeorm';
 

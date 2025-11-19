@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ClientOAuth2Options,
 	OAuth2AuthenticationMethod,
 	OAuth2CredentialData,
@@ -6,7 +6,7 @@ import type {
 	OAuthAuthorizationServerMetadata,
 } from '@n8n/client-oauth2';
 import { ClientOAuth2 } from '@n8n/client-oauth2';
-import { Get, RestController } from '@n8n/decorators';
+import { Get, RestController } from '@workflow-automation/decorators';
 import axios from 'axios';
 import { Response } from 'express';
 import omit from 'lodash/omit';
@@ -17,7 +17,7 @@ import {
 	type ICredentialDataDecryptedObject,
 	jsonParse,
 	jsonStringify,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import pkceChallenge from 'pkce-challenge';
 import * as qs from 'querystring';
 

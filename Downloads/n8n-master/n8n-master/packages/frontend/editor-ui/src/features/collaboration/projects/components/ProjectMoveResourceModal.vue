@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import Modal from '@/app/components/Modal.vue';
 import ProjectMoveResourceModalCredentialsList from './ProjectMoveResourceModalCredentialsList.vue';
 import ProjectMoveSuccessToastMessage from './ProjectMoveSuccessToastMessage.vue';
@@ -10,7 +10,7 @@ import type {
 	IUsedCredential,
 } from '@/features/credentials/credentials.types';
 import type { IWorkflowDb } from '@/Interface';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import { useProjectsStore } from '../projects.store';
 import { useUIStore } from '@/app/stores/ui.store';

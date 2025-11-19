@@ -1,5 +1,5 @@
-import { mock, mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, NodeParameterValueType } from 'n8n-workflow';
+﻿import { mock, mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions, NodeParameterValueType } from 'workflow-automation-workflow';
 
 import { GoogleSheet } from '../../Google/Sheet/v2/helpers/GoogleSheet';
 import { EvaluationTrigger } from '../EvaluationTrigger/EvaluationTrigger.node.ee';

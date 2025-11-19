@@ -1,4 +1,4 @@
-import type { RunWorkflowChatPayload } from '@/features/execution/logs/composables/useChatMessaging';
+﻿import type { RunWorkflowChatPayload } from '@/features/execution/logs/composables/useChatMessaging';
 import { useChatMessaging } from '@/features/execution/logs/composables/useChatMessaging';
 import { useI18n } from '@n8n/i18n';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
@@ -15,7 +15,7 @@ import { computed, provide, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { useLogsStore } from '@/app/stores/logs.store';
 import { restoreChatHistory } from '@/features/execution/logs/logs.utils';
-import type { INodeParameters } from 'n8n-workflow';
+import type { INodeParameters } from 'workflow-automation-workflow';
 import { isChatNode } from '@/app/utils/aiUtils';
 import { constructChatWebsocketUrl } from '@n8n/chat/utils';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';

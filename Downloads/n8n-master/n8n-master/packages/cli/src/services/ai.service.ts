@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	AiApplySuggestionRequestDto,
 	AiAskRequestDto,
 	AiChatRequestDto,
-} from '@n8n/api-types';
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { AiAssistantClient } from '@n8n_io/ai-assistant-sdk';
-import { assert, type IUser } from 'n8n-workflow';
+import { assert, type IUser } from 'workflow-automation-workflow';
 
 import { N8N_VERSION } from '../constants';
 import { License } from '../license';

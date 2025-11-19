@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '../../../../../utils/utilities';
 import {
@@ -45,7 +45,7 @@ const properties: INodeProperties[] = [
 				type: 'multiOptions',
 				default: [],
 				description:
-					'Message flags. <a href="https://discord.com/developers/docs/resources/channel#message-object-message-flags" target="_blank">More info</a>.”.',
+					'Message flags. <a href="https://discord.com/developers/docs/resources/channel#message-object-message-flags" target="_blank">More info</a>.â€.',
 				options: [
 					{
 						name: 'Suppress Embeds',

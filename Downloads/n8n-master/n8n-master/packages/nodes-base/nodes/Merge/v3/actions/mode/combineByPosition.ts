@@ -1,10 +1,10 @@
-import merge from 'lodash/merge';
+﻿import merge from 'lodash/merge';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import type { INodeTypeDescription, IWebhookDescription } from 'n8n-workflow';
+﻿<script lang="ts" setup>
+import type { INodeTypeDescription, IWebhookDescription } from 'workflow-automation-workflow';
 import { useToast } from '@/app/composables/useToast';
 import {
 	CHAT_TRIGGER_NODE_TYPE,

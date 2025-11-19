@@ -1,5 +1,5 @@
-import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../transport';
 

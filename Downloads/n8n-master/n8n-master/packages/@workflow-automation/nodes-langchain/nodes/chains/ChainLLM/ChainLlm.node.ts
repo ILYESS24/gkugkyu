@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError, sleep } from 'workflow-automation-workflow';
 
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
 

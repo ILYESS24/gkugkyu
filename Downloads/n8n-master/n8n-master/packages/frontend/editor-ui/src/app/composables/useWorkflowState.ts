@@ -1,4 +1,4 @@
-import {
+﻿import {
 	DEFAULT_NEW_WORKFLOW_NAME,
 	PLACEHOLDER_EMPTY_WORKFLOW_ID,
 	WorkflowStateKey,
@@ -23,7 +23,7 @@ import {
 	type IDataObject,
 	type INodeParameters,
 	type IWorkflowSettings,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { inject } from 'vue';
 import * as workflowsApi from '@/app/api/workflows';
 import { useRootStore } from '@n8n/stores/useRootStore';

@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { gitlabApiRequest, gitlabApiRequestAllItems } from './GenericFunctions';
 
@@ -687,7 +687,7 @@ export class Gitlab implements INodeType {
 						type: 'string',
 						default: '',
 						description:
-							'If Tag doesn’t exist, the release will be created from Ref. It can be a commit SHA, another tag name, or a branch name.',
+							'If Tag doesnâ€™t exist, the release will be created from Ref. It can be a commit SHA, another tag name, or a branch name.',
 					},
 				],
 			},
@@ -1110,7 +1110,7 @@ export class Gitlab implements INodeType {
 						default: '',
 						placeholder: 'main',
 						description:
-							'The name of the commit/branch/tag. Default: the repository’s default branch (usually main).',
+							'The name of the commit/branch/tag. Default: the repositoryâ€™s default branch (usually main).',
 					},
 					{
 						displayName: 'Recursive',
@@ -1176,7 +1176,7 @@ export class Gitlab implements INodeType {
 						default: '',
 						placeholder: 'main',
 						description:
-							'The name of the commit/branch/tag. Default: the repository’s default branch (usually main).',
+							'The name of the commit/branch/tag. Default: the repositoryâ€™s default branch (usually main).',
 					},
 				],
 			},

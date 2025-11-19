@@ -1,4 +1,4 @@
-import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
+﻿import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
 import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
 import {
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type INodeExecutionData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { N8nJsonLoader } from '@utils/N8nJsonLoader';
 

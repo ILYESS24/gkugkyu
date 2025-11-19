@@ -1,6 +1,6 @@
-import type { MockProxy } from 'jest-mock-extended';
+﻿import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 import { Readable } from 'stream';
 
 import * as genericFunctions from '../../GenericFunctions';

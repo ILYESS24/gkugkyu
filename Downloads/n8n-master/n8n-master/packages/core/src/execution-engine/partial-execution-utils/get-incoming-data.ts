@@ -1,4 +1,4 @@
-import type { INodeExecutionData, IRunData, NodeConnectionType } from 'n8n-workflow';
+﻿import type { INodeExecutionData, IRunData, NodeConnectionType } from 'workflow-automation-workflow';
 
 export function getIncomingData(
 	runData: IRunData,

@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon';
-import type { INodeParameters, NodeParameterValueType } from 'n8n-workflow';
+﻿import { DateTime } from 'luxon';
+import type { INodeParameters, NodeParameterValueType } from 'workflow-automation-workflow';
 
 /**
  * Clean up parameter data to make sure that only valid data gets returned

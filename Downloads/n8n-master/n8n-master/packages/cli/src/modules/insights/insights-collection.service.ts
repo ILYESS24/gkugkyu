@@ -1,10 +1,10 @@
-import { Logger } from '@n8n/backend-common';
-import { SharedWorkflowRepository } from '@n8n/db';
-import { OnLifecycleEvent, type WorkflowExecuteAfterContext } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { SharedWorkflowRepository } from '@workflow-automation/db';
+import { OnLifecycleEvent, type WorkflowExecuteAfterContext } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 import { In } from '@n8n/typeorm';
 import { DateTime } from 'luxon';
-import { UnexpectedError, type ExecutionStatus, type WorkflowExecuteMode } from 'n8n-workflow';
+import { UnexpectedError, type ExecutionStatus, type WorkflowExecuteMode } from 'workflow-automation-workflow';
 
 import { InsightsMetadata } from '@/modules/insights/database/entities/insights-metadata';
 import { InsightsRaw } from '@/modules/insights/database/entities/insights-raw';

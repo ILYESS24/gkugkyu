@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { Response } from 'express';
-import { Workflow, CHAT_TRIGGER_NODE_TYPE } from 'n8n-workflow';
-import type { INode, IWebhookData, IHttpRequestMethods } from 'n8n-workflow';
+import { Workflow, CHAT_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
+import type { INode, IWebhookData, IHttpRequestMethods } from 'workflow-automation-workflow';
 
 import { authAllowlistedNodes } from './constants';
 import { sanitizeWebhookRequest } from './webhook-request-sanitizer';

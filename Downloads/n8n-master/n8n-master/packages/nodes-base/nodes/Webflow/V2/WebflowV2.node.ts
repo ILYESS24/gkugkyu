@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getSites, getCollections, getFields } from '../GenericFunctions';
 import { router } from './actions/router';

@@ -1,7 +1,7 @@
-import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
+﻿import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
 import { ZepCloudVectorStore } from '@langchain/community/vectorstores/zep_cloud';
-import type { IDataObject, INodeProperties } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IDataObject, INodeProperties } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { metadataFilterField } from '@utils/sharedFields';
 

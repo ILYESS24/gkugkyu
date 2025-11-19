@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-import type { IWorkflowBase } from 'n8n-workflow';
+﻿/* eslint-disable @typescript-eslint/ban-ts-comment */
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 import type { CredentialsEntity, WorkflowEntity } from '../../entities';
 import type { MigrationContext, ReversibleMigration } from '../migration-types';

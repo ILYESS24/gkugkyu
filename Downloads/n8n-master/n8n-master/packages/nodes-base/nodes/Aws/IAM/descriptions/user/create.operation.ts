@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { preprocessTags, validatePath, validatePermissionsBoundary } from '../../helpers/utils';
 import { pathParameter, userNameParameter } from '../common';

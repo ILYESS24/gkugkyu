@@ -1,4 +1,4 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { TextSplitter } from '@langchain/textsplitters';
 import { JSONLoader } from 'langchain/document_loaders/fs/json';
 import { TextLoader } from 'langchain/document_loaders/fs/text';
@@ -7,7 +7,7 @@ import {
 	type INodeExecutionData,
 	type ISupplyDataFunctions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getMetadataFiltersValues } from './helpers';
 

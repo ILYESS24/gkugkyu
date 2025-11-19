@@ -1,6 +1,6 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { useUIStore } from '@/app/stores/ui.store';
-import type { IUser, PublicInstalledPackage } from 'n8n-workflow';
+import type { IUser, PublicInstalledPackage } from 'workflow-automation-workflow';
 import { COMMUNITY_PACKAGE_MANAGE_ACTIONS } from '../communityNodes.constants';
 import { NPM_PACKAGE_DOCS_BASE_URL } from '@/app/constants';
 import { useI18n } from '@n8n/i18n';

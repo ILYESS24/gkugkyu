@@ -1,4 +1,4 @@
-import type { IDisplayOptions, INodeProperties } from 'n8n-workflow';
+﻿import type { IDisplayOptions, INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	databaseUrlExtractionRegexp,

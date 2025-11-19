@@ -1,5 +1,5 @@
-import { Service } from '@n8n/di';
-import { PROJECT_OWNER_ROLE_SLUG, type WorkflowSharingRole } from '@n8n/permissions';
+﻿import { Service } from '@workflow-automation/di';
+import { PROJECT_OWNER_ROLE_SLUG, type WorkflowSharingRole } from '@workflow-automation/permissions';
 import { DataSource, Repository, In, Not } from '@n8n/typeorm';
 import type { EntityManager, FindManyOptions, FindOptionsWhere } from '@n8n/typeorm';
 

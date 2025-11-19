@@ -1,6 +1,6 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { attributeFields, attributeOperations } from './AttributeDescription';
 import { contactFields, contactOperations } from './ContactDescription';

@@ -1,5 +1,5 @@
-import lodashGet from 'lodash/get';
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
+﻿import lodashGet from 'lodash/get';
+import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
 import type { FunctionTool } from 'openai/resources/responses/responses';
 
 import { getBinaryDataFile } from '../../../../helpers/binary-data';

@@ -1,5 +1,5 @@
-import type { INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 const validOptions = ['notSupported', 'memory', 'manually'] as const;
 export type AuthenticationChatOption = 'none' | 'basicAuth' | 'n8nUserAuth';

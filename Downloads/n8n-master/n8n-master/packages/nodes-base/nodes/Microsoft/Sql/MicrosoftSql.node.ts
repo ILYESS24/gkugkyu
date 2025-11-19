@@ -1,4 +1,4 @@
-import type { IResult } from 'mssql';
+﻿import type { IResult } from 'mssql';
 import {
 	type IExecuteFunctions,
 	type ICredentialDataDecryptedObject,
@@ -10,7 +10,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { flatten, generatePairedItemData, getResolvables } from '@utils/utilities';
 

@@ -1,4 +1,4 @@
-import type { IDataObject } from 'n8n-workflow';
+﻿import type { IDataObject } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { BaseDynamicParametersRequestDto } from './base-dynamic-parameters-request.dto';

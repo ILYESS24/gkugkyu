@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref } from 'vue';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
@@ -8,7 +8,7 @@ import {
 	FORM_TRIGGER_NODE_TYPE,
 } from '@/app/constants';
 import type { INodeUi } from '@/Interface';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import { getTriggerNodeServiceName } from '@/app/utils/nodeTypesUtils';
 import NodeExecuteButton from '@/app/components/NodeExecuteButton.vue';
 import CopyInput from '@/app/components/CopyInput.vue';

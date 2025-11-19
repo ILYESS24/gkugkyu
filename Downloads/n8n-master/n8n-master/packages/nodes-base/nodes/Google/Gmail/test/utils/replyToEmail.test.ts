@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
 
 import {
 	encodeEmail,

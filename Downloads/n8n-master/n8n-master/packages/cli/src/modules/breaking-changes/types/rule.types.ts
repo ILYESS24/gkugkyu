@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	BreakingChangeAffectedWorkflow,
 	BreakingChangeRecommendation,
 	BreakingChangeRuleSeverity,
 	BreakingChangeVersion,
-} from '@n8n/api-types';
-import type { WorkflowEntity } from '@n8n/db';
-import type { INode } from 'n8n-workflow';
+} from '@workflow-automation/api-types';
+import type { WorkflowEntity } from '@workflow-automation/db';
+import type { INode } from 'workflow-automation-workflow';
 
 import type { InstanceDetectionReport, WorkflowDetectionReport } from './detection.types';
 

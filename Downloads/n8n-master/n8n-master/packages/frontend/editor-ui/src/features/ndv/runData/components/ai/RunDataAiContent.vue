@@ -1,7 +1,7 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type { IAiDataContent } from '@/Interface';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import type { INodeTypeDescription, NodeConnectionType, NodeError } from 'n8n-workflow';
+import type { INodeTypeDescription, NodeConnectionType, NodeError } from 'workflow-automation-workflow';
 import { computed } from 'vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import AiRunContentBlock from './AiRunContentBlock.vue';

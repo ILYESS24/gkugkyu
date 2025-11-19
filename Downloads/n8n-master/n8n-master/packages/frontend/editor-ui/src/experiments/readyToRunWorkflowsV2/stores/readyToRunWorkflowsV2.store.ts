@@ -1,4 +1,4 @@
-import { useTelemetry } from '@/app/composables/useTelemetry';
+﻿import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useToast } from '@/app/composables/useToast';
 import { READY_TO_RUN_V2_PART2_EXPERIMENT, VIEWS } from '@/app/constants';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
@@ -11,7 +11,7 @@ import { useI18n } from '@n8n/i18n';
 import type { WorkflowDataCreate } from '@n8n/rest-api-client';
 import { STORES } from '@n8n/stores';
 import { useLocalStorage } from '@vueuse/core';
-import { OPEN_AI_API_CREDENTIAL_TYPE, deepCopy } from 'n8n-workflow';
+import { OPEN_AI_API_CREDENTIAL_TYPE, deepCopy } from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { useRouter, type RouteLocationNormalized } from 'vue-router';

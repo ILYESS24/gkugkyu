@@ -1,5 +1,5 @@
-import { CLI_DIR } from '@/constants';
-import { Get, RestController } from '@n8n/decorators';
+﻿import { CLI_DIR } from '@/constants';
+import { Get, RestController } from '@workflow-automation/decorators';
 import { Request, Response } from 'express';
 import { readFile } from 'fs/promises';
 import { resolve } from 'path';

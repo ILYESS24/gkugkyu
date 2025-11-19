@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, inject, nextTick, onBeforeUnmount, onMounted, ref, toRaw, watch } from 'vue';
 import { onClickOutside } from '@vueuse/core';
 
@@ -15,7 +15,7 @@ import { dropInExpressionEditor } from '@/features/shared/editors/plugins/codemi
 import type { Segment } from '@/app/types/expressions';
 import { startCompletion } from '@codemirror/autocomplete';
 import type { EditorState, SelectionRange } from '@codemirror/state';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
 import { createEventBus, type EventBus } from '@n8n/utils/event-bus';
 import { CanvasKey } from '@/app/constants';
 import { useIsInExperimentalNdv } from '@/features/workflows/canvas/experimental/composables/useIsInExperimentalNdv';

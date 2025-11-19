@@ -1,4 +1,4 @@
-import type { INodeUi, LlmTokenUsageData, IWorkflowDb } from '@/Interface';
+﻿import type { INodeUi, LlmTokenUsageData, IWorkflowDb } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import { addTokenUsageData, emptyTokenUsageData, isChatNode } from '@/app/utils/aiUtils';
 import {
@@ -14,7 +14,7 @@ import {
 	parseErrorMetadata,
 	type RelatedExecution,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	LogEntry,
 	LogEntrySelection,
@@ -26,7 +26,7 @@ import { type ChatMessage } from '@n8n/chat/types';
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import { v4 as uuid } from 'uuid';
-import { TOOL_EXECUTOR_NODE_NAME } from '@n8n/constants';
+import { TOOL_EXECUTOR_NODE_NAME } from '@workflow-automation/constants';
 
 export function getConsumedTokens(task: Array<INodeExecutionData | null>): LlmTokenUsageData {
 	const tokenUsage = task.reduce<LlmTokenUsageData>((acc, curr) => {

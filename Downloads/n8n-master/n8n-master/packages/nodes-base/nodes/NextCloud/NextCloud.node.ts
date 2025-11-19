@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IBinaryKeyData,
 	IDataObject,
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import { URLSearchParams } from 'url';
 import { parseString } from 'xml2js';
 

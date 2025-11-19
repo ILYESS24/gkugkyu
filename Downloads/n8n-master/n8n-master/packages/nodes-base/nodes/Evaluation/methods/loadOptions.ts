@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
 
 import { getSheetHeaderRow } from '../../Google/Sheet/v2/methods/loadOptions';
 export { getConditionsForColumn, getDataTableColumns } from '../../DataTable/common/methods';

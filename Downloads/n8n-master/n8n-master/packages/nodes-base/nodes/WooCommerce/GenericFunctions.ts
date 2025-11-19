@@ -1,4 +1,4 @@
-import { snakeCase } from 'change-case';
+﻿import { snakeCase } from 'change-case';
 import { createHash } from 'crypto';
 import omit from 'lodash/omit';
 import type {
@@ -10,7 +10,7 @@ import type {
 	IWebhookFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { ICouponLine, IFeeLine, ILineItem, IShoppingLine } from './OrderInterface';
 

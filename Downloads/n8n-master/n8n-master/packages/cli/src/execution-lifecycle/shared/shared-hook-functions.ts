@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import type { IExecutionDb } from '@n8n/db';
-import { ExecutionRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { IExecutionDb } from '@workflow-automation/db';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import pick from 'lodash/pick';
-import { ensureError, type ExecutionStatus, type IRun, type IWorkflowBase } from 'n8n-workflow';
+import { ensureError, type ExecutionStatus, type IRun, type IWorkflowBase } from 'workflow-automation-workflow';
 
 import type { UpdateExecutionPayload } from '@/interfaces';
 import { ExecutionMetadataService } from '@/services/execution-metadata.service';

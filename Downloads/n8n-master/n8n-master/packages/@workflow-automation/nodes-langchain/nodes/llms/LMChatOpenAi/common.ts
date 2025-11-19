@@ -1,8 +1,8 @@
-import type { OpenAIClient } from '@langchain/openai';
+﻿import type { OpenAIClient } from '@langchain/openai';
 import type { ChatOpenAIToolType } from '@langchain/openai/dist/utils/tools';
 import get from 'lodash/get';
 import isObject from 'lodash/isObject';
-import { isObjectEmpty, jsonParse } from 'n8n-workflow';
+import { isObjectEmpty, jsonParse } from 'workflow-automation-workflow';
 
 import type {
 	BuiltInTools,

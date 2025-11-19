@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { saveAs } from 'file-saver';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import { ViewableMimeTypes } from '@n8n/api-types';
+import { ViewableMimeTypes } from '@workflow-automation/api-types';
 import { useI18n } from '@n8n/i18n';
-import type { IBinaryKeyData } from 'n8n-workflow';
+import type { IBinaryKeyData } from 'workflow-automation-workflow';
 import { N8nButton, N8nText } from '@n8n/design-system';
 const { binaryData } = defineProps<{ binaryData: IBinaryKeyData[] }>();
 

@@ -1,4 +1,4 @@
-import { pascalCase } from 'change-case';
+﻿import { pascalCase } from 'change-case';
 import get from 'lodash/get';
 import type {
 	IDataObject,
@@ -8,7 +8,7 @@ import type {
 	IWebhookFunctions,
 	IHttpRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { parseString } from 'xml2js';
 import { getAwsCredentials } from '../GenericFunctions';
 

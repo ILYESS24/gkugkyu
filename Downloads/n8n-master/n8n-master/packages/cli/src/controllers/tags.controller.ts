@@ -1,5 +1,5 @@
-import { CreateOrUpdateTagRequestDto, RetrieveTagQueryDto } from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
+﻿import { CreateOrUpdateTagRequestDto, RetrieveTagQueryDto } from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
 import {
 	Delete,
 	Get,
@@ -10,7 +10,7 @@ import {
 	Body,
 	Param,
 	Query,
-} from '@n8n/decorators';
+} from '@workflow-automation/decorators';
 import { Response } from 'express';
 
 import { TagService } from '@/services/tag.service';

@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import {
 	type IWebhookFunctions,
 	type IDataObject,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class TheHiveProjectTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -33,7 +33,7 @@ export class TheHiveProjectTrigger implements INodeType {
 		properties: [
 			{
 				displayName:
-					'You must set up the webhook in TheHive — instructions <a href="https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehive5trigger/#configure-a-webhook-in-thehive" target="_blank">here</a>',
+					'You must set up the webhook in TheHive â€” instructions <a href="https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehive5trigger/#configure-a-webhook-in-thehive" target="_blank">here</a>',
 				name: 'notice',
 				type: 'notice',
 				default: '',

@@ -1,9 +1,9 @@
-import { LicenseState, Logger } from '@n8n/backend-common';
-import type { User } from '@n8n/db';
-import { WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { LicenseState, Logger } from '@workflow-automation/backend-common';
+import type { User } from '@workflow-automation/db';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import axios, { AxiosError } from 'axios';
-import { ensureError } from 'n8n-workflow';
+import { ensureError } from 'workflow-automation-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 import { LicenseEulaRequiredError } from '@/errors/response-errors/license-eula-required.error';

@@ -1,4 +1,4 @@
-import { deepCopy, type ICredentialType, type INodeTypeDescription } from 'n8n-workflow';
+﻿import { deepCopy, type ICredentialType, type INodeTypeDescription } from 'workflow-automation-workflow';
 import { CREDENTIAL_ONLY_NODE_PREFIX } from '../constants';
 import { i18n } from '@n8n/i18n';
 

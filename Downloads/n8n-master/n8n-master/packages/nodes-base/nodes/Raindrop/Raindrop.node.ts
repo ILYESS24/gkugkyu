@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import omit from 'lodash/omit';
 import type {
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	bookmarkFields,

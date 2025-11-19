@@ -1,4 +1,4 @@
-import { DateTimeColumn } from '@n8n/db';
+﻿import { DateTimeColumn } from '@workflow-automation/db';
 import {
 	BaseEntity,
 	Column,
@@ -7,7 +7,7 @@ import {
 	ManyToOne,
 	PrimaryGeneratedColumn,
 } from '@n8n/typeorm';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { InsightsMetadata } from './insights-metadata';
 import type { PeriodUnit } from './insights-shared';
@@ -51,7 +51,7 @@ export class InsightsByPeriod extends BaseEntity {
 
 	/**
 	 * Stored as BIGINT in database (see migration 1759399811000).
-	 * JavaScript number type has precision limits at ±2^53-1 (9,007,199,254,740,991).
+	 * JavaScript number type has precision limits at Â±2^53-1 (9,007,199,254,740,991).
 	 * Values exceeding Number.MAX_SAFE_INTEGER will lose precision.
 	 */
 	@Column()

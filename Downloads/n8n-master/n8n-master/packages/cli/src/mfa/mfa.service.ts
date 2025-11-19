@@ -1,7 +1,7 @@
-import { LicenseState, Logger } from '@n8n/backend-common';
-import { SettingsRepository, UserRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { Cipher } from 'n8n-core';
+﻿import { LicenseState, Logger } from '@workflow-automation/backend-common';
+import { SettingsRepository, UserRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { Cipher } from 'workflow-automation-core';
 import { v4 as uuid } from 'uuid';
 
 import { InvalidMfaCodeError } from '@/errors/response-errors/invalid-mfa-code.error';

@@ -1,6 +1,6 @@
-import { Time } from '@n8n/constants';
-import { WorkflowHistoryRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Time } from '@workflow-automation/constants';
+import { WorkflowHistoryRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
 
 import { getWorkflowHistoryPruneTime } from './workflow-history-helper';

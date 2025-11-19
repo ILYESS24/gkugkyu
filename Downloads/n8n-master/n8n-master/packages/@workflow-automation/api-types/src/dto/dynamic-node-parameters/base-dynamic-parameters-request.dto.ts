@@ -1,4 +1,4 @@
-import type { INodeCredentials, INodeParameters, INodeTypeNameVersion } from 'n8n-workflow';
+﻿import type { INodeCredentials, INodeParameters, INodeTypeNameVersion } from 'workflow-automation-workflow';
 import { z } from 'zod';
 import { Z } from 'zod-class';
 

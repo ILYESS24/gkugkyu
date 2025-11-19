@@ -1,10 +1,10 @@
-import {
+﻿import {
 	DATA_TABLE_SYSTEM_COLUMNS,
 	type IDataObject,
 	type IDisplayOptions,
 	type IExecuteFunctions,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DATA_TABLE_ID_FIELD } from './fields';
 import { dataObjectToApiInput } from './utils';

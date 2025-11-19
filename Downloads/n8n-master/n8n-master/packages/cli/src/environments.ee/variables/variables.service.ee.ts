@@ -1,9 +1,9 @@
-import { CreateVariableRequestDto, UpdateVariableRequestDto } from '@n8n/api-types';
-import { LicenseState } from '@n8n/backend-common';
-import type { User, Variables } from '@n8n/db';
-import { generateNanoId, VariablesRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope, Scope } from '@n8n/permissions';
+﻿import { CreateVariableRequestDto, UpdateVariableRequestDto } from '@workflow-automation/api-types';
+import { LicenseState } from '@workflow-automation/backend-common';
+import type { User, Variables } from '@workflow-automation/db';
+import { generateNanoId, VariablesRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope, Scope } from '@workflow-automation/permissions';
 
 import { FeatureNotLicensedError } from '@/errors/feature-not-licensed.error';
 import { ForbiddenError } from '@/errors/response-errors/forbidden.error';

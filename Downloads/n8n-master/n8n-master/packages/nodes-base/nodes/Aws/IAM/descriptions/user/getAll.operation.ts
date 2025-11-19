@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { validateUserPath } from '../../helpers/utils';
 import { paginationParameters } from '../common';

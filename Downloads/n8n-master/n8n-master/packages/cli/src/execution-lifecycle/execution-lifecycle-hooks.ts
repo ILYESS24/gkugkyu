@@ -1,14 +1,14 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionRepository } from '@n8n/db';
-import { LifecycleMetadata } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { LifecycleMetadata } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { stringify } from 'flatted';
-import { ErrorReporter, InstanceSettings, ExecutionLifecycleHooks } from 'n8n-core';
+import { ErrorReporter, InstanceSettings, ExecutionLifecycleHooks } from 'workflow-automation-core';
 import type {
 	IWorkflowBase,
 	WorkflowExecuteMode,
 	IWorkflowExecutionDataProcess,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { EventService } from '@/events/event.service';
 import { ExternalHooks } from '@/external-hooks';

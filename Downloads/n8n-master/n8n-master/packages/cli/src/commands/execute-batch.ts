@@ -1,12 +1,12 @@
-import type { User } from '@n8n/db';
-import { WorkflowRepository } from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { User } from '@workflow-automation/db';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import fs from 'fs';
 import { diff } from 'json-diff';
 import pick from 'lodash/pick';
-import type { IRun, ITaskData, IWorkflowBase, IWorkflowExecutionDataProcess } from 'n8n-workflow';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import type { IRun, ITaskData, IWorkflowBase, IWorkflowExecutionDataProcess } from 'workflow-automation-workflow';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 import os from 'os';
 import { sep } from 'path';
 import { z } from 'zod';

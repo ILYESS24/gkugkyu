@@ -1,5 +1,5 @@
-import { tool } from '@langchain/core/tools';
-import type { Logger } from '@n8n/backend-common';
+﻿import { tool } from '@langchain/core/tools';
+import type { Logger } from '@workflow-automation/backend-common';
 import { z } from 'zod';
 
 import type { BuilderTool, BuilderToolBase } from '@/utils/stream-processor';
@@ -56,7 +56,7 @@ function buildResponseMessage(
 	targetInputIndex: number,
 ): string {
 	const parts: string[] = [
-		`Successfully removed connection: ${sourceNodeName} → ${targetNodeName} (${connectionType})`,
+		`Successfully removed connection: ${sourceNodeName} â†’ ${targetNodeName} (${connectionType})`,
 	];
 
 	if (sourceOutputIndex !== 0 || targetInputIndex !== 0) {
@@ -206,7 +206,7 @@ export function createRemoveConnectionTool(logger?: Logger): BuilderTool {
 
 				if (!connectionExists) {
 					const connectionError = new ConnectionError(
-						`Connection not found: ${sourceNode.name} → ${targetNode.name} (${validatedInput.connectionType}) at output ${validatedInput.sourceOutputIndex} to input ${validatedInput.targetInputIndex}`,
+						`Connection not found: ${sourceNode.name} â†’ ${targetNode.name} (${validatedInput.connectionType}) at output ${validatedInput.sourceOutputIndex} to input ${validatedInput.targetInputIndex}`,
 						{
 							fromNodeId: sourceNode.id,
 							toNodeId: targetNode.id,

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	AddDataTableColumnDto,
 	CreateDataTableDto,
 	DeleteDataTableRowsDto,
@@ -8,10 +8,10 @@ import type {
 	UpsertDataTableRowDto,
 	UpdateDataTableDto,
 	UpdateDataTableRowDto,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { ProjectRelationRepository, type User } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { ProjectRelationRepository, type User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
 import type {
 	DataTableColumnJsType,
@@ -25,8 +25,8 @@ import type {
 	DataTableInfoById,
 	DataTableColumnType,
 	DataTableRowReturnWithState,
-} from 'n8n-workflow';
-import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, validateFieldType } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, validateFieldType } from 'workflow-automation-workflow';
 
 import { CsvParserService } from './csv-parser.service';
 import { DataTableColumn } from './data-table-column.entity';

@@ -1,4 +1,4 @@
-import type { FrontendModuleSettings } from '@n8n/api-types';
+﻿import type { FrontendModuleSettings } from '@workflow-automation/api-types';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

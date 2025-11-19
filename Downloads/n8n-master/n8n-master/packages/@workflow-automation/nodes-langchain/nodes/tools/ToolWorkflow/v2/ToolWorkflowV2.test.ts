@@ -1,12 +1,12 @@
-import { DynamicTool } from '@langchain/core/tools';
-import { ApplicationError, NodeOperationError } from 'n8n-workflow';
+﻿import { DynamicTool } from '@langchain/core/tools';
+import { ApplicationError, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	ISupplyDataFunctions,
 	INodeExecutionData,
 	IWorkflowDataProxyData,
 	ExecuteWorkflowData,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { WorkflowToolService } from './utils/WorkflowToolService';
 

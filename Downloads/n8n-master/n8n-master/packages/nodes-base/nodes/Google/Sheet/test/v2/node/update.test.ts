@@ -1,6 +1,6 @@
-import type { MockProxy } from 'jest-mock-extended';
+﻿import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
 
 import { execute } from '../../../v2/actions/sheet/update.operation';
 import type { GoogleSheet } from '../../../v2/helpers/GoogleSheet';
@@ -112,8 +112,8 @@ describe('Google Sheet - Update', () => {
 			{
 				json: {
 					row_number: 3,
-					name: '** δ$% " []',
-					text: 'δ$% " []',
+					name: '** Î´$% " []',
+					text: 'Î´$% " []',
 				},
 				pairedItem: {
 					item: 0,
@@ -131,7 +131,7 @@ describe('Google Sheet - Update', () => {
 					'ha []': 'kayyyy$',
 					macarena: 'baile',
 					'Real.1': 't&c',
-					'21 "': 'Σ',
+					'21 "': 'Î£',
 				},
 				dataMode: 'autoMapInputData',
 			};
@@ -141,7 +141,7 @@ describe('Google Sheet - Update', () => {
 		mockGoogleSheet.getData.mockResolvedValueOnce([
 			['Real.1', '21 "', 'dfd', 'ha []', 'macarena'],
 			['aye.2', '"book"', 'ee', 'dd', 'dance'],
-			['t&c', 'Σ', 'baz', 'kayyyy$', 'baile'],
+			['t&c', 'Î£', 'baz', 'kayyyy$', 'baile'],
 			['fudge.2', '9080', 'live', 'dog', 'brazil'],
 		]);
 
@@ -151,11 +151,11 @@ describe('Google Sheet - Update', () => {
 			updateData: [
 				{
 					range: 'Sheet1!B3',
-					values: [['** δ$% " []']],
+					values: [['** Î´$% " []']],
 				},
 				{
 					range: 'Sheet1!C3',
-					values: [['δ$% " []']],
+					values: [['Î´$% " []']],
 				},
 			],
 		});
@@ -172,7 +172,7 @@ describe('Google Sheet - Update', () => {
 			sheetData: [
 				['Real.1', '21 "', 'dfd', 'ha []', 'macarena'],
 				['aye.2', '"book"', 'ee', 'dd', 'dance'],
-				['t&c', 'Σ', 'baz', 'kayyyy$', 'baile'],
+				['t&c', 'Î£', 'baz', 'kayyyy$', 'baile'],
 				['fudge.2', '9080', 'live', 'dog', 'brazil'],
 			],
 		});
@@ -180,7 +180,7 @@ describe('Google Sheet - Update', () => {
 		expect(mockGoogleSheet.prepareDataForUpdatingByRowNumber).toHaveBeenCalledWith(
 			[
 				{
-					'21 "': 'Σ',
+					'21 "': 'Î£',
 					'Real.1': 't&c',
 					'ha []': 'kayyyy$',
 					macarena: 'baile',
@@ -194,11 +194,11 @@ describe('Google Sheet - Update', () => {
 			[
 				{
 					range: 'Sheet1!B3',
-					values: [['** δ$% " []']],
+					values: [['** Î´$% " []']],
 				},
 				{
 					range: 'Sheet1!C3',
-					values: [['δ$% " []']],
+					values: [['Î´$% " []']],
 				},
 			],
 			'USER_ENTERED',

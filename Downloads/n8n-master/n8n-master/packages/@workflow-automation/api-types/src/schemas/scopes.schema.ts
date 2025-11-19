@@ -1,4 +1,4 @@
-import type { ApiKeyScope } from '@n8n/permissions';
+﻿import type { ApiKeyScope } from '@workflow-automation/permissions';
 import { z } from 'zod';
 
 export const scopesSchema = z

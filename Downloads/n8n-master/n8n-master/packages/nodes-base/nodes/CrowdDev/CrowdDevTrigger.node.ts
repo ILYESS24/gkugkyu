@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IHookFunctions,
 	type IWebhookFunctions,
 	type INodeType,
@@ -6,7 +6,7 @@ import {
 	type IWebhookResponseData,
 	type IHttpRequestOptions,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 interface ICrowdDevCreds {
 	url: string;

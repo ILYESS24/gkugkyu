@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import type { Migration } from '@n8n/db';
-import { wrapMigration, DbConnectionOptions } from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { Migration } from '@workflow-automation/db';
+import { wrapMigration, DbConnectionOptions } from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { DataSourceOptions as ConnectionOptions } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import

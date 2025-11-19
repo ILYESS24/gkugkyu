@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import {
 	getCursorPaginatorCalls,

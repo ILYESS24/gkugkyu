@@ -1,7 +1,7 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import type { BaseDocumentCompressor } from '@langchain/core/retrievers/document_compressors';
 import type { VectorStore } from '@langchain/core/vectorstores';
-import { NodeConnectionTypes, type IExecuteFunctions, type INodeExecutionData } from 'n8n-workflow';
+import { NodeConnectionTypes, type IExecuteFunctions, type INodeExecutionData } from 'workflow-automation-workflow';
 
 import { getMetadataFiltersValues, logAiEvent } from '@utils/helpers';
 

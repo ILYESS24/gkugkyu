@@ -1,12 +1,12 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { SettingsRepository } from '@n8n/db';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { SettingsRepository } from '@workflow-automation/db';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { Request, Response, NextFunction } from 'express';
-import { Cipher } from 'n8n-core';
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
-import { deepCopy, jsonParse } from 'n8n-workflow';
+import { Cipher } from 'workflow-automation-core';
+import type { ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
+import { deepCopy, jsonParse } from 'workflow-automation-workflow';
 
 import { CredentialTypes } from '@/credential-types';
 import type { ICredentialsOverwrite } from '@/interfaces';

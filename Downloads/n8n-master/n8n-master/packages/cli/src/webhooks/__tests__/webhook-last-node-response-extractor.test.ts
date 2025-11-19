@@ -1,8 +1,8 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import { mock, type MockProxy } from 'jest-mock-extended';
-import { BinaryDataService } from 'n8n-core';
-import type { ITaskData, INodeExecutionData, IBinaryData } from 'n8n-workflow';
-import { BINARY_ENCODING, OperationalError } from 'n8n-workflow';
+import { BinaryDataService } from 'workflow-automation-core';
+import type { ITaskData, INodeExecutionData, IBinaryData } from 'workflow-automation-workflow';
+import { BINARY_ENCODING, OperationalError } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 import { Readable } from 'node:stream';
 

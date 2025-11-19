@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 import nock from 'nock';
 
 import * as utilities from '../../../../utils/utilities';

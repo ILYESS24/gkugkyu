@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { INodeParameterResourceLocator } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import type { INodeParameterResourceLocator } from 'workflow-automation-workflow';
 import nock from 'nock';
 
 import { returnId } from '../V2/GenericFunctions';
@@ -9,7 +9,7 @@ const searchResult = {
 		{
 			edit_history_tweet_ids: ['1666357334740811776'],
 			id: '1666357334740811776',
-			text: 'RT @business: Extreme heat is happening earlier than usual this year in Asia. That’s posing a grave risk to agriculture and industrial acti…',
+			text: 'RT @business: Extreme heat is happening earlier than usual this year in Asia. Thatâ€™s posing a grave risk to agriculture and industrial actiâ€¦',
 		},
 		{
 			edit_history_tweet_ids: ['1666357331276230656'],
@@ -21,32 +21,32 @@ const searchResult = {
 		{
 			edit_history_tweet_ids: ['1666357319381180417'],
 			id: '1666357319381180417',
-			text: "The global economy is set for a weak recovery from the shocks of Covid and Russia’s war in Ukraine, dogged by persistent inflation and central banks' restrictive policies, the OECD warns https://t.co/HPtelXu8iR https://t.co/rziWHhr8Np",
+			text: "The global economy is set for a weak recovery from the shocks of Covid and Russiaâ€™s war in Ukraine, dogged by persistent inflation and central banks' restrictive policies, the OECD warns https://t.co/HPtelXu8iR https://t.co/rziWHhr8Np",
 		},
 		{
 			edit_history_tweet_ids: ['1666357315946303488'],
 			id: '1666357315946303488',
 			text:
-				'RT @lukedepulford: Love this so much. Variations of “Glory to Hong Kong” are THE WHOLE TOP TEN of the most downloaded song on iTunes.\n' +
+				'RT @lukedepulford: Love this so much. Variations of â€œGlory to Hong Kongâ€ are THE WHOLE TOP TEN of the most downloaded song on iTunes.\n' +
 				'\n' +
-				'✊\n' +
+				'âœŠ\n' +
 				'\n' +
-				'h…',
+				'hâ€¦',
 		},
 		{
 			edit_history_tweet_ids: ['1666357265320869891'],
 			id: '1666357265320869891',
-			text: 'RT @business: The SEC said it’s seeking to freeze https://t.co/35sr7lifRX’s assets and protect customer funds, including through the repatr…',
+			text: 'RT @business: The SEC said itâ€™s seeking to freeze https://t.co/35sr7lifRXâ€™s assets and protect customer funds, including through the repatrâ€¦',
 		},
 		{
 			edit_history_tweet_ids: ['1666357244760555520'],
 			id: '1666357244760555520',
-			text: 'RT @BloombergJapan: オプション市場で日経平均先高観強まる、３万4000円に備える買い急増 https://t.co/mIcdkgokYj',
+			text: 'RT @BloombergJapan: ã‚ªãƒ—ã‚·ãƒ§ãƒ³å¸‚å ´ã§æ—¥çµŒå¹³å‡å…ˆé«˜è¦³å¼·ã¾ã‚‹ã€ï¼“ä¸‡4000å††ã«å‚™ãˆã‚‹è²·ã„æ€¥å¢— https://t.co/mIcdkgokYj',
 		},
 		{
 			edit_history_tweet_ids: ['1666357239710359552'],
 			id: '1666357239710359552',
-			text: "Twitter'a mı girdim bloomberg mi anlamadım,dolar euro altın..maşallahları var,tl mi onun anası sikilmiş.",
+			text: "Twitter'a mÄ± girdim bloomberg mi anlamadÄ±m,dolar euro altÄ±n..maÅŸallahlarÄ± var,tl mi onun anasÄ± sikilmiÅŸ.",
 		},
 		{
 			edit_history_tweet_ids: ['1666357235340165120'],
@@ -56,12 +56,12 @@ const searchResult = {
 		{
 			edit_history_tweet_ids: ['1666357210409213952'],
 			id: '1666357210409213952',
-			text: 'RT @elonmusk: @MattWalshBlog View count is actually understated, as it does not include anything from our API, for example tweets you see i…',
+			text: 'RT @elonmusk: @MattWalshBlog View count is actually understated, as it does not include anything from our API, for example tweets you see iâ€¦',
 		},
 		{
 			edit_history_tweet_ids: ['1666357208983166976'],
 			id: '1666357208983166976',
-			text: 'RT @coinbureau: There we go. Without proving in a court of law that these tokens are "securities" the SEC may be able to restrict access to…',
+			text: 'RT @coinbureau: There we go. Without proving in a court of law that these tokens are "securities" the SEC may be able to restrict access toâ€¦',
 		},
 	],
 };

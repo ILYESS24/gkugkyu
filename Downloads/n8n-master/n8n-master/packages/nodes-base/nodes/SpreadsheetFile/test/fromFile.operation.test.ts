@@ -1,6 +1,6 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IBinaryData, IExecuteFunctions, INode, INodeExecutionData } from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IBinaryData, IExecuteFunctions, INode, INodeExecutionData } from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeOperationError } from 'workflow-automation-workflow';
 import { Readable } from 'stream';
 
 jest.mock('xlsx', () => ({
@@ -511,7 +511,7 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 		it('should handle special characters correctly when readAsString is true', async () => {
 			// Mock binary data that contains special characters (e.g., accented characters, emojis)
 			const specialCharBinaryData: IBinaryData = {
-				data: Buffer.from('Special chars: àáâãäåæçèéêë 🚀 ñöü', 'utf8').toString(BINARY_ENCODING),
+				data: Buffer.from('Special chars: Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ« ðŸš€ Ã±Ã¶Ã¼', 'utf8').toString(BINARY_ENCODING),
 				mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 				fileExtension: 'xlsx',
 				fileName: 'special-chars.xlsx',
@@ -521,17 +521,17 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 				SheetNames: ['Sheet1'],
 				Sheets: {
 					Sheet1: {
-						A1: { t: 's', v: 'Special chars: àáâãäåæçèéêë 🚀 ñöü' },
-						A2: { t: 's', v: 'Café' },
-						A3: { t: 's', v: 'Naïve résumé' },
+						A1: { t: 's', v: 'Special chars: Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ« ðŸš€ Ã±Ã¶Ã¼' },
+						A2: { t: 's', v: 'CafÃ©' },
+						A3: { t: 's', v: 'NaÃ¯ve rÃ©sumÃ©' },
 					},
 				},
 			};
 
 			const mockSpecialCharData = [
-				{ text: 'Special chars: àáâãäåæçèéêë 🚀 ñöü' },
-				{ text: 'Café' },
-				{ text: 'Naïve résumé' },
+				{ text: 'Special chars: Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ« ðŸš€ Ã±Ã¶Ã¼' },
+				{ text: 'CafÃ©' },
+				{ text: 'NaÃ¯ve rÃ©sumÃ©' },
 			];
 
 			mockExecuteFunctions.getNodeParameter.mockImplementation((paramName: string) => {
@@ -554,15 +554,15 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 
 			// Verify that special characters are preserved in the output
 			expect(result).toHaveLength(3);
-			expect(result[0].json.text).toBe('Special chars: àáâãäåæçèéêë 🚀 ñöü');
-			expect(result[1].json.text).toBe('Café');
-			expect(result[2].json.text).toBe('Naïve résumé');
+			expect(result[0].json.text).toBe('Special chars: Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ« ðŸš€ Ã±Ã¶Ã¼');
+			expect(result[1].json.text).toBe('CafÃ©');
+			expect(result[2].json.text).toBe('NaÃ¯ve rÃ©sumÃ©');
 		});
 
 		it('should demonstrate the difference between readAsString true vs false for character encoding', async () => {
 			// Test data with potential encoding issues
 			const encodingTestData: IBinaryData = {
-				data: Buffer.from('Encoding test: café naïve résumé', 'utf8').toString(BINARY_ENCODING),
+				data: Buffer.from('Encoding test: cafÃ© naÃ¯ve rÃ©sumÃ©', 'utf8').toString(BINARY_ENCODING),
 				mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 				fileExtension: 'xlsx',
 				fileName: 'encoding-test.xlsx',
@@ -572,7 +572,7 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 				SheetNames: ['Sheet1'],
 				Sheets: {
 					Sheet1: {
-						A1: { t: 's', v: 'Encoding test: café naïve résumé' },
+						A1: { t: 's', v: 'Encoding test: cafÃ© naÃ¯ve rÃ©sumÃ©' },
 					},
 				},
 			};
@@ -580,7 +580,7 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 			mockExecuteFunctions.helpers.assertBinaryData.mockReturnValue(encodingTestData);
 			(xlsxRead as jest.Mock).mockReturnValue(mockWorkbookEncoding);
 			(xlsxUtils.sheet_to_json as jest.Mock).mockReturnValue([
-				{ text: 'Encoding test: café naïve résumé' },
+				{ text: 'Encoding test: cafÃ© naÃ¯ve rÃ©sumÃ©' },
 			]);
 
 			// Test with readAsString: true
@@ -602,7 +602,7 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 			jest.clearAllMocks();
 			(xlsxRead as jest.Mock).mockReturnValue(mockWorkbookEncoding);
 			(xlsxUtils.sheet_to_json as jest.Mock).mockReturnValue([
-				{ text: 'Encoding test: café naïve résumé' },
+				{ text: 'Encoding test: cafÃ© naÃ¯ve rÃ©sumÃ©' },
 			]);
 			mockExecuteFunctions.helpers.assertBinaryData.mockReturnValue(encodingTestData);
 
@@ -623,14 +623,14 @@ describe('fromFile.operation - xlsx parsing logic', () => {
 		it('should handle various international characters when readAsString is enabled', async () => {
 			// Test with various international characters that might cause encoding issues
 			const internationalChars = [
-				'Chinese: 你好世界',
-				'Japanese: こんにちは',
-				'Korean: 안녕하세요',
-				'Arabic: مرحبا',
-				'Russian: Привет',
-				'Greek: Γεια σας',
-				'Hebrew: שלום',
-				'Thai: สวัสดี',
+				'Chinese: ä½ å¥½ä¸–ç•Œ',
+				'Japanese: ã“ã‚“ã«ã¡ã¯',
+				'Korean: ì•ˆë…•í•˜ì„¸ìš”',
+				'Arabic: Ù…Ø±Ø­Ø¨Ø§',
+				'Russian: ÐŸÑ€Ð¸Ð²ÐµÑ‚',
+				'Greek: Î“ÎµÎ¹Î± ÏƒÎ±Ï‚',
+				'Hebrew: ×©×œ×•×',
+				'Thai: à¸ªà¸§à¸±à¸ªà¸”à¸µ',
 			];
 
 			const internationalBinaryData: IBinaryData = {

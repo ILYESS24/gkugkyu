@@ -1,4 +1,4 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import { getConnectedTools } from '@utils/helpers';
 import get from 'lodash/get';
 import type {
@@ -6,8 +6,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { jsonParse, NodeOperationError, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeOperationError, updateDisplayOptions } from 'workflow-automation-workflow';
 import { MODELS_NOT_SUPPORT_FUNCTION_CALLS } from '../../../helpers/constants';
 import type { ChatResponse } from '../../../helpers/interfaces';
 import { formatToOpenAIResponsesTool } from '../../../helpers/utils';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { attachmentFields, attachmentOperations } from './AttachmentDescription';
 import { businessServiceFields, businessServiceOperations } from './BusinessServiceDescription';

@@ -1,11 +1,11 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 

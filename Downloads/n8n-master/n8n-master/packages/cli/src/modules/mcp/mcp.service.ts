@@ -1,7 +1,7 @@
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { GlobalConfig } from '@n8n/config';
-import { User } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { GlobalConfig } from '@workflow-automation/config';
+import { User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { createExecuteWorkflowTool } from './tools/execute-workflow.tool';
 import { createWorkflowDetailsTool } from './tools/get-workflow-details.tool';

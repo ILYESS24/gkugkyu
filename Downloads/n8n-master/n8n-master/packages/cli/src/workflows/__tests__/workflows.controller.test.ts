@@ -1,5 +1,5 @@
-import type { ImportWorkflowFromUrlDto } from '@n8n/api-types';
-import type { AuthenticatedRequest, IExecutionResponse } from '@n8n/db';
+﻿import type { ImportWorkflowFromUrlDto } from '@workflow-automation/api-types';
+import type { AuthenticatedRequest, IExecutionResponse } from '@workflow-automation/db';
 import axios from 'axios';
 import type { Response } from 'express';
 import { mock } from 'jest-mock-extended';

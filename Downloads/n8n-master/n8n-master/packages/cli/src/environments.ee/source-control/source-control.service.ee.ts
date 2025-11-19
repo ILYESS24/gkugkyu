@@ -1,13 +1,13 @@
-import type {
+﻿import type {
 	PullWorkFolderRequestDto,
 	PushWorkFolderRequestDto,
 	SourceControlledFile,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { type User } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { type User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { writeFileSync } from 'fs';
-import { UnexpectedError, UserError, jsonParse } from 'n8n-workflow';
+import { UnexpectedError, UserError, jsonParse } from 'workflow-automation-workflow';
 import path from 'path';
 import type { PushResult } from 'simple-git';
 

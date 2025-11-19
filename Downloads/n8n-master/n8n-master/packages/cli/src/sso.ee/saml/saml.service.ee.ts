@@ -1,14 +1,14 @@
-import type { SamlPreferences, SamlPreferencesAttributeMapping } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import type { Settings, User } from '@n8n/db';
-import { isValidEmail, SettingsRepository, UserRepository } from '@n8n/db';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import type { SamlPreferences, SamlPreferencesAttributeMapping } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { Settings, User } from '@workflow-automation/db';
+import { isValidEmail, SettingsRepository, UserRepository } from '@workflow-automation/db';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import axios from 'axios';
 import type express from 'express';
-import { createHttpProxyAgent, createHttpsProxyAgent, InstanceSettings } from 'n8n-core';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import { createHttpProxyAgent, createHttpsProxyAgent, InstanceSettings } from 'workflow-automation-core';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 import { type IdentityProviderInstance, type ServiceProviderInstance } from 'samlify';
 import type { BindingContext, PostBindingContext } from 'samlify/types/src/entity';
 

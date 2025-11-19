@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon';
-import type { INodeProperties, IExecuteFunctions, IDataObject } from 'n8n-workflow';
+﻿import { DateTime } from 'luxon';
+import type { INodeProperties, IExecuteFunctions, IDataObject } from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

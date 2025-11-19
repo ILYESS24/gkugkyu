@@ -1,8 +1,8 @@
-import type { IRestApiContext } from '@n8n/rest-api-client';
+﻿import type { IRestApiContext } from '@n8n/rest-api-client';
 import { makeRestApiRequest } from '@n8n/rest-api-client';
 import type { Project, ProjectListItem, ProjectsCount } from './projects.types';
-import type { CreateProjectDto, UpdateProjectDto } from '@n8n/api-types';
-import type { AssignableProjectRole } from '@n8n/permissions';
+import type { CreateProjectDto, UpdateProjectDto } from '@workflow-automation/api-types';
+import type { AssignableProjectRole } from '@workflow-automation/permissions';
 
 export const getAllProjects = async (context: IRestApiContext): Promise<ProjectListItem[]> => {
 	return await makeRestApiRequest(context, 'GET', '/projects');

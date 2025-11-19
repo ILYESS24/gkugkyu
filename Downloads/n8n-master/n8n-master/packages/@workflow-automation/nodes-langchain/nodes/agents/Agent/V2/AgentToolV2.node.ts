@@ -1,4 +1,4 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -6,7 +6,7 @@ import type {
 	INodeTypeDescription,
 	INodeTypeBaseDescription,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { textInput, toolDescription } from '@utils/descriptions';
 

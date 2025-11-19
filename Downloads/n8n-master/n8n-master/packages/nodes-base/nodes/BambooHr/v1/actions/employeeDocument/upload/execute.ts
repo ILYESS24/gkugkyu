@@ -1,4 +1,4 @@
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
+﻿import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../../../transport';
 

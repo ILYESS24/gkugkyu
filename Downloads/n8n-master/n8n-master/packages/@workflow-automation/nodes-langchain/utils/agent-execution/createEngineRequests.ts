@@ -1,6 +1,6 @@
-import type { DynamicStructuredTool, Tool } from 'langchain/tools';
-import { NodeConnectionTypes } from 'n8n-workflow';
-import type { EngineRequest, IDataObject } from 'n8n-workflow';
+﻿import type { DynamicStructuredTool, Tool } from 'langchain/tools';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
+import type { EngineRequest, IDataObject } from 'workflow-automation-workflow';
 
 import type { RequestResponseMetadata, ToolCallRequest } from './types';
 

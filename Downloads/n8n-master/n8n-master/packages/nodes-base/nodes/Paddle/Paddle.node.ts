@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { couponFields, couponOperations } from './CouponDescription';
 import { paddleApiRequest, paddleApiRequestAllItems, validateJSON } from './GenericFunctions';

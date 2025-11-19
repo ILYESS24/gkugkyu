@@ -1,8 +1,8 @@
-import { UserUpdateRequestDto } from '@n8n/api-types';
+﻿import { UserUpdateRequestDto } from '@workflow-automation/api-types';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { AuthenticatedRequest, User, PublicUser } from '@n8n/db';
-import { GLOBAL_OWNER_ROLE, InvalidAuthTokenRepository, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { AuthenticatedRequest, User, PublicUser } from '@workflow-automation/db';
+import { GLOBAL_OWNER_ROLE, InvalidAuthTokenRepository, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { Response } from 'express';
 import { mock, anyObject } from 'jest-mock-extended';
 import jwt from 'jsonwebtoken';

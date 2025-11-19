@@ -1,4 +1,4 @@
-import type { IRunExecutionData, IWorkflowBase, NodeExecutionSchema } from 'n8n-workflow';
+﻿import type { IRunExecutionData, IWorkflowBase, NodeExecutionSchema } from 'workflow-automation-workflow';
 import { z } from 'zod';
 import { Z } from 'zod-class';
 

@@ -1,4 +1,4 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import { constants } from 'node:fs';
 import { access } from 'node:fs/promises';
 import { join } from 'node:path';

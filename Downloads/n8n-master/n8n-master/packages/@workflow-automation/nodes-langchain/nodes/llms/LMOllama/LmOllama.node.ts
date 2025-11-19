@@ -1,11 +1,11 @@
-import { Ollama } from '@langchain/community/llms/ollama';
+﻿import { Ollama } from '@langchain/community/llms/ollama';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

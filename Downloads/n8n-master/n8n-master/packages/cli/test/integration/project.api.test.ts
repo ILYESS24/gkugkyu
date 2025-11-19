@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	linkUserToProject,
 	getPersonalProject,
@@ -10,23 +10,23 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { Project } from '@n8n/db';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { Project } from '@workflow-automation/db';
 import {
 	FolderRepository,
 	ProjectRelationRepository,
 	ProjectRepository,
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import {
 	getRoleScopes,
 	PROJECT_OWNER_ROLE_SLUG,
 	type GlobalRole,
 	type ProjectRole,
 	type Scope,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 import { EntityNotFoundError } from '@n8n/typeorm';
 import { createFolder } from '@test-integration/db/folders';
 

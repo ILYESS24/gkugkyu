@@ -1,8 +1,8 @@
-import type { CreateDataTableColumnDto } from '@n8n/api-types';
+﻿import type { CreateDataTableColumnDto } from '@workflow-automation/api-types';
 import { randomName } from '@n8n/backend-test-utils';
-import type { Project } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { DataTableRows } from 'n8n-workflow';
+import type { Project } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { DataTableRows } from 'workflow-automation-workflow';
 
 import { DataTableColumnRepository } from '@/modules/data-table/data-table-column.repository';
 import { DataTableRowsRepository } from '@/modules/data-table/data-table-rows.repository';

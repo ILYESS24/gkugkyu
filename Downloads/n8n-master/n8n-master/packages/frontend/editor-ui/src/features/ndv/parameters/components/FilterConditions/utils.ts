@@ -1,4 +1,4 @@
-import { resolveParameter } from '@/app/composables/useWorkflowHelpers';
+﻿import { resolveParameter } from '@/app/composables/useWorkflowHelpers';
 import { i18n } from '@n8n/i18n';
 import { isExpression } from '@/app/utils/expressions';
 import {
@@ -10,7 +10,7 @@ import {
 	type FilterOptionsValue,
 	type NodeParameterValue,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { OPERATORS_BY_ID, type FilterOperatorId } from './constants';
 import type { ConditionResult, FilterOperator } from './types';
 import { DateTime } from 'luxon';

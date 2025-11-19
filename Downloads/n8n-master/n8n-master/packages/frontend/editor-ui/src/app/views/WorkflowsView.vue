@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import Draggable from '@/app/components/Draggable.vue';
 import EmptySharedSectionActionBox from '@/features/core/folders/components/EmptySharedSectionActionBox.vue';
 import FolderBreadcrumbs from '@/features/core/folders/components/FolderBreadcrumbs.vue';
@@ -73,10 +73,10 @@ import {
 } from '@/experiments/utils';
 import type { PathItem } from '@n8n/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
 import { useI18n } from '@n8n/i18n';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { createEventBus } from '@n8n/utils/event-bus';
 import debounce from 'lodash/debounce';
-import { type IUser, PROJECT_ROOT } from 'n8n-workflow';
+import { type IUser, PROJECT_ROOT } from 'workflow-automation-workflow';
 import { computed, onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue';
 import { type LocationQueryRaw, useRoute, useRouter } from 'vue-router';
 

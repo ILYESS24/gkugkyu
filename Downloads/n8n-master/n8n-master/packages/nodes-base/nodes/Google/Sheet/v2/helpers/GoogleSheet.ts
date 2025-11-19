@@ -1,12 +1,12 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	INode,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { ApplicationError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeOperationError } from 'workflow-automation-workflow';
 import { utils as xlsxUtils } from 'xlsx';
 
 import type {

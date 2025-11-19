@@ -1,7 +1,7 @@
-import { randomEmail, randomName, randomValidPassword } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { randomEmail, randomName, randomValidPassword } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type express from 'express';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

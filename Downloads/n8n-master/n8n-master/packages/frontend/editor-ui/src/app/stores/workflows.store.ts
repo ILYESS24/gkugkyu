@@ -1,4 +1,4 @@
-import {
+﻿import {
 	AI_NODES_PACKAGE_NAME,
 	CHAT_TRIGGER_NODE_TYPE,
 	DEFAULT_WORKFLOW_PAGE_SIZE,
@@ -53,14 +53,14 @@ import type {
 	IWorkflowSettings,
 	INodeType,
 	ITaskStartedData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	deepCopy,
 	NodeConnectionTypes,
 	SEND_AND_WAIT_OPERATION,
 	Workflow,
 	TelemetryHelpers,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import * as workflowUtils from 'n8n-workflow/common';
 
 import { useRootStore } from '@n8n/stores/useRootStore';
@@ -81,7 +81,7 @@ import { i18n } from '@n8n/i18n';
 
 import { computed, ref, watch } from 'vue';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
-import type { PushPayload } from '@n8n/api-types';
+import type { PushPayload } from '@workflow-automation/api-types';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';
 import { useSettingsStore } from './settings.store';
@@ -92,7 +92,7 @@ import type { NodeExecuteBefore } from '@n8n/api-types/push/execution';
 import { isChatNode } from '@/app/utils/aiUtils';
 import { snapPositionToGrid } from '@/app/utils/nodeViewUtils';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 
 const defaults: Omit<IWorkflowDb, 'id'> & { settings: NonNullable<IWorkflowDb['settings']> } = {
 	name: '',

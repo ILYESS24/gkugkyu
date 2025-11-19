@@ -1,4 +1,4 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { PromptTemplate } from '@langchain/core/prompts';
 import type { SummarizationChainParams } from 'langchain/chains';
@@ -10,7 +10,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { N8nBinaryLoader } from '@utils/N8nBinaryLoader';
 import { N8nJsonLoader } from '@utils/N8nJsonLoader';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IWorkflowTemplateNode,
 	IWorkflowTemplateNodeCredentials,
 } from '@n8n/rest-api-client/api/templates';
@@ -10,7 +10,7 @@ import type {
 	INodeCredentialDescription,
 	INodeCredentials,
 	INodeCredentialsDetails,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export type IWorkflowTemplateNodeWithCredentials = IWorkflowTemplateNode &
 	Required<Pick<IWorkflowTemplateNode, 'credentials'>>;

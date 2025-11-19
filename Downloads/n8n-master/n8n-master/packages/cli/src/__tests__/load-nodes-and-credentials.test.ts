@@ -1,12 +1,12 @@
-import fs from 'fs/promises';
+﻿import fs from 'fs/promises';
 import { mock } from 'jest-mock-extended';
-import type { DirectoryLoader } from 'n8n-core';
-import type { INodeProperties, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { DirectoryLoader } from 'workflow-automation-core';
+import type { INodeProperties, INodeTypeDescription } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import watcher from '@parcel/watcher';
 
 import { LoadNodesAndCredentials } from '../load-nodes-and-credentials';
-import { Service } from '@n8n/di';
+import { Service } from '@workflow-automation/di';
 
 jest.mock('lodash/debounce', () => (fn: () => void) => fn);
 

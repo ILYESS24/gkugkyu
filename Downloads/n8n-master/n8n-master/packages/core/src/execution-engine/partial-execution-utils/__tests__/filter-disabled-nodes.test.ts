@@ -1,15 +1,15 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // PD denotes that the node has pinned data
 
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { createNodeData } from './helpers';
 import { DirectedGraph } from '../directed-graph';
@@ -17,17 +17,17 @@ import { filterDisabledNodes } from '../filter-disabled-nodes';
 
 describe('filterDisabledNodes', () => {
 	//                     XX
-	//  ┌───────┐         ┌────────┐       ►►
-	//  │       ├────────►│        │      ┌───────────┐
-	//  │trigger│         │disabled├─────►│destination│
-	//  │       ├────────►│        │      └───────────┘
-	//  └───────┘         └────────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”       â–ºâ–º
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚        â”‚      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”‚         â”‚disabledâ”œâ”€â”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚        â”‚      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	// turns into
-	//  ┌───────┐       ►►
-	//  │       │      ┌───────────┐
-	//  │trigger├─────►│destination│
-	//  │       │      └───────────┘
-	//  └───────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”       â–ºâ–º
+	//  â”‚       â”‚      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â”‚       â”‚      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('filter disabled nodes', () => {
 		const trigger = createNodeData({ name: 'trigger' });
 		const disabled = createNodeData({ name: 'disabled', disabled: true });
@@ -47,13 +47,13 @@ describe('filterDisabledNodes', () => {
 	});
 
 	//                 XX          XX
-	//  ┌───────┐     ┌─────┐     ┌─────┐     ┌───────────┐
-	//  │trigger├────►│node1├────►│node2├────►│destination│
-	//  └───────┘     └─────┘     └─────┘     └───────────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚node1â”œâ”€â”€â”€â”€â–ºâ”‚node2â”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	// turns into
-	//  ┌───────┐     ┌───────────┐
-	//  │trigger├────►│destination│
-	//  └───────┘     └───────────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('filter multiple disabled nodes in a row', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -82,17 +82,17 @@ describe('filterDisabledNodes', () => {
 
 	describe('root nodes', () => {
 		//              XX
-		//  ┌───────┐   ┌────┐   ┌───────────┐
-		//  │trigger├───►root├───►destination│
-		//  └───────┘   └──▲─┘   └───────────┘
-		//                 │AiLanguageModel
-		//                ┌┴──────┐
-		//                │aiModel│
-		//                └───────┘
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â–ºrootâ”œâ”€â”€â”€â–ºdestinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â–²â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		//                 â”‚AiLanguageModel
+		//                â”Œâ”´â”€â”€â”€â”€â”€â”€â”
+		//                â”‚aiModelâ”‚
+		//                â””â”€â”€â”€â”€â”€â”€â”€â”˜
 		// turns into
-		//  ┌───────┐            ┌───────────┐
-		//  │trigger├────────────►destination│
-		//  └───────┘            └───────────┘
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ºdestinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('filter disabled root nodes', () => {
 			// ARRANGE
 			const trigger = createNodeData({ name: 'trigger' });

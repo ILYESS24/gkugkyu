@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event';
+﻿import userEvent from '@testing-library/user-event';
 import { createTestingPinia } from '@pinia/testing';
 import { waitFor, screen, within } from '@testing-library/vue';
 import { faker } from '@faker-js/faker';
@@ -16,7 +16,7 @@ import {
 import { useUIStore } from '@/app/stores/ui.store';
 import { MOVE_FOLDER_MODAL_KEY } from '../folders.constants';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import type { Project } from '@/features/collaboration/projects/projects.types';
 import type {
 	ICredentialsResponse,

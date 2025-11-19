@@ -1,4 +1,4 @@
-import { OpenAIEmbeddings } from '@langchain/openai';
+﻿import { OpenAIEmbeddings } from '@langchain/openai';
 import {
 	NodeConnectionTypes,
 	type INodeType,
@@ -6,7 +6,7 @@ import {
 	type SupplyData,
 	type ISupplyDataFunctions,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { ClientOptions } from 'openai';
 
 import { logWrapper } from '@utils/logWrapper';

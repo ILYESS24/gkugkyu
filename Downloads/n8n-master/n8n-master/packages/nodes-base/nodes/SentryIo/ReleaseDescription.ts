@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const releaseOperations: INodeProperties[] = [
 	{
@@ -118,7 +118,7 @@ export const releaseFields: INodeProperties[] = [
 				name: 'query',
 				type: 'string',
 				default: '',
-				description: 'This parameter can be used to create a “starts with” filter for the version',
+				description: 'This parameter can be used to create a â€œstarts withâ€ filter for the version',
 			},
 		],
 	},

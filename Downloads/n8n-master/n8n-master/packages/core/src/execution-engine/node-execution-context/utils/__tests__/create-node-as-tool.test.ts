@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { INodeType, ISupplyDataFunctions, INode } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { INodeType, ISupplyDataFunctions, INode } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { createNodeAsTool } from '../create-node-as-tool';
@@ -547,13 +547,13 @@ describe('createNodeAsTool', () => {
 	describe('Unicode and Internationalization', () => {
 		it('should handle $fromAI calls with unicode characters', () => {
 			node.parameters = {
-				unicodeParam: "={{ $fromAI('unicodeParam', '🌈 Unicode parameter 你好', 'string') }}",
+				unicodeParam: "={{ $fromAI('unicodeParam', 'ðŸŒˆ Unicode parameter ä½ å¥½', 'string') }}",
 			};
 
 			const tool = createNodeAsTool(options).response;
 
 			expect(tool.schema.shape.unicodeParam).toBeInstanceOf(z.ZodString);
-			expect(tool.schema.shape.unicodeParam.description).toBe('🌈 Unicode parameter 你好');
+			expect(tool.schema.shape.unicodeParam.description).toBe('ðŸŒˆ Unicode parameter ä½ å¥½');
 		});
 	});
 });

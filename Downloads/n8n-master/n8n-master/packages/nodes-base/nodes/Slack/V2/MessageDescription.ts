@@ -1,4 +1,4 @@
-import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'n8n-workflow';
+﻿import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'workflow-automation-workflow';
 
 export const messageOperations: INodeProperties[] = [
 	{
@@ -290,7 +290,7 @@ export const messageFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Whether to send a simple text message, or use Slack’s Blocks UI builder for more sophisticated messages that include form fields, sections and more',
+			'Whether to send a simple text message, or use Slackâ€™s Blocks UI builder for more sophisticated messages that include form fields, sections and more',
 		options: [
 			{
 				name: 'Simple Text Message',
@@ -613,7 +613,7 @@ export const messageFields: INodeProperties[] = [
 									},
 								],
 								default: '',
-								placeholder: 'Select a type…',
+								placeholder: 'Select a typeâ€¦',
 							},
 							{
 								displayName: 'Emoji Code',
@@ -626,7 +626,7 @@ export const messageFields: INodeProperties[] = [
 									},
 								},
 								description:
-									'Only used if sending message as a bot. Use emoji codes like +1, not an actual emoji like 👍. <a target="_blank" href=" https://www.webfx.com/tools/emoji-cheat-sheet/">List of common emoji codes</a>',
+									'Only used if sending message as a bot. Use emoji codes like +1, not an actual emoji like ðŸ‘. <a target="_blank" href=" https://www.webfx.com/tools/emoji-cheat-sheet/">List of common emoji codes</a>',
 							},
 							{
 								displayName: 'Image URL',
@@ -885,7 +885,7 @@ export const messageFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Whether to send a simple text message, or use Slack’s Blocks UI builder for more sophisticated messages that include form fields, sections and more',
+			'Whether to send a simple text message, or use Slackâ€™s Blocks UI builder for more sophisticated messages that include form fields, sections and more',
 		options: [
 			{
 				name: 'Simple Text Message',

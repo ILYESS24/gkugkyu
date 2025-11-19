@@ -1,5 +1,5 @@
-import { mock, mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
+﻿import { mock, mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
 
 import * as binaryDataHelpers from '../../../../helpers/binary-data';
 import type { ChatResponse } from '../../../../helpers/interfaces';

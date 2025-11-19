@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import ApiKeyScopes from './ApiKeyScopes.vue';
 import CopyInput from '@/app/components/CopyInput.vue';
 import Modal from '@/app/components/Modal.vue';
@@ -14,8 +14,8 @@ import { useApiKeysStore } from '../apiKeys.store';
 import { useToast } from '@/app/composables/useToast';
 import type { BaseTextKey } from '@n8n/i18n';
 import { DateTime } from 'luxon';
-import type { ApiKey, ApiKeyWithRawValue, CreateApiKeyRequestDto } from '@n8n/api-types';
-import type { ApiKeyScope } from '@n8n/permissions';
+import type { ApiKey, ApiKeyWithRawValue, CreateApiKeyRequestDto } from '@workflow-automation/api-types';
+import type { ApiKeyScope } from '@workflow-automation/permissions';
 import { useSettingsStore } from '@/app/stores/settings.store';
 
 import { ElDatePicker } from 'element-plus';

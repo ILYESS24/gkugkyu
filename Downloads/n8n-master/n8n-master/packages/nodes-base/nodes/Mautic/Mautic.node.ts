@@ -1,4 +1,4 @@
-import { snakeCase } from 'change-case';
+﻿import { snakeCase } from 'change-case';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import { campaignContactFields, campaignContactOperations } from './CampaignContactDescription';
 import { companyContactFields, companyContactOperations } from './CompanyContactDescription';

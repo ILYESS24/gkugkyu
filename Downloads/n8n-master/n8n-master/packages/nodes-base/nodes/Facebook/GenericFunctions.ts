@@ -1,4 +1,4 @@
-import { capitalCase } from 'change-case';
+﻿import { capitalCase } from 'change-case';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	IRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function facebookApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions | IWebhookFunctions,

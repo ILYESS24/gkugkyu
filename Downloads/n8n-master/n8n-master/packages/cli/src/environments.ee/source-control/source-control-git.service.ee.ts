@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import type { User } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { execSync } from 'child_process';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 import path from 'path';
 import type {
 	CommitResult,

@@ -1,4 +1,4 @@
-import { createHmac } from 'crypto';
+﻿import { createHmac } from 'crypto';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	JsonObject,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import qs from 'qs';
 
 export async function unleashedApiRequest(

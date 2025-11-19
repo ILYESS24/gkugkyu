@@ -1,4 +1,4 @@
-import { createTestNode, createTestWorkflow, mockNodeTypeDescription } from '@/__tests__/mocks';
+﻿import { createTestNode, createTestWorkflow, mockNodeTypeDescription } from '@/__tests__/mocks';
 import {
 	AGENT_NODE_TYPE,
 	AI_CATEGORY_AGENTS,
@@ -7,7 +7,7 @@ import {
 	MANUAL_TRIGGER_NODE_TYPE,
 } from '@/app/constants';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
-import { WorkflowOperationError, type IRunData, type Workflow } from 'n8n-workflow';
+import { WorkflowOperationError, type IRunData, type Workflow } from 'workflow-automation-workflow';
 import type { LogTreeCreationContext } from '../logs.types';
 
 export function createTestLogTreeCreationContext(

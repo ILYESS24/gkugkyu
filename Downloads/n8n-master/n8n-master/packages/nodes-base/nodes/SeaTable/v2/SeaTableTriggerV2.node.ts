@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import {
 	type IPollFunctions,
 	type INodeExecutionData,
@@ -7,7 +7,7 @@ import {
 	NodeConnectionTypes,
 	type INodeTypeBaseDescription,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type {
 	ICtx,

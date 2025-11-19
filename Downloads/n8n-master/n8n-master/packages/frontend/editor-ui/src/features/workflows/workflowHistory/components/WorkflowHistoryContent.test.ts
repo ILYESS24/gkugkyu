@@ -1,4 +1,4 @@
-import { vi } from 'vitest';
+﻿import { vi } from 'vitest';
 import type { MockInstance } from 'vitest';
 import { createPinia, setActivePinia } from 'pinia';
 import { waitFor } from '@testing-library/vue';
@@ -9,7 +9,7 @@ import WorkflowHistoryContent from './WorkflowHistoryContent.vue';
 import type { WorkflowHistoryActionTypes } from '@n8n/rest-api-client/api/workflowHistory';
 import { workflowVersionDataFactory } from '../__tests__/utils';
 import type { IWorkflowDb } from '@/Interface';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
 
 const actionTypes: WorkflowHistoryActionTypes = ['restore', 'clone', 'open', 'download'];

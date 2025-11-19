@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { makeSimpleField, personAdditionalFieldsOptions } from './SharedFields';
 
@@ -50,7 +50,7 @@ export const personFields: INodeProperties[] = [
 		type: 'fixedCollection',
 		default: {},
 		placeholder: 'Add Email Address Field',
-		description: 'Person’s email addresses',
+		description: 'Personâ€™s email addresses',
 		displayOptions: {
 			show: {
 				resource: ['person'],

@@ -1,10 +1,10 @@
-import type { ICredentialsDb } from '@n8n/db';
-import { CredentialsRepository } from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { ICredentialsDb } from '@workflow-automation/db';
+import { CredentialsRepository } from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import fs from 'fs';
-import { Credentials } from 'n8n-core';
-import { UserError } from 'n8n-workflow';
+import { Credentials } from 'workflow-automation-core';
+import { UserError } from 'workflow-automation-workflow';
 import path from 'path';
 import z from 'zod';
 

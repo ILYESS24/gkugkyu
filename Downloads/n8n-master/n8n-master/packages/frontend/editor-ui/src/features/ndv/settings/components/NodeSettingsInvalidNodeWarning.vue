@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useInstallNode } from '@/features/settings/communityNodes/composables/useInstallNode';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { CUSTOM_NODES_DOCS_URL } from '@/app/constants';
@@ -11,7 +11,7 @@ import { useUIStore } from '@/app/stores/ui.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { N8nButton, N8nIcon, N8nText } from '@n8n/design-system';
 import { useI18n } from '@n8n/i18n';
-import { isCommunityPackageName } from 'n8n-workflow';
+import { isCommunityPackageName } from 'workflow-automation-workflow';
 import { computed, watch } from 'vue';
 import { I18nT } from 'vue-i18n';
 import ContactAdministratorToInstall from '@/features/settings/communityNodes/components/ContactAdministratorToInstall.vue';

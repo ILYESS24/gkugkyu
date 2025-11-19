@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IHookFunctions,
 	type ILoadOptionsFunctions,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookFunctions,
 	type IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { venafiApiRequest } from './GenericFunctions';
 

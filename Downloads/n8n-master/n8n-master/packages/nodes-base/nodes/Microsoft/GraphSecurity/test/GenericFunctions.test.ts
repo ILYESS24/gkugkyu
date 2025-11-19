@@ -1,6 +1,6 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	msGraphSecurityApiRequest,
@@ -465,8 +465,8 @@ describe('Microsoft GraphSecurity GenericFunctions', () => {
 		});
 
 		it('should handle unicode characters', () => {
-			const input = 'title eq "Alert: 测试 🚨 данные"';
-			const expected = "title eq 'Alert: 测试 🚨 данные'";
+			const input = 'title eq "Alert: æµ‹è¯• ðŸš¨ Ð´Ð°Ð½Ð½Ñ‹Ðµ"';
+			const expected = "title eq 'Alert: æµ‹è¯• ðŸš¨ Ð´Ð°Ð½Ð½Ñ‹Ðµ'";
 
 			const result = tolerateDoubleQuotes(input);
 

@@ -1,6 +1,6 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import get from 'lodash/get';
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
 
 import * as assistant from '../../v1/actions/assistant';
 import * as audio from '../../v1/actions/audio';

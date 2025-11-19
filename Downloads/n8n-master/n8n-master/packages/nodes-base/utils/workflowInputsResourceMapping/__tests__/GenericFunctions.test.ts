@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import { getWorkflowInputValues } from '../GenericFunctions';
 

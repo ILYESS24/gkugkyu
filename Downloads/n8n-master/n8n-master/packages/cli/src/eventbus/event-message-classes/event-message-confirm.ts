@@ -1,6 +1,6 @@
-import { DateTime } from 'luxon';
-import type { JsonObject, JsonValue } from 'n8n-workflow';
-import { EventMessageTypeNames } from 'n8n-workflow';
+﻿import { DateTime } from 'luxon';
+import type { JsonObject, JsonValue } from 'workflow-automation-workflow';
+import { EventMessageTypeNames } from 'workflow-automation-workflow';
 
 export interface EventMessageConfirmSource extends JsonObject {
 	id: string;

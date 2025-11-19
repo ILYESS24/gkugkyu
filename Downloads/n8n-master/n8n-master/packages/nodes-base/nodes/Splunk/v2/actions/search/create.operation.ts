@@ -1,4 +1,4 @@
-import type { INodeProperties, IExecuteFunctions, IDataObject } from 'n8n-workflow';
+﻿import type { INodeProperties, IExecuteFunctions, IDataObject } from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '../../../../../utils/utilities';
 import { populate, toUnixEpoch } from '../../helpers/utils';
@@ -157,7 +157,7 @@ const properties: INodeProperties[] = [
 				type: 'number',
 				default: 0,
 				description:
-					'Number of seconds ago to check when an identical search is started and return the job’s search ID instead of starting a new job',
+					'Number of seconds ago to check when an identical search is started and return the jobâ€™s search ID instead of starting a new job',
 			},
 			{
 				displayName: 'Required Field',

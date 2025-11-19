@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	DeclarativeRestApiSettings,
 	IDataObject,
 	IExecuteFunctions,
@@ -12,7 +12,7 @@ import type {
 	INodeExecutionData,
 	INodeListSearchResult,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 type OktaUser = {
 	status: string;

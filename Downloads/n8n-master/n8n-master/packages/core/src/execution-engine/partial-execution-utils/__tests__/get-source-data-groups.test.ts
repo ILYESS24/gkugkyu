@@ -1,4 +1,4 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
@@ -7,23 +7,23 @@
 // 1  means the output has run data
 // PD denotes that the node has pinned data
 
-import type { IPinData, IRunData } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IPinData, IRunData } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { createNodeData, toITaskData } from './helpers';
 import { DirectedGraph } from '../directed-graph';
 import { getSourceDataGroups } from '../get-source-data-groups';
 
 describe('getSourceDataGroups', () => {
-	//┌───────┐1
-	//│source1├────┐
-	//└───────┘    │   ┌────┐
-	//┌───────┐1   ├──►│    │
-	//│source2├────┘   │node│
-	//└───────┘    ┌──►│    │
-	//┌───────┐1   │   └────┘
-	//│source3├────┘
-	//└───────┘
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1
+	//â”‚source1â”œâ”€â”€â”€â”€â”
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚   â”Œâ”€â”€â”€â”€â”
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”œâ”€â”€â–ºâ”‚    â”‚
+	//â”‚source2â”œâ”€â”€â”€â”€â”˜   â”‚nodeâ”‚
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”Œâ”€â”€â–ºâ”‚    â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”‚   â””â”€â”€â”€â”€â”˜
+	//â”‚source3â”œâ”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	it('groups sources into possibly complete sets if all of them have data', () => {
 		// ARRANGE
 		const source1 = createNodeData({ name: 'source1' });
@@ -79,15 +79,15 @@ describe('getSourceDataGroups', () => {
 		});
 	});
 
-	//┌───────┐PD
-	//│source1├────┐
-	//└───────┘    │   ┌────┐
-	//┌───────┐PD  ├──►│    │
-	//│source2├────┘   │node│
-	//└───────┘    ┌──►│    │
-	//┌───────┐PD  │   └────┘
-	//│source3├────┘
-	//└───────┘
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”PD
+	//â”‚source1â”œâ”€â”€â”€â”€â”
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚   â”Œâ”€â”€â”€â”€â”
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”PD  â”œâ”€â”€â–ºâ”‚    â”‚
+	//â”‚source2â”œâ”€â”€â”€â”€â”˜   â”‚nodeâ”‚
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”Œâ”€â”€â–ºâ”‚    â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”PD  â”‚   â””â”€â”€â”€â”€â”˜
+	//â”‚source3â”œâ”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	it('groups sources into possibly complete sets if all of them have data', () => {
 		// ARRANGE
 		const source1 = createNodeData({ name: 'source1' });
@@ -143,15 +143,15 @@ describe('getSourceDataGroups', () => {
 		});
 	});
 
-	//┌───────┐0
-	//│source1├────┐
-	//└───────┘    │   ┌────┐
-	//┌───────┐1   ├──►│    │
-	//│source2├────┘   │node│
-	//└───────┘    ┌──►│    │
-	//┌───────┐1   │   └────┘
-	//│source3├────┘
-	//└───────┘
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”0
+	//â”‚source1â”œâ”€â”€â”€â”€â”
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚   â”Œâ”€â”€â”€â”€â”
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”œâ”€â”€â–ºâ”‚    â”‚
+	//â”‚source2â”œâ”€â”€â”€â”€â”˜   â”‚nodeâ”‚
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”Œâ”€â”€â–ºâ”‚    â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”‚   â””â”€â”€â”€â”€â”˜
+	//â”‚source3â”œâ”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	it('groups sources into one complete set with 2 connections and one incomplete set with 1 connection', () => {
 		// ARRANGE
 		const source1 = createNodeData({ name: 'source1' });
@@ -212,21 +212,21 @@ describe('getSourceDataGroups', () => {
 		}
 	});
 
-	//┌───────┐0
-	//│source1├───────┐
-	//└───────┘       │
-	//                │
-	//┌───────┐1      │
-	//│source2├───────┤    ┌────┐
-	//└───────┘       └────►    │
-	//                     │node│
-	//┌───────┐1      ┌────►    │
-	//│source3├───────┤    └────┘
-	//└───────┘       │
-	//                │
-	//┌───────┐0      │
-	//│source4├───────┘
-	//└───────┘
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”0
+	//â”‚source1â”œâ”€â”€â”€â”€â”€â”€â”€â”
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+	//                â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1      â”‚
+	//â”‚source2â”œâ”€â”€â”€â”€â”€â”€â”€â”¤    â”Œâ”€â”€â”€â”€â”
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â–º    â”‚
+	//                     â”‚nodeâ”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1      â”Œâ”€â”€â”€â”€â–º    â”‚
+	//â”‚source3â”œâ”€â”€â”€â”€â”€â”€â”€â”¤    â””â”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+	//                â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”0      â”‚
+	//â”‚source4â”œâ”€â”€â”€â”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	it('groups sources into one complete set with 2 connections and one incomplete set with 2 connection', () => {
 		// ARRANGE
 		const source1 = createNodeData({ name: 'source1' });
@@ -296,17 +296,17 @@ describe('getSourceDataGroups', () => {
 		}
 	});
 
-	//  ┌───────┐1
-	//  │source1├───────┐
-	//  └───────┘       │
-	//                  │
-	//  ┌───────┐0      │
-	//  │source2├───────┤    ┌────┐
-	//  └───────┘       └────►    │
-	//                       │node│
-	//  ┌───────┐0      ┌────►    │
-	//  │source3├───────┘    └────┘
-	//  └───────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1
+	//  â”‚source1â”œâ”€â”€â”€â”€â”€â”€â”€â”
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+	//                  â”‚
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”0      â”‚
+	//  â”‚source2â”œâ”€â”€â”€â”€â”€â”€â”€â”¤    â”Œâ”€â”€â”€â”€â”
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â–º    â”‚
+	//                       â”‚nodeâ”‚
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”0      â”Œâ”€â”€â”€â”€â–º    â”‚
+	//  â”‚source3â”œâ”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	it('groups sources into two incomplete sets, one with 1 connection without and one with 2 connections one with data and one without', () => {
 		// ARRANGE
 		const source1 = createNodeData({ name: 'source1' });
@@ -364,13 +364,13 @@ describe('getSourceDataGroups', () => {
 		});
 	});
 
-	//              ┌─────┐1      ►►
-	//           ┌─►│Node1┼──┐   ┌─────┐
-	// ┌───────┐1│  └─────┘  └──►│     │
-	// │Trigger├─┤               │Node3│
-	// └───────┘ │  ┌─────┐0 ┌──►│     │
-	//           └─►│Node2├──┘   └─────┘
-	//              └─────┘
+	//              â”Œâ”€â”€â”€â”€â”€â”1      â–ºâ–º
+	//           â”Œâ”€â–ºâ”‚Node1â”¼â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1â”‚  â””â”€â”€â”€â”€â”€â”˜  â””â”€â”€â–ºâ”‚     â”‚
+	// â”‚Triggerâ”œâ”€â”¤               â”‚Node3â”‚
+	// â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”Œâ”€â”€â”€â”€â”€â”0 â”Œâ”€â”€â–ºâ”‚     â”‚
+	//           â””â”€â–ºâ”‚Node2â”œâ”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜
+	//              â””â”€â”€â”€â”€â”€â”˜
 	test('return an incomplete group when there is no data on input 2', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -401,13 +401,13 @@ describe('getSourceDataGroups', () => {
 		expect(group1.complete).toEqual(false);
 	});
 
-	//              ┌─────┐0      ►►
-	//           ┌─►│Node1┼──┐   ┌─────┐
-	// ┌───────┐1│  └─────┘  └──►│     │
-	// │Trigger├─┤               │Node3│
-	// └───────┘ │  ┌─────┐1 ┌──►│     │
-	//           └─►│Node2├──┘   └─────┘
-	//              └─────┘
+	//              â”Œâ”€â”€â”€â”€â”€â”0      â–ºâ–º
+	//           â”Œâ”€â–ºâ”‚Node1â”¼â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1â”‚  â””â”€â”€â”€â”€â”€â”˜  â””â”€â”€â–ºâ”‚     â”‚
+	// â”‚Triggerâ”œâ”€â”¤               â”‚Node3â”‚
+	// â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”Œâ”€â”€â”€â”€â”€â”1 â”Œâ”€â”€â–ºâ”‚     â”‚
+	//           â””â”€â–ºâ”‚Node2â”œâ”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜
+	//              â””â”€â”€â”€â”€â”€â”˜
 	test('return an incomplete group when there is no data on input 1', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });

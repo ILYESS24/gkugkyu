@@ -1,6 +1,6 @@
-import { SecurityConfig } from '@n8n/config';
-import { WorkflowRepository } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
+﻿import { SecurityConfig } from '@workflow-automation/config';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
 
 import config from '@/config';
 import { RISK_CATEGORIES } from '@/security-audit/constants';

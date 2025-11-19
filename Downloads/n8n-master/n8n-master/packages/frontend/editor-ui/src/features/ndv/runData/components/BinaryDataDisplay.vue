@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed } from 'vue';
-import type { IBinaryData, IRunData } from 'n8n-workflow';
+import type { IBinaryData, IRunData } from 'workflow-automation-workflow';
 import BinaryDataDisplayEmbed from './BinaryDataDisplayEmbed.vue';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';

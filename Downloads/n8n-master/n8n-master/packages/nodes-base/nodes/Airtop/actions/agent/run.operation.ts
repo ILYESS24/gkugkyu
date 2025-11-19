@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { jsonParse, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeOperationError } from 'workflow-automation-workflow';
 
 import { AGENT_MIN_TIMEOUT_SECONDS, ERROR_MESSAGES } from '../../constants';
 import { validateRequiredStringField } from '../../GenericFunctions';

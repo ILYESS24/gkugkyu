@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, deepCopy } from 'workflow-automation-workflow';
 
 const versionDescription: INodeTypeDescription = {
 	displayName: 'Set',

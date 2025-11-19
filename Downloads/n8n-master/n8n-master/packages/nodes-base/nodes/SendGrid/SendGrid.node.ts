@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import {
 	NodeConnectionTypes,
 	type IDataObject,
@@ -9,7 +9,7 @@ import {
 	type INodePropertyOptions,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { contactFields, contactOperations } from './ContactDescription';
 import { sendGridApiRequest, sendGridApiRequestAllItems } from './GenericFunctions';

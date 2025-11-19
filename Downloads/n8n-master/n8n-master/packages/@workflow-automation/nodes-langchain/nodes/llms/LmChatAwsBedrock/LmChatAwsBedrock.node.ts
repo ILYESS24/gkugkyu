@@ -1,4 +1,4 @@
-import type { BedrockRuntimeClientConfig } from '@aws-sdk/client-bedrock-runtime';
+﻿import type { BedrockRuntimeClientConfig } from '@aws-sdk/client-bedrock-runtime';
 import { BedrockRuntimeClient } from '@aws-sdk/client-bedrock-runtime';
 import { ChatBedrockConverse } from '@langchain/aws';
 import { NodeHttpHandler } from '@smithy/node-http-handler';
@@ -10,7 +10,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { makeN8nLlmFailedAttemptHandler } from '../n8nLlmFailedAttemptHandler';
 import { N8nLlmTracing } from '../N8nLlmTracing';

@@ -1,4 +1,4 @@
-import { describe, it, expect, afterAll } from 'vitest';
+﻿import { describe, it, expect, afterAll } from 'vitest';
 import { mock } from 'vitest-mock-extended';
 import type {
 	IConnections,
@@ -8,7 +8,7 @@ import type {
 	INodePropertyOptions,
 	INodeParameters,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	updateDynamicConnections,
 	updateParameterByPath,

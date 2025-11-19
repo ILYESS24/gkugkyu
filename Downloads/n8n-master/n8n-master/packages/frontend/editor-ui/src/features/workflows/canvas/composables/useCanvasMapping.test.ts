@@ -1,5 +1,5 @@
-import type { INode, NodeApiError, Workflow } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import type { INode, NodeApiError, Workflow } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import type { Ref } from 'vue';
 import { ref } from 'vue';

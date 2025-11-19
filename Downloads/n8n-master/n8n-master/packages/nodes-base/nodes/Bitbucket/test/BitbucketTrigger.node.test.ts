@@ -1,4 +1,4 @@
-import { mockDeep } from 'jest-mock-extended';
+﻿import { mockDeep } from 'jest-mock-extended';
 import type {
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
@@ -6,7 +6,7 @@ import type {
 	ILoadOptionsFunctions,
 	INode,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { BitbucketTrigger } from '../BitbucketTrigger.node';
 import * as GenericFunctions from '../GenericFunctions';

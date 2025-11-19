@@ -1,22 +1,22 @@
-import {
+﻿import {
 	randomEmail,
 	randomName,
 	uniqueId,
 	getPersonalProject,
 	testDb,
 } from '@n8n/backend-test-utils';
-import { LDAP_DEFAULT_CONFIGURATION } from '@n8n/constants';
-import type { User } from '@n8n/db';
+import { LDAP_DEFAULT_CONFIGURATION } from '@workflow-automation/constants';
+import type { User } from '@workflow-automation/db';
 import {
 	AuthProviderSyncHistoryRepository,
 	GLOBAL_MEMBER_ROLE,
 	GLOBAL_OWNER_ROLE,
 	UserRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { Not } from '@n8n/typeorm';
 import type { Entry as LdapUser } from 'ldapts';
-import { Cipher } from 'n8n-core';
+import { Cipher } from 'workflow-automation-core';
 
 import config from '@/config';
 import { saveLdapSynchronization } from '@/ldap.ee/helpers.ee';

@@ -1,9 +1,9 @@
-import type { Project } from '@n8n/db';
-import { SharedCredentialsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope } from '@n8n/permissions';
-import type { INode } from 'n8n-workflow';
-import { UserError } from 'n8n-workflow';
+﻿import type { Project } from '@workflow-automation/db';
+import { SharedCredentialsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope } from '@workflow-automation/permissions';
+import type { INode } from 'workflow-automation-workflow';
+import { UserError } from 'workflow-automation-workflow';
 
 import { OwnershipService } from '@/services/ownership.service';
 import { ProjectService } from '@/services/project.service.ee';

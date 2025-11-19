@@ -1,8 +1,8 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { HumanMessage } from '@langchain/core/messages';
 import { SystemMessagePromptTemplate, ChatPromptTemplate } from '@langchain/core/prompts';
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers';
-import { NodeConnectionTypes, NodeOperationError, sleep } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError, sleep } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -10,7 +10,7 @@ import type {
 	INodeParameters,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { getBatchingOptionFields } from '@utils/sharedFields';

@@ -1,10 +1,10 @@
-import { mockDeep } from 'jest-mock-extended';
+﻿import { mockDeep } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	INodeTypeBaseDescription,
-} from 'n8n-workflow';
-import { NodeOperationError, ApplicationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError, ApplicationError } from 'workflow-automation-workflow';
 
 import { SwitchV3 } from '../SwitchV3.node';
 

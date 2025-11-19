@@ -1,6 +1,6 @@
-import type { NodeTypes } from '@/node-types';
+﻿import type { NodeTypes } from '@/node-types';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
+import type { GlobalConfig } from '@workflow-automation/config';
 import {
 	type CredentialsEntity,
 	type CredentialsRepository,
@@ -10,9 +10,9 @@ import {
 	type WorkflowEntity,
 	type WorkflowRepository,
 	GLOBAL_OWNER_ROLE,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import { type BinaryDataConfig, InstanceSettings } from 'n8n-core';
+import { type BinaryDataConfig, InstanceSettings } from 'workflow-automation-core';
 import {
 	type INode,
 	type INodesGraphResult,
@@ -20,7 +20,7 @@ import {
 	type IWorkflowBase,
 	NodeApiError,
 	TelemetryHelpers,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { N8N_VERSION } from '@/constants';
 import { EventService } from '@/events/event.service';

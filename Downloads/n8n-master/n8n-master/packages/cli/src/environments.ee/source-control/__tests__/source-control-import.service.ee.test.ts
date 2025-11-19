@@ -1,5 +1,5 @@
-import type { SourceControlledFile } from '@n8n/api-types';
-import type { Logger } from '@n8n/backend-common';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
+import type { Logger } from '@workflow-automation/backend-common';
 import {
 	type Variables,
 	type VariablesRepository,
@@ -12,11 +12,11 @@ import {
 	User,
 	WorkflowEntity,
 	type WorkflowRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { In } from '@n8n/typeorm';
 import * as fastGlob from 'fast-glob';
 import { mock } from 'jest-mock-extended';
-import { type InstanceSettings } from 'n8n-core';
+import { type InstanceSettings } from 'workflow-automation-core';
 import fsp from 'node:fs/promises';
 
 import type { VariablesService } from '@/environments.ee/variables/variables.service.ee';

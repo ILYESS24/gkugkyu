@@ -1,4 +1,4 @@
-import type { IHttpRequestMethods } from 'n8n-workflow';
+﻿import type { IHttpRequestMethods } from 'workflow-automation-workflow';
 
 import * as list from '../../../../v2/actions/drive/list.operation';
 import * as transport from '../../../../v2/transport';

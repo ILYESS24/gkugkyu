@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { RunningJobSummary } from '@n8n/api-types';
+﻿<script setup lang="ts">
+import type { RunningJobSummary } from '@workflow-automation/api-types';
 import WorkerAccordion from './WorkerAccordion.vue';
 import { useI18n } from '@n8n/i18n';
 

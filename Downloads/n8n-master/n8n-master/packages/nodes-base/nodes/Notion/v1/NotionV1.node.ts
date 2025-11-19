@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,7 +8,7 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { versionDescription } from './VersionDescription';
 import type { SortData } from '../shared/GenericFunctions';

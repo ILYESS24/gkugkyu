@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { NodeOperationError, updateDisplayOptions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
+import { NodeOperationError, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import {
 	type GenerateContentRequest,

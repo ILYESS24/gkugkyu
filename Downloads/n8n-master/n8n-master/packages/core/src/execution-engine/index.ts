@@ -1,4 +1,4 @@
-import type { DataTableProxyProvider } from 'n8n-workflow';
+﻿import type { DataTableProxyProvider } from 'workflow-automation-workflow';
 
 import type { ExecutionLifecycleHooks } from './execution-lifecycle-hooks';
 import type { ExternalSecretsProxy } from './external-secrets-proxy';

@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	AiAskRequestDto,
 	AiApplySuggestionRequestDto,
 	AiChatRequestDto,
 	AiBuilderChatRequestDto,
 	AiSessionRetrievalRequestDto,
 	AiSessionMetadataResponseDto,
-} from '@n8n/api-types';
-import type { AuthenticatedRequest } from '@n8n/db';
+} from '@workflow-automation/api-types';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
 import type { AiAssistantSDK } from '@n8n_io/ai-assistant-sdk';
 import { mock } from 'jest-mock-extended';
 
@@ -161,11 +161,11 @@ describe('AiController', () => {
 			expect(response.write).toHaveBeenCalledTimes(2);
 			expect(response.write).toHaveBeenNthCalledWith(
 				1,
-				JSON.stringify(mockChunks[0]) + '⧉⇋⇋➽⌑⧉§§\n',
+				JSON.stringify(mockChunks[0]) + 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n',
 			);
 			expect(response.write).toHaveBeenNthCalledWith(
 				2,
-				JSON.stringify(mockChunks[1]) + '⧉⇋⇋➽⌑⧉§§\n',
+				JSON.stringify(mockChunks[1]) + 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n',
 			);
 			expect(response.end).toHaveBeenCalled();
 		});
@@ -191,7 +191,7 @@ describe('AiController', () => {
 				1,
 				JSON.stringify({
 					messages: [{ role: 'assistant', type: 'message', text: 'Starting...' }],
-				}) + '⧉⇋⇋➽⌑⧉§§\n',
+				}) + 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n',
 			);
 			// Error chunk
 			expect(response.write).toHaveBeenNthCalledWith(
@@ -204,7 +204,7 @@ describe('AiController', () => {
 							content: 'Tool execution failed',
 						},
 					],
-				}) + '⧉⇋⇋➽⌑⧉§§\n',
+				}) + 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n',
 			);
 			expect(response.end).toHaveBeenCalled();
 		});

@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	IDataObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function clockifyApiRequest(
 	this: ILoadOptionsFunctions | IPollFunctions | IExecuteFunctions,

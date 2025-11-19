@@ -1,5 +1,5 @@
-import type { ICredentialsBase, IExecutionBase, IExecutionDb, ITagBase } from '@n8n/db';
-import type { AssignableGlobalRole } from '@n8n/permissions';
+﻿import type { ICredentialsBase, IExecutionBase, IExecutionDb, ITagBase } from '@workflow-automation/db';
+import type { AssignableGlobalRole } from '@workflow-automation/permissions';
 import type { Application, Response } from 'express';
 import type {
 	ExecutionError,
@@ -16,7 +16,7 @@ import type {
 	ExecutionSummary,
 	IWorkflowExecutionDataProcess,
 	IExecutionContext,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type PCancelable from 'p-cancelable';
 
 import type { ActiveWorkflowManager } from '@/active-workflow-manager';

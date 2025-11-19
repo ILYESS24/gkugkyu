@@ -1,6 +1,6 @@
-import { ModuleRegistry } from '@n8n/backend-common';
-import type { ModuleName } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿import { ModuleRegistry } from '@workflow-automation/backend-common';
+import type { ModuleName } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 
 export async function loadModules(moduleNames: ModuleName[]) {
 	await Container.get(ModuleRegistry).loadModules(moduleNames);

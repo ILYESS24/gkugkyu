@@ -1,11 +1,11 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed } from 'vue';
 import dateformat from 'dateformat';
 import { MODAL_CONFIRM } from '@/app/constants';
 import { PROJECT_MOVE_RESOURCE_MODAL } from '@/features/collaboration/projects/projects.constants';
 import { useMessage } from '@/app/composables/useMessage';
 import CredentialIcon from './CredentialIcon.vue';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useCredentialsStore } from '../credentials.store';
 import TimeAgo from '@/app/components/TimeAgo.vue';

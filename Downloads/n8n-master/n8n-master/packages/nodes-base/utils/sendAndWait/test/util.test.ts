@@ -1,6 +1,6 @@
-import { type MockProxy, mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INodeProperties, IWebhookFunctions } from 'n8n-workflow';
-import { NodeOperationError, WAIT_INDEFINITELY } from 'n8n-workflow';
+﻿import { type MockProxy, mock } from 'jest-mock-extended';
+import type { IExecuteFunctions, INodeProperties, IWebhookFunctions } from 'workflow-automation-workflow';
+import { NodeOperationError, WAIT_INDEFINITELY } from 'workflow-automation-workflow';
 
 import { configureWaitTillDate } from '../configureWaitTillDate.util';
 import {

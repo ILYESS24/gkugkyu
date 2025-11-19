@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import type {
 	Expression,
@@ -9,8 +9,8 @@ import type {
 	IWorkflowExecuteAdditionalData,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { CHAT_TRIGGER_NODE_TYPE, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { CHAT_TRIGGER_NODE_TYPE, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { InstanceSettings } from '@/instance-settings';
 

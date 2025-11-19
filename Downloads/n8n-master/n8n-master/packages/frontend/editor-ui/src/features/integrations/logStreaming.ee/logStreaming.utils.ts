@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	INodeCredentials,
 	INodeParameters,
 	MessageEventBusDestinationOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 
 export function destinationToFakeINodeUi(

@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { User } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { User } from '@workflow-automation/db';
 
 import { createWorkflow } from './mock.utils';
 import { getWorkflowDetails, createWorkflowDetailsTool } from '../tools/get-workflow-details.tool';

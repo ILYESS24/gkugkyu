@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 
 import * as send from './send.operation';
 import * as sendAndWait from './sendAndWait.operation';

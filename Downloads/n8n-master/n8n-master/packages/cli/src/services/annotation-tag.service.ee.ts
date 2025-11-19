@@ -1,6 +1,6 @@
-import type { AnnotationTagEntity } from '@n8n/db';
-import { AnnotationTagRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { AnnotationTagEntity } from '@workflow-automation/db';
+import { AnnotationTagRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { validateEntity } from '@/generic-helpers';
 

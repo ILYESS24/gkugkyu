@@ -1,7 +1,7 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import * as mssql from 'mssql';
-import { constructExecutionMetaData, returnJsonArray } from 'n8n-core';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import { constructExecutionMetaData, returnJsonArray } from 'workflow-automation-core';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { MicrosoftSql } from '../MicrosoftSql.node';
 

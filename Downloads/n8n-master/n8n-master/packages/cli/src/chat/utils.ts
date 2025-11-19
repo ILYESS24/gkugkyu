@@ -1,6 +1,6 @@
-import type { IExecutionResponse } from '@n8n/db';
-import type { INode } from 'n8n-workflow';
-import { CHAT_WAIT_USER_REPLY, RESPOND_TO_WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+﻿import type { IExecutionResponse } from '@workflow-automation/db';
+import type { INode } from 'workflow-automation-workflow';
+import { CHAT_WAIT_USER_REPLY, RESPOND_TO_WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
 
 const AI_TOOL = 'ai_tool';
 

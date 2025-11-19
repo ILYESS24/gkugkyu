@@ -1,9 +1,9 @@
-import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Head, Post, RootLevelController } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Head, Post, RootLevelController } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import type { Request, Response } from 'express';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'workflow-automation-core';
 
 import { Telemetry } from '@/telemetry';
 

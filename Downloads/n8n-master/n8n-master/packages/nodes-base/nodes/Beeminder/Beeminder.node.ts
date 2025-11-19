@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import {
 	type IExecuteFunctions,
 	type JsonObject,
@@ -14,7 +14,7 @@ import {
 	validateNodeParameters,
 	assertParamIsNumber,
 	assertParamIsArray,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { Datapoint } from './Beeminder.node.functions';
 import {

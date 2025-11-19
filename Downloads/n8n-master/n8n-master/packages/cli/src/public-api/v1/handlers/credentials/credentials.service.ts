@@ -1,19 +1,19 @@
-import type { User, ICredentialsDb } from '@n8n/db';
+﻿import type { User, ICredentialsDb } from '@workflow-automation/db';
 import {
 	CredentialsEntity,
 	SharedCredentials,
 	CredentialsRepository,
 	ProjectRepository,
 	SharedCredentialsRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import { Credentials } from 'n8n-core';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { Credentials } from 'workflow-automation-core';
 import type {
 	DisplayCondition,
 	IDataObject,
 	INodeProperties,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { EventService } from '@/events/event.service';
 import { ExternalHooks } from '@/external-hooks';

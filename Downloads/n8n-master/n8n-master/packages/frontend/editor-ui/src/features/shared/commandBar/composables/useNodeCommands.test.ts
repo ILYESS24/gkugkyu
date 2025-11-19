@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { useNodeCommands } from './useNodeCommands';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
@@ -6,8 +6,8 @@ import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
-import type { INodeTypeDescription } from 'n8n-workflow';
-import { getResourcePermissions } from '@n8n/permissions';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 import { canvasEventBus } from '@/features/workflows/canvas/canvas.eventBus';
 

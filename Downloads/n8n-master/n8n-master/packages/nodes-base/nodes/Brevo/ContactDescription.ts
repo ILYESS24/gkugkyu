@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	GenericValue,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export const contactOperations: INodeProperties[] = [
 	{

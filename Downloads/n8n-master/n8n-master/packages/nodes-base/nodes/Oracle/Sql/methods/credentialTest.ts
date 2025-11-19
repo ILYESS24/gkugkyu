@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
 	INodeCredentialTestResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type * as oracleDBTypes from 'oracledb';
 
 import type { OracleDBNodeCredentials } from '../helpers/interfaces';

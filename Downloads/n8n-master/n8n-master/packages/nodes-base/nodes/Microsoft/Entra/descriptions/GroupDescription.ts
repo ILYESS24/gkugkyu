@@ -1,4 +1,4 @@
-import merge from 'lodash/merge';
+﻿import merge from 'lodash/merge';
 import type {
 	IDataObject,
 	IExecuteSingleFunctions,
@@ -6,8 +6,8 @@ import type {
 	IN8nHttpFullResponse,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { handleErrorPostReceive, microsoftApiRequest } from '../GenericFunctions';
 

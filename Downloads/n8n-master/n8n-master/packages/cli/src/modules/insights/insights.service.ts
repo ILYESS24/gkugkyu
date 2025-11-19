@@ -1,10 +1,10 @@
-import { type InsightsSummary } from '@n8n/api-types';
-import { LicenseState, Logger } from '@n8n/backend-common';
-import { OnLeaderStepdown, OnLeaderTakeover } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { type InsightsSummary } from '@workflow-automation/api-types';
+import { LicenseState, Logger } from '@workflow-automation/backend-common';
+import { OnLeaderStepdown, OnLeaderTakeover } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
-import { InstanceSettings } from 'n8n-core';
-import { UserError } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { UserError } from 'workflow-automation-workflow';
 
 import type { PeriodUnit, TypeUnit } from './database/entities/insights-shared';
 import { NumberToType, TypeToNumber } from './database/entities/insights-shared';

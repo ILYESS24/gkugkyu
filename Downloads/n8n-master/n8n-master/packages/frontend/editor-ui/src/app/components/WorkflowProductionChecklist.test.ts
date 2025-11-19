@@ -1,4 +1,4 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import { createTestingPinia } from '@pinia/testing';
 import { ref } from 'vue';
 import WorkflowProductionChecklist from '@/app/components/WorkflowProductionChecklist.vue';
@@ -21,7 +21,7 @@ import {
 	TIME_SAVED_DOCS_URL,
 	EVALUATIONS_DOCS_URL,
 } from '@/app/constants';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import { createTestNode } from '@/__tests__/mocks';
 
 vi.mock('vue-router', async (importOriginal) => {

@@ -1,4 +1,4 @@
-import type { DataTableColumnJsType } from 'n8n-workflow';
+﻿import type { DataTableColumnJsType } from 'workflow-automation-workflow';
 
 export const ANY_CONDITION = 'anyCondition';
 export const ALL_CONDITIONS = 'allConditions';

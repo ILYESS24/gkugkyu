@@ -1,4 +1,4 @@
-import { DynamicTool } from 'langchain/tools';
+﻿import { DynamicTool } from 'langchain/tools';
 import {
 	type IExecuteFunctions,
 	NodeConnectionTypes,
@@ -8,7 +8,7 @@ import {
 	type ISupplyDataFunctions,
 	type SupplyData,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

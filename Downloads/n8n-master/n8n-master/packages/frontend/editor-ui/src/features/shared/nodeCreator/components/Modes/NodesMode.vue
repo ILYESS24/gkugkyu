@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import camelCase from 'lodash/camelCase';
 import { computed } from 'vue';
 import type {
@@ -43,7 +43,7 @@ import { useI18n } from '@n8n/i18n';
 import { getNodeIconSource } from '@/app/utils/nodeIcon';
 
 import { useActions } from '../../composables/useActions';
-import { type INodeParameters, isCommunityPackageName } from 'n8n-workflow';
+import { type INodeParameters, isCommunityPackageName } from 'workflow-automation-workflow';
 
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useCalloutHelpers } from '@/app/composables/useCalloutHelpers';

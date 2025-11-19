@@ -1,5 +1,5 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import * as helpers from '@utils/helpers';

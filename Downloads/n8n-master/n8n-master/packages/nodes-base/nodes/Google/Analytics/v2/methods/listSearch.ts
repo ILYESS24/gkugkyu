@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	ILoadOptionsFunctions,
 	INodeListSearchItems,
 	INodeListSearchResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { sortLoadOptions } from '../helpers/utils';
 import { googleApiRequest } from '../transport';

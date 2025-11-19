@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import BreakpointsObserver from '@/app/components/BreakpointsObserver.vue';
 import EnterpriseEdition from '@/app/components/EnterpriseEdition.ee.vue';
 import FolderBreadcrumbs from '@/features/core/folders/components/FolderBreadcrumbs.vue';
@@ -51,7 +51,7 @@ import { sanitizeFilename } from '@/app/utils/fileUtils';
 import { hasPermission } from '@/app/utils/rbac/permissions';
 import type { PathItem } from '@n8n/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
 import { type BaseTextKey, useI18n } from '@n8n/i18n';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import type { WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
 import { createEventBus } from '@n8n/utils/event-bus';
 import { saveAs } from 'file-saver';

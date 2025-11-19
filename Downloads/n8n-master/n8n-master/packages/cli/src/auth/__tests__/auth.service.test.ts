@@ -1,11 +1,11 @@
-import type { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
+﻿import type { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
 import type {
 	AuthenticatedRequest,
 	User,
 	InvalidAuthTokenRepository,
 	UserRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import type { NextFunction, Response } from 'express';
 import { mock } from 'jest-mock-extended';
 import jwt from 'jsonwebtoken';

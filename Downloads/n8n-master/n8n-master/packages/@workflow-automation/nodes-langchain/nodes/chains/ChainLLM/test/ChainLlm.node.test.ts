@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { FakeChatModel } from '@langchain/core/utils/testing';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import * as helperModule from '@utils/helpers';
 import * as outputParserModule from '@utils/output_parsers/N8nOutputParser';

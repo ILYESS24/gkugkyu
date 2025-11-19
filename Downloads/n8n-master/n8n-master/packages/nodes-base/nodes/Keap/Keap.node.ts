@@ -1,6 +1,6 @@
-import { capitalCase, pascalCase } from 'change-case';
+﻿import { capitalCase, pascalCase } from 'change-case';
 import moment from 'moment-timezone';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,7 +9,7 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { companyFields, companyOperations } from './CompanyDescription';
 import type { ICompany } from './CompanyInterface';

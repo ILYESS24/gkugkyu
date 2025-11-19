@@ -1,8 +1,8 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
 import type { Request, Response, NextFunction } from 'express';
 import { mock, mockDeep } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 
 import { JwtService } from '@/services/jwt.service';
 import { Telemetry } from '@/telemetry';

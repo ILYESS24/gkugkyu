@@ -1,4 +1,4 @@
-import {
+﻿import {
 	getParts,
 	type ImapSimple,
 	type Message,
@@ -14,7 +14,7 @@ import {
 	type ITriggerFunctions,
 	NodeOperationError,
 	type IBinaryKeyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 async function parseRawEmail(
 	this: ITriggerFunctions,

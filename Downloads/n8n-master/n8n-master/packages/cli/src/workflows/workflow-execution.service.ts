@@ -1,10 +1,10 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import type { Project, User, CreateExecutionPayload } from '@n8n/db';
-import { ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { Project, User, CreateExecutionPayload } from '@workflow-automation/db';
+import { ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { Response } from 'express';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'workflow-automation-core';
 import type {
 	IDeferredPromise,
 	IExecuteData,
@@ -17,8 +17,8 @@ import type {
 	WorkflowExecuteMode,
 	IWorkflowExecutionDataProcess,
 	IWorkflowBase,
-} from 'n8n-workflow';
-import { SubworkflowOperationError, Workflow, createRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { SubworkflowOperationError, Workflow, createRunExecutionData } from 'workflow-automation-workflow';
 
 import { ExecutionDataService } from '@/executions/execution-data.service';
 import { SubworkflowPolicyChecker } from '@/executions/pre-execution-checks';

@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import pgPromise from 'pg-promise';
 
 import { pgInsert, pgQueryV2, pgUpdate } from '../Postgres/v1/genericFunctions';

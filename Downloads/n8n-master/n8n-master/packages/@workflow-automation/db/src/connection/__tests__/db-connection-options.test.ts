@@ -1,5 +1,5 @@
-import type { ModuleRegistry } from '@n8n/backend-common';
-import type { GlobalConfig, InstanceSettingsConfig } from '@n8n/config';
+﻿import type { ModuleRegistry } from '@workflow-automation/backend-common';
+import type { GlobalConfig, InstanceSettingsConfig } from '@workflow-automation/config';
 import { mock } from 'jest-mock-extended';
 import path from 'path';
 

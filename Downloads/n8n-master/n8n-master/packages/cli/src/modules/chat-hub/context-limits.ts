@@ -1,4 +1,4 @@
-import type { ChatHubLLMProvider } from '@n8n/api-types';
+﻿import type { ChatHubLLMProvider } from '@workflow-automation/api-types';
 
 /* eslint-disable @typescript-eslint/naming-convention */
 

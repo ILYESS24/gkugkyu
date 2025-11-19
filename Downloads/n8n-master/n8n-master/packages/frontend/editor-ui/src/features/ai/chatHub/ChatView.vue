@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useToast } from '@/app/composables/useToast';
 import {
 	LOCAL_STORAGE_CHAT_HUB_SELECTED_MODEL,
@@ -26,7 +26,7 @@ import {
 	type ChatMessageId,
 	type ChatHubSendMessageRequest,
 	type ChatModelDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import { N8nIconButton, N8nScrollArea } from '@n8n/design-system';
 import { useLocalStorage, useMediaQuery, useScroll } from '@vueuse/core';
 import { v4 as uuidv4 } from 'uuid';
@@ -37,7 +37,7 @@ import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useChatCredentials } from '@/features/ai/chatHub/composables/useChatCredentials';
 import ChatLayout from '@/features/ai/chatHub/components/ChatLayout.vue';
-import { INodesSchema, type INode } from 'n8n-workflow';
+import { INodesSchema, type INode } from 'workflow-automation-workflow';
 
 const router = useRouter();
 const route = useRoute();

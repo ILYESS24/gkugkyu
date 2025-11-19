@@ -1,13 +1,13 @@
-import { AgentExecutor } from 'langchain/agents';
+﻿import { AgentExecutor } from 'langchain/agents';
 import type { OpenAIToolType } from 'langchain/dist/experimental/openai_assistant/schema';
 import { OpenAIAssistantRunnable } from 'langchain/experimental/openai_assistant';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { OpenAI as OpenAIClient } from 'openai';
 
 import { getConnectedTools } from '@utils/helpers';
@@ -336,7 +336,7 @@ export class OpenAiAssistant implements INodeType {
 				};
 
 				if (input === undefined) {
-					throw new NodeOperationError(this.getNode(), 'The ‘text‘ parameter is empty.');
+					throw new NodeOperationError(this.getNode(), 'The â€˜textâ€˜ parameter is empty.');
 				}
 
 				const client = new OpenAIClient({

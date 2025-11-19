@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, nextTick, onBeforeMount, onMounted, ref, getCurrentInstance } from 'vue';
 import { v4 as uuid } from 'uuid';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -8,8 +8,8 @@ import { useLogStreamingStore } from '../logStreaming.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { LOG_STREAM_MODAL_KEY, EnterpriseEditionFeature } from '@/app/constants';
-import type { MessageEventBusDestinationOptions } from 'n8n-workflow';
-import { deepCopy, defaultMessageEventBusDestinationOptions } from 'n8n-workflow';
+import type { MessageEventBusDestinationOptions } from 'workflow-automation-workflow';
+import { deepCopy, defaultMessageEventBusDestinationOptions } from 'workflow-automation-workflow';
 import EventDestinationCard from '../components/EventDestinationCard.vue';
 import { createEventBus } from '@n8n/utils/event-bus';
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';

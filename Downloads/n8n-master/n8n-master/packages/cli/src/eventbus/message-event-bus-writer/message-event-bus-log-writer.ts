@@ -1,13 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
-import { inTest, Logger, safeJoinPath } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+import { inTest, Logger, safeJoinPath } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { once as eventOnce } from 'events';
 import { createReadStream, existsSync, rmSync } from 'fs';
 import remove from 'lodash/remove';
-import { InstanceSettings } from 'n8n-core';
-import { EventMessageTypeNames, jsonParse } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { EventMessageTypeNames, jsonParse } from 'workflow-automation-workflow';
 import { parse } from 'path';
 import readline from 'readline';
 import { Worker } from 'worker_threads';

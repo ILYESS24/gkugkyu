@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest';
 import {
 	deepCopy,
 	type IDataObject,
@@ -6,7 +6,7 @@ import {
 	type INode,
 	type IRunExecutionData,
 	type NodeConnectionType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useAIAssistantHelpers } from './useAIAssistantHelpers';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
@@ -476,7 +476,7 @@ const testWorkflow: IWorkflowDb = {
 
 const testExecutionData: IRunExecutionData['resultData'] = {
 	runData: {
-		'When clicking ‘Execute workflow’': [
+		'When clicking â€˜Execute workflowâ€™': [
 			{
 				hints: [],
 				startTime: 1732882780588,
@@ -506,7 +506,7 @@ const testExecutionData: IRunExecutionData['resultData'] = {
 				executionTime: 0,
 				source: [
 					{
-						previousNode: 'When clicking ‘Execute workflow’',
+						previousNode: 'When clicking â€˜Execute workflowâ€™',
 					},
 				],
 				executionStatus: 'success',

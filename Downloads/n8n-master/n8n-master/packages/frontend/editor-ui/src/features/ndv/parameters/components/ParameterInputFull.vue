@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, type ComputedRef, ref, useTemplateRef, watch } from 'vue';
 import type { IUpdateInformation } from '@/Interface';
 
@@ -23,7 +23,7 @@ import {
 	type INodeProperties,
 	type IParameterLabel,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	buildValueFromOverride,
 	type FromAIOverride,

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import { useToast } from '@/app/composables/useToast';
 import type { WorkflowListItem } from '@/Interface';
@@ -14,7 +14,7 @@ import WorkflowsTable from '@/features/ai/mcpAccess/components/WorkflowsTable.vu
 import McpAccessToggle from '@/features/ai/mcpAccess/components/McpAccessToggle.vue';
 import { N8nHeading } from '@n8n/design-system';
 import { useMcp } from '@/features/ai/mcpAccess/composables/useMcp';
-import type { OAuthClientResponseDto } from '@n8n/api-types';
+import type { OAuthClientResponseDto } from '@workflow-automation/api-types';
 
 const i18n = useI18n();
 const toast = useToast();

@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { ICredentialDataDecryptedObject, IHttpRequestOptions } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import type { ICredentialDataDecryptedObject, IHttpRequestOptions } from 'workflow-automation-workflow';
 
 import { AzureStorageSharedKeyApi } from '@credentials/AzureStorageSharedKeyApi.credentials';
 

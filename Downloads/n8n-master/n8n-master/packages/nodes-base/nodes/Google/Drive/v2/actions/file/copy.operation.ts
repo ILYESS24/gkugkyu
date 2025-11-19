@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeParameterResourceLocator,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 
@@ -24,7 +24,7 @@ const properties: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. My File',
 		description:
-			'The name of the new file. If not set, “Copy of {original file name}” will be used.',
+			'The name of the new file. If not set, â€œCopy of {original file name}â€ will be used.',
 	},
 	{
 		displayName: 'Copy In The Same Folder',

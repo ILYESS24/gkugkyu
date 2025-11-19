@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 	IHttpRequestOptions,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export type LemonadeApiCredentialsType = {
 	baseUrl: string;

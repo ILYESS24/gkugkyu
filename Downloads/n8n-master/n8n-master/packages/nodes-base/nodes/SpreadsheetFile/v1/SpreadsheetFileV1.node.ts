@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	JSON2SheetOpts,
 	ParsingOptions,

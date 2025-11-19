@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const threadOperations: INodeProperties[] = [
 	{
@@ -171,14 +171,14 @@ export const threadFields: INodeProperties[] = [
 						name: 'fileName',
 						type: 'string',
 						default: '',
-						description: 'Attachment’s file name',
+						description: 'Attachmentâ€™s file name',
 					},
 					{
 						displayName: 'Mime Type',
 						name: 'mimeType',
 						type: 'string',
 						default: '',
-						description: 'Attachment’s mime type',
+						description: 'Attachmentâ€™s mime type',
 					},
 					{
 						displayName: 'Data',

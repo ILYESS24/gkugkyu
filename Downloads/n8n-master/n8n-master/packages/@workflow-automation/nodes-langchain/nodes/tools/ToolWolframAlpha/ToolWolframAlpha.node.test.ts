@@ -1,11 +1,11 @@
-import { WolframAlphaTool } from '@langchain/community/tools/wolframalpha';
+﻿import { WolframAlphaTool } from '@langchain/community/tools/wolframalpha';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolWolframAlpha } from './ToolWolframAlpha.node';
 

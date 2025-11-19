@@ -1,17 +1,17 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import type { DataTable, DataTableCreateColumnSchema } from '@n8n/api-types';
+import type { DataTable, DataTableCreateColumnSchema } from '@workflow-automation/api-types';
 import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
 	testDb,
 } from '@n8n/backend-test-utils';
-import type { Project, User } from '@n8n/db';
-import { ProjectRepository, QueryFailedError } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { Project, User } from '@workflow-automation/db';
+import { ProjectRepository, QueryFailedError } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
-import type { DataTableRow } from 'n8n-workflow';
+import type { DataTableRow } from 'workflow-automation-workflow';
 
 import { createDataTable } from '@test-integration/db/data-tables';
 import { createOwner, createMember, createAdmin } from '@test-integration/db/users';
@@ -4089,7 +4089,7 @@ describe('POST /projects/:projectId/data-tables - CSV Import', () => {
 	});
 
 	test('should handle CSV with Unicode characters', async () => {
-		const csvContent = 'name,city\nJohn Müller,München\nMaría García,São Paulo';
+		const csvContent = 'name,city\nJohn MÃ¼ller,MÃ¼nchen\nMarÃ­a GarcÃ­a,SÃ£o Paulo';
 		const uploadResponse = await authOwnerAgent
 			.post('/data-tables/uploads')
 			.attach('file', Buffer.from(csvContent), { filename: 'unicode.csv', contentType: 'text/csv' })
@@ -4121,12 +4121,12 @@ describe('POST /projects/:projectId/data-tables - CSV Import', () => {
 		expect(rowsResponse.body.data.data).toEqual(
 			expect.arrayContaining([
 				expect.objectContaining({
-					name: 'John Müller',
-					city: 'München',
+					name: 'John MÃ¼ller',
+					city: 'MÃ¼nchen',
 				}),
 				expect.objectContaining({
-					name: 'María García',
-					city: 'São Paulo',
+					name: 'MarÃ­a GarcÃ­a',
+					city: 'SÃ£o Paulo',
 				}),
 			]),
 		);

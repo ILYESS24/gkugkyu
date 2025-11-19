@@ -1,5 +1,5 @@
-import { getBearerTokenProvider } from '@azure/identity';
-import { NodeOperationError, type ISupplyDataFunctions } from 'n8n-workflow';
+﻿import { getBearerTokenProvider } from '@azure/identity';
+import { NodeOperationError, type ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import { N8nOAuth2TokenCredential } from './N8nOAuth2TokenCredential';
 import type {

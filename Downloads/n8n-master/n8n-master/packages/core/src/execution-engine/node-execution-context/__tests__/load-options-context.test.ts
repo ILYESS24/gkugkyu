@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	Expression,
 	ICredentialDataDecryptedObject,
@@ -8,7 +8,7 @@ import type {
 	INodeTypes,
 	IWorkflowExecuteAdditionalData,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { LoadOptionsContext } from '../load-options-context';
 

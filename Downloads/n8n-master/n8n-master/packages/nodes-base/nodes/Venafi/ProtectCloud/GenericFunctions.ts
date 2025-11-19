@@ -1,4 +1,4 @@
-import * as nacl_factory from 'js-nacl';
+﻿import * as nacl_factory from 'js-nacl';
 import get from 'lodash/get';
 import type {
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function venafiApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IHookFunctions,

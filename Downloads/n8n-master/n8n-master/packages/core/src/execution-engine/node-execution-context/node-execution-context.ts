@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { Memoized } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Memoized } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import get from 'lodash/get';
 import type {
 	FunctionsBase,
@@ -22,7 +22,7 @@ import type {
 	NodeTypeAndVersion,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	CHAT_TRIGGER_NODE_TYPE,
@@ -31,7 +31,7 @@ import {
 	NodeHelpers,
 	NodeOperationError,
 	UnexpectedError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	HTTP_REQUEST_AS_TOOL_NODE_TYPE,

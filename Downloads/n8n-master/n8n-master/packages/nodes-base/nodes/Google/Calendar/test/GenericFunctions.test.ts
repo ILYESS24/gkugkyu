@@ -1,7 +1,7 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, ILoadOptionsFunctions, INode } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+import type { IExecuteFunctions, ILoadOptionsFunctions, INode } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import type { RecurringEventInstance } from '../EventInterface';
 import {

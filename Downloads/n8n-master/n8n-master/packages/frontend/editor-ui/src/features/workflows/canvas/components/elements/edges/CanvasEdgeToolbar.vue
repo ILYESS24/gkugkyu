@@ -1,8 +1,8 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { useI18n } from '@n8n/i18n';
 import { computed, useCssModule } from 'vue';
-import type { NodeConnectionType } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { NodeConnectionType } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { N8nIconButton } from '@n8n/design-system';
 const emit = defineEmits<{

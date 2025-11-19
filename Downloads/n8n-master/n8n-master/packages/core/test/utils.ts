@@ -1,5 +1,5 @@
-import type { Constructable } from '@n8n/di';
-import { Container } from '@n8n/di';
+﻿import type { Constructable } from '@workflow-automation/di';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import { Duplex } from 'stream';
 import type { DeepPartial } from 'ts-essentials';

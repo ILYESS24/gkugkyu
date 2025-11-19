@@ -1,12 +1,12 @@
-import {
+﻿import {
 	GLOBAL_MEMBER_ROLE,
 	ProjectRepository,
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
 	type User,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import { type Scope } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { type Scope } from '@workflow-automation/permissions';
 import { mock } from 'jest-mock-extended';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

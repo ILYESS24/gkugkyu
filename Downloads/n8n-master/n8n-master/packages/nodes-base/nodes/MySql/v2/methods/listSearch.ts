@@ -1,4 +1,4 @@
-import type { IDataObject, ILoadOptionsFunctions, INodeListSearchResult } from 'n8n-workflow';
+﻿import type { IDataObject, ILoadOptionsFunctions, INodeListSearchResult } from 'workflow-automation-workflow';
 
 import type { MysqlNodeCredentials } from '../helpers/interfaces';
 import { createPool } from '../transport';

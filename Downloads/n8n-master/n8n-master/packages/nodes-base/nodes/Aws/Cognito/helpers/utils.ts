@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IHttpRequestOptions,
 	ILoadOptionsFunctions,
 	IDataObject,
 	IExecuteSingleFunctions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import type {
 	IGroup,

@@ -1,8 +1,8 @@
-import { mockLogger } from '@n8n/backend-test-utils';
-import type { ExecutionsConfig } from '@n8n/config';
-import type { DbConnection } from '@n8n/db';
+﻿import { mockLogger } from '@n8n/backend-test-utils';
+import type { ExecutionsConfig } from '@workflow-automation/config';
+import type { DbConnection } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 
 import { ExecutionsPruningService } from '../executions-pruning.service';
 

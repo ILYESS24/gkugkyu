@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import type {
 	CloseFunction,
 	IExecuteData,
@@ -19,7 +19,7 @@ import type {
 	NodeConnectionType,
 	NodeOutput,
 	GenericValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeConnectionTypes,
 	NodeOperationError,
@@ -27,7 +27,7 @@ import {
 	ApplicationError,
 	UserError,
 	sleepWithAbort,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createNodeAsTool } from './create-node-as-tool';
 import type { ExecuteContext, WebhookContext } from '../../node-execution-context';

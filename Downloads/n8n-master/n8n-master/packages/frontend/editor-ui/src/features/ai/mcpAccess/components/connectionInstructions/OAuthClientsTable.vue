@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useI18n } from '@n8n/i18n';
-import type { OAuthClientResponseDto } from '@n8n/api-types';
+import type { OAuthClientResponseDto } from '@workflow-automation/api-types';
 import type { UserAction } from '@/Interface';
 import {
 	N8nActionBox,

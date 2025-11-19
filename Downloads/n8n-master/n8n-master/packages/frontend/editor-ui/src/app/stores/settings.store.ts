@@ -1,10 +1,10 @@
-import { computed, ref } from 'vue';
+﻿import { computed, ref } from 'vue';
 import Bowser from 'bowser';
 import type {
 	IUserManagementSettings,
 	FrontendSettings,
 	FrontendModuleSettings,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 
 import * as eventsApi from '@n8n/rest-api-client/api/events';
 import * as settingsApi from '@n8n/rest-api-client/api/settings';
@@ -13,7 +13,7 @@ import { testHealthEndpoint } from '@n8n/rest-api-client/api/templates';
 import { INSECURE_CONNECTION_WARNING } from '@/app/constants';
 import { STORES } from '@n8n/stores';
 import { UserManagementAuthenticationMethod } from '@/Interface';
-import type { IDataObject, WorkflowSettings } from 'n8n-workflow';
+import type { IDataObject, WorkflowSettings } from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { makeRestApiRequest } from '@n8n/rest-api-client';

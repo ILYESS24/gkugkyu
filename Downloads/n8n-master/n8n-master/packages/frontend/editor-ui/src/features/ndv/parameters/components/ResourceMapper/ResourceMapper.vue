@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { ResourceMapperFieldsRequestDto } from '@n8n/api-types';
+﻿<script setup lang="ts">
+import type { ResourceMapperFieldsRequestDto } from '@workflow-automation/api-types';
 import type { IUpdateInformation } from '@/Interface';
 import { resolveRequiredParameters } from '@/app/composables/useWorkflowHelpers';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
@@ -12,8 +12,8 @@ import type {
 	ResourceMapperField,
 	ResourceMapperFields,
 	ResourceMapperValue,
-} from 'n8n-workflow';
-import { deepCopy, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, NodeHelpers } from 'workflow-automation-workflow';
 import { computed, onMounted, reactive, watch } from 'vue';
 import MappingModeSelect from './MappingModeSelect.vue';
 import MatchingColumnsSelect from './MatchingColumnsSelect.vue';

@@ -1,5 +1,5 @@
-import { Post, RestController } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Post, RestController } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import multer from 'multer';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

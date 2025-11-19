@@ -1,4 +1,4 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import type { Document } from 'langchain/document';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type IExecuteFunctions,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { N8nJsonLoader } from '@utils/N8nJsonLoader';
 

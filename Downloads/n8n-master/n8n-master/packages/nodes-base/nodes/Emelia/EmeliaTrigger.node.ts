@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IDataObject,
 	type IHookFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookFunctions,
 	type IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { emeliaApiRequest, emeliaApiTest, emeliaGraphqlRequest } from './GenericFunctions';
 

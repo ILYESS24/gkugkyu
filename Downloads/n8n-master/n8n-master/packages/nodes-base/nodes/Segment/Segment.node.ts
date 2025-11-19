@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { segmentApiRequest } from './GenericFunctions';

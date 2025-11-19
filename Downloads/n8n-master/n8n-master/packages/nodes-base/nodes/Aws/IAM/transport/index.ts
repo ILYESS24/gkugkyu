@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IExecuteSingleFunctions,
 	IDataObject,
 	IHttpRequestOptions,
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { BASE_URL } from '../helpers/constants';
 

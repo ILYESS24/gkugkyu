@@ -1,16 +1,16 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type {
 	CalloutAction,
 	INodeParameters,
 	INodeProperties,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ADD_FORM_NOTICE,
 	getParameterValueByPath,
 	NodeHelpers,
 	resolveRelativePath,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, defineAsyncComponent, onErrorCaptured, ref, watch, type WatchSource } from 'vue';
 
 import type { INodeUi, IUpdateInformation } from '@/Interface';

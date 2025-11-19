@@ -1,5 +1,5 @@
-import type { AIMessage } from '@langchain/core/messages';
-import type { IDataObject, GenericValue } from 'n8n-workflow';
+﻿import type { AIMessage } from '@langchain/core/messages';
+import type { IDataObject, GenericValue } from 'workflow-automation-workflow';
 
 /**
  * Represents a tool call request from an LLM.

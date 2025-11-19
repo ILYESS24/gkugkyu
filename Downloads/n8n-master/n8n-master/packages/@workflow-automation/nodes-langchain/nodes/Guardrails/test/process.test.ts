@@ -1,7 +1,7 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 jest.mock('../helpers/model', () => ({
 	createLLMCheckFn: jest.fn(() => jest.fn()),

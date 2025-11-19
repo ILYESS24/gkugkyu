@@ -1,6 +1,6 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import pick from 'lodash/pick';
-import type { WorkflowTestData } from 'n8n-workflow';
+import type { WorkflowTestData } from 'workflow-automation-workflow';
 import path from 'node:path';
 
 describe('OpenAI Workflow', () => {
@@ -50,7 +50,7 @@ describe('OpenAI Workflow', () => {
 			workflowData: testHarness.readWorkflowJSON('list-assistants.workflow.json'),
 		},
 		output: {
-			nodeExecutionOrder: ['When clicking ‘Execute workflow’', 'OpenAI'],
+			nodeExecutionOrder: ['When clicking â€˜Execute workflowâ€™', 'OpenAI'],
 			nodeData: {
 				OpenAI: [
 					assistants.map((assistant) => ({

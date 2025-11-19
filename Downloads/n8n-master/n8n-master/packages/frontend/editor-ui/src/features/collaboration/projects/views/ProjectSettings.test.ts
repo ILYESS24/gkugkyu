@@ -1,4 +1,4 @@
-import { defineComponent, nextTick, reactive } from 'vue';
+﻿import { defineComponent, nextTick, reactive } from 'vue';
 import userEvent from '@testing-library/user-event';
 import { createTestingPinia } from '@pinia/testing';
 import { createComponentRenderer } from '@/__tests__/render';
@@ -19,7 +19,7 @@ import { createUser } from '@/__tests__/data/users';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useRolesStore } from '@/app/stores/roles.store';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 
 const mockTrack = vi.fn();
 const mockShowMessage = vi.fn();

@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import type { WebhookEntity } from '@n8n/db';
-import { WebhookRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { HookContext, WebhookContext } from 'n8n-core';
-import { ensureError, Node, NodeHelpers, UnexpectedError } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { WebhookEntity } from '@workflow-automation/db';
+import { WebhookRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { HookContext, WebhookContext } from 'workflow-automation-core';
+import { ensureError, Node, NodeHelpers, UnexpectedError } from 'workflow-automation-workflow';
 import type {
 	IHttpRequestMethods,
 	INode,
@@ -15,7 +15,7 @@ import type {
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { NodeTypes } from '@/node-types';
 import { CacheService } from '@/services/cache/cache.service';

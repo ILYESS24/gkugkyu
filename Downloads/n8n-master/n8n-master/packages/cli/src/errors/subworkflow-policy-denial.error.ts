@@ -1,6 +1,6 @@
-import type { Project } from '@n8n/db';
-import { WorkflowOperationError } from 'n8n-workflow';
-import type { INode } from 'n8n-workflow';
+﻿import type { Project } from '@workflow-automation/db';
+import { WorkflowOperationError } from 'workflow-automation-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 type Options = {
 	/** ID of the subworkflow whose execution was denied. */
@@ -23,7 +23,7 @@ type Options = {
 };
 
 export const SUBWORKFLOW_DENIAL_BASE_DESCRIPTION =
-	'The sub-workflow you’re trying to execute limits which workflows it can be called by.';
+	'The sub-workflow youâ€™re trying to execute limits which workflows it can be called by.';
 
 export class SubworkflowPolicyDenialError extends WorkflowOperationError {
 	constructor({

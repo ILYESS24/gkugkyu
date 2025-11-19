@@ -1,4 +1,4 @@
-import {
+﻿import {
 	AI_TRANSFORM_NODE_TYPE,
 	CORE_NODES_CATEGORY,
 	WEBHOOK_NODE_TYPE,
@@ -62,8 +62,8 @@ import {
 import { useI18n } from '@n8n/i18n';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import type { SimplifiedNodeType } from '@/Interface';
-import type { INodeTypeDescription, NodeConnectionType, Themed } from 'n8n-workflow';
-import { EVALUATION_TRIGGER_NODE_TYPE, NodeConnectionTypes } from 'n8n-workflow';
+import type { INodeTypeDescription, NodeConnectionType, Themed } from 'workflow-automation-workflow';
+import { EVALUATION_TRIGGER_NODE_TYPE, NodeConnectionTypes } from 'workflow-automation-workflow';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
 import type { BaseTextKey } from '@n8n/i18n';
 import camelCase from 'lodash/camelCase';

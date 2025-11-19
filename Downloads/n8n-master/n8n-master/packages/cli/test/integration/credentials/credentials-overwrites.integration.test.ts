@@ -1,8 +1,8 @@
-import { testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { SettingsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { Cipher } from 'n8n-core';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import { SettingsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { Cipher } from 'workflow-automation-core';
 
 import { CredentialsOverwrites } from '@/credentials-overwrites';
 import { CredentialTypes } from '@/credential-types';
@@ -51,7 +51,7 @@ describe('CredentialsOverwrites - Integration Tests', () => {
 
 	describe('Integration Test Coverage', () => {
 		describe('Complete Credential Update Flow', () => {
-			it('should execute full API → Database → PubSub → Frontend chain', async () => {
+			it('should execute full API â†’ Database â†’ PubSub â†’ Frontend chain', async () => {
 				const testOverwriteData: ICredentialsOverwrite = {
 					test: { username: 'integrationUser', password: 'integrationPass' },
 				};
@@ -102,7 +102,7 @@ describe('CredentialsOverwrites - Integration Tests', () => {
 		});
 
 		describe('PubSub Event Flow Integration', () => {
-			it('should execute complete PubSub event → Database load → Frontend reload chain', async () => {
+			it('should execute complete PubSub event â†’ Database load â†’ Frontend reload chain', async () => {
 				const testData: ICredentialsOverwrite = {
 					pubsub: { token: 'pubsubToken', secret: 'pubsubSecret' },
 				};

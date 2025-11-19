@@ -1,4 +1,4 @@
-import type { INodeTypeDescription } from 'n8n-workflow';
+﻿import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { TaskRunnerNodeTypes } from '../node-types';
 

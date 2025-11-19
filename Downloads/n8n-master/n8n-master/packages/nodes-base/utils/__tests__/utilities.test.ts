@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import type { INode, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { MYSQL_NODE_TYPE, POSTGRES_NODE_TYPE } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { INode, IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
+import { MYSQL_NODE_TYPE, POSTGRES_NODE_TYPE } from 'workflow-automation-workflow';
 
 import {
 	addExecutionHints,

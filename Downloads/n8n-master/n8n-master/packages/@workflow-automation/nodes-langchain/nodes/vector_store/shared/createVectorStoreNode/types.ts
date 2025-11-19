@@ -1,4 +1,4 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
 import type { VectorStore } from '@langchain/core/vectorstores';
 import type {
@@ -12,7 +12,7 @@ import type {
 	ThemeIconColor,
 	IDataObject,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export type NodeOperationMode = 'insert' | 'load' | 'retrieve' | 'update' | 'retrieve-as-tool';
 

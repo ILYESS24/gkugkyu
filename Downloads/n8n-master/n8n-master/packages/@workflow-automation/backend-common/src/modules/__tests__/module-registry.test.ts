@@ -1,5 +1,5 @@
-import type { ModuleInterface, ModuleMetadata } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { ModuleInterface, ModuleMetadata } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 
 import type { LicenseState } from '../../license-state';

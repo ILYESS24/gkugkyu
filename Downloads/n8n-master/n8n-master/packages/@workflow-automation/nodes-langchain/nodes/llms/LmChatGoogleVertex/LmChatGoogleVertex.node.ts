@@ -1,4 +1,4 @@
-import { ProjectsClient } from '@google-cloud/resource-manager';
+﻿import { ProjectsClient } from '@google-cloud/resource-manager';
 import type { GoogleAISafetySetting } from '@langchain/google-common';
 import { ChatVertexAI, type ChatVertexAIInput } from '@langchain/google-vertexai';
 import { formatPrivateKey } from 'n8n-nodes-base/dist/utils/utilities';
@@ -12,7 +12,7 @@ import {
 	type JsonObject,
 	NodeOperationError,
 	validateNodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

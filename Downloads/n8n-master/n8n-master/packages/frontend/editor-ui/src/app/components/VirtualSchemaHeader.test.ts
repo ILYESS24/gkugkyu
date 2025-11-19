@@ -1,11 +1,11 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import { mockNodeTypeDescription } from '@/__tests__/mocks';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
 import { waitFor } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { SET_NODE_TYPE } from '@/app/constants';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { defaultSettings } from '@/__tests__/defaults';
 import { useSettingsStore } from '@/app/stores/settings.store';

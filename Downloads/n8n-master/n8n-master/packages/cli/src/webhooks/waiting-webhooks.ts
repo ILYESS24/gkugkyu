@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
-import type { IExecutionResponse } from '@n8n/db';
-import { ExecutionRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { IExecutionResponse } from '@workflow-automation/db';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import crypto from 'crypto';
 import type express from 'express';
 import {
@@ -9,7 +9,7 @@ import {
 	WAITING_TOKEN_QUERY_PARAM,
 	prepareUrlForSigning,
 	generateUrlSignature,
-} from 'n8n-core';
+} from 'workflow-automation-core';
 import {
 	FORM_NODE_TYPE,
 	type INodes,
@@ -17,7 +17,7 @@ import {
 	SEND_AND_WAIT_OPERATION,
 	WAIT_NODE_TYPE,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { sanitizeWebhookRequest } from './webhook-request-sanitizer';
 import { WebhookService } from './webhook.service';

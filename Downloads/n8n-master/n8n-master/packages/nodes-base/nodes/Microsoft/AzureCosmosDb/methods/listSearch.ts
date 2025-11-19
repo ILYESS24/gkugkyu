@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { HeaderConstants } from '../helpers/constants';
 import { azureCosmosDbApiRequest } from '../transport';

@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import isEqual from 'lodash/isEqual';
 import isNull from 'lodash/isNull';
 import isObject from 'lodash/isObject';
@@ -12,14 +12,14 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	jsonParse,
 	MYSQL_NODE_TYPE,
 	POSTGRES_NODE_TYPE,
 	randomInt,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Creates an array of elements split into groups the length of `size`.
@@ -234,7 +234,7 @@ export const fuzzyCompare = (useFuzzyCompare: boolean, compareVersion = 1) => {
 			return parseStringAndCompareToObject(item1, item2 as IDataObject);
 		}
 
-		//Compare booleans and strings representing the boolean (’true’, ‘True’, ‘TRUE’)
+		//Compare booleans and strings representing the boolean (â€™trueâ€™, â€˜Trueâ€™, â€˜TRUEâ€™)
 		if (typeof item1 === 'boolean' && typeof item2 === 'string') {
 			if (item1 === true && item2.toLocaleLowerCase() === 'true') return true;
 			if (item1 === false && item2.toLocaleLowerCase() === 'false') return true;

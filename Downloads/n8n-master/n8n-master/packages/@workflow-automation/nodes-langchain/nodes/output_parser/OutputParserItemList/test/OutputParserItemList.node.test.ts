@@ -1,10 +1,10 @@
-import { mock } from 'jest-mock-extended';
-import { normalizeItems } from 'n8n-core';
+﻿import { mock } from 'jest-mock-extended';
+import { normalizeItems } from 'workflow-automation-core';
 import {
 	ApplicationError,
 	type ISupplyDataFunctions,
 	type IWorkflowDataProxyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { N8nItemListOutputParser } from '@utils/output_parsers/N8nItemListOutputParser';
 

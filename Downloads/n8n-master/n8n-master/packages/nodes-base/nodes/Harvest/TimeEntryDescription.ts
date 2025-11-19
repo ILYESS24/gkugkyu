@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const resource = ['timeEntry'];
 
@@ -35,8 +35,8 @@ export const timeEntryOperations: INodeProperties[] = [
 			{
 				name: 'Delete External Reference',
 				value: 'deleteExternal',
-				description: 'Delete a time entry’s external reference',
-				action: 'Delete a time entry’s external reference',
+				description: 'Delete a time entryâ€™s external reference',
+				action: 'Delete a time entryâ€™s external reference',
 			},
 			{
 				name: 'Get',
@@ -258,7 +258,7 @@ export const timeEntryFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Stop a running time entry. Stopping a time entry is only possible if it’s currently running.',
+			'Stop a running time entry. Stopping a time entry is only possible if itâ€™s currently running.',
 	},
 
 	/* -------------------------------------------------------------------------- */
@@ -277,7 +277,7 @@ export const timeEntryFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Restart a stopped time entry. Restarting a time entry is only possible if it isn’t currently running.',
+			'Restart a stopped time entry. Restarting a time entry is only possible if it isnâ€™t currently running.',
 	},
 
 	/* -------------------------------------------------------------------------- */
@@ -341,7 +341,7 @@ export const timeEntryFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: '3:00pm',
-				description: 'The time the entry started. Defaults to the current time. Example: “8:00am”.',
+				description: 'The time the entry started. Defaults to the current time. Example: â€œ8:00amâ€.',
 			},
 		],
 	},
@@ -427,7 +427,7 @@ export const timeEntryFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The ID of the user to associate with the time entry. Defaults to the currently authenticated user’s ID.',
+					'The ID of the user to associate with the time entry. Defaults to the currently authenticated userâ€™s ID.',
 			},
 		],
 	},
@@ -511,7 +511,7 @@ export const timeEntryFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: '8:00am',
-				description: 'The time the entry started. Defaults to the current time. Example: “8:00am”.',
+				description: 'The time the entry started. Defaults to the current time. Example: â€œ8:00amâ€.',
 			},
 			{
 				displayName: 'User ID',
@@ -519,7 +519,7 @@ export const timeEntryFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The ID of the user to associate with the time entry. Defaults to the currently authenticated user’s ID.',
+					'The ID of the user to associate with the time entry. Defaults to the currently authenticated userâ€™s ID.',
 			},
 		],
 	},

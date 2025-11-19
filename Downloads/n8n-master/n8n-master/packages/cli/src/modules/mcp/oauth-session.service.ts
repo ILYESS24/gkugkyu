@@ -1,5 +1,5 @@
-import { Time } from '@n8n/constants';
-import { Service } from '@n8n/di';
+﻿import { Time } from '@workflow-automation/constants';
+import { Service } from '@workflow-automation/di';
 import { Response } from 'express';
 
 import { JwtService } from '@/services/jwt.service';

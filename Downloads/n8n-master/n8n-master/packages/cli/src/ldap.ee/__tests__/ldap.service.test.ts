@@ -1,14 +1,14 @@
-import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { LDAP_FEATURE_NAME, type LdapConfig } from '@n8n/constants';
-import type { Settings, User } from '@n8n/db';
-import { AuthIdentityRepository, SettingsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import { LDAP_FEATURE_NAME, type LdapConfig } from '@workflow-automation/constants';
+import type { Settings, User } from '@workflow-automation/db';
+import { AuthIdentityRepository, SettingsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { QueryFailedError } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { Client } from 'ldapts';
-import type { Cipher } from 'n8n-core';
-import { randomString } from 'n8n-workflow';
+import type { Cipher } from 'workflow-automation-core';
+import { randomString } from 'workflow-automation-workflow';
 
 import config from '@/config';
 import type { EventService } from '@/events/event.service';

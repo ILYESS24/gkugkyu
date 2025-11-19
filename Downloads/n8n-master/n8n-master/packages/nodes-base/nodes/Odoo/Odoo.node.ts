@@ -1,4 +1,4 @@
-import { capitalCase } from 'change-case';
+﻿import { capitalCase } from 'change-case';
 import type {
 	IExecuteFunctions,
 	ICredentialsDecrypted,
@@ -11,8 +11,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy, randomInt } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, deepCopy, randomInt } from 'workflow-automation-workflow';
 
 import {
 	contactDescription,

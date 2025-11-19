@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	LoginRequestDto,
 	PasswordUpdateRequestDto,
 	SettingsUpdateRequestDto,
@@ -7,14 +7,14 @@ import type {
 	Role,
 	UsersList,
 	User,
-} from '@n8n/api-types';
-import type { Scope } from '@n8n/permissions';
+} from '@workflow-automation/api-types';
+import type { Scope } from '@workflow-automation/permissions';
 import type {
 	FeatureFlags,
 	IDataObject,
 	IPersonalizationSurveyAnswersV4,
 	IUserSettings,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

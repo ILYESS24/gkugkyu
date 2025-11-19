@@ -1,8 +1,8 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref } from 'vue';
-import type { ExecutionSummary } from 'n8n-workflow';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 import { useI18n } from '@n8n/i18n';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useRoute } from 'vue-router';
 

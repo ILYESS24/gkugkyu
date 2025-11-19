@@ -1,8 +1,8 @@
-import { ChatPromptTemplate } from '@langchain/core/prompts';
+﻿import { ChatPromptTemplate } from '@langchain/core/prompts';
 import { FakeChatModel } from '@langchain/core/utils/testing';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import * as tracing from '@utils/tracing';
 

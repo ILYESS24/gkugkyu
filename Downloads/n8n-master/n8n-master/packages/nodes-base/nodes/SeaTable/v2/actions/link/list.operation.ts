@@ -1,4 +1,4 @@
-/* eslint-disable n8n-nodes-base/node-param-display-name-wrong-for-dynamic-options */
+﻿/* eslint-disable n8n-nodes-base/node-param-display-name-wrong-for-dynamic-options */
 /* eslint-disable n8n-nodes-base/node-param-description-wrong-for-dynamic-options */
 import {
 	type IDataObject,
@@ -6,7 +6,7 @@ import {
 	type INodeProperties,
 	type IExecuteFunctions,
 	updateDisplayOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { seaTableApiRequest } from '../../GenericFunctions';
 

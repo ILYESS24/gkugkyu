@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const opportunityOperations: INodeProperties[] = [
 	{
@@ -750,7 +750,7 @@ export const opportunityFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether true, only the note owner or a user with the “Modify All Data” permission can view the note or query it via the API',
+					'Whether true, only the note owner or a user with the â€œModify All Dataâ€ permission can view the note or query it via the API',
 			},
 			{
 				displayName: 'Owner Name or ID',

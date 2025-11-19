@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { capitalize } from '@utils/utilities';
 

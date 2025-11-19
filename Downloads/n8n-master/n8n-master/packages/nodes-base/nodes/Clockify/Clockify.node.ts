@@ -1,5 +1,5 @@
-import moment from 'moment-timezone';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import moment from 'moment-timezone';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,7 +8,7 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { clientFields, clientOperations } from './ClientDescription';
 import { clockifyApiRequest, clockifyApiRequestAllItems } from './GenericFunctions';

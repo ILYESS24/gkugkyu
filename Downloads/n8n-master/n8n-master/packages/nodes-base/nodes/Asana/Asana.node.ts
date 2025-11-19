@@ -1,4 +1,4 @@
-import { snakeCase } from 'change-case';
+﻿import { snakeCase } from 'change-case';
 import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	asanaApiRequest,
@@ -350,7 +350,7 @@ export class Asana implements INodeType {
 						name: 'opt_pretty',
 						type: 'boolean',
 						default: false,
-						description: 'Whether to provide “pretty” output',
+						description: 'Whether to provide â€œprettyâ€ output',
 					},
 				],
 			},
@@ -561,7 +561,7 @@ export class Asana implements INodeType {
 						name: 'opt_pretty',
 						type: 'boolean',
 						default: false,
-						description: 'Whether to provide “pretty” output',
+						description: 'Whether to provide â€œprettyâ€ output',
 					},
 					{
 						displayName: 'Project Name or ID',

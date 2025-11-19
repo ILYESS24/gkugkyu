@@ -1,15 +1,15 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import AnimatedSpinner from '@/app/components/AnimatedSpinner.vue';
 import ExecutionsTime from '../ExecutionsTime.vue';
 import GlobalExecutionsListItemQueuedTooltip from './GlobalExecutionsListItemQueuedTooltip.vue';
 import { useExecutionHelpers } from '../../composables/useExecutionHelpers';
 import { useI18n } from '@n8n/i18n';
 import { VIEWS } from '@/app/constants';
-import type { PermissionsRecord } from '@n8n/permissions';
+import type { PermissionsRecord } from '@workflow-automation/permissions';
 import { convertToDisplayDate } from '@/app/utils/formatters/dateFormatter';
 import type { IconColor } from '@n8n/design-system/types/icon';
-import type { ExecutionStatus, ExecutionSummary } from 'n8n-workflow';
-import { WAIT_INDEFINITELY } from 'n8n-workflow';
+import type { ExecutionStatus, ExecutionSummary } from 'workflow-automation-workflow';
+import { WAIT_INDEFINITELY } from 'workflow-automation-workflow';
 import { computed, ref, useCssModule } from 'vue';
 import { type IconName } from '@n8n/design-system/components/N8nIcon/icons';
 

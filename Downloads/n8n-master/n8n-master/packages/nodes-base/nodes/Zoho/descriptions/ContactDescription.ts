@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	currencies,
@@ -96,7 +96,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'Assistant',
 				type: 'string',
 				default: '',
-				description: 'Name of the contact’s assistant',
+				description: 'Name of the contactâ€™s assistant',
 			},
 			makeCustomFieldsFixedCollection('contact'),
 			{
@@ -167,7 +167,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'Asst_Phone',
 				type: 'string',
 				default: '',
-				description: 'Phone number of the contact’s assistant',
+				description: 'Phone number of the contactâ€™s assistant',
 			},
 			{
 				displayName: 'Phone (Home)',
@@ -243,7 +243,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'Assistant',
 				type: 'string',
 				default: '',
-				description: 'Name of the contact’s assistant',
+				description: 'Name of the contactâ€™s assistant',
 			},
 			makeCustomFieldsFixedCollection('contact'),
 			{
@@ -316,7 +316,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'Asst_Phone',
 				type: 'string',
 				default: '',
-				description: 'Phone number of the contact’s assistant',
+				description: 'Phone number of the contactâ€™s assistant',
 			},
 			{
 				displayName: 'Phone (Home)',
@@ -436,11 +436,11 @@ export const contactFields: INodeProperties[] = [
 				default: '',
 			},
 			{
-				displayName: 'Assistant’s Phone',
+				displayName: 'Assistantâ€™s Phone',
 				name: 'Asst_Phone',
 				type: 'string',
 				default: '',
-				description: 'Phone number of the contact’s assistant',
+				description: 'Phone number of the contactâ€™s assistant',
 			},
 			{
 				displayName: 'Currency',

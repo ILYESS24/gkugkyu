@@ -1,4 +1,4 @@
-import { deepCopy } from 'n8n-workflow';
+﻿import { deepCopy } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IRunExecutionData,
@@ -6,7 +6,7 @@ import type {
 	NodeError,
 	NodeOperationError,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

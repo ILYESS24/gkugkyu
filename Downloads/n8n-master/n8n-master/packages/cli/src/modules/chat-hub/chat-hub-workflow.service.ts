@@ -1,13 +1,13 @@
-import { ChatHubConversationModel, ChatSessionId } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
+﻿import { ChatHubConversationModel, ChatSessionId } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
 import {
 	SharedWorkflow,
 	SharedWorkflowRepository,
 	withTransaction,
 	WorkflowEntity,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { EntityManager } from '@n8n/typeorm';
 import {
 	AGENT_LANGCHAIN_NODE_TYPE,
@@ -23,7 +23,7 @@ import {
 	MEMORY_MANAGER_NODE_TYPE,
 	NodeConnectionTypes,
 	OperationalError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { v4 as uuidv4 } from 'uuid';
 
 import { ChatHubMessage } from './chat-hub-message.entity';

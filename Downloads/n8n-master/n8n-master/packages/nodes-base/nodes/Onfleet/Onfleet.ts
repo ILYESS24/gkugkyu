@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -6,8 +6,8 @@ import type {
 	ILoadOptionsFunctions,
 	INodeExecutionData,
 	IWebhookFunctions,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { onfleetApiRequest, onfleetApiRequestAllItems } from './GenericFunctions';
 import type {

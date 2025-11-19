@@ -1,6 +1,6 @@
-import dateformat from 'dateformat';
-import type { IDataObject } from 'n8n-workflow';
-import { jsonParse } from 'n8n-workflow';
+﻿import dateformat from 'dateformat';
+import type { IDataObject } from 'workflow-automation-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 import { isObject } from '@/app/utils/objectUtils';
 
 /*

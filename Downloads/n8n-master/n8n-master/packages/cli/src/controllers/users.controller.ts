@@ -1,13 +1,13 @@
-import {
+﻿import {
 	RoleChangeRequestDto,
 	SettingsUpdateRequestDto,
 	userDetailSchema,
 	userBaseSchema,
 	UsersListFilterDto,
 	usersListSchema,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { PublicUser } from '@n8n/db';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { PublicUser } from '@workflow-automation/db';
 import {
 	Project,
 	User,
@@ -19,7 +19,7 @@ import {
 	AuthenticatedRequest,
 	GLOBAL_ADMIN_ROLE,
 	GLOBAL_OWNER_ROLE,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	GlobalScope,
 	Delete,
@@ -30,8 +30,8 @@ import {
 	Body,
 	Param,
 	Query,
-} from '@n8n/decorators';
-import { hasGlobalScope } from '@n8n/permissions';
+} from '@workflow-automation/decorators';
+import { hasGlobalScope } from '@workflow-automation/permissions';
 import { Response } from 'express';
 
 import { AuthService } from '@/auth/auth.service';

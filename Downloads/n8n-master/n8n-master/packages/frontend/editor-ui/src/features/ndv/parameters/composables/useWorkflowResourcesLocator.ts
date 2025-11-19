@@ -1,10 +1,10 @@
-import { ref, computed } from 'vue';
+﻿import { ref, computed } from 'vue';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { Router } from 'vue-router';
 import { VIEWS } from '@/app/constants';
 
 import type { IWorkflowDb, WorkflowListResource } from '@/Interface';
-import type { NodeParameterValue } from 'n8n-workflow';
+import type { NodeParameterValue } from 'workflow-automation-workflow';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 
@@ -27,7 +27,7 @@ export function useWorkflowResourcesLocator(router: Router) {
 	function constructName(workflow: IWorkflowDb | WorkflowListResource) {
 		// Add the project name if it's not a personal project
 		if (workflow.homeProject && workflow.homeProject.type !== 'personal') {
-			return `${workflow.homeProject.name} — ${workflow.name}`;
+			return `${workflow.homeProject.name} â€” ${workflow.name}`;
 		}
 
 		return workflow.name;

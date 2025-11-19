@@ -1,7 +1,7 @@
-import type { ModuleInterface } from '@n8n/decorators';
-import { BackendModule, OnShutdown } from '@n8n/decorators';
-import { Container } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
+﻿import type { ModuleInterface } from '@workflow-automation/decorators';
+import { BackendModule, OnShutdown } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
 
 @BackendModule({ name: 'insights' })
 export class InsightsModule implements ModuleInterface {

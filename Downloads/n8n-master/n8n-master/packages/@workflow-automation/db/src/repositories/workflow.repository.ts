@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { DataSource, Repository, In, Like } from '@n8n/typeorm';
 import type {
 	SelectQueryBuilder,
@@ -10,7 +10,7 @@ import type {
 	FindOptionsRelations,
 	EntityManager,
 } from '@n8n/typeorm';
-import { PROJECT_ROOT } from 'n8n-workflow';
+import { PROJECT_ROOT } from 'workflow-automation-workflow';
 
 import { FolderRepository } from './folder.repository';
 import {

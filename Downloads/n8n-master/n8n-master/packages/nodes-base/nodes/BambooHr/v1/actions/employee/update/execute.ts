@@ -1,7 +1,7 @@
-import { capitalCase } from 'change-case';
+﻿import { capitalCase } from 'change-case';
 import moment from 'moment-timezone';
-import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../../../transport';
 

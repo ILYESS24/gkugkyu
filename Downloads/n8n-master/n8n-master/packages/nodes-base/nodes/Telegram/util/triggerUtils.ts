@@ -1,9 +1,9 @@
-import {
+﻿import {
 	type ICredentialDataDecryptedObject,
 	type IDataObject,
 	type IWebhookFunctions,
 	type IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { apiRequest, getImageBySize } from '../GenericFunctions';
 import { type IEvent } from '../IEvent';

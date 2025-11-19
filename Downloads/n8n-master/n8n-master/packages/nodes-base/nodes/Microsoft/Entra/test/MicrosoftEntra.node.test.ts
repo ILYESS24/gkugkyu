@@ -1,6 +1,6 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { ILoadOptionsFunctions, WorkflowTestData } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import type { ILoadOptionsFunctions, WorkflowTestData } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { microsoftEntraApiResponse, microsoftEntraNodeResponse } from './mocks';
 import { MicrosoftEntra } from '../MicrosoftEntra.node';
@@ -31,7 +31,7 @@ describe('Microsoft Entra Node', () => {
 								typeVersion: 1,
 								position: [0, 0],
 								id: '1307e408-a8a5-464e-b858-494953e2f43b',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 							},
 							{
 								parameters: {
@@ -60,7 +60,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{

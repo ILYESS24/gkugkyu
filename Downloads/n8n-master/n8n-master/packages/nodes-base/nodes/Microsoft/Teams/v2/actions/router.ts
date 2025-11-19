@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type INodeExecutionData,
 	NodeOperationError,
 	SEND_AND_WAIT_OPERATION,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import * as channel from './channel';
 import * as channelMessage from './channelMessage';

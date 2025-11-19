@@ -1,4 +1,4 @@
-import { GlobalConfig } from '@n8n/config';
+﻿import { GlobalConfig } from '@workflow-automation/config';
 import type { SelectQueryBuilder } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 

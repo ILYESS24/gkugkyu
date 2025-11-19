@@ -1,5 +1,5 @@
-import { createTestingPinia, type TestingPinia } from '@pinia/testing';
-import type { ICredentialType, INodeTypeDescription } from 'n8n-workflow';
+﻿import { createTestingPinia, type TestingPinia } from '@pinia/testing';
+import type { ICredentialType, INodeTypeDescription } from 'workflow-automation-workflow';
 import { mock } from 'vitest-mock-extended';
 
 import CredentialIcon from './CredentialIcon.vue';

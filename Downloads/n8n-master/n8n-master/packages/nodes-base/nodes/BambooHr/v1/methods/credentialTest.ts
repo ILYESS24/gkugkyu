@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
 	IHttpRequestOptions,
 	INodeCredentialTestResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 async function validateCredentials(
 	this: ICredentialTestFunctions,

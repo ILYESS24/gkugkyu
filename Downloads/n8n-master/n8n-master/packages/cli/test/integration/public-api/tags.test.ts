@@ -1,7 +1,7 @@
-import { testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { TagRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
+import { TagRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { createTag } from '../shared/db/tags';
 import { createMemberWithApiKey, createOwnerWithApiKey } from '../shared/db/users';

@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
-import type { WorkerStatus } from '@n8n/api-types';
+import type { WorkerStatus } from '@workflow-automation/api-types';
 
 import { useOrchestrationStore } from '../orchestration.store';
 import { averageWorkerLoadFromLoadsAsString, memAsGb } from '../orchestration.utils';

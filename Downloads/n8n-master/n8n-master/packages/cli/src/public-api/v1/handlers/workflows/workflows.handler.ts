@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { WorkflowEntity, ProjectRepository, TagRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { WorkflowEntity, ProjectRepository, TagRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In, Like, QueryFailedError } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import

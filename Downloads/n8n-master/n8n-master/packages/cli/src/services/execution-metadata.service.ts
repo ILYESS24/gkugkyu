@@ -1,6 +1,6 @@
-import type { ExecutionMetadata } from '@n8n/db';
-import { ExecutionMetadataRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { ExecutionMetadata } from '@workflow-automation/db';
+import { ExecutionMetadataRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 @Service()
 export class ExecutionMetadataService {

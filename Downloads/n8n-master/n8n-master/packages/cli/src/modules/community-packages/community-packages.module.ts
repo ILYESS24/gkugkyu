@@ -1,7 +1,7 @@
-import type { EntityClass, ModuleInterface } from '@n8n/decorators';
-import { BackendModule } from '@n8n/decorators';
-import { Container } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
+﻿import type { EntityClass, ModuleInterface } from '@workflow-automation/decorators';
+import { BackendModule } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
 import path from 'node:path';
 
 @BackendModule({ name: 'community-packages' })

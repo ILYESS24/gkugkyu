@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, inject, nextTick, onBeforeUnmount, onMounted, onUpdated, ref, watch } from 'vue';
 
 import get from 'lodash/get';
@@ -19,13 +19,13 @@ import type {
 	INodePropertyOptions,
 	IParameterLabel,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	CREDENTIAL_EMPTY_VALUE,
 	isResourceLocatorValue,
 	NodeHelpers,
 	resolveRelativePath,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { CodeNodeLanguageOption } from '@/features/shared/editors/components/CodeNodeEditor/CodeNodeEditor.vue';
 import CodeNodeEditor from '@/features/shared/editors/components/CodeNodeEditor/CodeNodeEditor.vue';

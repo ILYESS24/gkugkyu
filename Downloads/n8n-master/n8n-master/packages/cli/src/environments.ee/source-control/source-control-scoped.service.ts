@@ -1,4 +1,4 @@
-import { ProjectRepository, WorkflowRepository } from '@n8n/db';
+﻿import { ProjectRepository, WorkflowRepository } from '@workflow-automation/db';
 import {
 	type AuthenticatedRequest,
 	type CredentialsEntity,
@@ -6,9 +6,9 @@ import {
 	type Project,
 	type WorkflowEntity,
 	type WorkflowTagMapping,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { FindOptionsWhere } from '@n8n/typeorm';
 

@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -7,8 +7,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	balanceOperations,

@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	CreateCredentialDto,
 	CredentialsGetManyRequestQuery,
 	CredentialsGetOneRequestQuery,
-} from '@n8n/api-types';
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
+} from '@workflow-automation/api-types';
+import type { ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import type { ApiHelpers } from './api-helper';

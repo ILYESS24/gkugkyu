@@ -1,7 +1,7 @@
-import { createWorkflow, newWorkflow } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createWorkflow, newWorkflow } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
 import { parse as semverParse } from 'semver';
 import request, { type Response } from 'supertest';

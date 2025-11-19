@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions, wrapData } from '../../../../../utils/utilities';
 import { webflowApiRequest, webflowApiRequestAllItems } from '../../../GenericFunctions';

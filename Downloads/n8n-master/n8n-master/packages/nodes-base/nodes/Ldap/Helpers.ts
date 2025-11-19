@@ -1,6 +1,6 @@
-import { Client } from 'ldapts';
+﻿import { Client } from 'ldapts';
 import type { ClientOptions, Entry } from 'ldapts';
-import type { ICredentialDataDecryptedObject, IDataObject, Logger } from 'n8n-workflow';
+import type { ICredentialDataDecryptedObject, IDataObject, Logger } from 'workflow-automation-workflow';
 export const BINARY_AD_ATTRIBUTES = ['objectGUID', 'objectSid'];
 
 const resolveEntryBinaryAttributes = (entry: Entry): Entry => {

@@ -1,4 +1,4 @@
-import type { BannerName } from '@n8n/api-types';
+﻿import type { BannerName } from '@workflow-automation/api-types';
 import type { Role } from '@n8n/api-types/dist/schemas/user.schema';
 
 import { get } from '../utils';

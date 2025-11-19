@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -7,7 +7,7 @@ import type {
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Make an API request to Asana

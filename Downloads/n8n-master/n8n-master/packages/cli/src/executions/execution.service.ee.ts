@@ -1,6 +1,6 @@
-import type { WorkflowWithSharingsAndCredentials, IExecutionResponse } from '@n8n/db';
-import { WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { WorkflowWithSharingsAndCredentials, IExecutionResponse } from '@workflow-automation/db';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import type { IExecutionFlattedResponse } from '@/interfaces';
 

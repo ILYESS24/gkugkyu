@@ -1,7 +1,7 @@
-import { DynamicTool, DynamicStructuredTool } from '@langchain/core/tools';
+﻿import { DynamicTool, DynamicStructuredTool } from '@langchain/core/tools';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { ToolExecutor } from '../ToolExecutor.node';

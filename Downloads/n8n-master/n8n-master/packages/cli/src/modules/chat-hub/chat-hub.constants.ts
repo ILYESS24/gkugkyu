@@ -1,5 +1,5 @@
-import type { ChatHubLLMProvider } from '@n8n/api-types';
-import type { INodeTypeNameVersion } from 'n8n-workflow';
+﻿import type { ChatHubLLMProvider } from '@workflow-automation/api-types';
+import type { INodeTypeNameVersion } from 'workflow-automation-workflow';
 
 export const CONVERSATION_TITLE_GENERATION_PROMPT = `Generate a concise, descriptive title for this conversation based on the user's message.
 

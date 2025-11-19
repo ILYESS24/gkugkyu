@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type ICredentialDataDecryptedObject,
 	type ICredentialsDecrypted,
@@ -12,7 +12,7 @@ import {
 	type INodeTypeDescription,
 	type JsonObject,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { commentFields, commentOperations } from './CommentDescription';
 import {

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 const resource = ['user'];
 
@@ -258,7 +258,7 @@ export const userFields: INodeProperties[] = [
 				},
 				default: 0,
 				description:
-					'The cost rate to use for this user when calculating a project’s costs vs billable amount',
+					'The cost rate to use for this user when calculating a projectâ€™s costs vs billable amount',
 			},
 			{
 				displayName: 'Default Hourly Rate',
@@ -316,7 +316,7 @@ export const userFields: INodeProperties[] = [
 				default: '',
 				// eslint-disable-next-line n8n-nodes-base/node-param-description-url-missing-protocol
 				description:
-					'The user’s timezone. Defaults to the company’s timezone. See a list of <a href="/api-v2/introduction/overview/supported-timezones/">supported time zones</a>.',
+					'The userâ€™s timezone. Defaults to the companyâ€™s timezone. See a list of <a href="/api-v2/introduction/overview/supported-timezones/">supported time zones</a>.',
 			},
 			{
 				displayName: 'Weekly Capacity',
@@ -393,7 +393,7 @@ export const userFields: INodeProperties[] = [
 				},
 				default: 0,
 				description:
-					'The cost rate to use for this user when calculating a project’s costs vs billable amount',
+					'The cost rate to use for this user when calculating a projectâ€™s costs vs billable amount',
 			},
 			{
 				displayName: 'Default Hourly Rate',
@@ -473,7 +473,7 @@ export const userFields: INodeProperties[] = [
 				default: '',
 				// eslint-disable-next-line n8n-nodes-base/node-param-description-url-missing-protocol
 				description:
-					'The user’s timezone. Defaults to the company’s timezone. See a list of <a href="/api-v2/introduction/overview/supported-timezones/">supported time zones</a>.',
+					'The userâ€™s timezone. Defaults to the companyâ€™s timezone. See a list of <a href="/api-v2/introduction/overview/supported-timezones/">supported time zones</a>.',
 			},
 			{
 				displayName: 'Weekly Capacity',

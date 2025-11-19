@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type StructuredChunk,
 	type JINA_AI_TOOL_NODE_TYPE,
 	type SEAR_XNG_TOOL_NODE_TYPE,
 	type INode,
 	INodeSchema,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { z } from 'zod';
 import { Z } from 'zod-class';
 

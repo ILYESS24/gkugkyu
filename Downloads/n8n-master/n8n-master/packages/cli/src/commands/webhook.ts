@@ -1,5 +1,5 @@
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 
 import { ActiveExecutions } from '@/active-executions';
 import { DeprecationService } from '@/deprecation/deprecation.service';

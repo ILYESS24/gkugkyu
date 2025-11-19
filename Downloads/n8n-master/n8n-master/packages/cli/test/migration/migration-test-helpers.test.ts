@@ -1,8 +1,8 @@
-import { initDbUpToMigration, runSingleMigration } from '@n8n/backend-test-utils';
-import { DbConnection } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { initDbUpToMigration, runSingleMigration } from '@n8n/backend-test-utils';
+import { DbConnection } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DataSource } from '@n8n/typeorm';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 describe('Migration Test Helpers', () => {
 	let dataSource: DataSource;

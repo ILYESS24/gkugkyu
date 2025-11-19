@@ -1,4 +1,4 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import type { IAirtopInteractionRequest } from '../../transport/types';
 

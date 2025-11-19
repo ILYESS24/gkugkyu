@@ -1,5 +1,5 @@
-import type { User } from '@n8n/db';
-import { UserError } from 'n8n-workflow';
+﻿import type { User } from '@workflow-automation/db';
+import { UserError } from 'workflow-automation-workflow';
 import z from 'zod';
 
 import { SUPPORTED_MCP_TRIGGERS, USER_CALLED_MCP_TOOL_EVENT } from '../mcp.constants';

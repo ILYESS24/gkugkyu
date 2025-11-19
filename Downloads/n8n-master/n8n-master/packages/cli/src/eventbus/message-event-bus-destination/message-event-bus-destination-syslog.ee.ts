@@ -1,11 +1,11 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { Logger } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { Logger } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 import type {
 	MessageEventBusDestinationOptions,
 	MessageEventBusDestinationSyslogOptions,
-} from 'n8n-workflow';
-import { MessageEventBusDestinationTypeNames } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { MessageEventBusDestinationTypeNames } from 'workflow-automation-workflow';
 import syslog from 'syslog-client';
 
 import { MessageEventBusDestination } from './message-event-bus-destination.ee';

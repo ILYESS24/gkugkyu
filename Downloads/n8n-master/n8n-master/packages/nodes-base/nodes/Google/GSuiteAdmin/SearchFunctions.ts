@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	ILoadOptionsFunctions,
 	IDataObject,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { googleApiRequest, googleApiRequestAllItems } from './GenericFunctions';
 

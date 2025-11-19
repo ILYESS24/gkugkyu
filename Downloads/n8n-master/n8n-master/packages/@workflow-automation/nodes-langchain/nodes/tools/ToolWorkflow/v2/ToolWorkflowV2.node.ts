@@ -1,4 +1,4 @@
-import type { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
+﻿import type { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
 
 import type {
 	INodeTypeBaseDescription,
@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	IExecuteFunctions,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { nodeNameToToolName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { nodeNameToToolName } from 'workflow-automation-workflow';
 
 import { localResourceMapping } from './methods';
 import { WorkflowToolService } from './utils/WorkflowToolService';

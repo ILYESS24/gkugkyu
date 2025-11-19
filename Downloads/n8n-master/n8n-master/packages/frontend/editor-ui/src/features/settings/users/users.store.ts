@@ -1,4 +1,4 @@
-import { useAsyncState } from '@vueuse/core';
+﻿import { useAsyncState } from '@vueuse/core';
 import {
 	type LoginRequestDto,
 	type PasswordUpdateRequestDto,
@@ -7,10 +7,10 @@ import {
 	type User,
 	ROLE,
 	type UsersListFilterDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { UpdateGlobalRolePayload } from '@n8n/rest-api-client/api/users';
 import * as usersApi from '@n8n/rest-api-client/api/users';
-import { BROWSER_ID_STORAGE_KEY } from '@n8n/constants';
+import { BROWSER_ID_STORAGE_KEY } from '@workflow-automation/constants';
 import { PERSONALIZATION_MODAL_KEY } from './users.constants';
 import { STORES } from '@n8n/stores';
 import type { InvitableRoleName } from './users.types';

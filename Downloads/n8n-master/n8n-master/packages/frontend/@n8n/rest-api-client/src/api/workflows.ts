@@ -1,4 +1,4 @@
-import type { IWorkflowSettings, IConnections, INode, IPinData } from 'n8n-workflow';
+﻿import type { IWorkflowSettings, IConnections, INode, IPinData } from 'workflow-automation-workflow';
 
 import type { ITag } from './tags';
 

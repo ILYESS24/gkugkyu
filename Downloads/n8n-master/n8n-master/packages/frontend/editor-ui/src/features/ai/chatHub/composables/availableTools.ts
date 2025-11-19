@@ -1,5 +1,5 @@
-import { type ChatHubAgentTool } from '@n8n/api-types';
-import { type INode, JINA_AI_TOOL_NODE_TYPE, SEAR_XNG_TOOL_NODE_TYPE } from 'n8n-workflow';
+﻿import { type ChatHubAgentTool } from '@workflow-automation/api-types';
+import { type INode, JINA_AI_TOOL_NODE_TYPE, SEAR_XNG_TOOL_NODE_TYPE } from 'workflow-automation-workflow';
 import { v4 as uuidv4 } from 'uuid';
 
 export interface ChatHubToolProvider {

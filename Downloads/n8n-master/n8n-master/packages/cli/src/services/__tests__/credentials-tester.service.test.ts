@@ -1,5 +1,5 @@
-import mock from 'jest-mock-extended/lib/Mock';
-import type { ICredentialType, INodeType, IWorkflowExecuteAdditionalData } from 'n8n-workflow';
+﻿import mock from 'jest-mock-extended/lib/Mock';
+import type { ICredentialType, INodeType, IWorkflowExecuteAdditionalData } from 'workflow-automation-workflow';
 
 import type { CredentialTypes } from '@/credential-types';
 import type { CredentialsHelper } from '@/credentials-helper';

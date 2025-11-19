@@ -1,4 +1,4 @@
-import type { InsightsSummaryType } from '@n8n/api-types';
+﻿import type { InsightsSummaryType } from '@workflow-automation/api-types';
 import dateformat from 'dateformat';
 
 export const INSIGHT_TYPES = {
@@ -48,9 +48,9 @@ export const INSIGHTS_UNIT_IMPACT_MAPPING: Record<
 > = {
 	total: INSIGHT_IMPACT_TYPES.POSITIVE,
 	failed: INSIGHT_IMPACT_TYPES.NEGATIVE,
-	failureRate: INSIGHT_IMPACT_TYPES.NEGATIVE, // Higher failureRate is bad → negative (red)
-	timeSaved: INSIGHT_IMPACT_TYPES.POSITIVE, // More time saved is good → positive (green)
-	averageRunTime: INSIGHT_IMPACT_TYPES.NEUTRAL, // Not good or bad → neutral (grey)
+	failureRate: INSIGHT_IMPACT_TYPES.NEGATIVE, // Higher failureRate is bad â†’ negative (red)
+	timeSaved: INSIGHT_IMPACT_TYPES.POSITIVE, // More time saved is good â†’ positive (green)
+	averageRunTime: INSIGHT_IMPACT_TYPES.NEUTRAL, // Not good or bad â†’ neutral (grey)
 } as const;
 
 export const GRANULARITY_DATE_FORMAT_MASK = {

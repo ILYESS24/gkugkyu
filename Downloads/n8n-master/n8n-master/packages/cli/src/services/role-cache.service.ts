@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import { Time } from '@n8n/constants';
-import { RoleRepository } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
-import { staticRolesWithScope, type Scope } from '@n8n/permissions';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Time } from '@workflow-automation/constants';
+import { RoleRepository } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
+import { staticRolesWithScope, type Scope } from '@workflow-automation/permissions';
 
 import { CacheService } from './cache/cache.service';
 

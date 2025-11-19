@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 import { NoImportEnterpriseEditionRule } from './no-import-enterprise-edition.js';
 
 const ruleTester = new RuleTester();
@@ -15,7 +15,7 @@ ruleTester.run('no-import-enterprise-edition', NoImportEnterpriseEditionRule, {
 			filename: '/Users/test/project/src/controllers/controller.ts',
 		},
 		{
-			code: 'import { Config } from "@n8n/config"',
+			code: 'import { Config } from "@workflow-automation/config"',
 			filename: '/Users/test/project/src/services/service.ts',
 		},
 
@@ -31,7 +31,7 @@ ruleTester.run('no-import-enterprise-edition', NoImportEnterpriseEditionRule, {
 			filename: '/Users/test/project/src/environments.ee/controllers/enterprise-controller.ts',
 		},
 		{
-			code: 'import { Config } from "@n8n/config"',
+			code: 'import { Config } from "@workflow-automation/config"',
 			filename: '/Users/test/project/src/environments.ee/services/service.ts',
 		},
 

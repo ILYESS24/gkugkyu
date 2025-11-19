@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { createBinaryFromJson } from '@utils/binary';
 import { encodeDecodeOptions } from '@utils/descriptions';

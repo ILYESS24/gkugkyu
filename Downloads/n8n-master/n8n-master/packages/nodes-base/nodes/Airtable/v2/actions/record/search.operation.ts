@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { generatePairedItemData, updateDisplayOptions } from '../../../../../utils/utilities';
 import type { IRecord } from '../../helpers/interfaces';

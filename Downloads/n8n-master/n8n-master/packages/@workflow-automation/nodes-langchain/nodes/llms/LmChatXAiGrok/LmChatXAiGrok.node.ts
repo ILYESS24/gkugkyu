@@ -1,11 +1,11 @@
-import { ChatOpenAI, type ClientOptions } from '@langchain/openai';
+﻿import { ChatOpenAI, type ClientOptions } from '@langchain/openai';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getProxyAgent } from '@utils/httpProxyAgent';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

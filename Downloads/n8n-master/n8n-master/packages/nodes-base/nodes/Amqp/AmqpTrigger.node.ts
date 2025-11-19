@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ITriggerFunctions,
 	IDataObject,
 	INodeType,
@@ -6,8 +6,8 @@ import type {
 	ITriggerResponse,
 	IDeferredPromise,
 	IRun,
-} from 'n8n-workflow';
-import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type { ConnectionOptions, EventContext, Message, ReceiverOptions } from 'rhea';
 import { create_container } from 'rhea';
 

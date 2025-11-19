@@ -1,10 +1,10 @@
-import type { PushPayload } from '@n8n/api-types';
-import type { User } from '@n8n/db';
-import { UserRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import type { Workflow } from 'n8n-workflow';
-import { UnexpectedError } from 'n8n-workflow';
+﻿import type { PushPayload } from '@workflow-automation/api-types';
+import type { User } from '@workflow-automation/db';
+import { UserRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import type { Workflow } from 'workflow-automation-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { CollaborationState } from '@/collaboration/collaboration.state';
 import { Push } from '@/push';

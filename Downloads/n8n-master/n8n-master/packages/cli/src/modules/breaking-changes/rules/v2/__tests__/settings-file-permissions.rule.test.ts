@@ -1,4 +1,4 @@
-import type { InstanceSettingsConfig } from '@n8n/config';
+﻿import type { InstanceSettingsConfig } from '@workflow-automation/config';
 import { mock } from 'jest-mock-extended';
 
 import { SettingsFilePermissionsRule } from '../settings-file-permissions.rule';

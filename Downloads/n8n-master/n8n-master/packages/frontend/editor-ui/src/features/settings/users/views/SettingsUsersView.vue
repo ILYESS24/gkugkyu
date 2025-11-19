@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { ref, computed, onMounted } from 'vue';
 import { useDebounceFn } from '@vueuse/core';
 import {
@@ -7,7 +7,7 @@ import {
 	type UsersListSortOptions,
 	type User,
 	USERS_LIST_SORT_OPTIONS,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { UserAction } from '@n8n/design-system';
 import type { TableOptions } from '@n8n/design-system/components/N8nDataTableServer';
 import { EnterpriseEditionFeature } from '@/app/constants';

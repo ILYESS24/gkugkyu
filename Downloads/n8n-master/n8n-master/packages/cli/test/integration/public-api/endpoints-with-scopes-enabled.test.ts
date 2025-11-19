@@ -1,4 +1,4 @@
-import type { CredentialPayload } from '@n8n/backend-test-utils';
+﻿import type { CredentialPayload } from '@n8n/backend-test-utils';
 import {
 	createTeamProject,
 	getProjectByNameOrFail,
@@ -6,7 +6,7 @@ import {
 	randomName,
 	testDb,
 } from '@n8n/backend-test-utils';
-import type { TagEntity, Variables } from '@n8n/db';
+import type { TagEntity, Variables } from '@workflow-automation/db';
 import {
 	ApiKeyRepository,
 	CredentialsRepository,
@@ -14,10 +14,10 @@ import {
 	TagRepository,
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import { getOwnerOnlyApiKeyScopes } from '@n8n/permissions';
-import { randomString } from 'n8n-workflow';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { getOwnerOnlyApiKeyScopes } from '@workflow-automation/permissions';
+import { randomString } from 'workflow-automation-workflow';
 import validator from 'validator';
 
 import { affixRoleToSaveCredential, createCredentials } from '@test-integration/db/credentials';

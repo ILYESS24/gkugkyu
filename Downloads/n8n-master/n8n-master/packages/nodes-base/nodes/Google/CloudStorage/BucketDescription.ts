@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 // Projection field controls the page limit maximum
 // When not returning all, return the max number for the current projection parameter

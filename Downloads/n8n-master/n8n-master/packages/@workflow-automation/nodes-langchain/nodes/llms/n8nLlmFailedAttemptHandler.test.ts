@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
-import { ApplicationError, NodeApiError } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { ApplicationError, NodeApiError } from 'workflow-automation-workflow';
 
 import { makeN8nLlmFailedAttemptHandler } from './n8nLlmFailedAttemptHandler';
 

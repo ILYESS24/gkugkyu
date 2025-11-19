@@ -1,14 +1,14 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import type { MessageContent, BaseMessage } from '@langchain/core/messages';
 import { AIMessage, SystemMessage, HumanMessage } from '@langchain/core/messages';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 type MessageRole = 'ai' | 'system' | 'user';
 interface MessageRecord {

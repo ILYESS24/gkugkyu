@@ -1,4 +1,4 @@
-import { ROLE } from '@n8n/api-types';
+﻿import { ROLE } from '@workflow-automation/api-types';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import merge from 'lodash/merge';
 import { usePageRedirectionHelper } from './usePageRedirectionHelper';

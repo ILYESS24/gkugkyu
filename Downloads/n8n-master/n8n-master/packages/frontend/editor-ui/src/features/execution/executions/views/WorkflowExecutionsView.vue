@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import WorkflowExecutionsList from '../components/workflow/WorkflowExecutionsList.vue';
 import { useExecutionsStore } from '../executions.store';
@@ -12,7 +12,7 @@ import { NO_NETWORK_ERROR_CODE } from '@n8n/rest-api-client';
 import { useToast } from '@/app/composables/useToast';
 import { NEW_WORKFLOW_ID, PLACEHOLDER_EMPTY_WORKFLOW_ID, VIEWS } from '@/app/constants';
 import { useRoute, useRouter } from 'vue-router';
-import type { ExecutionSummary } from 'n8n-workflow';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 import { useDebounce } from '@/app/composables/useDebounce';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';

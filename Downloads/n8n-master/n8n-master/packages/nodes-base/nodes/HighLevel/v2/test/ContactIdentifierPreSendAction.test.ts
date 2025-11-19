@@ -1,4 +1,4 @@
-import type { IExecuteSingleFunctions, IHttpRequestOptions, INode } from 'n8n-workflow';
+﻿import type { IExecuteSingleFunctions, IHttpRequestOptions, INode } from 'workflow-automation-workflow';
 
 import { contactIdentifierPreSendAction, isEmailValid, isPhoneValid } from '../GenericFunctions';
 

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { NEW_ASSISTANT_SESSION_MODAL } from '@/app/constants';
 import Modal from '@/app/components/Modal.vue';
 import { useI18n } from '@n8n/i18n';
@@ -6,7 +6,7 @@ import { useUIStore } from '@/app/stores/ui.store';
 import { useChatPanelStore } from '../../chatPanel.store';
 import type { ChatRequest } from '@/features/ai/assistant/assistant.types';
 import { useAssistantStore } from '@/features/ai/assistant/assistant.store';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'workflow-automation-workflow';
 
 import { N8nAssistantIcon, N8nAssistantText, N8nButton, N8nText } from '@n8n/design-system';
 

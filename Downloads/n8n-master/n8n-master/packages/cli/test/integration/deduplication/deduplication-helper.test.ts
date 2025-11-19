@@ -1,12 +1,12 @@
-import { createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { DataDeduplicationService } from 'n8n-core';
+﻿import { createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { DataDeduplicationService } from 'workflow-automation-core';
 import type {
 	ICheckProcessedContextData,
 	IDeduplicationOutput,
 	INode,
 	DeduplicationItemTypes,
-} from 'n8n-workflow';
-import { Workflow } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Workflow } from 'workflow-automation-workflow';
 
 import { getDataDeduplicationService } from '@/deduplication';
 import { LoadNodesAndCredentials } from '@/load-nodes-and-credentials';

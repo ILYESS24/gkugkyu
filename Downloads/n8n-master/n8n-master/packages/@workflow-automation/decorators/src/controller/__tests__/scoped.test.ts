@@ -1,5 +1,5 @@
-import { Container } from '@n8n/di';
-import type { Scope } from '@n8n/permissions';
+﻿import { Container } from '@workflow-automation/di';
+import type { Scope } from '@workflow-automation/permissions';
 
 import { ControllerRegistryMetadata } from '../controller-registry-metadata';
 import { GlobalScope, ProjectScope } from '../scoped';

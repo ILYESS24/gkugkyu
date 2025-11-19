@@ -1,9 +1,9 @@
-import {
+﻿import {
 	type INode,
 	NodeOperationError,
 	type IDataTableProjectService,
 	type IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { FieldEntry } from '../../common/constants';
 import { ANY_CONDITION, ALL_CONDITIONS } from '../../common/constants';

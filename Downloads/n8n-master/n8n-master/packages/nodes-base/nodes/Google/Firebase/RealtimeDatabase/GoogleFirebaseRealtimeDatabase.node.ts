@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	JsonObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { googleApiRequest, googleApiRequestAllItems } from './GenericFunctions';
 

@@ -1,11 +1,11 @@
-import { array, name, uuid } from 'minifaker';
+﻿import { array, name, uuid } from 'minifaker';
 import 'minifaker/locales/en';
 import type {
 	INodeExecutionData,
 	INodeListSearchResult,
 	INodePropertyOptions,
 	ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export const returnData: INodeExecutionData[] = [
 	{

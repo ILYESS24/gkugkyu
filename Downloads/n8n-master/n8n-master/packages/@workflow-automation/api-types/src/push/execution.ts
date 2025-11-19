@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ExecutionStatus,
 	ITaskData,
 	ITaskStartedData,
 	NodeConnectionType,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export type ExecutionStarted = {
 	type: 'executionStarted';

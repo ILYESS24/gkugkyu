@@ -1,14 +1,14 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { Time } from '@n8n/constants';
-import type { CredentialsEntity, User } from '@n8n/db';
-import { CredentialsRepository, GLOBAL_OWNER_ROLE } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { Time } from '@workflow-automation/constants';
+import type { CredentialsEntity, User } from '@workflow-automation/db';
+import { CredentialsRepository, GLOBAL_OWNER_ROLE } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import Csrf from 'csrf';
 import type { Response } from 'express';
 import { captor, mock } from 'jest-mock-extended';
-import { Cipher, type InstanceSettings, ExternalSecretsProxy } from 'n8n-core';
-import type { IWorkflowExecuteAdditionalData } from 'n8n-workflow';
+import { Cipher, type InstanceSettings, ExternalSecretsProxy } from 'workflow-automation-core';
+import type { IWorkflowExecuteAdditionalData } from 'workflow-automation-workflow';
 import nock from 'nock';
 
 import { OAuth1CredentialController } from '@/controllers/oauth/oauth1-credential.controller';

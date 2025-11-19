@@ -1,4 +1,4 @@
-import type { IWorkflowDb } from '@/Interface';
+﻿import type { IWorkflowDb } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import type { WorkflowData } from '@n8n/rest-api-client/api/workflows';
 import { resolveParameter, useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';
@@ -16,8 +16,8 @@ import {
 	createTestWorkflowExecutionResponse,
 	createTestWorkflowObject,
 } from '@/__tests__/mocks';
-import { CHAT_TRIGGER_NODE_TYPE, NodeConnectionTypes, WEBHOOK_NODE_TYPE } from 'n8n-workflow';
-import type { AssignmentCollectionValue, IConnections } from 'n8n-workflow';
+import { CHAT_TRIGGER_NODE_TYPE, NodeConnectionTypes, WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
+import type { AssignmentCollectionValue, IConnections } from 'workflow-automation-workflow';
 import * as apiWebhooks from '@n8n/rest-api-client/api/webhooks';
 import { mockedStore } from '@/__tests__/utils';
 import { SLACK_TRIGGER_NODE_TYPE } from '../constants';

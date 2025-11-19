@@ -1,13 +1,13 @@
-import type { NotificationOptions as ElementNotificationOptions } from 'element-plus';
+﻿import type { NotificationOptions as ElementNotificationOptions } from 'element-plus';
 import type {
 	FrontendSettings,
 	IUserManagementSettings,
 	IVersionNotificationSettings,
 	Role,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { ILogInStatus } from '@/features/settings/users/users.types';
 import type { IUsedCredential } from '@/features/credentials/credentials.types';
-import type { Scope } from '@n8n/permissions';
+import type { Scope } from '@workflow-automation/permissions';
 import type { NodeCreatorTag } from '@n8n/design-system';
 import type {
 	GenericValue,
@@ -32,7 +32,7 @@ import type {
 	ITaskData,
 	ISourceData,
 	PublicInstalledPackage,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Version } from '@n8n/rest-api-client/api/versions';
 import type { Cloud, InstanceUsage } from '@n8n/rest-api-client/api/cloudPlans';
 import type {

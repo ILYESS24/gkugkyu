@@ -1,13 +1,13 @@
-import { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { LicenseMetricsRepository, WorkflowRepository } from '@n8n/db';
-import { OnLeaderStepdown, OnLeaderTakeover } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { LicenseMetricsRepository, WorkflowRepository } from '@workflow-automation/db';
+import { OnLeaderStepdown, OnLeaderTakeover } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 import type express from 'express';
 import promBundle from 'express-prom-bundle';
 import { DateTime } from 'luxon';
-import { InstanceSettings } from 'n8n-core';
-import { EventMessageTypeNames, jsonParse } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { EventMessageTypeNames, jsonParse } from 'workflow-automation-workflow';
 import promClient, { type Counter, type Gauge } from 'prom-client';
 import semverParse from 'semver/functions/parse';
 

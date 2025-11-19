@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
@@ -6,8 +6,8 @@ import type {
 	INodeListSearchItems,
 	INodeListSearchResult,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { CURRENT_VERSION } from '../helpers/constants';
 import type {

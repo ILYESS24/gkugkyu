@@ -1,12 +1,12 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { useExecutionCommands } from './useExecutionCommands';
 import { useExecutionsStore } from '@/features/execution/executions/executions.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { createTestingPinia } from '@pinia/testing';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { setActivePinia } from 'pinia';
-import type { ExecutionSummary } from 'n8n-workflow';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 import { EnterpriseEditionFeature, MODAL_CONFIRM, VIEWS } from '@/app/constants';
 
 const routerPushMock = vi.fn();

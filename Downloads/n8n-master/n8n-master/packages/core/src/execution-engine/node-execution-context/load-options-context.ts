@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	ICredentialDataDecryptedObject,
 	IGetNodeParameterOptions,
@@ -7,7 +7,7 @@ import type {
 	IWorkflowExecuteAdditionalData,
 	NodeParameterValueType,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { NodeExecutionContext } from './node-execution-context';
 import { getDataTableHelperFunctions } from './utils/data-table-helper-functions';

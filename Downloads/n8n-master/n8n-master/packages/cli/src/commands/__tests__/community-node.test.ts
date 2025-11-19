@@ -1,4 +1,4 @@
-import type { CredentialsEntity, User } from '@n8n/db';
+﻿import type { CredentialsEntity, User } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import { CommunityNode } from '@/modules/community-packages/community-node.command';

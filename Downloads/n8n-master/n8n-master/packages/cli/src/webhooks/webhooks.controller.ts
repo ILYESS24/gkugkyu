@@ -1,4 +1,4 @@
-import { Post, RestController } from '@n8n/decorators';
+﻿import { Post, RestController } from '@workflow-automation/decorators';
 import { Request } from 'express';
 import get from 'lodash/get';
 

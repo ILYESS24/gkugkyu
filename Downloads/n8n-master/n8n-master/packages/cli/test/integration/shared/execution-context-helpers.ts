@@ -1,10 +1,10 @@
-/**
+﻿/**
  * Reusable validation helper functions for execution context assertions.
  * These functions provide consistent and composable validation patterns
  * for testing execution context propagation across workflows.
  */
 
-import type { IExecutionContext } from 'n8n-workflow';
+import type { IExecutionContext } from 'workflow-automation-workflow';
 
 /**
  * Validates the basic structure and required fields of an execution context.

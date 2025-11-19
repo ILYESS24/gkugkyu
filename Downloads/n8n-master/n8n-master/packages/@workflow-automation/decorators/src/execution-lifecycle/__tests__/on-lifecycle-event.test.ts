@@ -1,4 +1,4 @@
-import { Container, Service } from '@n8n/di';
+﻿import { Container, Service } from '@workflow-automation/di';
 
 import { NonMethodError } from '../../errors';
 import { LifecycleMetadata } from '../lifecycle-metadata';

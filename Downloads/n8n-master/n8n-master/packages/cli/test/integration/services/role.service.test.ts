@@ -1,10 +1,10 @@
-import type { CreateRoleDto, UpdateRoleDto } from '@n8n/api-types';
-import { LicenseState } from '@n8n/backend-common';
+﻿import type { CreateRoleDto, UpdateRoleDto } from '@workflow-automation/api-types';
+import { LicenseState } from '@workflow-automation/backend-common';
 import { testDb } from '@n8n/backend-test-utils';
-import { ProjectRepository } from '@n8n/db';
-import { RoleRepository, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { ALL_ROLES } from '@n8n/permissions';
+import { ProjectRepository } from '@workflow-automation/db';
+import { RoleRepository, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { ALL_ROLES } from '@workflow-automation/permissions';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

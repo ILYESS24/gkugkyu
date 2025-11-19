@@ -1,5 +1,5 @@
-import set from 'lodash/set';
-import { ApplicationError, type IDataObject, type NodeApiError } from 'n8n-workflow';
+﻿import set from 'lodash/set';
+import { ApplicationError, type IDataObject, type NodeApiError } from 'workflow-automation-workflow';
 
 import type { UpdateRecord } from './interfaces';
 

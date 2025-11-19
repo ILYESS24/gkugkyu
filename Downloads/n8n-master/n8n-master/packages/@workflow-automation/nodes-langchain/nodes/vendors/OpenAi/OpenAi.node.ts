@@ -1,8 +1,8 @@
-import {
+﻿import {
 	type IVersionedNodeType,
 	VersionedNodeType,
 	type INodeTypeBaseDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { prettifyOperation } from './helpers/description';
 import { OpenAiV1 } from './v1/OpenAiV1.node';

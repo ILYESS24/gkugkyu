@@ -1,4 +1,4 @@
-import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
+﻿import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
 import type { KafkaConfig, SASLOptions, TopicMessages } from 'kafkajs';
 import { CompressionTypes, Kafka as apacheKafka } from 'kafkajs';
 import type {
@@ -11,8 +11,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { generatePairedItemData } from '../../utils/utilities';
 

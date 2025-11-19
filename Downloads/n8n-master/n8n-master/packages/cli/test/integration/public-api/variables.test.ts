@@ -1,5 +1,5 @@
-import { createTeamProject, testDb } from '@n8n/backend-test-utils';
-import type { Project, User, Variables } from '@n8n/db';
+﻿import { createTeamProject, testDb } from '@n8n/backend-test-utils';
+import type { Project, User, Variables } from '@workflow-automation/db';
 import { createOwnerWithApiKey } from '@test-integration/db/users';
 import {
 	createProjectVariable,

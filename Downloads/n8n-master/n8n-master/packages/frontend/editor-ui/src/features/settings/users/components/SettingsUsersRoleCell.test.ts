@@ -1,8 +1,8 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import { screen } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
-import { ROLE, type Role, type UsersList } from '@n8n/api-types';
+import { ROLE, type Role, type UsersList } from '@workflow-automation/api-types';
 import { type ActionDropdownItem } from '@n8n/design-system';
 import SettingsUsersRoleCell from './SettingsUsersRoleCell.vue';
 import { createComponentRenderer } from '@/__tests__/render';

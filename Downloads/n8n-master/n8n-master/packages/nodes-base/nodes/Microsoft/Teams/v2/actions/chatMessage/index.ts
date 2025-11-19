@@ -1,4 +1,4 @@
-import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'n8n-workflow';
+﻿import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'workflow-automation-workflow';
 
 import * as create from './create.operation';
 import * as get from './get.operation';

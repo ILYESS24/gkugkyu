@@ -1,4 +1,4 @@
-import { WithTimestamps } from '@n8n/db';
+﻿import { WithTimestamps } from '@workflow-automation/db';
 import { Column, Entity, JoinColumn, OneToMany, PrimaryColumn } from '@n8n/typeorm';
 
 import type { InstalledNodes } from './installed-nodes.entity';

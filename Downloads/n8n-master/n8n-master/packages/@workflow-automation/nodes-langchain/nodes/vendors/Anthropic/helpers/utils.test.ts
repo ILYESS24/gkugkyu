@@ -1,5 +1,5 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { downloadFile, getBaseUrl, getMimeType, splitByComma, uploadFile } from './utils';
 import * as transport from '../transport';

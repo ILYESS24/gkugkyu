@@ -1,10 +1,10 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import WorkflowExecutionsCard from './WorkflowExecutionsCard.vue';
 import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import { STORES } from '@n8n/stores';
 import type { ComponentProps } from 'vue-component-type-helpers';
-import type { ExecutionSummary } from 'n8n-workflow';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 
 vi.mock('vue-router', () => ({
 	useRoute: () => ({

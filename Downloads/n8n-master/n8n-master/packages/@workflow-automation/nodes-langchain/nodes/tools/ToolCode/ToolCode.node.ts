@@ -1,6 +1,6 @@
-import { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
-import { TaskRunnersConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
+import { TaskRunnersConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import type { JSONSchema7 } from 'json-schema';
 import { JavaScriptSandbox } from 'n8n-nodes-base/dist/nodes/Code/JavaScriptSandbox';
 import { JsTaskRunnerSandbox } from 'n8n-nodes-base/dist/nodes/Code/JsTaskRunnerSandbox';
@@ -16,13 +16,13 @@ import type {
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	jsonParse,
 	NodeConnectionTypes,
 	nodeNameToToolName,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	buildInputSchemaField,

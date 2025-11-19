@@ -1,10 +1,10 @@
-import { escape } from '../utils';
+﻿import { escape } from '../utils';
 import type { Completion, CompletionContext, CompletionResult } from '@codemirror/autocomplete';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { isAllowedInDotNotation } from '@/features/shared/editors/plugins/codemirror/completions/utils';
 import { useI18n } from '@n8n/i18n';
-import type { IPinData, IRunData, IDataObject } from 'n8n-workflow';
+import type { IPinData, IRunData, IDataObject } from 'workflow-automation-workflow';
 
 function useJsonFieldCompletions() {
 	const i18n = useI18n();

@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig } from 'axios';
+﻿import type { AxiosRequestConfig } from 'axios';
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
 import moment from 'moment-timezone';
@@ -8,7 +8,7 @@ import type {
 	IHttpRequestOptions,
 	INodeProperties,
 	Icon,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 const regions = [
 	{
@@ -149,7 +149,7 @@ const regions = [
 	{
 		name: 'northamerica-northeast1',
 		displayName: 'Americas',
-		location: 'Montréal',
+		location: 'MontrÃ©al',
 	},
 	{
 		name: 'northamerica-northeast2',

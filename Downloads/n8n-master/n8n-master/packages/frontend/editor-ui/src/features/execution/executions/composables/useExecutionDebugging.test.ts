@@ -1,4 +1,4 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import { mockedStore } from '@/__tests__/utils';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import {
@@ -9,7 +9,7 @@ import {
 import { useExecutionDebugging } from './useExecutionDebugging';
 import type { INodeUi } from '@/Interface';
 import type { IExecutionResponse } from '../executions.types';
-import type { Workflow } from 'n8n-workflow';
+import type { Workflow } from 'workflow-automation-workflow';
 import { useToast } from '@/app/composables/useToast';
 
 vi.mock('@/app/composables/useToast', () => {

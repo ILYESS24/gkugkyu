@@ -1,11 +1,11 @@
-import pickBy from 'lodash/pickBy';
+﻿import pickBy from 'lodash/pickBy';
 import {
 	type INodeExecutionData,
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	INPUT_SOURCE,
@@ -67,7 +67,7 @@ export class ExecuteWorkflowTrigger implements INodeType {
 			},
 			{
 				displayName:
-					"When an ‘execute workflow’ node calls this workflow, the execution starts here. Any data passed into the 'execute workflow' node will be output by this node.",
+					"When an â€˜execute workflowâ€™ node calls this workflow, the execution starts here. Any data passed into the 'execute workflow' node will be output by this node.",
 				name: 'notice',
 				type: 'notice',
 				default: '',

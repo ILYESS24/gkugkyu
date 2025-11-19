@@ -1,4 +1,4 @@
-import { createHmac } from 'crypto';
+﻿import { createHmac } from 'crypto';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialType,
@@ -6,8 +6,8 @@ import type {
 	IHttpRequestOptions,
 	INodeProperties,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { OperationalError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { OperationalError } from 'workflow-automation-workflow';
 
 import {
 	CURRENT_VERSION,

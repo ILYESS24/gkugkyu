@@ -1,4 +1,4 @@
-import { inTest } from '@n8n/backend-common';
+﻿import { inTest } from '@workflow-automation/backend-common';
 import { createContext, Script } from 'vm';
 
 const context = createContext({ require });

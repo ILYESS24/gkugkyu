@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 export interface RundeckCredentials {
 	url: string;

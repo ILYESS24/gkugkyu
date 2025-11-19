@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
@@ -9,7 +9,7 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeApiError,
 	NodeOperationError,
@@ -17,7 +17,7 @@ import {
 	removeCircularRefs,
 	NodeConnectionTypes,
 	isDomainAllowed,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import type { IAuthDataSanitizeKeys } from '../GenericFunctions';

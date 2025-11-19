@@ -1,5 +1,5 @@
-import { TaskRunnersConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { TaskRunnersConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
@@ -11,8 +11,8 @@ import type {
 	ITaskDataConnections,
 	IWorkflowExecuteAdditionalData,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { createEnvProviderState, NodeConnectionTypes, Workflow } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { createEnvProviderState, NodeConnectionTypes, Workflow } from 'workflow-automation-workflow';
 
 import { LocalTaskRequester } from '@/task-runners/task-managers/local-task-requester';
 import { TaskRunnerModule } from '@/task-runners/task-runner-module';

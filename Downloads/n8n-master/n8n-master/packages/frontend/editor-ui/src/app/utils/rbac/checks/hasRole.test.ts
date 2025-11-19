@@ -1,6 +1,6 @@
-import { useUsersStore } from '@/features/settings/users/users.store';
+﻿import { useUsersStore } from '@/features/settings/users/users.store';
 import { hasRole } from '@/app/utils/rbac/checks';
-import { ROLE } from '@n8n/api-types';
+import { ROLE } from '@workflow-automation/api-types';
 
 vi.mock('@/features/settings/users/users.store', () => ({
 	useUsersStore: vi.fn(),

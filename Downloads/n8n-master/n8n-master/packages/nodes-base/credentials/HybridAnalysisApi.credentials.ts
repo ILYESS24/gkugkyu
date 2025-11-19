@@ -1,4 +1,4 @@
-import type { IAuthenticateGeneric, ICredentialType, INodeProperties, Icon } from 'n8n-workflow';
+﻿import type { IAuthenticateGeneric, ICredentialType, INodeProperties, Icon } from 'workflow-automation-workflow';
 
 export class HybridAnalysisApi implements ICredentialType {
 	name = 'hybridAnalysisApi';

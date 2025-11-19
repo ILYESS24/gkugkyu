@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
@@ -7,8 +7,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function microsoftApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,
@@ -278,7 +278,7 @@ export function getAccountFields(): INodeProperties[] {
 			type: 'string',
 			default: '',
 			description:
-				'Additional information to describe the account, such as an excerpt from the company’s website',
+				'Additional information to describe the account, such as an excerpt from the companyâ€™s website',
 		},
 		{
 			displayName: 'Email Address 1',
@@ -313,7 +313,7 @@ export function getAccountFields(): INodeProperties[] {
 			type: 'string',
 			default: '',
 			description:
-				'URL for the account’s FTP site to enable users to access data and share documents',
+				'URL for the accountâ€™s FTP site to enable users to access data and share documents',
 		},
 		{
 			displayName: 'Industry Name or ID',
@@ -324,7 +324,7 @@ export function getAccountFields(): INodeProperties[] {
 			},
 			default: '',
 			description:
-				'The account’s primary industry for use in marketing segmentation and demographic analysis. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+				'The accountâ€™s primary industry for use in marketing segmentation and demographic analysis. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		},
 		{
 			displayName: 'Name',
@@ -436,7 +436,7 @@ export function getAccountFields(): INodeProperties[] {
 			},
 			default: '',
 			description:
-				'Shipping method for deliveries sent to the account’s address to designate the preferred carrier or other delivery option. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+				'Shipping method for deliveries sent to the accountâ€™s address to designate the preferred carrier or other delivery option. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		},
 		{
 			displayName: 'SIC',
@@ -444,7 +444,7 @@ export function getAccountFields(): INodeProperties[] {
 			type: 'string',
 			default: '',
 			description:
-				'The Standard Industrial Classification (SIC) code that indicates the account’s primary industry of business, for use in marketing segmentation and demographic analysis',
+				'The Standard Industrial Classification (SIC) code that indicates the accountâ€™s primary industry of business, for use in marketing segmentation and demographic analysis',
 		},
 		{
 			displayName: 'Stage ID',
@@ -505,7 +505,7 @@ export function getAccountFields(): INodeProperties[] {
 			name: 'websiteurl',
 			type: 'string',
 			default: '',
-			description: 'The account’s website URL to get quick details about the company profile',
+			description: 'The accountâ€™s website URL to get quick details about the company profile',
 		},
 		{
 			displayName: 'Yomi Name',

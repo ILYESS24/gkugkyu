@@ -1,5 +1,5 @@
-import { DatabaseConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { DatabaseConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { DataSource, EntityManager, LessThan, Repository } from '@n8n/typeorm';
 
 import { WorkflowDependency } from '../entities';

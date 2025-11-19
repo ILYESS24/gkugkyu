@@ -1,4 +1,4 @@
-import { randomString, setGlobalState } from 'n8n-workflow';
+﻿import { randomString, setGlobalState } from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 

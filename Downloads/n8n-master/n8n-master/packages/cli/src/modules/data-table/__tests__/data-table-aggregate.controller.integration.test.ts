@@ -1,11 +1,11 @@
-import type { DataTable } from '@n8n/api-types';
+﻿import type { DataTable } from '@workflow-automation/api-types';
 import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
 	testDb,
 } from '@n8n/backend-test-utils';
-import type { Project, User } from '@n8n/db';
+import type { Project, User } from '@workflow-automation/db';
 import { DateTime } from 'luxon';
 
 import { createDataTable } from '@test-integration/db/data-tables';

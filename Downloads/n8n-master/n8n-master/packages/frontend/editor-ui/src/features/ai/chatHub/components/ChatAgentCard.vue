@@ -1,8 +1,8 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed } from 'vue';
 import { getAgentRoute } from '@/features/ai/chatHub/chat.utils';
 import ChatAgentAvatar from '@/features/ai/chatHub/components/ChatAgentAvatar.vue';
-import type { ChatModelDto } from '@n8n/api-types';
+import type { ChatModelDto } from '@workflow-automation/api-types';
 import { N8nActionDropdown, N8nBadge, N8nIconButton, N8nText } from '@n8n/design-system';
 import type { ActionDropdownItem } from '@n8n/design-system/types';
 import { RouterLink } from 'vue-router';

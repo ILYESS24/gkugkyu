@@ -1,8 +1,8 @@
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+﻿import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import type { McpAuthenticationOption, McpServerTransport } from '../types';
 import { connectMcpClient, getAuthHeaders, tryRefreshOAuth2Token } from '../utils';

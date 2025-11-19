@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import type { User, WorkflowEntity, ListQueryDb, WorkflowFolderUnionFull } from '@n8n/db';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User, WorkflowEntity, ListQueryDb, WorkflowFolderUnionFull } from '@workflow-automation/db';
 import {
 	SharedWorkflow,
 	ExecutionRepository,
@@ -8,9 +8,9 @@ import {
 	WorkflowTagMappingRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
-import type { Scope } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import type { Scope } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { EntityManager } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
@@ -18,8 +18,8 @@ import { In } from '@n8n/typeorm';
 import type { QueryDeepPartialEntity } from '@n8n/typeorm/query-builder/QueryPartialEntity';
 import omit from 'lodash/omit';
 import pick from 'lodash/pick';
-import { BinaryDataService } from 'n8n-core';
-import { NodeApiError, PROJECT_ROOT } from 'n8n-workflow';
+import { BinaryDataService } from 'workflow-automation-core';
+import { NodeApiError, PROJECT_ROOT } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';

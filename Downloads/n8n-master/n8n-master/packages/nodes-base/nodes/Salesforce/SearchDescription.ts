@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const searchOperations: INodeProperties[] = [
 	{
@@ -40,6 +40,6 @@ export const searchFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'A SOQL query. An example query parameter string might look like: “SELECT+Name+FROM+MyObject”. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.',
+			'A SOQL query. An example query parameter string might look like: â€œSELECT+Name+FROM+MyObjectâ€. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.',
 	},
 ];

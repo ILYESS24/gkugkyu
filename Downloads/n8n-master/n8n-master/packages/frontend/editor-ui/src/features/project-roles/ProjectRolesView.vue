@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import { useMessage } from '@/app/composables/useMessage';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
@@ -18,7 +18,7 @@ import {
 } from '@n8n/design-system';
 import type { TableHeader } from '@n8n/design-system/components/N8nDataTableServer';
 import { useI18n } from '@n8n/i18n';
-import type { Role } from '@n8n/permissions';
+import type { Role } from '@workflow-automation/permissions';
 import dateformat from 'dateformat';
 import { onMounted, ref, useCssModule } from 'vue';
 import { useRouter } from 'vue-router';
@@ -65,7 +65,7 @@ const headers = ref<Array<TableHeader<Role>>>([
 		title: i18n.baseText('projectRoles.sourceControl.table.lastEdited'),
 		key: 'updatedAt',
 		value: (item: Role) =>
-			item.updatedAt && !item.systemRole ? dateformat(item.updatedAt, 'd mmm, yyyy') : '—',
+			item.updatedAt && !item.systemRole ? dateformat(item.updatedAt, 'd mmm, yyyy') : 'â€”',
 		disableSort: true,
 		resize: false,
 	},

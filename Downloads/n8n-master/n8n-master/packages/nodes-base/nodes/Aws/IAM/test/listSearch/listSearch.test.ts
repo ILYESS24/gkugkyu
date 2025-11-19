@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions } from 'workflow-automation-workflow';
 
 import { searchUsers, searchGroups, searchGroupsForUser } from '../../methods/listSearch';
 import { awsApiRequest } from '../../transport';

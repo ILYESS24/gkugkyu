@@ -1,12 +1,12 @@
-import {
+﻿import {
 	ChatHubLLMProvider,
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	type ChatHubConversationModel,
-} from '@n8n/api-types';
-import type { User, CredentialsEntity } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import type { User, CredentialsEntity } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { EntityManager } from '@n8n/typeorm';
-import type { INodeCredentials } from 'n8n-workflow';
+import type { INodeCredentials } from 'workflow-automation-workflow';
 
 import { CredentialsFinderService } from '@/credentials/credentials-finder.service';
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

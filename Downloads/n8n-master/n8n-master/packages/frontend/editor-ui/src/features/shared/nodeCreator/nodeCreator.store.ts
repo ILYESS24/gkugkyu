@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import {
 	AI_NODE_CREATOR_VIEW,
 	AI_OTHERS_NODE_CREATOR_VIEW,
@@ -25,8 +25,8 @@ import type {
 	INodeInputConfiguration,
 	NodeConnectionType,
 	Workflow,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers, isCommunityPackageName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeHelpers, isCommunityPackageName } from 'workflow-automation-workflow';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';

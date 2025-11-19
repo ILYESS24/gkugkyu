@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import type { User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import type { User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { createOwner, createMember } from '@test-integration/db/users';
 import type { SuperAgentTest } from '@test-integration/types';
@@ -346,7 +346,7 @@ describe('POST /data-tables/uploads', () => {
 		});
 
 		test('should handle CSV with Unicode content', async () => {
-			const csvContent = 'Name,City\n日本,東京\nДмитрий,Москва';
+			const csvContent = 'Name,City\næ—¥æœ¬,æ±äº¬\nÐ”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹,ÐœÐ¾ÑÐºÐ²Ð°';
 
 			const response = await authOwnerAgent
 				.post('/data-tables/uploads')

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 const resource = ['client'];
 
@@ -188,7 +188,7 @@ export const clientFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'A textual representation of the client’s physical address. May include new line characters.',
+					'A textual representation of the clientâ€™s physical address. May include new line characters.',
 			},
 			{
 				displayName: 'Currency',
@@ -196,7 +196,7 @@ export const clientFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The currency used by the estimate. If not provided, the client’s currency will be used. See a list of supported currencies',
+					'The currency used by the estimate. If not provided, the clientâ€™s currency will be used. See a list of supported currencies',
 			},
 			{
 				displayName: 'Is Active',
@@ -244,7 +244,7 @@ export const clientFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'A textual representation of the client’s physical address. May include new line characters.',
+					'A textual representation of the clientâ€™s physical address. May include new line characters.',
 			},
 			{
 				displayName: 'Currency',
@@ -252,7 +252,7 @@ export const clientFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The currency used by the estimate. If not provided, the client’s currency will be used. See a list of supported currencies',
+					'The currency used by the estimate. If not provided, the clientâ€™s currency will be used. See a list of supported currencies',
 			},
 			{
 				displayName: 'Is Active',

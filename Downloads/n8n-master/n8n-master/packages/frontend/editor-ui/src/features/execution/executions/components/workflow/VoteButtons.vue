@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { AnnotationVote } from 'n8n-workflow';
+﻿<script setup lang="ts">
+import type { AnnotationVote } from 'workflow-automation-workflow';
 
 import { N8nIconButton } from '@n8n/design-system';
 defineProps<{

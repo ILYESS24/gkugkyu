@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { UserRepository } from '@n8n/db';
+import type { User } from '@workflow-automation/db';
+import { UserRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 
 import { JwtService } from '@/services/jwt.service';
 

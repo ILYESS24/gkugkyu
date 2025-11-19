@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 const resource = ['contact'];
 
@@ -201,14 +201,14 @@ export const contactFields: INodeProperties[] = [
 				type: 'string',
 				placeholder: 'name@email.com',
 				default: '',
-				description: 'The contact’s email address',
+				description: 'The contactâ€™s email address',
 			},
 			{
 				displayName: 'Fax',
 				name: 'fax',
 				type: 'string',
 				default: '',
-				description: 'The contact’s fax number',
+				description: 'The contactâ€™s fax number',
 			},
 			{
 				displayName: 'Last Name',
@@ -222,14 +222,14 @@ export const contactFields: INodeProperties[] = [
 				name: 'phone_mobile',
 				type: 'string',
 				default: '',
-				description: 'The contact’s mobile phone number',
+				description: 'The contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Phone Office',
 				name: 'phone_office',
 				type: 'string',
 				default: '',
-				description: 'The contact’s office phone number',
+				description: 'The contactâ€™s office phone number',
 			},
 
 			{
@@ -285,14 +285,14 @@ export const contactFields: INodeProperties[] = [
 				type: 'string',
 				placeholder: 'name@email.com',
 				default: '',
-				description: 'The contact’s email address',
+				description: 'The contactâ€™s email address',
 			},
 			{
 				displayName: 'Fax',
 				name: 'fax',
 				type: 'string',
 				default: '',
-				description: 'The contact’s fax number',
+				description: 'The contactâ€™s fax number',
 			},
 			{
 				displayName: 'First Name',
@@ -313,14 +313,14 @@ export const contactFields: INodeProperties[] = [
 				name: 'phone_mobile',
 				type: 'string',
 				default: '',
-				description: 'The contact’s mobile phone number',
+				description: 'The contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Phone Office',
 				name: 'phone_office',
 				type: 'string',
 				default: '',
-				description: 'The contact’s office phone number',
+				description: 'The contactâ€™s office phone number',
 			},
 			{
 				displayName: 'Title',

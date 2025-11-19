@@ -1,4 +1,4 @@
-import { Get, Post, Put, RestController, GlobalScope } from '@n8n/decorators';
+﻿import { Get, Post, Put, RestController, GlobalScope } from '@workflow-automation/decorators';
 import pick from 'lodash/pick';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

@@ -1,4 +1,4 @@
-import { updateDisplayOptions, type INodeProperties } from 'n8n-workflow';
+﻿import { updateDisplayOptions, type INodeProperties } from 'workflow-automation-workflow';
 
 import { untilContainerSelected, untilItemSelected } from '../../helpers/utils';
 import { containerResourceLocator, itemResourceLocator } from '../common';

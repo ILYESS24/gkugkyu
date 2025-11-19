@@ -1,4 +1,4 @@
-import type FormData from 'form-data';
+﻿import type FormData from 'form-data';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import type {
 	ICollaborator,

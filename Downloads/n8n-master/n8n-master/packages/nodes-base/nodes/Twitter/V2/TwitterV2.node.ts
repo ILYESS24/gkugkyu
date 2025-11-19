@@ -1,4 +1,4 @@
-import ISO6391 from 'iso-639-1';
+﻿import ISO6391 from 'iso-639-1';
 import { DateTime } from 'luxon';
 import {
 	NodeConnectionTypes,
@@ -12,7 +12,7 @@ import {
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	type JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { directMessageFields, directMessageOperations } from './DirectMessageDescription';
 import {

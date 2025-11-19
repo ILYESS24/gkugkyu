@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 
 /**
  * @deprecated Do not add new environment variables to this file. Please use the `@n8n/config` package instead.

@@ -1,8 +1,8 @@
-import { getPersonalProject, createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { IWorkflowDb, Project, WorkflowEntity, User } from '@n8n/db';
-import { WorkflowStatisticsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { getPersonalProject, createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { IWorkflowDb, Project, WorkflowEntity, User } from '@workflow-automation/db';
+import { WorkflowStatisticsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import {
 	QueryFailedError,
 	type DataSource,
@@ -17,7 +17,7 @@ import {
 	type INode,
 	type IRun,
 	type WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { EventService } from '@/events/event.service';
 import { OwnershipService } from '@/services/ownership.service';

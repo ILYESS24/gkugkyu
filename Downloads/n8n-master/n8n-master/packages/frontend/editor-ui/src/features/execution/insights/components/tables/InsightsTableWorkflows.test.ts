@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+﻿import { defineComponent } from 'vue';
 import { createTestingPinia } from '@pinia/testing';
 import { screen, within } from '@testing-library/vue';
 import { vi } from 'vitest';
@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import { useEmitters } from '@/__tests__/utils';
 import InsightsTableWorkflows from '@/features/execution/insights/components/tables/InsightsTableWorkflows.vue';
-import type { InsightsByWorkflow } from '@n8n/api-types';
+import type { InsightsByWorkflow } from '@workflow-automation/api-types';
 
 const { emitters, addEmitter } = useEmitters<'n8nDataTableServer'>();
 

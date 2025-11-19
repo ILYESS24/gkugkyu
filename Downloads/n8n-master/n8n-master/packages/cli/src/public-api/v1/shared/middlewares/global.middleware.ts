@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/no-invalid-void-type */
-import type { BooleanLicenseFeature } from '@n8n/constants';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ApiKeyScope, Scope } from '@n8n/permissions';
+﻿/* eslint-disable @typescript-eslint/no-invalid-void-type */
+import type { BooleanLicenseFeature } from '@workflow-automation/constants';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { ApiKeyScope, Scope } from '@workflow-automation/permissions';
 import type express from 'express';
 import type { NextFunction } from 'express';
 

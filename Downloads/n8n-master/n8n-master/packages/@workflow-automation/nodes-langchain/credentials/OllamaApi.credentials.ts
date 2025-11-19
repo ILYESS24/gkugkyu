@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 	IAuthenticateGeneric,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class OllamaApi implements ICredentialType {
 	name = 'ollamaApi';

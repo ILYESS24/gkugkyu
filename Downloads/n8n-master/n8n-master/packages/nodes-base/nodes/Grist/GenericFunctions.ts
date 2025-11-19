@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import type {
 	GristCredentials,

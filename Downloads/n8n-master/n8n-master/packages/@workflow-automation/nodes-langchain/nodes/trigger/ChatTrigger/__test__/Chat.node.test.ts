@@ -1,7 +1,7 @@
-import type { MockProxy } from 'jest-mock-extended';
+﻿import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { INode, IExecuteFunctions } from 'n8n-workflow';
-import { CHAT_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+import type { INode, IExecuteFunctions } from 'workflow-automation-workflow';
+import { CHAT_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
 
 import { Chat } from '../Chat.node';
 

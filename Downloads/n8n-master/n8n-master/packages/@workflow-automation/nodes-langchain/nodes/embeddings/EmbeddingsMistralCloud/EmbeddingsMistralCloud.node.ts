@@ -1,4 +1,4 @@
-import type { MistralAIEmbeddingsParams } from '@langchain/mistralai';
+﻿import type { MistralAIEmbeddingsParams } from '@langchain/mistralai';
 import { MistralAIEmbeddings } from '@langchain/mistralai';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const teamOperations: INodeProperties[] = [
 	{
@@ -142,7 +142,7 @@ const routeEndField = {
 	type: 'options',
 	options: [
 		{
-			name: 'Team’s Hub',
+			name: 'Teamâ€™s Hub',
 			value: 'team_hub',
 		},
 		{

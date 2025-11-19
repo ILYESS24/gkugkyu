@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	CredentialsEntity,
 	User,
 	WorkflowEntity,
 	TagEntity,
 	AnnotationTagEntity,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { validate } from 'class-validator';
 
 import type { PersonalizationSurveyAnswersV4 } from './controllers/survey-answers.dto';

@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { WorkflowEntity, WorkflowRepository } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { WorkflowEntity, WorkflowRepository } from '@workflow-automation/db';
 
 import { updateWorkflow } from '../workflows.service';
 

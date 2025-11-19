@@ -1,13 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { Logger, isObjectLiteral } from '@n8n/backend-common';
-import type { User } from '@n8n/db';
-import { Service } from '@n8n/di';
+import { Logger, isObjectLiteral } from '@workflow-automation/backend-common';
+import type { User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import get from 'lodash/get';
-import { CredentialTestContext, ErrorReporter, ExecuteContext, RoutingNode } from 'n8n-core';
+import { CredentialTestContext, ErrorReporter, ExecuteContext, RoutingNode } from 'workflow-automation-core';
 import type {
 	ICredentialsDecrypted,
 	ICredentialTestFunction,
@@ -25,14 +25,14 @@ import type {
 	ICredentialTestFunctions,
 	IDataObject,
 	IExecuteData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	VersionedNodeType,
 	NodeHelpers,
 	Workflow,
 	UnexpectedError,
 	createEmptyRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { RESPONSE_ERROR_MESSAGES } from '../constants';
 import { CredentialsHelper } from '../credentials-helper';

@@ -1,12 +1,12 @@
-import { ModuleRegistry } from '@n8n/backend-common';
-import { DatabaseConfig, InstanceSettingsConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { ModuleRegistry } from '@workflow-automation/backend-common';
+import { DatabaseConfig, InstanceSettingsConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import type { DataSourceOptions, LoggerOptions } from '@n8n/typeorm';
 import type { MysqlConnectionOptions } from '@n8n/typeorm/driver/mysql/MysqlConnectionOptions';
 import type { PostgresConnectionOptions } from '@n8n/typeorm/driver/postgres/PostgresConnectionOptions';
 import type { SqliteConnectionOptions } from '@n8n/typeorm/driver/sqlite/SqliteConnectionOptions';
 import type { SqlitePooledConnectionOptions } from '@n8n/typeorm/driver/sqlite-pooled/SqlitePooledConnectionOptions';
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'workflow-automation-workflow';
 import type { TlsOptions } from 'node:tls';
 import path from 'path';
 

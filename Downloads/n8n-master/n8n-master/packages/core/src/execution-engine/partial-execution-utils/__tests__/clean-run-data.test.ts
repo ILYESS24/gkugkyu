@@ -1,24 +1,24 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // PD denotes that the node has pinned data
 
-import { NodeConnectionTypes, type IRunData } from 'n8n-workflow';
+import { NodeConnectionTypes, type IRunData } from 'workflow-automation-workflow';
 
 import { createNodeData, toITaskData } from './helpers';
 import { cleanRunData } from '../clean-run-data';
 import { DirectedGraph } from '../directed-graph';
 
 describe('cleanRunData', () => {
-	// ┌─────┐    ┌─────┐   ┌─────┐
-	// │node1├───►│node2├──►│node3│
-	// └─────┘    └─────┘   └─────┘
+	// â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	// â”‚node1â”œâ”€â”€â”€â–ºâ”‚node2â”œâ”€â”€â–ºâ”‚node3â”‚
+	// â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜
 	test('deletes all run data of all children and the node being passed in', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -40,9 +40,9 @@ describe('cleanRunData', () => {
 		expect(newRunData).toEqual({});
 	});
 
-	// ┌─────┐    ┌─────┐   ┌─────┐
-	// │node1├───►│node2├──►│node3│
-	// └─────┘    └─────┘   └─────┘
+	// â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	// â”‚node1â”œâ”€â”€â”€â–ºâ”‚node2â”œâ”€â”€â–ºâ”‚node3â”‚
+	// â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜
 	test('retains the run data of parent nodes of the node being passed in', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -64,11 +64,11 @@ describe('cleanRunData', () => {
 		expect(newRunData).toEqual({ [node1.name]: runData[node1.name] });
 	});
 
-	//     ┌─────┐    ┌─────┐   ┌─────┐
-	//  ┌─►│node1├───►│node2├──►│node3├─┐
-	//  │  └─────┘    └─────┘   └─────┘ │
-	//  │                               │
-	//  └───────────────────────────────┘
+	//     â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	//  â”Œâ”€â–ºâ”‚node1â”œâ”€â”€â”€â–ºâ”‚node2â”œâ”€â”€â–ºâ”‚node3â”œâ”€â”
+	//  â”‚  â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜ â”‚
+	//  â”‚                               â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('terminates when finding a cycle', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -96,9 +96,9 @@ describe('cleanRunData', () => {
 		expect(newRunData).toEqual({});
 	});
 
-	// ┌─────┐    ┌─────┐
-	// │node1├───►│node2│
-	// └─────┘    └─────┘
+	// â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”
+	// â”‚node1â”œâ”€â”€â”€â–ºâ”‚node2â”‚
+	// â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”˜
 	test('removes run data of nodes that are not in the subgraph', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -123,14 +123,14 @@ describe('cleanRunData', () => {
 		});
 	});
 
-	//               ►
-	//  ┌─────┐     ┌────────┐
-	//  │node1├─────►rootNode│
-	//  └─────┘     └───▲────┘
-	//                  │
-	//              ┌───┴───┐
-	//              │subNode│
-	//              └───────┘
+	//               â–º
+	//  â”Œâ”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚node1â”œâ”€â”€â”€â”€â”€â–ºrootNodeâ”‚
+	//  â””â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â–²â”€â”€â”€â”€â”˜
+	//                  â”‚
+	//              â”Œâ”€â”€â”€â”´â”€â”€â”€â”
+	//              â”‚subNodeâ”‚
+	//              â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('removes run data of sub nodes when the start node is a root node', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -157,14 +157,14 @@ describe('cleanRunData', () => {
 		});
 	});
 
-	//            ►
-	// ┌─────┐   ┌─────┐    ┌────────┐
-	// │node1├───►node2├────►rootNode│
-	// └─────┘   └─────┘    └───▲────┘
-	//                          │
-	//                      ┌───┴───┐
-	//                      │subNode│
-	//                      └───────┘
+	//            â–º
+	// â”Œâ”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
+	// â”‚node1â”œâ”€â”€â”€â–ºnode2â”œâ”€â”€â”€â”€â–ºrootNodeâ”‚
+	// â””â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â–²â”€â”€â”€â”€â”˜
+	//                          â”‚
+	//                      â”Œâ”€â”€â”€â”´â”€â”€â”€â”
+	//                      â”‚subNodeâ”‚
+	//                      â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('removes run data of sub nodes for root nodes downstream of the start node', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });
@@ -194,14 +194,14 @@ describe('cleanRunData', () => {
 		});
 	});
 
-	//           ►
-	// ┌─────┐  ┌────────┐  ┌────────┐
-	// │node1├──►rootNode├──►rootNode│
-	// └─────┘  └───▲────┘  └───▲────┘
-	//              │           │
-	//              │       ┌───┴───┐
-	//              └───────┤subNode│
-	//                      └───────┘
+	//           â–º
+	// â”Œâ”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
+	// â”‚node1â”œâ”€â”€â–ºrootNodeâ”œâ”€â”€â–ºrootNodeâ”‚
+	// â””â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â–²â”€â”€â”€â”€â”˜  â””â”€â”€â”€â–²â”€â”€â”€â”€â”˜
+	//              â”‚           â”‚
+	//              â”‚       â”Œâ”€â”€â”€â”´â”€â”€â”€â”
+	//              â””â”€â”€â”€â”€â”€â”€â”€â”¤subNodeâ”‚
+	//                      â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('removes run data of sub nodes as well if the sub node is shared between multiple root nodes', () => {
 		// ARRANGE
 		const node1 = createNodeData({ name: 'Node1' });

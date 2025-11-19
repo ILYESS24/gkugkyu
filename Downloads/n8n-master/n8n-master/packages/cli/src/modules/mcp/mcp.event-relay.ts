@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { EventService } from '@/events/event.service';
 import { EventRelay } from '@/events/relays/event-relay';

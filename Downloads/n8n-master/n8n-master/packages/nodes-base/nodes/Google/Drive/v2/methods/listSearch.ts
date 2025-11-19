@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodeListSearchItems,
 	INodeListSearchResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { SearchFilter } from '../helpers/interfaces';
 import { DRIVE, RLC_DRIVE_DEFAULT, RLC_FOLDER_DEFAULT } from '../helpers/interfaces';

@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import type { Router } from 'vue-router';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
@@ -6,7 +6,7 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import { VIEWS } from '@/app/constants';
 import { createWorkflowFromTemplate } from './utils/templateActions';

@@ -1,8 +1,8 @@
-import { randomValidPassword, uniqueId, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { LICENSE_FEATURES } from '@n8n/constants';
-import { SettingsRepository, UserRepository, type User } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { randomString } from 'n8n-workflow';
+﻿import { randomValidPassword, uniqueId, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
+import { SettingsRepository, UserRepository, type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { randomString } from 'workflow-automation-workflow';
 
 import { AuthService } from '@/auth/auth.service';
 import config from '@/config';

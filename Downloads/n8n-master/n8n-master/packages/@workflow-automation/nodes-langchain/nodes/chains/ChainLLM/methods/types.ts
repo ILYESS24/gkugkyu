@@ -1,6 +1,6 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import type { N8nOutputParser } from '@utils/output_parsers/N8nOutputParser';
 

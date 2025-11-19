@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHookFunctions,
@@ -7,8 +7,8 @@ import type {
 	IHttpRequestOptions,
 	INodeExecutionData,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { ApplicationError, deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, deepCopy } from 'workflow-automation-workflow';
 
 import type { IRequestBody } from './types';
 import { getAwsCredentials } from '../GenericFunctions';

@@ -1,6 +1,6 @@
-import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { DocumentGithubLoader } from '../DocumentGithubLoader.node';
 

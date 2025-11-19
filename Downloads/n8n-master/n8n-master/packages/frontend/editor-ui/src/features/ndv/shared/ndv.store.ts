@@ -1,4 +1,4 @@
-import { useLocalStorage } from '@vueuse/core';
+﻿import { useLocalStorage } from '@vueuse/core';
 import type { Draggable, IRunDataDisplayMode, TargetItem } from '@/Interface';
 import type {
 	NodePanelType,
@@ -16,8 +16,8 @@ import {
 	LOCAL_STORAGE_TABLE_HOVER_IS_ONBOARDED,
 } from './ndv.constants';
 import { STORES } from '@n8n/stores';
-import type { INodeIssues } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { INodeIssues } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { v4 as uuid } from 'uuid';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';

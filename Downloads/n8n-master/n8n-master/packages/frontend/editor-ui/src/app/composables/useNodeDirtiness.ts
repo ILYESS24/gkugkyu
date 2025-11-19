@@ -1,4 +1,4 @@
-import {
+﻿import {
 	AddConnectionCommand,
 	AddNodeCommand,
 	BulkCommand,
@@ -13,8 +13,8 @@ import {
 	CanvasNodeDirtiness,
 	type CanvasNodeDirtinessType,
 } from '@/features/workflows/canvas/canvas.types';
-import type { INodeConnections, NodeConnectionType } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { INodeConnections, NodeConnectionType } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { computed } from 'vue';
 
 /**

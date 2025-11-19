@@ -1,13 +1,13 @@
-import { inTest, Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import type { User } from '@n8n/db';
-import { UserRepository } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
-import { AssignableProjectRole } from '@n8n/permissions';
+﻿import { inTest, Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User } from '@workflow-automation/db';
+import { UserRepository } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
+import { AssignableProjectRole } from '@workflow-automation/permissions';
 import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
 import Handlebars from 'handlebars';
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 import { join as pathJoin } from 'path';
 
 import type { InviteEmailData, PasswordResetData, SendEmailResult } from './interfaces';

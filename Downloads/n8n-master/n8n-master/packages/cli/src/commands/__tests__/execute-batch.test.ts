@@ -1,11 +1,11 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { User, WorkflowEntity } from '@n8n/db';
-import { WorkflowRepository, DbConnection, AuthRolesService } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User, WorkflowEntity } from '@workflow-automation/db';
+import { WorkflowRepository, DbConnection, AuthRolesService } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { type SelectQueryBuilder } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
-import type { IRun } from 'n8n-workflow';
+import type { IRun } from 'workflow-automation-workflow';
 
 import { ActiveExecutions } from '@/active-executions';
 import { DeprecationService } from '@/deprecation/deprecation.service';

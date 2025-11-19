@@ -1,4 +1,4 @@
-import type { SupabaseLibArgs } from '@langchain/community/vectorstores/supabase';
+﻿import type { SupabaseLibArgs } from '@langchain/community/vectorstores/supabase';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import type { Embeddings } from '@langchain/core/embeddings';
 import { createClient } from '@supabase/supabase-js';
@@ -8,7 +8,7 @@ import {
 	type ISupplyDataFunctions,
 	type SupplyData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getMetadataFiltersValues } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

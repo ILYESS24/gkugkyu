@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Canvas V2 Only
  * @TODO Remove this notice when Canvas V2 is the only one in use
  */
@@ -37,13 +37,13 @@ import type {
 	INodeTypeDescription,
 	ITaskData,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeConnectionTypes,
 	NodeHelpers,
 	SEND_AND_WAIT_OPERATION,
 	WAIT_INDEFINITELY,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import {
 	CANVAS_EXECUTION_DATA_THROTTLE_DURATION,

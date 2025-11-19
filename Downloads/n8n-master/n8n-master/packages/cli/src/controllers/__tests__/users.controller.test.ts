@@ -1,4 +1,4 @@
-import type { AuthenticatedRequest, User, UserRepository } from '@n8n/db';
+﻿import type { AuthenticatedRequest, User, UserRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import type { EventService } from '@/events/event.service';

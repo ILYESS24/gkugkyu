@@ -1,4 +1,4 @@
-import flow from 'lodash/flow';
+﻿import flow from 'lodash/flow';
 import isEmpty from 'lodash/isEmpty';
 import omit from 'lodash/omit';
 import type {
@@ -9,7 +9,7 @@ import type {
 	INodePropertyOptions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Make an API request to Stripe

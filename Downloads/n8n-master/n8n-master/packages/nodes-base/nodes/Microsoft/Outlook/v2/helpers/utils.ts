@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IExecuteSingleFunctions,
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { ApplicationError, jsonParse, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, jsonParse, NodeApiError } from 'workflow-automation-workflow';
 
 export const messageFields = [
 	'bccRecipients',

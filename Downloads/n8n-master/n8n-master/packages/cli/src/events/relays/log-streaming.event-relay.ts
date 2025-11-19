@@ -1,7 +1,7 @@
-import { Redactable } from '@n8n/decorators';
-import { Service } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
-import type { IWorkflowBase } from 'n8n-workflow';
+﻿import { Redactable } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 import { MessageEventBus } from '@/eventbus/message-event-bus/message-event-bus';
 import { EventService } from '@/events/event.service';

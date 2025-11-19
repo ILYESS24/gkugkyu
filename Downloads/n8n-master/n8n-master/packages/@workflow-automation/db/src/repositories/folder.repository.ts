@@ -1,7 +1,7 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import type { EntityManager, SelectQueryBuilder } from '@n8n/typeorm';
 import { DataSource, Repository } from '@n8n/typeorm';
-import { PROJECT_ROOT } from 'n8n-workflow';
+import { PROJECT_ROOT } from 'workflow-automation-workflow';
 
 import { Folder, FolderTagMapping, TagEntity } from '../entities';
 import type { FolderWithWorkflowAndSubFolderCountAndPath, ListQuery } from '../entities/types-db';

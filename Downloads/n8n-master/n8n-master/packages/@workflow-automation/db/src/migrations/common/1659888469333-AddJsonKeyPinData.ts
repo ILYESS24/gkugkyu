@@ -1,5 +1,5 @@
-import { isObjectLiteral } from '@n8n/backend-common';
-import type { IDataObject, INodeExecutionData } from 'n8n-workflow';
+﻿import { isObjectLiteral } from '@workflow-automation/backend-common';
+import type { IDataObject, INodeExecutionData } from 'workflow-automation-workflow';
 
 import type { MigrationContext, IrreversibleMigration } from '../migration-types';
 

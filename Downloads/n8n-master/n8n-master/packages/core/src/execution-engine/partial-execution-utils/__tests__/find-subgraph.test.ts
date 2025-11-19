@@ -1,25 +1,25 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // PD denotes that the node has pinned data
 
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { createNodeData } from './helpers';
 import { DirectedGraph } from '../directed-graph';
 import { findSubgraph } from '../find-subgraph';
 
 describe('findSubgraph', () => {
-	//                 ►►
-	//  ┌───────┐     ┌───────────┐
-	//  │trigger├────►│destination│
-	//  └───────┘     └───────────┘
+	//                 â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('simple', () => {
 		const trigger = createNodeData({ name: 'trigger' });
 		const destination = createNodeData({ name: 'destination' });
@@ -33,13 +33,13 @@ describe('findSubgraph', () => {
 		expect(subgraph).toEqual(graph);
 	});
 
-	//                 ►►
-	//                ┌──────┐
-	//                │orphan│
-	//                └──────┘
-	//  ┌───────┐     ┌───────────┐
-	//  │trigger├────►│destination│
-	//  └───────┘     └───────────┘
+	//                 â–ºâ–º
+	//                â”Œâ”€â”€â”€â”€â”€â”€â”
+	//                â”‚orphanâ”‚
+	//                â””â”€â”€â”€â”€â”€â”€â”˜
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('works with a single node', () => {
 		const trigger = createNodeData({ name: 'trigger' });
 		const destination = createNodeData({ name: 'destination' });
@@ -54,12 +54,12 @@ describe('findSubgraph', () => {
 		expect(subgraph).toEqual(new DirectedGraph().addNode(orphan));
 	});
 
-	//                     ►►
-	//  ┌───────┐         ┌───────────┐
-	//  │       ├────────►│           │
-	//  │trigger│         │destination│
-	//  │       ├────────►│           │
-	//  └───────┘         └───────────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚           â”‚
+	//  â”‚triggerâ”‚         â”‚destinationâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚           â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('multiple connections', () => {
 		const ifNode = createNodeData({ name: 'If' });
 		const noOp = createNodeData({ name: 'noOp' });
@@ -76,12 +76,12 @@ describe('findSubgraph', () => {
 		expect(subgraph).toEqual(graph);
 	});
 
-	//                     ►►
-	//  ┌───────┐         ┌───────────┐
-	//  │       ├────────►│           │      ┌────┐
-	//  │trigger│         │destination├─────►│node│
-	//  │       ├────────►│           │      └────┘
-	//  └───────┘         └───────────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚           â”‚      â”Œâ”€â”€â”€â”€â”
+	//  â”‚triggerâ”‚         â”‚destinationâ”œâ”€â”€â”€â”€â”€â–ºâ”‚nodeâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚           â”‚      â””â”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('disregard nodes after destination', () => {
 		const trigger = createNodeData({ name: 'trigger' });
 		const destination = createNodeData({ name: 'destination' });
@@ -100,12 +100,12 @@ describe('findSubgraph', () => {
 		);
 	});
 
-	//                                ►►
-	//  ┌───────┐       ┌─────┐      ┌─────┐
-	//  │Trigger├───┬──►│Node1├───┬─►│Node2│
-	//  └───────┘   │   └─────┘   │  └─────┘
-	//              │             │
-	//              └─────────────┘
+	//                                â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”       â”Œâ”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”€â”¬â”€â”€â–ºâ”‚Node1â”œâ”€â”€â”€â”¬â”€â–ºâ”‚Node2â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚   â””â”€â”€â”€â”€â”€â”˜   â”‚  â””â”€â”€â”€â”€â”€â”˜
+	//              â”‚             â”‚
+	//              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('terminates when called with graph that contains cycles', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -126,14 +126,14 @@ describe('findSubgraph', () => {
 		expect(subgraph).toEqual(graph);
 	});
 
-	//                ►►
-	//  ┌───────┐     ┌─────┐
-	//  │Trigger├──┬─►│Node1│
-	//  └───────┘  │  └─────┘
-	//             │
-	//  ┌─────┐    │
-	//  │Node2├────┘
-	//  └─────┘
+	//                â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”¬â”€â–ºâ”‚Node1â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚  â””â”€â”€â”€â”€â”€â”˜
+	//             â”‚
+	//  â”Œâ”€â”€â”€â”€â”€â”    â”‚
+	//  â”‚Node2â”œâ”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”˜
 	test('terminates when called with graph that contains cycles', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -152,12 +152,12 @@ describe('findSubgraph', () => {
 		);
 	});
 
-	//                               ►►
-	//  ┌───────┐    ┌───────────┐   ┌───────────┐
-	//  │Trigger├─┬─►│Destination├──►│AnotherNode├───┐
-	//  └───────┘ │  └───────────┘   └───────────┘   │
-	//            │                                  │
-	//            └──────────────────────────────────┘
+	//                               â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”¬â”€â–ºâ”‚Destinationâ”œâ”€â”€â–ºâ”‚AnotherNodeâ”œâ”€â”€â”€â”
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+	//            â”‚                                  â”‚
+	//            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('terminates if the destination node is part of a cycle', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -183,14 +183,14 @@ describe('findSubgraph', () => {
 	});
 
 	describe('root nodes', () => {
-		//                 ►►
-		//  ┌───────┐      ┌───────────┐
-		//  │trigger├─────►│destination│
-		//  └───────┘      └──▲────────┘
-		//                    │AiLanguageModel
-		//                   ┌┴──────┐
-		//                   │aiModel│
-		//                   └───────┘
+		//                 â–ºâ–º
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â–²â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		//                    â”‚AiLanguageModel
+		//                   â”Œâ”´â”€â”€â”€â”€â”€â”€â”
+		//                   â”‚aiModelâ”‚
+		//                   â””â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('always retain connections that have a different type than `NodeConnectionTypes.Main`', () => {
 			// ARRANGE
 			const trigger = createNodeData({ name: 'trigger' });
@@ -214,16 +214,16 @@ describe('findSubgraph', () => {
 		// This graph is not possible, it's only here to make sure `findSubgraph`
 		// does not follow non-Main connections.
 		//
-		//  ┌────┐   ┌───────────┐
-		//  │root┼───►destination│
-		//  └──▲─┘   └───────────┘
-		//     │AiLanguageModel
-		//    ┌┴──────┐
-		//    │aiModel│
-		//    └▲──────┘
-		//    ┌┴──────┐
-		//    │trigger│
-		//    └───────┘
+		//  â”Œâ”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚rootâ”¼â”€â”€â”€â–ºdestinationâ”‚
+		//  â””â”€â”€â–²â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		//     â”‚AiLanguageModel
+		//    â”Œâ”´â”€â”€â”€â”€â”€â”€â”
+		//    â”‚aiModelâ”‚
+		//    â””â–²â”€â”€â”€â”€â”€â”€â”˜
+		//    â”Œâ”´â”€â”€â”€â”€â”€â”€â”
+		//    â”‚triggerâ”‚
+		//    â””â”€â”€â”€â”€â”€â”€â”€â”˜
 		// turns into an empty graph, because there is no `Main` typed connection
 		// connecting destination and trigger.
 		test('skip non-Main connection types', () => {
@@ -248,17 +248,17 @@ describe('findSubgraph', () => {
 			expect(subgraph.getNodes().size).toBe(0);
 		});
 
-		//  ┌───────┐            ┌───────────┐
-		//  │trigger├────────────►destination│
-		//  └───────┘            └───────────┘
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ºdestinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		//
-		//                ┌───────┐
-		//                │aiModel│
-		//                └───────┘
+		//                â”Œâ”€â”€â”€â”€â”€â”€â”€â”
+		//                â”‚aiModelâ”‚
+		//                â””â”€â”€â”€â”€â”€â”€â”€â”˜
 		// turns into
-		//  ┌───────┐            ┌───────────┐
-		//  │trigger├────────────►destination│
-		//  └───────┘            └───────────┘
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ºdestinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('remove orphaned nodes', () => {
 			// ARRANGE
 			const trigger = createNodeData({ name: 'trigger' });

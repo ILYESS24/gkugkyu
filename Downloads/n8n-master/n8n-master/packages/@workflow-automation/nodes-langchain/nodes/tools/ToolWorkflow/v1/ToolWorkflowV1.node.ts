@@ -1,4 +1,4 @@
-import type { CallbackManagerForToolRun } from '@langchain/core/callbacks/manager';
+﻿import type { CallbackManagerForToolRun } from '@langchain/core/callbacks/manager';
 import { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
 import type { JSONSchema7 } from 'json-schema';
 import get from 'lodash/get';
@@ -19,8 +19,8 @@ import type {
 	INodeParameterResourceLocator,
 	ITaskMetadata,
 	INodeTypeBaseDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, jsonParse } from 'workflow-automation-workflow';
 
 import { versionDescription } from './versionDescription';
 import type { DynamicZodObject } from '../../../../types/zod.types';

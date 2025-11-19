@@ -1,4 +1,4 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import type { RequestHandlerExtra } from '@modelcontextprotocol/sdk/shared/protocol.js';
 import type {
@@ -14,7 +14,7 @@ import {
 import { randomUUID } from 'crypto';
 import type * as express from 'express';
 import type { IncomingMessage } from 'http';
-import { jsonParse, OperationalError, type Logger } from 'n8n-workflow';
+import { jsonParse, OperationalError, type Logger } from 'workflow-automation-workflow';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 
 import { FlushingSSEServerTransport, FlushingStreamableHTTPTransport } from './FlushingTransport';

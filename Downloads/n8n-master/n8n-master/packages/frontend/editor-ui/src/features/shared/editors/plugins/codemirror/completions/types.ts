@@ -1,4 +1,4 @@
-import type { DocMetadata } from 'n8n-workflow';
+﻿import type { DocMetadata } from 'workflow-automation-workflow';
 
 export type Resolved = unknown;
 

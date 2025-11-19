@@ -1,4 +1,4 @@
-import { computed, ref, type Ref } from 'vue';
+﻿import { computed, ref, type Ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { useI18n } from '@n8n/i18n';
 import debounce from 'lodash/debounce';
@@ -10,7 +10,7 @@ import type { DataTable } from '@/features/core/dataTable/dataTable.types';
 import { N8nIcon } from '@n8n/design-system';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 import CommandBarItemTitle from '@/features/shared/commandBar/components/CommandBarItemTitle.vue';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 
 const ITEM_ID = {
 	OPEN_DATA_TABLE: 'open-data-table',

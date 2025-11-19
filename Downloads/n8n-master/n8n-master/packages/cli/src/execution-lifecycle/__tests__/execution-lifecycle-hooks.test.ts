@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { Project } from '@n8n/db';
-import { ExecutionRepository } from '@n8n/db';
+import type { Project } from '@workflow-automation/db';
+import { ExecutionRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 import {
 	BinaryDataService,
@@ -9,8 +9,8 @@ import {
 	InstanceSettings,
 	ExecutionLifecycleHooks,
 	BinaryDataConfig,
-} from 'n8n-core';
-import { ExpressionError } from 'n8n-workflow';
+} from 'workflow-automation-core';
+import { ExpressionError } from 'workflow-automation-workflow';
 import type {
 	IRunExecutionData,
 	ITaskData,
@@ -21,7 +21,7 @@ import type {
 	IWorkflowBase,
 	WorkflowExecuteMode,
 	ITaskStartedData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { EventService } from '@/events/event.service';
 import { ExternalHooks } from '@/external-hooks';

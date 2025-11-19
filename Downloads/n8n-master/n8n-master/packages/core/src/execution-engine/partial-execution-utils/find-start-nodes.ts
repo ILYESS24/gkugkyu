@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INode, type IPinData, type IRunData } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, type INode, type IPinData, type IRunData } from 'workflow-automation-workflow';
 
 import type { DirectedGraph } from './directed-graph';
 import { getIncomingData, getIncomingDataFromAnyRun } from './get-incoming-data';

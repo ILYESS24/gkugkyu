@@ -1,16 +1,16 @@
-import { TEST_WEBHOOK_TIMEOUT } from '@/constants';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { TEST_WEBHOOK_TIMEOUT } from '@/constants';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 import type express from 'express';
-import { InstanceSettings } from 'n8n-core';
-import { WebhookPathTakenError, Workflow } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { WebhookPathTakenError, Workflow } from 'workflow-automation-workflow';
 import type {
 	IWebhookData,
 	IWorkflowExecuteAdditionalData,
 	IHttpRequestMethods,
 	IRunData,
 	IWorkflowBase,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { authAllowlistedNodes } from './constants';
 import { sanitizeWebhookRequest } from './webhook-request-sanitizer';

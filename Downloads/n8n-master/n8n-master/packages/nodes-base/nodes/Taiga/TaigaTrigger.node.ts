@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IHookFunctions,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type IWebhookFunctions,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getAutomaticSecret, taigaApiRequest } from './GenericFunctions';
 import type { Operations, Resources, WebhookPayload } from './types';

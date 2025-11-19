@@ -1,4 +1,4 @@
-import { jsonParse } from 'n8n-workflow';
+﻿import { jsonParse } from 'workflow-automation-workflow';
 import { z } from 'zod';
 import { Z } from 'zod-class';
 

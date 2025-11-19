@@ -1,4 +1,4 @@
-import { fireEvent, waitFor, within } from '@testing-library/vue';
+﻿import { fireEvent, waitFor, within } from '@testing-library/vue';
 import { renderComponent } from '@/__tests__/render';
 import LogDetailsPanel from './LogDetailsPanel.vue';
 import { createRouter, createWebHistory } from 'vue-router';
@@ -16,7 +16,7 @@ import {
 import { LOG_DETAILS_PANEL_STATE } from '@/features/execution/logs/logs.constants';
 import type { LogEntry } from '../logs.types';
 import { createTestLogEntry } from '../__test__/mocks';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { HTML_NODE_TYPE } from '@/app/constants';
 
 describe('LogDetailsPanel', () => {

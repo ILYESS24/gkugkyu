@@ -1,6 +1,6 @@
-import { AIMessage } from '@langchain/core/messages';
-import { nodeNameToToolName } from 'n8n-workflow';
-import type { EngineResponse, IDataObject } from 'n8n-workflow';
+﻿import { AIMessage } from '@langchain/core/messages';
+import { nodeNameToToolName } from 'workflow-automation-workflow';
+import type { EngineResponse, IDataObject } from 'workflow-automation-workflow';
 
 import type { RequestResponseMetadata, ToolCallData } from './types';
 

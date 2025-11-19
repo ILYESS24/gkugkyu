@@ -1,4 +1,4 @@
-import type { FrontendSettings } from '@n8n/api-types';
+﻿import type { FrontendSettings } from '@workflow-automation/api-types';
 
 export const defaultSettings: FrontendSettings = {
 	inE2ETests: false,

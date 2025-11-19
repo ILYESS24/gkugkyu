@@ -1,11 +1,11 @@
-import { ApplicationError } from '@n8n/errors';
+﻿import { ApplicationError } from '@n8n/errors';
 import type {
 	ITriggerFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { configurePostgres } from './transport';
 import type { PgpDatabase, PostgresNodeCredentials } from './v2/helpers/interfaces';

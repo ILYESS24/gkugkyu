@@ -1,6 +1,6 @@
-import { Container } from '@n8n/di';
-import { Cipher, InstanceSettings } from 'n8n-core';
-import { jsonParse } from 'n8n-workflow';
+﻿import { Container } from '@workflow-automation/di';
+import { Cipher, InstanceSettings } from 'workflow-automation-core';
+import { jsonParse } from 'workflow-automation-workflow';
 import { readFile, writeFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 

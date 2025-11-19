@@ -1,4 +1,4 @@
-import { HTTP_REQUEST_NODE_TYPE, SPLIT_IN_BATCHES_NODE_TYPE } from '@/app/constants';
+﻿import { HTTP_REQUEST_NODE_TYPE, SPLIT_IN_BATCHES_NODE_TYPE } from '@/app/constants';
 import { CREDENTIAL_EDIT_MODAL_KEY } from '@/features/credentials/credentials.constants';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { resolveParameter } from '@/app/composables/useWorkflowHelpers';
@@ -14,7 +14,7 @@ import {
 import type { EditorView } from '@codemirror/view';
 import { EditorSelection, type TransactionSpec } from '@codemirror/state';
 import type { SyntaxNode, Tree } from '@lezer/common';
-import type { DocMetadata } from 'n8n-workflow';
+import type { DocMetadata } from 'workflow-automation-workflow';
 import { escapeMappingString } from '@/app/utils/mappingUtils';
 import type { TargetNodeParameterContext } from '@/Interface';
 

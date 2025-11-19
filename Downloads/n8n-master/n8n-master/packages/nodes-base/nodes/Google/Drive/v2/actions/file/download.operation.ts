@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IBinaryKeyData,
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

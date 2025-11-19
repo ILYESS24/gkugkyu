@@ -1,4 +1,4 @@
-import type { ActionTypeDescription, ActionsRecord, SimplifiedNodeType } from '@/Interface';
+﻿import type { ActionTypeDescription, ActionsRecord, SimplifiedNodeType } from '@/Interface';
 import {
 	AI_CATEGORY_ROOT_NODES,
 	AI_CATEGORY_TOOLS,
@@ -14,7 +14,7 @@ import type {
 	INodePropertyCollection,
 	INodePropertyOptions,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { i18n } from '@n8n/i18n';
 

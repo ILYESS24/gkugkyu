@@ -1,4 +1,4 @@
-import {
+﻿import {
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	type ChatHubProvider,
 	type ChatHubLLMProvider,
@@ -16,10 +16,10 @@ import {
 	ChatHubN8nModel,
 	ChatHubCustomAgentModel,
 	emptyChatModelsResponse,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { ExecutionRepository, IExecutionResponse, User, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionRepository, IExecutionResponse, User, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { EntityManager } from '@n8n/typeorm';
 import type { Response } from 'express';
 import {
@@ -38,7 +38,7 @@ import {
 	INodeParameters,
 	INode,
 	createRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ChatHubAgentService } from './chat-hub-agent.service';
 import { ChatHubCredentialsService, CredentialWithProjectId } from './chat-hub-credentials.service';

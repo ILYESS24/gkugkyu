@@ -1,10 +1,10 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { IExecutionResponse } from '@n8n/db';
-import { ExecutionRepository } from '@n8n/db';
+import type { IExecutionResponse } from '@workflow-automation/db';
+import { ExecutionRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import { ErrorReporter } from 'n8n-core';
-import type { IRunExecutionData, ITaskData } from 'n8n-workflow';
+import { ErrorReporter } from 'workflow-automation-core';
+import type { IRunExecutionData, ITaskData } from 'workflow-automation-workflow';
 
 import { saveExecutionProgress } from '../save-execution-progress';
 

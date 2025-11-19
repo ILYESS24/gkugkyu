@@ -1,4 +1,4 @@
-import * as jwt from 'jsonwebtoken';
+﻿import * as jwt from 'jsonwebtoken';
 import { DateTime } from 'luxon';
 import moment from 'moment-timezone';
 import {
@@ -9,7 +9,7 @@ import {
 	type IPollFunctions,
 	type IRequestOptions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { formatPrivateKey } from '@utils/utilities';
 

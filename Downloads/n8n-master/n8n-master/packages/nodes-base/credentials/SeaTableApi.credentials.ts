@@ -1,10 +1,10 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 // Get options for timezones
 const timezones: INodePropertyOptions[] = moment.tz

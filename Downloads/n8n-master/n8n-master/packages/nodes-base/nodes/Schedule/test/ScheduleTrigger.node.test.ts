@@ -1,4 +1,4 @@
-import * as n8nWorkflow from 'n8n-workflow';
+﻿import * as n8nWorkflow from 'workflow-automation-workflow';
 
 import { testTriggerNode } from '@test/nodes/TriggerHelpers';
 

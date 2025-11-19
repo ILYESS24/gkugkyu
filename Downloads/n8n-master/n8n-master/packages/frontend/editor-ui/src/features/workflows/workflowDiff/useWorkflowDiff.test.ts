@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ref, computed } from 'vue';
 import { mapConnections, useWorkflowDiff } from './useWorkflowDiff';
 import type {
@@ -7,7 +7,7 @@ import type {
 	ExecutionOutputMap,
 } from '@/features/workflows/canvas/canvas.types';
 import type { INodeUi, IWorkflowDb } from '@/Interface';
-import { NodeDiffStatus, type IConnections } from 'n8n-workflow';
+import { NodeDiffStatus, type IConnections } from 'workflow-automation-workflow';
 import { useCanvasMapping } from '@/features/workflows/canvas/composables/useCanvasMapping';
 
 // Mock modules at top level

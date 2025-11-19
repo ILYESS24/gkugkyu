@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ActionResultRequestDto,
 	CommunityNodeType,
 	OptionsRequestDto,
 	ResourceLocatorRequestDto,
 	ResourceMapperFieldsRequestDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import * as nodeTypesApi from '@n8n/rest-api-client/api/nodeTypes';
 import {
 	HTTP_REQUEST_NODE_TYPE,
@@ -23,8 +23,8 @@ import type {
 	INodeTypeNameVersion,
 	Workflow,
 	NodeConnectionType,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeHelpers } from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import { useRootStore } from '@n8n/stores/useRootStore';

@@ -1,4 +1,4 @@
-import { createComponentRenderer, type RenderOptions } from '@/__tests__/render';
+﻿import { createComponentRenderer, type RenderOptions } from '@/__tests__/render';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
@@ -8,7 +8,7 @@ import AssignmentCollection from './AssignmentCollection.vue';
 import { STORES } from '@n8n/stores';
 import { SETTINGS_STORE_DEFAULT_STATE } from '@/__tests__/utils';
 import { createTestNodeProperties } from '@/__tests__/mocks';
-import type { AssignmentCollectionValue, AssignmentValue } from 'n8n-workflow';
+import type { AssignmentCollectionValue, AssignmentValue } from 'workflow-automation-workflow';
 
 vi.mock('vue-router');
 

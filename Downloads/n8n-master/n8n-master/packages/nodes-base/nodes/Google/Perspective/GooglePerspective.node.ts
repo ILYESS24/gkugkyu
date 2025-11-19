@@ -1,4 +1,4 @@
-import ISO6391 from 'iso-639-1';
+﻿import ISO6391 from 'iso-639-1';
 import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { googleApiRequest } from './GenericFunctions';
 import type {

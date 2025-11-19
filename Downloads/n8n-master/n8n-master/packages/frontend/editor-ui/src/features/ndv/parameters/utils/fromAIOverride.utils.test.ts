@@ -1,4 +1,4 @@
-import type { INodeUi } from '@/Interface';
+﻿import type { INodeUi } from '@/Interface';
 import type { FromAIOverride, OverrideContext } from './fromAIOverride.utils';
 import {
 	buildUniqueName,
@@ -8,7 +8,7 @@ import {
 	makeOverrideValue,
 	parseOverrides,
 } from './fromAIOverride.utils';
-import type { INodeTypeDescription, NodePropertyTypes } from 'n8n-workflow';
+import type { INodeTypeDescription, NodePropertyTypes } from 'workflow-automation-workflow';
 
 const getNodeType = vi.fn();
 

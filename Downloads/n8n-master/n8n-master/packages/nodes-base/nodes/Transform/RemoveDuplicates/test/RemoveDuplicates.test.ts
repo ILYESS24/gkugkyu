@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { INode } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import type { INode } from 'workflow-automation-workflow';
 
 import { validateInputData } from '../utils';
 

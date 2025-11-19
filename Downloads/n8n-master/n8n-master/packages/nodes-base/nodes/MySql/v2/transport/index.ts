@@ -1,10 +1,10 @@
-import mysql2 from 'mysql2/promise';
+﻿import mysql2 from 'mysql2/promise';
 import type {
 	ICredentialTestFunctions,
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { createServer, type AddressInfo } from 'node:net';
 
 import { LOCALHOST } from '@utils/constants';

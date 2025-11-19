@@ -1,4 +1,4 @@
-import { codeEditorTheme } from '../components/CodeNodeEditor/theme';
+﻿import { codeEditorTheme } from '../components/CodeNodeEditor/theme';
 import { editorKeymap } from '../plugins/codemirror/keymap';
 import { useTypescript } from '../plugins/codemirror/typescript/client/useTypescript';
 import { closeCursorInfoBox } from '../plugins/codemirror/tooltips/InfoBoxTooltip';
@@ -35,7 +35,7 @@ import {
 } from '@codemirror/view';
 import { indentationMarkers } from '@replit/codemirror-indentation-markers';
 import { html } from 'codemirror-lang-html-n8n';
-import { jsonParse, type CodeExecutionMode, type IDataObject } from 'n8n-workflow';
+import { jsonParse, type CodeExecutionMode, type IDataObject } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 import {
 	computed,

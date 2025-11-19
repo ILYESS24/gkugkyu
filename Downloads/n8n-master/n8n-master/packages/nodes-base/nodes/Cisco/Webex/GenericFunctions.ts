@@ -1,4 +1,4 @@
-import { createHash } from 'crypto';
+﻿import { createHash } from 'crypto';
 import upperFirst from 'lodash/upperFirst';
 import type {
 	ICredentialDataDecryptedObject,
@@ -11,8 +11,8 @@ import type {
 	IRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function webexApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IHookFunctions | IWebhookFunctions,

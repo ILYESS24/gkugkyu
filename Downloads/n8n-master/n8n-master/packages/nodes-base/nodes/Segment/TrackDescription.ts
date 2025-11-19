@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const trackOperations: INodeProperties[] = [
 	{
@@ -93,7 +93,7 @@ export const trackFields: INodeProperties[] = [
 						name: 'ip',
 						type: 'string',
 						default: '',
-						description: 'Current user’s IP address',
+						description: 'Current userâ€™s IP address',
 					},
 					{
 						displayName: 'Locale',
@@ -359,7 +359,7 @@ export const trackFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Name of the page For example, most sites have a “Signup” page that can be useful to tag, so you can see users as they move through your funnel',
+			'Name of the page For example, most sites have a â€œSignupâ€ page that can be useful to tag, so you can see users as they move through your funnel',
 	},
 	{
 		displayName: 'Context',
@@ -393,7 +393,7 @@ export const trackFields: INodeProperties[] = [
 						name: 'ip',
 						type: 'string',
 						default: '',
-						description: 'Current user’s IP address',
+						description: 'Current userâ€™s IP address',
 					},
 					{
 						displayName: 'Locale',

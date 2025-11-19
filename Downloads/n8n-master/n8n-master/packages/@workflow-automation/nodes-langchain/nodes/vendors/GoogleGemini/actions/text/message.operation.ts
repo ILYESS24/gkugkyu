@@ -1,11 +1,11 @@
-import {
+﻿import {
 	type IDataObject,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
 	validateNodeParameters,
-} from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 import zodToJsonSchema from 'zod-to-json-schema';
 
 import { getConnectedTools } from '@utils/helpers';

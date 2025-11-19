@@ -1,4 +1,4 @@
-import { BaseError } from 'n8n-workflow';
+﻿import { BaseError } from 'workflow-automation-workflow';
 
 /**
  * Special Error which allows to return also an error code and http status code

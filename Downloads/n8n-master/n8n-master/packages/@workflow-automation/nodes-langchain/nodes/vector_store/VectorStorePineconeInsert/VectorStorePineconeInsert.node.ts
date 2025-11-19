@@ -1,4 +1,4 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
 import { PineconeStore } from '@langchain/pinecone';
 import { Pinecone } from '@pinecone-database/pinecone';
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type INodeExecutionData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { N8nJsonLoader } from '@utils/N8nJsonLoader';
 

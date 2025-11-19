@@ -1,6 +1,6 @@
-import type { AuthenticatedRequest, WorkflowEntity } from '@n8n/db';
+﻿import type { AuthenticatedRequest, WorkflowEntity } from '@workflow-automation/db';
 import type { Request } from 'express';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 import { SUPPORTED_MCP_TRIGGERS } from './mcp.constants';
 import { isRecord, isJSONRPCRequest } from './mcp.typeguards';

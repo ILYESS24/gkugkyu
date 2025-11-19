@@ -1,4 +1,4 @@
-import cheerio from 'cheerio';
+﻿import cheerio from 'cheerio';
 import get from 'lodash/get';
 import type {
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 type Cheerio = ReturnType<typeof cheerio>;
 

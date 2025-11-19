@@ -1,8 +1,8 @@
-import type { SourceControlledFile } from '@n8n/api-types';
-import { Container } from '@n8n/di';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
+import { Container } from '@workflow-automation/di';
 import { constants as fsConstants, accessSync } from 'fs';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 import path from 'path';
 
 import {

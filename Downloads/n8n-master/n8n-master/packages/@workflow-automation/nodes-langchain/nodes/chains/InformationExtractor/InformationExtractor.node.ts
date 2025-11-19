@@ -1,14 +1,14 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { JSONSchema7 } from 'json-schema';
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers';
-import { jsonParse, NodeConnectionTypes, NodeOperationError, sleep } from 'n8n-workflow';
+import { jsonParse, NodeConnectionTypes, NodeOperationError, sleep } from 'workflow-automation-workflow';
 import type {
 	INodeType,
 	INodeTypeDescription,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodePropertyOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { z } from 'zod';
 
 import {

@@ -1,12 +1,12 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	encodeURIComponentOnce,
@@ -65,14 +65,14 @@ export class GoogleCalendarTrigger implements INodeType {
 								properties: {
 									// calendar ids are emails. W3C email regex with optional trailing whitespace.
 									regex:
-										'(^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*(?:[ \t]+)*$)',
+										'(^[a-zA-Z0-9.!#$%&â€™*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*(?:[ \t]+)*$)',
 									errorMessage: 'Not a valid Google Calendar ID',
 								},
 							},
 						],
 						extractValue: {
 							type: 'regex',
-							regex: '(^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*)',
+							regex: '(^[a-zA-Z0-9.!#$%&â€™*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*)',
 						},
 						placeholder: 'name@google.com',
 					},

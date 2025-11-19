@@ -1,4 +1,4 @@
-import type { LogLevel, WorkflowSettings } from 'n8n-workflow';
+﻿import type { LogLevel, WorkflowSettings } from 'workflow-automation-workflow';
 
 import { type InsightsDateRange } from './schemas/insights.schema';
 

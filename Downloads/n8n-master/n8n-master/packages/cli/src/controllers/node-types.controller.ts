@@ -1,9 +1,9 @@
-import { GlobalConfig } from '@n8n/config';
-import { Post, RestController } from '@n8n/decorators';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Post, RestController } from '@workflow-automation/decorators';
 import { Request } from 'express';
 import { readFile } from 'fs/promises';
 import get from 'lodash/get';
-import type { INodeTypeDescription, INodeTypeNameVersion } from 'n8n-workflow';
+import type { INodeTypeDescription, INodeTypeNameVersion } from 'workflow-automation-workflow';
 
 import { NodeTypes } from '@/node-types';
 

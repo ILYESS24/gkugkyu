@@ -1,11 +1,11 @@
-import type { AuthenticationMethod, ProjectRelation } from '@n8n/api-types';
-import type { AuthProviderType, User, IWorkflowDb } from '@n8n/db';
+﻿import type { AuthenticationMethod, ProjectRelation } from '@workflow-automation/api-types';
+import type { AuthProviderType, User, IWorkflowDb } from '@workflow-automation/db';
 import type {
 	IPersonalizationSurveyAnswersV4,
 	IRun,
 	IWorkflowBase,
 	IWorkflowExecutionDataProcess,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { ConcurrencyQueueType } from '@/concurrency/concurrency-control.service';
 

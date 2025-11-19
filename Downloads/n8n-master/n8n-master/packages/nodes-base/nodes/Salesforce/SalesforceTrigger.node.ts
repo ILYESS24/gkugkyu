@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+﻿import { DateTime } from 'luxon';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IPollFunctions,
@@ -9,7 +9,7 @@ import type {
 	ILoadOptionsFunctions,
 	INodePropertyOptions,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	getQuery,

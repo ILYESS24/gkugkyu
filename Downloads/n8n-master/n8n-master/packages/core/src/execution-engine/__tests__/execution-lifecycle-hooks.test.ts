@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	IDataObject,
 	IExecuteResponsePromiseData,
@@ -9,7 +9,7 @@ import type {
 	ITaskStartedData,
 	IWorkflowBase,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type {
 	ExecutionLifecycleHookName,

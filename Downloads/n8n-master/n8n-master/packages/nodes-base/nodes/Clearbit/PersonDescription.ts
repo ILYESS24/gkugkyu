@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const personOperations: INodeProperties[] = [
 	{
@@ -60,14 +60,14 @@ export const personFields: INodeProperties[] = [
 				name: 'company',
 				type: 'string',
 				default: '',
-				description: 'The name of the person’s employer',
+				description: 'The name of the personâ€™s employer',
 			},
 			{
 				displayName: 'Company Domain',
 				name: 'companyDomain',
 				type: 'string',
 				default: '',
-				description: 'The domain for the person’s employer',
+				description: 'The domain for the personâ€™s employer',
 			},
 			{
 				displayName: 'Facebook',

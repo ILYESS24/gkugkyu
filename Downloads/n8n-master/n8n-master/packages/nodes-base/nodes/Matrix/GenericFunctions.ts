@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 export async function matrixApiRequest(

@@ -1,4 +1,4 @@
-import { randomUUID } from 'crypto';
+﻿import { randomUUID } from 'crypto';
 import { DateTime } from 'luxon';
 import type {
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	INode,
 	IPairedItemData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeOperationError, UserError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError, UserError } from 'workflow-automation-workflow';
 import oracledb from 'oracledb';
 
 import { generatePairedItemData, wrapData } from '@utils/utilities';
@@ -195,8 +195,8 @@ export function quoteSqlIdentifier(name: string): string {
 	 *	  Dot-separated identifiers (like schema.table.column), each part following the rules above.
 	 *
 	 *  Invalid examples:
-	 * 	 my"column → contains an illegal ".
-	 *	 my..column → double dot not allowed.
+	 * 	 my"column â†’ contains an illegal ".
+	 *	 my..column â†’ double dot not allowed.
 	 */
 	const validateRegex = /^(?:"[^"]+"|[^".]+)(?:\.(?:"[^"]+"|[^".]+))*$/;
 	if (!validateRegex.test(name)) {
@@ -676,7 +676,7 @@ export function addWhereClauses(
 		// if fixed expression is used instead of n8n expressions.
 		if (typeof clause.value === 'string') {
 			try {
-				clause.value = JSON.parse(clause.value); // "2" → 2 (number)
+				clause.value = JSON.parse(clause.value); // "2" â†’ 2 (number)
 			} catch {
 				// if it wasn't valid JSON, keep original string
 			}
@@ -799,7 +799,7 @@ export function getBindParameters(
 				case 'date': {
 					const val = item.valueDate;
 					if (typeof val === 'string') {
-						bindVal = new Date(val); // string → Date
+						bindVal = new Date(val); // string â†’ Date
 					} else if (val instanceof Date) {
 						bindVal = val; // already a Date
 					} else {

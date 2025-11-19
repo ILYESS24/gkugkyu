@@ -1,5 +1,5 @@
-import type { IDataObject, IExecuteFunctions, INode, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IDataObject, IExecuteFunctions, INode, INodeExecutionData } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { generatePairedItemData, wrapData } from '@utils/utilities';
 

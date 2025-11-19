@@ -1,6 +1,6 @@
-import { inTest } from '@n8n/backend-common';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { inTest } from '@workflow-automation/backend-common';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { z } from 'zod';
 
 import { N8N_VERSION } from '@/constants';

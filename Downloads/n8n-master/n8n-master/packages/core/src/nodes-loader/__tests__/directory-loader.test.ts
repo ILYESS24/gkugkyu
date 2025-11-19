@@ -1,12 +1,12 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	IconFile,
 	ICredentialType,
 	INodeType,
 	INodeTypeDescription,
 	IVersionedNodeType,
-} from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 import fs from 'node:fs';
 import fsPromises from 'node:fs/promises';
 

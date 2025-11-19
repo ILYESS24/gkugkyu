@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
 	JsonObject,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError, sleep } from 'workflow-automation-workflow';
 import { parseString } from 'xml2js';
 
 import {

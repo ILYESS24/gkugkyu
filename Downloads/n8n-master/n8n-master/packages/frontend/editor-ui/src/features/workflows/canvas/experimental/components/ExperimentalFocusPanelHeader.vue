@@ -1,10 +1,10 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import NodeExecuteButton from '@/app/components/NodeExecuteButton.vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { type INodeUi } from '@/Interface';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useI18n } from '@n8n/i18n';
-import { type INodeProperties } from 'n8n-workflow';
+import { type INodeProperties } from 'workflow-automation-workflow';
 import { computed } from 'vue';
 
 import { N8nIconButton, N8nInlineTextEdit, N8nText } from '@n8n/design-system';

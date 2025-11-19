@@ -1,5 +1,5 @@
-import type { INode } from 'n8n-workflow';
-import * as n8nWorkflow from 'n8n-workflow';
+﻿import type { INode } from 'workflow-automation-workflow';
+import * as n8nWorkflow from 'workflow-automation-workflow';
 
 import {
 	intervalToRecurrence,

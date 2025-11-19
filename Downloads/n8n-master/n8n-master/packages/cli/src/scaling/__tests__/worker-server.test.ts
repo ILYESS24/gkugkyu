@@ -1,9 +1,9 @@
-import { mockLogger } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
-import type { DbConnection } from '@n8n/db';
+﻿import { mockLogger } from '@n8n/backend-test-utils';
+import type { GlobalConfig } from '@workflow-automation/config';
+import type { DbConnection } from '@workflow-automation/db';
 import type express from 'express';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 import { AssertionError } from 'node:assert';
 import * as http from 'node:http';
 

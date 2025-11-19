@@ -1,5 +1,5 @@
-import type { HarmBlockThreshold, HarmCategory } from '@google/genai';
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { HarmBlockThreshold, HarmCategory } from '@google/genai';
+import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { harmCategories, harmThresholds } from './safety-options';
 

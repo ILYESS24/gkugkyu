@@ -1,7 +1,7 @@
-import type { Logger } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿import type { Logger } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { SSHCredentials } from 'n8n-workflow';
+import type { SSHCredentials } from 'workflow-automation-workflow';
 import { Client } from 'ssh2';
 
 import { SSHClientsConfig, SSHClientsManager } from '../ssh-clients-manager';

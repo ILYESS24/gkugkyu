@@ -1,4 +1,4 @@
-import type { IWebhookFunctions } from 'n8n-workflow';
+﻿import type { IWebhookFunctions } from 'workflow-automation-workflow';
 
 import { Github } from '../../Github.node';
 

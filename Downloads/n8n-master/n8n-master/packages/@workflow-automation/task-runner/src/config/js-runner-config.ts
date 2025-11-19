@@ -1,4 +1,4 @@
-import { Config, Env } from '@n8n/config';
+﻿import { Config, Env } from '@workflow-automation/config';
 
 @Config
 export class JsRunnerConfig {

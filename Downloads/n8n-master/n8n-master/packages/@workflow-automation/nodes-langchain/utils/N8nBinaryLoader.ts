@@ -1,4 +1,4 @@
-import { CSVLoader } from '@langchain/community/document_loaders/fs/csv';
+﻿import { CSVLoader } from '@langchain/community/document_loaders/fs/csv';
 import { DocxLoader } from '@langchain/community/document_loaders/fs/docx';
 import { EPubLoader } from '@langchain/community/document_loaders/fs/epub';
 import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
@@ -12,8 +12,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
-import { NodeOperationError, BINARY_ENCODING } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError, BINARY_ENCODING } from 'workflow-automation-workflow';
 import { pipeline } from 'stream/promises';
 import { file as tmpFile, type DirectoryResult } from 'tmp-promise';
 

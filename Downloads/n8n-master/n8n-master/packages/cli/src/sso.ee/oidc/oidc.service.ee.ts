@@ -1,6 +1,6 @@
-import { OidcConfigDto } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
+﻿import { OidcConfigDto } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
 import {
 	AuthIdentity,
 	AuthIdentityRepository,
@@ -9,12 +9,12 @@ import {
 	SettingsRepository,
 	type User,
 	UserRepository,
-} from '@n8n/db';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { randomUUID } from 'crypto';
-import { Cipher, InstanceSettings } from 'n8n-core';
-import { jsonParse, UserError } from 'n8n-workflow';
+import { Cipher, InstanceSettings } from 'workflow-automation-core';
+import { jsonParse, UserError } from 'workflow-automation-workflow';
 import * as client from 'openid-client';
 import { EnvHttpProxyAgent } from 'undici';
 

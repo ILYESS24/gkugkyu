@@ -1,4 +1,4 @@
-import { type PushMessage } from '@n8n/api-types';
+﻿import { type PushMessage } from '@workflow-automation/api-types';
 import { mock } from 'jest-mock-extended';
 import EventEmitter from 'node:events';
 

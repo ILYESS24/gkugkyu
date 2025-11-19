@@ -1,14 +1,14 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig, TaskRunnersConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig, TaskRunnersConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { Service } from '@workflow-automation/di';
 import type {
 	BrokerMessage,
 	RequesterMessage,
 	RunnerMessage,
 	TaskResultData,
 } from '@n8n/task-runner';
-import { UnexpectedError, UserError } from 'n8n-workflow';
+import { UnexpectedError, UserError } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import { TaskDeferredError } from '@/task-runners/task-broker/errors/task-deferred.error';

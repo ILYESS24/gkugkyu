@@ -1,5 +1,5 @@
-import { NodeOperationError } from 'n8n-workflow';
-import type { ILoadOptionsFunctions, INodeListSearchResult } from 'n8n-workflow';
+﻿import { NodeOperationError } from 'workflow-automation-workflow';
+import type { ILoadOptionsFunctions, INodeListSearchResult } from 'workflow-automation-workflow';
 import * as oracleDBTypes from 'oracledb';
 
 import type { OracleDBNodeCredentials } from '../helpers/interfaces';

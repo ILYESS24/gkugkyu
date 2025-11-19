@@ -1,5 +1,5 @@
-import { tool } from '@langchain/core/tools';
-import type { Logger } from '@n8n/backend-common';
+﻿import { tool } from '@langchain/core/tools';
+import type { Logger } from '@workflow-automation/backend-common';
 import { type INodeTypeDescription } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
@@ -308,7 +308,7 @@ export function createConnectNodesTool(
 UNDERSTANDING CONNECTIONS:
 - SOURCE NODE: The node that PRODUCES output/provides capability
 - TARGET NODE: The node that RECEIVES input/uses capability
-- Flow direction: Source → Target
+- Flow direction: Source â†’ Target
 
 AUTOMATIC CONNECTION TYPE DETECTION:
 - The tool analyzes the nodes' inputs and outputs to determine the appropriate connection type
@@ -321,12 +321,12 @@ For ai_* connections (ai_languageModel, ai_tool, ai_memory, ai_embedding, etc.):
 - The tool will AUTO-CORRECT if you specify them backwards
 
 CONNECTION EXAMPLES:
-- OpenAI Chat Model → AI Agent (detects ai_languageModel)
-- Calculator Tool → AI Agent (detects ai_tool)
-- Simple Memory → Basic LLM Chain (detects ai_memory)
-- Embeddings OpenAI → Vector Store (detects ai_embedding)
-- Document Loader → Embeddings OpenAI (detects ai_document)
-- HTTP Request → Set (detects main)`,
+- OpenAI Chat Model â†’ AI Agent (detects ai_languageModel)
+- Calculator Tool â†’ AI Agent (detects ai_tool)
+- Simple Memory â†’ Basic LLM Chain (detects ai_memory)
+- Embeddings OpenAI â†’ Vector Store (detects ai_embedding)
+- Document Loader â†’ Embeddings OpenAI (detects ai_document)
+- HTTP Request â†’ Set (detects main)`,
 			schema: nodeConnectionSchema,
 		},
 	);

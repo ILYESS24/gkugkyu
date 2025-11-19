@@ -1,4 +1,4 @@
-import { sendAt } from 'cron';
+﻿import { sendAt } from 'cron';
 import moment from 'moment-timezone';
 import type {
 	ITriggerFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodeTypeDescription,
 	ITriggerResponse,
 	Cron,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	intervalToRecurrence,
@@ -191,7 +191,7 @@ export class ScheduleTrigger implements INodeType {
 								},
 								default: 1,
 								description: 'The day of the month to trigger (1-31)',
-								hint: 'If a month doesn’t have this day, the node won’t trigger',
+								hint: 'If a month doesnâ€™t have this day, the node wonâ€™t trigger',
 							},
 							{
 								displayName: 'Trigger on Weekdays',

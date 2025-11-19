@@ -1,8 +1,8 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 /* eslint-disable @typescript-eslint/unbound-method */
 import { ChatOpenAI } from '@langchain/openai';
 import { createMockExecuteFunction } from 'n8n-nodes-base/test/nodes/Helpers';
-import type { IDataObject, INode, ISupplyDataFunctions } from 'n8n-workflow';
+import type { IDataObject, INode, ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import * as common from '../LMChatOpenAi/common';
 import { LmChatOpenAi } from '../LMChatOpenAi/LmChatOpenAi.node';

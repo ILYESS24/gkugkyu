@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const personOperations: INodeProperties[] = [
 	{
@@ -38,7 +38,7 @@ export const personFields: INodeProperties[] = [
 				operation: ['enrich'],
 			},
 		},
-		description: 'Email address (e.g – mbenioff@salesforce.com)',
+		description: 'Email address (e.g â€“ mbenioff@salesforce.com)',
 	},
 	{
 		displayName: 'First Name',
@@ -51,7 +51,7 @@ export const personFields: INodeProperties[] = [
 				operation: ['enrich'],
 			},
 		},
-		description: 'First name of the person (e.g – Marc)',
+		description: 'First name of the person (e.g â€“ Marc)',
 	},
 	{
 		displayName: 'Last Name',
@@ -64,7 +64,7 @@ export const personFields: INodeProperties[] = [
 				operation: ['enrich'],
 			},
 		},
-		description: 'Last name of the person (e.g – Benioff)',
+		description: 'Last name of the person (e.g â€“ Benioff)',
 	},
 	{
 		displayName: 'Domain',
@@ -77,6 +77,6 @@ export const personFields: INodeProperties[] = [
 				operation: ['enrich'],
 			},
 		},
-		description: 'The domain name (e.g – salesforce.com)',
+		description: 'The domain name (e.g â€“ salesforce.com)',
 	},
 ];

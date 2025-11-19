@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import fs from 'fs';
 import { mock } from 'jest-mock-extended';
 import { tmpdir } from 'node:os';

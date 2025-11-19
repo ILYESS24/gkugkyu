@@ -1,4 +1,4 @@
-import { ApplicationError } from 'n8n-workflow';
+﻿import { ApplicationError } from 'workflow-automation-workflow';
 
 global.fetch = jest.fn();
 
@@ -16,7 +16,7 @@ jest.mock('@n8n/config', () => ({
 	SecurityConfig: MockSecurityConfig,
 }));
 
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import * as systemCredentialsUtils from './system-credentials-utils';
 
 const mockEnvGetter = jest.fn();

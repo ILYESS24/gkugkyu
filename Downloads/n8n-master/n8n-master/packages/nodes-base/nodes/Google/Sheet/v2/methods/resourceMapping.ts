@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	ILoadOptionsFunctions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { GoogleSheet } from '../helpers/GoogleSheet';
 import { ROW_NUMBER, type ResourceLocator } from '../helpers/GoogleSheets.types';

@@ -1,11 +1,11 @@
-import { mockLogger, createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { ExecutionsConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import type { ExecutionEntity } from '@n8n/db';
-import { ExecutionRepository, DbConnection } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { BinaryDataService, InstanceSettings } from 'n8n-core';
-import type { ExecutionStatus, IWorkflowBase } from 'n8n-workflow';
+﻿import { mockLogger, createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import type { ExecutionEntity } from '@workflow-automation/db';
+import { ExecutionRepository, DbConnection } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { BinaryDataService, InstanceSettings } from 'workflow-automation-core';
+import type { ExecutionStatus, IWorkflowBase } from 'workflow-automation-workflow';
 
 import { ExecutionsPruningService } from '@/services/pruning/executions-pruning.service';
 

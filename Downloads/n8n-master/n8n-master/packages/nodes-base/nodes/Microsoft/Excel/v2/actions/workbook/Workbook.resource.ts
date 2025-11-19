@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import * as addWorksheet from './addWorksheet.operation';
 import * as deleteWorkbook from './deleteWorkbook.operation';

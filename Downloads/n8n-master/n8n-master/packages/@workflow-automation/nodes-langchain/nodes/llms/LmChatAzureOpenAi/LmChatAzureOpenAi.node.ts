@@ -1,4 +1,4 @@
-import { AzureChatOpenAI } from '@langchain/openai';
+﻿import { AzureChatOpenAI } from '@langchain/openai';
 import {
 	NodeOperationError,
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getProxyAgent } from '@utils/httpProxyAgent';
 

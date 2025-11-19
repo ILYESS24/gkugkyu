@@ -1,7 +1,7 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import NodeSettingsTabs from '@/features/ndv/settings/components/NodeSettingsTabs.vue';
-import type { INode, INodeTypeDescription } from 'n8n-workflow';
+import type { INode, INodeTypeDescription } from 'workflow-automation-workflow';
 import type { NodeSettingsTab } from '@/app/types/nodeSettings';
 
 import { N8nInlineTextEdit, N8nText } from '@n8n/design-system';

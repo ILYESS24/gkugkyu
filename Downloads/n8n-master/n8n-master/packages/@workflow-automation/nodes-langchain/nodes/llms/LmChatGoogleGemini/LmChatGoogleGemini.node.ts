@@ -1,13 +1,13 @@
-import type { SafetySetting } from '@google/generative-ai';
+﻿import type { SafetySetting } from '@google/generative-ai';
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	NodeError,
 	INodeType,
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

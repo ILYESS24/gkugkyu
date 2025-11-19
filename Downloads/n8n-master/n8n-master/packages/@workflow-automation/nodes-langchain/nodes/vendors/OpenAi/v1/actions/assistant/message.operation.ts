@@ -1,4 +1,4 @@
-import type { BaseMessage } from '@langchain/core/messages';
+﻿import type { BaseMessage } from '@langchain/core/messages';
 import { AgentExecutor } from 'langchain/agents';
 import type { OpenAIToolType } from 'langchain/dist/experimental/openai_assistant/schema';
 import { OpenAIAssistantRunnable } from 'langchain/experimental/openai_assistant';
@@ -9,13 +9,13 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	NodeConnectionTypes,
 	NodeOperationError,
 	updateDisplayOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { OpenAI as OpenAIClient } from 'openai';
 
 import { promptTypeOptions } from '@utils/descriptions';

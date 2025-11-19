@@ -1,9 +1,9 @@
-import type { SourceControlledFile } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { FolderRepository, type TagEntity, TagRepository, type User } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope } from '@n8n/permissions';
-import { UserError } from 'n8n-workflow';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { FolderRepository, type TagEntity, TagRepository, type User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope } from '@workflow-automation/permissions';
+import { UserError } from 'workflow-automation-workflow';
 
 import { ForbiddenError } from '@/errors/response-errors/forbidden.error';
 import { EventService } from '@/events/event.service';

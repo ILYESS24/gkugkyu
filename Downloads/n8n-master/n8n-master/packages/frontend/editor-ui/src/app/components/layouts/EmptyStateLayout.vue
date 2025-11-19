@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { N8nCard, N8nHeading, N8nText, N8nIcon } from '@n8n/design-system';
@@ -6,13 +6,13 @@ import { useI18n } from '@n8n/i18n';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useProjectPages } from '@/features/collaboration/projects/composables/useProjectPages';
 import { useToast } from '@/app/composables/useToast';
 import { useReadyToRunStore } from '@/features/workflows/readyToRun/stores/readyToRun.store';
 import { useTemplatesDataQualityStore } from '@/experiments/templatesDataQuality/stores/templatesDataQuality.store';
 import TemplatesDataQualityInlineSection from '@/experiments/templatesDataQuality/components/TemplatesDataQualityInlineSection.vue';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 
 const emit = defineEmits<{
 	'click:add': [];

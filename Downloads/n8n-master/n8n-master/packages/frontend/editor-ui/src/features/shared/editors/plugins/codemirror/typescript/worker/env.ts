@@ -1,4 +1,4 @@
-import * as tsvfs from '@typescript/vfs';
+﻿import * as tsvfs from '@typescript/vfs';
 import { COMPILER_OPTIONS, TYPESCRIPT_FILES } from './constants';
 import ts from 'typescript';
 import type { IndexedDbCache } from '@/app/plugins/cache';
@@ -6,7 +6,7 @@ import type { IndexedDbCache } from '@/app/plugins/cache';
 import globalTypes from './type-declarations/globals.d.ts?raw';
 import n8nTypes from './type-declarations/n8n.d.ts?raw';
 
-import type { CodeExecutionMode } from 'n8n-workflow';
+import type { CodeExecutionMode } from 'workflow-automation-workflow';
 import { wrapInFunction } from './utils';
 
 type EnvOptions = {

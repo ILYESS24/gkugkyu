@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IDataDeduplicator,
 	ICheckProcessedOptions,
@@ -8,7 +8,7 @@ import type {
 	DeduplicationScope,
 	DeduplicationItemTypes,
 	ICheckProcessedContextData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import * as assert from 'node:assert/strict';
 
 /**

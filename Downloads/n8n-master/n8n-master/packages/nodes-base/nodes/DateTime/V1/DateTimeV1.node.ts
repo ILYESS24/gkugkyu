@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import { DateTime as LuxonDateTime } from 'luxon';
 import moment from 'moment-timezone';
 import type {
@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { deepCopy, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 function parseDateByFormat(this: IExecuteFunctions, value: string, fromFormat: string) {
 	const date = moment(value, fromFormat, true);
@@ -286,7 +286,7 @@ const versionDescription: INodeTypeDescription = {
 			},
 			default: 0,
 			required: true,
-			description: 'E.g. enter “10” then select “Days” if you want to add 10 days to Date Value.',
+			description: 'E.g. enter â€œ10â€ then select â€œDaysâ€ if you want to add 10 days to Date Value.',
 		},
 		{
 			displayName: 'Time Unit',

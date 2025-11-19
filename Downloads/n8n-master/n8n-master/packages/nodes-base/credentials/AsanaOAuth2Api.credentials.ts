@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class AsanaOAuth2Api implements ICredentialType {
 	name = 'asanaOAuth2Api';

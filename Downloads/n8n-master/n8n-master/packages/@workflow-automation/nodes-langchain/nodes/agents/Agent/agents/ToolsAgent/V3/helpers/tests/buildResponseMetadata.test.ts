@@ -1,4 +1,4 @@
-import type { EngineResponse } from 'n8n-workflow';
+﻿import type { EngineResponse } from 'workflow-automation-workflow';
 
 import * as agentExecution from '@utils/agent-execution';
 

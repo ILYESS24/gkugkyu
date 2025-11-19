@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	INodeType,
 	INodeTypeData,
 	INodeTypes,
@@ -12,8 +12,8 @@ import type {
 	INodeIssues,
 	ITaskData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { FORM_TRIGGER_NODE_TYPE, NodeConnectionTypes, NodeHelpers, Workflow } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { FORM_TRIGGER_NODE_TYPE, NodeConnectionTypes, NodeHelpers, Workflow } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 import { mock } from 'vitest-mock-extended';
 
@@ -31,7 +31,7 @@ import {
 import type { INodeUi, IWorkflowDb } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import { CanvasNodeRenderType } from '@/features/workflows/canvas/canvas.types';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import type { ExpressionLocalResolveContext } from '@/app/types/expressions';
 
 export const mockNode = ({

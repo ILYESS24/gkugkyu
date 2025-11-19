@@ -1,4 +1,4 @@
-import type { IStartRunData, IWorkflowDb } from '@/Interface';
+﻿import type { IStartRunData, IWorkflowDb } from '@/Interface';
 import type {
 	IExecutionPushResponse,
 	IExecutionResponse,
@@ -14,8 +14,8 @@ import type {
 	INode,
 	IDataObject,
 	IWorkflowBase,
-} from 'n8n-workflow';
-import { createRunExecutionData, NodeConnectionTypes, TelemetryHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { createRunExecutionData, NodeConnectionTypes, TelemetryHelpers } from 'workflow-automation-workflow';
 import { retry } from '@n8n/utils/retry';
 
 import { useToast } from '@/app/composables/useToast';

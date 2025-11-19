@@ -1,5 +1,5 @@
-import type { LicenseState } from '@n8n/backend-common';
-import type { WorkflowRepository } from '@n8n/db';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
+import type { WorkflowRepository } from '@workflow-automation/db';
 import type { TEntitlement } from '@n8n_io/license-sdk';
 import axios, { AxiosError } from 'axios';
 import { mock } from 'jest-mock-extended';

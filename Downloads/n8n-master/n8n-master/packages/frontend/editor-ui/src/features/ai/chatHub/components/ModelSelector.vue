@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref, useTemplateRef, watch } from 'vue';
 import { N8nNavigationDropdown, N8nIcon, N8nButton, N8nText, N8nAvatar } from '@n8n/design-system';
 import { type ComponentProps } from 'vue-component-type-helpers';
@@ -6,13 +6,13 @@ import {
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	chatHubLLMProviderSchema,
 	emptyChatModelsResponse,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type {
 	ChatHubProvider,
 	ChatHubLLMProvider,
 	ChatModelDto,
 	ChatModelsResponse,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import {
 	CHAT_CREDENTIAL_SELECTOR_MODAL_KEY,
 	CHAT_MODEL_BY_ID_SELECTOR_MODAL_KEY,

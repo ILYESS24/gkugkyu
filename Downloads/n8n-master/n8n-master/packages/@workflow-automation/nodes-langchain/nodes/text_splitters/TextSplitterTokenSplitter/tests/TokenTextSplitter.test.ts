@@ -1,4 +1,4 @@
-import { OperationalError } from 'n8n-workflow';
+﻿import { OperationalError } from 'workflow-automation-workflow';
 
 import * as helpers from '../../../../utils/helpers';
 import * as tiktokenUtils from '../../../../utils/tokenizer/tiktoken';

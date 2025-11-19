@@ -1,5 +1,5 @@
-import type { User } from '@n8n/db';
-import { hasGlobalScope } from '@n8n/permissions';
+﻿import type { User } from '@workflow-automation/db';
+import { hasGlobalScope } from '@workflow-automation/permissions';
 
 export class SourceControlContext {
 	constructor(private readonly userInternal: User) {}

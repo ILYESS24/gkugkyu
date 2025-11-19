@@ -1,10 +1,10 @@
-import { NodeConnectionTypes, parseErrorMetadata, sleep } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, parseErrorMetadata, sleep } from 'workflow-automation-workflow';
 import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	promptTypeOptions,
@@ -142,7 +142,7 @@ export class ChainRetrievalQa implements INodeType {
 				options: [
 					{
 						...systemPromptOption,
-						description: `Template string used for the system prompt. This should include the variable \`{context}\` for the provided context. For text completion models, you should also include the variable \`{${LEGACY_INPUT_TEMPLATE_KEY}}\` for the user’s query.`,
+						description: `Template string used for the system prompt. This should include the variable \`{context}\` for the provided context. For text completion models, you should also include the variable \`{${LEGACY_INPUT_TEMPLATE_KEY}}\` for the userâ€™s query.`,
 						displayOptions: {
 							show: {
 								'@version': [{ _cnd: { lt: 1.5 } }],
@@ -151,7 +151,7 @@ export class ChainRetrievalQa implements INodeType {
 					},
 					{
 						...systemPromptOption,
-						description: `Template string used for the system prompt. This should include the variable \`{context}\` for the provided context. For text completion models, you should also include the variable \`{${INPUT_TEMPLATE_KEY}}\` for the user’s query.`,
+						description: `Template string used for the system prompt. This should include the variable \`{context}\` for the provided context. For text completion models, you should also include the variable \`{${INPUT_TEMPLATE_KEY}}\` for the userâ€™s query.`,
 						displayOptions: {
 							show: {
 								'@version': [{ _cnd: { gte: 1.5 } }],

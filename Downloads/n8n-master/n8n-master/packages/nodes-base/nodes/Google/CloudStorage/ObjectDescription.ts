@@ -1,10 +1,10 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import {
 	BINARY_ENCODING,
 	type IDataObject,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 // Define these because we'll be using them in two separate places

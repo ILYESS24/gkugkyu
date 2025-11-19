@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IHookFunctions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { beeminderApiRequest, beeminderApiRequestAllItems } from './GenericFunctions';
 

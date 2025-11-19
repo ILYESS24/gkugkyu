@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const activityOperations: INodeProperties[] = [
 	{
@@ -300,7 +300,7 @@ export const activityFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'Identifier for the gear associated with the activity. ‘none’ clears gear from activity.',
+					'Identifier for the gear associated with the activity. â€˜noneâ€™ clears gear from activity.',
 			},
 			{
 				displayName: 'Mute Activity',

@@ -1,4 +1,4 @@
-import type { SamlPreferences, SamlPreferencesAttributeMapping } from '@n8n/api-types';
+﻿import type { SamlPreferences, SamlPreferencesAttributeMapping } from '@workflow-automation/api-types';
 
 export type SamlLoginBinding = SamlPreferences['loginBinding'];
 export type SamlAttributeMapping = NonNullable<SamlPreferencesAttributeMapping>;

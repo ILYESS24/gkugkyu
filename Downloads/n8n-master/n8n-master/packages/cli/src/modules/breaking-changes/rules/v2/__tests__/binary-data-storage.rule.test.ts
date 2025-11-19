@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { BinaryDataConfig } from 'n8n-core';
+﻿import { mock } from 'jest-mock-extended';
+import type { BinaryDataConfig } from 'workflow-automation-core';
 
 import { BinaryDataStorageRule } from '../binary-data-storage.rule';
 

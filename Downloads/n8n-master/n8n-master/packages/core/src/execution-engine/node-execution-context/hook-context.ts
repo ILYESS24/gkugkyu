@@ -1,4 +1,4 @@
-import { ApplicationError } from '@n8n/errors';
+﻿import { ApplicationError } from '@n8n/errors';
 import type {
 	ICredentialDataDecryptedObject,
 	INode,
@@ -9,7 +9,7 @@ import type {
 	WorkflowExecuteMode,
 	IWebhookData,
 	WebhookType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { NodeExecutionContext } from './node-execution-context';
 import { getRequestHelperFunctions } from './utils/request-helper-functions';

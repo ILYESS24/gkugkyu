@@ -1,12 +1,12 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { uprocApiRequest } from './GenericFunctions';
 import { groupOptions } from './GroupDescription';

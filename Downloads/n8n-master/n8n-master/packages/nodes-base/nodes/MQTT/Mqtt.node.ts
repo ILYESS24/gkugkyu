@@ -1,4 +1,4 @@
-import type { IClientPublishOptions } from 'mqtt';
+﻿import type { IClientPublishOptions } from 'mqtt';
 import {
 	type IExecuteFunctions,
 	type ICredentialsDecrypted,
@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	NodeConnectionTypes,
 	ensureError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createClient, type MqttCredential } from './GenericFunctions';
 

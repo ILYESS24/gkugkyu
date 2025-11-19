@@ -1,10 +1,10 @@
-import { GlobalConfig } from '@n8n/config';
-import type { entities } from '@n8n/db';
-import { AuthRolesService, DbConnection, DbConnectionOptions } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import type { entities } from '@workflow-automation/db';
+import { AuthRolesService, DbConnection, DbConnectionOptions } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { DataSourceOptions } from '@n8n/typeorm';
 import { DataSource as Connection } from '@n8n/typeorm';
-import { randomString } from 'n8n-workflow';
+import { randomString } from 'workflow-automation-workflow';
 
 export const testDbPrefix = 'n8n_test_';
 let isInitialized = false;

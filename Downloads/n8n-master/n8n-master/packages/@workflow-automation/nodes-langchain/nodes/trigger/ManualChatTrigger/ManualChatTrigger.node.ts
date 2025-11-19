@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type ITriggerFunctions,
 	type INodeType,
 	type INodeTypeDescription,
 	type ITriggerResponse,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class ManualChatTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -39,7 +39,7 @@ export class ManualChatTrigger implements INodeType {
 		properties: [
 			{
 				displayName:
-					'This node is where a manual chat workflow execution starts. To make one, go back to the canvas and click ‘Chat’',
+					'This node is where a manual chat workflow execution starts. To make one, go back to the canvas and click â€˜Chatâ€™',
 				name: 'notice',
 				type: 'notice',
 				default: '',

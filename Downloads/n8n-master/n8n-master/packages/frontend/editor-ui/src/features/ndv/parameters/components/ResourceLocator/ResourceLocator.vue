@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { ResourceLocatorRequestDto, ActionResultRequestDto } from '@n8n/api-types';
+﻿<script setup lang="ts">
+import type { ResourceLocatorRequestDto, ActionResultRequestDto } from '@workflow-automation/api-types';
 import type { IResourceLocatorResultExpanded, IUpdateInformation } from '@/Interface';
 import DraggableTarget from '@/app/components/DraggableTarget.vue';
 import ExpressionParameterInput from '../ExpressionParameterInput.vue';
@@ -32,7 +32,7 @@ import {
 	type INodePropertyMode,
 	type INodePropertyModeTypeOptions,
 	type NodeParameterValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	computed,
 	nextTick,
@@ -827,9 +827,9 @@ function removeDuplicateTextFromErrorMessage(message: string): string {
 	let segments: string[] = [];
 
 	// Split message into sentences or segments
-	if (/[-–—]/.test(message)) {
+	if (/[-â€“â€”]/.test(message)) {
 		// By various dash types
-		segments = message.split(/\s*[-–—]\s*/);
+		segments = message.split(/\s*[-â€“â€”]\s*/);
 	} else {
 		// By sentence boundaries
 		segments = message.split(/(?<=[.!?])\s+/);

@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTestNode,
 	defaultNodeDescriptions,
 	mockNodeTypeDescription,
@@ -26,7 +26,7 @@ import {
 	NodeConnectionTypes,
 	type IBinaryData,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import { mock } from 'vitest-mock-extended';
 import { defaultSettings } from '@/__tests__/defaults';

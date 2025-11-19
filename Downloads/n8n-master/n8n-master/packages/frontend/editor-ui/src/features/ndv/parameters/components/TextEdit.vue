@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, watch, onMounted, nextTick } from 'vue';
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
 import { APP_MODALS_ELEMENT_ID } from '@/app/constants';
 import { useI18n } from '@n8n/i18n';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';

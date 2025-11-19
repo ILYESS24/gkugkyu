@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { CronContext, Workflow } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { CronContext, Workflow } from 'workflow-automation-workflow';
 
 import { mockInstance } from '@test/utils';
 

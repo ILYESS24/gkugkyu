@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { campaignFields, campaignOperations } from './CampaignDescription';
 import { sendyApiRequest } from './GenericFunctions';

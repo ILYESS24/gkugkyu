@@ -1,4 +1,4 @@
-import type { ExecutionStatus, INodeConnections, NodeConnectionType } from 'n8n-workflow';
+﻿import type { ExecutionStatus, INodeConnections, NodeConnectionType } from 'workflow-automation-workflow';
 import type {
 	DefaultEdge,
 	Node,

@@ -1,7 +1,7 @@
-import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
+﻿import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { removePreviewToken } from '@/features/shared/nodeCreator/nodeCreator.utils';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 import { mock } from 'vitest-mock-extended';
 import {
 	getBadgeIconUrl,

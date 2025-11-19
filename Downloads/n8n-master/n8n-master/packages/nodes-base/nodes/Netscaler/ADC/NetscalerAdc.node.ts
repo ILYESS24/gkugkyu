@@ -1,4 +1,4 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
 	NodeConnectionTypes,
 	type IDataObject,
@@ -7,7 +7,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	type JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { certificateDescription } from './CertificateDescription';
 import { fileDescription } from './FileDescription';

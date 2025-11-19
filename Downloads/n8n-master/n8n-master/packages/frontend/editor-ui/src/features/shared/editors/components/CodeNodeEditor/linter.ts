@@ -1,9 +1,9 @@
-import type { Diagnostic } from '@codemirror/lint';
+﻿import type { Diagnostic } from '@codemirror/lint';
 import { linter as codeMirrorLinter } from '@codemirror/lint';
 import type { EditorView } from '@codemirror/view';
 import * as esprima from 'esprima-next';
 import type { Node, MemberExpression } from 'estree';
-import type { CodeExecutionMode, CodeNodeEditorLanguage } from 'n8n-workflow';
+import type { CodeExecutionMode, CodeNodeEditorLanguage } from 'workflow-automation-workflow';
 import { computed, toValue, type MaybeRefOrGetter } from 'vue';
 
 import { useI18n } from '@n8n/i18n';

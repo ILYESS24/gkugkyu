@@ -1,9 +1,9 @@
-import {
+﻿import {
 	extractFromAICalls,
 	FROM_AI_AUTO_GENERATED_MARKER,
 	type NodeParameterValueType,
 	type NodePropertyTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { i18n } from '@n8n/i18n';
 import type { INodeUi } from '@/Interface';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

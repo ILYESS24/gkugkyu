@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IUpdateInformation } from '@/Interface';
 import { useI18n } from '@n8n/i18n';
 import { useTelemetry } from '@/app/composables/useTelemetry';
@@ -12,7 +12,7 @@ import {
 	type INodeProperties,
 	type IParameterLabel,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, defineAsyncComponent, ref } from 'vue';
 import ParameterInputWrapper from './ParameterInputWrapper.vue';
 import ParameterOptions from './ParameterOptions.vue';

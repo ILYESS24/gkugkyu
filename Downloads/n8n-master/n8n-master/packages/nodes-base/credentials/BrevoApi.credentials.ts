@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IAuthenticateGeneric,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class BrevoApi implements ICredentialType {
 	// keep sendinblue name for backward compatibility

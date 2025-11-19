@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import {
 	ApplicationError,
 	NodeOperationError,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getTypeValidationParameter, getTypeValidationStrictness } from './utils';
 import { ENABLE_LESS_STRICT_TYPE_VALIDATION } from '../../../utils/constants';

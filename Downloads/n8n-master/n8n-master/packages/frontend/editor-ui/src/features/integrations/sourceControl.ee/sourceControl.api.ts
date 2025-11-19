@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	PullWorkFolderRequestDto,
 	PushWorkFolderRequestDto,
 	SourceControlledFile,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { IRestApiContext } from '@n8n/rest-api-client';
 import type {
 	SourceControlPreferences,

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IUpdateInformation } from '@/Interface';
 import type {
 	INodeIssues,
@@ -7,7 +7,7 @@ import type {
 	NodePropertyTypes,
 	ResourceMapperField,
 	ResourceMapperValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import ParameterInputFull from '../ParameterInputFull.vue';
 import ParameterIssues from '../ParameterIssues.vue';
 import ParameterOptions from '../ParameterOptions.vue';

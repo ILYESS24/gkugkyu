@@ -1,6 +1,6 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import * as permissionsModule from '@n8n/permissions';
+import * as permissionsModule from '@workflow-automation/permissions';
 import { useDataTableNavigationCommands } from './useDataTableNavigationCommands';
 import { useDataTableStore } from '@/features/core/dataTable/dataTable.store';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';

@@ -1,5 +1,5 @@
-import lodashGet from 'lodash/get';
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
+﻿import lodashGet from 'lodash/get';
+import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
 
 import * as transport from '../../transport';
 import * as create from '../../v2/actions/conversation/create.operation';

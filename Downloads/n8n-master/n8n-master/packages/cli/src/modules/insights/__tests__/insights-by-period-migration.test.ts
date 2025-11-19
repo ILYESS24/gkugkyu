@@ -1,11 +1,11 @@
-import {
+﻿import {
 	createTestMigrationContext,
 	initDbUpToMigration,
 	runSingleMigration,
 	testModules,
 } from '@n8n/backend-test-utils';
-import { DbConnection } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { DbConnection } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DataSource } from '@n8n/typeorm';
 
 import { BOUNDARY_TEST_VALUES, insertPreMigrationPeriodData } from './migration-test-setup';

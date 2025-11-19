@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const reactionOperations: INodeProperties[] = [
 	{
@@ -125,7 +125,7 @@ export const reactionFields: INodeProperties[] = [
 			},
 		},
 		description:
-			'Emoji code to use for the message reaction. Use emoji codes like +1, not an actual emoji like 👍. <a target="_blank" href=" https://www.webfx.com/tools/emoji-cheat-sheet/">List of common emoji codes</a>',
+			'Emoji code to use for the message reaction. Use emoji codes like +1, not an actual emoji like ðŸ‘. <a target="_blank" href=" https://www.webfx.com/tools/emoji-cheat-sheet/">List of common emoji codes</a>',
 		placeholder: '+1',
 	},
 ];

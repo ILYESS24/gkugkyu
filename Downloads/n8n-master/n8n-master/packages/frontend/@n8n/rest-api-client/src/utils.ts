@@ -1,9 +1,9 @@
-import { BROWSER_ID_STORAGE_KEY } from '@n8n/constants';
+﻿import { BROWSER_ID_STORAGE_KEY } from '@workflow-automation/constants';
 import { assert } from '@n8n/utils/assert';
 import type { AxiosRequestConfig, Method, RawAxiosRequestHeaders } from 'axios';
 import axios from 'axios';
-import { ApplicationError, jsonParse } from 'n8n-workflow';
-import type { GenericValue, IDataObject } from 'n8n-workflow';
+import { ApplicationError, jsonParse } from 'workflow-automation-workflow';
+import type { GenericValue, IDataObject } from 'workflow-automation-workflow';
 
 import type { IRestApiContext } from './types';
 
@@ -17,7 +17,7 @@ const getBrowserId = () => {
 };
 
 export const NO_NETWORK_ERROR_CODE = 999;
-export const STREAM_SEPARATOR = '⧉⇋⇋➽⌑⧉§§\n';
+export const STREAM_SEPARATOR = 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n';
 
 export class MfaRequiredError extends ApplicationError {
 	constructor() {

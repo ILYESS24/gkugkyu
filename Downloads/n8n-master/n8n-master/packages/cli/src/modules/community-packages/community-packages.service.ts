@@ -1,11 +1,11 @@
-import { Logger } from '@n8n/backend-common';
-import { LICENSE_FEATURES } from '@n8n/constants';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 import axios from 'axios';
-import type { PackageDirectoryLoader } from 'n8n-core';
-import { InstanceSettings } from 'n8n-core';
-import { jsonParse, UnexpectedError, UserError, type PublicInstalledPackage } from 'n8n-workflow';
+import type { PackageDirectoryLoader } from 'workflow-automation-core';
+import { InstanceSettings } from 'workflow-automation-core';
+import { jsonParse, UnexpectedError, UserError, type PublicInstalledPackage } from 'workflow-automation-workflow';
 import { execFile } from 'node:child_process';
 import { access, constants, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';

@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import omit from 'lodash/omit';
 import {
 	type IExecuteFunctions,
@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type INodeTypeBaseDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	activityFields,

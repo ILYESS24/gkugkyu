@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	IDataObject,
@@ -6,7 +6,7 @@ import type {
 	IPairedItemData,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Make an authenticated API request to Bubble.

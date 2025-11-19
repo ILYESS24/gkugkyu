@@ -1,18 +1,18 @@
-import { useWorkflowsStore } from '@/app/stores/workflows.store';
+﻿import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import {
 	buildAdjacencyList,
 	parseExtractableSubgraphSelection,
 	extractReferencesInNodeExpressions,
 	EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	ExtractableSubgraphData,
 	ExtractableErrorResult,
 	IConnections,
 	INode,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed } from 'vue';
 import { useToast } from './useToast';
 import { useRouter } from 'vue-router';

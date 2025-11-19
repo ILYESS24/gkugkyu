@@ -1,8 +1,8 @@
-import { randomName, mockInstance } from '@n8n/backend-test-utils';
-import type { WorkflowEntity } from '@n8n/db';
-import { generateNanoId, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
+﻿import { randomName, mockInstance } from '@n8n/backend-test-utils';
+import type { WorkflowEntity } from '@workflow-automation/db';
+import { generateNanoId, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
 import { MultiMainSetup } from '@/scaling/multi-main-setup.ee';

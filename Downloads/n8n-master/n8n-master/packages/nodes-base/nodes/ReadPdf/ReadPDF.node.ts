@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeOperationError,
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { extractDataFromPDF } from '@utils/binary';
 

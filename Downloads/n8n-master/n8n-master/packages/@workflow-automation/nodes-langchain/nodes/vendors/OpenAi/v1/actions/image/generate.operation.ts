@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	INodeProperties,
 	IExecuteFunctions,
 	INodeExecutionData,
 	IDataObject,
-} from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../../../transport';
 
@@ -17,11 +17,11 @@ const properties: INodeProperties[] = [
 		description: 'The model to use for image generation',
 		options: [
 			{
-				name: 'DALL·E 2',
+				name: 'DALLÂ·E 2',
 				value: 'dall-e-2',
 			},
 			{
-				name: 'DALL·E 3',
+				name: 'DALLÂ·E 3',
 				value: 'dall-e-3',
 			},
 			{

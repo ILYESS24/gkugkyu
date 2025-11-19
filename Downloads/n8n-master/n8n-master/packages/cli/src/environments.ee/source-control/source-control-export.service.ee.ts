@@ -1,6 +1,6 @@
-import type { SourceControlledFile } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { IWorkflowDb } from '@n8n/db';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { IWorkflowDb } from '@workflow-automation/db';
 import {
 	FolderRepository,
 	ProjectRepository,
@@ -9,14 +9,14 @@ import {
 	TagRepository,
 	WorkflowRepository,
 	WorkflowTagMappingRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In } from '@n8n/typeorm';
 import { rmSync } from 'fs';
-import { Credentials, InstanceSettings } from 'n8n-core';
-import { UnexpectedError, type ICredentialDataDecryptedObject } from 'n8n-workflow';
+import { Credentials, InstanceSettings } from 'workflow-automation-core';
+import { UnexpectedError, type ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
 import { rm as fsRm, writeFile as fsWriteFile } from 'node:fs/promises';
 import path from 'path';
 

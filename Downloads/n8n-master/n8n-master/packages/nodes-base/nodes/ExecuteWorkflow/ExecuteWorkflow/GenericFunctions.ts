@@ -1,12 +1,12 @@
-import { readFile as fsReadFile } from 'fs/promises';
-import { NodeOperationError, jsonParse } from 'n8n-workflow';
+﻿import { readFile as fsReadFile } from 'fs/promises';
+import { NodeOperationError, jsonParse } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	IExecuteWorkflowInfo,
 	ILoadOptionsFunctions,
 	INodeParameterResourceLocator,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function getWorkflowInfo(
 	this: ILoadOptionsFunctions | IExecuteFunctions,

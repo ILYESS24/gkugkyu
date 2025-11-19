@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/unbound-method */
 import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
@@ -6,8 +6,8 @@ import type { BaseDocumentCompressor } from '@langchain/core/retrievers/document
 import type { VectorStore } from '@langchain/core/vectorstores';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { logAiEvent } from '@utils/helpers';
 

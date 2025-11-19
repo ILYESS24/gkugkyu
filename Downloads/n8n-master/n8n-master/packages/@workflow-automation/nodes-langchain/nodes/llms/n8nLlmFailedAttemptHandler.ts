@@ -1,6 +1,6 @@
-import type { FailedAttemptHandler } from '@langchain/core/dist/utils/async_caller';
-import type { ISupplyDataFunctions, JsonObject } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import type { FailedAttemptHandler } from '@langchain/core/dist/utils/async_caller';
+import type { ISupplyDataFunctions, JsonObject } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { n8nDefaultFailedAttemptHandler } from './n8nDefaultFailedAttemptHandler';
 

@@ -1,6 +1,6 @@
-import { SamlAcsDto, SamlPreferences, SamlToggleDto } from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, Post, RestController, GlobalScope, Body } from '@n8n/decorators';
+﻿import { SamlAcsDto, SamlPreferences, SamlToggleDto } from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, Post, RestController, GlobalScope, Body } from '@workflow-automation/decorators';
 import { Response } from 'express';
 import querystring from 'querystring';
 import type { PostBindingContext } from 'samlify/types/src/entity';

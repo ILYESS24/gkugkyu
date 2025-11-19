@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IRunDataDisplayMode, IUpdateInformation, TargetItem } from '@/Interface';
 import type { MainPanelType, NodePanelType } from '../ndv.types';
 import { createEventBus } from '@n8n/utils/event-bus';
-import type { IRunData, NodeConnectionType, Workflow } from 'n8n-workflow';
-import { jsonParse, NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+import type { IRunData, NodeConnectionType, Workflow } from 'workflow-automation-workflow';
+import { jsonParse, NodeConnectionTypes, NodeHelpers } from 'workflow-automation-workflow';
 import { computed, onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue';
 
 import NDVHeader from '../../panel/components/NDVHeader.vue';

@@ -1,5 +1,5 @@
-import { Memoized } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Memoized } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import callsites from 'callsites';
 import glob from 'fast-glob';
 import { mock } from 'jest-mock-extended';
@@ -10,13 +10,13 @@ import type {
 	IWorkflowBase,
 	IWorkflowExecuteAdditionalData,
 	WorkflowTestData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	createDeferredPromise,
 	createRunExecutionData,
 	UnexpectedError,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import nock from 'nock';
 import { readFileSync, mkdtempSync, existsSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';

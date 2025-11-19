@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ITriggerFunctions,
 	INodeType,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 type eventType = 'Instance started' | 'Workflow activated' | 'Workflow updated' | undefined;
 

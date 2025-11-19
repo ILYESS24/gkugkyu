@@ -1,10 +1,10 @@
-import { LicenseState, Logger } from '@n8n/backend-common';
+﻿import { LicenseState, Logger } from '@workflow-automation/backend-common';
 import { createTeamProject, mockLogger, testDb } from '@n8n/backend-test-utils';
-import type { InstanceType } from '@n8n/constants';
-import { Container } from '@n8n/di';
+import type { InstanceType } from '@workflow-automation/constants';
+import { Container } from '@workflow-automation/di';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 
 import { InsightsModule } from '../insights.module';
 

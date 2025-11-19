@@ -1,10 +1,10 @@
-import {
+﻿import {
 	updateDisplayOptions,
 	type IExecuteSingleFunctions,
 	type IN8nHttpFullResponse,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { microsoftSharePointApiRequest } from '../../transport';
 import {

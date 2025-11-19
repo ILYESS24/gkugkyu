@@ -1,7 +1,7 @@
-import { testDb } from '@n8n/backend-test-utils';
-import { type Scope, ScopeRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { Scope as ScopeType } from '@n8n/permissions';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import { type Scope, ScopeRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { Scope as ScopeType } from '@workflow-automation/permissions';
 
 import { createScope, createScopes, createTestScopes } from '../../shared/db/roles';
 

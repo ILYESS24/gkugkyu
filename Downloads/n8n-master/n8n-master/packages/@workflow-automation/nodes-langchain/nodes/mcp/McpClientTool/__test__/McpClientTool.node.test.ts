@@ -1,4 +1,4 @@
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+﻿import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
 import { McpError, ErrorCode, CallToolResultSchema } from '@modelcontextprotocol/sdk/types.js';
 import { mock, mockDeep } from 'jest-mock-extended';
@@ -9,7 +9,7 @@ import {
 	type ILoadOptionsFunctions,
 	type INode,
 	type ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getTools } from '../loadOptions';
 import { McpClientTool } from '../McpClientTool.node';

@@ -1,9 +1,9 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { MessageContent } from '@langchain/core/messages';
 import { OutputParserException, StructuredOutputParser } from '@langchain/core/output_parsers';
 import { ChatPromptTemplate } from '@langchain/core/prompts';
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { GuardrailError, type GuardrailResult, type LLMConfig } from '../actions/types';

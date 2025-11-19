@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import { DateTime } from 'luxon';
 import { simpleParser } from 'mailparser';
 import type {
@@ -13,8 +13,8 @@ import type {
 	IPollFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 import MailComposer from 'nodemailer/lib/mail-composer';
 
 import type { IEmail } from '../../../utils/sendAndWait/interfaces';

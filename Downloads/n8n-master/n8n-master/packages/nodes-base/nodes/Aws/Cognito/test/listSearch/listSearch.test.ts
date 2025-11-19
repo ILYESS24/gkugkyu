@@ -1,8 +1,8 @@
-import {
+﻿import {
 	ApplicationError,
 	type ILoadOptionsFunctions,
 	type INodeListSearchResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IUserPool } from '../../helpers/interfaces';
 import {

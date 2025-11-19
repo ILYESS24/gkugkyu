@@ -1,10 +1,10 @@
-import { DateTime, Duration, Interval } from 'luxon';
+﻿import { DateTime, Duration, Interval } from 'luxon';
 import {
 	type IBinaryData,
 	setGlobalState,
 	type CodeExecutionMode,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import fs from 'node:fs';
 import { builtinModules } from 'node:module';
 

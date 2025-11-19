@@ -1,14 +1,14 @@
-import type {
+﻿import type {
 	InsightsByTime,
 	InsightsByWorkflow,
 	InsightsSummary,
 	RestrictedInsightsByTime,
-} from '@n8n/api-types';
-import { InsightsDateFilterDto, ListInsightsWorkflowQueryDto } from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, GlobalScope, Licensed, Query, RestController } from '@n8n/decorators';
+} from '@workflow-automation/api-types';
+import { InsightsDateFilterDto, ListInsightsWorkflowQueryDto } from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, GlobalScope, Licensed, Query, RestController } from '@workflow-automation/decorators';
 import { DateTime } from 'luxon';
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

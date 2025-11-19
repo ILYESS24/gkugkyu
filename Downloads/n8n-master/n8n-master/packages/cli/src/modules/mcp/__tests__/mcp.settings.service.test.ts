@@ -1,4 +1,4 @@
-import type { Settings, SettingsRepository } from '@n8n/db';
+﻿import type { Settings, SettingsRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import type { CacheService } from '@/services/cache/cache.service';

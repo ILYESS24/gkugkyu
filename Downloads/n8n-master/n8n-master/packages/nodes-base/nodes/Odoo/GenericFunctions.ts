@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	JsonObject,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, randomInt } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, randomInt } from 'workflow-automation-workflow';
 
 const serviceJSONRPC = 'object';
 const methodJSONRPC = 'execute';

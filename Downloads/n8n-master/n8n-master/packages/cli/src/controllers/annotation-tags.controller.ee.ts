@@ -1,4 +1,4 @@
-import { Delete, Get, Patch, Post, RestController, GlobalScope } from '@n8n/decorators';
+﻿import { Delete, Get, Patch, Post, RestController, GlobalScope } from '@workflow-automation/decorators';
 
 import { AnnotationTagsRequest } from '@/requests';
 import { AnnotationTagService } from '@/services/annotation-tag.service.ee';

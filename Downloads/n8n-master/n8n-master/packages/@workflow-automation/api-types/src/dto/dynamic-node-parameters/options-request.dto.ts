@@ -1,4 +1,4 @@
-import type { ILoadOptions } from 'n8n-workflow';
+﻿import type { ILoadOptions } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { BaseDynamicParametersRequestDto } from './base-dynamic-parameters-request.dto';

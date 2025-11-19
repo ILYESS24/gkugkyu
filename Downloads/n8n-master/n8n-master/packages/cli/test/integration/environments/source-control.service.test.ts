@@ -1,4 +1,4 @@
-import type { SourceControlledFile } from '@n8n/api-types';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
 import { createTeamProject, createWorkflow, testDb } from '@n8n/backend-test-utils';
 import {
 	CredentialsEntity,
@@ -10,15 +10,15 @@ import {
 	type TagEntity,
 	type User,
 	WorkflowEntity,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { createCredentials } from '@test-integration/db/credentials';
 import { createFolder } from '@test-integration/db/folders';
 import { assignTagToWorkflow, createTag, updateTag } from '@test-integration/db/tags';
 import { createUser } from '@test-integration/db/users';
 import * as fastGlob from 'fast-glob';
 import { mock } from 'jest-mock-extended';
-import { Cipher } from 'n8n-core';
+import { Cipher } from 'workflow-automation-core';
 import fsp from 'node:fs/promises';
 import { basename, isAbsolute } from 'node:path';
 
@@ -338,7 +338,7 @@ describe('SourceControlService', () => {
 				),
 				await createCredentials(
 					{
-						name: `${project.name}-CredB‚`,
+						name: `${project.name}-CredBâ€š`,
 						data: cipher.encrypt({}),
 						type: '',
 					},
@@ -571,7 +571,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'deleted',
 					);
 
-					// The created workflows‚
+					// The created workflowsâ€š
 					expect(new Set(deletedWorkflows.map((wf) => wf.id))).toEqual(
 						new Set([deletedOutOfScopeWorkflow.id, deletedInScopeWorkflow.id]),
 					);
@@ -580,7 +580,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'created',
 					);
 
-					// The created workflows‚
+					// The created workflowsâ€š
 					expect(new Set(newWorkflows.map((wf) => wf.id))).toEqual(
 						new Set([
 							globalAdminScope.workflows[1].id,
@@ -596,7 +596,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'modified',
 					);
 
-					// The modified workflows‚
+					// The modified workflowsâ€š
 					expect(new Set(modifiedWorkflows.map((wf) => wf.id))).toEqual(
 						new Set([movedOutOfScopeWorkflow.id, movedIntoScopeWorkflow.id]),
 					);
@@ -716,7 +716,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'deleted',
 					);
 
-					// The created workflows‚
+					// The created workflowsâ€š
 					expect(new Set(deletedWorkflows.map((wf) => wf.id))).toEqual(
 						new Set([deletedInScopeWorkflow.id]),
 					);
@@ -725,7 +725,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'created',
 					);
 
-					// The created workflows‚
+					// The created workflowsâ€š
 					expect(new Set(newWorkflows.map((wf) => wf.id))).toEqual(
 						new Set([projectAScope.workflows[1].id, movedIntoScopeWorkflow.id]),
 					);
@@ -734,7 +734,7 @@ describe('SourceControlService', () => {
 						(r) => r.type === 'workflow' && r.status === 'modified',
 					);
 
-					// No modified workflows‚
+					// No modified workflowsâ€š
 					expect(modifiedWorkflows).toBeEmptyArray();
 				});
 

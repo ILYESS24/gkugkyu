@@ -1,4 +1,4 @@
-import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, NodeOperationError } from 'n8n-workflow';
+﻿import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	DataTableFilter,
 	DataTableRowReturn,
@@ -7,7 +7,7 @@ import type {
 	IExecuteFunctions,
 	INodeProperties,
 	DataTableColumnType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ALL_CONDITIONS, ANY_CONDITION, ROWS_LIMIT_DEFAULT, type FilterType } from './constants';
 import { DATA_TABLE_ID_FIELD } from './fields';

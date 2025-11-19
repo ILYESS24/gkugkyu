@@ -1,4 +1,4 @@
-import type { SourceControlledFile } from '@n8n/api-types';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
 import {
 	createTeamProject,
 	getPersonalProject,
@@ -19,19 +19,19 @@ import {
 	type WorkflowEntity,
 	WorkflowRepository,
 	WorkflowTagMappingRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	FolderRepository,
 	ProjectRepository,
 	SharedCredentialsRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import * as fastGlob from 'fast-glob';
 import { mock } from 'jest-mock-extended';
-import { Cipher } from 'n8n-core';
-import type { InstanceSettings } from 'n8n-core';
-import * as utils from 'n8n-workflow';
+import { Cipher } from 'workflow-automation-core';
+import type { InstanceSettings } from 'workflow-automation-core';
+import * as utils from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 import fsp from 'node:fs/promises';
 

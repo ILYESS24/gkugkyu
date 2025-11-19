@@ -1,7 +1,7 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { mock, mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INodeExecutionData, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import * as ProcessActions from '../actions/process';
 import { Guardrails } from '../Guardrails.node';

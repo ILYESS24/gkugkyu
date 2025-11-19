@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IAuthenticateGeneric,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 	Icon,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class VirusTotalApi implements ICredentialType {
 	name = 'virusTotalApi';

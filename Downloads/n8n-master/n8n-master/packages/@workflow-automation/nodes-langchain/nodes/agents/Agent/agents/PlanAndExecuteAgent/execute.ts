@@ -1,4 +1,4 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { PlanAndExecuteAgentExecutor } from 'langchain/experimental/plan_and_execute';
 import {
@@ -6,7 +6,7 @@ import {
 	type INodeExecutionData,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectedTools, getPromptInputByType } from '@utils/helpers';
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
@@ -69,7 +69,7 @@ export async function planAndExecuteAgentExecute(
 			}
 
 			if (input === undefined) {
-				throw new NodeOperationError(this.getNode(), 'The ‘text‘ parameter is empty.');
+				throw new NodeOperationError(this.getNode(), 'The â€˜textâ€˜ parameter is empty.');
 			}
 
 			if (prompt) {

@@ -1,8 +1,8 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import type { IBinaryData } from 'n8n-workflow';
-import { jsonParse, base64DecodeUTF8 } from 'n8n-workflow';
+import type { IBinaryData } from 'workflow-automation-workflow';
+import { jsonParse, base64DecodeUTF8 } from 'workflow-automation-workflow';
 import VueJsonPretty from 'vue-json-pretty';
 import RunDataHtml from './RunDataHtml.vue';
 import { useI18n } from '@n8n/i18n';

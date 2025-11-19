@@ -1,6 +1,6 @@
-import type { MockProxy } from 'jest-mock-extended';
+﻿import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IBinaryData, IExecuteSingleFunctions } from 'n8n-workflow';
+import type { IBinaryData, IExecuteSingleFunctions } from 'workflow-automation-workflow';
 
 import { downloadFilePostReceive } from '../../helpers/utils';
 

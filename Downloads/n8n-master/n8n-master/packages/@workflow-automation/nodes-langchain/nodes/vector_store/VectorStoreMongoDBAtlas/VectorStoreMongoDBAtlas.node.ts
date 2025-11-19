@@ -1,4 +1,4 @@
-import type { EmbeddingsInterface } from '@langchain/core/embeddings';
+﻿import type { EmbeddingsInterface } from '@langchain/core/embeddings';
 import { MongoDBAtlasVectorSearch, type MongoDBAtlasVectorSearchLibArgs } from '@langchain/mongodb';
 import { MongoClient } from 'mongodb';
 import {
@@ -8,7 +8,7 @@ import {
 	type INodeProperties,
 	type IExecuteFunctions,
 	type ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { metadataFilterField } from '@utils/sharedFields';
 
 import { createVectorStoreNode } from '../shared/createVectorStoreNode/createVectorStoreNode';

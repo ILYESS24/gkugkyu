@@ -1,4 +1,4 @@
-import { ApplicationError } from '@n8n/errors';
+﻿import { ApplicationError } from '@n8n/errors';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -7,7 +7,7 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function mailCheckApiRequest(
 	this: IWebhookFunctions | IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

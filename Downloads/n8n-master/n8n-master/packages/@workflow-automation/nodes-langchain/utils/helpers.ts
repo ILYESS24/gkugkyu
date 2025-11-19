@@ -1,18 +1,18 @@
-import type { BaseChatMessageHistory } from '@langchain/core/chat_history';
+﻿import type { BaseChatMessageHistory } from '@langchain/core/chat_history';
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { BaseLLM } from '@langchain/core/language_models/llms';
 import type { BaseMessage } from '@langchain/core/messages';
 import type { Tool } from '@langchain/core/tools';
 import { Toolkit } from 'langchain/agents';
 import type { BaseChatMemory } from 'langchain/memory';
-import { NodeConnectionTypes, NodeOperationError, jsonStringify } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError, jsonStringify } from 'workflow-automation-workflow';
 import type {
 	AiEvent,
 	IDataObject,
 	IExecuteFunctions,
 	ISupplyDataFunctions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { N8nTool } from './N8nTool';
 

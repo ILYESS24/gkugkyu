@@ -1,5 +1,5 @@
-import type { DatabaseConfig } from '@n8n/config';
-import { sql } from '@n8n/db';
+﻿import type { DatabaseConfig } from '@workflow-automation/config';
+import { sql } from '@workflow-automation/db';
 import { DateTime } from 'luxon';
 
 /**

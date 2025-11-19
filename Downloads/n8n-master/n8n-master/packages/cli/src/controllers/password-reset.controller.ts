@@ -1,12 +1,12 @@
-import {
+﻿import {
 	ChangePasswordRequestDto,
 	ForgotPasswordRequestDto,
 	ResolvePasswordTokenQueryDto,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { GLOBAL_OWNER_ROLE, UserRepository } from '@n8n/db';
-import { Body, Get, Post, Query, RestController } from '@n8n/decorators';
-import { hasGlobalScope } from '@n8n/permissions';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { GLOBAL_OWNER_ROLE, UserRepository } from '@workflow-automation/db';
+import { Body, Get, Post, Query, RestController } from '@workflow-automation/decorators';
+import { hasGlobalScope } from '@workflow-automation/permissions';
 import { Response } from 'express';
 
 import { AuthService } from '@/auth/auth.service';

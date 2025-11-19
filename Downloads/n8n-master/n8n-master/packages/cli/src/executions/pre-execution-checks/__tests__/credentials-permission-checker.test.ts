@@ -1,11 +1,11 @@
-import {
+﻿import {
 	type Project,
 	type User,
 	type SharedCredentialsRepository,
 	GLOBAL_OWNER_ROLE,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 import type { OwnershipService } from '@/services/ownership.service';
 import type { ProjectService } from '@/services/project.service.ee';

@@ -1,11 +1,11 @@
-import { inTest, Logger } from '@n8n/backend-common';
-import { DatabaseConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { Memoized } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { inTest, Logger } from '@workflow-automation/backend-common';
+import { DatabaseConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { Memoized } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { DataSource } from '@n8n/typeorm';
-import { ErrorReporter } from 'n8n-core';
-import { DbConnectionTimeoutError, ensureError, OperationalError } from 'n8n-workflow';
+import { ErrorReporter } from 'workflow-automation-core';
+import { DbConnectionTimeoutError, ensureError, OperationalError } from 'workflow-automation-workflow';
 import { setTimeout as setTimeoutP } from 'timers/promises';
 
 import { DbConnectionOptions } from './db-connection-options';

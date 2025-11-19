@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import CredentialCard from '../components/CredentialCard.vue';
 import EmptySharedSectionActionBox from '@/features/core/folders/components/EmptySharedSectionActionBox.vue';
 import ResourcesListLayout from '@/app/components/layouts/ResourcesListLayout.vue';
@@ -22,10 +22,10 @@ import { useUsersStore } from '@/features/settings/users/users.store';
 import type { Project } from '@/features/collaboration/projects/projects.types';
 import { isCredentialsResource } from '@/app/utils/typeGuards';
 import { useI18n } from '@n8n/i18n';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import pickBy from 'lodash/pickBy';
-import type { ICredentialType, ICredentialsDecrypted } from 'n8n-workflow';
-import { CREDENTIAL_EMPTY_VALUE } from 'n8n-workflow';
+import type { ICredentialType, ICredentialsDecrypted } from 'workflow-automation-workflow';
+import { CREDENTIAL_EMPTY_VALUE } from 'workflow-automation-workflow';
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute, useRouter, type LocationQueryRaw } from 'vue-router';
 import { useCredentialsStore } from '../credentials.store';
@@ -327,7 +327,7 @@ onMounted(() => {
 			<N8nActionBox
 				v-else
 				data-test-id="empty-resources-list"
-				emoji="👋"
+				emoji="ðŸ‘‹"
 				:heading="
 					i18n.baseText(
 						usersStore.currentUser?.firstName

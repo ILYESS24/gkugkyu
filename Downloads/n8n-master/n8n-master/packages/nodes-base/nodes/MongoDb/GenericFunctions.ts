@@ -1,13 +1,13 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import set from 'lodash/set';
 import { MongoClient, ObjectId } from 'mongodb';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	ICredentialDataDecryptedObject,
 	IDataObject,
 	INode,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { createSecureContext } from 'tls';
 
 import type {

@@ -1,21 +1,21 @@
-import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
-import { ExecutionsConfig } from '@n8n/config';
+﻿import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
+import { ExecutionsConfig } from '@workflow-automation/config';
 import type {
 	TestRun,
 	TestCaseExecutionRepository,
 	TestRunRepository,
 	WorkflowRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { mockNodeTypesData } from '@test-integration/utils/node-types-data';
 import { readFileSync } from 'fs';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
+import type { ErrorReporter } from 'workflow-automation-core';
 import {
 	EVALUATION_NODE_TYPE,
 	EVALUATION_TRIGGER_NODE_TYPE,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
-import type { IWorkflowBase, IRun, ExecutionError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import type { IWorkflowBase, IRun, ExecutionError } from 'workflow-automation-workflow';
 import path from 'path';
 
 import { TestRunnerService } from '../test-runner.service.ee';

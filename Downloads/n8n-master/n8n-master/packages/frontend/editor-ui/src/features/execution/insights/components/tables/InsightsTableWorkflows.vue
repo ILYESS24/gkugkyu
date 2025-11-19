@@ -1,4 +1,4 @@
-<script lang="ts" setup="">
+﻿<script lang="ts" setup="">
 import { useI18n } from '@n8n/i18n';
 import { INSIGHTS_UNIT_MAPPING } from '@/features/execution/insights/insights.constants';
 import {
@@ -6,7 +6,7 @@ import {
 	transformInsightsFailureRate,
 	transformInsightsTimeSaved,
 } from '@/features/execution/insights/insights.utils';
-import type { InsightsByWorkflow } from '@n8n/api-types';
+import type { InsightsByWorkflow } from '@workflow-automation/api-types';
 import type { TableHeader } from '@n8n/design-system/components/N8nDataTableServer';
 import { smartDecimal } from '@n8n/utils/number/smartDecimal';
 import { useTelemetry } from '@/app/composables/useTelemetry';

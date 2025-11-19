@@ -1,4 +1,4 @@
-import { Post, RestController, GlobalScope } from '@n8n/decorators';
+﻿import { Post, RestController, GlobalScope } from '@workflow-automation/decorators';
 
 import { License } from '@/license';
 import { WorkerStatusService } from '@/scaling/worker-status.service.ee';

@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { N8nButton, N8nFormInput, N8nHeading, N8nText } from '@n8n/design-system';
 import Modal from '@/app/components/Modal.vue';
 import { createEventBus } from '@n8n/utils/event-bus';
-import { type ChatHubLLMProvider, PROVIDER_CREDENTIAL_TYPE_MAP } from '@n8n/api-types';
+import { type ChatHubLLMProvider, PROVIDER_CREDENTIAL_TYPE_MAP } from '@workflow-automation/api-types';
 import {
 	CHAT_MODEL_BY_ID_SELECTOR_MODAL_KEY,
 	providerDisplayNames,

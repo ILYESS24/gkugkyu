@@ -1,4 +1,4 @@
-import { useNDVStore } from '@/features/ndv/shared/ndv.store';
+﻿import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import {
 	isExpression as isExpressionUtil,
@@ -6,7 +6,7 @@ import {
 } from '@/app/utils/expressions';
 
 import debounce from 'lodash/debounce';
-import { createResultError, createResultOk, type IDataObject, type Result } from 'n8n-workflow';
+import { createResultError, createResultOk, type IDataObject, type Result } from 'workflow-automation-workflow';
 import {
 	computed,
 	onMounted,

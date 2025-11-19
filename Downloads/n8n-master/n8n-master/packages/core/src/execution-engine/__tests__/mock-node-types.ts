@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	EngineResponse,
 	EngineRequest,
 	NodeOutput,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { NodeTypes } from '@test/helpers';
 

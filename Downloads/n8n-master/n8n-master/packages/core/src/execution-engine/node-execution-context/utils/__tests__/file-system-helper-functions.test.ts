@@ -1,5 +1,5 @@
-import { Container } from '@n8n/di';
-import type { INode } from 'n8n-workflow';
+﻿import { Container } from '@workflow-automation/di';
+import type { INode } from 'workflow-automation-workflow';
 import { createReadStream } from 'node:fs';
 import { access as fsAccess, realpath as fsRealpath } from 'node:fs/promises';
 import { join } from 'node:path';

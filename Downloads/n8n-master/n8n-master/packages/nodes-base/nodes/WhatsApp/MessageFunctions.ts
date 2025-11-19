@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import type {
 	IDataObject,
 	IExecuteSingleFunctions,
@@ -6,8 +6,8 @@ import type {
 	IN8nHttpFullResponse,
 	INodeExecutionData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { getUploadFormData } from './MediaFunctions';
 
@@ -198,7 +198,7 @@ export async function sendErrorPostReceive(
 			{
 				message: 'Sending failed',
 				description:
-					'If you’re sending to a new test number, try sending a message to it from within the Meta developer portal first.',
+					'If youâ€™re sending to a new test number, try sending a message to it from within the Meta developer portal first.',
 				httpCode: '500',
 			},
 		);

@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	FieldType,
 	IDataObject,
 	ILoadOptionsFunctions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	loadAlertStatus,

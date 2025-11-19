@@ -1,6 +1,6 @@
-import FormData from 'form-data';
-import type { INodeProperties, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+﻿import FormData from 'form-data';
+import type { INodeProperties, IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { getBinaryDataFile } from '../../../helpers/binary-data';
 import { apiRequest } from '../../../transport';

@@ -1,11 +1,11 @@
-import { SearxngSearch } from '@langchain/community/tools/searxng_search';
+﻿import { SearxngSearch } from '@langchain/community/tools/searxng_search';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolSearXng } from './ToolSearXng.node';
 

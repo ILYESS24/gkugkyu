@@ -1,5 +1,5 @@
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, RestController } from '@n8n/decorators';
+﻿import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, RestController } from '@workflow-automation/decorators';
 import express from 'express';
 
 import { CtaService } from '@/services/cta.service';

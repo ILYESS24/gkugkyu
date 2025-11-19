@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type INodeExecutionData,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type IHttpRequestMethods,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { isoCountryCodes } from '@utils/ISOCountryCodes';
 

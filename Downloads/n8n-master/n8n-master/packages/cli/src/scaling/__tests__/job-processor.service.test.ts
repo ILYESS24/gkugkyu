@@ -1,9 +1,9 @@
-import type { Logger } from '@n8n/backend-common';
-import type { ExecutionsConfig } from '@n8n/config';
-import type { IExecutionResponse, ExecutionRepository, Project } from '@n8n/db';
+﻿import type { Logger } from '@workflow-automation/backend-common';
+import type { ExecutionsConfig } from '@workflow-automation/config';
+import type { IExecutionResponse, ExecutionRepository, Project } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { WorkflowExecute as ActualWorkflowExecute } from 'n8n-core';
-import { ExternalSecretsProxy } from 'n8n-core';
+import type { WorkflowExecute as ActualWorkflowExecute } from 'workflow-automation-core';
+import { ExternalSecretsProxy } from 'workflow-automation-core';
 import { mockInstance } from 'n8n-core/test/utils';
 import {
 	type IPinData,
@@ -13,7 +13,7 @@ import {
 	type IRunExecutionData,
 	type WorkflowExecuteMode,
 	type ExecutionError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { JobProcessor } from '../job-processor';
 import type { Job } from '../scaling.types';

@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import set from 'lodash/set';
 import type { Ref } from 'vue';
 import {
@@ -8,7 +8,7 @@ import {
 	type NodeParameterValue,
 	NodeHelpers,
 	deepCopy,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';

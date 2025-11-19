@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import type { IncludeMods, SetField, SetNodeOptions } from './helpers/interfaces';
 import { INCLUDE } from './helpers/interfaces';
@@ -114,12 +114,12 @@ const versionDescription: INodeTypeDescription = {
 				{
 					name: 'Selected Input Fields',
 					value: INCLUDE.SELECTED,
-					description: 'Also include the fields listed in the parameter “Fields to Include”',
+					description: 'Also include the fields listed in the parameter â€œFields to Includeâ€',
 				},
 				{
 					name: 'All Input Fields Except',
 					value: INCLUDE.EXCEPT,
-					description: 'Exclude the fields listed in the parameter “Fields to Exclude”',
+					description: 'Exclude the fields listed in the parameter â€œFields to Excludeâ€',
 				},
 			],
 		},
@@ -157,12 +157,12 @@ const versionDescription: INodeTypeDescription = {
 				{
 					name: 'Selected',
 					value: INCLUDE.SELECTED,
-					description: 'Also include the fields listed in the parameter “Fields to Include”',
+					description: 'Also include the fields listed in the parameter â€œFields to Includeâ€',
 				},
 				{
 					name: 'All Except',
 					value: INCLUDE.EXCEPT,
-					description: 'Exclude the fields listed in the parameter “Fields to Exclude”',
+					description: 'Exclude the fields listed in the parameter â€œFields to Excludeâ€',
 				},
 			],
 		},

@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, IDataObject } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, IDataObject } from 'workflow-automation-workflow';
 
 import { theHiveApiRequest } from './requestApi';
 import type { QueryScope } from '../helpers/interfaces';

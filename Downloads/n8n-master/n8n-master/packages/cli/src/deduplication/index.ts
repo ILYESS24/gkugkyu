@@ -1,4 +1,4 @@
-import { type IDataDeduplicator } from 'n8n-workflow';
+﻿import { type IDataDeduplicator } from 'workflow-automation-workflow';
 
 import { DeduplicationHelper } from './deduplication-helper';
 

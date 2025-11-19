@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import { VectorStoreQATool } from 'langchain/tools';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INode,
 	type INodeExecutionData,
 	type ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolVectorStore } from './ToolVectorStore.node';
 

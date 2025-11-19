@@ -1,4 +1,4 @@
-import {
+﻿import {
 	BINARY_ENCODING,
 	NodeConnectionTypes,
 	type ICredentialDataDecryptedObject,
@@ -10,7 +10,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IExpenseDocument } from './GenericFunctions';
 import { awsApiRequestREST, simplify, validateCredentials } from './GenericFunctions';

@@ -1,4 +1,4 @@
-import { camelCase, capitalCase, snakeCase } from 'change-case';
+﻿import { camelCase, capitalCase, snakeCase } from 'change-case';
 import set from 'lodash/set';
 import moment from 'moment-timezone';
 import type {
@@ -17,8 +17,8 @@ import type {
 	IPollFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 import { validate as uuidValidate } from 'uuid';
 
 import { blockUrlExtractionRegexp, databasePageUrlValidationRegexp } from './constants';

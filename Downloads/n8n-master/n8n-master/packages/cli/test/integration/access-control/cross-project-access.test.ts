@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	linkUserToProject,
 	randomCredentialPayload,
@@ -6,7 +6,7 @@ import {
 	mockInstance,
 	testDb,
 } from '@n8n/backend-test-utils';
-import type { Project, User, Role } from '@n8n/db';
+import type { Project, User, Role } from '@workflow-automation/db';
 
 import { UserManagementMailer } from '@/user-management/email';
 

@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { NoRestrictedImportsRule } from './no-restricted-imports.js';
 
@@ -7,7 +7,7 @@ const ruleTester = new RuleTester();
 ruleTester.run('no-restricted-imports', NoRestrictedImportsRule, {
 	valid: [
 		{
-			code: 'import { WorkflowExecuteMode } from "n8n-workflow";',
+			code: 'import { WorkflowExecuteMode } from "workflow-automation-workflow";',
 		},
 		{
 			code: 'import _ from "lodash";',
@@ -128,7 +128,7 @@ ruleTester.run('no-restricted-imports', NoRestrictedImportsRule, {
 			code: `
 import fs from "fs";
 import path from "path";
-import { WorkflowExecuteMode } from "n8n-workflow";`,
+import { WorkflowExecuteMode } from "workflow-automation-workflow";`,
 			errors: [
 				{ messageId: 'restrictedImport', data: { modulePath: 'fs' } },
 				{ messageId: 'restrictedImport', data: { modulePath: 'path' } },

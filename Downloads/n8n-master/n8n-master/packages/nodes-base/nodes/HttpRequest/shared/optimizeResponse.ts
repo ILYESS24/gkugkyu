@@ -1,4 +1,4 @@
-import { Readability } from '@mozilla/readability';
+﻿import { Readability } from '@mozilla/readability';
 import * as cheerio from 'cheerio';
 import { convert } from 'html-to-text';
 import { JSDOM } from 'jsdom';
@@ -11,7 +11,7 @@ import {
 	NodeOperationError,
 	type IDataObject,
 	type IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 type ResponseOptimizerFn = (
 	x: IDataObject | IDataObject[] | string,

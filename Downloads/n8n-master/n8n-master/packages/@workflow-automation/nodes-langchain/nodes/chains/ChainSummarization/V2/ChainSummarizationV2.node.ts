@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	INodeTypeBaseDescription,
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -6,8 +6,8 @@ import type {
 	INodeTypeDescription,
 	IDataObject,
 	INodeInputConfiguration,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, sleep } from 'workflow-automation-workflow';
 
 import { getBatchingOptionFields, getTemplateNoticeField } from '@utils/sharedFields';
 
@@ -153,7 +153,7 @@ export class ChainSummarizationV2 implements INodeType {
 							type: 'string',
 							default: 'data',
 							description:
-								'The name of the field in the agent or chain’s input that contains the binary file to be processed',
+								'The name of the field in the agent or chainâ€™s input that contains the binary file to be processed',
 							displayOptions: {
 								show: {
 									'/operationMode': ['nodeInputBinary'],

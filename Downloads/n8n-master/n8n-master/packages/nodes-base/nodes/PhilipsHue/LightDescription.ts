@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const lightOperations: INodeProperties[] = [
 	{
@@ -183,7 +183,7 @@ export const lightFields: INodeProperties[] = [
 					},
 				],
 				default: '',
-				description: 'The alert effect, is a temporary change to the bulb’s state',
+				description: 'The alert effect, is a temporary change to the bulbâ€™s state',
 			},
 			{
 				displayName: 'Brightness',
@@ -321,7 +321,7 @@ export const lightFields: INodeProperties[] = [
 				},
 				default: 4,
 				description:
-					'The duration in seconds of the transition from the light’s current state to the new state',
+					'The duration in seconds of the transition from the lightâ€™s current state to the new state',
 			},
 		],
 	},

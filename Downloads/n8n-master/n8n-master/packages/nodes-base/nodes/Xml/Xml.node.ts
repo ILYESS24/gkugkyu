@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, deepCopy } from 'workflow-automation-workflow';
 import { Builder, Parser } from 'xml2js';
 
 export class Xml implements INodeType {

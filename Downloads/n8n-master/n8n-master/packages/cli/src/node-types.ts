@@ -1,11 +1,11 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import type { NeededNodeType } from '@n8n/task-runner';
 import type { Dirent } from 'fs';
 import { readdir } from 'fs/promises';
-import { RoutingNode } from 'n8n-core';
-import type { ExecuteContext } from 'n8n-core';
-import type { INodeType, INodeTypeDescription, INodeTypes, IVersionedNodeType } from 'n8n-workflow';
-import { NodeHelpers, UnexpectedError, UserError } from 'n8n-workflow';
+import { RoutingNode } from 'workflow-automation-core';
+import type { ExecuteContext } from 'workflow-automation-core';
+import type { INodeType, INodeTypeDescription, INodeTypes, IVersionedNodeType } from 'workflow-automation-workflow';
+import { NodeHelpers, UnexpectedError, UserError } from 'workflow-automation-workflow';
 import { join, dirname } from 'path';
 
 import { LoadNodesAndCredentials } from './load-nodes-and-credentials';

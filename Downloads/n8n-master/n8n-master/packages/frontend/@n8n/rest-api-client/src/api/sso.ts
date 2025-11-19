@@ -1,4 +1,4 @@
-import type { OidcConfigDto, SamlPreferences, SamlToggleDto } from '@n8n/api-types';
+﻿import type { OidcConfigDto, SamlPreferences, SamlToggleDto } from '@workflow-automation/api-types';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

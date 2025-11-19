@@ -1,9 +1,9 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	NodeApiError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import * as assistant from './assistant';
 import * as audio from './audio';

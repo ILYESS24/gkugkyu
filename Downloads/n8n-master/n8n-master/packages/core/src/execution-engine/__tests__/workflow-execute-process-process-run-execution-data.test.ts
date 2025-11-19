@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	IDataObject,
 	IWorkflowExecuteAdditionalData,
@@ -7,8 +7,8 @@ import type {
 	IExecuteFunctions,
 	IPairedItemData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, createRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeConnectionTypes, createRunExecutionData } from 'workflow-automation-workflow';
 
 import { NodeTypes } from '@test/helpers';
 
@@ -698,7 +698,7 @@ describe('processRunExecutionData', () => {
 
 	describe('pairedItem sourceOverwrite handling', () => {
 		test('preserves sourceOverwrite for tools to enable expression resolution', async () => {
-			// Test: DataNode → AgentNode → ToolNode where ToolNode accesses DataNode via expressions
+			// Test: DataNode â†’ AgentNode â†’ ToolNode where ToolNode accesses DataNode via expressions
 			const dataNodeOutput = { field: 'testValue', nested: { value: 42 } };
 			const dataNode = createNodeData({ name: 'DataNode', type: types.passThrough });
 
@@ -815,7 +815,7 @@ describe('processRunExecutionData', () => {
 		});
 
 		test('sourceOverwrite works correctly in loop scenarios', async () => {
-			// Test: TriggerNode → LoopNode → DataNode → IFNode
+			// Test: TriggerNode â†’ LoopNode â†’ DataNode â†’ IFNode
 			// IFNode evaluates $('DataNode').item.json.email
 			const triggerData = { email: 'test@example.com', name: 'Test User' };
 			const triggerNode = createNodeData({ name: 'TriggerNode', type: types.passThrough });

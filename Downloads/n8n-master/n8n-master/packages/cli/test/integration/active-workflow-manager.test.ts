@@ -1,18 +1,18 @@
-import { createWorkflowWithHistory, testDb, mockInstance } from '@n8n/backend-test-utils';
-import type { Project, WebhookEntity } from '@n8n/db';
-import { WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createWorkflowWithHistory, testDb, mockInstance } from '@n8n/backend-test-utils';
+import type { Project, WebhookEntity } from '@workflow-automation/db';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings, ExternalSecretsProxy } from 'n8n-core';
+import { InstanceSettings, ExternalSecretsProxy } from 'workflow-automation-core';
 import { FormTrigger } from 'n8n-nodes-base/nodes/Form/FormTrigger.node';
 import { ScheduleTrigger } from 'n8n-nodes-base/nodes/Schedule/ScheduleTrigger.node';
-import { NodeApiError, Workflow } from 'n8n-workflow';
+import { NodeApiError, Workflow } from 'workflow-automation-workflow';
 import type {
 	IWebhookData,
 	IWorkflowBase,
 	WorkflowActivateMode,
 	INodeTypeData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createOwner } from './shared/db/users';
 import * as utils from './shared/utils/';

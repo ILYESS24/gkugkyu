@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { SettingsRepository } from '@n8n/db';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Service } from '@n8n/di';
-import { Cipher, type IExternalSecretsManager } from 'n8n-core';
-import { jsonParse, type IDataObject, ensureError, UnexpectedError } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { SettingsRepository } from '@workflow-automation/db';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
+import { Cipher, type IExternalSecretsManager } from 'workflow-automation-core';
+import { jsonParse, type IDataObject, ensureError, UnexpectedError } from 'workflow-automation-workflow';
 
 import {
 	EXTERNAL_SECRETS_DB_KEY,

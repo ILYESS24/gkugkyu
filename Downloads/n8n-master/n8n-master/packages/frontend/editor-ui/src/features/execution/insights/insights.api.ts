@@ -1,4 +1,4 @@
-import { makeRestApiRequest } from '@n8n/rest-api-client';
+﻿import { makeRestApiRequest } from '@n8n/rest-api-client';
 import type { IRestApiContext } from '@n8n/rest-api-client';
 import type {
 	InsightsSummary,
@@ -6,7 +6,7 @@ import type {
 	InsightsByWorkflow,
 	ListInsightsWorkflowQueryDto,
 	InsightsDateFilterDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 
 type SerializedDateFilter<T> = Omit<T, 'startDate' | 'endDate'> & {
 	startDate?: string;

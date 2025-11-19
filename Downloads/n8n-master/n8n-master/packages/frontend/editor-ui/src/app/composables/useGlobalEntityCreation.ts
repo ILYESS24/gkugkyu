@@ -1,4 +1,4 @@
-import { computed, ref } from 'vue';
+﻿import { computed, ref } from 'vue';
 import { VIEWS } from '@/app/constants';
 import { useRouter } from 'vue-router';
 import { useI18n } from '@n8n/i18n';
@@ -8,9 +8,9 @@ import { useProjectsStore } from '@/features/collaboration/projects/projects.sto
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useCloudPlanStore } from '@/app/stores/cloudPlan.store';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
-import type { Scope } from '@n8n/permissions';
+import type { Scope } from '@workflow-automation/permissions';
 import type { RouteLocationRaw } from 'vue-router';
 import { updatedIconSet, type IconName } from '@n8n/design-system/components/N8nIcon/icons';
 

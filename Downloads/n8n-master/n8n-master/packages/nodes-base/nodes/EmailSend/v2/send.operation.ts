@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { createUtmCampaignLink, updateDisplayOptions } from '@utils/utilities';
 
@@ -119,7 +119,7 @@ const properties: INodeProperties[] = [
 			{
 				...appendAttributionOption,
 				description:
-					'Whether to include the phrase “This email was sent automatically with n8n” to the end of the email',
+					'Whether to include the phrase â€œThis email was sent automatically with n8nâ€ to the end of the email',
 			},
 			{
 				displayName: 'Attachments',

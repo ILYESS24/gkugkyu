@@ -1,4 +1,4 @@
-import type { NodeExecutionHint } from 'n8n-workflow';
+﻿import type { NodeExecutionHint } from 'workflow-automation-workflow';
 
 export class FieldsTracker {
 	fields: { [key: string]: boolean } = {};

@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import type { BaseMessage } from '@langchain/core/messages';
 import {
 	NodeConnectionTypes,
@@ -7,7 +7,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 function simplifyMessages(messages: BaseMessage[]) {
 	const chunkedMessages = [];

@@ -1,12 +1,12 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
 	INodeListSearchItems,
 	INodePropertyOptions,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 // tslint:disable-next-line:no-any
 export function simplify(responseData: any | [any]) {

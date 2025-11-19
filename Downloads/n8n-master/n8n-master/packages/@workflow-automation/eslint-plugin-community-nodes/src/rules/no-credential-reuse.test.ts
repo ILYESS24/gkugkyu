@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 import { vi } from 'vitest';
 
 import { NoCredentialReuseRule } from './no-credential-reuse.js';
@@ -42,7 +42,7 @@ function createNodeCode(
 		credentials.length > 0 ? `credentials: [\n\t\t\t${credentialsArray}\n\t\t],` : '';
 
 	return `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -81,7 +81,7 @@ function createExpectedNodeCode(
 		credentials.length > 0 ? `credentials: [\n\t\t\t${credentialsArray}\n\t\t],` : '';
 
 	return `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -226,7 +226,7 @@ ruleTester.run('no-credential-reuse', NoCredentialReuseRule, {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'myApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -252,7 +252,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'anotherApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -284,7 +284,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'myApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -310,7 +310,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'anotherApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -352,7 +352,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'myApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -380,7 +380,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'anotherApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -414,7 +414,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'myApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {
@@ -442,7 +442,7 @@ export class TestNode implements INodeType {
 							messageId: 'useAvailable',
 							data: { suggestedName: 'anotherApiCredential' },
 							output: `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {

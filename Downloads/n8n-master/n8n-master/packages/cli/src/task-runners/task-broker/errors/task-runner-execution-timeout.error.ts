@@ -1,5 +1,5 @@
-import type { TaskRunnerMode } from '@n8n/config';
-import { OperationalError } from 'n8n-workflow';
+﻿import type { TaskRunnerMode } from '@workflow-automation/config';
+import { OperationalError } from 'workflow-automation-workflow';
 
 export class TaskRunnerExecutionTimeoutError extends OperationalError {
 	description: string;

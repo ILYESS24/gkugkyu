@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 
 import { Body, Query, Param } from '../args';
 import { ControllerRegistryMetadata } from '../controller-registry-metadata';

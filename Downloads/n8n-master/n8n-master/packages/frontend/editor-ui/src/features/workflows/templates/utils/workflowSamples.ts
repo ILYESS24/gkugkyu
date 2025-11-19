@@ -1,4 +1,4 @@
-import { ApplicationError, type INodeTypeNameVersion } from 'n8n-workflow';
+﻿import { ApplicationError, type INodeTypeNameVersion } from 'workflow-automation-workflow';
 import type { WorkflowDataWithTemplateId } from '@/Interface';
 import { isWorkflowDataWithTemplateId } from './typeGuards';
 /* eslint-disable import-x/extensions */
@@ -150,7 +150,7 @@ export const getTutorialTemplates = (): SampleTemplate[] => {
 		{
 			name: 'Build your first AI agent',
 			description:
-				'This template launches your very first AI Agent —an AI-powered chatbot that can do more than just talk— it can take action using tools.',
+				'This template launches your very first AI Agent â€”an AI-powered chatbot that can do more than just talkâ€” it can take action using tools.',
 			template: getWorkflowJson(buildYourFirstAiAgentJson),
 			nodes: [],
 		},

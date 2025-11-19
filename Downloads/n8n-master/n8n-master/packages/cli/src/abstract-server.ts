@@ -1,8 +1,8 @@
-import { inTest, inDevelopment, Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { DbConnection } from '@n8n/db';
-import { OnShutdown } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import { inTest, inDevelopment, Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { DbConnection } from '@workflow-automation/db';
+import { OnShutdown } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import compression from 'compression';
 import express from 'express';
 import { engine as expressHandlebars } from 'express-handlebars';

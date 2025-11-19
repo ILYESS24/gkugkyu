@@ -1,4 +1,4 @@
-import type { LicenseState } from '@n8n/backend-common';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
 import { mock } from 'jest-mock-extended';
 
 import { InsightsSettings } from '../insights.settings';

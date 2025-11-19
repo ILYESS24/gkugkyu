@@ -1,4 +1,4 @@
-import type { INodeTypeDescription } from 'n8n-workflow';
+﻿import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 export type CommunityNodeType = {
 	authorGithubUrl: string;

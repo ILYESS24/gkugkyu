@@ -1,5 +1,5 @@
-import { testDb } from '@n8n/backend-test-utils';
-import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, type User } from '@n8n/db';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, type User } from '@workflow-automation/db';
 import nock from 'nock';
 
 import { createUserShell } from './shared/db/users';

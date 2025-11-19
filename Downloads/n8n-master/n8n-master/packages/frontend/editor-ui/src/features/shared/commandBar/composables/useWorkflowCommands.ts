@@ -1,9 +1,9 @@
-import { computed } from 'vue';
+﻿import { computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { isResourceLocatorValue } from 'n8n-workflow';
+import { isResourceLocatorValue } from 'workflow-automation-workflow';
 import { useI18n } from '@n8n/i18n';
 import { N8nIcon } from '@n8n/design-system';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { useTagsStore } from '@/features/shared/tags/tags.store';
 import { useUIStore } from '@/app/stores/ui.store';

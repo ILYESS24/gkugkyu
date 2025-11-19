@@ -1,4 +1,4 @@
-import { User, WithTimestamps } from '@n8n/db';
+﻿import { User, WithTimestamps } from '@workflow-automation/db';
 import { Column, Entity, Index, ManyToOne } from '@n8n/typeorm';
 
 import { OAuthClient } from './oauth-client.entity';

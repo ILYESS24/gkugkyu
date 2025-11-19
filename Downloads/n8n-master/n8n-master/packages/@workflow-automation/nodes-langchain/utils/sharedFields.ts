@@ -1,5 +1,5 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
-import type { IDisplayOptions, INodeProperties } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
+import type { IDisplayOptions, INodeProperties } from 'workflow-automation-workflow';
 
 export const metadataFilterField: INodeProperties = {
 	displayName: 'Metadata Filter',

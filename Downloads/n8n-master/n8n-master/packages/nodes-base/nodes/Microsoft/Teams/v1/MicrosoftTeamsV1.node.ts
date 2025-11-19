@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type INodeTypeBaseDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { channelFields, channelOperations } from './ChannelDescription';
 import { channelMessageFields, channelMessageOperations } from './ChannelMessageDescription';

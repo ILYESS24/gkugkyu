@@ -1,4 +1,4 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 export const getTypeValidationStrictness = (version: number) => {
 	return `={{ ($nodeVersion < ${version} ? $parameter.options.looseTypeValidation :  $parameter.looseTypeValidation) ? "loose" : "strict" }}`;

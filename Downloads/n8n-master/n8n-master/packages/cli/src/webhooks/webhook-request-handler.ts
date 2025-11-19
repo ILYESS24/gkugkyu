@@ -1,12 +1,12 @@
-import { Logger } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 import type express from 'express';
 import {
 	isWebhookHtmlSandboxingDisabled,
 	getWebhookSandboxCSP,
 	isHtmlRenderedContentType,
-} from 'n8n-core';
-import { ensureError, type IHttpRequestMethods } from 'n8n-workflow';
+} from 'workflow-automation-core';
+import { ensureError, type IHttpRequestMethods } from 'workflow-automation-workflow';
 import { Readable } from 'stream';
 import { finished } from 'stream/promises';
 

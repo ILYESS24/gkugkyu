@@ -1,14 +1,14 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { SqliteConfig } from '@n8n/config';
-import type { IExecutionResponse } from '@n8n/db';
-import { ExecutionEntity, ExecutionRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { SqliteConfig } from '@workflow-automation/config';
+import type { IExecutionResponse } from '@workflow-automation/db';
+import { ExecutionEntity, ExecutionRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { SelectQueryBuilder } from '@n8n/typeorm';
 import { Not, LessThanOrEqual } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
-import { BinaryDataService } from 'n8n-core';
-import type { IRunExecutionData, IWorkflowBase } from 'n8n-workflow';
+import { BinaryDataService } from 'workflow-automation-core';
+import type { IRunExecutionData, IWorkflowBase } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import { mockEntityManager } from '@test/mocking';

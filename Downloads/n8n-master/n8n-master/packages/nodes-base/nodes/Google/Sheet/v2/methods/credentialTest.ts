@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
 	INodeCredentialTestResult,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getGoogleAccessToken } from '../../../GenericFunctions';
 

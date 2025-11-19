@@ -1,4 +1,4 @@
-import type { AuthenticatedRequest } from '@n8n/db';
+﻿import type { AuthenticatedRequest } from '@workflow-automation/db';
 import type {
 	INode,
 	IConnections,
@@ -8,7 +8,7 @@ import type {
 	ITaskData,
 	IWorkflowBase,
 	AiAgentRequest,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { ListQuery } from '@/requests';
 

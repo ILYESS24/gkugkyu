@@ -1,7 +1,7 @@
-import type { EdgeProps } from '@vue-flow/core';
+﻿import type { EdgeProps } from '@vue-flow/core';
 import { getBezierPath, getSmoothStepPath, Position } from '@vue-flow/core';
-import { NodeConnectionTypes } from 'n8n-workflow';
-import type { NodeConnectionType } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
+import type { NodeConnectionType } from 'workflow-automation-workflow';
 
 const EDGE_PADDING_BOTTOM = 130;
 const EDGE_PADDING_X = 40;

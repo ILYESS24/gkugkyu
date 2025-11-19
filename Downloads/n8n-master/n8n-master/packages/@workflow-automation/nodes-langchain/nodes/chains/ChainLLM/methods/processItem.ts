@@ -1,5 +1,5 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
-import { type IExecuteFunctions, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+import { type IExecuteFunctions, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import { getPromptInputByType } from '@utils/helpers';

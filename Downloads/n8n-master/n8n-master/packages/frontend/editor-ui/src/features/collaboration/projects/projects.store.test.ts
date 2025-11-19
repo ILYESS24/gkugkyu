@@ -1,11 +1,11 @@
-import { setActivePinia, createPinia } from 'pinia';
+﻿import { setActivePinia, createPinia } from 'pinia';
 import { reactive } from 'vue';
 import { vi } from 'vitest';
 import { useProjectsStore } from './projects.store';
 import * as projectsApi from './projects.api';
 import type { Project, ProjectListItem } from './projects.types';
 import { ProjectTypes } from './projects.types';
-import type { ProjectRole, Scope } from '@n8n/permissions';
+import type { ProjectRole, Scope } from '@workflow-automation/permissions';
 
 // Minimal router mock to satisfy useRoute usage in the store
 vi.mock('vue-router', async (importOriginal) => ({

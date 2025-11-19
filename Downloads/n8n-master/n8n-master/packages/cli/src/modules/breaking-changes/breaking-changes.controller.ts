@@ -1,12 +1,12 @@
-import {
+﻿import {
 	BreakingChangeInstanceRuleResult,
 	BreakingChangeLightReportResult,
 	BreakingChangeReportResult,
 	BreakingChangeVersion,
 	BreakingChangeWorkflowRuleResult,
-} from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, RestController, GlobalScope, Query, Post, Param } from '@n8n/decorators';
+} from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, RestController, GlobalScope, Query, Post, Param } from '@workflow-automation/decorators';
 
 import { BreakingChangeService } from './breaking-changes.service';
 

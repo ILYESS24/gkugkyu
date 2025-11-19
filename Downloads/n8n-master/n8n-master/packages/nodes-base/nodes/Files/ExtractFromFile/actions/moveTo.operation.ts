@@ -1,4 +1,4 @@
-import iconv from 'iconv-lite';
+﻿import iconv from 'iconv-lite';
 import get from 'lodash/get';
 import set from 'lodash/set';
 import unset from 'lodash/unset';
@@ -7,8 +7,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError, deepCopy, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeOperationError, deepCopy, jsonParse } from 'workflow-automation-workflow';
 import { icsCalendarToObject } from 'ts-ics';
 
 import { encodeDecodeOptions } from '@utils/descriptions';

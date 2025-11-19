@@ -1,4 +1,4 @@
-import {
+﻿import {
 	getPersonalProject,
 	createWorkflow,
 	getAllSharedWorkflows,
@@ -6,18 +6,18 @@ import {
 	newWorkflow,
 	testDb,
 } from '@n8n/backend-test-utils';
-import { DatabaseConfig } from '@n8n/config';
-import type { Project, User } from '@n8n/db';
+import { DatabaseConfig } from '@workflow-automation/config';
+import type { Project, User } from '@workflow-automation/db';
 import {
 	TagEntity,
 	CredentialsRepository,
 	TagRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import type { ActiveWorkflowManager } from '@/active-workflow-manager';

@@ -1,4 +1,4 @@
-import { reactive } from 'vue';
+﻿import { reactive } from 'vue';
 import {
 	createTestNode,
 	createTestWorkflowObject,
@@ -15,7 +15,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { waitFor } from '@testing-library/vue';
-import type { INodeExecutionData, ITaskData, ITaskMetadata } from 'n8n-workflow';
+import type { INodeExecutionData, ITaskData, ITaskMetadata } from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useSchemaPreviewStore } from '@/features/ndv/runData/schemaPreview.store';
@@ -471,7 +471,7 @@ describe('RunData', () => {
 					executionTime: 2,
 					source: [
 						{
-							previousNode: 'When clicking ‘Execute workflow’',
+							previousNode: 'When clicking â€˜Execute workflowâ€™',
 						},
 					],
 					executionStatus: 'error',
@@ -502,7 +502,7 @@ describe('RunData', () => {
 		const testNodes = [
 			{
 				id: '1',
-				name: 'When clicking ‘Execute workflow’',
+				name: 'When clicking â€˜Execute workflowâ€™',
 				type: 'n8n-nodes-base.manualTrigger',
 				typeVersion: 1,
 				position: [80, -180],
@@ -556,7 +556,7 @@ describe('RunData', () => {
 					executionTime: 2,
 					source: [
 						{
-							previousNode: 'When clicking ‘Execute workflow’',
+							previousNode: 'When clicking â€˜Execute workflowâ€™',
 						},
 					],
 					executionStatus: 'error',

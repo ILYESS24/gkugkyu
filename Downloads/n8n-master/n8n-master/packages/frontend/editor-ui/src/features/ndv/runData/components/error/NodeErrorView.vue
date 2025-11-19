@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from '@n8n/i18n';
@@ -16,8 +16,8 @@ import type {
 	NodeApiError,
 	NodeError,
 	NodeOperationError,
-} from 'n8n-workflow';
-import { isCommunityPackageName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { isCommunityPackageName } from 'workflow-automation-workflow';
 import { sanitizeHtml } from '@/app/utils/htmlUtils';
 import { MAX_DISPLAY_DATA_SIZE, NEW_ASSISTANT_SESSION_MODAL, VIEWS } from '@/app/constants';
 import type { BaseTextKey } from '@n8n/i18n';

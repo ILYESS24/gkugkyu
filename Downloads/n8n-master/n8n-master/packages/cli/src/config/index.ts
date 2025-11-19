@@ -1,11 +1,11 @@
-import { inTest, Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { inTest, Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import convict from 'convict';
 import { flatten } from 'flat';
 import { readFileSync } from 'fs';
 import merge from 'lodash/merge';
-import { setGlobalState, UserError } from 'n8n-workflow';
+import { setGlobalState, UserError } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import { inE2ETests } from '@/constants';

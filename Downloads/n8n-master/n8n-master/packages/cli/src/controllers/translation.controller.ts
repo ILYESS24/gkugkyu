@@ -1,7 +1,7 @@
-import { NODES_BASE_DIR } from '@/constants';
-import { safeJoinPath } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Get, RestController } from '@n8n/decorators';
+﻿import { NODES_BASE_DIR } from '@/constants';
+import { safeJoinPath } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Get, RestController } from '@workflow-automation/decorators';
 import type { Request } from 'express';
 import { access } from 'fs/promises';
 

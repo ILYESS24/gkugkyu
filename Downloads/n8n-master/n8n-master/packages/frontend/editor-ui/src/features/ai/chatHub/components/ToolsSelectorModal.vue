@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue';
 import { N8nButton, N8nHeading, N8nIcon, N8nOption, N8nSelect, N8nText } from '@n8n/design-system';
 import Modal from '@/app/components/Modal.vue';
@@ -6,13 +6,13 @@ import NodeIcon from '@/app/components/NodeIcon.vue';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
 import { createEventBus } from '@n8n/utils/event-bus';
-import { type ChatHubAgentTool } from '@n8n/api-types';
+import { type ChatHubAgentTool } from '@workflow-automation/api-types';
 import {
 	type INode,
 	deepCopy,
 	JINA_AI_TOOL_NODE_TYPE,
 	SEAR_XNG_TOOL_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { AVAILABLE_TOOLS, type ChatHubToolProvider } from '../composables/availableTools';
 import { ElSwitch } from 'element-plus';
 import { useUIStore } from '@/app/stores/ui.store';

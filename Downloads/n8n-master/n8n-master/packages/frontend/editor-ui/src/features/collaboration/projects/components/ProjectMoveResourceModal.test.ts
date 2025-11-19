@@ -1,4 +1,4 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import { createTestWorkflow } from '@/__tests__/mocks';
@@ -13,7 +13,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import type { ComponentProps } from 'vue-component-type-helpers';
 import { ResourceType } from '../projects.utils';
-import type { ProjectSharingData } from 'n8n-workflow';
+import type { ProjectSharingData } from 'workflow-automation-workflow';
 
 const renderComponent = createComponentRenderer(ProjectMoveResourceModal, {
 	pinia: createTestingPinia(),

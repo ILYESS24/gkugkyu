@@ -1,15 +1,15 @@
-import { inDevelopment, inProduction } from '@n8n/backend-common';
-import { DatabaseConfig, SecurityConfig, WorkflowsConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import type { APIRequest, AuthenticatedRequest } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
+﻿import { inDevelopment, inProduction } from '@workflow-automation/backend-common';
+import { DatabaseConfig, SecurityConfig, WorkflowsConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import type { APIRequest, AuthenticatedRequest } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import { access as fsAccess } from 'fs/promises';
 import helmet from 'helmet';
 import isEmpty from 'lodash/isEmpty';
-import { InstanceSettings, installGlobalProxyAgent } from 'n8n-core';
-import { jsonParse } from 'n8n-workflow';
+import { InstanceSettings, installGlobalProxyAgent } from 'workflow-automation-core';
+import { jsonParse } from 'workflow-automation-workflow';
 import { resolve } from 'path';
 
 import { AbstractServer } from '@/abstract-server';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -7,8 +7,8 @@ import type {
 	JsonObject,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeApiError } from 'workflow-automation-workflow';
 
 export async function affinityApiRequest(
 	this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions,

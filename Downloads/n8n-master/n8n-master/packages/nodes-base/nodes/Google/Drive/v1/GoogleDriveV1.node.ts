@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IBinaryKeyData,
 	IDataObject,
 	IExecuteFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 import { v4 as uuid } from 'uuid';
 

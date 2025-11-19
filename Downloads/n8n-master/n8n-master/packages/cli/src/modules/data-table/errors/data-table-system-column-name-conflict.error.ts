@@ -1,4 +1,4 @@
-import { UserError } from 'n8n-workflow';
+﻿import { UserError } from 'workflow-automation-workflow';
 
 export class DataTableSystemColumnNameConflictError extends UserError {
 	constructor(columnName: string, type: string = 'system') {

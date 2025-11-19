@@ -1,11 +1,11 @@
-import {
+﻿import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User, Role } from '@n8n/db';
-import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE } from '@n8n/db';
+import type { Project, User, Role } from '@workflow-automation/db';
+import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE } from '@workflow-automation/db';
 
 import { UserManagementMailer } from '@/user-management/email';
 

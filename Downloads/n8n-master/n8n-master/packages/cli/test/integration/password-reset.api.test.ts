@@ -1,4 +1,4 @@
-import {
+﻿import {
 	randomEmail,
 	randomInvalidPassword,
 	randomName,
@@ -6,12 +6,12 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { User } from '@workflow-automation/db';
+import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { compare } from 'bcryptjs';
 import { mock } from 'jest-mock-extended';
-import { randomString } from 'n8n-workflow';
+import { randomString } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { AuthService } from '@/auth/auth.service';

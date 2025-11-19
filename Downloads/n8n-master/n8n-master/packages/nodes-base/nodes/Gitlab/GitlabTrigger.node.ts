@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IWebhookFunctions,
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	INodeTypeDescription,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError } from 'workflow-automation-workflow';
 
 import { gitlabApiRequest } from './GenericFunctions';
 

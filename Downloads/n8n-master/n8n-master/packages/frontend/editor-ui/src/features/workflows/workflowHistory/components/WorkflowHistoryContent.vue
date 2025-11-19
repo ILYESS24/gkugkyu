@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed } from 'vue';
 import type { IWorkflowDb, UserAction } from '@/Interface';
 import type {
@@ -9,7 +9,7 @@ import type {
 import WorkflowPreview from '@/app/components/WorkflowPreview.vue';
 import WorkflowHistoryListItem from './WorkflowHistoryListItem.vue';
 import { useI18n } from '@n8n/i18n';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 
 import { N8nButton, N8nIcon } from '@n8n/design-system';
 const i18n = useI18n();

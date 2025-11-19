@@ -1,6 +1,6 @@
-import * as a from 'assert';
-import type { IConnections, INode, WorkflowParameters, NodeConnectionType } from 'n8n-workflow';
-import { NodeConnectionTypes, Workflow } from 'n8n-workflow';
+﻿import * as a from 'assert';
+import type { IConnections, INode, WorkflowParameters, NodeConnectionType } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, Workflow } from 'workflow-automation-workflow';
 
 export type GraphConnection = {
 	from: INode;
@@ -324,13 +324,13 @@ export class DirectedGraph {
 	 * The algorithm implement here is Tarjan's algorithm.
 	 *
 	 * Example:
-	 * ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐
-	 * │node1├────►node2◄────┤node3├────►node5│
-	 * └─────┘    └──┬──┘    └──▲──┘    └▲───┬┘
-	 *               │          │        │   │
-	 *            ┌──▼──┐       │       ┌┴───▼┐
-	 *            │node4├───────┘       │node6│
-	 *            └─────┘               └─────┘
+	 * â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”
+	 * â”‚node1â”œâ”€â”€â”€â”€â–ºnode2â—„â”€â”€â”€â”€â”¤node3â”œâ”€â”€â”€â”€â–ºnode5â”‚
+	 * â””â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”¬â”€â”€â”˜    â””â”€â”€â–²â”€â”€â”˜    â””â–²â”€â”€â”€â”¬â”˜
+	 *               â”‚          â”‚        â”‚   â”‚
+	 *            â”Œâ”€â”€â–¼â”€â”€â”       â”‚       â”Œâ”´â”€â”€â”€â–¼â”
+	 *            â”‚node4â”œâ”€â”€â”€â”€â”€â”€â”€â”˜       â”‚node6â”‚
+	 *            â””â”€â”€â”€â”€â”€â”˜               â””â”€â”€â”€â”€â”€â”˜
 	 *
 	 * The strongly connected components are
 	 * 1. node1

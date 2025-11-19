@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { sql } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { sql } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
 import type { SelectQueryBuilder } from '@n8n/typeorm';
 import { DataSource, LessThanOrEqual, Repository } from '@n8n/typeorm';
 import { DateTime } from 'luxon';

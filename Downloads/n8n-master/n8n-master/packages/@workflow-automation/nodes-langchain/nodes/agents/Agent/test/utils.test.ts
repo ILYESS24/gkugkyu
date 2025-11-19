@@ -1,7 +1,7 @@
-import type { Tool } from 'langchain/tools';
+﻿import type { Tool } from 'langchain/tools';
 import { DynamicStructuredTool } from 'langchain/tools';
-import { NodeOperationError } from 'n8n-workflow';
-import type { INode } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { INode } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type { ZodObjectAny } from '../../../../types/types';

@@ -1,17 +1,17 @@
-import isbot from 'isbot';
+﻿import isbot from 'isbot';
 import {
 	NodeOperationError,
 	SEND_AND_WAIT_OPERATION,
 	tryToParseJsonToFormFields,
 	updateDisplayOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	INodeProperties,
 	IExecuteFunctions,
 	IWebhookFunctions,
 	IDataObject,
 	FormFieldsParameter,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { limitWaitTimeProperties } from './descriptions';
 import {

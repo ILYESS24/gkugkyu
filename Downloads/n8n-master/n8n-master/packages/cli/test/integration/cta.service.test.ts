@@ -1,7 +1,7 @@
-import { createManyWorkflows, testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { StatisticsNames } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createManyWorkflows, testDb } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
+import { StatisticsNames } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { CtaService } from '@/services/cta.service';
 

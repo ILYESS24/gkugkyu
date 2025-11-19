@@ -1,8 +1,8 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { FakeListChatModel } from '@langchain/core/utils/testing';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { SentimentAnalysis } from '../SentimentAnalysis.node';
 

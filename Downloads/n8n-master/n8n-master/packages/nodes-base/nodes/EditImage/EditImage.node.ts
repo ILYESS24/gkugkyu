@@ -1,4 +1,4 @@
-import { writeFile as fsWriteFile } from 'fs/promises';
+﻿import { writeFile as fsWriteFile } from 'fs/promises';
 import getSystemFonts from 'get-system-fonts';
 import gm from 'gm';
 import type {
@@ -10,8 +10,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeOperationError, NodeConnectionTypes, deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError, NodeConnectionTypes, deepCopy } from 'workflow-automation-workflow';
 import { parse as pathParse } from 'path';
 import { file } from 'tmp-promise';
 

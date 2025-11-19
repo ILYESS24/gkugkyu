@@ -1,9 +1,9 @@
-import type { CredentialPayload } from '@n8n/backend-test-utils';
+﻿import type { CredentialPayload } from '@n8n/backend-test-utils';
 import { createTeamProject, randomName, testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { CredentialsRepository, SharedCredentialsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { randomString } from 'n8n-workflow';
+import type { User } from '@workflow-automation/db';
+import { CredentialsRepository, SharedCredentialsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { randomString } from 'workflow-automation-workflow';
 
 import {
 	affixRoleToSaveCredential,

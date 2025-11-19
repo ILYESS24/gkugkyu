@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import type { ColumnOptions } from '@n8n/typeorm';
 import {
 	BeforeInsert,
@@ -9,7 +9,7 @@ import {
 	PrimaryColumn,
 	UpdateDateColumn,
 } from '@n8n/typeorm';
-import type { Class } from 'n8n-core';
+import type { Class } from 'workflow-automation-core';
 
 import { generateNanoId } from '../utils/generators';
 

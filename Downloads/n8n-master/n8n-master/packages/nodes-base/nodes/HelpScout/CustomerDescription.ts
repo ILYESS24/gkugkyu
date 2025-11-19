@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const customerOperations: INodeProperties[] = [
 	{
@@ -87,7 +87,7 @@ export const customerFields: INodeProperties[] = [
 					minValue: 1,
 				},
 				default: 1,
-				description: 'Customer’s age',
+				description: 'Customerâ€™s age',
 			},
 			{
 				displayName: 'First Name',
@@ -156,7 +156,7 @@ export const customerFields: INodeProperties[] = [
 				name: 'photoUrl',
 				type: 'string',
 				default: '',
-				description: 'URL of the customer’s photo',
+				description: 'URL of the customerâ€™s photo',
 			},
 		],
 	},
@@ -706,7 +706,7 @@ export const customerFields: INodeProperties[] = [
 					minValue: 1,
 				},
 				default: 1,
-				description: 'Customer’s age',
+				description: 'Customerâ€™s age',
 			},
 			{
 				displayName: 'First Name',
@@ -775,7 +775,7 @@ export const customerFields: INodeProperties[] = [
 				name: 'photoUrl',
 				type: 'string',
 				default: '',
-				description: 'URL of the customer’s photo',
+				description: 'URL of the customerâ€™s photo',
 			},
 		],
 	},

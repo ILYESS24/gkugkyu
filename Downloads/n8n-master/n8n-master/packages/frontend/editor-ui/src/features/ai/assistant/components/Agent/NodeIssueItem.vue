@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { INodeTypeDescription } from 'n8n-workflow';
+﻿<script setup lang="ts">
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 // Types for node issues
 interface WorkflowNodeIssue {
 	node: string;

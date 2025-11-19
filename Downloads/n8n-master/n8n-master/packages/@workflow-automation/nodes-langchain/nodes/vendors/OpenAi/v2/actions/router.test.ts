@@ -1,6 +1,6 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import * as audio from './audio';
 import { router } from './router';

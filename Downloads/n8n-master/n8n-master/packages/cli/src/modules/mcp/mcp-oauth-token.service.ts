@@ -1,9 +1,9 @@
-import { AuthInfo } from '@modelcontextprotocol/sdk/server/auth/types';
+﻿import { AuthInfo } from '@modelcontextprotocol/sdk/server/auth/types';
 import { OAuthTokens } from '@modelcontextprotocol/sdk/shared/auth';
-import { Logger } from '@n8n/backend-common';
-import { Time } from '@n8n/constants';
-import { User, UserRepository, withTransaction } from '@n8n/db';
-import { Service } from '@n8n/di';
+import { Logger } from '@workflow-automation/backend-common';
+import { Time } from '@workflow-automation/constants';
+import { User, UserRepository, withTransaction } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { MoreThanOrEqual } from '@n8n/typeorm';
 import { randomBytes, randomUUID } from 'node:crypto';
 

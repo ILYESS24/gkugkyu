@@ -1,13 +1,13 @@
-import {
+﻿import {
 	passwordSchema,
 	PasswordUpdateRequestDto,
 	SettingsUpdateRequestDto,
 	UserUpdateRequestDto,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { User, PublicUser } from '@n8n/db';
-import { UserRepository, AuthenticatedRequest } from '@n8n/db';
-import { Body, Patch, Post, RestController } from '@n8n/decorators';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { User, PublicUser } from '@workflow-automation/db';
+import { UserRepository, AuthenticatedRequest } from '@workflow-automation/db';
+import { Body, Patch, Post, RestController } from '@workflow-automation/decorators';
 import { plainToInstance } from 'class-transformer';
 import { Response } from 'express';
 

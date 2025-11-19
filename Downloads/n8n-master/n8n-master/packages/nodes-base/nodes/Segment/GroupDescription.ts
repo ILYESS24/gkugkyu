@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const groupOperations: INodeProperties[] = [
 	{
@@ -122,7 +122,7 @@ export const groupFields: INodeProperties[] = [
 						name: 'ip',
 						type: 'string',
 						default: '',
-						description: 'Current user’s IP address',
+						description: 'Current userâ€™s IP address',
 					},
 					{
 						displayName: 'Locale',

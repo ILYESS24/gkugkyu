@@ -1,4 +1,4 @@
-import basicAuth from 'basic-auth';
+﻿import basicAuth from 'basic-auth';
 import type { Response } from 'express';
 import {
 	type IHookFunctions,
@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { pipedriveApiRequest } from './GenericFunctions';
 

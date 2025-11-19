@@ -1,7 +1,7 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { ref } from 'vue';
 import { useI18n } from '@n8n/i18n';
-import type { ApiKey } from '@n8n/api-types';
+import type { ApiKey } from '@workflow-automation/api-types';
 import { DateTime } from 'luxon';
 
 import { N8nActionToggle, N8nCard, N8nText } from '@n8n/design-system';

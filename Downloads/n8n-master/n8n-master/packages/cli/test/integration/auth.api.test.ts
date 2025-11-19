@@ -1,7 +1,7 @@
-import { randomValidPassword, testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { randomValidPassword, testDb } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
+import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import validator from 'validator';
 
 import config from '@/config';

@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type {
 	ICredentialDataDecryptedObject,
 	INodeProperties,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { IUpdateInformation } from '@/Interface';
 import ParameterInputExpanded from '@/features/ndv/parameters/components/ParameterInputExpanded.vue';
 import { computed } from 'vue';

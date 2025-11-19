@@ -1,4 +1,4 @@
-import { setActivePinia, createPinia } from 'pinia';
+﻿import { setActivePinia, createPinia } from 'pinia';
 import * as workflowsApi from '@/app/api/workflows';
 import {
 	DUPLICATE_POSTFFIX,
@@ -12,7 +12,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { INodeUi, IWorkflowDb, IWorkflowSettings } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 
-import { deepCopy, NodeConnectionTypes, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+import { deepCopy, NodeConnectionTypes, SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 import type {
 	IPinData,
 	IConnection,
@@ -20,11 +20,11 @@ import type {
 	INodeExecutionData,
 	INode,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { stringSizeInBytes } from '@/app/utils/typesUtils';
 import { dataPinningEventBus } from '@/app/event-bus';
 import { useUIStore } from '@/app/stores/ui.store';
-import type { PushPayload } from '@n8n/api-types';
+import type { PushPayload } from '@workflow-automation/api-types';
 import { flushPromises } from '@vue/test-utils';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { mock } from 'vitest-mock-extended';
@@ -1187,7 +1187,7 @@ describe('useWorkflowsStore', () => {
 				...executionResponse,
 				data: {
 					resultData: {
-						lastNodeExecuted: 'When clicking ‘Execute workflow’',
+						lastNodeExecuted: 'When clicking â€˜Execute workflowâ€™',
 						runData: {
 							[successEvent.nodeName]: [successEvent.data],
 						},
@@ -1301,7 +1301,7 @@ describe('useWorkflowsStore', () => {
 				...runWithExistingRunData,
 				data: {
 					resultData: {
-						lastNodeExecuted: 'When clicking ‘Execute workflow’',
+						lastNodeExecuted: 'When clicking â€˜Execute workflowâ€™',
 						runData: {
 							[successEvent.nodeName]: [successEvent.data],
 						},
@@ -1356,7 +1356,7 @@ describe('useWorkflowsStore', () => {
 				...executionResponse,
 				data: {
 					resultData: {
-						lastNodeExecuted: 'When clicking ‘Execute workflow’',
+						lastNodeExecuted: 'When clicking â€˜Execute workflowâ€™',
 						runData: {
 							[successEvent.nodeName]: [successEventWithExecutionIndex.data],
 						},
@@ -2280,7 +2280,7 @@ function generateMockExecutionEvents() {
 	};
 	const successEvent: PushPayload<'nodeExecuteAfter'> = {
 		executionId: '59',
-		nodeName: 'When clicking ‘Execute workflow’',
+		nodeName: 'When clicking â€˜Execute workflowâ€™',
 		itemCountByConnectionType: { main: [1] },
 		data: {
 			hints: [],
@@ -2302,7 +2302,7 @@ function generateMockExecutionEvents() {
 			executionTime: 2,
 			source: [
 				{
-					previousNode: 'When clicking ‘Execute workflow’',
+					previousNode: 'When clicking â€˜Execute workflowâ€™',
 				},
 			],
 			executionStatus: 'error',

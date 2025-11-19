@@ -1,10 +1,10 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, onBeforeMount, onMounted, ref } from 'vue';
 import { MODAL_CONFIRM } from '@/app/constants';
 import { useMessage } from '@/app/composables/useMessage';
 import { useLogStreamingStore } from '../logStreaming.store';
-import type { MessageEventBusDestinationOptions } from 'n8n-workflow';
-import { deepCopy, defaultMessageEventBusDestinationOptions } from 'n8n-workflow';
+import type { MessageEventBusDestinationOptions } from 'workflow-automation-workflow';
+import { deepCopy, defaultMessageEventBusDestinationOptions } from 'workflow-automation-workflow';
 import type { BaseTextKey } from '@n8n/i18n';
 import type { EventBus } from '@n8n/utils/event-bus';
 import { useI18n } from '@n8n/i18n';

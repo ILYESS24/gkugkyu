@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import type { ShutdownHandler } from '@n8n/decorators';
-import { ShutdownMetadata } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import { assert, UnexpectedError, UserError } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { ShutdownHandler } from '@workflow-automation/decorators';
+import { ShutdownMetadata } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import { assert, UnexpectedError, UserError } from 'workflow-automation-workflow';
 
 /** Error reported when a listener fails to shutdown gracefully */
 export class ComponentShutdownError extends UnexpectedError {

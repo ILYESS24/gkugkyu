@@ -1,8 +1,8 @@
-import { NodeVM } from '@n8n/vm2';
+﻿import { NodeVM } from '@n8n/vm2';
 import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import { anyNumber, mock } from 'jest-mock-extended';
-import { normalizeItems } from 'n8n-core';
-import type { IExecuteFunctions, IWorkflowDataProxyData } from 'n8n-workflow';
+import { normalizeItems } from 'workflow-automation-core';
+import type { IExecuteFunctions, IWorkflowDataProxyData } from 'workflow-automation-workflow';
 import { ApplicationError } from '@n8n/errors';
 
 import { Code } from '../Code.node';

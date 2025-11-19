@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
-import { sleep } from 'n8n-workflow';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
+import { sleep } from 'workflow-automation-workflow';
 
 import config from '@/config';
 import { CacheService } from '@/services/cache/cache.service';
@@ -61,10 +61,10 @@ for (const backend of ['memory', 'redis'] as const) {
 				});
 
 				test('should honor max size when not enough', async () => {
-					globalConfig.cache.memory.maxSize = 16; // not enough bytes for "withUnicodeԱԲԳ"
+					globalConfig.cache.memory.maxSize = 16; // not enough bytes for "withUnicodeÔ±Ô²Ô³"
 
 					await cacheService.init();
-					await cacheService.set('key', 'withUnicodeԱԲԳ');
+					await cacheService.set('key', 'withUnicodeÔ±Ô²Ô³');
 
 					await expect(cacheService.get('key')).resolves.toBeUndefined();
 
@@ -139,7 +139,7 @@ for (const backend of ['memory', 'redis'] as const) {
 			});
 
 			test('should handle non-ASCII key', async () => {
-				const nonAsciiKey = 'ԱԲԳ';
+				const nonAsciiKey = 'Ô±Ô²Ô³';
 				await cacheService.set(nonAsciiKey, 'value');
 
 				await expect(cacheService.get(nonAsciiKey)).resolves.toBe('value');
@@ -198,7 +198,7 @@ for (const backend of ['memory', 'redis'] as const) {
 
 		describe('delete', () => {
 			test('should handle non-ASCII key', async () => {
-				const nonAsciiKey = 'ԱԲԳ';
+				const nonAsciiKey = 'Ô±Ô²Ô³';
 				await cacheService.set(nonAsciiKey, 'value');
 				await expect(cacheService.get(nonAsciiKey)).resolves.toBe('value');
 

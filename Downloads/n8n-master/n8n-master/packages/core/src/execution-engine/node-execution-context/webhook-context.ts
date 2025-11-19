@@ -1,4 +1,4 @@
-import type { Request, Response } from 'express';
+﻿import type { Request, Response } from 'express';
 import type {
 	AINodeConnectionType,
 	CloseFunction,
@@ -15,8 +15,8 @@ import type {
 	WebhookType,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { ApplicationError, createDeferredPromise, createEmptyRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, createDeferredPromise, createEmptyRunExecutionData } from 'workflow-automation-workflow';
 
 import { NodeExecutionContext } from './node-execution-context';
 import { copyBinaryFile, getBinaryHelperFunctions } from './utils/binary-helper-functions';

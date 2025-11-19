@@ -1,4 +1,4 @@
-import {
+﻿import {
 	chatHubProviderSchema,
 	type ChatHubConversationModel,
 	type ChatModelsResponse,
@@ -6,7 +6,7 @@ import {
 	type ChatModelDto,
 	type ChatSessionId,
 	type ChatMessageId,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type {
 	ChatMessage,
 	GroupedConversations,

@@ -1,14 +1,14 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { AgentRunnableSequence } from 'langchain/agents';
 import type { BaseChatMemory } from 'langchain/memory';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	ISupplyDataFunctions,
 	INodeExecutionData,
 	EngineResponse,
 	EngineRequest,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
 

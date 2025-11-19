@@ -1,16 +1,16 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import type { LdapConfig } from '@n8n/constants';
-import { LDAP_FEATURE_NAME } from '@n8n/constants';
-import { isValidEmail, SettingsRepository } from '@n8n/db';
-import type { User, RunningMode, SyncStatus } from '@n8n/db';
-import { Service, Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { LdapConfig } from '@workflow-automation/constants';
+import { LDAP_FEATURE_NAME } from '@workflow-automation/constants';
+import { isValidEmail, SettingsRepository } from '@workflow-automation/db';
+import type { User, RunningMode, SyncStatus } from '@workflow-automation/db';
+import { Service, Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { QueryFailedError } from '@n8n/typeorm';
 import type { Entry as LdapUser, ClientOptions } from 'ldapts';
 import { Client } from 'ldapts';
-import { Cipher } from 'n8n-core';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import { Cipher } from 'workflow-automation-core';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 import type { ConnectionOptions } from 'tls';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

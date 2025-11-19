@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { TaskRunnersConfig } from '@n8n/config';
+import { TaskRunnersConfig } from '@workflow-automation/config';
 import { mock } from 'jest-mock-extended';
 import type { ChildProcess, SpawnOptions } from 'node:child_process';
 

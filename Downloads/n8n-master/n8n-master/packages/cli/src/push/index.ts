@@ -1,13 +1,13 @@
-import type { PushMessage } from '@n8n/api-types';
-import { inProduction, Logger } from '@n8n/backend-common';
-import type { User } from '@n8n/db';
-import { OnPubSubEvent, OnShutdown } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+﻿import type { PushMessage } from '@workflow-automation/api-types';
+import { inProduction, Logger } from '@workflow-automation/backend-common';
+import type { User } from '@workflow-automation/db';
+import { OnPubSubEvent, OnShutdown } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import type { Application } from 'express';
 import { ServerResponse } from 'http';
 import type { Server } from 'http';
 import pick from 'lodash/pick';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 import { parse as parseUrl } from 'url';
 import { Server as WSServer } from 'ws';
 

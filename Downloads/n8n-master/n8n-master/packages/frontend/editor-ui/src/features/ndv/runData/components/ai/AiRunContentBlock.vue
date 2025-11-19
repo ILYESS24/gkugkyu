@@ -1,9 +1,9 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type { IAiDataContent } from '@/Interface';
 import capitalize from 'lodash/capitalize';
 import { computed, onMounted, ref, watch } from 'vue';
-import type { NodeConnectionType, NodeError } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { NodeConnectionType, NodeError } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import RunDataAi from '../RunDataParsedAiContent.vue';
 import { parseAiContent } from '@/app/utils/aiUtils';
 import { N8nButton, N8nIcon, N8nRadioButtons } from '@n8n/design-system';

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { ICredentialsResponse } from '../credentials.types';
 import type { INodeUi, INodeUpdatePropertiesInformation } from '@/Interface';
 import type {
@@ -6,7 +6,7 @@ import type {
 	INodeCredentialDescription,
 	INodeCredentialsDetails,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
@@ -30,7 +30,7 @@ import {
 	updateNodeAuthType,
 } from '@/app/utils/nodeTypesUtils';
 import { isEmpty } from '@/app/utils/typesUtils';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useNodeCredentialOptions } from '../composables/useNodeCredentialOptions';
 
 import {

@@ -1,6 +1,6 @@
-import type { ModuleInterface } from '@n8n/decorators';
-import { BackendModule, OnShutdown } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { ModuleInterface } from '@workflow-automation/decorators';
+import { BackendModule, OnShutdown } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 
 @BackendModule({ name: 'external-secrets', licenseFlag: 'feat:externalSecrets' })
 export class ExternalSecretsModule implements ModuleInterface {

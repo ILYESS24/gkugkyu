@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type ICredentialsDecrypted,
 	type ICredentialTestFunctions,
@@ -10,7 +10,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { cameraProxyFields, cameraProxyOperations } from './CameraProxyDescription';
 import { configOperations } from './ConfigDescription';

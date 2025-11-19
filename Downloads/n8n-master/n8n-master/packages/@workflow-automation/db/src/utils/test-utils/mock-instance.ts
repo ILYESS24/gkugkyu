@@ -1,4 +1,4 @@
-import { Container, type Constructable } from '@n8n/di';
+﻿import { Container, type Constructable } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import type { DeepPartial } from 'ts-essentials';
 

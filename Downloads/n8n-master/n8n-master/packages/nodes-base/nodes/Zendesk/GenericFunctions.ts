@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 function getUri(resource: string, subdomain: string) {
 	if (resource.includes('webhooks')) {

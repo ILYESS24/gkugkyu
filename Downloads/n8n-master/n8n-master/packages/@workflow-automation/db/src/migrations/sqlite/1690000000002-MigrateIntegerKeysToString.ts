@@ -1,7 +1,7 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { statSync } from 'fs';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 import path from 'path';
 
 import type { MigrationContext, IrreversibleMigration } from '../migration-types';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const projectOperations: INodeProperties[] = [
 	{
@@ -140,7 +140,7 @@ export const projectFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'Optionally a slug for the new project. If it’s not provided a slug is generated from the name.',
+					'Optionally a slug for the new project. If itâ€™s not provided a slug is generated from the name.',
 			},
 		],
 	},

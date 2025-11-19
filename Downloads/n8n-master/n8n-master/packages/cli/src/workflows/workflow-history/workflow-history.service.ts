@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import type { User, WorkflowHistory } from '@n8n/db';
-import { WorkflowHistoryRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import type { IWorkflowBase } from 'n8n-workflow';
-import { ensureError, UnexpectedError } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { User, WorkflowHistory } from '@workflow-automation/db';
+import { WorkflowHistoryRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
+import { ensureError, UnexpectedError } from 'workflow-automation-workflow';
 
 import { SharedWorkflowNotFoundError } from '@/errors/shared-workflow-not-found.error';
 import { WorkflowHistoryVersionNotFoundError } from '@/errors/workflow-history-version-not-found.error';

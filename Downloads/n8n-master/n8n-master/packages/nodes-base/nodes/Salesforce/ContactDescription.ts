@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const contactOperations: INodeProperties[] = [
 	{
@@ -302,7 +302,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'mobilePhone',
 				type: 'string',
 				default: '',
-				description: 'Contact’s mobile phone number',
+				description: 'Contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Mailing Postal Code',
@@ -628,7 +628,7 @@ export const contactFields: INodeProperties[] = [
 				name: 'mobilePhone',
 				type: 'string',
 				default: '',
-				description: 'Contact’s mobile phone number',
+				description: 'Contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Other City',
@@ -988,7 +988,7 @@ export const contactFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether only the note owner or a user with the “Modify All Data” permission can view the note or query it via the API',
+					'Whether only the note owner or a user with the â€œModify All Dataâ€ permission can view the note or query it via the API',
 			},
 			{
 				displayName: 'Owner Name or ID',

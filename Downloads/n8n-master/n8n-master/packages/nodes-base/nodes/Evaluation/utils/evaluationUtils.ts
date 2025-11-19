@@ -1,9 +1,9 @@
-import {
+﻿import {
 	UserError,
 	NodeOperationError,
 	EVALUATION_TRIGGER_NODE_TYPE,
 	jsonStringify,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	INodeParameters,
 	IDataObject,
@@ -12,7 +12,7 @@ import type {
 	JsonObject,
 	JsonValue,
 	DataTableColumnJsType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getGoogleSheet, getSheet } from './evaluationTriggerUtils';
 import { metricHandlers } from './metricHandlers';
@@ -109,7 +109,7 @@ export async function setOutputs(this: IExecuteFunctions): Promise<INodeExecutio
 
 	if (outputFields.length === 0) {
 		throw new UserError('No outputs to set', {
-			description: 'Add outputs to write back to the Google Sheet using the ‘Add Output’ button',
+			description: 'Add outputs to write back to the Google Sheet using the â€˜Add Outputâ€™ button',
 		});
 	}
 
@@ -256,7 +256,7 @@ export function setInputs(this: IExecuteFunctions): INodeExecutionData[][] {
 
 	if (inputFields.length === 0) {
 		throw new UserError('No inputs to set', {
-			description: 'Add inputs using the ‘Add Input’ button',
+			description: 'Add inputs using the â€˜Add Inputâ€™ button',
 		});
 	}
 

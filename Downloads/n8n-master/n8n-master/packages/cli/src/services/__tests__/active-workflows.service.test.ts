@@ -1,5 +1,5 @@
-import { GLOBAL_ADMIN_ROLE, GLOBAL_MEMBER_ROLE, WorkflowEntity } from '@n8n/db';
-import type { User, SharedWorkflowRepository, WorkflowRepository } from '@n8n/db';
+﻿import { GLOBAL_ADMIN_ROLE, GLOBAL_MEMBER_ROLE, WorkflowEntity } from '@workflow-automation/db';
+import type { User, SharedWorkflowRepository, WorkflowRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import type { ActivationErrorsService } from '@/activation-errors.service';

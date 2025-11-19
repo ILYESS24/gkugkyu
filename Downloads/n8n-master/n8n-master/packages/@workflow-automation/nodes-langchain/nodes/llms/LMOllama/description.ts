@@ -1,4 +1,4 @@
-import type { INodeProperties, INodeTypeDescription } from 'n8n-workflow';
+﻿import type { INodeProperties, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export const ollamaDescription: Partial<INodeTypeDescription> = {
 	credentials: [

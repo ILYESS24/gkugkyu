@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
@@ -6,7 +6,7 @@ import {
 	NodeConnectionTypes,
 	type NodeExecutionHint,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	type Aggregations,

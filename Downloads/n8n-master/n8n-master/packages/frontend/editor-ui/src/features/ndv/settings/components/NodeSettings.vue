@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type {
 	CurlToJSONResponse,
 	INodeUi,
@@ -10,8 +10,8 @@ import type {
 	INodeParameters,
 	NodeConnectionType,
 	NodeParameterValue,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers, deepCopy, isCommunityPackageName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeHelpers, deepCopy, isCommunityPackageName } from 'workflow-automation-workflow';
 import { computed, onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue';
 
 import { BASE_NODE_SURVEY_URL, VIEWS } from '@/app/constants';

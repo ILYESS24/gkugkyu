@@ -1,5 +1,5 @@
-import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+﻿import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
+import { NodeOperationError, SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 
 import * as channel from './channel';
 import * as member from './member';

@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	AnnotationVote,
 	ExecutionStatus,
 	ExecutionSummary,
 	WorkflowExecuteMode,
 	IRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { IWorkflowDb } from '@/Interface';
-import type { Scope } from '@n8n/permissions';
+import type { Scope } from '@workflow-automation/permissions';
 
 export type ExecutionFilterMetadata = {
 	key: string;

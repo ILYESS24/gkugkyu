@@ -1,19 +1,19 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
 import type {
 	CreateExecutionPayload,
 	ExecutionSummaries,
 	IExecutionResponse,
 	IGetExecutionsQueryFilter,
 	User,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	AnnotationTagMappingRepository,
 	ExecutionAnnotationRepository,
 	ExecutionRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { validate as jsonSchemaValidate } from 'jsonschema';
 import type {
 	ExecutionError,
@@ -22,7 +22,7 @@ import type {
 	IWorkflowBase,
 	IWorkflowExecutionDataProcess,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ExecutionStatusList,
 	ManualExecutionCancelledError,
@@ -31,7 +31,7 @@ import {
 	Workflow,
 	WorkflowOperationError,
 	createErrorExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ActiveExecutions } from '@/active-executions';
 import { ConcurrencyControlService } from '@/concurrency/concurrency-control.service';

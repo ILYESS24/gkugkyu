@@ -1,5 +1,5 @@
-import { Service } from '@n8n/di';
-import { PROJECT_OWNER_ROLE_SLUG, type ProjectRole } from '@n8n/permissions';
+﻿import { Service } from '@workflow-automation/di';
+import { PROJECT_OWNER_ROLE_SLUG, type ProjectRole } from '@workflow-automation/permissions';
 import { DataSource, In, Repository } from '@n8n/typeorm';
 
 import { ProjectRelation } from '../entities';

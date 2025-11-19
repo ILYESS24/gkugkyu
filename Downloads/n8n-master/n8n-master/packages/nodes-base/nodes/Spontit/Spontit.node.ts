@@ -1,12 +1,12 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { spontitApiRequest } from './GenericFunctions';
 import { pushFields, pushOperations } from './PushDescription';

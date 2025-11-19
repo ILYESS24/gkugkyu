@@ -1,6 +1,6 @@
-import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
+﻿import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import { createClient } from '@supabase/supabase-js';
-import { NodeOperationError, type INodeProperties } from 'n8n-workflow';
+import { NodeOperationError, type INodeProperties } from 'workflow-automation-workflow';
 
 import { metadataFilterField } from '@utils/sharedFields';
 

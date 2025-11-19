@@ -1,6 +1,6 @@
-import type { TagEntity, ITagWithCountDb } from '@n8n/db';
-import { TagRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { TagEntity, ITagWithCountDb } from '@workflow-automation/db';
+import { TagRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { ExternalHooks } from '@/external-hooks';
 import { validateEntity } from '@/generic-helpers';

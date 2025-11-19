@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import {
 	type IConnection,
 	type IExecuteData,
@@ -11,7 +11,7 @@ import {
 	type Workflow,
 	type EngineResponse,
 	UnexpectedError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ErrorReporter } from '../errors/error-reporter';
 

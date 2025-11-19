@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 const data = [
 	{
@@ -17,7 +17,7 @@ const data = [
 	},
 	{
 		id: '23423533',
-		name: 'José Arcadio Buendía',
+		name: 'JosÃ© Arcadio BuendÃ­a',
 		email: 'jab@macondo.co',
 		notes: 'Lots of people named after him. Very confusing',
 		country: 'CO',

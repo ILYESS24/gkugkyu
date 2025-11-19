@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, ref } from 'vue';
 import { VIEWS } from '@/app/constants';
 import {
@@ -94,7 +94,7 @@ import { useExternalHooks } from '@/app/composables/useExternalHooks';
 import { useI18n } from '@n8n/i18n';
 import { useRoute, useRouter } from 'vue-router';
 import { useUIStore } from '@/app/stores/ui.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 
 import { N8nButton, N8nFormInputs } from '@n8n/design-system';
 const SURVEY_VERSION = 'v4';

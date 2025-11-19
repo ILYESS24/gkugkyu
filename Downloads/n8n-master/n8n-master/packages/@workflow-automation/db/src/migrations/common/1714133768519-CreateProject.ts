@@ -1,5 +1,5 @@
-import type { ProjectRole } from '@n8n/permissions';
-import { UserError } from 'n8n-workflow';
+﻿import type { ProjectRole } from '@workflow-automation/permissions';
+import { UserError } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import type { User } from '../../entities';

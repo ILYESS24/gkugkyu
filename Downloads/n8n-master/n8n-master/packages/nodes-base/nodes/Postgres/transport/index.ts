@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ICredentialTestFunctions,
 	ILoadOptionsFunctions,
 	ITriggerFunctions,
 	Logger,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { createServer, type AddressInfo, type Server } from 'node:net';
 import pgPromise from 'pg-promise';
 

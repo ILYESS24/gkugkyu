@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { MultiMainMetadata } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { MultiMainMetadata } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
 
 import { Publisher } from '@/scaling/pubsub/publisher.service';
 import { RedisClientService } from '@/services/redis-client.service';

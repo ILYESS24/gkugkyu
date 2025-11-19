@@ -1,11 +1,11 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { testDb } from '@n8n/backend-test-utils';
-import { DatabaseConfig } from '@n8n/config';
-import type { IWorkflowDb } from '@n8n/db';
-import { WorkflowDependencyRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { DatabaseConfig } from '@workflow-automation/config';
+import type { IWorkflowDb } from '@workflow-automation/db';
+import { WorkflowDependencyRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { retryUntil } from '@test-integration/retry-until';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'workflow-automation-core';
 import { v4 as uuid } from 'uuid';
 
 import { createOwner } from '../shared/db/users';

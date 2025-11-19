@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { AuthRolesService, Role, RoleRepository, Scope, ScopeRepository } from '@n8n/db';
-import { ALL_SCOPES, ALL_ROLES, scopeInformation } from '@n8n/permissions';
+import { AuthRolesService, Role, RoleRepository, Scope, ScopeRepository } from '@workflow-automation/db';
+import { ALL_SCOPES, ALL_ROLES, scopeInformation } from '@workflow-automation/permissions';
 
 describe('AuthRolesService', () => {
 	const logger = mockInstance(Logger);

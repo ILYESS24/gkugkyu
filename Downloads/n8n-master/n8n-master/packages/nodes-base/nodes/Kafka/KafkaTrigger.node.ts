@@ -1,4 +1,4 @@
-import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
+﻿import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
 import type { KafkaConfig, SASLOptions } from 'kafkajs';
 import { Kafka as apacheKafka, logLevel } from 'kafkajs';
 import type {
@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	ITriggerResponse,
 	IRun,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 export class KafkaTrigger implements INodeType {
 	description: INodeTypeDescription = {

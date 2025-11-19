@@ -1,5 +1,5 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
-import type { INodePropertyOptions } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
+import type { INodePropertyOptions } from 'workflow-automation-workflow';
 
 import type { NodeOperationMode } from './types';
 

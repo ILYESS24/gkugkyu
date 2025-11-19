@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { ExecutionsConfig } from '@n8n/config';
-import type { ExecutionRepository } from '@n8n/db';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import type { ExecutionRepository } from '@workflow-automation/db';
 import type { Response } from 'express';
 import { captor, mock } from 'jest-mock-extended';
 import type {
@@ -10,13 +10,13 @@ import type {
 	IRun,
 	IWorkflowExecutionDataProcess,
 	StructuredChunk,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ManualExecutionCancelledError,
 	randomInt,
 	sleep,
 	SystemShutdownExecutionCancelledError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import PCancelable from 'p-cancelable';
 import { v4 as uuid } from 'uuid';
 

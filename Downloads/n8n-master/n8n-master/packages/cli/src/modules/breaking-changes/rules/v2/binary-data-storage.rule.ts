@@ -1,5 +1,5 @@
-import { Service } from '@n8n/di';
-import { BinaryDataConfig } from 'n8n-core';
+﻿import { Service } from '@workflow-automation/di';
+import { BinaryDataConfig } from 'workflow-automation-core';
 
 import type {
 	BreakingChangeRuleMetadata,

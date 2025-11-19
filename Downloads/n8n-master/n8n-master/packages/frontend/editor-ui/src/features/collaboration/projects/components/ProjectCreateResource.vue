@@ -1,6 +1,6 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type { ButtonType, UserAction } from '@n8n/design-system';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 import { useTemplateRef } from 'vue';
 
 import { N8nActionToggle, N8nIconButton } from '@n8n/design-system';

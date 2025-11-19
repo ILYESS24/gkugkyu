@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import ConcurrentExecutionsHeader from '../ConcurrentExecutionsHeader.vue';
 import ExecutionsFilter from '../ExecutionsFilter.vue';
 import GlobalExecutionsListItem from './GlobalExecutionsListItem.vue';
@@ -11,14 +11,14 @@ import { useToast } from '@/app/composables/useToast';
 import { EnterpriseEditionFeature, MODAL_CONFIRM } from '@/app/constants';
 import type { IWorkflowDb } from '@/Interface';
 import type { ExecutionFilterType, ExecutionSummaryWithScopes } from '../../executions.types';
-import type { PermissionsRecord } from '@n8n/permissions';
-import { getResourcePermissions } from '@n8n/permissions';
+import type { PermissionsRecord } from '@workflow-automation/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useExecutionsStore } from '../../executions.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { executionRetryMessage } from '../../executions.utils';
 import { useIntersectionObserver } from '@vueuse/core';
-import type { ExecutionSummary } from 'n8n-workflow';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 import { computed, ref, useTemplateRef, watch, type ComponentPublicInstance } from 'vue';
 
 import { ElCheckbox, ElSkeletonItem } from 'element-plus';

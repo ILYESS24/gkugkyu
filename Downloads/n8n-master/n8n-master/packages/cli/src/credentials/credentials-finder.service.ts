@@ -1,8 +1,8 @@
-import type { CredentialsEntity, SharedCredentials, User } from '@n8n/db';
-import { CredentialsRepository, SharedCredentialsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope } from '@n8n/permissions';
-import type { CredentialSharingRole, ProjectRole, Scope } from '@n8n/permissions';
+﻿import type { CredentialsEntity, SharedCredentials, User } from '@workflow-automation/db';
+import { CredentialsRepository, SharedCredentialsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope } from '@workflow-automation/permissions';
+import type { CredentialSharingRole, ProjectRole, Scope } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { EntityManager, FindOptionsWhere } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import

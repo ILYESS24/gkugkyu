@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, INodeExecutionData, INodeType } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeExecutionData, INodeType } from 'workflow-automation-workflow';
 
 import { process } from './actions/process';
 import { versionDescription } from './description';

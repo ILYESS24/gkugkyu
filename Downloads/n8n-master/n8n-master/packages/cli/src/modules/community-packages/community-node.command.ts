@@ -1,7 +1,7 @@
-import type { User } from '@n8n/db';
-import { CredentialsRepository, UserRepository } from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { User } from '@workflow-automation/db';
+import { CredentialsRepository, UserRepository } from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { z } from 'zod';
 
 import { BaseCommand } from '@/commands/base-command';

@@ -1,4 +1,4 @@
-import type { ChatOllamaInput } from '@langchain/ollama';
+﻿import type { ChatOllamaInput } from '@langchain/ollama';
 import { ChatOllama } from '@langchain/ollama';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

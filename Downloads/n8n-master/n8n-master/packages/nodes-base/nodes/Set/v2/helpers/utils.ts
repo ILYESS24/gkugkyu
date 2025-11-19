@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import set from 'lodash/set';
 import unset from 'lodash/unset';
 import {
@@ -8,7 +8,7 @@ import {
 	getValueDescription,
 	jsonParse,
 	validateFieldType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	AssignmentCollectionValue,
 	FieldType,
@@ -18,7 +18,7 @@ import type {
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { SetNodeOptions } from './interfaces';
 import { INCLUDE } from './interfaces';
@@ -182,7 +182,7 @@ export const validateEntry = (
 		return { name, value: null };
 	}
 
-	const description = `To fix the error try to change the type for the field "${name}" or activate the option “Ignore Type Conversion Errors” to apply a less strict type validation`;
+	const description = `To fix the error try to change the type for the field "${name}" or activate the option â€œIgnore Type Conversion Errorsâ€ to apply a less strict type validation`;
 
 	if (type === 'string') {
 		if (nodeVersion && nodeVersion > 3 && (value === undefined || value === null)) {

@@ -1,4 +1,4 @@
-import type { ChatHubProvider } from '@n8n/api-types';
+﻿import type { ChatHubProvider } from '@workflow-automation/api-types';
 
 // Route and view identifiers
 export const CHAT_VIEW = 'chat';

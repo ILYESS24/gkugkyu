@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -6,8 +6,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { isSafeObjectProperty, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { isSafeObjectProperty, NodeApiError } from 'workflow-automation-workflow';
 
 import { getGoogleAccessToken } from '../../GenericFunctions';
 

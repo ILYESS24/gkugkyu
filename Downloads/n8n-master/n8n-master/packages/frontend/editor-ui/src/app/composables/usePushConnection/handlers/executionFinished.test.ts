@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+﻿import { describe, it, expect, vi } from 'vitest';
 import { mock } from 'vitest-mock-extended';
 import {
 	continueEvaluationLoop,
@@ -6,8 +6,8 @@ import {
 	getRunExecutionData,
 	type SimplifiedExecution,
 } from './executionFinished';
-import type { ITaskData } from 'n8n-workflow';
-import { EVALUATION_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+import type { ITaskData } from 'workflow-automation-workflow';
+import { EVALUATION_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
 import type { INodeUi, IWorkflowDb } from '@/Interface';
 import type { Router } from 'vue-router';
 import type { WorkflowState } from '@/app/composables/useWorkflowState';

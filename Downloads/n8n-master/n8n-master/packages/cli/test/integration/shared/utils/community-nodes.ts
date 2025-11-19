@@ -1,5 +1,5 @@
-import { randomName } from '@n8n/backend-test-utils';
-import { Container } from '@n8n/di';
+﻿import { randomName } from '@n8n/backend-test-utils';
+import { Container } from '@workflow-automation/di';
 
 import { NODE_PACKAGE_PREFIX } from '@/constants';
 import { InstalledNodesRepository } from '@/modules/community-packages/installed-nodes.repository';

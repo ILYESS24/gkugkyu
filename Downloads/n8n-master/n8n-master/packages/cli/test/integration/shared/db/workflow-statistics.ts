@@ -1,7 +1,7 @@
-import { StatisticsNames, type WorkflowStatistics } from '@n8n/db';
-import { WorkflowStatisticsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { Workflow } from 'n8n-workflow';
+﻿import { StatisticsNames, type WorkflowStatistics } from '@workflow-automation/db';
+import { WorkflowStatisticsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { Workflow } from 'workflow-automation-workflow';
 
 export async function createWorkflowStatisticsItem(
 	workflowId: Workflow['id'],

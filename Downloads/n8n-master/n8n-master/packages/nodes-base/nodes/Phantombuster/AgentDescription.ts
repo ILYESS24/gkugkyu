@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const agentOperations: INodeProperties[] = [
 	{
@@ -295,7 +295,7 @@ export const agentFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'Agent argument. Can either be a JSON string or a plain object. The argument can be retrieved with buster.argument in the agent’s script.',
+					'Agent argument. Can either be a JSON string or a plain object. The argument can be retrieved with buster.argument in the agentâ€™s script.',
 			},
 			{
 				displayName: 'Arguments',
@@ -382,7 +382,7 @@ export const agentFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'Agent bonus argument. Can either be a JSON string or a plain object. This bonus argument is single-use, it will only be used for the current launch. If present, it will be merged with the original argument, resulting in an effective argument that can be retrieved with buster.argument in the agent’s script.',
+					'Agent bonus argument. Can either be a JSON string or a plain object. This bonus argument is single-use, it will only be used for the current launch. If present, it will be merged with the original argument, resulting in an effective argument that can be retrieved with buster.argument in the agentâ€™s script.',
 			},
 			{
 				displayName: 'Manual Launch',

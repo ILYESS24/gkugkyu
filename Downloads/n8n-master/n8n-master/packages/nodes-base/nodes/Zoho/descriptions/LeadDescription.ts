@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	address,
@@ -116,7 +116,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'Annual_Revenue',
 				type: 'number',
 				default: '',
-				description: 'Annual revenue of the lead’s company',
+				description: 'Annual revenue of the leadâ€™s company',
 			},
 			{
 				displayName: 'Currency',
@@ -208,7 +208,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'No_of_Employees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees in the lead’s company',
+				description: 'Number of employees in the leadâ€™s company',
 			},
 			{
 				displayName: 'Phone',
@@ -298,7 +298,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'Annual_Revenue',
 				type: 'number',
 				default: '',
-				description: 'Annual revenue of the lead’s company',
+				description: 'Annual revenue of the leadâ€™s company',
 			},
 			{
 				displayName: 'Currency',
@@ -392,7 +392,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'No_of_Employees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees in the lead’s company',
+				description: 'Number of employees in the leadâ€™s company',
 			},
 			{
 				displayName: 'Phone',
@@ -510,7 +510,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'Annual_Revenue',
 				type: 'number',
 				default: '',
-				description: 'Annual revenue of the lead’s company',
+				description: 'Annual revenue of the leadâ€™s company',
 			},
 			{
 				displayName: 'Company',
@@ -615,7 +615,7 @@ export const leadFields: INodeProperties[] = [
 				name: 'No_of_Employees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees in the lead’s company',
+				description: 'Number of employees in the leadâ€™s company',
 			},
 			{
 				displayName: 'Phone',

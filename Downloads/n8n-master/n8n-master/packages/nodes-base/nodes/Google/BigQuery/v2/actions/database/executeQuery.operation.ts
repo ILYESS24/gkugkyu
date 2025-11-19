@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { ApplicationError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeOperationError, sleep } from 'workflow-automation-workflow';
 
 import { getResolvables, updateDisplayOptions } from '@utils/utilities';
 

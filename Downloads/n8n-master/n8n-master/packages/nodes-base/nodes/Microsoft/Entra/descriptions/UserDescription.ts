@@ -1,4 +1,4 @@
-import merge from 'lodash/merge';
+﻿import merge from 'lodash/merge';
 import type { DateTime } from 'luxon';
 import {
 	NodeOperationError,
@@ -8,7 +8,7 @@ import {
 	type IN8nHttpFullResponse,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { handleErrorPostReceive, microsoftApiRequest } from '../GenericFunctions';
 

@@ -1,8 +1,8 @@
-import { Container, Service } from '@n8n/di';
+﻿import { Container, Service } from '@workflow-automation/di';
 import jwt from 'jsonwebtoken';
 import type { StringValue as TimeUnitValue } from 'ms';
-import { BINARY_ENCODING, UnexpectedError } from 'n8n-workflow';
-import type { INodeExecutionData, IBinaryData } from 'n8n-workflow';
+import { BINARY_ENCODING, UnexpectedError } from 'workflow-automation-workflow';
+import type { INodeExecutionData, IBinaryData } from 'workflow-automation-workflow';
 import { readFile, stat } from 'node:fs/promises';
 import prettyBytes from 'pretty-bytes';
 import type { Readable } from 'stream';

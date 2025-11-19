@@ -1,16 +1,16 @@
-import {
+﻿import {
 	createTeamProject,
 	createWorkflow,
 	createWorkflowWithTriggerAndHistory,
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { Project, TagEntity, User } from '@n8n/db';
-import { ProjectRepository, WorkflowHistoryRepository, SharedWorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
-import type { INode } from 'n8n-workflow';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { Project, TagEntity, User } from '@workflow-automation/db';
+import { ProjectRepository, WorkflowHistoryRepository, SharedWorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { INode } from 'workflow-automation-workflow';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
 import { STARTING_NODES } from '@/constants';

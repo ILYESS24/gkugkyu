@@ -1,4 +1,4 @@
-import flow from 'lodash/flow';
+﻿import flow from 'lodash/flow';
 import omit from 'lodash/omit';
 import type {
 	IDataObject,
@@ -6,7 +6,7 @@ import type {
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type {
 	AllFieldsUi,

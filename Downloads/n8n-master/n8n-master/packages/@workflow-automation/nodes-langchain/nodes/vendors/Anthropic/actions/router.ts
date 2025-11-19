@@ -1,4 +1,4 @@
-import { NodeOperationError, type IExecuteFunctions, type INodeExecutionData } from 'n8n-workflow';
+﻿import { NodeOperationError, type IExecuteFunctions, type INodeExecutionData } from 'workflow-automation-workflow';
 
 import * as document from './document';
 import * as file from './file';

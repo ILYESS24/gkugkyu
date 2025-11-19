@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	FieldType,
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodePropertyOptions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../transport';
 

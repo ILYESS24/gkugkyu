@@ -1,11 +1,11 @@
-import {
+﻿import {
 	ApplicationError,
 	type IDataObject,
 	type INodeType,
 	type INodeTypeDescription,
 	type INodeTypes,
 	type IVersionedNodeType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { NeededNodeType } from './runner-types';
 

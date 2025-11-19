@@ -1,4 +1,4 @@
-import type { INodeExecutionData, INodeProperties } from 'n8n-workflow';
+﻿import type { INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
 
 import { sendErrorPostReceive } from './GenericFunctions';
 
@@ -251,7 +251,7 @@ const moderateOperations: INodeProperties[] = [
 		displayName: 'Input',
 		name: 'input',
 		type: 'string',
-		placeholder: 'e.g. My cat is adorable ❤️❤️',
+		placeholder: 'e.g. My cat is adorable â¤ï¸â¤ï¸',
 		description: 'The input text to classify',
 		displayOptions: {
 			show: {

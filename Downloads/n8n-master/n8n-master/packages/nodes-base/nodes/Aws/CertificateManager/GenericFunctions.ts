@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	IHttpRequestOptions,
 	JsonObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeApiError } from 'workflow-automation-workflow';
 import { getAwsCredentials } from '../GenericFunctions';
 
 export async function awsApiRequest(

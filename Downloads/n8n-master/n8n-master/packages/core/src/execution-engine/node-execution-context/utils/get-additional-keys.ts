@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IRunExecutionData,
 	IWorkflowDataProxyAdditionalKeys,
 	IWorkflowExecuteAdditionalData,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { LoggerProxy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { LoggerProxy } from 'workflow-automation-workflow';
 
 import { PLACEHOLDER_EMPTY_EXECUTION_ID } from '@/constants';
 

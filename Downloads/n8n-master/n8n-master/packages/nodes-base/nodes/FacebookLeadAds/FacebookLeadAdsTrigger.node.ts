@@ -1,4 +1,4 @@
-import { createHmac } from 'crypto';
+﻿import { createHmac } from 'crypto';
 import {
 	NodeOperationError,
 	type IDataObject,
@@ -8,7 +8,7 @@ import {
 	type IWebhookFunctions,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	appWebhookSubscriptionCreate,

@@ -1,4 +1,4 @@
-import {
+﻿import {
 	TriggerCloseError,
 	type IDataObject,
 	type INodeType,
@@ -6,7 +6,7 @@ import {
 	type ITriggerFunctions,
 	type ITriggerResponse,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	pgTriggerFunction,

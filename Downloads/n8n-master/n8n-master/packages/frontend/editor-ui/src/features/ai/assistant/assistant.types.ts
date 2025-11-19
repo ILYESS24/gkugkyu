@@ -1,4 +1,4 @@
-import type { VIEWS } from '@/app/constants';
+﻿import type { VIEWS } from '@/app/constants';
 import type { IWorkflowDb, NodeAuthenticationOption, Schema } from '@/Interface';
 import type {
 	ExecutionError,
@@ -9,7 +9,7 @@ import type {
 	INodeParameters,
 	IRunExecutionData,
 	ITaskData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { ChatUI } from '@n8n/design-system/types/assistant';
 
 export namespace ChatRequest {

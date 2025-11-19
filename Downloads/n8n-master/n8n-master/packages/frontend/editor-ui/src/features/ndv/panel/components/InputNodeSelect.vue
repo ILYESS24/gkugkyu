@@ -1,10 +1,10 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { useI18n } from '@n8n/i18n';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { isPresent } from '@/app/utils/typesUtils';
-import type { IConnectedNode, Workflow } from 'n8n-workflow';
+import type { IConnectedNode, Workflow } from 'workflow-automation-workflow';
 import { computed } from 'vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { truncate } from '@n8n/utils/string/truncate';

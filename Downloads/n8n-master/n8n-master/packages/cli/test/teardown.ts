@@ -1,7 +1,7 @@
-import 'tsconfig-paths/register';
+﻿import 'tsconfig-paths/register';
 import { testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { DataSource as Connection } from '@n8n/typeorm';
 
 export default async () => {

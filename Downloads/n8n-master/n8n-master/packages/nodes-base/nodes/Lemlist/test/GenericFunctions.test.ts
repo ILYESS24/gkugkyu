@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { lemlistApiRequest, lemlistApiRequestAllItems, getEvents } from '../GenericFunctions';
 

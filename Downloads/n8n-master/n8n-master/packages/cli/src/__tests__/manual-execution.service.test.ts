@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import * as core from 'n8n-core';
-import { DirectedGraph, recreateNodeExecutionStack, WorkflowExecute } from 'n8n-core';
+﻿import { mock } from 'jest-mock-extended';
+import * as core from 'workflow-automation-core';
+import { DirectedGraph, recreateNodeExecutionStack, WorkflowExecute } from 'workflow-automation-core';
 import type {
 	Workflow,
 	IWorkflowExecutionDataProcess,
@@ -13,7 +13,7 @@ import type {
 	IWaitingForExecution,
 	IWaitingForExecutionSource,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type PCancelable from 'p-cancelable';
 
 import { ManualExecutionService } from '@/manual-execution.service';
@@ -80,7 +80,7 @@ describe('ManualExecutionService', () => {
 
 			const manualTrigger = mock<INode>({
 				type: 'n8n-nodes-base.manualTrigger',
-				name: 'When clicking ‘Execute workflow’',
+				name: 'When clicking â€˜Execute workflowâ€™',
 			});
 
 			const data = mock<IWorkflowExecutionDataProcess>({

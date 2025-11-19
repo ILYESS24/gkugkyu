@@ -1,8 +1,8 @@
-import { useUsersStore } from '@/features/settings/users/users.store';
+﻿import { useUsersStore } from '@/features/settings/users/users.store';
 import { useI18n } from '@n8n/i18n';
 import { STORES } from '@n8n/stores';
 import { useLocalStorage } from '@vueuse/core';
-import { OPEN_AI_API_CREDENTIAL_TYPE, deepCopy } from 'n8n-workflow';
+import { OPEN_AI_API_CREDENTIAL_TYPE, deepCopy } from 'workflow-automation-workflow';
 import type { WorkflowDataCreate } from '@n8n/rest-api-client';
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';

@@ -1,4 +1,4 @@
-import type { StreamEvent } from '@langchain/core/dist/tracers/event_stream';
+﻿import type { StreamEvent } from '@langchain/core/dist/tracers/event_stream';
 import type { IterableReadableStream } from '@langchain/core/dist/utils/stream';
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { AIMessageChunk, MessageContentText } from '@langchain/core/messages';
@@ -12,8 +12,8 @@ import {
 import type { BaseChatMemory } from 'langchain/memory';
 import type { DynamicStructuredTool, Tool } from 'langchain/tools';
 import omit from 'lodash/omit';
-import { jsonParse, NodeOperationError, sleep } from 'n8n-workflow';
-import type { IExecuteFunctions, INodeExecutionData, ISupplyDataFunctions } from 'n8n-workflow';
+import { jsonParse, NodeOperationError, sleep } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, INodeExecutionData, ISupplyDataFunctions } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import { getPromptInputByType } from '@utils/helpers';

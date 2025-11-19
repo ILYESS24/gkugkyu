@@ -1,17 +1,17 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GLOBAL_OWNER_ROLE, type User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GLOBAL_OWNER_ROLE, type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import axios from 'axios';
 import type {
 	MessageEventBusDestinationSentryOptions,
 	MessageEventBusDestinationSyslogOptions,
 	MessageEventBusDestinationWebhookOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	defaultMessageEventBusDestinationSentryOptions,
 	defaultMessageEventBusDestinationSyslogOptions,
 	defaultMessageEventBusDestinationWebhookOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import syslog from 'syslog-client';
 import { v4 as uuid } from 'uuid';
 

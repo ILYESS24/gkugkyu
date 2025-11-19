@@ -1,4 +1,4 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import chunk from 'lodash/chunk';
 import type {
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { document } from './descriptions';
 import { encodeBinaryData, mistralApiRequest, processResponseData } from './GenericFunctions';

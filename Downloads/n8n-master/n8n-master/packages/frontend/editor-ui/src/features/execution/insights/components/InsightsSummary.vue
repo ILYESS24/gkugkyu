@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { VIEWS } from '@/app/constants';
 import {
@@ -6,7 +6,7 @@ import {
 	INSIGHTS_UNIT_IMPACT_MAPPING,
 } from '@/features/execution/insights/insights.constants';
 import type { InsightsSummaryDisplay } from '@/features/execution/insights/insights.types';
-import type { InsightsDateRange, InsightsSummary } from '@n8n/api-types';
+import type { InsightsDateRange, InsightsSummary } from '@workflow-automation/api-types';
 import { useI18n } from '@n8n/i18n';
 import { smartDecimal } from '@n8n/utils/number/smartDecimal';
 import { computed, useCssModule } from 'vue';

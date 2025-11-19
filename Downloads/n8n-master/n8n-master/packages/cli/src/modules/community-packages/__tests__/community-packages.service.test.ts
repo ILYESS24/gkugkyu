@@ -1,11 +1,11 @@
-import type { Logger } from '@n8n/backend-common';
+﻿import type { Logger } from '@workflow-automation/backend-common';
 import { mockInstance, randomName } from '@n8n/backend-test-utils';
-import { LICENSE_FEATURES } from '@n8n/constants';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
 import axios from 'axios';
 import { mocked } from 'jest-mock';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings, PackageDirectoryLoader } from 'n8n-core';
-import type { PublicInstalledPackage } from 'n8n-workflow';
+import type { InstanceSettings, PackageDirectoryLoader } from 'workflow-automation-core';
+import type { PublicInstalledPackage } from 'workflow-automation-workflow';
 import { execFile } from 'node:child_process';
 import { access, constants, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path, { join } from 'node:path';

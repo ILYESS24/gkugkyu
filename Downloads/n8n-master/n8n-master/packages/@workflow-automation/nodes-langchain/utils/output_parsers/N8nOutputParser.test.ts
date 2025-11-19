@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { getOptionalOutputParser } from './N8nOutputParser';
 import type { N8nStructuredOutputParser } from './N8nStructuredOutputParser';

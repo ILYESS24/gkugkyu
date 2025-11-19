@@ -1,5 +1,5 @@
-import mysql2 from 'mysql2/promise';
-import type { IDataObject, INode } from 'n8n-workflow';
+﻿import mysql2 from 'mysql2/promise';
+import type { IDataObject, INode } from 'workflow-automation-workflow';
 
 import { createMockExecuteFunction } from '@test/nodes/Helpers';
 

@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import type { LdapConfig, ConnectionSecurity } from '@n8n/constants';
-import type { AuthProviderSyncHistory } from '@n8n/db';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import type { LdapConfig, ConnectionSecurity } from '@workflow-automation/constants';
+import type { AuthProviderSyncHistory } from '@workflow-automation/db';
 import {
 	AuthIdentity,
 	User,
@@ -8,12 +8,12 @@ import {
 	AuthProviderSyncHistoryRepository,
 	UserRepository,
 	GLOBAL_MEMBER_ROLE,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { validate } from 'jsonschema';
 import type { Entry as LdapUser } from 'ldapts';
 import { Filter } from 'ldapts/filters/Filter';
-import { randomString } from 'n8n-workflow';
+import { randomString } from 'workflow-automation-workflow';
 
 import { License } from '@/license';
 

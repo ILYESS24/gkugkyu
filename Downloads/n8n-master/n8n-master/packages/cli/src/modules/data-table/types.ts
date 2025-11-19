@@ -1,4 +1,4 @@
-import type { AuthenticatedRequest } from '@n8n/db';
+﻿import type { AuthenticatedRequest } from '@workflow-automation/db';
 import type { RequestHandler } from 'express';
 
 export interface UploadMiddleware {

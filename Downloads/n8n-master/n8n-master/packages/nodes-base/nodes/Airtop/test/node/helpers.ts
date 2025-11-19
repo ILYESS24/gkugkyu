@@ -1,12 +1,12 @@
-import get from 'lodash/get';
-import { constructExecutionMetaData } from 'n8n-core';
+﻿import get from 'lodash/get';
+import { constructExecutionMetaData } from 'workflow-automation-core';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	IGetNodeParameterOptions,
 	INode,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export const node: INode = {
 	id: '1',

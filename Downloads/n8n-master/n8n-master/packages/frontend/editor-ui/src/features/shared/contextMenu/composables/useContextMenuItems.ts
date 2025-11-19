@@ -1,13 +1,13 @@
-import type { ActionDropdownItem, INodeUi } from '@/Interface';
+﻿import type { ActionDropdownItem, INodeUi } from '@/Interface';
 import { NOT_DUPLICATABLE_NODE_TYPES, STICKY_NODE_TYPE } from '@/app/constants';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useI18n } from '@n8n/i18n';
-import { getResourcePermissions } from '@n8n/permissions';
-import type { INode, INodeTypeDescription, Workflow } from 'n8n-workflow';
-import { NodeHelpers } from 'n8n-workflow';
+import { getResourcePermissions } from '@workflow-automation/permissions';
+import type { INode, INodeTypeDescription, Workflow } from 'workflow-automation-workflow';
+import { NodeHelpers } from 'workflow-automation-workflow';
 import { computed, type ComputedRef } from 'vue';
 import { isPresent } from '@/app/utils/typesUtils';
 import { usePinnedData } from '@/app/composables/usePinnedData';
@@ -208,7 +208,7 @@ export function useContextMenuItems(targetNodeIds: ComputedRef<string[]>): Compu
 							{
 								id: 'open',
 								label: i18n.baseText('contextMenu.editSticky'),
-								shortcut: { keys: ['↵'] },
+								shortcut: { keys: ['â†µ'] },
 								disabled: isReadOnly.value,
 							},
 							{
@@ -221,7 +221,7 @@ export function useContextMenuItems(targetNodeIds: ComputedRef<string[]>): Compu
 							{
 								id: 'open',
 								label: i18n.baseText('contextMenu.open'),
-								shortcut: { keys: ['↵'] },
+								shortcut: { keys: ['â†µ'] },
 							},
 							{
 								id: 'execute',

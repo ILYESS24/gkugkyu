@@ -1,9 +1,9 @@
-import { TestCaseExecutionRepository, TestRunRepository } from '@n8n/db';
-import type { User } from '@n8n/db';
-import { Delete, Get, Post, RestController } from '@n8n/decorators';
+﻿import { TestCaseExecutionRepository, TestRunRepository } from '@workflow-automation/db';
+import type { User } from '@workflow-automation/db';
+import { Delete, Get, Post, RestController } from '@workflow-automation/decorators';
 import express from 'express';
-import { InstanceSettings } from 'n8n-core';
-import { UnexpectedError } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { ConflictError } from '@/errors/response-errors/conflict.error';
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

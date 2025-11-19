@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class WooCommerceApi implements ICredentialType {
 	name = 'wooCommerceApi';
@@ -41,7 +41,7 @@ export class WooCommerceApi implements ICredentialType {
 			type: 'boolean',
 			default: false,
 			description:
-				'Whether credentials should be included in the query. Occasionally, some servers may not parse the Authorization header correctly (if you see a “Consumer key is missing” error when authenticating over SSL, you have a server issue). In this case, you may provide the consumer key/secret as query string parameters instead.',
+				'Whether credentials should be included in the query. Occasionally, some servers may not parse the Authorization header correctly (if you see a â€œConsumer key is missingâ€ error when authenticating over SSL, you have a server issue). In this case, you may provide the consumer key/secret as query string parameters instead.',
 		},
 	];
 

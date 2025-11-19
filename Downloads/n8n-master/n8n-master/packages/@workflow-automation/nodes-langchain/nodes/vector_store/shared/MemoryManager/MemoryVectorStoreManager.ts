@@ -1,8 +1,8 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
 import type { OpenAIEmbeddings, AzureOpenAIEmbeddings } from '@langchain/openai';
 import { MemoryVectorStore } from 'langchain/vectorstores/memory';
-import type { Logger } from 'n8n-workflow';
+import type { Logger } from 'workflow-automation-workflow';
 
 import { getConfig, mbToBytes, hoursToMs } from './config';
 import { MemoryCalculator } from './MemoryCalculator';

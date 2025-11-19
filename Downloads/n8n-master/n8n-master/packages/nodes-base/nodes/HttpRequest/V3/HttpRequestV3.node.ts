@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import type {
 	IBinaryKeyData,
 	IDataObject,
@@ -13,7 +13,7 @@ import type {
 	IRequestOptions,
 	IHttpRequestMethods,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	BINARY_ENCODING,
 	NodeApiError,
@@ -23,7 +23,7 @@ import {
 	removeCircularRefs,
 	sleep,
 	isDomainAllowed,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import { keysToLowercase } from '@utils/utilities';
@@ -1117,7 +1117,7 @@ export class HttpRequestV3 implements INodeType {
 			Array.isArray(returnItems[0].json.data)
 		) {
 			const message =
-				'To split the contents of ‘data’ into separate items for easier processing, add a ‘Split Out’ node after this one';
+				'To split the contents of â€˜dataâ€™ into separate items for easier processing, add a â€˜Split Outâ€™ node after this one';
 
 			if (this.addExecutionHints) {
 				this.addExecutionHints({

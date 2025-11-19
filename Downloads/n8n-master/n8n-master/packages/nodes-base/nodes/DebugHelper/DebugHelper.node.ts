@@ -1,16 +1,16 @@
-import { setSeed, array as mfArray } from 'minifaker';
+﻿import { setSeed, array as mfArray } from 'minifaker';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	NodeApiError,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { generateGarbageMemory, runGarbageCollector } from './functions';
 import {

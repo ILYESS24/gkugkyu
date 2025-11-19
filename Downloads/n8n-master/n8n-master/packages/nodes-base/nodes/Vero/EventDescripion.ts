@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const eventOperations: INodeProperties[] = [
 	{
@@ -127,7 +127,7 @@ export const eventFields: INodeProperties[] = [
 		name: 'extraAttributesUi',
 		placeholder: 'Add Extra',
 		description:
-			'Key value pairs that represent reserved, Vero-specific operators. Refer to the note on “deduplication” below.',
+			'Key value pairs that represent reserved, Vero-specific operators. Refer to the note on â€œdeduplicationâ€ below.',
 		type: 'fixedCollection',
 		typeOptions: {
 			multipleValues: true,
@@ -189,7 +189,7 @@ export const eventFields: INodeProperties[] = [
 			alwaysOpenEditWindow: true,
 		},
 		description:
-			'Key value pairs that represent reserved, Vero-specific operators. Refer to the note on “deduplication” below.',
+			'Key value pairs that represent reserved, Vero-specific operators. Refer to the note on â€œdeduplicationâ€ below.',
 		displayOptions: {
 			show: {
 				resource: ['event'],

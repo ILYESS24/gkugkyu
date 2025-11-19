@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, INodeListSearchResult } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions, INodeListSearchResult } from 'workflow-automation-workflow';
 
 import { configurePostgres } from '../../transport';
 import type { PostgresNodeCredentials } from '../helpers/interfaces';

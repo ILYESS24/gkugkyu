@@ -1,9 +1,9 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import {
 	type ITriggerFunctions,
 	type IDataObject,
 	type IGetNodeParameterOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { Cron } from '../Cron.node';
 

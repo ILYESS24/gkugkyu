@@ -1,4 +1,4 @@
-import {
+﻿import {
 	ChatHubSendMessageRequest,
 	ChatModelsResponse,
 	ChatHubConversationsResponse,
@@ -10,9 +10,9 @@ import {
 	ChatMessageId,
 	ChatHubCreateAgentRequest,
 	ChatHubUpdateAgentRequest,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { AuthenticatedRequest } from '@n8n/db';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { AuthenticatedRequest } from '@workflow-automation/db';
 import {
 	RestController,
 	Post,
@@ -22,7 +22,7 @@ import {
 	Delete,
 	Param,
 	Patch,
-} from '@n8n/decorators';
+} from '@workflow-automation/decorators';
 import type { Response } from 'express';
 import { strict as assert } from 'node:assert';
 

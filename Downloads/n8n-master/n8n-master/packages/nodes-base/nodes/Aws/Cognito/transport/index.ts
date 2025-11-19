@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	IHttpRequestOptions,
 	IExecuteSingleFunctions,
 	IDataObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { AwsIamCredentialsType } from '../../../../credentials/common/aws/types';
 
 export async function awsApiRequest(

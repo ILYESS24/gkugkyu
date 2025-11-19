@@ -1,6 +1,6 @@
-import type { DataRequestResponse, TaskDataRequestParams } from '@n8n/task-runner';
+﻿import type { DataRequestResponse, TaskDataRequestParams } from '@n8n/task-runner';
 import { mock } from 'jest-mock-extended';
-import type { IWorkflowExecuteAdditionalData, INode, INodeExecutionData } from 'n8n-workflow';
+import type { IWorkflowExecuteAdditionalData, INode, INodeExecutionData } from 'workflow-automation-workflow';
 
 import { DataRequestResponseStripper } from '../data-request-response-stripper';
 
@@ -80,11 +80,11 @@ const additionalData = mock<IWorkflowExecuteAdditionalData>({
 /**
  * Drawn with https://asciiflow.com/#/
  * Task data for an execution of the following WF:
- * where ►► denotes the currently being executing node.
- *																			►►
- *	┌───────────┐   ┌─────────────┐    ┌────────┐
- *	│  Trigger  ├──►│ DebugHelper ├───►│  Code  │
- *	└───────────┘   └─────────────┘    └────────┘
+ * where â–ºâ–º denotes the currently being executing node.
+ *																			â–ºâ–º
+ *	â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
+ *	â”‚  Trigger  â”œâ”€â”€â–ºâ”‚ DebugHelper â”œâ”€â”€â”€â–ºâ”‚  Code  â”‚
+ *	â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
  */
 const taskData: DataRequestResponse = {
 	workflow,

@@ -1,7 +1,7 @@
-import axios from 'axios';
+﻿import axios from 'axios';
 import { mockDeep } from 'jest-mock-extended';
-import type { IBinaryData, IExecuteFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IBinaryData, IExecuteFunctions } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { downloadFile, uploadFile, transferFile } from './utils';
 import * as transport from '../transport';

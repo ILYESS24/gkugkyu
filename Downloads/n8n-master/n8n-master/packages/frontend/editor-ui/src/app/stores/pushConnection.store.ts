@@ -1,6 +1,6 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { computed, ref, watch } from 'vue';
-import type { PushMessage } from '@n8n/api-types';
+import type { PushMessage } from '@workflow-automation/api-types';
 
 import { STORES } from '@n8n/stores';
 import { useSettingsStore } from './settings.store';

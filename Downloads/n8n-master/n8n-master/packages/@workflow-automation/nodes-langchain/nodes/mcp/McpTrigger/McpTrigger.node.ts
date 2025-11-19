@@ -1,7 +1,7 @@
-import { WebhookAuthorizationError } from 'n8n-nodes-base/dist/nodes/Webhook/error';
+﻿import { WebhookAuthorizationError } from 'n8n-nodes-base/dist/nodes/Webhook/error';
 import { validateWebhookAuthentication } from 'n8n-nodes-base/dist/nodes/Webhook/utils';
-import type { INodeTypeDescription, IWebhookFunctions, IWebhookResponseData } from 'n8n-workflow';
-import { NodeConnectionTypes, Node, nodeNameToToolName } from 'n8n-workflow';
+import type { INodeTypeDescription, IWebhookFunctions, IWebhookResponseData } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, Node, nodeNameToToolName } from 'workflow-automation-workflow';
 
 import { getConnectedTools } from '@utils/helpers';
 
@@ -51,7 +51,7 @@ export class McpTrigger extends Node {
 					"This trigger has two modes: test and production.<br /><br /><b>Use test mode while you build your workflow</b>. Click the 'execute step' button, then make an MCP request to the test URL. The executions will show up in the editor.<br /><br /><b>Use production mode to run your workflow automatically</b>. Since your workflow is activated, you can make requests to the production URL. These executions will show up in the <a data-key='executions'>executions list</a>, but not the editor.",
 			},
 			activationHint:
-				'Once you’ve finished building your workflow, run it without having to click this button by using the production URL.',
+				'Once youâ€™ve finished building your workflow, run it without having to click this button by using the production URL.',
 		},
 		inputs: [
 			{

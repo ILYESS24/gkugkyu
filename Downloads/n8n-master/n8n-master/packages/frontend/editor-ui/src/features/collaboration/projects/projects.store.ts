@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { ref, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useRootStore } from '@n8n/stores/useRootStore';
@@ -16,8 +16,8 @@ import type { IWorkflowDb } from '@/Interface';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import { STORES } from '@n8n/stores';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import { getResourcePermissions } from '@n8n/permissions';
-import type { CreateProjectDto, UpdateProjectDto } from '@n8n/api-types';
+import { getResourcePermissions } from '@workflow-automation/permissions';
+import type { CreateProjectDto, UpdateProjectDto } from '@workflow-automation/api-types';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 
 export type ResourceCounts = {

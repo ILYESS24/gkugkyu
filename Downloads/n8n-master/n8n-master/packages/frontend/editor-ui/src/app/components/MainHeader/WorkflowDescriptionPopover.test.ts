@@ -1,4 +1,4 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import { type MockedStore, mockedStore } from '@/__tests__/utils';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
@@ -9,7 +9,7 @@ import { useUIStore } from '@/app/stores/ui.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useToast } from '@/app/composables/useToast';
 import { useTelemetry } from '@/app/composables/useTelemetry';
-import { WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+import { WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
 import { STORES } from '@n8n/stores';
 
 vi.mock('@/app/composables/useToast', () => {

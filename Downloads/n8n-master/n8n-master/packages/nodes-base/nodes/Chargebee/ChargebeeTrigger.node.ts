@@ -1,11 +1,11 @@
-import {
+﻿import {
 	type IDataObject,
 	type IWebhookFunctions,
 	type INodeType,
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class ChargebeeTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -87,7 +87,7 @@ export class ChargebeeTrigger implements INodeType {
 						name: 'Invoice Created',
 						value: 'invoice_created',
 						description:
-							"Event triggered (in the case of metered billing) when a 'Pending' invoice is created that has usage related charges or line items to be added, before being closed. This is triggered only when the “Notify for Pending Invoices” option is enabled.",
+							"Event triggered (in the case of metered billing) when a 'Pending' invoice is created that has usage related charges or line items to be added, before being closed. This is triggered only when the â€œNotify for Pending Invoicesâ€ option is enabled.",
 					},
 					{
 						name: 'Invoice Deleted',
@@ -104,7 +104,7 @@ export class ChargebeeTrigger implements INodeType {
 						name: 'Invoice Updated',
 						value: 'invoice_updated',
 						description:
-							'Triggered when the invoice’s shipping/billing address is updated, if the invoice is voided, or when the amount due is modified due to payments applied/removed',
+							'Triggered when the invoiceâ€™s shipping/billing address is updated, if the invoice is voided, or when the amount due is modified due to payments applied/removed',
 					},
 					{
 						name: 'Payment Failed',

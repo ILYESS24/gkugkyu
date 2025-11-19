@@ -1,7 +1,7 @@
-import { mockLogger } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import type { AuthenticatedRequest, User, UserRepository } from '@n8n/db';
+﻿import { mockLogger } from '@n8n/backend-test-utils';
+import type { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import type { AuthenticatedRequest, User, UserRepository } from '@workflow-automation/db';
 import type { NextFunction, Response } from 'express';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';

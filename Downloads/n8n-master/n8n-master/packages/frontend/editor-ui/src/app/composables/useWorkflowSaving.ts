@@ -1,4 +1,4 @@
-import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
+﻿import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import type { LocationQuery, NavigationGuardNext, useRouter } from 'vue-router';
 import { useMessage } from './useMessage';
@@ -18,7 +18,7 @@ import { useCanvasStore } from '@/app/stores/canvas.store';
 import type { IUpdateInformation, IWorkflowDb, NotificationOptions } from '@/Interface';
 import type { ITag } from '@n8n/rest-api-client/api/tags';
 import type { WorkflowDataCreate, WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
-import type { IDataObject, INode, IWorkflowSettings } from 'n8n-workflow';
+import type { IDataObject, INode, IWorkflowSettings } from 'workflow-automation-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useToast } from './useToast';
 import { useExternalHooks } from './useExternalHooks';
@@ -28,7 +28,7 @@ import { tryToParseNumber } from '@/app/utils/typesUtils';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
 import { useFocusPanelStore } from '@/app/stores/focusPanel.store';
 import { injectWorkflowState, type WorkflowState } from '@/app/composables/useWorkflowState';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 
 export function useWorkflowSaving({
 	router,

@@ -1,13 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { LICENSE_FEATURES } from '@n8n/constants';
-import { ExecutionRepository, SettingsRepository } from '@n8n/db';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
+import { ExecutionRepository, SettingsRepository } from '@workflow-automation/db';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import glob from 'fast-glob';
 import { createReadStream, createWriteStream, existsSync } from 'fs';
 import { mkdir } from 'fs/promises';
-import { jsonParse, randomString, type IWorkflowExecutionDataProcess } from 'n8n-workflow';
+import { jsonParse, randomString, type IWorkflowExecutionDataProcess } from 'workflow-automation-workflow';
 import path from 'path';
 import replaceStream from 'replacestream';
 import { pipeline } from 'stream/promises';

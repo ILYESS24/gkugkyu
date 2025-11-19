@@ -1,6 +1,6 @@
-import type { Tool } from '@langchain/core/tools';
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+﻿import type { Tool } from '@langchain/core/tools';
+import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 
 import { getConnectedTools } from '@utils/helpers';

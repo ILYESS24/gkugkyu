@@ -1,6 +1,6 @@
-/* eslint-disable n8n-nodes-base/cred-class-name-unsuffixed */
+﻿/* eslint-disable n8n-nodes-base/cred-class-name-unsuffixed */
 /* eslint-disable n8n-nodes-base/cred-class-field-name-unsuffixed */
-import type { ICredentialType, INodeProperties, Icon } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties, Icon } from 'workflow-automation-workflow';
 
 export class HttpSslAuth implements ICredentialType {
 	name = 'httpSslAuth';

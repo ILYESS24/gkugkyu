@@ -1,4 +1,4 @@
-import type { GlobalConfig } from '@n8n/config';
+﻿import type { GlobalConfig } from '@workflow-automation/config';
 import { promises as fs } from 'fs';
 import path from 'path';
 

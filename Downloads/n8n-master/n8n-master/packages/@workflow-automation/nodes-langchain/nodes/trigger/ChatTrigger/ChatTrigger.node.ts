@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import pick from 'lodash/pick';
 import {
 	Node,
@@ -7,7 +7,7 @@ import {
 	assertParamIsBoolean,
 	validateNodeParameters,
 	assertParamIsString,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IWebhookFunctions,
@@ -17,7 +17,7 @@ import type {
 	INodeExecutionData,
 	IBinaryData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import * as a from 'node:assert';
 
 import { cssVariables } from './constants';
@@ -184,7 +184,7 @@ const commonOptionsFields: INodeProperties[] = [
 				'/mode': ['hostedChat'],
 			},
 		},
-		default: 'Hi there! 👋',
+		default: 'Hi there! ðŸ‘‹',
 		placeholder: 'e.g. Welcome',
 		description: 'Shown at the top of the chat',
 	},
@@ -324,7 +324,7 @@ export class ChatTrigger extends Node {
 			},
 			{
 				displayName:
-					'Chat will be live at the URL above once you activate this workflow. Live executions will show up in the ‘executions’ tab',
+					'Chat will be live at the URL above once you activate this workflow. Live executions will show up in the â€˜executionsâ€™ tab',
 				name: 'hostedChatNotice',
 				type: 'notice',
 				displayOptions: {
@@ -390,7 +390,7 @@ export class ChatTrigger extends Node {
 				typeOptions: {
 					rows: 3,
 				},
-				default: 'Hi there! 👋\nMy name is Nathan. How can I assist you today?',
+				default: 'Hi there! ðŸ‘‹\nMy name is Nathan. How can I assist you today?',
 				description: 'Default messages shown at the start of the chat, one per line',
 			},
 			{

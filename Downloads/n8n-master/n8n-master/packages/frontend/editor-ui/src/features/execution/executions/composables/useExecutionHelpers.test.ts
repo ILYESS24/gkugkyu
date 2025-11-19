@@ -1,5 +1,5 @@
-import { useExecutionHelpers } from '../composables/useExecutionHelpers';
-import type { ExecutionSummary } from 'n8n-workflow';
+﻿import { useExecutionHelpers } from '../composables/useExecutionHelpers';
+import type { ExecutionSummary } from 'workflow-automation-workflow';
 import { i18n } from '@n8n/i18n';
 import { convertToDisplayDate } from '@/app/utils/formatters/dateFormatter';
 import { mock } from 'vitest-mock-extended';

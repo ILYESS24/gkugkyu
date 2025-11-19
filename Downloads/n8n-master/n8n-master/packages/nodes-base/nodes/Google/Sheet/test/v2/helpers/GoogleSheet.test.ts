@@ -1,4 +1,4 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { GoogleSheet } from '../../../v2/helpers/GoogleSheet';
 import { apiRequest } from '../../../v2/transport';
@@ -888,7 +888,7 @@ describe('GoogleSheet', () => {
 				columnNamesList,
 			);
 
-			expect(result.updateData).toHaveLength(4); // 2 items × 2 fields each
+			expect(result.updateData).toHaveLength(4); // 2 items Ã— 2 fields each
 			expect(result.updateData[0]).toEqual({
 				range: 'Sheet1!B2',
 				values: [['John']],

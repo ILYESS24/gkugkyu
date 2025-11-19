@@ -1,11 +1,11 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	IWorkflowDataProxyData,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ExecutionData } from '../ExecutionData.node';
 

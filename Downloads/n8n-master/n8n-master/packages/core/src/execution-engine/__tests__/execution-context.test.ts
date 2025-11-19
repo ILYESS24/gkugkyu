@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import {
 	UnexpectedError,
 	type IExecutionContext,
@@ -8,7 +8,7 @@ import {
 	type RelatedExecution,
 	type Workflow,
 	type WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { establishExecutionContext } from '../execution-context';
 

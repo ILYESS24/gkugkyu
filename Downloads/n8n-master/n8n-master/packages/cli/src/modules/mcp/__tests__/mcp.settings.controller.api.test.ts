@@ -1,6 +1,6 @@
-import { testDb } from '@n8n/backend-test-utils';
-import { ApiKeyRepository, type User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import { ApiKeyRepository, type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { createMember, createOwner, createUser } from '@test-integration/db/users';
 import { setupTestServer } from '@test-integration/utils';

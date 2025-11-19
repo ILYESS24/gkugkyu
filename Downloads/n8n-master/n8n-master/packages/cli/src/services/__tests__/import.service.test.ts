@@ -1,15 +1,15 @@
-import { safeJoinPath, type Logger } from '@n8n/backend-common';
+﻿import { safeJoinPath, type Logger } from '@workflow-automation/backend-common';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { type DataSource, type EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { readdir, readFile } from 'fs/promises';
-import type { Cipher } from 'n8n-core';
+import type { Cipher } from 'workflow-automation-core';
 
 import { ImportService } from '../import.service';
-import type { CredentialsRepository, TagRepository } from '@n8n/db';
+import type { CredentialsRepository, TagRepository } from '@workflow-automation/db';
 import type { ActiveWorkflowManager } from '@/active-workflow-manager';
 import type { WorkflowIndexService } from '@/modules/workflow-index/workflow-index.service';
-import type { DatabaseConfig } from '@n8n/config';
+import type { DatabaseConfig } from '@workflow-automation/config';
 
 // Mock fs/promises
 jest.mock('fs/promises');
@@ -226,8 +226,8 @@ describe('ImportService', () => {
 			await importService.truncateEntityTable('users', mockEntityManager);
 
 			expect(mockEntityManager.createQueryBuilder).toHaveBeenCalled();
-			expect(mockLogger.info).toHaveBeenCalledWith('🗑️  Truncating table: users');
-			expect(mockLogger.info).toHaveBeenCalledWith('   ✅ Table users truncated successfully');
+			expect(mockLogger.info).toHaveBeenCalledWith('ðŸ—‘ï¸  Truncating table: users');
+			expect(mockLogger.info).toHaveBeenCalledWith('   âœ… Table users truncated successfully');
 		});
 
 		it('should handle database errors gracefully', async () => {
@@ -798,9 +798,9 @@ describe('ImportService', () => {
 			await importService.decompressEntitiesZip(inputDir);
 
 			expect(mockLogger.info).toHaveBeenCalledWith(
-				`\n🗜️  Found entities.zip file, decompressing to ${inputDir}...`,
+				`\nðŸ—œï¸  Found entities.zip file, decompressing to ${inputDir}...`,
 			);
-			expect(mockLogger.info).toHaveBeenCalledWith('✅ Successfully decompressed entities.zip');
+			expect(mockLogger.info).toHaveBeenCalledWith('âœ… Successfully decompressed entities.zip');
 		});
 	});
 });

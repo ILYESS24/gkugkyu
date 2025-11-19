@@ -1,4 +1,4 @@
-/* eslint-disable n8n-nodes-base/node-param-description-excess-final-period */
+﻿/* eslint-disable n8n-nodes-base/node-param-description-excess-final-period */
 import type {
 	IDataObject,
 	IHookFunctions,
@@ -8,8 +8,8 @@ import type {
 	IWebhookResponseData,
 	JsonObject,
 	NodeParameterValue,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { stripeApiRequest } from './helpers';
 
@@ -357,7 +357,7 @@ export class StripeTrigger implements INodeType {
 						name: 'Invoice Upcoming',
 						value: 'invoice.upcoming',
 						description:
-							'Occurs X number of days before a subscription is scheduled to create an invoice that is automatically charged—where X is determined by your subscriptions settings. Note: The received Invoice object will not have an invoice ID.',
+							'Occurs X number of days before a subscription is scheduled to create an invoice that is automatically chargedâ€”where X is determined by your subscriptions settings. Note: The received Invoice object will not have an invoice ID.',
 					},
 					{
 						name: 'Invoice Updated',

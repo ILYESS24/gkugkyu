@@ -1,5 +1,5 @@
-import type { ChatHubProvider, ChatHubMessageType, ChatHubMessageStatus } from '@n8n/api-types';
-import { ExecutionEntity, WithTimestamps, WorkflowEntity } from '@n8n/db';
+﻿import type { ChatHubProvider, ChatHubMessageType, ChatHubMessageStatus } from '@workflow-automation/api-types';
+import { ExecutionEntity, WithTimestamps, WorkflowEntity } from '@workflow-automation/db';
 import {
 	Column,
 	Entity,

@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IDataObject,
 	type IHookFunctions,
 	type IWebhookFunctions,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	convertTriggerObjectToStringArray,

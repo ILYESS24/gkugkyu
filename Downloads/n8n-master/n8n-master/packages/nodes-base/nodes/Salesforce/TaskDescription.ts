@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const taskOperations: INodeProperties[] = [
 	{
@@ -102,7 +102,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					"Represents the result of a given call, for example, “we'll call back,” or “call unsuccessful.” Limit is 255 characters. Not subject to field-level security, available for any user in an organization with Salesforce CRM Call Center.",
+					"Represents the result of a given call, for example, â€œwe'll call back,â€ or â€œcall unsuccessful.â€ Limit is 255 characters. Not subject to field-level security, available for any user in an organization with Salesforce CRM Call Center.",
 			},
 			{
 				displayName: 'Call Duration In Seconds',
@@ -224,7 +224,7 @@ export const taskFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The frequency of the recurring task. For example, “2nd” or “3rd.”. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The frequency of the recurring task. For example, â€œ2ndâ€ or â€œ3rd.â€. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Recurrence Interval',
@@ -350,7 +350,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The time zone associated with the recurring task. For example, “UTC-8:00” for Pacific Standard Time.',
+					'The time zone associated with the recurring task. For example, â€œUTC-8:00â€ for Pacific Standard Time.',
 			},
 			{
 				displayName: 'Reminder Date Time',
@@ -369,7 +369,7 @@ export const taskFields: INodeProperties[] = [
 					loadOptionsMethod: 'getTaskSubjects',
 				},
 				description:
-					'The subject line of the task, such as “Call” or “Send Quote.” Limit: 255 characters. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The subject line of the task, such as â€œCallâ€ or â€œSend Quote.â€ Limit: 255 characters. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Type Name or ID',
@@ -396,7 +396,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The WhoId represents a human such as a lead or a contact. WhoIds are polymorphic. Polymorphic means a WhoId is equivalent to a contact’s ID or a lead’s ID.',
+					'The WhoId represents a human such as a lead or a contact. WhoIds are polymorphic. Polymorphic means a WhoId is equivalent to a contactâ€™s ID or a leadâ€™s ID.',
 			},
 		],
 	},
@@ -445,7 +445,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					"Represents the result of a given call, for example, “we'll call back,” or “call unsuccessful.” Limit is 255 characters. Not subject to field-level security, available for any user in an organization with Salesforce CRM Call Center.",
+					"Represents the result of a given call, for example, â€œwe'll call back,â€ or â€œcall unsuccessful.â€ Limit is 255 characters. Not subject to field-level security, available for any user in an organization with Salesforce CRM Call Center.",
 			},
 			{
 				displayName: 'Call Duration In Seconds',
@@ -567,7 +567,7 @@ export const taskFields: INodeProperties[] = [
 					loadOptionsMethod: 'getTaskSubjects',
 				},
 				description:
-					'The subject line of the task, such as “Call” or “Send Quote.” Limit: 255 characters. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The subject line of the task, such as â€œCallâ€ or â€œSend Quote.â€ Limit: 255 characters. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Recurrence Day Of Month',
@@ -601,7 +601,7 @@ export const taskFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The frequency of the recurring task. For example, “2nd” or “3rd.”. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The frequency of the recurring task. For example, â€œ2ndâ€ or â€œ3rd.â€. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Recurrence Interval',
@@ -715,7 +715,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The time zone associated with the recurring task. For example, “UTC-8:00” for Pacific Standard Time.',
+					'The time zone associated with the recurring task. For example, â€œUTC-8:00â€ for Pacific Standard Time.',
 			},
 			{
 				displayName: 'Reminder Date Time',
@@ -750,7 +750,7 @@ export const taskFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The WhoId represents a human such as a lead or a contact. WhoIds are polymorphic. Polymorphic means a WhoId is equivalent to a contact’s ID or a lead’s ID.',
+					'The WhoId represents a human such as a lead or a contact. WhoIds are polymorphic. Polymorphic means a WhoId is equivalent to a contactâ€™s ID or a leadâ€™s ID.',
 			},
 		],
 	},

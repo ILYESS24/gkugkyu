@@ -1,4 +1,4 @@
-import type { INodeUi } from '@/Interface';
+﻿import type { INodeUi } from '@/Interface';
 import { useContextMenu } from './useContextMenu';
 import { BASIC_CHAIN_NODE_TYPE, NO_OP_NODE_TYPE, STICKY_NODE_TYPE } from '@/app/constants';
 import { faker } from '@faker-js/faker';
@@ -11,7 +11,7 @@ import {
 	NodeConnectionTypes,
 	NodeHelpers,
 	WORKFLOW_TOOL_LANGCHAIN_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 const nodeFactory = (data: Partial<INodeUi> = {}): INodeUi => ({
 	id: faker.string.uuid(),

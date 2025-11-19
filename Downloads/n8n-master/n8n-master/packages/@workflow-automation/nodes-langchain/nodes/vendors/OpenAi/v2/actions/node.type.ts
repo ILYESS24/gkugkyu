@@ -1,4 +1,4 @@
-import type { AllEntities } from 'n8n-workflow';
+﻿import type { AllEntities } from 'workflow-automation-workflow';
 
 type NodeMap = {
 	audio: 'generate' | 'transcribe' | 'translate';

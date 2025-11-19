@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type IHttpRequestMethods,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { contactFields, contactOperations } from './ContactDescription';
 import { contactJourneyFields, contactJourneyOperations } from './ContactJourneyDescription';

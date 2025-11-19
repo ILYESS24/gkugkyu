@@ -1,5 +1,5 @@
-import { indexedDbCache } from '@/app/plugins/cache';
-import { jsonParse } from 'n8n-workflow';
+﻿import { indexedDbCache } from '@/app/plugins/cache';
+import { jsonParse } from 'workflow-automation-workflow';
 import { ref } from 'vue';
 
 const actionTypes = ['evaluations', 'errorWorkflow', 'timeSaved', 'mcp-access'] as const;

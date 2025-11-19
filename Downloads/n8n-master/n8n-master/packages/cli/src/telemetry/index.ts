@@ -1,17 +1,17 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
 import {
 	ProjectRelationRepository,
 	ProjectRepository,
 	WorkflowRepository,
 	UserRepository,
-} from '@n8n/db';
-import { OnShutdown } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { OnShutdown } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import type RudderStack from '@rudderstack/rudder-sdk-node';
 import axios from 'axios';
-import { ErrorReporter, InstanceSettings } from 'n8n-core';
-import type { ITelemetryTrackProperties } from 'n8n-workflow';
+import { ErrorReporter, InstanceSettings } from 'workflow-automation-core';
+import type { ITelemetryTrackProperties } from 'workflow-automation-workflow';
 
 import { LOWEST_SHUTDOWN_PRIORITY, N8N_VERSION } from '@/constants';
 import type { IExecutionTrackProperties } from '@/interfaces';

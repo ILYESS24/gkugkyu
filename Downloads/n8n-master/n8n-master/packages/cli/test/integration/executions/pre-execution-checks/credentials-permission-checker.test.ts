@@ -1,19 +1,19 @@
-import {
+﻿import {
 	getPersonalProject,
 	randomCredentialPayload as randomCred,
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User } from '@n8n/db';
+import type { Project, User } from '@workflow-automation/db';
 import {
 	ProjectRepository,
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { INode, IWorkflowBase } from 'n8n-workflow';
-import { randomInt } from 'n8n-workflow';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { INode, IWorkflowBase } from 'workflow-automation-workflow';
+import { randomInt } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { CredentialsPermissionChecker } from '@/executions/pre-execution-checks';

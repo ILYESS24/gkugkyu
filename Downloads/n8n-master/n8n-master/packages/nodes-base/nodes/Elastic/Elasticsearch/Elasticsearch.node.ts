@@ -1,4 +1,4 @@
-import omit from 'lodash/omit';
+﻿import omit from 'lodash/omit';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, jsonParse, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, jsonParse, NodeApiError } from 'workflow-automation-workflow';
 
 import { documentFields, documentOperations, indexFields, indexOperations } from './descriptions';
 import {

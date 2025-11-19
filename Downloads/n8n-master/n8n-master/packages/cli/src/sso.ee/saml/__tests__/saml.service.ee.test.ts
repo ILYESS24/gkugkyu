@@ -1,15 +1,15 @@
-import type { SamlPreferences } from '@n8n/api-types';
+﻿import type { SamlPreferences } from '@workflow-automation/api-types';
 import { mockInstance, mockLogger } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
-import { SettingsRepository } from '@n8n/db';
-import type { UserRepository, Settings, User } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { GlobalConfig } from '@workflow-automation/config';
+import { SettingsRepository } from '@workflow-automation/db';
+import type { UserRepository, Settings, User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import axios from 'axios';
 import type express from 'express';
 import type { HttpProxyAgent } from 'http-proxy-agent';
 import type { HttpsProxyAgent } from 'https-proxy-agent';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 import type { IdentityProviderInstance, ServiceProviderInstance } from 'samlify';
 
 import { SAML_PREFERENCES_DB_KEY } from '../constants';

@@ -1,19 +1,19 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, CreateAxiosDefaults, Method } from 'axios';
 import { Agent as HTTPAgent, type AgentOptions as HTTPAgentOptions } from 'http';
 import { Agent as HTTPSAgent, type AgentOptions as HTTPSAgentOptions } from 'https';
-import { ExternalSecretsProxy } from 'n8n-core';
-import { jsonParse, MessageEventBusDestinationTypeNames } from 'n8n-workflow';
+import { ExternalSecretsProxy } from 'workflow-automation-core';
+import { jsonParse, MessageEventBusDestinationTypeNames } from 'workflow-automation-workflow';
 import type {
 	MessageEventBusDestinationOptions,
 	MessageEventBusDestinationWebhookParameterItem,
 	MessageEventBusDestinationWebhookParameterOptions,
 	IWorkflowExecuteAdditionalData,
 	MessageEventBusDestinationWebhookOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { CredentialsHelper } from '@/credentials-helper';
 
@@ -25,7 +25,7 @@ import {
 	LOGSTREAMING_DEFAULT_MAX_SOCKETS,
 	LOGSTREAMING_DEFAULT_MAX_TOTAL_SOCKETS,
 	LOGSTREAMING_DEFAULT_SOCKET_TIMEOUT_MS,
-} from '@n8n/constants';
+} from '@workflow-automation/constants';
 
 export const isMessageEventBusDestinationWebhookOptions = (
 	candidate: unknown,

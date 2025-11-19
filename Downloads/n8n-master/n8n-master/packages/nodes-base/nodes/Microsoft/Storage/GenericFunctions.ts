@@ -1,4 +1,4 @@
-import { camelCase } from 'change-case';
+﻿import { camelCase } from 'change-case';
 import type {
 	JsonObject,
 	IDataObject,
@@ -13,8 +13,8 @@ import type {
 	INodeListSearchItems,
 	INodeParameterResourceLocator,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import { Parser } from 'xml2js';
 import { firstCharLowerCase, parseBooleans, parseNumbers } from 'xml2js/lib/processors';
 

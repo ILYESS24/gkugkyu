@@ -1,7 +1,7 @@
-import { mockInstance } from '@n8n/backend-test-utils';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
 import { DataSource, EntityManager, type EntityMetadata } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
-import type { Cipher, Class } from 'n8n-core';
+import type { Cipher, Class } from 'workflow-automation-core';
 
 export const mockEntityManager = (entityClass: Class) => {
 	const entityManager = mockInstance(EntityManager);

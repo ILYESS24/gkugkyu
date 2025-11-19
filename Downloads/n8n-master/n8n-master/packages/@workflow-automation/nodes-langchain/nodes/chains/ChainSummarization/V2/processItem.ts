@@ -1,9 +1,9 @@
-import type { Document } from '@langchain/core/documents';
+﻿import type { Document } from '@langchain/core/documents';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { ChainValues } from '@langchain/core/utils/types';
 import { RecursiveCharacterTextSplitter, type TextSplitter } from '@langchain/textsplitters';
 import { loadSummarizationChain } from 'langchain/chains';
-import { type IExecuteFunctions, type INodeExecutionData, NodeConnectionTypes } from 'n8n-workflow';
+import { type IExecuteFunctions, type INodeExecutionData, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { N8nBinaryLoader } from '@utils/N8nBinaryLoader';
 import { N8nJsonLoader } from '@utils/N8nJsonLoader';

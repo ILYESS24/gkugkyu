@@ -1,4 +1,4 @@
-import {
+﻿import {
 	CALENDLY_TRIGGER_NODE_TYPE,
 	CLEARBIT_NODE_TYPE,
 	SCHEDULE_TRIGGER_NODE_TYPE,
@@ -62,7 +62,7 @@ import {
 	PRODUCT_GOAL,
 	SECURITY_GOAL,
 } from './users.constants';
-import { ROLE } from '@n8n/api-types';
+import { ROLE } from '@workflow-automation/api-types';
 import type {
 	IPersonalizationSurveyAnswersV1,
 	IPersonalizationSurveyAnswersV2,
@@ -71,7 +71,7 @@ import type {
 	IUser,
 } from '@n8n/rest-api-client/api/users';
 import type { ILogInStatus } from './users.types';
-import type { IPersonalizationSurveyAnswersV4 } from 'n8n-workflow';
+import type { IPersonalizationSurveyAnswersV4 } from 'workflow-automation-workflow';
 
 /*
 	Utility functions used to handle users in n8n

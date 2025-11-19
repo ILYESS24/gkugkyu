@@ -1,4 +1,4 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { AgentRunnableSequence } from 'langchain/agents';
 import type { BaseChatMemory } from 'langchain/memory';
 import type {
@@ -6,7 +6,7 @@ import type {
 	ISupplyDataFunctions,
 	EngineResponse,
 	EngineRequest,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	loadMemory,

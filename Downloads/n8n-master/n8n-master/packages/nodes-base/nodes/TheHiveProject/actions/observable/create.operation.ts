@@ -1,11 +1,11 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import {
 	NodeOperationError,
 	type IDataObject,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions, wrapData } from '@utils/utilities';
 

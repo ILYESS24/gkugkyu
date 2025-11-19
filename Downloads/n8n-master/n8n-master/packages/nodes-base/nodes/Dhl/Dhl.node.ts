@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type ICredentialDataDecryptedObject,
 	type ICredentialsDecrypted,
@@ -9,7 +9,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { dhlApiRequest, validateCredentials } from './GenericFunctions';
 

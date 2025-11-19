@@ -1,4 +1,4 @@
-import { type INodeProperties, type IExecuteFunctions, NodeOperationError } from 'n8n-workflow';
+﻿import { type INodeProperties, type IExecuteFunctions, NodeOperationError } from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

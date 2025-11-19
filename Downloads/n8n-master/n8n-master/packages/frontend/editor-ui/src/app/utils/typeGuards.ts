@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	INodeTypeDescription,
 	NodeConnectionType,
 	TriggerPanelDefinition,
-} from 'n8n-workflow';
-import { nodeConnectionTypes } from 'n8n-workflow';
-import type { ProjectRole, TeamProjectRole } from '@n8n/permissions';
+} from 'workflow-automation-workflow';
+import { nodeConnectionTypes } from 'workflow-automation-workflow';
+import type { ProjectRole, TeamProjectRole } from '@workflow-automation/permissions';
 import type {
 	NewCredentialsModal,
 	CredentialsResource,

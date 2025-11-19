@@ -1,4 +1,4 @@
-import {
+﻿import {
 	PGVectorStore,
 	type DistanceStrategy,
 	type PGVectorStoreArgs,
@@ -6,7 +6,7 @@ import {
 import type { EmbeddingsInterface } from '@langchain/core/embeddings';
 import { configurePostgres } from 'n8n-nodes-base/dist/nodes/Postgres/transport/index';
 import type { PostgresNodeCredentials } from 'n8n-nodes-base/dist/nodes/Postgres/v2/helpers/interfaces';
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
 import type pg from 'pg';
 
 import { metadataFilterField } from '@utils/sharedFields';

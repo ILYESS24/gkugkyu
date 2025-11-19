@@ -1,4 +1,4 @@
-import { NodeApiError } from 'n8n-workflow';
+﻿import { NodeApiError } from 'workflow-automation-workflow';
 
 import { wordpressApiRequest, wordpressApiRequestAllItems } from '../GenericFunctions';
 

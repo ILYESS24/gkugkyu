@@ -1,5 +1,5 @@
-import type { GlobalRole } from '@n8n/permissions';
-import { getApiKeyScopesForRole } from '@n8n/permissions';
+﻿import type { GlobalRole } from '@workflow-automation/permissions';
+import { getApiKeyScopesForRole } from '@workflow-automation/permissions';
 
 import { GLOBAL_ROLES } from '../../constants';
 import { ApiKey } from '../../entities';

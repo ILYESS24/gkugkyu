@@ -1,15 +1,15 @@
-/**
+﻿/**
  * Integration tests for execution context propagation across workflows.
  * These tests verify that execution context is properly inherited by sub-workflows,
  * error workflows, and preserved during workflow resume scenarios.
  */
 
 import { testDb, createWorkflow } from '@n8n/backend-test-utils';
-import { ExecutionRepository, type IWorkflowDb } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { ExecutionRepository, type IWorkflowDb } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { readFileSync } from 'fs';
-import { UnrecognizedNodeTypeError } from 'n8n-core';
-import type { IExecutionContext, INodeType, INodeTypeData, NodeLoadingDetails } from 'n8n-workflow';
+import { UnrecognizedNodeTypeError } from 'workflow-automation-core';
+import type { IExecutionContext, INodeType, INodeTypeData, NodeLoadingDetails } from 'workflow-automation-workflow';
 import path from 'path';
 
 import { WorkflowExecutionService } from '@/workflows/workflow-execution.service';

@@ -1,4 +1,4 @@
-import type { InsightsSummary } from '@n8n/api-types';
+﻿import type { InsightsSummary } from '@workflow-automation/api-types';
 import {
 	transformInsightsTimeSaved,
 	transformInsightsAverageRunTime,

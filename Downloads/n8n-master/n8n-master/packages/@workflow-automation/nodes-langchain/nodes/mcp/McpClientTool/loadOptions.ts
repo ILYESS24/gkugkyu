@@ -1,8 +1,8 @@
-import {
+﻿import {
 	type ILoadOptionsFunctions,
 	type INodePropertyOptions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { McpAuthenticationOption, McpServerTransport } from './types';
 import { connectMcpClient, getAllTools, getAuthHeaders, tryRefreshOAuth2Token } from './utils';

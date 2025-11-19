@@ -1,4 +1,4 @@
-import * as losslessJSON from 'lossless-json';
+﻿import * as losslessJSON from 'lossless-json';
 import moment from 'moment-timezone';
 import type {
 	IDataObject,
@@ -9,8 +9,8 @@ import type {
 	INodePropertyOptions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 function convertLosslessNumber(_: any, value: any) {
 	if (value?.isLosslessNumber) {

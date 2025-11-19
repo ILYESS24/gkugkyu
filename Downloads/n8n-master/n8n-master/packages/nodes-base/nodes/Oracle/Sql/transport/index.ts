@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ICredentialTestFunctions,
 	ILoadOptionsFunctions,
 	ITriggerFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import oracledb from 'oracledb';
 
 import { ConnectionPoolManager } from '@utils/connection-pool-manager';

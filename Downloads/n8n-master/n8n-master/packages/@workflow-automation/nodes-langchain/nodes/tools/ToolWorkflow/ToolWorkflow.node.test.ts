@@ -1,11 +1,11 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import { DynamicTool } from 'langchain/tools';
 import {
 	type INode,
 	type ISupplyDataFunctions,
 	type IExecuteFunctions,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolWorkflow } from './ToolWorkflow.node';
 import type { ToolWorkflowV2 } from './v2/ToolWorkflowV2.node';

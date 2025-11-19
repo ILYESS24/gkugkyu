@@ -1,12 +1,12 @@
-import { Tool, StructuredTool } from '@langchain/core/tools';
+﻿import { Tool, StructuredTool } from '@langchain/core/tools';
 import type { Toolkit } from 'langchain/agents';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { executeTool } from './utils/executeTool';
 

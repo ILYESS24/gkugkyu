@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { Workflow, INode } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { Workflow, INode } from 'workflow-automation-workflow';
 
 import { getDeduplicationHelperFunctions } from '../deduplication-helper-functions';
 

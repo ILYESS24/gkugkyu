@@ -1,11 +1,11 @@
-import { Logger } from '@n8n/backend-common';
-import { SettingsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { SettingsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { ValidationError } from 'class-validator';
 import { validate } from 'class-validator';
 import { rm as fsRm } from 'fs/promises';
-import { Cipher, InstanceSettings } from 'n8n-core';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import { Cipher, InstanceSettings } from 'workflow-automation-core';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 import { writeFile, readFile } from 'node:fs/promises';
 import path from 'path';
 

@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { ResourceOperationPatternRule } from './resource-operation-pattern.js';
 
@@ -10,7 +10,7 @@ ruleTester.run('resource-operation-pattern', ResourceOperationPatternRule, {
 			name: 'node with resources and operations (good pattern)',
 			filename: '/tmp/TestNode.node.ts',
 			code: `
-				import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+				import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 				export class TestNode implements INodeType {
 					description: INodeTypeDescription = {
@@ -52,7 +52,7 @@ ruleTester.run('resource-operation-pattern', ResourceOperationPatternRule, {
 			name: 'node without operations property',
 			filename: '/tmp/TestNode.node.ts',
 			code: `
-				import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+				import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 				export class TestNode implements INodeType {
 					description: INodeTypeDescription = {
@@ -100,7 +100,7 @@ ruleTester.run('resource-operation-pattern', ResourceOperationPatternRule, {
 			name: 'node with exactly 5 operations without resources (allowed)',
 			filename: '/tmp/TestNode.node.ts',
 			code: `
-				import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+				import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 				export class TestNode implements INodeType {
 					description: INodeTypeDescription = {
@@ -135,7 +135,7 @@ ruleTester.run('resource-operation-pattern', ResourceOperationPatternRule, {
 			name: 'node with exactly 6 operations without resources (error)',
 			filename: '/tmp/TestNode.node.ts',
 			code: `
-				import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+				import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 				export class TestNode implements INodeType {
 					description: INodeTypeDescription = {
@@ -175,7 +175,7 @@ ruleTester.run('resource-operation-pattern', ResourceOperationPatternRule, {
 			name: 'node with many operations without resources (error)',
 			filename: '/tmp/TestNode.node.ts',
 			code: `
-				import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+				import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 				export class TestNode implements INodeType {
 					description: INodeTypeDescription = {

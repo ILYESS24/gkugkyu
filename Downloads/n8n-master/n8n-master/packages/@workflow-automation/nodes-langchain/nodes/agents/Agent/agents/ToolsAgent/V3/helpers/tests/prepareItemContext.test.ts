@@ -1,7 +1,7 @@
-import type { ChatPromptTemplate } from '@langchain/core/prompts';
+﻿import type { ChatPromptTemplate } from '@langchain/core/prompts';
 import { mock } from 'jest-mock-extended';
 import type { Tool } from 'langchain/tools';
-import type { IExecuteFunctions, INode, EngineResponse } from 'n8n-workflow';
+import type { IExecuteFunctions, INode, EngineResponse } from 'workflow-automation-workflow';
 
 import * as helpers from '@utils/helpers';
 import * as outputParsers from '@utils/output_parsers/N8nOutputParser';

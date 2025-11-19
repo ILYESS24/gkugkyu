@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -10,8 +10,8 @@ import type {
 	JsonObject,
 	NodeExecutionHint,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { calendarFields, calendarOperations } from './CalendarDescription';
@@ -94,7 +94,7 @@ export class GoogleCalendar implements INodeType {
 			...eventFields,
 			{
 				displayName:
-					'This node will use the time zone set in n8n’s settings, but you can override this in the workflow settings',
+					'This node will use the time zone set in n8nâ€™s settings, but you can override this in the workflow settings',
 				name: 'useN8nTimeZone',
 				type: 'notice',
 				default: '',

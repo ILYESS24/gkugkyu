@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class BeeminderOAuth2Api implements ICredentialType {
 	name = 'beeminderOAuth2Api';

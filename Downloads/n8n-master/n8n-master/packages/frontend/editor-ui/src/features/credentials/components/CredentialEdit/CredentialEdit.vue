@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onMounted, ref, useTemplateRef } from 'vue';
 
 import type { IUpdateInformation } from '@/Interface';
@@ -12,8 +12,8 @@ import type {
 	INodeParameters,
 	INodeProperties,
 	ITelemetryTrackProperties,
-} from 'n8n-workflow';
-import { deepCopy, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, NodeHelpers } from 'workflow-automation-workflow';
 import CredentialIcon from '../CredentialIcon.vue';
 
 import CredentialConfig from './CredentialConfig.vue';
@@ -37,7 +37,7 @@ import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { Project, ProjectSharingData } from '@/features/collaboration/projects/projects.types';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { assert } from '@n8n/utils/assert';
 import { createEventBus } from '@n8n/utils/event-bus';
 

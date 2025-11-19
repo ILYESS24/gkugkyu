@@ -1,4 +1,4 @@
-import ProjectVariables from './ProjectVariables.vue';
+﻿import ProjectVariables from './ProjectVariables.vue';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useUIStore } from '@/app/stores/ui.store';
@@ -12,7 +12,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import userEvent from '@testing-library/user-event';
 import { waitFor } from '@testing-library/vue';
 import type { IUser } from '@n8n/rest-api-client/api/users';
-import type { Scope } from '@n8n/permissions';
+import type { Scope } from '@workflow-automation/permissions';
 import type { EnvironmentVariable } from '@/features/settings/environments.ee/environments.types';
 import useEnvironmentsStore from '@/features/settings/environments.ee/environments.store';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';

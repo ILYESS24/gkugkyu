@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import type { DataTableFilterConditionType } from '@n8n/api-types';
+﻿/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import type { DataTableFilterConditionType } from '@workflow-automation/api-types';
 import { createTeamProject, testDb, testModules } from '@n8n/backend-test-utils';
-import { Project } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { Project } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { mockDataTableSizeValidator } from './test-helpers';
 import { DataTableService } from '../data-table.service';

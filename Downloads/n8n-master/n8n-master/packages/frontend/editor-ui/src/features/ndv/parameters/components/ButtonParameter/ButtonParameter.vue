@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { type INodeProperties, type NodePropertyAction } from 'n8n-workflow';
+﻿<script setup lang="ts">
+import { type INodeProperties, type NodePropertyAction } from 'workflow-automation-workflow';
 import type { INodeUi, IUpdateInformation } from '@/Interface';
 import { ref, computed, onMounted } from 'vue';
 import { N8nButton, N8nInput, N8nInputLabel, N8nTooltip } from '@n8n/design-system';

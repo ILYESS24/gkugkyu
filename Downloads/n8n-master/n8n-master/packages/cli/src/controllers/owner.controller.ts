@@ -1,12 +1,12 @@
-import { DismissBannerRequestDto, OwnerSetupRequestDto } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
+﻿import { DismissBannerRequestDto, OwnerSetupRequestDto } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
 import {
 	AuthenticatedRequest,
 	GLOBAL_OWNER_ROLE,
 	SettingsRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Body, GlobalScope, Post, RestController } from '@n8n/decorators';
+} from '@workflow-automation/db';
+import { Body, GlobalScope, Post, RestController } from '@workflow-automation/decorators';
 import { Response } from 'express';
 
 import { AuthService } from '@/auth/auth.service';

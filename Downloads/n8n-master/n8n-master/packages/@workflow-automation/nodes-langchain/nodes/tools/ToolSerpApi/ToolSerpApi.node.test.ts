@@ -1,11 +1,11 @@
-import { SerpAPI } from '@langchain/community/tools/serpapi';
+﻿import { SerpAPI } from '@langchain/community/tools/serpapi';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolSerpApi } from './ToolSerpApi.node';
 

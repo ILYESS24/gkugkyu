@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { NoDeprecatedWorkflowFunctionsRule } from './no-deprecated-workflow-functions.js';
 
@@ -9,7 +9,7 @@ ruleTester.run('no-deprecated-workflow-functions', NoDeprecatedWorkflowFunctions
 		{
 			name: 'using recommended functions and types',
 			code: `
-import { IHttpRequestOptions } from 'n8n-workflow';
+import { IHttpRequestOptions } from 'workflow-automation-workflow';
 
 const requestOptions: IHttpRequestOptions = {
 	method: 'GET',
@@ -111,7 +111,7 @@ const response3 = await this.helpers.httpRequestWithAuthentication.call(this, 'g
 		{
 			name: 'deprecated types',
 			code: `
-import { IRequestOptions } from 'n8n-workflow';
+import { IRequestOptions } from 'workflow-automation-workflow';
 
 function makeRequest(options: IRequestOptions): Promise<any> {
 	return this.helpers.request(options);
@@ -125,7 +125,7 @@ function makeRequest(options: IRequestOptions): Promise<any> {
 							messageId: 'suggestReplaceType',
 							data: { typeName: 'IRequestOptions', replacement: 'IHttpRequestOptions' },
 							output: `
-import { IHttpRequestOptions } from 'n8n-workflow';
+import { IHttpRequestOptions } from 'workflow-automation-workflow';
 
 function makeRequest(options: IRequestOptions): Promise<any> {
 	return this.helpers.request(options);
@@ -141,7 +141,7 @@ function makeRequest(options: IRequestOptions): Promise<any> {
 							messageId: 'suggestReplaceType',
 							data: { typeName: 'IRequestOptions', replacement: 'IHttpRequestOptions' },
 							output: `
-import { IRequestOptions } from 'n8n-workflow';
+import { IRequestOptions } from 'workflow-automation-workflow';
 
 function makeRequest(options: IHttpRequestOptions): Promise<any> {
 	return this.helpers.request(options);
@@ -157,7 +157,7 @@ function makeRequest(options: IHttpRequestOptions): Promise<any> {
 							messageId: 'suggestReplaceFunction',
 							data: { functionName: 'request', replacement: 'httpRequest' },
 							output: `
-import { IRequestOptions } from 'n8n-workflow';
+import { IRequestOptions } from 'workflow-automation-workflow';
 
 function makeRequest(options: IRequestOptions): Promise<any> {
 	return this.helpers.httpRequest(options);

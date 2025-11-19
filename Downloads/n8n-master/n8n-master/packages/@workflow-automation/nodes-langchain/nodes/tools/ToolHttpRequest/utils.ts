@@ -1,4 +1,4 @@
-import { Readability } from '@mozilla/readability';
+﻿import { Readability } from '@mozilla/readability';
 import * as cheerio from 'cheerio';
 import { convert } from 'html-to-text';
 import { JSDOM } from 'jsdom';
@@ -13,8 +13,8 @@ import type {
 	ExecutionError,
 	NodeApiError,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, jsonParse } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type {

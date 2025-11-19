@@ -1,6 +1,6 @@
-import { mock, mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import { mock, mockDeep } from 'jest-mock-extended';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { getConnectedTools } from '@utils/helpers';
 import { pollUntilAvailable } from '../../../../helpers/polling';

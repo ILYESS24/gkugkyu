@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHookFunctions,
@@ -8,8 +8,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeApiError } from 'workflow-automation-workflow';
 
 export interface IFormstackFieldDefinitionType {
 	id: string;

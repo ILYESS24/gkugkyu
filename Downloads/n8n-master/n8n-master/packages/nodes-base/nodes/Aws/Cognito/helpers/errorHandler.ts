@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	JsonObject,
 	IExecuteSingleFunctions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { ERROR_MESSAGES } from './constants';
 import type { AwsError, ErrorMessage } from './interfaces';

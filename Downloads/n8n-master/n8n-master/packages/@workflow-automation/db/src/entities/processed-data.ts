@@ -1,5 +1,5 @@
-import { Entity, PrimaryColumn } from '@n8n/typeorm';
-import type { IProcessedDataEntries, IProcessedDataLatest } from 'n8n-workflow';
+﻿import { Entity, PrimaryColumn } from '@n8n/typeorm';
+import type { IProcessedDataEntries, IProcessedDataLatest } from 'workflow-automation-workflow';
 
 import { JsonColumn, WithTimestamps } from './abstract-entity';
 import { objectRetriever } from '../utils/transformers';

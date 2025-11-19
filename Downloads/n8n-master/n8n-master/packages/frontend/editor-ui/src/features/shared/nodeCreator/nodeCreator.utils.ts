@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	NodeCreateElement,
 	ActionCreateElement,
 	SubcategorizedNodeTypes,
@@ -37,7 +37,7 @@ import * as changeCase from 'change-case';
 
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import { SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+import { SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 import type { NodeIconSource } from '@/app/utils/nodeIcon';
 import type { CommunityNodeDetails, ViewStack } from './composables/useViewStacks';
 import {

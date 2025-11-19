@@ -1,4 +1,4 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import ParameterInputList from './ParameterInputList.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { mockedStore } from '@/__tests__/utils';
@@ -13,8 +13,8 @@ import {
 	FIXED_COLLECTION_PARAMETERS,
 	TEST_ISSUE,
 } from './ParameterInputList.test.constants';
-import { FORM_NODE_TYPE, FORM_TRIGGER_NODE_TYPE } from 'n8n-workflow';
-import type { INodeProperties, Workflow } from 'n8n-workflow';
+import { FORM_NODE_TYPE, FORM_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
+import type { INodeProperties, Workflow } from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import type { MockInstance } from 'vitest';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';

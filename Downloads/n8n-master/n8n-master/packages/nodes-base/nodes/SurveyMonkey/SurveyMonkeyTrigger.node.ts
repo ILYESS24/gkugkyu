@@ -1,4 +1,4 @@
-import { createHmac } from 'crypto';
+﻿import { createHmac } from 'crypto';
 import type {
 	IHookFunctions,
 	IWebhookFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { idsExist, surveyMonkeyApiRequest, surveyMonkeyRequestAllItems } from './GenericFunctions';
 import type { IAnswer, IChoice, IOther, IQuestion, IRow } from './Interfaces';
@@ -144,7 +144,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 					{
 						name: 'Response Overquota',
 						value: 'response_overquota',
-						description: 'A response is over a survey’s quota',
+						description: 'A response is over a surveyâ€™s quota',
 					},
 					{
 						name: 'Response Updated',
@@ -213,7 +213,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 					{
 						name: 'Response Overquota',
 						value: 'response_overquota',
-						description: 'A response is over a survey’s quota',
+						description: 'A response is over a surveyâ€™s quota',
 					},
 					{
 						name: 'Response Updated',

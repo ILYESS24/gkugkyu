@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
@@ -9,7 +9,7 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { PublicUser, User } from '@n8n/db';
+import type { PublicUser, User } from '@workflow-automation/db';
 import {
 	FolderRepository,
 	GLOBAL_ADMIN_ROLE,
@@ -20,8 +20,8 @@ import {
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { v4 as uuid } from 'uuid';
 
 import { RESPONSE_ERROR_MESSAGES } from '@/constants';

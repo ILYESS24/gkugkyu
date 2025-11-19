@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const orderOperations: INodeProperties[] = [
 	{
@@ -39,6 +39,6 @@ export const orderFields: INodeProperties[] = [
 				operation: ['get'],
 			},
 		},
-		description: 'The identifier of the buyer’s checkout',
+		description: 'The identifier of the buyerâ€™s checkout',
 	},
 ];

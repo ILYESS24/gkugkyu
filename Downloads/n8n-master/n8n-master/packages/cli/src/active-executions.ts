@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionsConfig } from '@n8n/config';
-import type { CreateExecutionPayload, IExecutionDb } from '@n8n/db';
-import { ExecutionRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import type { CreateExecutionPayload, IExecutionDb } from '@workflow-automation/db';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type {
 	IDeferredPromise,
 	IExecuteResponsePromiseData,
@@ -10,13 +10,13 @@ import type {
 	ExecutionStatus,
 	IWorkflowExecutionDataProcess,
 	StructuredChunk,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	createDeferredPromise,
 	ExecutionCancelledError,
 	sleep,
 	SystemShutdownExecutionCancelledError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { strict as assert } from 'node:assert';
 import type PCancelable from 'p-cancelable';
 

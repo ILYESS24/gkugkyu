@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeApiError,
 	type IDataObject,
 	type IExecuteFunctions,
@@ -6,7 +6,7 @@ import {
 	type IHttpRequestMethods,
 	type ILoadOptionsFunctions,
 	type IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	addAdditionalFields,

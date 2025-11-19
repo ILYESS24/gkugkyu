@@ -1,11 +1,11 @@
-import { LOCAL_STORAGE_CHAT_HUB_CREDENTIALS } from '@/app/constants';
+﻿import { LOCAL_STORAGE_CHAT_HUB_CREDENTIALS } from '@/app/constants';
 import { credentialsMapSchema, type CredentialsMap } from '@/features/ai/chatHub/chat.types';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import {
 	chatHubProviderSchema,
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	type ChatHubProvider,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import { useLocalStorage } from '@vueuse/core';
 import { computed, onMounted, ref } from 'vue';
 

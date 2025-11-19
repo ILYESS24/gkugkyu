@@ -1,8 +1,8 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import get from 'lodash/get';
-import { BinaryDataService } from 'n8n-core';
-import type { INodeExecutionData, ITaskData, Result, WebhookResponseData } from 'n8n-workflow';
-import { BINARY_ENCODING, createResultError, createResultOk, OperationalError } from 'n8n-workflow';
+import { BinaryDataService } from 'workflow-automation-core';
+import type { INodeExecutionData, ITaskData, Result, WebhookResponseData } from 'workflow-automation-workflow';
+import { BINARY_ENCODING, createResultError, createResultOk, OperationalError } from 'workflow-automation-workflow';
 import type { Readable } from 'node:stream';
 
 import type { WebhookExecutionContext } from '@/webhooks/webhook-execution-context';

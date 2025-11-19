@@ -1,4 +1,4 @@
-import ISO6391 from 'iso-639-1';
+﻿import ISO6391 from 'iso-639-1';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { directMessageFields, directMessageOperations } from './DirectMessageDescription';
 import {

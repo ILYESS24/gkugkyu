@@ -1,6 +1,6 @@
-import { testDb, testModules } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb, testModules } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { createAdmin, createMember } from '@test-integration/db/users';
 
 import { ChatHubService } from '../chat-hub.service';

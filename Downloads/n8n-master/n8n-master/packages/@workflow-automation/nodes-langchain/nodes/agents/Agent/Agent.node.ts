@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+﻿import type { INodeTypeBaseDescription, IVersionedNodeType } from 'workflow-automation-workflow';
+import { VersionedNodeType } from 'workflow-automation-workflow';
 
 import { AgentV1 } from './V1/AgentV1.node';
 import { AgentV2 } from './V2/AgentV2.node';

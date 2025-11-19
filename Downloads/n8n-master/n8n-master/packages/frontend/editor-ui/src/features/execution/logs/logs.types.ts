@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	LOG_DETAILS_PANEL_STATE,
 	LOGS_PANEL_STATE,
 } from '@/features/execution/logs/logs.constants';
 import type { INodeUi, LlmTokenUsageData } from '@/Interface';
-import type { IRunExecutionData, ITaskData, Workflow } from 'n8n-workflow';
+import type { IRunExecutionData, ITaskData, Workflow } from 'workflow-automation-workflow';
 
 export type LogEntry = {
 	parent?: LogEntry;

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 const operationOptions = [
 	{
 		name: 'Remove Items Repeated Within Current Input',
@@ -246,7 +246,7 @@ export const removeDuplicatesNodeFields: INodeProperties[] = [
 					},
 				},
 				description:
-					'If set to ‘workflow,’ key values will be shared across all nodes in the workflow. If set to ‘node,’ key values will be specific to this node.',
+					'If set to â€˜workflow,â€™ key values will be shared across all nodes in the workflow. If set to â€˜node,â€™ key values will be specific to this node.',
 				options: [
 					{
 						name: 'Workflow',

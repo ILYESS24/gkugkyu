@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { IBinaryData, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { IBinaryData, IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
 import { type WorkSheet, utils as xlsxUtils, write as xlsxWrite } from 'xlsx';
 
 import { convertJsonToSpreadsheetBinary } from '@utils/binary';

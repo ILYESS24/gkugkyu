@@ -1,8 +1,8 @@
-import { setActivePinia } from 'pinia';
+﻿import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import { useRouter } from 'vue-router';
 import type router from 'vue-router';
-import { ExpressionError, NodeConnectionTypes } from 'n8n-workflow';
+import { ExpressionError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IPinData,
 	IRunData,
@@ -11,7 +11,7 @@ import type {
 	ITaskData,
 	INodeConnections,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { useRunWorkflow } from '@/app/composables/useRunWorkflow';
 import {

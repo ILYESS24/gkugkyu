@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	PutObjectCommandInput,
 	DeleteObjectsCommandInput,
 	ListObjectsV2CommandInput,
@@ -14,9 +14,9 @@ import {
 	DeleteObjectsCommand,
 	ListObjectsV2Command,
 } from '@aws-sdk/client-s3';
-import { Logger } from '@n8n/backend-common';
-import { Service } from '@n8n/di';
-import { UnexpectedError } from 'n8n-workflow';
+import { Logger } from '@workflow-automation/backend-common';
+import { Service } from '@workflow-automation/di';
+import { UnexpectedError } from 'workflow-automation-workflow';
 import { createHash } from 'node:crypto';
 import { Readable } from 'node:stream';
 

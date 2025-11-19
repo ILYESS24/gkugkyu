@@ -1,4 +1,4 @@
-import { ALL_SCOPES } from '@n8n/permissions';
+﻿import { ALL_SCOPES } from '@workflow-automation/permissions';
 
 import { UpdateRoleDto } from '../update-role.dto';
 

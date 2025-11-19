@@ -1,11 +1,11 @@
-import { sleep } from 'n8n-workflow';
+﻿import { sleep } from 'workflow-automation-workflow';
 import type {
 	EngineRequest,
 	IExecuteFunctions,
 	INodeExecutionData,
 	ISupplyDataFunctions,
 	EngineResponse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { buildExecutionContext, executeBatch, checkMaxIterations } from './helpers';
 import type { RequestResponseMetadata } from './types';

@@ -1,6 +1,6 @@
-import { Service } from '@n8n/di';
-import { NodeHelpers } from 'n8n-workflow';
-import type { INodeType, INodeTypes, IVersionedNodeType } from 'n8n-workflow';
+﻿import { Service } from '@workflow-automation/di';
+import { NodeHelpers } from 'workflow-automation-workflow';
+import type { INodeType, INodeTypes, IVersionedNodeType } from 'workflow-automation-workflow';
 
 import { LoadNodesAndCredentials } from './load-nodes-and-credentials';
 

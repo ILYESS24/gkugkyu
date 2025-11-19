@@ -1,11 +1,11 @@
-import { exec } from 'child_process';
+﻿import { exec } from 'child_process';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 export interface IExecReturnData {
 	exitCode: number;

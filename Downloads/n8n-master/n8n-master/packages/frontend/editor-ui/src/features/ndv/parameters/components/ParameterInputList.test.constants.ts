@@ -1,5 +1,5 @@
-import type { INodeUi } from '@/Interface';
-import type { INodeParameters, INodeProperties } from 'n8n-workflow';
+﻿import type { INodeUi } from '@/Interface';
+import type { INodeParameters, INodeProperties } from 'workflow-automation-workflow';
 
 export const TEST_PARAMETERS: INodeProperties[] = [
 	{

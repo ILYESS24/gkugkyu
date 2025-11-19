@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	DeclarativeRestApiSettings,
 	IDataObject,
 	IExecuteFunctions,
@@ -12,8 +12,8 @@ import type {
 	IRequestOptions,
 	JsonObject,
 	PreSendAction,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 /**
  * A custom API request function to be used with the resourceLocator lookup queries.

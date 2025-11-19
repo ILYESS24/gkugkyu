@@ -1,5 +1,5 @@
-import { DynamicStructuredTool } from 'langchain/tools';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { DynamicStructuredTool } from 'langchain/tools';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { createEngineRequests } from '../createEngineRequests';

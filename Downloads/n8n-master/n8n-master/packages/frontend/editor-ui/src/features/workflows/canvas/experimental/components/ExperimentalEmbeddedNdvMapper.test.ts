@@ -1,9 +1,9 @@
-import { createTestNode, createTestWorkflowObject } from '@/__tests__/mocks';
+﻿import { createTestNode, createTestWorkflowObject } from '@/__tests__/mocks';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { render, waitFor } from '@testing-library/vue';
 import { flushPromises } from '@vue/test-utils';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { nextTick } from 'vue';
 import ExperimentalEmbeddedNdvMapper from './ExperimentalEmbeddedNdvMapper.vue';
 import { useExperimentalNdvStore } from '../experimentalNdv.store';

@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { brandfetchApiRequest } from '../GenericFunctions';
 

@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IDataObject,
 	type IExecuteSingleFunctions,
 	type IHttpRequestOptions,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { collectionFields } from './CollectionDescription';
 import type { FieldsUiValues } from './types';

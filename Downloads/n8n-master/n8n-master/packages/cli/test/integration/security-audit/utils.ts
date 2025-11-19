@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import nock from 'nock';
 import { v4 as uuid } from 'uuid';
 

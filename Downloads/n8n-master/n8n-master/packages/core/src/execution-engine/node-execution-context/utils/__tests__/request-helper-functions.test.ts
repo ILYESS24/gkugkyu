@@ -1,4 +1,4 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import type { Agent as HttpsAgent } from 'https';
 import { mock, mockDeep } from 'jest-mock-extended';
 import type {
@@ -10,7 +10,7 @@ import type {
 	IWorkflowExecuteAdditionalData,
 	PaginationOptions,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import nock from 'nock';
 import type { SecureContextOptions } from 'tls';
 

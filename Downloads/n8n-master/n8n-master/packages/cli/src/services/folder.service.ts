@@ -1,14 +1,14 @@
-import type { CreateFolderDto, DeleteFolderDto, UpdateFolderDto } from '@n8n/api-types';
+﻿import type { CreateFolderDto, DeleteFolderDto, UpdateFolderDto } from '@workflow-automation/api-types';
 import type {
 	FolderWithWorkflowAndSubFolderCount,
 	FolderWithWorkflowAndSubFolderCountAndPath,
 	User,
-} from '@n8n/db';
-import { Folder, FolderTagMappingRepository, FolderRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Folder, FolderTagMappingRepository, FolderRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { EntityManager } from '@n8n/typeorm';
-import { UserError, PROJECT_ROOT } from 'n8n-workflow';
+import { UserError, PROJECT_ROOT } from 'workflow-automation-workflow';
 
 import { FolderNotFoundError } from '@/errors/folder-not-found.error';
 import type { ListQuery } from '@/requests';

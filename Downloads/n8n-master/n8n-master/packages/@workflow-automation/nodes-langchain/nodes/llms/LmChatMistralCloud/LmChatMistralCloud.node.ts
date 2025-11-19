@@ -1,4 +1,4 @@
-import type { ChatMistralAIInput } from '@langchain/mistralai';
+﻿import type { ChatMistralAIInput } from '@langchain/mistralai';
 import { ChatMistralAI } from '@langchain/mistralai';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

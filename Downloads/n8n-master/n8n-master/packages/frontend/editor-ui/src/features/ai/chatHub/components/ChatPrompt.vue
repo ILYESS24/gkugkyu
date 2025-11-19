@@ -1,10 +1,10 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useToast } from '@/app/composables/useToast';
 import { providerDisplayNames } from '@/features/ai/chatHub/constants';
-import type { ChatHubLLMProvider, ChatModelDto } from '@n8n/api-types';
+import type { ChatHubLLMProvider, ChatModelDto } from '@workflow-automation/api-types';
 import { N8nIconButton, N8nInput, N8nText } from '@n8n/design-system';
 import { useSpeechRecognition } from '@vueuse/core';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 import { computed, ref, useTemplateRef, watch } from 'vue';
 import ToolsSelector from './ToolsSelector.vue';
 

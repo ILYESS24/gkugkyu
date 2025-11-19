@@ -1,5 +1,5 @@
-import type { IN8nHttpFullResponse, INodeExecutionData, JsonObject } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import type { IN8nHttpFullResponse, INodeExecutionData, JsonObject } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { handleError, ErrorMap } from '../../helpers/errorHandler';
 

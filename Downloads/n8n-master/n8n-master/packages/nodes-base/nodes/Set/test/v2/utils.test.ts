@@ -1,6 +1,6 @@
-import get from 'lodash/get';
-import { constructExecutionMetaData } from 'n8n-core';
-import type { IDataObject, IExecuteFunctions, IGetNodeParameterOptions, INode } from 'n8n-workflow';
+﻿import get from 'lodash/get';
+import { constructExecutionMetaData } from 'workflow-automation-core';
+import type { IDataObject, IExecuteFunctions, IGetNodeParameterOptions, INode } from 'workflow-automation-workflow';
 
 import type { SetNodeOptions } from '../../v2/helpers/interfaces';
 import {

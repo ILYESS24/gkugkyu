@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const documentOperations: INodeProperties[] = [
 	{
@@ -365,7 +365,7 @@ export const documentFields: INodeProperties[] = [
 						name: 'segmentId',
 						type: 'string',
 						description:
-							'The ID of the header, footer or footnote. The <code>Document → Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
+							'The ID of the header, footer or footnote. The <code>Document â†’ Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
 						default: '',
 						displayOptions: {
 							show: {
@@ -600,7 +600,7 @@ export const documentFields: INodeProperties[] = [
 						name: 'segmentId',
 						type: 'string',
 						description:
-							'The ID of the header, footer or footnote. The <code>Document → Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
+							'The ID of the header, footer or footnote. The <code>Document â†’ Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
 						default: '',
 						displayOptions: {
 							show: {
@@ -854,7 +854,7 @@ export const documentFields: INodeProperties[] = [
 						name: 'segmentId',
 						type: 'string',
 						description:
-							'The ID of the header, footer or footnote. The <code>Document → Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
+							'The ID of the header, footer or footnote. The <code>Document â†’ Get</code> operation lists all segment IDs (make sure you disable the <code>simple</code> toggle).',
 						default: '',
 						displayOptions: {
 							show: {

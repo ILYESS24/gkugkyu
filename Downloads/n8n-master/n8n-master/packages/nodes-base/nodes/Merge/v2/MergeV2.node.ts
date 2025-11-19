@@ -1,4 +1,4 @@
-import merge from 'lodash/merge';
+﻿import merge from 'lodash/merge';
 import {
 	type IExecuteFunctions,
 	type IDataObject,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type IPairedItemData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { preparePairedItemDataArray } from '@utils/utilities';
 

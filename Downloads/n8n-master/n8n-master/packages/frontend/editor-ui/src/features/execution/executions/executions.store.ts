@@ -1,6 +1,6 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
-import type { IDataObject, ExecutionSummary, AnnotationVote } from 'n8n-workflow';
+import type { IDataObject, ExecutionSummary, AnnotationVote } from 'workflow-automation-workflow';
 import type {
 	ExecutionFilterType,
 	ExecutionsQueryFilter,

@@ -1,4 +1,4 @@
-import { Calculator } from '@langchain/community/tools/calculator';
+﻿import { Calculator } from '@langchain/community/tools/calculator';
 import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

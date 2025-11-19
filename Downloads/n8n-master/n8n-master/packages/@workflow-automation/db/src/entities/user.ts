@@ -1,4 +1,4 @@
-import type { AuthPrincipal } from '@n8n/permissions';
+﻿import type { AuthPrincipal } from '@workflow-automation/permissions';
 import {
 	AfterLoad,
 	AfterUpdate,
@@ -12,7 +12,7 @@ import {
 	JoinColumn,
 	ManyToOne,
 } from '@n8n/typeorm';
-import type { IUser, IUserSettings } from 'n8n-workflow';
+import type { IUser, IUserSettings } from 'workflow-automation-workflow';
 
 import { JsonColumn, WithTimestamps } from './abstract-entity';
 import type { ApiKey } from './api-key';

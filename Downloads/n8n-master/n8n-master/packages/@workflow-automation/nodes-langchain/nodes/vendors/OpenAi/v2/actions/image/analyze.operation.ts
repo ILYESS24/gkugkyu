@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import type { ResponseInputImage } from 'openai/resources/responses/responses';
 import type { ChatContent, ChatResponse, ChatResponseRequest } from '../../../helpers/interfaces';

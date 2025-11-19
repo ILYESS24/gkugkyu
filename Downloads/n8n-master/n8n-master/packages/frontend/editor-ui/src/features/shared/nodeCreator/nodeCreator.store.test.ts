@@ -1,4 +1,4 @@
-import { mockedStore, type MockedStore } from '@/__tests__/utils';
+﻿import { mockedStore, type MockedStore } from '@/__tests__/utils';
 import { useViewStacks } from './composables/useViewStacks';
 import { prepareCommunityNodeDetailsViewStack } from './nodeCreator.utils';
 import { useTelemetry } from '@/app/composables/useTelemetry';
@@ -11,11 +11,11 @@ import type { ActionsRecord, INodeCreateElement, INodeUi, SimplifiedNodeType } f
 import { CanvasConnectionMode } from '@/features/workflows/canvas/canvas.types';
 import { parseCanvasConnectionHandleString } from '@/features/workflows/canvas/canvas.utils';
 import { getNodeIconSource } from '@/app/utils/nodeIcon';
-import type { CommunityNodeType } from '@n8n/api-types';
+import type { CommunityNodeType } from '@workflow-automation/api-types';
 import { createTestingPinia } from '@pinia/testing';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

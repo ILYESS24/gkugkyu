@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type IRunExecutionData,
 	type IWorkflowExecuteAdditionalData,
 	UnexpectedError,
 	type Workflow,
 	type WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export function assertExecutionDataExists(
 	executionData: IRunExecutionData['executionData'],

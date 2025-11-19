@@ -1,10 +1,10 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class Start implements INodeType {
 	description: INodeTypeDescription = {
@@ -26,7 +26,7 @@ export class Start implements INodeType {
 		properties: [
 			{
 				displayName:
-					'This node is where a manual workflow execution starts. To make one, go back to the canvas and click ‘execute workflow’',
+					'This node is where a manual workflow execution starts. To make one, go back to the canvas and click â€˜execute workflowâ€™',
 				name: 'notice',
 				type: 'notice',
 				default: '',

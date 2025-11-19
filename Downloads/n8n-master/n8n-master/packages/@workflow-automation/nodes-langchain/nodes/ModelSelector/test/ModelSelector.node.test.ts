@@ -1,7 +1,7 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions, INode, ILoadOptionsFunctions } from 'n8n-workflow';
-import { NodeOperationError, NodeConnectionTypes } from 'n8n-workflow';
+import type { ISupplyDataFunctions, INode, ILoadOptionsFunctions } from 'workflow-automation-workflow';
+import { NodeOperationError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { ModelSelector } from '../ModelSelector.node';
 

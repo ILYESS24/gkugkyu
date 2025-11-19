@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import Node from '@/features/workflows/canvas/components/elements/nodes/CanvasNode.vue';
 import Modal from '@/app/components/Modal.vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
@@ -19,7 +19,7 @@ import type { BaseTextKey } from '@n8n/i18n';
 import { useI18n } from '@n8n/i18n';
 import type { EventBus } from '@n8n/utils/event-bus';
 import { useAsyncState } from '@vueuse/core';
-import { NodeDiffStatus, type IWorkflowSettings } from 'n8n-workflow';
+import { NodeDiffStatus, type IWorkflowSettings } from 'workflow-automation-workflow';
 import { computed, onMounted, onUnmounted, ref, useCssModule } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import HighlightedEdge from './HighlightedEdge.vue';

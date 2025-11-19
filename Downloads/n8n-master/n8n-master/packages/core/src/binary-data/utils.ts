@@ -1,4 +1,4 @@
-import { UnexpectedError } from 'n8n-workflow';
+﻿import { UnexpectedError } from 'workflow-automation-workflow';
 import fs from 'node:fs/promises';
 import type { Readable } from 'node:stream';
 

@@ -1,4 +1,4 @@
-import type { BinaryToTextEncoding } from 'crypto';
+﻿import type { BinaryToTextEncoding } from 'crypto';
 import { createHash, createHmac, createSign, getHashes, randomBytes } from 'crypto';
 import set from 'lodash/set';
 import type {
@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { deepCopy, BINARY_ENCODING, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, BINARY_ENCODING, NodeConnectionTypes } from 'workflow-automation-workflow';
 import { pipeline } from 'stream/promises';
 import { v4 as uuid } from 'uuid';
 

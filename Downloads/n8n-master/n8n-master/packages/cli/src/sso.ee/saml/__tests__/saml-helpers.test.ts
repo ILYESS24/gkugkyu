@@ -1,6 +1,6 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import type { AuthIdentity } from '@n8n/db';
-import { generateNanoId, User, AuthIdentityRepository, UserRepository } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import type { AuthIdentity } from '@workflow-automation/db';
+import { generateNanoId, User, AuthIdentityRepository, UserRepository } from '@workflow-automation/db';
 
 import * as helpers from '@/sso.ee/saml/saml-helpers';
 import type { SamlUserAttributes } from '@/sso.ee/saml/types';

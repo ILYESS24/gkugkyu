@@ -1,4 +1,4 @@
-import type { INodePropertyOptions } from 'n8n-workflow';
+﻿import type { INodePropertyOptions } from 'workflow-automation-workflow';
 
 export const harmCategories: INodePropertyOptions[] = [
 	{

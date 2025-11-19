@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
-import { ApplicationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError } from 'workflow-automation-workflow';
 
 import { type AwsAssumeRoleCredentialsType, type AWSRegion } from './common/aws/types';
 import { awsCustomEndpoints, awsRegionProperty } from './common/aws/descriptions';

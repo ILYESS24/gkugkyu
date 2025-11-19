@@ -1,12 +1,12 @@
-import EventSource from 'eventsource';
+﻿import EventSource from 'eventsource';
 import type {
 	IDataObject,
 	ITriggerFunctions,
 	INodeType,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, jsonParse } from 'workflow-automation-workflow';
 
 export class SseTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -32,7 +32,7 @@ export class SseTrigger implements INodeType {
 					"<b>While building your workflow</b>, click the 'execute step' button, then trigger an SSE event. This will trigger an execution, which will show up in this editor.<br /> <br /><b>Your workflow will also execute automatically</b>, since it's activated. Every time a change is detected, this node will trigger an execution. These executions will show up in the <a data-key='executions'>executions list</a>, but not in the editor.",
 			},
 			activationHint:
-				"Once you’ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just won’t see those executions here).",
+				"Once youâ€™ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just wonâ€™t see those executions here).",
 		},
 		inputs: [],
 		outputs: [NodeConnectionTypes.Main],

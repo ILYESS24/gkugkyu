@@ -1,4 +1,4 @@
-import type { OAuthRegisteredClientsStore } from '@modelcontextprotocol/sdk/server/auth/clients';
+﻿import type { OAuthRegisteredClientsStore } from '@modelcontextprotocol/sdk/server/auth/clients';
 import type {
 	AuthorizationParams,
 	OAuthServerProvider,
@@ -9,8 +9,8 @@ import type {
 	OAuthTokens,
 	OAuthTokenRevocationRequest,
 } from '@modelcontextprotocol/sdk/shared/auth';
-import { Logger } from '@n8n/backend-common';
-import { Service } from '@n8n/di';
+import { Logger } from '@workflow-automation/backend-common';
+import { Service } from '@workflow-automation/di';
 import type { Response } from 'express';
 
 import { OAuthClient } from './database/entities/oauth-client.entity';

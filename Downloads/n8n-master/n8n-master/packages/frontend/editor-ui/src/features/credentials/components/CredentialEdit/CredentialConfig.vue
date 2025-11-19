@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onBeforeMount, watch } from 'vue';
 
 import { getAppNameFromCredType } from '@/app/utils/nodeTypesUtils';
@@ -6,8 +6,8 @@ import type {
 	ICredentialDataDecryptedObject,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
-import { isCommunityPackageName } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { isCommunityPackageName } from 'workflow-automation-workflow';
 
 import type { IUpdateInformation } from '@/Interface';
 import AuthTypeSelector from './AuthTypeSelector.vue';
@@ -20,7 +20,7 @@ import {
 	EnterpriseEditionFeature,
 	NEW_ASSISTANT_SESSION_MODAL,
 } from '@/app/constants';
-import type { PermissionsRecord } from '@n8n/permissions';
+import type { PermissionsRecord } from '@workflow-automation/permissions';
 import { useCredentialsStore } from '../../credentials.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useRootStore } from '@n8n/stores/useRootStore';

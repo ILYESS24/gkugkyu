@@ -1,6 +1,6 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import * as permissionsModule from '@n8n/permissions';
+import * as permissionsModule from '@workflow-automation/permissions';
 import { useCredentialNavigationCommands } from './useCredentialNavigationCommands';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';

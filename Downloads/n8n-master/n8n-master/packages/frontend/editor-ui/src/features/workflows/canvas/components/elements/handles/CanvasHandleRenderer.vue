@@ -1,10 +1,10 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, h, provide, toRef, useCssModule } from 'vue';
 import type { CanvasConnectionPort, CanvasElementPortWithRenderData } from '../../../canvas.types';
 import { CanvasConnectionMode } from '../../../canvas.types';
 import type { ValidConnectionFunc } from '@vue-flow/core';
 import { Handle } from '@vue-flow/core';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import CanvasHandleMainInput from './render-types/CanvasHandleMainInput.vue';
 import CanvasHandleMainOutput from './render-types/CanvasHandleMainOutput.vue';
 import CanvasHandleNonMainInput from './render-types/CanvasHandleNonMainInput.vue';

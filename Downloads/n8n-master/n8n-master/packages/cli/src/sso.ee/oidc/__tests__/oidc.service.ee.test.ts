@@ -1,11 +1,11 @@
-import type { OidcConfigDto } from '@n8n/api-types';
-import type { Logger } from '@n8n/backend-common';
+﻿import type { OidcConfigDto } from '@workflow-automation/api-types';
+import type { Logger } from '@workflow-automation/backend-common';
 import { mockInstance, mockLogger } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
-import type { AuthIdentityRepository, SettingsRepository, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { GlobalConfig } from '@workflow-automation/config';
+import type { AuthIdentityRepository, SettingsRepository, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { Cipher, InstanceSettings } from 'n8n-core';
+import type { Cipher, InstanceSettings } from 'workflow-automation-core';
 import * as client from 'openid-client';
 import { EnvHttpProxyAgent } from 'undici';
 

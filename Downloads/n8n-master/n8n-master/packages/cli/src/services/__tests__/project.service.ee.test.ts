@@ -1,6 +1,6 @@
-import type { ProjectRelation } from '@n8n/api-types';
-import type { ModuleRegistry } from '@n8n/backend-common';
-import type { DatabaseConfig } from '@n8n/config';
+﻿import type { ProjectRelation } from '@workflow-automation/api-types';
+import type { ModuleRegistry } from '@workflow-automation/backend-common';
+import type { DatabaseConfig } from '@workflow-automation/config';
 import {
 	type Project,
 	type ProjectRepository,
@@ -8,8 +8,8 @@ import {
 	type ProjectRelationRepository,
 	type SharedCredentials,
 	PROJECT_ADMIN_ROLE,
-} from '@n8n/db';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 import type { EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 

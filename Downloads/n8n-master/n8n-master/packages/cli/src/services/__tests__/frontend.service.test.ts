@@ -1,8 +1,8 @@
-import type { LicenseState, Logger, ModuleRegistry } from '@n8n/backend-common';
-import type { GlobalConfig, SecurityConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import type { LicenseState, Logger, ModuleRegistry } from '@workflow-automation/backend-common';
+import type { GlobalConfig, SecurityConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { BinaryDataConfig, InstanceSettings } from 'n8n-core';
+import type { BinaryDataConfig, InstanceSettings } from 'workflow-automation-core';
 
 import { N8N_VERSION } from '@/constants';
 

@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import {
 	NodeConnectionTypes,
 	type IBinaryKeyData,
@@ -9,7 +9,7 @@ import {
 	type INodeType,
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { oldVersionNotice } from '@utils/descriptions';
 

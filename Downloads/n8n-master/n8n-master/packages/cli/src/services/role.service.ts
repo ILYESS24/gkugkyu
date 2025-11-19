@@ -1,5 +1,5 @@
-import { CreateRoleDto, UpdateRoleDto } from '@n8n/api-types';
-import { LicenseState } from '@n8n/backend-common';
+﻿import { CreateRoleDto, UpdateRoleDto } from '@workflow-automation/api-types';
+import { LicenseState } from '@workflow-automation/backend-common';
 import {
 	CredentialsEntity,
 	SharedCredentials,
@@ -13,14 +13,14 @@ import {
 	Scope as DBScope,
 	ScopeRepository,
 	GLOBAL_ADMIN_ROLE,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type {
 	Scope,
 	Role as RoleDTO,
 	AssignableProjectRole,
 	RoleNamespace,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 import {
 	combineScopes,
 	getAuthPrincipalScopes,
@@ -29,8 +29,8 @@ import {
 	PROJECT_ADMIN_ROLE_SLUG,
 	PROJECT_EDITOR_ROLE_SLUG,
 	PROJECT_VIEWER_ROLE_SLUG,
-} from '@n8n/permissions';
-import { UnexpectedError, UserError } from 'n8n-workflow';
+} from '@workflow-automation/permissions';
+import { UnexpectedError, UserError } from 'workflow-automation-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

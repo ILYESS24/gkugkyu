@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { GOOGLE_DRIVE_FILE_URL_REGEX, GOOGLE_DRIVE_FOLDER_URL_REGEX } from '../../../constants';
 import { DRIVE, RLC_DRIVE_DEFAULT } from '../helpers/interfaces';
@@ -419,7 +419,7 @@ export const permissionsOptions: INodeProperties = {
 							type: ['user', 'group'],
 						},
 					},
-					placeholder: '“e.g. name@mail.com',
+					placeholder: 'â€œe.g. name@mail.com',
 					default: '',
 					description: 'The email address of the user or group to which this permission refers',
 				},

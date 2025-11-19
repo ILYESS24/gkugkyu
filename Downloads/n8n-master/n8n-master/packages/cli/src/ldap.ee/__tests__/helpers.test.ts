@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { generateNanoId, AuthIdentity, User, UserRepository } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { generateNanoId, AuthIdentity, User, UserRepository } from '@workflow-automation/db';
 
 import * as helpers from '@/ldap.ee/helpers.ee';
 

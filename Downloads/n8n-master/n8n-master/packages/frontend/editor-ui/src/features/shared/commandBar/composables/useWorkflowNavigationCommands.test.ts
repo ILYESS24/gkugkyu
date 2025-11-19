@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ref } from 'vue';
 import { waitFor } from '@testing-library/vue';
 import { useWorkflowNavigationCommands } from './useWorkflowNavigationCommands';
@@ -12,7 +12,7 @@ import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/
 import { useFoldersStore } from '@/features/core/folders/folders.store';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
-import * as permissionsModule from '@n8n/permissions';
+import * as permissionsModule from '@workflow-automation/permissions';
 
 vi.mock('lodash/debounce', () => ({
 	default: (fn: (...args: unknown[]) => unknown) => fn,

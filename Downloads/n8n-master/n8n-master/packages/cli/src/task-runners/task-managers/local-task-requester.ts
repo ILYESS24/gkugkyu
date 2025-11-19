@@ -1,7 +1,7 @@
-import { GlobalConfig, TaskRunnersConfig } from '@n8n/config';
-import { Container, Service } from '@n8n/di';
+﻿import { GlobalConfig, TaskRunnersConfig } from '@workflow-automation/config';
+import { Container, Service } from '@workflow-automation/di';
 import type { RequesterMessage } from '@n8n/task-runner';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'workflow-automation-core';
 
 import { EventService } from '@/events/event.service';
 import { NodeTypes } from '@/node-types';

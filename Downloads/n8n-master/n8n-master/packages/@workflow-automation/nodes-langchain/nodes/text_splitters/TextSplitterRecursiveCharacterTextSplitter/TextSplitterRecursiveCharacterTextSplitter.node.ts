@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	RecursiveCharacterTextSplitterParams,
 	SupportedTextSplitterLanguage,
 } from '@langchain/textsplitters';
@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

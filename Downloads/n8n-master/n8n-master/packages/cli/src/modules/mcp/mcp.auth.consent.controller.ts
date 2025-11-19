@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { Body, Get, Post, RestController } from '@n8n/decorators';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { Body, Get, Post, RestController } from '@workflow-automation/decorators';
 import type { Response } from 'express';
 
 import { ApproveConsentRequestDto } from './dto/approve-consent-request.dto';

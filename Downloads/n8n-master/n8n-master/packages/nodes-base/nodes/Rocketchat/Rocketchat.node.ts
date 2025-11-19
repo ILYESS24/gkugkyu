@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { rocketchatApiRequest, validateJSON } from './GenericFunctions';
 
@@ -156,7 +156,7 @@ export class Rocketchat implements INodeType {
 						type: 'string',
 						default: '',
 						description:
-							'This will cause the message’s name to appear as the given alias, but your username will still display',
+							'This will cause the messageâ€™s name to appear as the given alias, but your username will still display',
 					},
 					{
 						displayName: 'Avatar',
@@ -171,7 +171,7 @@ export class Rocketchat implements INodeType {
 						type: 'string',
 						default: '',
 						description:
-							'This will cause the message’s name to appear as the given alias, but your username will still display',
+							'This will cause the messageâ€™s name to appear as the given alias, but your username will still display',
 					},
 				],
 			},
@@ -207,7 +207,7 @@ export class Rocketchat implements INodeType {
 						type: 'string',
 						default: '',
 						description:
-							'The text to display for this attachment, it is different than the message’s text',
+							'The text to display for this attachment, it is different than the messageâ€™s text',
 					},
 					{
 						displayName: 'Timestamp',
@@ -261,7 +261,7 @@ export class Rocketchat implements INodeType {
 						type: 'string',
 						default: '',
 						placeholder: 'https://site.com/img.png',
-						description: 'Displays a tiny icon to the left of the Author’s name',
+						description: 'Displays a tiny icon to the left of the Authorâ€™s name',
 					},
 					{
 						displayName: 'Title',
@@ -291,7 +291,7 @@ export class Rocketchat implements INodeType {
 						name: 'imageUrl',
 						type: 'string',
 						default: '',
-						description: 'The image to display, will be “big” and easy to see',
+						description: 'The image to display, will be â€œbigâ€ and easy to see',
 					},
 					{
 						displayName: 'Audio URL',

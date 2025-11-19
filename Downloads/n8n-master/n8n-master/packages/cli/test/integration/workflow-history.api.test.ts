@@ -1,5 +1,5 @@
-import { createWorkflow, testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
+﻿import { createWorkflow, testDb } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
 
 import { createOwner, createUser } from './shared/db/users';
 import { createWorkflowHistoryItem } from './shared/db/workflow-history';

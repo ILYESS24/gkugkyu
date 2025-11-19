@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	AINodeConnectionType,
 	CloseFunction,
@@ -18,8 +18,8 @@ import type {
 	NodeConnectionType,
 	ISourceData,
 	NodeExecutionHint,
-} from 'n8n-workflow';
-import { createDeferredPromise, jsonParse, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { createDeferredPromise, jsonParse, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { BaseExecuteContext } from './base-execute-context';
 import {

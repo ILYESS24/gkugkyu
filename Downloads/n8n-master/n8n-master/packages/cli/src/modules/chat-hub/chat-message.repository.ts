@@ -1,6 +1,6 @@
-import type { ChatHubMessageStatus, ChatMessageId, ChatSessionId } from '@n8n/api-types';
-import { withTransaction } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { ChatHubMessageStatus, ChatMessageId, ChatSessionId } from '@workflow-automation/api-types';
+import { withTransaction } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { DataSource, EntityManager, Repository } from '@n8n/typeorm';
 
 import { ChatHubMessage } from './chat-hub-message.entity';

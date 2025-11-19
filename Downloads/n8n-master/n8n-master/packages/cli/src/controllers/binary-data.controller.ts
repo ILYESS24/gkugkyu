@@ -1,8 +1,8 @@
-import { BinaryDataQueryDto, BinaryDataSignedQueryDto, ViewableMimeTypes } from '@n8n/api-types';
-import { Get, Query, RestController } from '@n8n/decorators';
+﻿import { BinaryDataQueryDto, BinaryDataSignedQueryDto, ViewableMimeTypes } from '@workflow-automation/api-types';
+import { Get, Query, RestController } from '@workflow-automation/decorators';
 import { Request, Response } from 'express';
 import { JsonWebTokenError } from 'jsonwebtoken';
-import { BinaryDataService, FileNotFoundError, isValidNonDefaultMode } from 'n8n-core';
+import { BinaryDataService, FileNotFoundError, isValidNonDefaultMode } from 'workflow-automation-core';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 

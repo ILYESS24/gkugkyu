@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeApiError,
 	NodeConnectionTypes,
 	type IPollFunctions,
@@ -6,7 +6,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { googleApiRequest, searchAccounts, searchLocations } from './GenericFunctions';
 

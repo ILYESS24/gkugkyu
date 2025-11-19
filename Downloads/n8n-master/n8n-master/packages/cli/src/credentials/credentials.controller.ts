@@ -1,17 +1,17 @@
-import {
+﻿import {
 	CreateCredentialDto,
 	CredentialsGetManyRequestQuery,
 	CredentialsGetOneRequestQuery,
 	GenerateCredentialNameRequestQuery,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
 import {
 	SharedCredentials,
 	ProjectRelationRepository,
 	SharedCredentialsRepository,
 	AuthenticatedRequest,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	Delete,
 	Get,
@@ -24,12 +24,12 @@ import {
 	Body,
 	Param,
 	Query,
-} from '@n8n/decorators';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+} from '@workflow-automation/decorators';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In } from '@n8n/typeorm';
-import { deepCopy } from 'n8n-workflow';
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
+import type { ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { CredentialsFinderService } from './credentials-finder.service';

@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import type { IDataObject, Workflow } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import type { IDataObject, Workflow } from 'workflow-automation-workflow';
 
 import { isWorkflowIdValid } from '@/utils';
 

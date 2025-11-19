@@ -1,4 +1,4 @@
-import { snakeCase } from 'change-case';
+﻿import { snakeCase } from 'change-case';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,13 +9,13 @@ import type {
 	IWebhookFunctions,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeApiError,
 	NodeConnectionTypes,
 	NodeOperationError,
 	WAIT_INDEFINITELY,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	getFileSha,
@@ -918,7 +918,7 @@ export class Github implements INodeType {
 								type: 'string',
 								default: '',
 								description:
-									'The branch to commit to. If not set the repository’s default branch (usually master) is used.',
+									'The branch to commit to. If not set the repositoryâ€™s default branch (usually master) is used.',
 							},
 						],
 					},
@@ -1000,7 +1000,7 @@ export class Github implements INodeType {
 						default: '',
 						placeholder: 'master',
 						description:
-							'The name of the commit/branch/tag. Default: the repository’s default branch (usually master).',
+							'The name of the commit/branch/tag. Default: the repositoryâ€™s default branch (usually master).',
 					},
 				],
 			},

@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, ILoadOptionsFunctions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, ILoadOptionsFunctions } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { googleApiRequest, googleApiRequestAllItems } from '../GenericFunctions';
 

@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import moment from 'moment-timezone';
 import type {
 	IDataObject,
@@ -11,8 +11,8 @@ import type {
 	IPollFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError, sleep } from 'workflow-automation-workflow';
 import { RRule } from 'rrule';
 
 import type { RecurringEventInstance } from './EventInterface';

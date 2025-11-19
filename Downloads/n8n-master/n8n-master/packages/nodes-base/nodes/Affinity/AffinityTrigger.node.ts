@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IWebhookFunctions,
 	IDataObject,
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { affinityApiRequest, eventsExist, mapResource } from './GenericFunctions';
 

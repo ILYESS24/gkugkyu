@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 /* eslint-disable @typescript-eslint/unbound-method */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import type { Serialized } from '@langchain/core/load/serializable';
 import type { LLMResult } from '@langchain/core/outputs';
 import { mock } from 'jest-mock-extended';
-import type { IDataObject, ISupplyDataFunctions } from 'n8n-workflow';
-import { NodeOperationError, NodeApiError } from 'n8n-workflow';
+import type { IDataObject, ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { NodeOperationError, NodeApiError } from 'workflow-automation-workflow';
 
 import { N8nLlmTracing } from '../N8nLlmTracing';
 

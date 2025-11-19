@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { UserRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { UserRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import type { NextFunction, Response } from 'express';
 import { DateTime } from 'luxon';
 

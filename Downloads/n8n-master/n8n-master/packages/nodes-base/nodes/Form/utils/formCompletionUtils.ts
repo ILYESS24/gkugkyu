@@ -1,4 +1,4 @@
-import { type Response } from 'express';
+﻿import { type Response } from 'express';
 import {
 	type NodeTypeAndVersion,
 	type IWebhookFunctions,
@@ -6,7 +6,7 @@ import {
 	type IBinaryData,
 	type IDataObject,
 	OperationalError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { sanitizeCustomCss, sanitizeHtml } from './utils';
 

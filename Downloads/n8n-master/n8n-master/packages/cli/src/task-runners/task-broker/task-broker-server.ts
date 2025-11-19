@@ -1,6 +1,6 @@
-import { inTest, Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { inTest, Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import compression from 'compression';
 import express from 'express';
 import { rateLimit as expressRateLimit } from 'express-rate-limit';

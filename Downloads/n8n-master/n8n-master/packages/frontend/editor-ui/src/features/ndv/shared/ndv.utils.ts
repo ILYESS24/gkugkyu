@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IConnection,
 	type IConnections,
 	type IDataObject,
@@ -18,7 +18,7 @@ import {
 	displayParameter,
 	isResourceLocatorValue,
 	deepCopy,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { INodeUi, IUpdateInformation } from '@/Interface';
 import { CUSTOM_API_CALL_KEY, SWITCH_NODE_TYPE } from '@/app/constants';
 import isEqual from 'lodash/isEqual';

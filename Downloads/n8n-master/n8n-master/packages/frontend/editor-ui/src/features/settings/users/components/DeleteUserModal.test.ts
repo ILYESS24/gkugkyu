@@ -1,4 +1,4 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import { type MockedStore, mockedStore } from '@/__tests__/utils';
 import DeleteUserModal from './DeleteUserModal.vue';
 import { createTestingPinia } from '@pinia/testing';
@@ -9,7 +9,7 @@ import { STORES } from '@n8n/stores';
 import { ProjectTypes } from '@/features/collaboration/projects/projects.types';
 import userEvent from '@testing-library/user-event';
 import { useUsersStore } from '../users.store';
-import { ROLE, type UsersList, type User } from '@n8n/api-types';
+import { ROLE, type UsersList, type User } from '@workflow-automation/api-types';
 
 const ModalStub = {
 	template: `

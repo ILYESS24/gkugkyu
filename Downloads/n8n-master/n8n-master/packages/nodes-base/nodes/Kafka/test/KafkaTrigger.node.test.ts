@@ -1,4 +1,4 @@
-import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
+﻿import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
 import { mock } from 'jest-mock-extended';
 import {
 	Kafka,
@@ -10,7 +10,7 @@ import {
 	type KafkaMessage,
 	type RecordBatchEntry,
 } from 'kafkajs';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { testTriggerNode } from '@test/nodes/TriggerHelpers';
 

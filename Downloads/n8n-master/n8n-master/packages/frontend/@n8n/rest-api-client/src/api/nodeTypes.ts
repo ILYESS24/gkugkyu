@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ActionResultRequestDto,
 	CommunityNodeType,
 	OptionsRequestDto,
 	ResourceLocatorRequestDto,
 	ResourceMapperFieldsRequestDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { INodeTranslationHeaders } from '@n8n/i18n';
 import axios from 'axios';
 import type {
@@ -14,8 +14,8 @@ import type {
 	INodeTypeNameVersion,
 	NodeParameterValueType,
 	ResourceMapperFields,
-} from 'n8n-workflow';
-import { sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { sleep } from 'workflow-automation-workflow';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

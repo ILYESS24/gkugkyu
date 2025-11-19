@@ -1,4 +1,4 @@
-import { vi, describe, it, expect } from 'vitest';
+﻿import { vi, describe, it, expect } from 'vitest';
 import merge from 'lodash/merge';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
@@ -6,7 +6,7 @@ import { faker } from '@faker-js/faker';
 import { STORES } from '@n8n/stores';
 import { VIEWS } from '@/app/constants';
 import ExecutionsList from './GlobalExecutionsList.vue';
-import { randomInt, type ExecutionSummary } from 'n8n-workflow';
+import { randomInt, type ExecutionSummary } from 'workflow-automation-workflow';
 import type { MockedStore } from '@/__tests__/utils';
 import {
 	mockedStore,

@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { IWebhookResponseData } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { IWebhookResponseData } from 'workflow-automation-workflow';
 
 import { extractWebhookOnReceivedResponse } from '@/webhooks/webhook-on-received-response-extractor';
 

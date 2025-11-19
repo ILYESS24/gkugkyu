@@ -1,5 +1,5 @@
-import { type User, type WorkflowEntity } from '@n8n/db';
-import type { INode } from 'n8n-workflow';
+﻿import { type User, type WorkflowEntity } from '@workflow-automation/db';
+import type { INode } from 'workflow-automation-workflow';
 import z from 'zod';
 
 import { USER_CALLED_MCP_TOOL_EVENT } from '../mcp.constants';

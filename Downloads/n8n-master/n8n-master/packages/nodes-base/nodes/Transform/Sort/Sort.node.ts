@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import isEqual from 'lodash/isEqual';
 import lt from 'lodash/lt';
 import {
@@ -9,7 +9,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { shuffleArray } from '@utils/utilities';
 

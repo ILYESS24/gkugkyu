@@ -1,8 +1,8 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import { useChatMessaging } from '../composables/useChatMessaging';
 import { ref, computed } from 'vue';
 import type { Ref, ComputedRef } from 'vue';
-import type { IRunExecutionData } from 'n8n-workflow';
+import type { IRunExecutionData } from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import type { IExecutionPushResponse } from '@/features/execution/executions/executions.types';
 import type { RunWorkflowChatPayload } from '../composables/useChatMessaging';

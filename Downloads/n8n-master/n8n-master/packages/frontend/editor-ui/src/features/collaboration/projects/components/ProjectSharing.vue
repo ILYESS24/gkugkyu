@@ -1,8 +1,8 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { isIconOrEmoji, type IconOrEmoji } from '@n8n/design-system/components/N8nIconPicker/types';
 import type { SelectSize } from '@n8n/design-system/types';
 import { useI18n } from '@n8n/i18n';
-import type { AllRolesMap } from '@n8n/permissions';
+import type { AllRolesMap } from '@workflow-automation/permissions';
 import orderBy from 'lodash/orderBy';
 import { computed, ref, watch } from 'vue';
 import { ProjectTypes, type ProjectListItem, type ProjectSharingData } from '../projects.types';

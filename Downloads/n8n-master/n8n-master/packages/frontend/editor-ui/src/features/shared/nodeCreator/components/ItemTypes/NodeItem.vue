@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { SimplifiedNodeType } from '@/Interface';
 import {
 	CREDENTIAL_ONLY_NODE_PREFIX,
@@ -11,7 +11,7 @@ import { computed, ref } from 'vue';
 
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
-import { isCommunityPackageName } from 'n8n-workflow';
+import { isCommunityPackageName } from 'workflow-automation-workflow';
 import OfficialIcon from 'virtual:icons/mdi/verified';
 
 import { useNodeType } from '@/app/composables/useNodeType';

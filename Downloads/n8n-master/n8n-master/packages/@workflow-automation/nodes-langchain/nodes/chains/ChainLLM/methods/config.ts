@@ -1,10 +1,10 @@
-import {
+﻿import {
 	AIMessagePromptTemplate,
 	HumanMessagePromptTemplate,
 	SystemMessagePromptTemplate,
 } from '@langchain/core/prompts';
-import type { IDataObject, INodeInputConfiguration, INodeProperties } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IDataObject, INodeInputConfiguration, INodeProperties } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import {
 	promptTypeOptions,

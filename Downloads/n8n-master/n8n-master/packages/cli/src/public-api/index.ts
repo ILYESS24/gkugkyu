@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import type { Router } from 'express';
 import express from 'express';
 import type { HttpError } from 'express-openapi-validator/dist/framework/types';

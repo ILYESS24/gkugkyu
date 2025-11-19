@@ -1,5 +1,5 @@
-import { InstanceSettingsConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { InstanceSettingsConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 
 import type {
 	BreakingChangeRuleMetadata,

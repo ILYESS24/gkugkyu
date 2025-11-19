@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	JsonObject,
 	IDataObject,
 	IExecuteFunctions,
@@ -12,8 +12,8 @@ import type {
 	INodePropertyOptions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import { parseStringPromise } from 'xml2js';
 
 export async function microsoftApiRequest(

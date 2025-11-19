@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	AllEntities,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import * as row from './row/Row.resource';
 import { DATA_TABLE_ID_FIELD } from '../common/fields';

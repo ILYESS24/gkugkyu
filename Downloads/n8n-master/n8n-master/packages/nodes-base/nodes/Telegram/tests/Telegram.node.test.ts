@@ -1,10 +1,10 @@
-import { mockDeep } from 'jest-mock-extended';
+﻿import { mockDeep } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	NodeExecutionWithMetadata,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import * as GenericFunctions from '../GenericFunctions';
 import { Telegram } from '../Telegram.node';

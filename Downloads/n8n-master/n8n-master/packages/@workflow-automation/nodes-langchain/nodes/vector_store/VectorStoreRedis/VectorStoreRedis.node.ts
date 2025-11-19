@@ -1,4 +1,4 @@
-import type { EmbeddingsInterface } from '@langchain/core/embeddings';
+﻿import type { EmbeddingsInterface } from '@langchain/core/embeddings';
 import { RedisVectorStore } from '@langchain/redis';
 import type { RedisVectorStoreConfig } from '@langchain/redis/dist/vectorstores';
 import {
@@ -7,7 +7,7 @@ import {
 	type INodeProperties,
 	type ISupplyDataFunctions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { RedisClientOptions } from 'redis';
 import { createClient } from 'redis';
 

@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import type { ToISOTimeOptions } from 'luxon';
 import type {
 	DeclarativeRestApiSettings,
@@ -15,8 +15,8 @@ import type {
 	INodePropertyOptions,
 	IPollFunctions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
-import { ApplicationError, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeApiError } from 'workflow-automation-workflow';
 
 const VALID_EMAIL_REGEX =
 	/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

@@ -1,11 +1,11 @@
-import { Calculator } from '@langchain/community/tools/calculator';
+﻿import { Calculator } from '@langchain/community/tools/calculator';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolCalculator } from './ToolCalculator.node';
 

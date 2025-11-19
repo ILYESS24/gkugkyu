@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container, Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container, Service } from '@workflow-automation/di';
 
 import type {
 	DisconnectAnalyzer,

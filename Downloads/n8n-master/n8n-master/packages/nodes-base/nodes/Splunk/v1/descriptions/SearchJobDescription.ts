@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const searchJobOperations: INodeProperties[] = [
 	{
@@ -205,7 +205,7 @@ export const searchJobFields: INodeProperties[] = [
 				type: 'number',
 				default: 0,
 				description:
-					'Number of seconds ago to check when an identical search is started and return the job’s search ID instead of starting a new job',
+					'Number of seconds ago to check when an identical search is started and return the jobâ€™s search ID instead of starting a new job',
 			},
 			{
 				displayName: 'Required Field',

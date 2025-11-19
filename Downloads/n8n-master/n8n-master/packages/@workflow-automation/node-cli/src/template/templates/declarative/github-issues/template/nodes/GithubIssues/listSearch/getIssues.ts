@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { githubApiRequest } from '../shared/transport';
 
 type IssueSearchItem = {

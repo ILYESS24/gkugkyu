@@ -1,9 +1,9 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { RunnableSequence } from '@langchain/core/runnables';
 import { AgentExecutor, createToolCallingAgent } from 'langchain/agents';
 import omit from 'lodash/omit';
-import { jsonParse, NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+import { jsonParse, NodeOperationError } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
 
 import { getPromptInputByType } from '@utils/helpers';
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
@@ -51,7 +51,7 @@ export async function toolsAgentExecute(this: IExecuteFunctions): Promise<INodeE
 				promptTypeKey: 'promptType',
 			});
 			if (input === undefined) {
-				throw new NodeOperationError(this.getNode(), 'The “text” parameter is empty.');
+				throw new NodeOperationError(this.getNode(), 'The â€œtextâ€ parameter is empty.');
 			}
 
 			const options = this.getNodeParameter('options', itemIndex, {}) as {

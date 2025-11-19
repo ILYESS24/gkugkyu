@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
 import TemplatesInfoCarousel from '../components/TemplatesInfoCarousel.vue';
 import TemplateFilters from '../components/TemplateFilters.vue';
@@ -6,7 +6,7 @@ import TemplateList from '../components/TemplateList.vue';
 import TemplatesView from './TemplatesView.vue';
 
 import type { ITemplatesCategory } from '@n8n/rest-api-client/api/templates';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
 import { CREATOR_HUB_URL, VIEWS } from '@/app/constants';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUsersStore } from '@/features/settings/users/users.store';

@@ -1,15 +1,15 @@
-import { mockLogger } from '@n8n/backend-test-utils';
-import type { WorkflowEntity, WorkflowRepository } from '@n8n/db';
+﻿import { mockLogger } from '@n8n/backend-test-utils';
+import type { WorkflowEntity, WorkflowRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 import type {
 	WorkflowParameters,
 	INode,
 	INodeType,
 	INodeTypeDescription,
 	WorkflowActivateMode,
-} from 'n8n-workflow';
-import { Workflow } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Workflow } from 'workflow-automation-workflow';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
 import type { NodeTypes } from '@/node-types';

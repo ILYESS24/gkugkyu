@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import get from 'lodash/get';
 import {
 	type IDataObject,
@@ -7,7 +7,7 @@ import {
 	type INodeExecutionData,
 	type IPairedItemData,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import * as utils from '../GenericFunctions';
 import { Supabase } from '../Supabase.node';

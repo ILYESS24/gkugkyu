@@ -1,7 +1,7 @@
-import { GLOBAL_OWNER_ROLE, type IWorkflowDb } from '@n8n/db';
+﻿import { GLOBAL_OWNER_ROLE, type IWorkflowDb } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
-import type { INode, IRun, IWorkflowBase } from 'n8n-workflow';
+import type { InstanceSettings } from 'workflow-automation-core';
+import type { INode, IRun, IWorkflowBase } from 'workflow-automation-workflow';
 
 import type { MessageEventBus } from '@/eventbus/message-event-bus/message-event-bus';
 import { EventService } from '@/events/event.service';

@@ -1,4 +1,4 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import type {
 	ICredentialType,
 	INodeType,
@@ -7,7 +7,7 @@ import type {
 	LoadedClass,
 	LoadedNodesAndCredentials,
 	LoadingDetails,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import path from 'node:path';
 
 import { UnrecognizedCredentialTypeError, UnrecognizedNodeTypeError } from '../dist/errors';

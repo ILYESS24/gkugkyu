@@ -1,5 +1,5 @@
-import type { RouteLocationNormalized } from 'vue-router';
-import type { Resource } from '@n8n/permissions';
+﻿import type { RouteLocationNormalized } from 'vue-router';
+import type { Resource } from '@workflow-automation/permissions';
 
 export function inferProjectIdFromRoute(to: RouteLocationNormalized): string {
 	const routeParts = to.path.split('/');

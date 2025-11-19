@@ -1,4 +1,4 @@
-import * as amqplib from 'amqplib';
+﻿import * as amqplib from 'amqplib';
 import type {
 	IDeferredPromise,
 	IExecuteResponsePromiseData,
@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	IRun,
 	ITriggerFunctions,
-} from 'n8n-workflow';
-import { jsonParse, sleep } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, sleep } from 'workflow-automation-workflow';
 
 import { formatPrivateKey } from '@utils/utilities';
 

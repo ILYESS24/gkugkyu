@@ -1,5 +1,5 @@
-import { Column, Entity, OneToMany, ManyToOne } from '@n8n/typeorm';
-import type { IDataObject } from 'n8n-workflow';
+﻿import { Column, Entity, OneToMany, ManyToOne } from '@n8n/typeorm';
+import type { IDataObject } from 'workflow-automation-workflow';
 
 import { DateTimeColumn, JsonColumn, WithTimestampsAndStringId } from './abstract-entity';
 import type { TestCaseExecution } from './test-case-execution.ee';

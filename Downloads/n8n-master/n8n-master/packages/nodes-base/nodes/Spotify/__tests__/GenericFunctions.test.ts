@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, IHookFunctions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, IHookFunctions } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { spotifyApiRequest } from '../GenericFunctions';
 

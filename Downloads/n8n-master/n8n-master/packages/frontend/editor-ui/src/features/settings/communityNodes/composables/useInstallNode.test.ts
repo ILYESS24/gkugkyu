@@ -1,13 +1,13 @@
-import { removePreviewToken } from '@/features/shared/nodeCreator/nodeCreator.utils';
+﻿import { removePreviewToken } from '@/features/shared/nodeCreator/nodeCreator.utils';
 import type { IWorkflowDb } from '@/Interface';
 import { useCommunityNodesStore } from '../communityNodes.store';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import type { CommunityNodeType } from '@n8n/api-types';
+import type { CommunityNodeType } from '@workflow-automation/api-types';
 import { createTestingPinia } from '@pinia/testing';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 import { useInstallNode } from './useInstallNode';

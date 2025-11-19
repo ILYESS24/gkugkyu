@@ -1,4 +1,4 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import type { WorkflowDataCreate } from '@n8n/rest-api-client/api/workflows';
 

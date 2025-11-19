@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { DEFAULT_EVALUATION_METRIC } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
+import { DEFAULT_EVALUATION_METRIC } from 'workflow-automation-workflow';
 
 import {
 	CORRECTNESS_PROMPT,
@@ -12,7 +12,7 @@ import { document, sheet } from '../../Google/Sheet/GoogleSheetsTrigger.node';
 export const setInputsProperties: INodeProperties[] = [
 	{
 		displayName:
-			'For adding columns from your dataset to the evaluation results. Anything you add here will be displayed in the ‘evaluations’ tab, not on the Google Sheet or Data table.',
+			'For adding columns from your dataset to the evaluation results. Anything you add here will be displayed in the â€˜evaluationsâ€™ tab, not on the Google Sheet or Data table.',
 		name: 'setInputsNotice',
 		type: 'notice',
 		default: '',
@@ -159,7 +159,7 @@ export const setOutputProperties: INodeProperties[] = [
 export const setCheckIfEvaluatingProperties: INodeProperties[] = [
 	{
 		displayName:
-			'Routes to the ‘evaluation’ branch if the execution started from an evaluation trigger. Otherwise routes to the ‘normal’ branch.',
+			'Routes to the â€˜evaluationâ€™ branch if the execution started from an evaluation trigger. Otherwise routes to the â€˜normalâ€™ branch.',
 		name: 'notice',
 		type: 'notice',
 		default: '',
@@ -236,7 +236,7 @@ function promptFieldForMetric(metric: string, prompt: string): INodeProperties[]
 			name: 'prompt',
 			type: 'string',
 			default: prompt,
-			description: `Instruction used to guide the model in scoring the actual answer’s ${metric} against the expected answer`,
+			description: `Instruction used to guide the model in scoring the actual answerâ€™s ${metric} against the expected answer`,
 			typeOptions: {
 				rows: 4,
 			},
@@ -338,7 +338,7 @@ const toolsUsedFields: INodeProperties[] = [
 		name: 'intermediateSteps',
 		type: 'string',
 		default: '',
-		hint: 'Map the <code>intermediateSteps</code> field here. To see it, enable returning intermediate steps in the agent’s options',
+		hint: 'Map the <code>intermediateSteps</code> field here. To see it, enable returning intermediate steps in the agentâ€™s options',
 		displayOptions: {
 			show: {
 				operation: ['setMetrics'],
@@ -351,8 +351,8 @@ const toolsUsedFields: INodeProperties[] = [
 export const setMetricsProperties: INodeProperties[] = [
 	{
 		displayName:
-			'Metrics measure the quality of an execution. They will be displayed in the ‘evaluations’ tab, not on the Google Sheet or Data table.',
-		//			"Calculate the score(s) for the evaluation, then map them into this node. They will be displayed in the ‘evaluations’ tab, not the Google Sheet. <a href='https://docs.n8n.io/advanced-ai/evaluations/metric-based-evaluations/#2-calculate-metrics' target='_blank'>View metric examples</a>",
+			'Metrics measure the quality of an execution. They will be displayed in the â€˜evaluationsâ€™ tab, not on the Google Sheet or Data table.',
+		//			"Calculate the score(s) for the evaluation, then map them into this node. They will be displayed in the â€˜evaluationsâ€™ tab, not the Google Sheet. <a href='https://docs.n8n.io/advanced-ai/evaluations/metric-based-evaluations/#2-calculate-metrics' target='_blank'>View metric examples</a>",
 		name: 'notice',
 		type: 'notice',
 		default: '',
@@ -386,7 +386,7 @@ export const setMetricsProperties: INodeProperties[] = [
 				name: 'Correctness (AI-based)',
 				value: 'correctness',
 				description:
-					'Whether the answer’s meaning is consistent with a reference answer. Uses a scale of 1 (worst) to 5 (best).',
+					'Whether the answerâ€™s meaning is consistent with a reference answer. Uses a scale of 1 (worst) to 5 (best).',
 			},
 			{
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased

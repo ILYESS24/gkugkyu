@@ -1,5 +1,5 @@
-import type { PullWorkFolderRequestDto, PushWorkFolderRequestDto } from '@n8n/api-types';
-import type { AuthenticatedRequest } from '@n8n/db';
+﻿import type { PullWorkFolderRequestDto, PushWorkFolderRequestDto } from '@workflow-automation/api-types';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
 import type { Response } from 'express';
 import { mock } from 'jest-mock-extended';
 

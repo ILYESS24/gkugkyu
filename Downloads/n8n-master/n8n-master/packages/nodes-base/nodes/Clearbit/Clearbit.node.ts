@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { companyFields, companyOperations } from './CompanyDescription';
 import { clearbitApiRequest } from './GenericFunctions';
@@ -48,7 +48,7 @@ export class Clearbit implements INodeType {
 						name: 'Person',
 						value: 'person',
 						description:
-							'The Person API lets you retrieve social information associated with an email address, such as a person’s name, location and Twitter handle',
+							'The Person API lets you retrieve social information associated with an email address, such as a personâ€™s name, location and Twitter handle',
 					},
 				],
 				default: 'company',

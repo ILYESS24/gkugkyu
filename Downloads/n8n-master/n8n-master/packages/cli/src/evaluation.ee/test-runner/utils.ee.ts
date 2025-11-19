@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	NodeParameterValueType,
 	INodeParameterResourceLocator,
 	IRunData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 type TokenUsageValues = {
 	completionTokens: number;

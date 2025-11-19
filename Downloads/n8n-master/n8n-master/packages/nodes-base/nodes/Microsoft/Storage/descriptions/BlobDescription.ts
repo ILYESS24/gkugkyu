@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	DeclarativeRestApiSettings,
 	IDataObject,
 	IExecutePaginationFunctions,
@@ -8,7 +8,7 @@ import type {
 	INodeExecutionData,
 	INodeParameterResourceLocator,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	handleErrorPostReceive,

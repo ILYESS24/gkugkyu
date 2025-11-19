@@ -1,6 +1,6 @@
-import { FakeChatModel } from '@langchain/core/utils/testing';
+﻿import { FakeChatModel } from '@langchain/core/utils/testing';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
 
 import { processItem } from '../processItem';
 import { TextClassifier } from '../TextClassifier.node';

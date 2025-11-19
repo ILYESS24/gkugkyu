@@ -1,8 +1,8 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import type { EntityManager } from '@n8n/typeorm';
 import { DataSource, In, Not, Repository } from '@n8n/typeorm';
 import type { DeepPartial } from '@n8n/typeorm/common/DeepPartial';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
 
 import { TestCaseExecution } from '../entities';
 import type { TestCaseExecutionErrorCode } from '../entities/types-db';

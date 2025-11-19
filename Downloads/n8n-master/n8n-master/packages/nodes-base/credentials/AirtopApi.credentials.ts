@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IAuthenticateGeneric,
 	ICredentialType,
 	ICredentialTestRequest,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { BASE_URL } from '../nodes/Airtop/constants';
 

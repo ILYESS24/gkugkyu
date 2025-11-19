@@ -1,8 +1,8 @@
-import { Time } from '@n8n/constants';
+﻿import { Time } from '@workflow-automation/constants';
 import { readFileSync, statSync } from 'fs';
-import type { n8n } from 'n8n-core';
-import type { ITaskDataConnections } from 'n8n-workflow';
-import { jsonParse, TRIMMED_TASK_DATA_CONNECTIONS_KEY } from 'n8n-workflow';
+import type { n8n } from 'workflow-automation-core';
+import type { ITaskDataConnections } from 'workflow-automation-workflow';
+import { jsonParse, TRIMMED_TASK_DATA_CONNECTIONS_KEY } from 'workflow-automation-workflow';
 import { resolve, join, dirname } from 'path';
 
 const { E2E_TESTS } = process.env;
@@ -133,4 +133,4 @@ export const WsStatusCodes = {
 
 export const FREE_AI_CREDITS_CREDENTIAL_NAME = 'n8n free OpenAI API credits';
 
-export const STREAM_SEPARATOR = '⧉⇋⇋➽⌑⧉§§\n';
+export const STREAM_SEPARATOR = 'â§‰â‡‹â‡‹âž½âŒ‘â§‰Â§Â§\n';

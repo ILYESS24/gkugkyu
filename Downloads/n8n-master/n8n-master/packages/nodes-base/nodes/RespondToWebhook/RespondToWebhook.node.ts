@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+﻿import jwt from 'jsonwebtoken';
 import set from 'lodash/set';
 import type {
 	IDataObject,
@@ -9,7 +9,7 @@ import type {
 	INodeProperties,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	jsonParse,
 	NodeOperationError,
@@ -19,7 +19,7 @@ import {
 	CHAT_TRIGGER_NODE_TYPE,
 	WAIT_NODE_TYPE,
 	WAIT_INDEFINITELY,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import { getBinaryResponse } from './utils/binary';
@@ -383,7 +383,7 @@ export class RespondToWebhook implements INodeType {
 						new Error('No Webhook node found in the workflow'),
 						{
 							description:
-								'Insert a Webhook node to your workflow and set the “Respond” parameter to “Using Respond to Webhook Node” ',
+								'Insert a Webhook node to your workflow and set the â€œRespondâ€ parameter to â€œUsing Respond to Webhook Nodeâ€ ',
 						},
 					);
 				}

@@ -1,5 +1,5 @@
-import { Service } from '@n8n/di';
-import { LoadOptionsContext, RoutingNode, LocalLoadOptionsContext, ExecuteContext } from 'n8n-core';
+﻿import { Service } from '@workflow-automation/di';
+import { LoadOptionsContext, RoutingNode, LocalLoadOptionsContext, ExecuteContext } from 'workflow-automation-core';
 import type {
 	ILoadOptions,
 	ILoadOptionsFunctions,
@@ -19,15 +19,15 @@ import type {
 	IDataObject,
 	ILocalLoadOptionsFunctions,
 	IExecuteData,
-} from 'n8n-workflow';
-import { Workflow, UnexpectedError, createEmptyRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Workflow, UnexpectedError, createEmptyRunExecutionData } from 'workflow-automation-workflow';
 
 import { NodeTypes } from '@/node-types';
 
 import { WorkflowLoaderService } from './workflow-loader.service';
-import { User } from '@n8n/db';
+import { User } from '@workflow-automation/db';
 import { userHasScopes } from '@/permissions.ee/check-access';
-import { Logger } from '@n8n/backend-common';
+import { Logger } from '@workflow-automation/backend-common';
 
 type LocalResourceMappingMethod = (
 	this: ILocalLoadOptionsFunctions,

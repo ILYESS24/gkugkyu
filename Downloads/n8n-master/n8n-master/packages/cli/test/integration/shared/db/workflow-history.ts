@@ -1,6 +1,6 @@
-import type { WorkflowHistory } from '@n8n/db';
-import { WorkflowHistoryRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import type { WorkflowHistory } from '@workflow-automation/db';
+import { WorkflowHistoryRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { v4 as uuid } from 'uuid';
 
 export async function createWorkflowHistoryItem(

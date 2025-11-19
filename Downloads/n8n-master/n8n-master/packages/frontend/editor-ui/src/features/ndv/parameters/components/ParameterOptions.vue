@@ -1,10 +1,10 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useI18n } from '@n8n/i18n';
 import {
 	isResourceLocatorValue,
 	type INodeProperties,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { isValueExpression } from '@/app/utils/nodeTypesUtils';
 import { computed } from 'vue';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';

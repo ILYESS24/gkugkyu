@@ -1,4 +1,4 @@
-import type { ISubscriptionMap } from 'mqtt';
+﻿import type { ISubscriptionMap } from 'mqtt';
 import type { QoS } from 'mqtt-packet';
 import type {
 	ITriggerFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeTypeDescription,
 	ITriggerResponse,
 	IRun,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { createClient, type MqttCredential } from './GenericFunctions';
 
@@ -39,7 +39,7 @@ export class MqttTrigger implements INodeType {
 					"<b>While building your workflow</b>, click the 'execute step' button, then trigger an MQTT event. This will trigger an execution, which will show up in this editor.<br /> <br /><b>Your workflow will also execute automatically</b>, since it's activated. Every time a change is detected, this node will trigger an execution. These executions will show up in the <a data-key='executions'>executions list</a>, but not in the editor.",
 			},
 			activationHint:
-				"Once you’ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just won’t see those executions here).",
+				"Once youâ€™ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just wonâ€™t see those executions here).",
 		},
 		inputs: [],
 		outputs: [NodeConnectionTypes.Main],

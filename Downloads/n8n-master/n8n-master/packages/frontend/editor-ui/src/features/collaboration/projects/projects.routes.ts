@@ -1,7 +1,7 @@
-import type { RouteLocationNormalized, RouteRecordRaw } from 'vue-router';
+﻿import type { RouteLocationNormalized, RouteRecordRaw } from 'vue-router';
 import { VIEWS } from '@/app/constants';
 import { useProjectsStore } from './projects.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import { useInsightsStore } from '@/features/execution/insights/insights.store';
 
 const MainSidebar = async () => await import('@/app/components/MainSidebar.vue');

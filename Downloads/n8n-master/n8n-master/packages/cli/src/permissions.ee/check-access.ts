@@ -1,8 +1,8 @@
-import type { User } from '@n8n/db';
-import { ProjectRepository, SharedCredentialsRepository, SharedWorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { hasGlobalScope, type Scope } from '@n8n/permissions';
-import { UnexpectedError } from 'n8n-workflow';
+﻿import type { User } from '@workflow-automation/db';
+import { ProjectRepository, SharedCredentialsRepository, SharedWorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { hasGlobalScope, type Scope } from '@workflow-automation/permissions';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';
 import { RoleService } from '@/services/role.service';

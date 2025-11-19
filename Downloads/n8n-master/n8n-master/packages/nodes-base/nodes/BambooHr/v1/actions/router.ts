@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
 
 import * as companyReport from './companyReport';
 import * as employee from './employee';

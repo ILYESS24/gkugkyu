@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
 
 import { RemovedDatabaseTypesRule } from '../removed-database-types.rule';
 

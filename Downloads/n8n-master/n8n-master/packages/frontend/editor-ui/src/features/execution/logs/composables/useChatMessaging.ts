@@ -1,4 +1,4 @@
-import type { ComputedRef, Ref } from 'vue';
+﻿import type { ComputedRef, Ref } from 'vue';
 import { computed, ref } from 'vue';
 import { v4 as uuid } from 'uuid';
 import type { ChatMessage } from '@n8n/chat/types';
@@ -10,7 +10,7 @@ import type {
 	IBinaryData,
 	BinaryFileType,
 	IRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useToast } from '@/app/composables/useToast';
 import { useMessage } from '@/app/composables/useMessage';
 import { usePinnedData } from '@/app/composables/usePinnedData';

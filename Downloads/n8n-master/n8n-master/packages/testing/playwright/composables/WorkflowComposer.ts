@@ -1,6 +1,6 @@
-import type { Request } from '@playwright/test';
+﻿import type { Request } from '@playwright/test';
 import { expect } from '@playwright/test';
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import type { n8nPage } from '../pages/n8nPage';

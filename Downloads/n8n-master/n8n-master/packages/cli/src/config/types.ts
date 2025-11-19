@@ -1,5 +1,5 @@
-import type { RedisOptions } from 'ioredis';
-import type { IProcessedDataConfig } from 'n8n-workflow';
+﻿import type { RedisOptions } from 'ioredis';
+import type { IProcessedDataConfig } from 'workflow-automation-workflow';
 
 import type { schema } from './schema';
 

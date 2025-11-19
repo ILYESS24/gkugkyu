@@ -1,6 +1,6 @@
-import type { User } from '@n8n/db';
-import { UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import type { User } from '@workflow-automation/db';
+import { UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In } from '@n8n/typeorm';
 import pick from 'lodash/pick';

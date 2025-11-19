@@ -1,5 +1,5 @@
-<script lang="ts">
-import type { BannerName } from '@n8n/api-types';
+﻿<script lang="ts">
+import type { BannerName } from '@workflow-automation/api-types';
 import { useBannersStore } from '@/features/shared/banners/banners.store';
 import NonProductionLicenseBanner from './banners/NonProductionLicenseBanner.vue';
 import TrialOverBanner from './banners/TrialOverBanner.vue';

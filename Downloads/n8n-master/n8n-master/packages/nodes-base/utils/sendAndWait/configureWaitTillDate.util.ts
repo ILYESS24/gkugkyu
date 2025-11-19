@@ -1,5 +1,5 @@
-import { ApplicationError, NodeOperationError, WAIT_INDEFINITELY } from 'n8n-workflow';
-import type { IExecuteFunctions, IDataObject } from 'n8n-workflow';
+﻿import { ApplicationError, NodeOperationError, WAIT_INDEFINITELY } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, IDataObject } from 'workflow-automation-workflow';
 
 export function configureWaitTillDate(
 	context: IExecuteFunctions,

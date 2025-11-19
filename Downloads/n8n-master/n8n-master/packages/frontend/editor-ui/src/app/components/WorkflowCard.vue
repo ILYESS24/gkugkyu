@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref } from 'vue';
 import {
 	DUPLICATE_MODAL_KEY,
@@ -9,7 +9,7 @@ import {
 import { PROJECT_MOVE_RESOURCE_MODAL } from '@/features/collaboration/projects/projects.constants';
 import { useMessage } from '@/app/composables/useMessage';
 import { useToast } from '@/app/composables/useToast';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import dateformat from 'dateformat';
 import WorkflowActivator from '@/app/components/WorkflowActivator.vue';
 import { useUIStore } from '@/app/stores/ui.store';
@@ -24,7 +24,7 @@ import { useTelemetry } from '@/app/composables/useTelemetry';
 import { ResourceType } from '@/features/collaboration/projects/projects.utils';
 import type { EventBus } from '@n8n/utils/event-bus';
 import type { UserAction, WorkflowResource } from '@/Interface';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 import {
 	type ProjectSharingData,
 	ProjectTypes,

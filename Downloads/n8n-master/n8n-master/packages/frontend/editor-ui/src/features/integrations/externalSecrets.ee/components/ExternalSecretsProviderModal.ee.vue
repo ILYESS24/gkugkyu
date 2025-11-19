@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import Modal from '@/app/components/Modal.vue';
 import { EXTERNAL_SECRETS_PROVIDER_MODAL_KEY, MODAL_CONFIRM } from '@/app/constants';
 import { computed, onMounted, ref } from 'vue';
@@ -14,7 +14,7 @@ import type {
 	ExternalSecretsProviderData,
 	ExternalSecretsProvider,
 } from '../externalSecrets.types';
-import type { IParameterLabel } from 'n8n-workflow';
+import type { IParameterLabel } from 'workflow-automation-workflow';
 import ExternalSecretsProviderImage from './ExternalSecretsProviderImage.ee.vue';
 import ExternalSecretsProviderConnectionSwitch from './ExternalSecretsProviderConnectionSwitch.ee.vue';
 import { createEventBus } from '@n8n/utils/event-bus';

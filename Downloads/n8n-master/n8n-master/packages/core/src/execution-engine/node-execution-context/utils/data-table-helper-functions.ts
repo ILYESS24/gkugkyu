@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	DataTableProxyFunctions,
 	INode,
 	Workflow,
 	IWorkflowExecuteAdditionalData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export function getDataTableHelperFunctions(
 	additionalData: IWorkflowExecuteAdditionalData,

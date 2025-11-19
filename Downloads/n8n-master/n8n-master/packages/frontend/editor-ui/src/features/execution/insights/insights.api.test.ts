@@ -1,4 +1,4 @@
-import {
+﻿import {
 	fetchInsightsSummary,
 	fetchInsightsByTime,
 	fetchInsightsTimeSaved,
@@ -12,7 +12,7 @@ import type {
 	InsightsByWorkflow,
 	ListInsightsWorkflowQueryDto,
 	InsightsDateFilterDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import { expect } from 'vitest';
 
 vi.mock('@n8n/rest-api-client', () => ({

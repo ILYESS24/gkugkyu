@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Debounce } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Debounce } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 import ioRedis from 'ioredis';
 import type { Cluster, RedisOptions } from 'ioredis';
 

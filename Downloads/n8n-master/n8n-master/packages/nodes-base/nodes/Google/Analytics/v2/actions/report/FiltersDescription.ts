@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const dimensionDropdown: INodeProperties[] = [
 	{
@@ -50,7 +50,7 @@ export const dimensionDropdown: INodeProperties[] = [
 			},
 			{
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-				name: 'Other dimensions…',
+				name: 'Other dimensionsâ€¦',
 				value: 'other',
 			},
 		],
@@ -124,12 +124,12 @@ export const metricDropdown: INodeProperties[] = [
 			},
 			{
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-				name: 'Other metrics…',
+				name: 'Other metricsâ€¦',
 				value: 'other',
 			},
 			{
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-				name: 'Custom metric…',
+				name: 'Custom metricâ€¦',
 				value: 'custom',
 			},
 		],

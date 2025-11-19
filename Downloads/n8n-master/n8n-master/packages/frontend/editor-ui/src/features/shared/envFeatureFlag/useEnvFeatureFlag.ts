@@ -1,5 +1,5 @@
-import { computed } from 'vue';
-import type { N8nEnvFeatFlags } from '@n8n/api-types';
+﻿import { computed } from 'vue';
+import type { N8nEnvFeatFlags } from '@workflow-automation/api-types';
 import { useSettingsStore } from '@/app/stores/settings.store';
 
 export const useEnvFeatureFlag = () => {

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	billingAddress,
@@ -125,7 +125,7 @@ export const accountFields: INodeProperties[] = [
 				name: 'Account_Site',
 				type: 'string',
 				default: '',
-				description: 'Name of the account’s location, e.g. Headquarters or London',
+				description: 'Name of the accountâ€™s location, e.g. Headquarters or London',
 			},
 			{
 				displayName: 'Account Type Name or ID',
@@ -171,7 +171,7 @@ export const accountFields: INodeProperties[] = [
 				name: 'Employees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees in the account’s company',
+				description: 'Number of employees in the accountâ€™s company',
 			},
 			{
 				displayName: 'Exchange Rate',
@@ -302,7 +302,7 @@ export const accountFields: INodeProperties[] = [
 				name: 'Account_Site',
 				type: 'string',
 				default: '',
-				description: 'Name of the account’s location, e.g. Headquarters or London',
+				description: 'Name of the accountâ€™s location, e.g. Headquarters or London',
 			},
 			{
 				displayName: 'Account Type Name or ID',
@@ -348,7 +348,7 @@ export const accountFields: INodeProperties[] = [
 				name: 'Employees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees in the account’s company',
+				description: 'Number of employees in the accountâ€™s company',
 			},
 			{
 				displayName: 'Exchange Rate',

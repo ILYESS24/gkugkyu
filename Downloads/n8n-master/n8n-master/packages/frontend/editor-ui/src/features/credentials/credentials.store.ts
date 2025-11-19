@@ -1,4 +1,4 @@
-import type { INodeUi } from '@/Interface';
+﻿import type { INodeUi } from '@/Interface';
 import type {
 	ICredentialMap,
 	ICredentialsDecryptedResponse,
@@ -24,7 +24,7 @@ import type {
 	INodeCredentialTestResult,
 	INodeTypeDescription,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

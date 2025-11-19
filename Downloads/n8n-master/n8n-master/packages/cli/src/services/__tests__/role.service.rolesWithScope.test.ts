@@ -1,6 +1,6 @@
-import type { LicenseState } from '@n8n/backend-common';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { RoleRepository, ScopeRepository } from '@n8n/db';
+import { RoleRepository, ScopeRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import { RoleCacheService } from '@/services/role-cache.service';

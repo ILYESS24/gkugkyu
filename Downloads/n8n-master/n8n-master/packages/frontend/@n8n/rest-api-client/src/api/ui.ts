@@ -1,4 +1,4 @@
-import type { BannerName } from '@n8n/api-types';
+﻿import type { BannerName } from '@workflow-automation/api-types';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

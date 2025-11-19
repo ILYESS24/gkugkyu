@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { isObjectEmpty, jsonParse, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { isObjectEmpty, jsonParse, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { apiRequest } from '../../../transport';
 import { metadataProperty, textMessageProperties } from '../descriptions';

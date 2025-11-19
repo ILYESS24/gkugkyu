@@ -1,4 +1,4 @@
-import {
+﻿import {
 	checkOverlap,
 	createCanvasConnectionHandleString,
 	createCanvasConnectionId,
@@ -9,8 +9,8 @@ import {
 	parseCanvasConnectionHandleString,
 	shouldIgnoreCanvasShortcut,
 } from './canvas.utils';
-import type { IConnection, IConnections, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IConnection, IConnections, INodeTypeDescription } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type { CanvasConnection } from './canvas.types';
 import { CanvasConnectionMode } from './canvas.types';
 import type { INodeUi } from '@/Interface';

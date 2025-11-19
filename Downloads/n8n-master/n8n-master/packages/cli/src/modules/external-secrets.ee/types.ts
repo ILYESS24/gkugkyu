@@ -1,5 +1,5 @@
-import type { AuthenticatedRequest } from '@n8n/db';
-import type { IDataObject, INodeProperties } from 'n8n-workflow';
+﻿import type { AuthenticatedRequest } from '@workflow-automation/db';
+import type { IDataObject, INodeProperties } from 'workflow-automation-workflow';
 
 export interface SecretsProviderSettings<T = IDataObject> {
 	connected: boolean;

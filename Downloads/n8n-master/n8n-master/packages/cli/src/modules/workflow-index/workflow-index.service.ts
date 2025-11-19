@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import { WorkflowDependencies, WorkflowDependencyRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import { ensureError, INode, IWorkflowBase } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { WorkflowDependencies, WorkflowDependencyRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import { ensureError, INode, IWorkflowBase } from 'workflow-automation-workflow';
 
 import { EventService } from '@/events/event.service';
 

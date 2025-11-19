@@ -1,4 +1,4 @@
-import { computed, watch } from 'vue';
+﻿import { computed, watch } from 'vue';
 import { defineStore } from 'pinia';
 import { STORES } from '@n8n/stores';
 import { useUIStore } from '@/app/stores/ui.store';
@@ -10,7 +10,7 @@ import { useChatPanelStateStore, type ChatPanelMode } from './chatPanelState.sto
 import { useAssistantStore } from './assistant.store';
 import { useBuilderStore } from './builder.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'workflow-automation-workflow';
 import type { ChatRequest } from './assistant.types';
 
 export const MAX_CHAT_WIDTH = 425;

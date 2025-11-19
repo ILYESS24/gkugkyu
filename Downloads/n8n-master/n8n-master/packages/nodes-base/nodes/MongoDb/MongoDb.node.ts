@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	FindOneAndReplaceOptions,
 	FindOneAndUpdateOptions,
 	UpdateOptions,
 	Sort,
 } from 'mongodb';
 import { ObjectId } from 'mongodb';
-import { ApplicationError, NodeConnectionTypes } from 'n8n-workflow';
+import { ApplicationError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	ICredentialsDecrypted,
@@ -17,7 +17,7 @@ import type {
 	INodeTypeDescription,
 	JsonObject,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	buildParameterizedConnString,

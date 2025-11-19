@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IWorkflowDb,
 	NewWorkflowResponse,
 	WorkflowListResource,
@@ -14,7 +14,7 @@ import type {
 	ExecutionOptions,
 	ExecutionSummary,
 	IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { getFullApiResponse, makeRestApiRequest } from '@n8n/rest-api-client';
 
 export async function getNewWorkflow(context: IRestApiContext, data?: IDataObject) {

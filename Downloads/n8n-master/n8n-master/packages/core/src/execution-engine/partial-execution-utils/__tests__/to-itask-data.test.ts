@@ -1,4 +1,4 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { toITaskData } from './helpers';
 

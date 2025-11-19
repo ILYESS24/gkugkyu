@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
@@ -6,8 +6,8 @@ import type {
 	IWebhookFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError } from 'workflow-automation-workflow';
 
 const BEEMINDER_URI = 'https://www.beeminder.com/api/v1';
 

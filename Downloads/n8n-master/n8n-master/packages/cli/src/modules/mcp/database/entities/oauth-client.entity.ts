@@ -1,4 +1,4 @@
-import { JsonColumn, WithTimestamps } from '@n8n/db';
+﻿import { JsonColumn, WithTimestamps } from '@workflow-automation/db';
 import { Column, Entity, OneToMany } from '@n8n/typeorm';
 
 import type { AccessToken } from './oauth-access-token.entity';

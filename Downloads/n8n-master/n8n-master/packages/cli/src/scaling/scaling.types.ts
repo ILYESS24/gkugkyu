@@ -1,11 +1,11 @@
-import type { RunningJobSummary } from '@n8n/api-types';
+﻿import type { RunningJobSummary } from '@workflow-automation/api-types';
 import type Bull from 'bull';
 import type {
 	ExecutionError,
 	IExecuteResponsePromiseData,
 	IRun,
 	StructuredChunk,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type PCancelable from 'p-cancelable';
 
 export type JobQueue = Bull.Queue<JobData>;

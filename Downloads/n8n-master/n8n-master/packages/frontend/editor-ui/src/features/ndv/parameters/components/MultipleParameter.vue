@@ -1,8 +1,8 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, watch, computed } from 'vue';
 import get from 'lodash/get';
-import type { INodeParameters, INodeProperties } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import type { INodeParameters, INodeProperties } from 'workflow-automation-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 
 import { useI18n } from '@n8n/i18n';
 import type { IUpdateInformation } from '@/Interface';

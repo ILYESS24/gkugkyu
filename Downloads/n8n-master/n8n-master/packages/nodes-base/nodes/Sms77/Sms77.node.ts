@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IDataObject,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { sms77ApiRequest } from './GenericFunctions';
 

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	JsonObject,
 	IDataObject,
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodePropertyOptions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 export interface ICustomInterface {
 	name: string;

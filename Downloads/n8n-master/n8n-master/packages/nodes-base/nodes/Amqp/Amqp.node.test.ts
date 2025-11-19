@@ -1,11 +1,11 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	ICredentialDataDecryptedObject,
 	IExecuteFunctions,
 	ICredentialTestFunctions,
 	ICredentialsDecrypted,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { Amqp } from './Amqp.node';
 

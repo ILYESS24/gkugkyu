@@ -1,4 +1,4 @@
-import type { Response } from 'express';
+﻿import type { Response } from 'express';
 import isbot from 'isbot';
 import * as a from 'node:assert';
 import { DateTime } from 'luxon';
@@ -9,7 +9,7 @@ import type {
 	IWebhookFunctions,
 	FormFieldsParameter,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	FORM_NODE_TYPE,
 	FORM_TRIGGER_NODE_TYPE,
@@ -17,7 +17,7 @@ import {
 	WAIT_NODE_TYPE,
 	WorkflowConfigurationError,
 	jsonParse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import sanitize from 'sanitize-html';
 
 import { getResolvables } from '../../../utils/utilities';
@@ -268,7 +268,7 @@ export const validateResponseModeConfiguration = (context: IWebhookFunctions) =>
 			new Error('No Respond to Webhook node found in the workflow'),
 			{
 				description:
-					'Insert a Respond to Webhook node to your workflow to respond to the form submission or choose another option for the “Respond When” parameter',
+					'Insert a Respond to Webhook node to your workflow to respond to the form submission or choose another option for the â€œRespond Whenâ€ parameter',
 			},
 		);
 	}
@@ -279,7 +279,7 @@ export const validateResponseModeConfiguration = (context: IWebhookFunctions) =>
 			new Error('Unused Respond to Webhook node found in the workflow'),
 			{
 				description:
-					'Set the “Respond When” parameter to “Using Respond to Webhook Node” or remove the Respond to Webhook node',
+					'Set the â€œRespond Whenâ€ parameter to â€œUsing Respond to Webhook Nodeâ€ or remove the Respond to Webhook node',
 			},
 		);
 	}

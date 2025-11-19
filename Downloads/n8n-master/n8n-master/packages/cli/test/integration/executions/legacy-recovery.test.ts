@@ -1,9 +1,9 @@
-import { LegacySqliteExecutionRecoveryService } from '@/executions/legacy-sqlite-execution-recovery.service';
-import { Logger } from '@n8n/backend-common';
+﻿import { LegacySqliteExecutionRecoveryService } from '@/executions/legacy-sqlite-execution-recovery.service';
+import { Logger } from '@workflow-automation/backend-common';
 import { testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { DbConnection, ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import { DbConnection, ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { v4 as uuid } from 'uuid';
 
 const globalConfig = Container.get(GlobalConfig);

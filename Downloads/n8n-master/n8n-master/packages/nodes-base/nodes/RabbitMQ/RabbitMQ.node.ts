@@ -1,4 +1,4 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import type * as amqplib from 'amqplib';
 import type {
 	IExecuteFunctions,
@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	parsePublishArguments,
@@ -265,7 +265,7 @@ export class RabbitMQ implements INodeType {
 						},
 						default: '',
 						description:
-							'An exchange to send messages to if this exchange can’t route them to any queues',
+							'An exchange to send messages to if this exchange canâ€™t route them to any queues',
 					},
 					{
 						displayName: 'Arguments',

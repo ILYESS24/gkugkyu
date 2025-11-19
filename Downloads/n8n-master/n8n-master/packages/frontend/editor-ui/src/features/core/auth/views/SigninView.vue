@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, reactive, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
@@ -15,7 +15,7 @@ import { useSSOStore } from '@/features/settings/sso/sso.store';
 
 import type { IFormBoxConfig } from '@/Interface';
 import { MFA_AUTHENTICATION_REQUIRED_ERROR_CODE, VIEWS, MFA_FORM } from '@/app/constants';
-import type { LoginRequestDto } from '@n8n/api-types';
+import type { LoginRequestDto } from '@workflow-automation/api-types';
 
 export type EmailOrLdapLoginIdAndPassword = Pick<
 	LoginRequestDto,

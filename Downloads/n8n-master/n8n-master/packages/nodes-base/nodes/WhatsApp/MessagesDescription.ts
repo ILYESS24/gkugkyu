@@ -1,5 +1,5 @@
-import countryCodes from 'currency-codes';
-import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'n8n-workflow';
+﻿import countryCodes from 'currency-codes';
+import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	cleanPhoneNumber,

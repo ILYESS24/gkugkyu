@@ -1,4 +1,4 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import {
 	ChatPromptTemplate,
 	HumanMessagePromptTemplate,
@@ -8,7 +8,7 @@ import {
 import type { BaseRetriever } from '@langchain/core/retrievers';
 import { createStuffDocumentsChain } from 'langchain/chains/combine_documents';
 import { createRetrievalChain } from 'langchain/chains/retrieval';
-import { type IExecuteFunctions, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { type IExecuteFunctions, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { getPromptInputByType, isChatInstance } from '@utils/helpers';
 import { getTracingConfig } from '@utils/tracing';
@@ -43,7 +43,7 @@ export const processItem = async (
 	}
 
 	if (query === undefined) {
-		throw new NodeOperationError(ctx.getNode(), 'The ‘query‘ parameter is empty.');
+		throw new NodeOperationError(ctx.getNode(), 'The â€˜queryâ€˜ parameter is empty.');
 	}
 
 	const options = ctx.getNodeParameter('options', itemIndex, {}) as {

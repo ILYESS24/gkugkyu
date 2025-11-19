@@ -1,4 +1,4 @@
-import type { PartialAdditionalData, TaskData } from '@n8n/task-runner';
+﻿import type { PartialAdditionalData, TaskData } from '@n8n/task-runner';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteContextData,
@@ -6,7 +6,7 @@ import type {
 	INodeExecutionData,
 	IRunExecutionData,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DataRequestResponseBuilder } from '../data-request-response-builder';
 

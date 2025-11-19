@@ -1,5 +1,5 @@
-import type { Workflow, IWorkflowBase } from 'n8n-workflow';
-import { UnexpectedError } from 'n8n-workflow';
+﻿import type { Workflow, IWorkflowBase } from 'workflow-automation-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 export class WorkflowMissingIdError extends UnexpectedError {
 	constructor(workflow: Workflow | IWorkflowBase) {

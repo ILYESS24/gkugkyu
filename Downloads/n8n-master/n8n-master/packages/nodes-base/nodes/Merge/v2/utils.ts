@@ -1,4 +1,4 @@
-import assign from 'lodash/assign';
+﻿import assign from 'lodash/assign';
 import assignWith from 'lodash/assignWith';
 import get from 'lodash/get';
 import merge from 'lodash/merge';
@@ -9,7 +9,7 @@ import type {
 	IDataObject,
 	INodeExecutionData,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { ApplicationError } from '@n8n/errors';
 
 import { fuzzyCompare, preparePairedItemDataArray } from '@utils/utilities';

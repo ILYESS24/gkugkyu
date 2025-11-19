@@ -1,8 +1,8 @@
-import { GlobalConfig } from '@n8n/config';
-import { type DatabaseType, DbConnection, type Migration } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { type DatabaseType, DbConnection, type Migration } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DataSource, type QueryRunner } from '@n8n/typeorm';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 async function reinitializeDataConnection(): Promise<void> {
 	const dbConnection = Container.get(DbConnection);

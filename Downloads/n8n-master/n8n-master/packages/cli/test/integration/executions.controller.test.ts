@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	linkUserToProject,
 	createWorkflow,
@@ -6,7 +6,7 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
+import type { User } from '@workflow-automation/db';
 
 import { ConcurrencyControlService } from '@/concurrency/concurrency-control.service';
 import { WaitTracker } from '@/wait-tracker';

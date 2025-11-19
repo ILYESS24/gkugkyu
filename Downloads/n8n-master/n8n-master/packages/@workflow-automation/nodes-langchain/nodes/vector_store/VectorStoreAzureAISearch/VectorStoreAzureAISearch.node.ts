@@ -1,4 +1,4 @@
-import type { EmbeddingsInterface } from '@langchain/core/embeddings';
+﻿import type { EmbeddingsInterface } from '@langchain/core/embeddings';
 import {
 	AzureAISearchVectorStore,
 	AzureAISearchQueryType,
@@ -11,7 +11,7 @@ import {
 	type INodeProperties,
 	type IExecuteFunctions,
 	type ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { createVectorStoreNode } from '../shared/createVectorStoreNode/createVectorStoreNode';
 
 // User agent for usage tracking

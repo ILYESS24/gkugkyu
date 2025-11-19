@@ -1,4 +1,4 @@
-import type { AppliedThemeOption, INodeUi, NodeAuthenticationOption } from '@/Interface';
+﻿import type { AppliedThemeOption, INodeUi, NodeAuthenticationOption } from '@/Interface';
 import type { ITemplatesNode } from '@n8n/rest-api-client/api/templates';
 import {
 	CORE_NODES_CATEGORY,
@@ -21,7 +21,7 @@ import {
 	type NodeParameterValueType,
 	type ResourceMapperField,
 	type Themed,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { WorkflowState } from '@/app/composables/useWorkflowState';
 
 /*

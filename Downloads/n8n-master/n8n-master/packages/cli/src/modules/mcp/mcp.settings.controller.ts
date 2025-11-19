@@ -1,6 +1,6 @@
-import { ModuleRegistry, Logger } from '@n8n/backend-common';
-import { type AuthenticatedRequest, WorkflowEntity } from '@n8n/db';
-import { Body, Post, Get, Patch, RestController, GlobalScope, Param } from '@n8n/decorators';
+﻿import { ModuleRegistry, Logger } from '@workflow-automation/backend-common';
+import { type AuthenticatedRequest, WorkflowEntity } from '@workflow-automation/db';
+import { Body, Post, Get, Patch, RestController, GlobalScope, Param } from '@workflow-automation/decorators';
 import type { Response } from 'express';
 
 import { UpdateMcpSettingsDto } from './dto/update-mcp-settings.dto';

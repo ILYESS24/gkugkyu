@@ -1,6 +1,6 @@
-import type { CreateCredentialDto } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { Project, User, ICredentialsDb, ScopesField } from '@n8n/db';
+﻿import type { CreateCredentialDto } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { Project, User, ICredentialsDb, ScopesField } from '@workflow-automation/db';
 import {
 	CredentialsEntity,
 	SharedCredentials,
@@ -8,9 +8,9 @@ import {
 	ProjectRepository,
 	SharedCredentialsRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
-import { hasGlobalScope, PROJECT_OWNER_ROLE_SLUG, type Scope } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { hasGlobalScope, PROJECT_OWNER_ROLE_SLUG, type Scope } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import {
 	In,
@@ -18,7 +18,7 @@ import {
 	type FindOptionsRelations,
 	type FindOptionsWhere,
 } from '@n8n/typeorm';
-import { CredentialDataError, Credentials, ErrorReporter } from 'n8n-core';
+import { CredentialDataError, Credentials, ErrorReporter } from 'workflow-automation-core';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialsDecrypted,
@@ -26,14 +26,14 @@ import type {
 	IDataObject,
 	INodeProperties,
 	INodePropertyCollection,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	CREDENTIAL_EMPTY_VALUE,
 	deepCopy,
 	isINodePropertyCollection,
 	NodeHelpers,
 	UnexpectedError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { CredentialsFinderService } from './credentials-finder.service';
 

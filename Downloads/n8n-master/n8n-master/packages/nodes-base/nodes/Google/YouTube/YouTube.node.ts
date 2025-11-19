@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, BINARY_ENCODING, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, BINARY_ENCODING, NodeOperationError } from 'workflow-automation-workflow';
 import { Readable } from 'stream';
 
 import { isoCountryCodes } from '@utils/ISOCountryCodes';

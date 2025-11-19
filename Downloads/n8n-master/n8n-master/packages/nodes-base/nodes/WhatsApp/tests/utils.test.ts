@@ -1,4 +1,4 @@
-import type { IHttpRequestOptions } from 'n8n-workflow';
+﻿import type { IHttpRequestOptions } from 'workflow-automation-workflow';
 
 import type { SendAndWaitConfig } from '../../../utils/sendAndWait/utils';
 import { createMessage, WHATSAPP_BASE_URL } from '../GenericFunctions';

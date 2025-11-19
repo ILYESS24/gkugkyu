@@ -1,4 +1,4 @@
-import {
+﻿import {
 	PROJECT_ADMIN_ROLE_SLUG,
 	PROJECT_EDITOR_ROLE_SLUG,
 	PROJECT_OWNER_ROLE_SLUG,
@@ -7,7 +7,7 @@ import {
 	ALL_ROLES,
 	type GlobalRole,
 	type Role as RoleDTO,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 
 import type { Role } from 'entities';
 

@@ -1,5 +1,5 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
-import { NodeConnectionTypes, type INodeProperties, type INodeTypeDescription } from 'n8n-workflow';
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+import { NodeConnectionTypes, type INodeProperties, type INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { JAILBREAK_PROMPT } from './actions/checks/jailbreak';
 import { NSFW_SYSTEM_PROMPT } from './actions/checks/nsfw';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { capitalizeInitial } from '../GenericFunctions';
 import type { CamelCaseResource } from '../types';
@@ -552,7 +552,7 @@ export const currencies = [
 	{ name: 'Singapore Dollar', value: 'SGD' },
 	{ name: 'Syrian Pound', value: 'SYP' },
 	{ name: 'Baht', value: 'THB' },
-	{ name: 'Pa’anga', value: 'TOP' },
+	{ name: 'Paâ€™anga', value: 'TOP' },
 	{ name: 'Turkish Lira', value: 'TRY' },
 	{ name: 'Trinidad and Tobago Dollar', value: 'TTD' },
 	{ name: 'New Taiwan Dollar', value: 'TWD' },

@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IExecuteFunctions,
 	type IHookFunctions,
 	type IHttpRequestMethods,
 	type IRequestOptions,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Make an API request to NextCloud

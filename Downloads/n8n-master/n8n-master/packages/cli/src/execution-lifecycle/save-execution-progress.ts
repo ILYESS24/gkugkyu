@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import { createRunExecutionData, type IRunExecutionData, type ITaskData } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import { createRunExecutionData, type IRunExecutionData, type ITaskData } from 'workflow-automation-workflow';
 
 export async function saveExecutionProgress(
 	workflowId: string,
@@ -33,7 +33,7 @@ export async function saveExecutionProgress(
 		}
 
 		if (fullExecutionData.finished) {
-			// We already received ´workflowExecuteAfter´ webhook, so this is just an async call
+			// We already received Â´workflowExecuteAfterÂ´ webhook, so this is just an async call
 			// that was left behind. We skip saving because the other call should have saved everything
 			// so this one is safe to ignore
 			return;

@@ -1,4 +1,4 @@
-import { pascalCase } from 'change-case';
+﻿import { pascalCase } from 'change-case';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import { URL } from 'url';
 
 import { awsApiRequestSOAP } from '../GenericFunctions';

@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import type { ITelemetrySettings } from '@n8n/api-types';
+﻿<script lang="ts" setup>
+import type { ITelemetrySettings } from '@workflow-automation/api-types';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUsersStore } from '@/features/settings/users/users.store';

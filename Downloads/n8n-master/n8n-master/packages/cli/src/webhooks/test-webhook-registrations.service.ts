@@ -1,6 +1,6 @@
-import { Service } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
-import type { IWebhookData, IWorkflowBase } from 'n8n-workflow';
+﻿import { Service } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { IWebhookData, IWorkflowBase } from 'workflow-automation-workflow';
 
 import { TEST_WEBHOOK_TIMEOUT, TEST_WEBHOOK_TIMEOUT_BUFFER } from '@/constants';
 import { CacheService } from '@/services/cache/cache.service';

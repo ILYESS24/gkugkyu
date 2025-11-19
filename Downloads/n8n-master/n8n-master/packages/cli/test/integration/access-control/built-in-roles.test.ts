@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
@@ -6,12 +6,12 @@ import {
 	randomCredentialPayload,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User } from '@n8n/db';
+import type { Project, User } from '@workflow-automation/db';
 import {
 	PROJECT_ADMIN_ROLE_SLUG,
 	PROJECT_EDITOR_ROLE_SLUG,
 	PROJECT_VIEWER_ROLE_SLUG,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 
 import { UserManagementMailer } from '@/user-management/email';
 

@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IDataObject,
 	type ILoadOptionsFunctions,
 	type INodeListSearchItems,
 	type INodeListSearchResult,
 	sleep,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { filterSortSearchListItems } from '../helpers/utils';
 import { microsoftApiRequest } from '../transport';

@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import type { IRun, IWorkflowBase, WorkflowExecuteMode } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import type { IRun, IWorkflowBase, WorkflowExecuteMode } from 'workflow-automation-workflow';
 
 import type { IWorkflowErrorData } from '@/interfaces';
 import { OwnershipService } from '@/services/ownership.service';

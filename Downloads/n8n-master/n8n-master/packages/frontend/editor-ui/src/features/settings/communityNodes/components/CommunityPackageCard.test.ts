@@ -1,9 +1,9 @@
-import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
+﻿import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
 import CommunityPackageCard from './CommunityPackageCard.vue';
 import { createComponentRenderer } from '@/__tests__/render';
-import type { PublicInstalledNode, PublicInstalledPackage } from 'n8n-workflow';
+import type { PublicInstalledNode, PublicInstalledPackage } from 'workflow-automation-workflow';
 
 const communityPackage: PublicInstalledPackage = {
 	packageName: 'n8n-nodes-test',

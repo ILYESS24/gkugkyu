@@ -1,4 +1,4 @@
-import { setActivePinia } from 'pinia';
+﻿import { setActivePinia } from 'pinia';
 import type {
 	IConnection,
 	INodeTypeDescription,
@@ -6,8 +6,8 @@ import type {
 	Workflow,
 	INodeConnections,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers, UserError, TelemetryHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeHelpers, UserError, TelemetryHelpers } from 'workflow-automation-workflow';
 import type { CanvasConnection, CanvasNode } from '@/features/workflows/canvas/canvas.types';
 import { CanvasConnectionMode } from '@/features/workflows/canvas/canvas.types';
 import type { AddedNode, INodeUi, IWorkflowDb, WorkflowDataWithTemplateId } from '@/Interface';
@@ -3590,7 +3590,7 @@ describe('useCanvasOperations', () => {
 			expect(toast.showMessage).toHaveBeenCalledWith({
 				duration: 0,
 				message: 'Crashed',
-				title: 'Problem in node ‘Last Node‘',
+				title: 'Problem in node â€˜Last Nodeâ€˜',
 				type: 'error',
 			});
 		});

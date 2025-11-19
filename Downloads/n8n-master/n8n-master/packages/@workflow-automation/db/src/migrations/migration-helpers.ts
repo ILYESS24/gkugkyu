@@ -1,11 +1,11 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import type { ObjectLiteral } from '@n8n/typeorm';
 import type { QueryRunner } from '@n8n/typeorm/query-runner/QueryRunner';
 import { readFileSync, rmSync } from 'fs';
-import { InstanceSettings } from 'n8n-core';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 
 import { createSchemaBuilder } from './dsl';
 import type { BaseMigration, Migration, MigrationContext, MigrationFn } from './migration-types';

@@ -1,5 +1,5 @@
-import { type ToolCallback } from '@modelcontextprotocol/sdk/server/mcp.js';
-import type { INode } from 'n8n-workflow';
+﻿import { type ToolCallback } from '@modelcontextprotocol/sdk/server/mcp.js';
+import type { INode } from 'workflow-automation-workflow';
 import type z from 'zod';
 
 import type { SUPPORTED_MCP_TRIGGERS } from './mcp.constants';

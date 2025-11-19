@@ -1,10 +1,10 @@
-import { mock, mockDeep } from 'jest-mock-extended';
+﻿import { mock, mockDeep } from 'jest-mock-extended';
 import type {
 	ICredentialDataDecryptedObject,
 	IDataObject,
 	IHookFunctions,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { testWebhookTriggerNode } from '@test/nodes/TriggerHelpers';
 

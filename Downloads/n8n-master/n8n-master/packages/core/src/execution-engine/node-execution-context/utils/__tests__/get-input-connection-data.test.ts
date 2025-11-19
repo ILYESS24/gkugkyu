@@ -1,4 +1,4 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import { mock } from 'jest-mock-extended';
 import type {
 	INode,
@@ -14,8 +14,8 @@ import type {
 	IRunData,
 	ITaskData,
 	EngineRequest,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { ExecuteContext } from '../../execute-context';
 import { makeHandleToolInvocation } from '../get-input-connection-data';

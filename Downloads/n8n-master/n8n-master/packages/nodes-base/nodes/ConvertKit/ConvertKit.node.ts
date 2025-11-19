@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type ILoadOptionsFunctions,
 	type IDataObject,
@@ -7,7 +7,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { customFieldFields, customFieldOperations } from './CustomFieldDescription';
 import { formFields, formOperations } from './FormDescription';

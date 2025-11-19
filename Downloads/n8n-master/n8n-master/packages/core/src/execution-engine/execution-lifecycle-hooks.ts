@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteResponsePromiseData,
 	INode,
@@ -10,7 +10,7 @@ import type {
 	StructuredChunk,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export type ExecutionLifecycleHookHandlers = {
 	nodeExecuteBefore: Array<

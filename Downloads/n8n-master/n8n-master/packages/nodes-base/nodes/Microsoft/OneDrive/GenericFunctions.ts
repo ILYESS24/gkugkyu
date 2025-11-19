@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
@@ -7,8 +7,8 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function microsoftApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions,

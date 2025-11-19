@@ -1,7 +1,7 @@
-import { WorkerStatus } from '@n8n/api-types';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Service } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
+﻿import { WorkerStatus } from '@workflow-automation/api-types';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
 import os from 'node:os';
 
 import { N8N_VERSION } from '@/constants';

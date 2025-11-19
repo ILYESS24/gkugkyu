@@ -1,4 +1,4 @@
-import type { IHookFunctions } from 'n8n-workflow';
+﻿import type { IHookFunctions } from 'workflow-automation-workflow';
 
 import { pipedriveApiRequest } from '../GenericFunctions';
 import { PipedriveTrigger } from '../PipedriveTrigger.node';

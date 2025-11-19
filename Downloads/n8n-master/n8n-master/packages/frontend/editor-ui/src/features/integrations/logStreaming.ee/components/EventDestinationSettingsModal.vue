@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, useTemplateRef } from 'vue';
 import get from 'lodash/get';
 import set from 'lodash/set';
@@ -12,7 +12,7 @@ import type {
 	MessageEventBusDestinationSentryOptions,
 	MessageEventBusDestinationSyslogOptions,
 	MessageEventBusDestinationWebhookOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	deepCopy,
 	messageEventBusDestinationTypeNames,
@@ -21,7 +21,7 @@ import {
 	MessageEventBusDestinationTypeNames,
 	defaultMessageEventBusDestinationSyslogOptions,
 	defaultMessageEventBusDestinationSentryOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { EventBus } from '@n8n/utils/event-bus';
 import { createEventBus } from '@n8n/utils/event-bus';
 

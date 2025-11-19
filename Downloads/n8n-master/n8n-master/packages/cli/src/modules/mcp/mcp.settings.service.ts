@@ -1,5 +1,5 @@
-import { SettingsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { SettingsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { CacheService } from '@/services/cache/cache.service';
 

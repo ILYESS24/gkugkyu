@@ -1,4 +1,4 @@
-import type { SharedWorkflow, IWorkflowDb } from '@n8n/db';
+﻿import type { SharedWorkflow, IWorkflowDb } from '@workflow-automation/db';
 import {
 	Project,
 	User,
@@ -6,12 +6,12 @@ import {
 	SharedWorkflowRepository,
 	WorkflowRepository,
 	WorkflowHistoryRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { WorkflowSharingRole } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { WorkflowSharingRole } from '@workflow-automation/permissions';
 import type { DeepPartial } from '@n8n/typeorm';
-import type { IWorkflowBase } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 export function newWorkflow(attributes: Partial<IWorkflowDb> = {}): IWorkflowDb {

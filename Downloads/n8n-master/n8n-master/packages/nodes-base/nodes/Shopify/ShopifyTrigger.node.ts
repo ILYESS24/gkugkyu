@@ -1,4 +1,4 @@
-import { createHmac } from 'crypto';
+﻿import { createHmac } from 'crypto';
 import {
 	type IHookFunctions,
 	type IWebhookFunctions,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { shopifyApiRequest } from './GenericFunctions';
 

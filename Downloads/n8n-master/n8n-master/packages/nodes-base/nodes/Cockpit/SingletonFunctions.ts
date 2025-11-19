@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, ILoadOptionsFunctions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, ILoadOptionsFunctions } from 'workflow-automation-workflow';
 
 import { cockpitApiRequest } from './GenericFunctions';
 

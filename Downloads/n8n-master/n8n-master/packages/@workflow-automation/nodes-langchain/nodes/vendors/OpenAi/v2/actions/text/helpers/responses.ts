@@ -1,7 +1,7 @@
-import type { OpenAIClient } from '@langchain/openai';
+﻿import type { OpenAIClient } from '@langchain/openai';
 import get from 'lodash/get';
 import isObject from 'lodash/isObject';
-import { isObjectEmpty, jsonParse, type IDataObject, type IExecuteFunctions } from 'n8n-workflow';
+import { isObjectEmpty, jsonParse, type IDataObject, type IExecuteFunctions } from 'workflow-automation-workflow';
 import type { ResponseInputImage } from 'openai/resources/responses/responses';
 
 import { getBinaryDataFile } from '../../../../helpers/binary-data';

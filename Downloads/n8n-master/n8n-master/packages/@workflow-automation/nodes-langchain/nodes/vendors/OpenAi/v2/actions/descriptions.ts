@@ -1,4 +1,4 @@
-import type { INodeProperties, INodePropertyCollection } from 'n8n-workflow';
+﻿import type { INodeProperties, INodePropertyCollection } from 'workflow-automation-workflow';
 
 export const modelRLC = (searchListMethod: string = 'modelSearch'): INodeProperties => ({
 	displayName: 'Model',

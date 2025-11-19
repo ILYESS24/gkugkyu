@@ -1,5 +1,5 @@
-import { NodeOperationError } from 'n8n-workflow';
-import type { INode, EngineResponse } from 'n8n-workflow';
+﻿import { NodeOperationError } from 'workflow-automation-workflow';
+import type { INode, EngineResponse } from 'workflow-automation-workflow';
 
 import type { RequestResponseMetadata } from '../types';
 

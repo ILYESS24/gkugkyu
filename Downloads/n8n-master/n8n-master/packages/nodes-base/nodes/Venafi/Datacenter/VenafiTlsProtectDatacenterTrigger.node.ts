@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import {
 	type IPollFunctions,
 	type IDataObject,
@@ -6,7 +6,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { venafiApiRequest } from './GenericFunctions';
 
@@ -20,7 +20,7 @@ export class VenafiTlsProtectDatacenterTrigger implements INodeType {
 		subtitle: '={{$parameter["triggerOn"]}}',
 		description: 'Starts the workflow when Venafi events occur',
 		defaults: {
-			name: 'Venafi TLS Protect Datacenter​',
+			name: 'Venafi TLS Protect Datacenterâ€‹',
 		},
 		credentials: [
 			{

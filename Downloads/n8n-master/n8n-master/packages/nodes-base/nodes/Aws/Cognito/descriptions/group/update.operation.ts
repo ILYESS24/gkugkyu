@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeApiError, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { validateArn } from '../../helpers/utils';
 import { groupResourceLocator, userPoolResourceLocator } from '../common.description';

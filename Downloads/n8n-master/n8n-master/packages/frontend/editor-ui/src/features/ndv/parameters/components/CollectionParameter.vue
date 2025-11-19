@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { ref, computed } from 'vue';
 import ParameterInputList from './ParameterInputList.vue';
 import type { IUpdateInformation } from '@/Interface';
@@ -8,8 +8,8 @@ import type {
 	INodeProperties,
 	INodePropertyCollection,
 	INodePropertyOptions,
-} from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 
 import get from 'lodash/get';
 

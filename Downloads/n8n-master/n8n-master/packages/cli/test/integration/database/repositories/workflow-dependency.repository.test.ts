@@ -1,7 +1,7 @@
-import { testDb, createWorkflow } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { WorkflowDependencyRepository, WorkflowDependencies } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb, createWorkflow } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import { WorkflowDependencyRepository, WorkflowDependencies } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 const globalConfig = Container.get(GlobalConfig);
 

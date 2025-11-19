@@ -1,16 +1,16 @@
-import {
+﻿import {
 	BreakingChangeAffectedWorkflow,
 	BreakingChangeInstanceRuleResult,
 	BreakingChangeReportResult,
 	BreakingChangeVersion,
 	BreakingChangeWorkflowRuleResult,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { Time } from '@n8n/constants';
-import { WorkflowRepository } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import { INode } from 'n8n-workflow';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { Time } from '@workflow-automation/constants';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import { INode } from 'workflow-automation-workflow';
 
 import { RuleRegistry } from './breaking-changes.rule-registry.service';
 import { allRules, RuleInstances } from './rules';

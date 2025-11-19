@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import { returnJsonArray } from 'n8n-core';
-import type { IPollFunctions } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import { returnJsonArray } from 'workflow-automation-core';
+import type { IPollFunctions } from 'workflow-automation-workflow';
 import Parser from 'rss-parser';
 
 import { RssFeedReadTrigger } from '../RssFeedReadTrigger.node';

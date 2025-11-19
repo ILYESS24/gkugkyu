@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { HumanMessage } from '@langchain/core/messages';
 import type { BaseMessagePromptTemplateLike } from '@langchain/core/prompts';
@@ -8,8 +8,8 @@ import { mock } from 'jest-mock-extended';
 import type { AgentAction, AgentFinish } from 'langchain/agents';
 import type { ToolsAgentAction } from 'langchain/dist/agents/tool_calling/output_parser';
 import type { Tool } from 'langchain/tools';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError, BINARY_ENCODING, NodeConnectionTypes } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'workflow-automation-workflow';
+import { NodeOperationError, BINARY_ENCODING, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type { ZodType } from 'zod';
 import { z } from 'zod';
 

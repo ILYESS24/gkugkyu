@@ -1,4 +1,4 @@
-import { RecursiveCharacterTextSplitter, type TextSplitter } from '@langchain/textsplitters';
+﻿import { RecursiveCharacterTextSplitter, type TextSplitter } from '@langchain/textsplitters';
 import {
 	NodeConnectionTypes,
 	type INodeType,
@@ -7,7 +7,7 @@ import {
 	type SupplyData,
 	type IDataObject,
 	type INodeInputConfiguration,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { N8nBinaryLoader } from '@utils/N8nBinaryLoader';
@@ -218,7 +218,7 @@ export class DocumentDefaultDataLoader implements INodeType {
 				default: 'data',
 				required: true,
 				description:
-					'The name of the field in the agent or chain’s input that contains the binary file to be processed',
+					'The name of the field in the agent or chainâ€™s input that contains the binary file to be processed',
 				displayOptions: {
 					show: {
 						dataType: ['binary'],

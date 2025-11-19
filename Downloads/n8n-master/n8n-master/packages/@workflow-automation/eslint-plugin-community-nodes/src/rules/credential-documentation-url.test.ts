@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { CredentialDocumentationUrlRule } from './credential-documentation-url.js';
 
@@ -6,7 +6,7 @@ const ruleTester = new RuleTester();
 
 function createCredentialCode(documentationUrl: string): string {
 	return `
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class TestCredential implements ICredentialType {
 	name = 'testApi';
@@ -19,7 +19,7 @@ export class TestCredential implements ICredentialType {
 
 function createCredentialWithoutDocUrl(): string {
 	return `
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class TestCredential implements ICredentialType {
 	name = 'testApi';

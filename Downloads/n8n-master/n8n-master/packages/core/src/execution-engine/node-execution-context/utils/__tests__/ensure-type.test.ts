@@ -1,4 +1,4 @@
-import { ExpressionError } from 'n8n-workflow';
+﻿import { ExpressionError } from 'workflow-automation-workflow';
 
 import { ensureType } from '../ensure-type';
 

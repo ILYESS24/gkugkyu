@@ -1,15 +1,15 @@
-import {
+﻿import {
 	randomEmail,
 	randomName,
 	randomValidPassword,
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { User } from '@n8n/db';
-import { GLOBAL_OWNER_ROLE, ProjectRepository, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { IPersonalizationSurveyAnswersV4 } from 'n8n-workflow';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { User } from '@workflow-automation/db';
+import { GLOBAL_OWNER_ROLE, ProjectRepository, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { IPersonalizationSurveyAnswersV4 } from 'workflow-automation-workflow';
 import validator from 'validator';
 
 import { SUCCESS_RESPONSE_BODY } from './shared/constants';

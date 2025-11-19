@@ -1,7 +1,7 @@
-import type { GlobalConfig } from '@n8n/config';
+﻿import type { GlobalConfig } from '@workflow-automation/config';
 import { mock } from 'jest-mock-extended';
 import jwt from 'jsonwebtoken';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'workflow-automation-core';
 
 import { JwtService } from '@/services/jwt.service';
 

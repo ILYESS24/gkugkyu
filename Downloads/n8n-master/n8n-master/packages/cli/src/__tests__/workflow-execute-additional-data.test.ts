@@ -1,10 +1,10 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { WorkflowEntity } from '@n8n/db';
-import { ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { WorkflowEntity } from '@workflow-automation/db';
+import { ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import { ExternalSecretsProxy } from 'n8n-core';
+import { ExternalSecretsProxy } from 'workflow-automation-core';
 import type {
 	IWorkflowBase,
 	IExecuteWorkflowInfo,
@@ -12,7 +12,7 @@ import type {
 	ExecuteWorkflowOptions,
 	IRun,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type PCancelable from 'p-cancelable';
 
 import { ActiveExecutions } from '@/active-executions';

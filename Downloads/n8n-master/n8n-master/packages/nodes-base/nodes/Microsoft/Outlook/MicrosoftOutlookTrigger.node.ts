@@ -1,11 +1,11 @@
-import { DateTime } from 'luxon';
+﻿import { DateTime } from 'luxon';
 import {
 	type IPollFunctions,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getPollResponse } from './trigger/GenericFunctions';
 import { properties as messageProperties } from './trigger/MessageDescription';

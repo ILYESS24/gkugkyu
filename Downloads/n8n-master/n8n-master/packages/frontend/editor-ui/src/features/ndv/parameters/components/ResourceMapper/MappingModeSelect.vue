@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { INodePropertyTypeOptions, ResourceMapperFields } from 'n8n-workflow';
+﻿<script setup lang="ts">
+import type { INodePropertyTypeOptions, ResourceMapperFields } from 'workflow-automation-workflow';
 import { computed, ref, watch } from 'vue';
 import { i18n as locale } from '@n8n/i18n';
 import { useNodeSpecificationValues } from '../../composables/useNodeSpecificationValues';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import {
 	getActionInheritedProperties,
@@ -280,7 +280,7 @@ export const messageFields: INodeProperties[] = [
 												},
 												default: '',
 												description:
-													'Any extra data to pass along. These are essentially ‘hidden’ properties.',
+													'Any extra data to pass along. These are essentially â€˜hiddenâ€™ properties.',
 											},
 											{
 												displayName: 'Verb',

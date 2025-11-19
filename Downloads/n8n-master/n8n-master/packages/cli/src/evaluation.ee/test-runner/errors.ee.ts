@@ -1,5 +1,5 @@
-import type { TestCaseExecutionErrorCode, TestRunErrorCode } from '@n8n/db';
-import { UnexpectedError } from 'n8n-workflow';
+﻿import type { TestCaseExecutionErrorCode, TestRunErrorCode } from '@workflow-automation/db';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 export class TestCaseExecutionError extends UnexpectedError {
 	readonly code: TestCaseExecutionErrorCode;

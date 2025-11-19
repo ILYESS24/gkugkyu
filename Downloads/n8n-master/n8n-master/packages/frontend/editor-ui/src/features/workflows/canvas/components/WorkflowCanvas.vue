@@ -1,7 +1,7 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import Canvas from './Canvas.vue';
 import { computed, ref, toRef, useCssModule, useTemplateRef } from 'vue';
-import type { Workflow } from 'n8n-workflow';
+import type { Workflow } from 'workflow-automation-workflow';
 import type { IWorkflowDb } from '@/Interface';
 import { useCanvasMapping } from '../composables/useCanvasMapping';
 import type { EventBus } from '@n8n/utils/event-bus';

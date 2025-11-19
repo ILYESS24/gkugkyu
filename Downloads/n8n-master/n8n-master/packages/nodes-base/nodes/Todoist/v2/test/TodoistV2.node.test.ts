@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { WorkflowTestData } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import type { WorkflowTestData } from 'workflow-automation-workflow';
 import nock from 'nock';
 
 // Mock data with randomized IDs and generic names

@@ -1,5 +1,5 @@
-import { NodeOperationError, UserError, WAIT_INDEFINITELY } from 'n8n-workflow';
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import { NodeOperationError, UserError, WAIT_INDEFINITELY } from 'workflow-automation-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 export function configureWaitTillDate(context: IExecuteFunctions) {
 	let waitTill = WAIT_INDEFINITELY;

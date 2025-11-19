@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/unbound-method */
+﻿/* eslint-disable @typescript-eslint/unbound-method */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { Logger } from '@n8n/backend-common';
+import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { WorkflowDependencyRepository, WorkflowEntity, WorkflowRepository } from '@n8n/db';
-import { ErrorReporter } from 'n8n-core';
-import type { INode, IWorkflowBase } from 'n8n-workflow';
+import { WorkflowDependencyRepository, WorkflowEntity, WorkflowRepository } from '@workflow-automation/db';
+import { ErrorReporter } from 'workflow-automation-core';
+import type { INode, IWorkflowBase } from 'workflow-automation-workflow';
 
 import { WorkflowIndexService } from '../workflow-index.service';
 import { EventService } from '@/events/event.service';

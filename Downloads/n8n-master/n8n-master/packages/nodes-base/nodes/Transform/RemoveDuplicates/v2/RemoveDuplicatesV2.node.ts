@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, NodeOperationError, tryToParseDateTime } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, NodeOperationError, tryToParseDateTime } from 'workflow-automation-workflow';
 import type {
 	INodeTypeBaseDescription,
 	IExecuteFunctions,
@@ -6,7 +6,7 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	DeduplicationScope,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { removeDuplicatesNodeFields } from './RemoveDuplicatesV2.description';
 import { removeDuplicateInputItems } from '../utils';
@@ -27,7 +27,7 @@ const versionDescription: INodeTypeDescription = {
 	outputNames: ['Kept', 'Discarded'],
 	hints: [
 		{
-			message: 'The dedupe key set in “Value to Dedupe On” has no value',
+			message: 'The dedupe key set in â€œValue to Dedupe Onâ€ has no value',
 			displayCondition:
 				'={{ $parameter["operation"] === "removeItemsSeenInPreviousExecutions" && ($parameter["logic"] === "removeItemsWithAlreadySeenKeyValues" && $parameter["dedupeValue"] === undefined) || ($parameter["logic"] === "removeItemsUpToStoredIncrementalKey" && $parameter["incrementalDedupeValue"] === undefined) || ($parameter["logic"] === "removeItemsUpToStoredDate" && $parameter["dateDedupeValue"] === undefined) }}',
 			whenToDisplay: 'beforeExecution',
@@ -122,7 +122,7 @@ export class RemoveDuplicatesV2 implements INodeType {
 
 						if (maxEntriesNum > 0 && processedDataCount / maxEntriesNum > 0.5) {
 							this.addExecutionHints({
-								message: `Some duplicates may be not be removed since you're approaching the maximum history size (${maxEntriesNum} items). You can raise this limit using the ‘history size’ option.`,
+								message: `Some duplicates may be not be removed since you're approaching the maximum history size (${maxEntriesNum} items). You can raise this limit using the â€˜history sizeâ€™ option.`,
 								location: 'outputPane',
 							});
 						}

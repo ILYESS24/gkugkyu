@@ -1,4 +1,4 @@
-import { within } from '@testing-library/vue';
+﻿import { within } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { createPinia, setActivePinia } from 'pinia';
 import { faker } from '@faker-js/faker';
@@ -7,7 +7,7 @@ import { createComponentRenderer } from '@/__tests__/render';
 import WorkflowHistoryList from './WorkflowHistoryList.vue';
 import type { WorkflowHistoryActionTypes } from '@n8n/rest-api-client/api/workflowHistory';
 import { workflowHistoryDataFactory } from '../__tests__/utils';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 
 vi.stubGlobal(
 	'IntersectionObserver',

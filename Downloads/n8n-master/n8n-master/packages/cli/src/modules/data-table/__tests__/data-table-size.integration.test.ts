@@ -1,13 +1,13 @@
-import {
+﻿import {
 	createTeamProject,
 	linkUserToProject,
 	mockInstance,
 	testDb,
 	testModules,
 } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, type Project, type User } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import { GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, type Project, type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { Telemetry } from '@/telemetry';
 import { createUser } from '@test-integration/db/users';

@@ -1,14 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import type { PushMessage, PushType } from '@n8n/api-types';
-import { Logger, ModuleRegistry } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { ExternalSecretsProxy, WorkflowExecute } from 'n8n-core';
-import { UnexpectedError, Workflow, createRunExecutionData } from 'n8n-workflow';
+import type { PushMessage, PushType } from '@workflow-automation/api-types';
+import { Logger, ModuleRegistry } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { ExternalSecretsProxy, WorkflowExecute } from 'workflow-automation-core';
+import { UnexpectedError, Workflow, createRunExecutionData } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IExecuteData,
@@ -30,7 +30,7 @@ import type {
 	ExecuteWorkflowData,
 	RelatedExecution,
 	IRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ActiveExecutions } from '@/active-executions';
 import { CredentialsHelper } from '@/credentials-helper';

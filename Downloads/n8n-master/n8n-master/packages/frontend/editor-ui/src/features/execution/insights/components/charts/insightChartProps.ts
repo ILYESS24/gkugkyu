@@ -1,4 +1,4 @@
-import type { InsightsByTime, InsightsSummaryType, InsightsDateRange } from '@n8n/api-types';
+﻿import type { InsightsByTime, InsightsSummaryType, InsightsDateRange } from '@workflow-automation/api-types';
 
 export type ChartProps = {
 	data: InsightsByTime[];

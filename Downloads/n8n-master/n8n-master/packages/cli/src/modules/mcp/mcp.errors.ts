@@ -1,5 +1,5 @@
-import { Time } from '@n8n/constants';
-import { UserError } from 'n8n-workflow';
+﻿import { Time } from '@workflow-automation/constants';
+import { UserError } from 'workflow-automation-workflow';
 
 /**
  * Error thrown when MCP workflow execution times out

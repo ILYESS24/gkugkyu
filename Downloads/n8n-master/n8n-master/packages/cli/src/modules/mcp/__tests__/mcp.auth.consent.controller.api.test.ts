@@ -1,6 +1,6 @@
-import { testDb } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import type { User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { JwtService } from '@/services/jwt.service';
 import { createOwner, createMember } from '@test-integration/db/users';

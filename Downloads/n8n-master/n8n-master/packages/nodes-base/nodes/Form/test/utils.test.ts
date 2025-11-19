@@ -1,4 +1,4 @@
-import type { Request } from 'express';
+﻿import type { Request } from 'express';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
 import type {
@@ -9,7 +9,7 @@ import type {
 	IWebhookFunctions,
 	MultiPartFormData,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	formWebhook,

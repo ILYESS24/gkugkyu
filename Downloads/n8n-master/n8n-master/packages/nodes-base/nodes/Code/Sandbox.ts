@@ -1,10 +1,10 @@
-import { EventEmitter } from 'events';
+﻿import { EventEmitter } from 'events';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	ISupplyDataFunctions,
 	IWorkflowDataProxyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { validateRunCodeAllItems, validateRunCodeEachItem } from './result-validation';
 

@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { DateTime } from 'luxon';
-import type { EventMessageTypeNames, JsonObject } from 'n8n-workflow';
+import type { EventMessageTypeNames, JsonObject } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import type { EventNamesTypes } from '.';

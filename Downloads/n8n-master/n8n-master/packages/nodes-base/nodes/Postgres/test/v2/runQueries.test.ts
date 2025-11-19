@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { IDataObject, IExecuteFunctions, INode } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { IDataObject, IExecuteFunctions, INode } from 'workflow-automation-workflow';
 import pgPromise from 'pg-promise';
 
 import type { PgpDatabase } from '../../v2/helpers/interfaces';

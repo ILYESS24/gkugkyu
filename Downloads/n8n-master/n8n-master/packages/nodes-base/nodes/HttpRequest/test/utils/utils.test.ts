@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	INodeExecutionData,
 	INodeProperties,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	REDACTED,

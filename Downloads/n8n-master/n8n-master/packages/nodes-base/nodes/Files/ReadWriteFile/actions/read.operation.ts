@@ -1,11 +1,11 @@
-import glob from 'fast-glob';
-import { NodeApiError } from 'n8n-workflow';
+﻿import glob from 'fast-glob';
+import { NodeApiError } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

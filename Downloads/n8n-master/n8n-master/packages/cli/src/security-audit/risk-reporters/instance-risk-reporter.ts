@@ -1,10 +1,10 @@
-import { inDevelopment, Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { separate } from '@n8n/db';
-import { Container, Service } from '@n8n/di';
+﻿import { inDevelopment, Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { separate } from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
 import axios from 'axios';
-import { InstanceSettings } from 'n8n-core';
-import type { IWorkflowBase } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 
 import { N8N_VERSION } from '@/constants';
 import { CommunityPackagesConfig } from '@/modules/community-packages/community-packages.config';

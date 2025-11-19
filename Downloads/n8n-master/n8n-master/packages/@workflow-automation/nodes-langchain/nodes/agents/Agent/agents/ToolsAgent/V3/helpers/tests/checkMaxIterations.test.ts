@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import { NodeOperationError } from 'n8n-workflow';
-import type { INode, EngineResponse } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { INode, EngineResponse } from 'workflow-automation-workflow';
 
 import type { RequestResponseMetadata } from '../../types';
 import { checkMaxIterations } from '../checkMaxIterations';

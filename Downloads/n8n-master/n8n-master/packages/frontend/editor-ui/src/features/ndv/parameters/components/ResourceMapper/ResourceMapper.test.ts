@@ -1,4 +1,4 @@
-import {
+﻿import {
 	DEFAULT_SETUP,
 	MAPPING_COLUMNS_RESPONSE,
 	UPDATED_SCHEMA,
@@ -10,7 +10,7 @@ import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import type { MockInstance } from 'vitest';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
-import type { ResourceMapperTypeOptions } from 'n8n-workflow';
+import type { ResourceMapperTypeOptions } from 'workflow-automation-workflow';
 import { createTestNode, createTestNodeProperties } from '@/__tests__/mocks';
 import { createTestingPinia } from '@pinia/testing';
 import {

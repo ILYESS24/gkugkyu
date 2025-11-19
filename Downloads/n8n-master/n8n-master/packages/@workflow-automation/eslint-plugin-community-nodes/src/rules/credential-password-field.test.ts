@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { CredentialPasswordFieldRule } from './credential-password-field.js';
 
@@ -6,7 +6,7 @@ const ruleTester = new RuleTester();
 
 function createCredentialCode(properties: string[]): string {
 	return `
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class TestCredential implements ICredentialType {
 	name = 'testApi';
@@ -42,7 +42,7 @@ function createOAuth2CredentialCode(hasPasswordProtection: boolean = true): stri
 	const passwordOptions = hasPasswordProtection ? '\n\t\t\ttypeOptions: { password: true },' : '';
 
 	return `
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 export class GithubOAuth2Api implements ICredentialType {
 	name = 'githubOAuth2Api';

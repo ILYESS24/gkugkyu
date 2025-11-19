@@ -1,4 +1,4 @@
-const discoveryMock = jest.fn();
+﻿const discoveryMock = jest.fn();
 const authorizationCodeGrantMock = jest.fn();
 const fetchUserInfoMock = jest.fn();
 
@@ -9,10 +9,10 @@ jest.mock('openid-client', () => ({
 	fetchUserInfo: fetchUserInfoMock,
 }));
 
-import type { OidcConfigDto } from '@n8n/api-types';
+import type { OidcConfigDto } from '@workflow-automation/api-types';
 import { testDb } from '@n8n/backend-test-utils';
-import { type User, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { type User, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type * as mocked_oidc_client from 'openid-client';
 const real_odic_client = jest.requireActual('openid-client');
 
@@ -21,9 +21,9 @@ import { ForbiddenError } from '@/errors/response-errors/forbidden.error';
 import { OIDC_CLIENT_SECRET_REDACTED_VALUE } from '@/sso.ee/oidc/constants';
 import { OidcService } from '@/sso.ee/oidc/oidc.service.ee';
 import { createUser } from '@test-integration/db/users';
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'workflow-automation-workflow';
 import { JwtService } from '@/services/jwt.service';
-import { GlobalConfig } from '@n8n/config';
+import { GlobalConfig } from '@workflow-automation/config';
 import { ProvisioningService } from '@/modules/provisioning.ee/provisioning.service.ee';
 
 beforeAll(async () => {

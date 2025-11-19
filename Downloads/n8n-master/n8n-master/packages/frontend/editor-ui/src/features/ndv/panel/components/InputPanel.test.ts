@@ -1,4 +1,4 @@
-import { createTestNode, createTestWorkflow, createTestWorkflowObject } from '@/__tests__/mocks';
+﻿import { createTestNode, createTestWorkflow, createTestWorkflowObject } from '@/__tests__/mocks';
 import { createComponentRenderer } from '@/__tests__/render';
 import InputPanel, { type Props } from './InputPanel.vue';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -9,7 +9,7 @@ import {
 	type IConnections,
 	type INodeExecutionData,
 	type IRunData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import { mockedStore } from '@/__tests__/utils';
 import { useWorkflowState } from '@/app/composables/useWorkflowState';

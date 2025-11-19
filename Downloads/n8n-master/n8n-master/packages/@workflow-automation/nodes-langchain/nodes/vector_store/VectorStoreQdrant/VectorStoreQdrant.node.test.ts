@@ -1,5 +1,5 @@
-import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 // Mock external modules that are not needed for these unit tests
 jest.mock('@langchain/qdrant', () => {

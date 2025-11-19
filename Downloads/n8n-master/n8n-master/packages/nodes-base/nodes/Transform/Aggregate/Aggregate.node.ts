@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import set from 'lodash/set';
 import {
@@ -11,7 +11,7 @@ import {
 	type IPairedItemData,
 	NodeConnectionTypes,
 	type NodeExecutionHint,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { addBinariesToItem } from './utils';
 import { prepareFieldsArray } from '../utils/utils';

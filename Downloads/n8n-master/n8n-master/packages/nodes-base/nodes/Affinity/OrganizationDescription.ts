@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const organizationOperations: INodeProperties[] = [
 	{
@@ -254,7 +254,7 @@ export const organizationFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'A string used to search all the organizations in your team’s address book. This could be an email address, a first name or a last name.',
+					'A string used to search all the organizations in your teamâ€™s address book. This could be an email address, a first name or a last name.',
 			},
 			{
 				displayName: 'With Interaction Dates',

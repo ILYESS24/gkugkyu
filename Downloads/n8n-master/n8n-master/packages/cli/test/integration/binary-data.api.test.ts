@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { BinaryDataService, FileNotFoundError } from 'n8n-core';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { BinaryDataService, FileNotFoundError } from 'workflow-automation-core';
 import fsp from 'node:fs/promises';
 import { Readable } from 'node:stream';
 
@@ -89,7 +89,7 @@ describe('GET /binary-data', () => {
 
 	describe('should handle non-ASCII filename [filesystem]', () => {
 		test('on request to download', async () => {
-			const nonAsciiFileName = 'äöüß.png';
+			const nonAsciiFileName = 'Ã¤Ã¶Ã¼ÃŸ.png';
 
 			const res = await authOwnerAgent
 				.get('/binary-data')

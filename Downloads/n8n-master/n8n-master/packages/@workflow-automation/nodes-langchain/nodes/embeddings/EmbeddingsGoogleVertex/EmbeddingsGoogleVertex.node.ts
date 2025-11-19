@@ -1,14 +1,14 @@
-import { ProjectsClient } from '@google-cloud/resource-manager';
+﻿import { ProjectsClient } from '@google-cloud/resource-manager';
 import { VertexAIEmbeddings } from '@langchain/google-vertexai';
 import { formatPrivateKey } from 'n8n-nodes-base/dist/utils/utilities';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	ILoadOptionsFunctions,
 	INodeType,
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

@@ -1,12 +1,12 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INode,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, OperationalError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError, OperationalError } from 'workflow-automation-workflow';
 
 const azureCosmosDbApiRequest = jest.fn();
 jest.mock('../../transport', () => ({ azureCosmosDbApiRequest }));

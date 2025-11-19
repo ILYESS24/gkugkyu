@@ -1,15 +1,15 @@
-import type {
+﻿import type {
 	IConnection,
 	IConnections,
 	INodeTypeDescription,
 	NodeConnectionType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { INodeUi } from '@/Interface';
 import type { BoundingBox, CanvasConnection, CanvasConnectionPort } from './canvas.types';
 import { CanvasConnectionMode } from './canvas.types';
 import type { Connection } from '@vue-flow/core';
 import { isValidCanvasConnectionMode, isValidNodeConnectionType } from '@/app/utils/typeGuards';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { NODE_MIN_INPUT_ITEMS_COUNT } from '@/app/constants';
 
 /**

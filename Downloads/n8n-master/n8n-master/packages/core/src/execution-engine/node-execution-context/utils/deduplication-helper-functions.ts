@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	INode,
 	Workflow,
@@ -9,7 +9,7 @@ import type {
 	DeduplicationScope,
 	DeduplicationItemTypes,
 	ICheckProcessedContextData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DataDeduplicationService } from '@/data-deduplication-service';
 

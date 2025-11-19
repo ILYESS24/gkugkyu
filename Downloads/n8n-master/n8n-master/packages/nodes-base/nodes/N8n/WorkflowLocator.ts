@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, INodeListSearchResult, INodeProperties } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions, INodeListSearchResult, INodeProperties } from 'workflow-automation-workflow';
 
 import { apiRequestAllItems } from './GenericFunctions';
 

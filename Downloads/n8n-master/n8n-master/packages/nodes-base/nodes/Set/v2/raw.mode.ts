@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	INodeExecutionData,
 	IExecuteFunctions,
 	INodeProperties,
 	IDataObject,
 	INode,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import type { SetNodeOptions } from './helpers/interfaces';
 import { parseJsonParameter, composeReturnItem, resolveRawData } from './helpers/utils';

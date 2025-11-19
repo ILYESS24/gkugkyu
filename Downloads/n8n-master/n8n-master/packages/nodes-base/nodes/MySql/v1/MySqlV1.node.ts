@@ -1,4 +1,4 @@
-import type mysql2 from 'mysql2/promise';
+﻿import type mysql2 from 'mysql2/promise';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialsDecrypted,
@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { oldVersionNotice } from '@utils/descriptions';
 import { getResolvables } from '@utils/utilities';

@@ -1,4 +1,4 @@
-import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
+﻿import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import {
@@ -12,7 +12,7 @@ import {
 	type INodeTypeDescription,
 	type IWorkflowDataProxyAdditionalKeys,
 	isExpression,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { getThemedValue } from './nodeTypesUtils';
 
 type NodeIconSourceIcon = { type: 'icon'; name: string; color?: string };

@@ -1,4 +1,4 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import isEmpty from 'lodash/isEmpty';
 import { extension } from 'mime-types';
 import type {
@@ -7,8 +7,8 @@ import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import { getSendAndWaitConfig } from '../../../../utils/sendAndWait/utils';
 import { capitalize, createUtmCampaignLink } from '../../../../utils/utilities';

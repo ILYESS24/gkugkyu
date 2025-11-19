@@ -1,14 +1,14 @@
-import {
+﻿import {
 	createWorkflowWithTrigger,
 	createWorkflow,
 	getAllWorkflows,
 	testDb,
 } from '@n8n/backend-test-utils';
-import { WorkflowRepository, WorkflowDependencyRepository, WorkflowDependencies } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { WorkflowRepository, WorkflowDependencyRepository, WorkflowDependencies } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { createTestRun } from '../../shared/db/evaluation';
-import { GlobalConfig } from '@n8n/config';
+import { GlobalConfig } from '@workflow-automation/config';
 
 describe('WorkflowRepository', () => {
 	beforeAll(async () => {

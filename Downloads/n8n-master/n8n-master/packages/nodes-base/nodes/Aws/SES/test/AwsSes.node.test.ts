@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import { NodeConnectionTypes, type WorkflowTestData } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import { NodeConnectionTypes, type WorkflowTestData } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 import qs from 'node:querystring';
 
@@ -20,7 +20,7 @@ describe('AwsSes Node', () => {
 						{
 							parameters: {},
 							id: '61c910d6-9997-4bc0-b95d-2b2771c3110f',
-							name: 'When clicking ‘Execute workflow’',
+							name: 'When clicking â€˜Execute workflowâ€™',
 							type: 'n8n-nodes-base.manualTrigger',
 							typeVersion: 1,
 							position: [720, 380],
@@ -49,7 +49,7 @@ describe('AwsSes Node', () => {
 						},
 					],
 					connections: {
-						'When clicking ‘Execute workflow’': {
+						'When clicking â€˜Execute workflowâ€™': {
 							main: [
 								[
 									{
@@ -104,7 +104,7 @@ describe('AwsSes Node', () => {
 							typeVersion: 1,
 							position: [-180, 520],
 							id: '363e874a-9054-4a64-bc3f-786719dde626',
-							name: 'When clicking ‘Execute workflow’',
+							name: 'When clicking â€˜Execute workflowâ€™',
 						},
 						{
 							parameters: {
@@ -136,7 +136,7 @@ describe('AwsSes Node', () => {
 						},
 					],
 					connections: {
-						'When clicking ‘Execute workflow’': {
+						'When clicking â€˜Execute workflowâ€™': {
 							main: [
 								[
 									{

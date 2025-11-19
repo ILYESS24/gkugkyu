@@ -1,4 +1,4 @@
-import type { IHookFunctions } from 'n8n-workflow';
+﻿import type { IHookFunctions } from 'workflow-automation-workflow';
 
 import { stripeApiRequest } from '../helpers';
 import { StripeTrigger } from '../StripeTrigger.node';

@@ -1,18 +1,18 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	jsonParse,
 	NodeApiError,
 	NodeConnectionTypes,
 	NodeOperationError,
 	sleep,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { DiscordAttachment, DiscordWebhook } from './Interfaces';
 import { oldVersionNotice } from '../../../utils/descriptions';

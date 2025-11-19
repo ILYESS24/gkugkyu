@@ -1,4 +1,4 @@
-import type { NativeDoc } from 'n8n-workflow';
+﻿import type { NativeDoc } from 'workflow-automation-workflow';
 import { i18n } from '@n8n/i18n';
 
 // Autocomplete documentation definition for DateTime class static props and methods

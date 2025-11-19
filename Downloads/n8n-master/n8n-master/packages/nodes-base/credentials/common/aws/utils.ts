@@ -1,4 +1,4 @@
-import {
+﻿import {
 	ApplicationError,
 	type IHttpRequestMethods,
 	isObjectEmpty,
@@ -6,7 +6,7 @@ import {
 	type IDataObject,
 	type IHttpRequestOptions,
 	type IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { parseString } from 'xml2js';
 import type { Request } from 'aws4';
 import {

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type { INodeUi } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import Draggable from '@/app/components/Draggable.vue';
@@ -27,7 +27,7 @@ import {
 	NodeConnectionTypes,
 	type IConnectedNode,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, ref, watch } from 'vue';
 import {
 	DynamicScroller,

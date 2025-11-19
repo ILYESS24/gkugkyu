@@ -1,4 +1,4 @@
-import type { User } from '@n8n/api-types';
+﻿import type { User } from '@workflow-automation/api-types';
 import { customAlphabet } from 'nanoid';
 
 import type { ApiHelpers } from './api-helper';

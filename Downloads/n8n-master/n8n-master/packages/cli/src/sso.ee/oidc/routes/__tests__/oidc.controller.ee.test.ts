@@ -1,7 +1,7 @@
-import type { Logger } from '@n8n/backend-common';
-import type { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import { GLOBAL_MEMBER_ROLE, type User } from '@n8n/db';
+﻿import type { Logger } from '@workflow-automation/backend-common';
+import type { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import { GLOBAL_MEMBER_ROLE, type User } from '@workflow-automation/db';
 import { type Request, type Response } from 'express';
 import { mock } from 'jest-mock-extended';
 

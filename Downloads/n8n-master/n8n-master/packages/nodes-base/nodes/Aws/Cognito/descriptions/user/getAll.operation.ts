@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
-import { jsonParse, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import type { Filters } from '../../helpers/interfaces';
 import { userPoolResourceLocator } from '../common.description';

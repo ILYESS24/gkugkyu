@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createWorkflow,
 	shareWorkflowWithUsers,
 	createTeamProject,
@@ -8,10 +8,10 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User, ListQueryDb } from '@n8n/db';
-import { GLOBAL_MEMBER_ROLE, ProjectRepository, SharedCredentialsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ProjectRole } from '@n8n/permissions';
+import type { Project, User, ListQueryDb } from '@workflow-automation/db';
+import { GLOBAL_MEMBER_ROLE, ProjectRepository, SharedCredentialsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { ProjectRole } from '@workflow-automation/permissions';
 import { In } from '@n8n/typeorm';
 
 import config from '@/config';

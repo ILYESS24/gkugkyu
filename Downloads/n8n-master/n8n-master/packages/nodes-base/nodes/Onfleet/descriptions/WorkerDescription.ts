@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const workerOperations: INodeProperties[] = [
 	{
@@ -80,7 +80,7 @@ const phoneField = {
 	name: 'phone',
 	type: 'string',
 	default: '',
-	description: 'A list of worker’s phone numbers',
+	description: 'A list of workerâ€™s phone numbers',
 } as INodeProperties;
 
 const capacityField = {

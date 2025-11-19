@@ -1,5 +1,5 @@
-import moment from 'moment-timezone';
-import { type CronExpression, type INode, NodeOperationError, randomInt } from 'n8n-workflow';
+﻿import moment from 'moment-timezone';
+import { type CronExpression, type INode, NodeOperationError, randomInt } from 'workflow-automation-workflow';
 
 import type { IRecurrenceRule, ScheduleInterval } from './SchedulerInterface';
 

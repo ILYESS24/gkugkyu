@@ -1,9 +1,9 @@
-import {
+﻿import {
 	type IWorkflowExecuteAdditionalData,
 	type WorkflowExecuteMode,
 	type IRunExecutionData,
 	type Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { assertExecutionDataExists } from '@/utils/assertions';
 

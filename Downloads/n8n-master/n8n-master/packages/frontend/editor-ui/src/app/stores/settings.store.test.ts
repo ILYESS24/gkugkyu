@@ -1,4 +1,4 @@
-import type { FrontendSettings } from '@n8n/api-types';
+﻿import type { FrontendSettings } from '@workflow-automation/api-types';
 import { createPinia, setActivePinia } from 'pinia';
 import { mock } from 'vitest-mock-extended';
 import { useSettingsStore } from './settings.store';

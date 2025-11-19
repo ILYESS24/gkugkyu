@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const caseOperations: INodeProperties[] = [
 	{
@@ -208,7 +208,7 @@ export const caseFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The reason why the case was created, such as Instructions not clear, or User didn’t attend training. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The reason why the case was created, such as Instructions not clear, or User didnâ€™t attend training. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Record Type Name or ID',
@@ -230,7 +230,7 @@ export const caseFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The status of the case, such as “New,” “Closed,” or “Escalated.” This field directly controls the IsClosed flag. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The status of the case, such as â€œNew,â€ â€œClosed,â€ or â€œEscalated.â€ This field directly controls the IsClosed flag. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Subject',
@@ -418,7 +418,7 @@ export const caseFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The reason why the case was created, such as Instructions not clear, or User didn’t attend training. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The reason why the case was created, such as Instructions not clear, or User didnâ€™t attend training. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Record Type Name or ID',
@@ -440,7 +440,7 @@ export const caseFields: INodeProperties[] = [
 				},
 				default: '',
 				description:
-					'The status of the case, such as “New,” “Closed,” or “Escalated.” This field directly controls the IsClosed flag. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'The status of the case, such as â€œNew,â€ â€œClosed,â€ or â€œEscalated.â€ This field directly controls the IsClosed flag. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Subject',

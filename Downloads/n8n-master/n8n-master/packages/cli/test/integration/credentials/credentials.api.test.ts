@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	linkUserToProject,
 	randomCredentialPayload as payload,
@@ -7,16 +7,16 @@ import {
 	randomName,
 	testDb,
 } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { Project, User, ListQueryDb } from '@n8n/db';
-import { CredentialsRepository, ProjectRepository, SharedCredentialsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { Project, User, ListQueryDb } from '@workflow-automation/db';
+import { CredentialsRepository, ProjectRepository, SharedCredentialsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { Scope } from '@sentry/node';
 import * as a from 'assert';
 import { mock } from 'jest-mock-extended';
-import { Credentials } from 'n8n-core';
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
-import { randomString } from 'n8n-workflow';
+import { Credentials } from 'workflow-automation-core';
+import type { ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
+import { randomString } from 'workflow-automation-workflow';
 
 import { CREDENTIAL_BLANKING_VALUE } from '@/constants';
 import { CredentialsService } from '@/credentials/credentials.service';

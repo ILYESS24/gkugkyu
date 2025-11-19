@@ -1,4 +1,4 @@
-import type { OidcConfigDto, SamlPreferences } from '@n8n/api-types';
+﻿import type { OidcConfigDto, SamlPreferences } from '@workflow-automation/api-types';
 import { createTestingPinia } from '@pinia/testing';
 import { within, waitFor } from '@testing-library/vue';
 import { type MockedStore, mockedStore } from '@/__tests__/utils';

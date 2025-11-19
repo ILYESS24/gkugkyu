@@ -1,13 +1,13 @@
-import { ExecutionRepository } from '@n8n/db';
-import type { IExecutionResponse, Project } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { ExecuteContext, isEngineRequest } from 'n8n-core';
+﻿import { ExecutionRepository } from '@workflow-automation/db';
+import type { IExecutionResponse, Project } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { ExecuteContext, isEngineRequest } from 'workflow-automation-core';
 import type {
 	IBinaryKeyData,
 	INodeExecutionData,
 	IWorkflowExecutionDataProcess,
-} from 'n8n-workflow';
-import { Workflow, BINARY_ENCODING, UnexpectedError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Workflow, BINARY_ENCODING, UnexpectedError } from 'workflow-automation-workflow';
 
 import { NotFoundError } from '../errors/response-errors/not-found.error';
 import * as WorkflowExecuteAdditionalData from '../workflow-execute-additional-data';

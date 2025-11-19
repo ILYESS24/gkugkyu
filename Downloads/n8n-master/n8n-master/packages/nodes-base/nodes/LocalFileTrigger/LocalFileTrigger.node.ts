@@ -1,4 +1,4 @@
-import { watch } from 'chokidar';
+﻿import { watch } from 'chokidar';
 import type { EventName } from 'chokidar/handler';
 import {
 	type ITriggerFunctions,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type ITriggerResponse,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class LocalFileTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -33,7 +33,7 @@ export class LocalFileTrigger implements INodeType {
 					"<b>While building your workflow</b>, click the 'execute step' button, then make a change to your watched file or folder. This will trigger an execution, which will show up in this editor.<br /> <br /><b>Your workflow will also execute automatically</b>, since it's activated. Every time a change is detected, this node will trigger an execution. These executions will show up in the <a data-key='executions'>executions list</a>, but not in the editor.",
 			},
 			activationHint:
-				"Once you’ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just won’t see those executions here).",
+				"Once youâ€™ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just wonâ€™t see those executions here).",
 		},
 		inputs: [],
 		outputs: [NodeConnectionTypes.Main],
@@ -149,7 +149,7 @@ export class LocalFileTrigger implements INodeType {
 						default: '',
 						placeholder: '**/*.txt or ignore-me/subfolder',
 						description:
-							"Files or paths to ignore. The whole path is tested, not just the filename. Supports <a href=\"https://github.com/micromatch/anymatch\">Anymatch</a>- syntax. Regex patterns may not work on macOS. To ignore files based on substring matching, use the 'Ignore Mode' option with 'Contain'.",
+							"Files or paths to ignore. The whole path is tested, not just the filename.Â Supports <a href=\"https://github.com/micromatch/anymatch\">Anymatch</a>- syntax. Regex patterns may not work on macOS. To ignore files based on substring matching, use the 'Ignore Mode' option with 'Contain'.",
 					},
 					{
 						displayName: 'Ignore Existing Files/Folders',

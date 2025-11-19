@@ -1,8 +1,8 @@
-import { describe, expect } from 'vitest';
+﻿import { describe, expect } from 'vitest';
 import userEvent from '@testing-library/user-event';
 import { faker } from '@faker-js/faker';
 import { createRouter, createWebHistory, RouterLink } from 'vue-router';
-import { randomInt, type ExecutionSummary, type AnnotationVote } from 'n8n-workflow';
+import { randomInt, type ExecutionSummary, type AnnotationVote } from 'workflow-automation-workflow';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import WorkflowExecutionsPreview from './WorkflowExecutionsPreview.vue';
 import { EnterpriseEditionFeature, VIEWS } from '@/app/constants';
@@ -12,7 +12,7 @@ import type { ExecutionSummaryWithScopes } from '../../executions.types';
 import { createComponentRenderer } from '@/__tests__/render';
 import { createTestingPinia } from '@pinia/testing';
 import { mockedStore } from '@/__tests__/utils';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import { STORES } from '@n8n/stores';
 import { nextTick } from 'vue';
 

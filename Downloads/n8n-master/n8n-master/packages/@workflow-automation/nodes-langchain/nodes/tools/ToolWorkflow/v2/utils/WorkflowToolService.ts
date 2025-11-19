@@ -1,4 +1,4 @@
-import type { CallbackManagerForToolRun } from '@langchain/core/callbacks/manager';
+﻿import type { CallbackManagerForToolRun } from '@langchain/core/callbacks/manager';
 import { DynamicStructuredTool, DynamicTool } from '@langchain/core/tools';
 import isArray from 'lodash/isArray';
 import isObject from 'lodash/isObject';
@@ -19,7 +19,7 @@ import type {
 	IWorkflowBase,
 	IWorkflowDataProxyData,
 	ResourceMapperValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	generateZodSchema,
 	jsonParse,
@@ -28,7 +28,7 @@ import {
 	parseErrorMetadata,
 	sleepWithAbort,
 	traverseNodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 function isNodeExecutionData(data: unknown): data is INodeExecutionData[] {

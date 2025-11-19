@@ -1,11 +1,11 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
 	INodeTypeBaseDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	promptTypeOptions,

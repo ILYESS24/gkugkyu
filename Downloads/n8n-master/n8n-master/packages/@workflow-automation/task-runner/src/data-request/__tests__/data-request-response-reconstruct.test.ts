@@ -1,10 +1,10 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteData,
 	INode,
 	INodeExecutionData,
 	ITaskDataConnectionsSource,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { DataRequestResponse, InputDataChunkDefinition } from '@/runner-types';
 

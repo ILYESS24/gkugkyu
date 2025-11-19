@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class MindeeReceiptApi implements ICredentialType {
 	name = 'mindeeReceiptApi';

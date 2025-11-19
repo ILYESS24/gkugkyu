@@ -1,7 +1,7 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed } from 'vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
-import { type INodeTypeDescription } from 'n8n-workflow';
+import { type INodeTypeDescription } from 'workflow-automation-workflow';
 import { useI18n } from '@n8n/i18n';
 import { SCHEMA_PREVIEW_DOCS_URL } from '@/app/constants';
 

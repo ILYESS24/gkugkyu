@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import map from 'lodash/map';
 import moment from 'moment-timezone';
 import type {
@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeApiError } from 'workflow-automation-workflow';
 
 import {
 	getGoogleAnalyticsDomainsArray,

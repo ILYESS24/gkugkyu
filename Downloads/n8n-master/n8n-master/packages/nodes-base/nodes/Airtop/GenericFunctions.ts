@@ -1,11 +1,11 @@
-import {
+﻿import {
 	NodeApiError,
 	type IExecuteFunctions,
 	type INode,
 	type IDataObject,
 	jsonParse,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 import type Stream from 'node:stream';
 
 import { SESSION_MODE } from './actions/common/fields';

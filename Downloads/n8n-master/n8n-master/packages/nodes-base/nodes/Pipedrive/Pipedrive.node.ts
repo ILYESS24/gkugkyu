@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
@@ -7,8 +7,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import type { ICustomProperties } from './GenericFunctions';
 import {
@@ -2182,7 +2182,7 @@ export class Pipedrive implements INodeType {
 						name: 'expected_close_date',
 						type: 'dateTime',
 						default: '',
-						description: 'Date when the lead’s deal is expected to be closed, in ISO-8601 format',
+						description: 'Date when the leadâ€™s deal is expected to be closed, in ISO-8601 format',
 					},
 					{
 						displayName: 'Label Names or IDs',
@@ -2400,7 +2400,7 @@ export class Pipedrive implements INodeType {
 						name: 'expected_close_date',
 						type: 'dateTime',
 						default: '',
-						description: 'Date when the lead’s deal is expected to be closed, in ISO-8601 format',
+						description: 'Date when the leadâ€™s deal is expected to be closed, in ISO-8601 format',
 					},
 				],
 			},

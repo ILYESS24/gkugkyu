@@ -1,17 +1,17 @@
-import type {
+﻿import type {
 	AuthenticatedRequest,
 	Settings,
 	CredentialsEntity,
 	User,
 	WorkflowEntity,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	CredentialsRepository,
 	WorkflowRepository,
 	SettingsRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { FindManyOptions, FindOneOptions, FindOptionsWhere } from '@n8n/typeorm';
 import type { QueryDeepPartialEntity } from '@n8n/typeorm/query-builder/QueryPartialEntity';

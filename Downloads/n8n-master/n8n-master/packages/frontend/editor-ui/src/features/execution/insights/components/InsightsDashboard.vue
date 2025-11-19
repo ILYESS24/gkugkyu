@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import ProjectSharing from '@/features/collaboration/projects/components/ProjectSharing.vue';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
@@ -7,7 +7,7 @@ import InsightsSummary from '@/features/execution/insights/components/InsightsSu
 import { useInsightsStore } from '@/features/execution/insights/insights.store';
 import type { DateValue } from '@internationalized/date';
 import { getLocalTimeZone, now, toCalendarDateTime, today } from '@internationalized/date';
-import type { InsightsDateRange, InsightsSummaryType } from '@n8n/api-types';
+import type { InsightsDateRange, InsightsSummaryType } from '@workflow-automation/api-types';
 import { useI18n } from '@n8n/i18n';
 import {
 	computed,
@@ -203,7 +203,7 @@ onBeforeMount(async () => {
 	await projectsStore.getAvailableProjects();
 });
 
-// Must be *only* <email> — no extra text before or after
+// Must be *only* <email> â€” no extra text before or after
 const emailPattern = /^<([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})>$/;
 
 const projects = computed(() =>

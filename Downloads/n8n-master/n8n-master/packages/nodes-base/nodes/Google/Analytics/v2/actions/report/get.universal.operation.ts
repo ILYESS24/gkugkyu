@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IData, IDimension, IMetric } from '../../helpers/Interfaces';
 import {
@@ -66,7 +66,7 @@ const dimensionDropdown: INodeProperties[] = [
 			},
 			{
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-				name: 'Other dimensions…',
+				name: 'Other dimensionsâ€¦',
 				value: 'other',
 			},
 		],
@@ -281,12 +281,12 @@ export const description: INodeProperties[] = [
 							},
 							{
 								// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-								name: 'Other metrics…',
+								name: 'Other metricsâ€¦',
 								value: 'other',
 							},
 							{
 								// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-								name: 'Custom metric…',
+								name: 'Custom metricâ€¦',
 								value: 'custom',
 							},
 						],

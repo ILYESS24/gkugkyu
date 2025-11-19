@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	FieldType,
 	ILoadOptionsFunctions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IListColumnType } from '../helpers/interfaces';
 import { microsoftSharePointApiRequest } from '../transport';

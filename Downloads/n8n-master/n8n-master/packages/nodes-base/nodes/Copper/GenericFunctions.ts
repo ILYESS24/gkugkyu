@@ -1,4 +1,4 @@
-import { createHash } from 'crypto';
+﻿import { createHash } from 'crypto';
 import flow from 'lodash/flow';
 import omit from 'lodash/omit';
 import type {
@@ -11,8 +11,8 @@ import type {
 	IHttpRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import type {
 	AddressFixedCollection,

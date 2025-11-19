@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	CreateApiKeyRequestDto,
 	UpdateApiKeyRequestDto,
 	ApiKey,
 	ApiKeyWithRawValue,
-} from '@n8n/api-types';
-import type { ApiKeyScope } from '@n8n/permissions';
+} from '@workflow-automation/api-types';
+import type { ApiKeyScope } from '@workflow-automation/permissions';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

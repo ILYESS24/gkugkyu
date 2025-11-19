@@ -1,7 +1,7 @@
-import { LicenseState } from '@n8n/backend-common';
+﻿import { LicenseState } from '@workflow-automation/backend-common';
 import { mockInstance, testDb } from '@n8n/backend-test-utils';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { Container } from '@n8n/di';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
 

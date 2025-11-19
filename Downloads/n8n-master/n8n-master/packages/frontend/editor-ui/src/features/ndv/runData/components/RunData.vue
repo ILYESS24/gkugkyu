@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useStorage } from '@/app/composables/useStorage';
 import { saveAs } from 'file-saver';
 import NodeSettingsHint from '@/features/ndv/settings/components/NodeSettingsHint.vue';
@@ -14,8 +14,8 @@ import type {
 	NodeHint,
 	Workflow,
 	NodeConnectionType,
-} from 'n8n-workflow';
-import { parseErrorMetadata, NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { parseErrorMetadata, NodeConnectionTypes, NodeHelpers } from 'workflow-automation-workflow';
 import { computed, defineAsyncComponent, onBeforeUnmount, onMounted, ref, toRef, watch } from 'vue';
 
 import type { INodeUi, IRunDataDisplayMode, ITab } from '@/Interface';
@@ -450,7 +450,7 @@ const runSelectorOptionsCount = computed(() => {
 	const nodeRunData = currentNodeRunData.value;
 	if (!nodeRunData) return 0;
 
-	// If there is branch selector – we show all runs in the run selector
+	// If there is branch selector â€“ we show all runs in the run selector
 	if (showBranchSwitch.value) {
 		return maxRunIndex.value + 1;
 	}

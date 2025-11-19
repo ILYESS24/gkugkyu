@@ -1,5 +1,5 @@
-import { Entity, PrimaryColumn } from '@n8n/typeorm';
-import { MessageEventBusDestinationOptions } from 'n8n-workflow';
+﻿import { Entity, PrimaryColumn } from '@n8n/typeorm';
+import { MessageEventBusDestinationOptions } from 'workflow-automation-workflow';
 
 import { JsonColumn, WithTimestamps } from './abstract-entity';
 

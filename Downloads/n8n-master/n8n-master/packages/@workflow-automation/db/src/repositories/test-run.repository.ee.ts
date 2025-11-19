@@ -1,7 +1,7 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import type { EntityManager, FindManyOptions } from '@n8n/typeorm';
 import { DataSource, In, Repository } from '@n8n/typeorm';
-import { UnexpectedError, type IDataObject } from 'n8n-workflow';
+import { UnexpectedError, type IDataObject } from 'workflow-automation-workflow';
 
 import { TestRun } from '../entities';
 import type {

@@ -1,4 +1,4 @@
-import { Config, Env, Nested } from '@n8n/config';
+﻿import { Config, Env, Nested } from '@workflow-automation/config';
 import { z } from 'zod';
 
 const protocolSchema = z.enum(['http', 'https']);

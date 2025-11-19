@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	IDataObject,
 	IHookFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	allEvents,

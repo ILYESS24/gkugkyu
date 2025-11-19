@@ -1,6 +1,6 @@
-import FormData from 'form-data';
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { NodeOperationError, updateDisplayOptions } from 'n8n-workflow';
+﻿import FormData from 'form-data';
+import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
+import { NodeOperationError, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { getBinaryDataFile } from '../../../helpers/binary-data';
 import type { VideoJob } from '../../../helpers/interfaces';

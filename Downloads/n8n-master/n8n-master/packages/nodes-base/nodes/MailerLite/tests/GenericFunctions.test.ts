@@ -1,10 +1,10 @@
-/* eslint-disable n8n-nodes-base/node-param-display-name-miscased */
+﻿/* eslint-disable n8n-nodes-base/node-param-display-name-miscased */
 import {
 	type IExecuteFunctions,
 	type ILoadOptionsFunctions,
 	type IHookFunctions,
 	NodeApiError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	getCustomFields,

@@ -1,4 +1,4 @@
-import type { DataTableColumnType } from 'n8n-workflow';
+﻿import type { DataTableColumnType } from 'workflow-automation-workflow';
 
 import type { DataTableColumn } from '../data-table-column.entity';
 import {

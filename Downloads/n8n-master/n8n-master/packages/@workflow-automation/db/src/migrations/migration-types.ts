@@ -1,4 +1,4 @@
-import type { Logger } from '@n8n/backend-common';
+﻿import type { Logger } from '@workflow-automation/backend-common';
 import type { QueryRunner, ObjectLiteral } from '@n8n/typeorm';
 
 import type { createSchemaBuilder } from './dsl';

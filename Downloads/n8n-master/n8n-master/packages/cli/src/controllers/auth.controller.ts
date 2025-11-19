@@ -1,9 +1,9 @@
-import { LoginRequestDto, ResolveSignupTokenQueryDto } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { User, PublicUser } from '@n8n/db';
-import { UserRepository, AuthenticatedRequest, GLOBAL_OWNER_ROLE } from '@n8n/db';
-import { Body, Get, Post, Query, RestController } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { LoginRequestDto, ResolveSignupTokenQueryDto } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { User, PublicUser } from '@workflow-automation/db';
+import { UserRepository, AuthenticatedRequest, GLOBAL_OWNER_ROLE } from '@workflow-automation/db';
+import { Body, Get, Post, Query, RestController } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { isEmail } from 'class-validator';
 import { Response } from 'express';
 

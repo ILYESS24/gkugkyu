@@ -1,4 +1,4 @@
-import type { ExecutionStatus, WorkflowExecuteMode } from 'n8n-workflow';
+﻿import type { ExecutionStatus, WorkflowExecuteMode } from 'workflow-automation-workflow';
 
 export type RunningJobSummary = {
 	executionId: string;

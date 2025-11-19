@@ -1,5 +1,5 @@
-import { CredentialsRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { CredentialsRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 @Service()
 export class NamingService {

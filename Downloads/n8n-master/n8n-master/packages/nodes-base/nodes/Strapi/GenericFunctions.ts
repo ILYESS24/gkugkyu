@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	IDataObject,
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	IRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import { removeTrailingSlash } from '../../utils/utilities';
 

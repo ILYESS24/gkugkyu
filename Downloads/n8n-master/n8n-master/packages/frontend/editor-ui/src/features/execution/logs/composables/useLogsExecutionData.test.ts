@@ -1,4 +1,4 @@
-import { setActivePinia } from 'pinia';
+﻿import { setActivePinia } from 'pinia';
 import { useLogsExecutionData } from './useLogsExecutionData';
 import { waitFor } from '@testing-library/vue';
 import { createTestingPinia } from '@pinia/testing';
@@ -12,7 +12,7 @@ import {
 	createTestWorkflow,
 	createTestWorkflowExecutionResponse,
 } from '@/__tests__/mocks';
-import type { IRunExecutionData } from 'n8n-workflow';
+import type { IRunExecutionData } from 'workflow-automation-workflow';
 import { stringify } from 'flatted';
 import { useToast } from '@/app/composables/useToast';
 import {

@@ -1,10 +1,10 @@
-import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@n8n/imap';
+﻿import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@n8n/imap';
 import { connect as imapConnect, getParts } from '@n8n/imap';
 import find from 'lodash/find';
 import isEmpty from 'lodash/isEmpty';
 import type { Source as ParserSource } from 'mailparser';
 import { simpleParser } from 'mailparser';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	ITriggerFunctions,
 	IBinaryData,
@@ -19,7 +19,7 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function parseRawEmail(
 	this: ITriggerFunctions,
@@ -78,7 +78,7 @@ const versionDescription: INodeTypeDescription = {
 				"<b>While building your workflow</b>, click the 'execute step' button, then send an email to make an event happen. This will trigger an execution, which will show up in this editor.<br /> <br /><b>Your workflow will also execute automatically</b>, since it's activated. Every time an email is received, this node will trigger an execution. These executions will show up in the <a data-key='executions'>executions list</a>, but not in the editor.",
 		},
 		activationHint:
-			"Once you’ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just won’t see those executions here).",
+			"Once youâ€™ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just wonâ€™t see those executions here).",
 	},
 
 	inputs: [],

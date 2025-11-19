@@ -1,10 +1,10 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 import {
 	LOGSTREAMING_CB_DEFAULT_FAILURE_WINDOW_MS,
 	LOGSTREAMING_CB_DEFAULT_MAX_FAILURES,
 	LOGSTREAMING_DEFAULT_MAX_FREE_SOCKETS,
 	LOGSTREAMING_DEFAULT_MAX_SOCKETS,
-} from '@n8n/constants';
+} from '@workflow-automation/constants';
 
 export const circuitBreakerOptions = {
 	displayName: 'Circuit Breaker Options',
@@ -24,7 +24,7 @@ export const circuitBreakerOptions = {
 			},
 			default: LOGSTREAMING_CB_DEFAULT_MAX_FAILURES,
 			description:
-				'After this many errors within the failure window n8n stops sending requests to prevent overloading the external service that’s not working properly.',
+				'After this many errors within the failure window n8n stops sending requests to prevent overloading the external service thatâ€™s not working properly.',
 		},
 		{
 			displayName: 'Failure Window',

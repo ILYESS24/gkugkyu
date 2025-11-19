@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 
 import { ControllerRegistryMetadata } from '../controller-registry-metadata';
 import { RootLevelController } from '../root-level-controller';

@@ -1,5 +1,5 @@
-import { isStringArray } from '@n8n/db';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+﻿import { isStringArray } from '@workflow-automation/db';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 
 export class BaseSelect {
 	static selectableFields: Set<string>;

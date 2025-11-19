@@ -1,8 +1,8 @@
-import type { StreamEvent } from '@langchain/core/dist/tracers/event_stream';
+﻿import type { StreamEvent } from '@langchain/core/dist/tracers/event_stream';
 import type { IterableReadableStream } from '@langchain/core/dist/utils/stream';
 import type { AIMessageChunk, MessageContentText } from '@langchain/core/messages';
 import type { BaseChatMemory } from 'langchain/memory';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { saveToMemory, saveToolResultsToMemory } from './memoryManagement';
 import type { AgentResult, ToolCallRequest } from './types';

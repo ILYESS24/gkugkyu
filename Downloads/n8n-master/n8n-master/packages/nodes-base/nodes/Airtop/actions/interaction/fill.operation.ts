@@ -1,9 +1,9 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
 	NodeApiError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ERROR_MESSAGES, OPERATION_TIMEOUT } from '../../constants';
 import {

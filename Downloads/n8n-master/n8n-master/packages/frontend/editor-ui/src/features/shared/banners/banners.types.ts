@@ -1,5 +1,5 @@
-import type { Component } from 'vue';
-import type { BannerName } from '@n8n/api-types';
+﻿import type { Component } from 'vue';
+import type { BannerName } from '@workflow-automation/api-types';
 import type { CalloutTheme } from '@n8n/design-system';
 
 export type N8nBanners = {

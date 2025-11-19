@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { BATCH_MODE, SINGLE } from '../helpers/interfaces';
 
@@ -91,7 +91,7 @@ export const optionsCollection: INodeProperties = {
 			placeholder: 'e.g. value1,value2,value3',
 			description:
 				'Comma-separated list of the values you want to use as query parameters. You can drag the values from the input panel on the left. <a href="https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mysql/" target="_blank">More info</a>',
-			hint: 'Comma-separated list of values: reference them in your query as $1, $2, $3…',
+			hint: 'Comma-separated list of values: reference them in your query as $1, $2, $3â€¦',
 			displayOptions: {
 				show: { '/operation': ['executeQuery'] },
 			},

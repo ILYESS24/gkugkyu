@@ -1,4 +1,4 @@
-/* eslint-disable n8n-nodes-base/node-param-description-wrong-for-dynamic-options */
+﻿/* eslint-disable n8n-nodes-base/node-param-description-wrong-for-dynamic-options */
 /* eslint-disable n8n-nodes-base/node-param-display-name-wrong-for-dynamic-options */
 import type { BaseCallbackHandler, CallbackHandlerMethods } from '@langchain/core/callbacks/base';
 import type { Callbacks } from '@langchain/core/callbacks/manager';
@@ -11,7 +11,7 @@ import {
 	type SupplyData,
 	type ILoadOptionsFunctions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { numberInputsProperty, configuredInputs } from './helpers';
 import { N8nLlmTracing } from '../llms/N8nLlmTracing';

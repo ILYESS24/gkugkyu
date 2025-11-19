@@ -1,11 +1,11 @@
-import { CohereEmbeddings } from '@langchain/cohere';
+﻿import { CohereEmbeddings } from '@langchain/cohere';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

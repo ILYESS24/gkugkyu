@@ -1,4 +1,4 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import type {
 	CredentialsEntity,
 	CredentialUsedByWorkflow,
@@ -6,7 +6,7 @@ import type {
 	WorkflowEntity,
 	WorkflowWithSharingsAndCredentials,
 	WorkflowWithSharingsMetaDataAndCredentials,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	Folder,
 	Project,
@@ -15,13 +15,13 @@ import {
 	FolderRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In, type EntityManager } from '@n8n/typeorm';
 import omit from 'lodash/omit';
-import type { IWorkflowBase, WorkflowId } from 'n8n-workflow';
-import { NodeOperationError, PROJECT_ROOT, UserError, WorkflowActivationError } from 'n8n-workflow';
+import type { IWorkflowBase, WorkflowId } from 'workflow-automation-workflow';
+import { NodeOperationError, PROJECT_ROOT, UserError, WorkflowActivationError } from 'workflow-automation-workflow';
 
 import { WorkflowFinderService } from './workflow-finder.service';
 

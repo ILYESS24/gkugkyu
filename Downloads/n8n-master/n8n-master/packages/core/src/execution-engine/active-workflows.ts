@@ -1,5 +1,5 @@
-import { Logger } from '@n8n/backend-common';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Service } from '@workflow-automation/di';
 import type {
 	CronContext,
 	INode,
@@ -9,14 +9,14 @@ import type {
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	toCronExpression,
 	TriggerCloseError,
 	UserError,
 	WorkflowActivationError,
 	WorkflowDeactivationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ErrorReporter } from '@/errors/error-reporter';
 import type { IWorkflowData } from '@/interfaces';

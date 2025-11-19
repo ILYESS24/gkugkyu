@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IDataObject,
 	INodePropertyOptions,
 	JsonObject,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 interface ScriptsOptions {
 	script?: any;

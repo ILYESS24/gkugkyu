@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { ComponentInstance } from 'vue';
 import { computed, ref, onMounted, onUnmounted, watch } from 'vue';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -9,7 +9,7 @@ import type {
 	INodeProperties,
 	NodeParameterValue,
 	ResourceLocatorModes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useI18n } from '@n8n/i18n';
 import DraggableTarget from '@/app/components/DraggableTarget.vue';
 import ExpressionParameterInput from '../ExpressionParameterInput.vue';

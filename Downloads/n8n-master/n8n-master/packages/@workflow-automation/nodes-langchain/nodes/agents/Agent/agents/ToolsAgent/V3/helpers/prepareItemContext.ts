@@ -1,7 +1,7 @@
-import type { ChatPromptTemplate } from '@langchain/core/prompts';
+﻿import type { ChatPromptTemplate } from '@langchain/core/prompts';
 import type { DynamicStructuredTool, Tool } from 'langchain/tools';
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, ISupplyDataFunctions, EngineResponse } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, ISupplyDataFunctions, EngineResponse } from 'workflow-automation-workflow';
 
 import { buildSteps, type ToolCallData } from '@utils/agent-execution';
 import { getPromptInputByType } from '@utils/helpers';

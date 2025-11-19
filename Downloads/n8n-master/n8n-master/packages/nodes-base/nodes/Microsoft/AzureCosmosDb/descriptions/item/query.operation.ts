@@ -1,4 +1,4 @@
-import { updateDisplayOptions, type INodeProperties } from 'n8n-workflow';
+﻿import { updateDisplayOptions, type INodeProperties } from 'workflow-automation-workflow';
 
 import { validateQueryParameters } from '../../helpers/utils';
 import { containerResourceLocator } from '../common';
@@ -50,7 +50,7 @@ const properties: INodeProperties[] = [
 						default: '',
 						description:
 							'Comma-separated list of values used as query parameters. Use $1, $2, $3, etc., in your query.',
-						hint: 'Reference them in your query as $1, $2, $3…',
+						hint: 'Reference them in your query as $1, $2, $3â€¦',
 						placeholder: 'e.g. value1,value2,value3',
 						routing: {
 							send: {

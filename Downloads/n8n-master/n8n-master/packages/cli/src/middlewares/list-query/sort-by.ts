@@ -1,7 +1,7 @@
-import { plainToInstance } from 'class-transformer';
+﻿import { plainToInstance } from 'class-transformer';
 import { validateSync } from 'class-validator';
 import type { RequestHandler } from 'express';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import type { ListQuery } from '@/requests';
 import * as ResponseHelper from '@/response-helper';

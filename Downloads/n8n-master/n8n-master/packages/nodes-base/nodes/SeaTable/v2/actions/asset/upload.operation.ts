@@ -1,10 +1,10 @@
-import {
+﻿import {
 	type IDataObject,
 	type INodeExecutionData,
 	type INodeProperties,
 	type IExecuteFunctions,
 	updateDisplayOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { seaTableApiRequest } from '../../GenericFunctions';
 import type { IUploadLink, IRowObject } from '../Interfaces';

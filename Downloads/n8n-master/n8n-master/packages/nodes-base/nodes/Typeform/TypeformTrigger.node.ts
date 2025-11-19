@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IWebhookFunctions,
 	ICredentialsDecrypted,
@@ -9,8 +9,8 @@ import type {
 	INodeTypeDescription,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, randomString } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, randomString } from 'workflow-automation-workflow';
 
 import type {
 	ITypeformAnswer,

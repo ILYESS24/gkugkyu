@@ -1,4 +1,4 @@
-import type { ResourceMapperField } from 'n8n-workflow';
+﻿import type { ResourceMapperField } from 'workflow-automation-workflow';
 import {
 	getThemedValue,
 	isResourceMapperFieldListStale,

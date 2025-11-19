@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type * as oracleDBTypes from 'oracledb';
 
 import { updateDisplayOptions } from '@utils/utilities';

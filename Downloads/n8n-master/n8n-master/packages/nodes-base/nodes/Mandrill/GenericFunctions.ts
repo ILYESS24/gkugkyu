@@ -1,4 +1,4 @@
-import map from 'lodash/map';
+﻿import map from 'lodash/map';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function mandrillApiRequest(
 	this: IExecuteFunctions | IHookFunctions | ILoadOptionsFunctions,

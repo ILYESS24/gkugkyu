@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IDataObject,
 	INodeType,
@@ -6,8 +6,8 @@ import type {
 	INodeTypeBaseDescription,
 	IWebhookFunctions,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { getSites, webflowApiRequest } from '../GenericFunctions';
 

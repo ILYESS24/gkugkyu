@@ -1,7 +1,7 @@
-import { CreateVariableRequestDto } from '@n8n/api-types';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { VariablesRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { CreateVariableRequestDto } from '@workflow-automation/api-types';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { VariablesRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { IsNull } from '@n8n/typeorm';
 import type { Response } from 'express';

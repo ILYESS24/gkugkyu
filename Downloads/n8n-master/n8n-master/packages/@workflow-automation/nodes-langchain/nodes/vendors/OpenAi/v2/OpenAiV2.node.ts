@@ -1,10 +1,10 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type INodeType,
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { configureNodeInputs } from '../helpers/description';
 import { listSearch, loadOptions } from '../methods';

@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	GenerateContentConfig,
 	GenerationConfig,
 	GenerateContentParameters,
 } from '@google/genai';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
 export { Modality } from '@google/genai';
 
 /* type created based on: https://ai.google.dev/api/generate-content#generationconfig */

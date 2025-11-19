@@ -1,4 +1,4 @@
-import type { N8nInput } from '@n8n/design-system';
+﻿import type { N8nInput } from '@n8n/design-system';
 import type {
 	ExecutionError,
 	GenericValue,
@@ -9,7 +9,7 @@ import type {
 	NodeConnectionType,
 	NodeParameterValue,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { RouteLocation } from 'vue-router';
 import type {
 	INodeCreateElement,

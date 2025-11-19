@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-import type { CredentialsEntity } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
+import type { CredentialsEntity } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type express from 'express';
 import { z } from 'zod';
 

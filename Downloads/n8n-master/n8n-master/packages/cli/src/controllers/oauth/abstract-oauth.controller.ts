@@ -1,14 +1,14 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Time } from '@n8n/constants';
-import type { AuthenticatedRequest, CredentialsEntity, ICredentialsDb } from '@n8n/db';
-import { CredentialsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Time } from '@workflow-automation/constants';
+import type { AuthenticatedRequest, CredentialsEntity, ICredentialsDb } from '@workflow-automation/db';
+import { CredentialsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import Csrf from 'csrf';
 import type { Response } from 'express';
-import { Credentials } from 'n8n-core';
-import type { ICredentialDataDecryptedObject, IWorkflowExecuteAdditionalData } from 'n8n-workflow';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import { Credentials } from 'workflow-automation-core';
+import type { ICredentialDataDecryptedObject, IWorkflowExecuteAdditionalData } from 'workflow-automation-workflow';
+import { jsonParse, UnexpectedError } from 'workflow-automation-workflow';
 
 import { RESPONSE_ERROR_MESSAGES } from '@/constants';
 import { CredentialsFinderService } from '@/credentials/credentials-finder.service';

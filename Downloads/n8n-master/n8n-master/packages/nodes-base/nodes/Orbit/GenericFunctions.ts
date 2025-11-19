@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	JsonObject,
 	IExecuteFunctions,
 	IHookFunctions,
@@ -6,8 +6,8 @@ import type {
 	IDataObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 import type { IRelation } from './Interfaces';
 

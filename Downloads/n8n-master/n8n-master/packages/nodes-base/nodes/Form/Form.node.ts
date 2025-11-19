@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	FormFieldsParameter,
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -6,7 +6,7 @@ import type {
 	INodeTypeDescription,
 	IWebhookFunctions,
 	IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	Node,
 	updateDisplayOptions,
@@ -15,7 +15,7 @@ import {
 	FORM_TRIGGER_NODE_TYPE,
 	tryToParseJsonToFormFields,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { cssVariables } from './cssVariables';
 import { renderFormCompletion } from './utils/formCompletionUtils';

@@ -1,6 +1,6 @@
-import { captor, mock } from 'jest-mock-extended';
-import { returnJsonArray } from 'n8n-core';
-import type { ICredentialDataDecryptedObject, ITriggerFunctions } from 'n8n-workflow';
+﻿import { captor, mock } from 'jest-mock-extended';
+import { returnJsonArray } from 'workflow-automation-core';
+import type { ICredentialDataDecryptedObject, ITriggerFunctions } from 'workflow-automation-workflow';
 
 import { RedisTrigger } from '../RedisTrigger.node';
 import type { RedisClient } from '../types';

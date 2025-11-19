@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue';
+﻿import { ref, computed } from 'vue';
 import { useHistoryStore } from '@/app/stores/history.store';
 import {
 	CUSTOM_API_CALL_KEY,
@@ -6,7 +6,7 @@ import {
 	PLACEHOLDER_FILLED_AT_EXECUTION_TIME,
 } from '@/app/constants';
 
-import { NodeHelpers, NodeConnectionTypes } from 'n8n-workflow';
+import { NodeHelpers, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	INodeProperties,
 	INodeCredentialDescription,
@@ -30,7 +30,7 @@ import type {
 	IRunExecutionData,
 	NodeHint,
 	INodeCredentials,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
 import type { AddedNode, INodeUi, INodeUpdatePropertiesInformation } from '@/Interface';

@@ -1,5 +1,5 @@
-import { ref } from 'vue';
-import type { PushMessage } from '@n8n/api-types';
+﻿import { ref } from 'vue';
+import type { PushMessage } from '@workflow-automation/api-types';
 
 import { usePushConnectionStore } from '@/app/stores/pushConnection.store';
 import {

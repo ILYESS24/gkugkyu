@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type ICredentialsDecrypted,
 	type ICredentialTestFunctions,
@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type IRequestOptions,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { adminFields, adminOperations } from './descriptions/AdministratorDescription';
 import { containerFields, containerOperations } from './descriptions/ContainerDescription';

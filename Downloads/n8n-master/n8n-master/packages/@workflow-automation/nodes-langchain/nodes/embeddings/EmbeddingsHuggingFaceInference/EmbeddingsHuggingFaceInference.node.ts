@@ -1,4 +1,4 @@
-import type { InferenceProviderOrPolicy } from '@huggingface/inference';
+﻿import type { InferenceProviderOrPolicy } from '@huggingface/inference';
 import { PROVIDERS_OR_POLICIES } from '@huggingface/inference';
 import { HuggingFaceInferenceEmbeddings } from '@langchain/community/embeddings/hf';
 import {
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

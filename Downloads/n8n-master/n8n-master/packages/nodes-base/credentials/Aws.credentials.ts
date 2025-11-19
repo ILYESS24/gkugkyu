@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { AwsIamCredentialsType, AWSRegion } from './common/aws/types';
 import {

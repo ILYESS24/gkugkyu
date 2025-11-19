@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IGetNodeParameterOptions,
 	INode,
 	IWorkflowExecuteAdditionalData,
 	Workflow,
 	IWorkflowNodeContext,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { NodeExecutionContext } from './node-execution-context';
 

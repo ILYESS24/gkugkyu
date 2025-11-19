@@ -1,7 +1,7 @@
-import { ChatHubProvider } from '@n8n/api-types';
-import { WithTimestamps, User, CredentialsEntity, JsonColumn } from '@n8n/db';
+﻿import { ChatHubProvider } from '@workflow-automation/api-types';
+import { WithTimestamps, User, CredentialsEntity, JsonColumn } from '@workflow-automation/db';
 import { Column, Entity, ManyToOne, JoinColumn, PrimaryGeneratedColumn } from '@n8n/typeorm';
-import { INode } from 'n8n-workflow';
+import { INode } from 'workflow-automation-workflow';
 
 @Entity({ name: 'chat_hub_agents' })
 export class ChatHubAgent extends WithTimestamps {

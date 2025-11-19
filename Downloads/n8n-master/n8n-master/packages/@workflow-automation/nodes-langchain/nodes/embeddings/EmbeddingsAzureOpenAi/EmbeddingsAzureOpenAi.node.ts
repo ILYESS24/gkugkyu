@@ -1,11 +1,11 @@
-import { AzureOpenAIEmbeddings } from '@langchain/openai';
+﻿import { AzureOpenAIEmbeddings } from '@langchain/openai';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getProxyAgent } from '@utils/httpProxyAgent';
 import { logWrapper } from '@utils/logWrapper';

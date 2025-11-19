@@ -1,8 +1,8 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { HumanMessage } from '@langchain/core/messages';
 import { ChatPromptTemplate, SystemMessagePromptTemplate } from '@langchain/core/prompts';
 import type { OutputFixingParser } from 'langchain/output_parsers';
-import { NodeOperationError, type IExecuteFunctions } from 'n8n-workflow';
+import { NodeOperationError, type IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { getTracingConfig } from '@utils/tracing';
 

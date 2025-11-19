@@ -1,4 +1,4 @@
-import {
+﻿import {
 	getPersonalProject,
 	mockInstance,
 	createWorkflow,
@@ -13,8 +13,8 @@ import {
 	SharedWorkflowRepository,
 	UserRepository,
 	GLOBAL_OWNER_ROLE,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { Reset } from '@/commands/user-management/reset';
 import { LoadNodesAndCredentials } from '@/load-nodes-and-credentials';

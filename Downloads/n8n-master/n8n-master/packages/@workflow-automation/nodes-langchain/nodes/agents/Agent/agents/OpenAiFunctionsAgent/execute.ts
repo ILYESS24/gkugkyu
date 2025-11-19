@@ -1,4 +1,4 @@
-import { PromptTemplate } from '@langchain/core/prompts';
+﻿import { PromptTemplate } from '@langchain/core/prompts';
 import { ChatOpenAI } from '@langchain/openai';
 import type { AgentExecutorInput } from 'langchain/agents';
 import { AgentExecutor, OpenAIAgent } from 'langchain/agents';
@@ -8,7 +8,7 @@ import {
 	type INodeExecutionData,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectedTools, getPromptInputByType } from '@utils/helpers';
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
@@ -92,7 +92,7 @@ export async function openAiFunctionsAgentExecute(
 			}
 
 			if (input === undefined) {
-				throw new NodeOperationError(this.getNode(), 'The ‘text‘ parameter is empty.');
+				throw new NodeOperationError(this.getNode(), 'The â€˜textâ€˜ parameter is empty.');
 			}
 
 			if (prompt) {

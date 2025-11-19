@@ -1,6 +1,6 @@
-import { readFileSync } from 'fs';
-import type { n8n } from 'n8n-core';
-import { jsonParse } from 'n8n-workflow';
+﻿import { readFileSync } from 'fs';
+import type { n8n } from 'workflow-automation-core';
+import { jsonParse } from 'workflow-automation-workflow';
 import { join, resolve } from 'path';
 
 // Helper function to get n8n version that can be mocked in tests

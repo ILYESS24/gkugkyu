@@ -1,4 +1,4 @@
-import { SerpAPI } from '@langchain/community/tools/serpapi';
+﻿import { SerpAPI } from '@langchain/community/tools/serpapi';
 import {
 	type IExecuteFunctions,
 	NodeConnectionTypes,
@@ -7,7 +7,7 @@ import {
 	type ISupplyDataFunctions,
 	type SupplyData,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

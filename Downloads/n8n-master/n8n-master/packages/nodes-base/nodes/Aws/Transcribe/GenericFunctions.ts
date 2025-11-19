@@ -1,4 +1,4 @@
-import type { Request } from 'aws4';
+﻿import type { Request } from 'aws4';
 import { sign } from 'aws4';
 import get from 'lodash/get';
 import type {
@@ -11,8 +11,8 @@ import type {
 	IRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import { URL } from 'url';
 
 function getEndpointForService(

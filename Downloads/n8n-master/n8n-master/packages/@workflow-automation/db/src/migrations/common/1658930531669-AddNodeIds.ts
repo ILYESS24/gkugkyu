@@ -1,4 +1,4 @@
-import type { INode } from 'n8n-workflow';
+﻿import type { INode } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import type { WorkflowEntity } from '../../entities';

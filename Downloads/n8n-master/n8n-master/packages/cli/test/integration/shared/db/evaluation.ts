@@ -1,13 +1,13 @@
-import { TestRunRepository, TestCaseExecutionRepository } from '@n8n/db';
+﻿import { TestRunRepository, TestCaseExecutionRepository } from '@workflow-automation/db';
 import type {
 	TestRun,
 	TestCaseExecution,
 	AggregatedTestRunMetrics,
 	TestCaseExecutionErrorCode,
 	TestRunErrorCode,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { IDataObject } from 'n8n-workflow';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { IDataObject } from 'workflow-automation-workflow';
 
 /**
  * Creates a test run for a workflow

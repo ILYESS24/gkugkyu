@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IWebhookFunctions,
 	IDataObject,
@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { payPalApiRequest, upperFist } from './GenericFunctions';
 

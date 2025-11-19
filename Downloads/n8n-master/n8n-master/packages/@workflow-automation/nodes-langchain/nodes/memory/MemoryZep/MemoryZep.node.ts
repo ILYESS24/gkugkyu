@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/dist/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/dist/memory/chat_memory';
 import { ZepMemory } from '@langchain/community/memory/zep';
 import { ZepCloudMemory } from '@langchain/community/memory/zep_cloud';
 import type { InputValues, MemoryVariables } from '@langchain/core/memory';
@@ -10,7 +10,7 @@ import {
 	type INodeTypeDescription,
 	type SupplyData,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getSessionId } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

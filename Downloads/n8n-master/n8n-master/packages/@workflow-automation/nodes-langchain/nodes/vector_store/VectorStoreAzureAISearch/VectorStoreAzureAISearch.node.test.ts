@@ -1,7 +1,7 @@
-import { AzureAISearchVectorStore } from '@langchain/community/vectorstores/azure_aisearch';
+﻿import { AzureAISearchVectorStore } from '@langchain/community/vectorstores/azure_aisearch';
 import { AzureKeyCredential } from '@azure/search-documents';
 import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions, ILoadOptionsFunctions, INode } from 'n8n-workflow';
+import type { ISupplyDataFunctions, ILoadOptionsFunctions, INode } from 'workflow-automation-workflow';
 
 import { VectorStoreAzureAISearch, getIndexName } from './VectorStoreAzureAISearch.node';
 

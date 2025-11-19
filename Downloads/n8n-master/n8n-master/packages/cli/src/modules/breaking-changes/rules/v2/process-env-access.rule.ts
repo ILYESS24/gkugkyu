@@ -1,7 +1,7 @@
-import { BreakingChangeRecommendation } from '@n8n/api-types';
-import { WorkflowEntity } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { INode } from 'n8n-workflow';
+﻿import { BreakingChangeRecommendation } from '@workflow-automation/api-types';
+import { WorkflowEntity } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { INode } from 'workflow-automation-workflow';
 
 import type {
 	BreakingChangeRuleMetadata,

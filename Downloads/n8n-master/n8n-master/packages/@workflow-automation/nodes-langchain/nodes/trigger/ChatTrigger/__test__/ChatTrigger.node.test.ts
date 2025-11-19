@@ -1,7 +1,7 @@
-import { jest } from '@jest/globals';
+﻿import { jest } from '@jest/globals';
 import type { Request, Response } from 'express';
 import { mock } from 'jest-mock-extended';
-import type { IWebhookFunctions } from 'n8n-workflow';
+import type { IWebhookFunctions } from 'workflow-automation-workflow';
 
 import { ChatTrigger } from '../ChatTrigger.node';
 import type { LoadPreviousSessionChatOption } from '../types';

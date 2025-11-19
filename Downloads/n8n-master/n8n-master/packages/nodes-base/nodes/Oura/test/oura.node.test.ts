@@ -1,11 +1,11 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import nock from 'nock';
 
 import { profileResponse } from './apiResponses';

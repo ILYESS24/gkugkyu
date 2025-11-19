@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { useToast } from '@/app/composables/useToast';
 import { useWorkflowActivate } from '@/app/composables/useWorkflowActivate';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -6,7 +6,7 @@ import { getActivatableTriggerNodes } from '@/app/utils/nodeTypesUtils';
 import type { VNode } from 'vue';
 import { computed, h, watch } from 'vue';
 import { useI18n } from '@n8n/i18n';
-import type { PermissionsRecord } from '@n8n/permissions';
+import type { PermissionsRecord } from '@workflow-automation/permissions';
 import {
 	WORKFLOW_ACTIVATION_CONFLICTING_WEBHOOK_MODAL_KEY,
 	EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
@@ -16,7 +16,7 @@ import WorkflowActivationErrorMessage from './WorkflowActivationErrorMessage.vue
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import type { INodeUi } from '@/Interface';
 import type { IUsedCredential } from '@/features/credentials/credentials.types';
-import { OPEN_AI_API_CREDENTIAL_TYPE } from 'n8n-workflow';
+import { OPEN_AI_API_CREDENTIAL_TYPE } from 'workflow-automation-workflow';
 import { useUIStore } from '@/app/stores/ui.store';
 
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';

@@ -1,4 +1,4 @@
-import iconv from 'iconv-lite';
+﻿import iconv from 'iconv-lite';
 import get from 'lodash/get';
 import set from 'lodash/set';
 import unset from 'lodash/unset';
@@ -9,14 +9,14 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	BINARY_ENCODING,
 	deepCopy,
 	jsonParse,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 iconv.encodingExists('utf8');
 

@@ -1,10 +1,10 @@
-import { computed } from 'vue';
+﻿import { computed } from 'vue';
 import {
 	CHAIN_LLM_LANGCHAIN_NODE_TYPE,
 	NodeConnectionTypes,
 	type IDataObject,
 	type INodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	ActionTypeDescription,
 	AddedNode,

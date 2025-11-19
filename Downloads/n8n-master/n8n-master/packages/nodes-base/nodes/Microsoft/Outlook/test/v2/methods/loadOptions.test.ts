@@ -1,5 +1,5 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { ILoadOptionsFunctions } from 'workflow-automation-workflow';
 
 import { getCategoriesNames, getFolders, getCalendarGroups } from '../../../v2/methods/loadOptions';
 import * as transport from '../../../v2/transport';
@@ -84,7 +84,7 @@ describe('MicrosoftOutlookV2 - loadOptions methods', () => {
 				{ displayName: 'Category with "quotes"' },
 				{ displayName: "Category with 'apostrophes'" },
 				{ displayName: 'Category with & symbols' },
-				{ displayName: 'Category With Unicode: 🔥' },
+				{ displayName: 'Category With Unicode: ðŸ”¥' },
 			];
 
 			mockTransport.microsoftApiRequestAllItems.mockResolvedValue(mockCategories);
@@ -98,7 +98,7 @@ describe('MicrosoftOutlookV2 - loadOptions methods', () => {
 				{ name: "Category with 'apostrophes'", value: "Category with 'apostrophes'" },
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
 				{ name: 'Category with & symbols', value: 'Category with & symbols' },
-				{ name: 'Category With Unicode: 🔥', value: 'Category With Unicode: 🔥' },
+				{ name: 'Category With Unicode: ðŸ”¥', value: 'Category With Unicode: ðŸ”¥' },
 			]);
 		});
 	});
@@ -272,7 +272,7 @@ describe('MicrosoftOutlookV2 - loadOptions methods', () => {
 				{ id: 'group1', name: 'My "Work" Calendar' },
 				{ id: 'group2', name: "John's Calendar" },
 				{ id: 'group3', name: 'Team & Projects' },
-				{ id: 'group4', name: 'Calendar with unicode: =�' },
+				{ id: 'group4', name: 'Calendar with unicode: =ï¿½' },
 			];
 
 			mockTransport.microsoftApiRequestAllItems.mockResolvedValue(mockCalendars);
@@ -284,7 +284,7 @@ describe('MicrosoftOutlookV2 - loadOptions methods', () => {
 				{ name: "John's Calendar", value: 'group2' },
 				{ name: 'Team & Projects', value: 'group3' },
 				// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-				{ name: 'Calendar with unicode: =�', value: 'group4' },
+				{ name: 'Calendar with unicode: =ï¿½', value: 'group4' },
 			]);
 		});
 

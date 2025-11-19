@@ -1,10 +1,10 @@
-import * as esprima from 'esprima-next';
+﻿import * as esprima from 'esprima-next';
 import type { Completion } from '@codemirror/autocomplete';
 import type { RangeNode } from './types';
 import { sanitizeHtml } from '@/app/utils/htmlUtils';
 import type { Node } from 'estree';
 import type { CodeNodeLanguageOption } from './CodeNodeEditor.vue';
-import type { CodeExecutionMode } from 'n8n-workflow';
+import type { CodeExecutionMode } from 'workflow-automation-workflow';
 
 export function walk<T extends RangeNode>(
 	node: Node | esprima.Program,

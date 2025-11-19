@@ -1,4 +1,4 @@
-import mergeWith from 'lodash/mergeWith';
+﻿import mergeWith from 'lodash/mergeWith';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -9,8 +9,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import {

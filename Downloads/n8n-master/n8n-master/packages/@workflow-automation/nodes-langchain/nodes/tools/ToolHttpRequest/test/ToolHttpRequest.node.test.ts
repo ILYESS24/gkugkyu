@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import type { INode, ISupplyDataFunctions } from 'n8n-workflow';
-import { jsonParse } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import type { INode, ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 
 import type { N8nTool } from '@utils/N8nTool';
 
@@ -87,7 +87,7 @@ describe('ToolHttpRequest', () => {
 
 		it('should return the response text when receiving a text response with a charset', async () => {
 			helpers.httpRequest.mockResolvedValue({
-				body: 'こんにちは世界',
+				body: 'ã“ã‚“ã«ã¡ã¯ä¸–ç•Œ',
 				headers: {
 					'content-type': 'text/plain; charset=iso-2022-jp',
 				},
@@ -112,7 +112,7 @@ describe('ToolHttpRequest', () => {
 
 			const res = await (response as N8nTool).invoke({});
 			expect(helpers.httpRequest).toHaveBeenCalled();
-			expect(res).toEqual('こんにちは世界');
+			expect(res).toEqual('ã“ã‚“ã«ã¡ã¯ä¸–ç•Œ');
 		});
 
 		it('should return the response object when receiving a JSON response', async () => {

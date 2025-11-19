@@ -1,5 +1,5 @@
-import { Time } from '@n8n/constants';
-import type { User } from '@n8n/db';
+﻿import { Time } from '@workflow-automation/constants';
+import type { User } from '@workflow-automation/db';
 import moment from 'moment-timezone';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
@@ -16,7 +16,7 @@ import {
 	ensureError,
 	jsonStringify,
 	SCHEDULE_TRIGGER_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import z from 'zod';
 
 import { SUPPORTED_MCP_TRIGGERS, USER_CALLED_MCP_TOOL_EVENT } from '../mcp.constants';

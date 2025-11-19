@@ -1,6 +1,6 @@
-import { Container, Service } from '@n8n/di';
-import type { IDataObject } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+﻿import { Container, Service } from '@workflow-automation/di';
+import type { IDataObject } from 'workflow-automation-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 
 import { CREDENTIAL_BLANKING_VALUE } from '@/constants';
 

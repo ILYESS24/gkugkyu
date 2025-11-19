@@ -1,7 +1,7 @@
-import { defineStore } from 'pinia';
+﻿import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
-import type { Collaborator } from '@n8n/api-types';
+import type { Collaborator } from '@workflow-automation/api-types';
 
 import { PLACEHOLDER_EMPTY_WORKFLOW_ID, TIME } from '@/app/constants';
 import { STORES } from '@n8n/stores';

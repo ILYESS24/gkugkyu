@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, INode, AssignmentCollectionValue } from 'n8n-workflow';
+﻿import { mock } from 'jest-mock-extended';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, INode, AssignmentCollectionValue } from 'workflow-automation-workflow';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { ChatPromptTemplate } from '@langchain/core/prompts';
 import type { Runnable } from '@langchain/core/runnables';
@@ -206,7 +206,7 @@ describe('metricHandlers', () => {
 
 			const result = await metricHandlers.toolsUsed.call(mockExecuteFunctions, 0);
 
-			// 2 out of 3 tools used = 2/3 ≈ 0.6667
+			// 2 out of 3 tools used = 2/3 â‰ˆ 0.6667
 			expect(result).toEqual({
 				'Tools Used': 2 / 3,
 			});
@@ -542,7 +542,7 @@ describe('metricHandlers', () => {
 
 			const result = await metricHandlers.stringSimilarity.call(mockExecuteFunctions, 0);
 
-			// Edit distance is 6, longer string length is 11, so similarity = 1 - (6/11) ≈ 0.45
+			// Edit distance is 6, longer string length is 11, so similarity = 1 - (6/11) â‰ˆ 0.45
 			expect(result['String similarity']).toBeCloseTo(0.45, 2);
 		});
 

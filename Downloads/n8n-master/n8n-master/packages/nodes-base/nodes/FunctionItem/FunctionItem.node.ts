@@ -1,4 +1,4 @@
-import type { NodeVMOptions } from '@n8n/vm2';
+﻿import type { NodeVMOptions } from '@n8n/vm2';
 import { NodeVM } from '@n8n/vm2';
 import type {
 	IExecuteFunctions,
@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, deepCopy, NodeOperationError } from 'workflow-automation-workflow';
 
 import { vmResolver } from '../Code/JavaScriptSandbox';
 
@@ -29,7 +29,7 @@ export class FunctionItem implements INodeType {
 		outputs: [NodeConnectionTypes.Main],
 		properties: [
 			{
-				displayName: 'A newer version of this node type is available, called the ‘Code’ node',
+				displayName: 'A newer version of this node type is available, called the â€˜Codeâ€™ node',
 				name: 'notice',
 				type: 'notice',
 				default: '',

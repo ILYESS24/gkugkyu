@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import { ApplicationError } from '@n8n/errors';
 import type {
 	IDataObject,
@@ -7,7 +7,7 @@ import type {
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function venafiApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions,

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IBinaryKeyData,
 	IDataObject,
 	IExecuteFunctions,
@@ -8,7 +8,7 @@ import type {
 	IPairedItemData,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 interface IAttachment {
 	url: string;

@@ -1,7 +1,7 @@
-import { Logger } from '@n8n/backend-common';
-import type { EventDestinations } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { MessageEventBusDestinationTypeNames } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import type { EventDestinations } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { MessageEventBusDestinationTypeNames } from 'workflow-automation-workflow';
 
 import { MessageEventBusDestinationSentry } from './message-event-bus-destination-sentry.ee';
 import { MessageEventBusDestinationSyslog } from './message-event-bus-destination-syslog.ee';

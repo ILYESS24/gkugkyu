@@ -1,4 +1,4 @@
-import { renderComponent } from '@/__tests__/render';
+﻿import { renderComponent } from '@/__tests__/render';
 import { fireEvent, waitFor, within } from '@testing-library/vue';
 import { mockedStore } from '@/__tests__/utils';
 import LogsPanel from '@/features/execution/logs/components/LogsPanel.vue';
@@ -20,7 +20,7 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { IN_PROGRESS_EXECUTION_ID, WorkflowStateKey } from '@/app/constants';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
-import { deepCopy } from 'n8n-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 import { createTestTaskData } from '@/__tests__/mocks';
 import { useLogsStore } from '@/app/stores/logs.store';
 import { useUIStore } from '@/app/stores/ui.store';

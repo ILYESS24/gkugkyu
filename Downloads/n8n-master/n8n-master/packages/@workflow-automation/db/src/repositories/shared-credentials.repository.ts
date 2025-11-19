@@ -1,5 +1,5 @@
-import { Service } from '@n8n/di';
-import type { CredentialSharingRole } from '@n8n/permissions';
+﻿import { Service } from '@workflow-automation/di';
+import type { CredentialSharingRole } from '@workflow-automation/permissions';
 import type { EntityManager, FindOptionsWhere } from '@n8n/typeorm';
 import { DataSource, In, Not, Repository } from '@n8n/typeorm';
 

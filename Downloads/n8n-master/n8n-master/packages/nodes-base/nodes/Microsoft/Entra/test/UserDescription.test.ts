@@ -1,5 +1,5 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import { NodeConnectionTypes, type WorkflowTestData } from 'n8n-workflow';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+import { NodeConnectionTypes, type WorkflowTestData } from 'workflow-automation-workflow';
 
 import { microsoftEntraApiResponse, microsoftEntraNodeResponse } from './mocks';
 
@@ -17,7 +17,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -52,7 +52,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -95,7 +95,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -166,7 +166,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -271,7 +271,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -302,7 +302,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -341,7 +341,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -372,7 +372,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -411,7 +411,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -519,7 +519,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -571,7 +571,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -599,7 +599,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -652,7 +652,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -680,7 +680,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -724,7 +724,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -819,7 +819,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -885,7 +885,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -920,7 +920,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{
@@ -959,7 +959,7 @@ describe('Microsoft Entra Node', () => {
 							{
 								parameters: {},
 								id: '416e4fc1-5055-4e61-854e-a6265256ac26',
-								name: 'When clicking ‘Execute workflow’',
+								name: 'When clicking â€˜Execute workflowâ€™',
 								type: 'n8n-nodes-base.manualTrigger',
 								position: [820, 380],
 								typeVersion: 1,
@@ -1037,7 +1037,7 @@ describe('Microsoft Entra Node', () => {
 							},
 						],
 						connections: {
-							'When clicking ‘Execute workflow’': {
+							'When clicking â€˜Execute workflowâ€™': {
 								main: [
 									[
 										{

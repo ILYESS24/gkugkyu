@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
@@ -6,8 +6,8 @@ import type {
 	INodeExecutionData,
 	JsonObject,
 	ResourceMapperValue,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeApiError, NodeOperationError } from 'workflow-automation-workflow';
 
 import type { IErrorResponse } from './interfaces';
 import { microsoftSharePointApiRequest } from '../transport';

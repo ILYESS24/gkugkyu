@@ -1,10 +1,10 @@
-import { createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
-import { ExecutionRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createWorkflow, testDb, mockInstance } from '@n8n/backend-test-utils';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { stringify } from 'flatted';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
-import { randomInt } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { randomInt } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import { ARTIFICIAL_TASK_DATA } from '@/constants';

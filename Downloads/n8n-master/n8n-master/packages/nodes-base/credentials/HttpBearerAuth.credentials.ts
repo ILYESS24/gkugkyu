@@ -1,4 +1,4 @@
-import type { IAuthenticateGeneric, ICredentialType, INodeProperties, Icon } from 'n8n-workflow';
+﻿import type { IAuthenticateGeneric, ICredentialType, INodeProperties, Icon } from 'workflow-automation-workflow';
 
 // eslint-disable-next-line n8n-nodes-base/cred-class-name-unsuffixed
 export class HttpBearerAuth implements ICredentialType {

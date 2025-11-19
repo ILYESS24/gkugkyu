@@ -1,5 +1,5 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
-import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'n8n-workflow';
+﻿import { NodeConnectionTypes } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 import * as agent from './actions/agent/Agent.resource';
 import * as extraction from './actions/extraction/Extraction.resource';

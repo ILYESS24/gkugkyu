@@ -1,11 +1,11 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 
@@ -24,7 +24,7 @@ const properties: INodeProperties[] = [
 		displayName: 'Input Data Field Name',
 		name: 'inputDataFieldName',
 		type: 'string',
-		placeholder: '“e.g. data',
+		placeholder: 'â€œe.g. data',
 		default: 'data',
 		required: true,
 		hint: 'The name of the input field containing the binary file data to update the file',

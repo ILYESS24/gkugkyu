@@ -1,17 +1,17 @@
-import type { RunningJobSummary } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { ExecutionsConfig } from '@n8n/config';
-import { ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { WorkflowHasIssuesError, InstanceSettings, WorkflowExecute } from 'n8n-core';
+﻿import type { RunningJobSummary } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import { ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { WorkflowHasIssuesError, InstanceSettings, WorkflowExecute } from 'workflow-automation-core';
 import type {
 	ExecutionStatus,
 	IExecuteResponsePromiseData,
 	IRun,
 	IWorkflowExecutionDataProcess,
 	StructuredChunk,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, Workflow, UnexpectedError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, Workflow, UnexpectedError } from 'workflow-automation-workflow';
 import type PCancelable from 'p-cancelable';
 
 import type {

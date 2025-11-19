@@ -1,9 +1,9 @@
-import { GlobalConfig, TaskRunnersConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { GlobalConfig, TaskRunnersConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import type { TaskResultData, RequesterMessage, BrokerMessage, TaskData } from '@n8n/task-runner';
 import { AVAILABLE_RPC_METHODS } from '@n8n/task-runner';
-import { isSerializedBuffer, toBuffer, ErrorReporter } from 'n8n-core';
-import { createResultOk, createResultError } from 'n8n-workflow';
+import { isSerializedBuffer, toBuffer, ErrorReporter } from 'workflow-automation-core';
+import { createResultOk, createResultError } from 'workflow-automation-workflow';
 import type {
 	EnvProviderState,
 	IExecuteFunctions,
@@ -18,7 +18,7 @@ import type {
 	IDataObject,
 	IWorkflowExecuteAdditionalData,
 	Result,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import { EventService } from '@/events/event.service';

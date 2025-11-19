@@ -1,5 +1,5 @@
-import { createTestingPinia } from '@pinia/testing';
-import type { FrontendSettings, N8nEnvFeatFlags, N8nEnvFeatFlagValue } from '@n8n/api-types';
+﻿import { createTestingPinia } from '@pinia/testing';
+import type { FrontendSettings, N8nEnvFeatFlags, N8nEnvFeatFlagValue } from '@workflow-automation/api-types';
 import { createComponentRenderer } from '@/__tests__/render';
 import { mockedStore, type MockedStore } from '@/__tests__/utils';
 import EnvFeatureFlag from './EnvFeatureFlag.vue';

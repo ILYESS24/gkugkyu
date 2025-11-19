@@ -1,8 +1,8 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import RunDataTable from '@/features/ndv/runData/components/RunDataTable.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { cleanup, fireEvent, waitFor, within } from '@testing-library/vue';
-import type { INodeExecutionData } from 'n8n-workflow';
+import type { INodeExecutionData } from 'workflow-automation-workflow';
 import { nextTick } from 'vue';
 
 vi.mock('vue-router', () => {

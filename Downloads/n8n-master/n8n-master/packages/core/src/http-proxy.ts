@@ -1,8 +1,8 @@
-import http from 'http';
+﻿import http from 'http';
 import { HttpProxyAgent } from 'http-proxy-agent';
 import https from 'https';
 import { HttpsProxyAgent } from 'https-proxy-agent';
-import { LoggerProxy } from 'n8n-workflow';
+import { LoggerProxy } from 'workflow-automation-workflow';
 import proxyFromEnv from 'proxy-from-env';
 
 type ProxyRequestParameters = Parameters<HttpProxyAgent<string>['addRequest']>;

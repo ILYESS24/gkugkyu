@@ -1,4 +1,4 @@
-import { createTestNode, createTestNodeProperties } from '@/__tests__/mocks';
+﻿import { createTestNode, createTestNodeProperties } from '@/__tests__/mocks';
 import { createComponentRenderer, type RenderOptions } from '@/__tests__/render';
 import { SETTINGS_STORE_DEFAULT_STATE } from '@/__tests__/utils';
 import * as workFlowHelpers from '@/app/composables/useWorkflowHelpers';
@@ -8,7 +8,7 @@ import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { cleanup, waitFor, within } from '@testing-library/vue';
 import get from 'lodash/get';
-import type { FilterOptionsValue, FilterTypeOptions, FilterValue } from 'n8n-workflow';
+import type { FilterOptionsValue, FilterTypeOptions, FilterValue } from 'workflow-automation-workflow';
 import FilterConditions from './FilterConditions.vue';
 import { getFilterOperator } from './utils';
 

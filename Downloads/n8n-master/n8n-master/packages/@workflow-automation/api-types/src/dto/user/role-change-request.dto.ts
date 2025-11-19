@@ -1,4 +1,4 @@
-import { assignableGlobalRoleSchema } from '@n8n/permissions';
+﻿import { assignableGlobalRoleSchema } from '@workflow-automation/permissions';
 import { Z } from 'zod-class';
 
 export class RoleChangeRequestDto extends Z.class({

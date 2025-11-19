@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
 import { useToast } from '@/app/composables/useToast';
 import Modal from '@/app/components/Modal.vue';
@@ -7,7 +7,7 @@ import type { IInviteResponse, InvitableRoleName } from '../users.types';
 import type { IUser } from '@n8n/rest-api-client/api/users';
 import { EnterpriseEditionFeature, VALID_EMAIL_REGEX } from '@/app/constants';
 import { INVITE_USER_MODAL_KEY } from '../users.constants';
-import { ROLE } from '@n8n/api-types';
+import { ROLE } from '@workflow-automation/api-types';
 import { useUsersStore } from '../users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { createFormEventBus } from '@n8n/design-system/utils';

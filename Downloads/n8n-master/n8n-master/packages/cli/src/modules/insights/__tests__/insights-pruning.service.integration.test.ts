@@ -1,4 +1,4 @@
-import type { LicenseState } from '@n8n/backend-common';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
 import {
 	mockLogger,
 	createTeamProject,
@@ -6,7 +6,7 @@ import {
 	testDb,
 	testModules,
 } from '@n8n/backend-test-utils';
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
 

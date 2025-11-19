@@ -1,4 +1,4 @@
-import { snakeCase } from 'change-case';
+﻿import { snakeCase } from 'change-case';
 import { createHmac } from 'crypto';
 import type {
 	IDataObject,
@@ -10,8 +10,8 @@ import type {
 	IWebhookFunctions,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { facebookApiRequest, getAllFields, getFields } from './GenericFunctions';

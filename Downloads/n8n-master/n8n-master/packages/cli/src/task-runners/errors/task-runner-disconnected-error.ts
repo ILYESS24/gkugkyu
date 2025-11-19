@@ -1,5 +1,5 @@
-import type { TaskRunner } from '@n8n/task-runner';
-import { UnexpectedError } from 'n8n-workflow';
+﻿import type { TaskRunner } from '@n8n/task-runner';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 export class TaskRunnerDisconnectedError extends UnexpectedError {
 	description: string;

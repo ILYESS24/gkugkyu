@@ -1,4 +1,4 @@
-import type { Request } from 'aws4';
+﻿import type { Request } from 'aws4';
 import { sign } from 'aws4';
 import type {
 	ICredentialDataDecryptedObject,
@@ -11,8 +11,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import { URL } from 'url';
 import { parseString } from 'xml2js';
 import { getAwsCredentials } from '../GenericFunctions';
@@ -62,7 +62,7 @@ export async function awsApiRequest(
 			if (errorMessage.includes('AccessDeniedException')) {
 				const user = JSON.parse(errorMessage as string).Message.split(' ')[1];
 				throw new NodeApiError(this.getNode(), error as JsonObject, {
-					message: 'Unauthorized — please check your AWS policy configuration',
+					message: 'Unauthorized â€” please check your AWS policy configuration',
 					description: `Make sure an identity-based policy allows user ${user} to perform textract:AnalyzeExpense`,
 				});
 			}

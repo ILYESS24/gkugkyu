@@ -1,6 +1,6 @@
-import { AuthenticatedRequest } from '@n8n/db';
-import { Get, GlobalScope, Patch, RestController } from '@n8n/decorators';
-import { LicenseState } from '@n8n/backend-common';
+﻿import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Get, GlobalScope, Patch, RestController } from '@workflow-automation/decorators';
+import { LicenseState } from '@workflow-automation/backend-common';
 import { ProvisioningService } from './provisioning.service.ee';
 import { Response } from 'express';
 

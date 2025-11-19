@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	INode,
 	ITriggerResponse,
@@ -8,8 +8,8 @@ import type {
 	WorkflowExecuteMode,
 	TriggerTime,
 	CronExpression,
-} from 'n8n-workflow';
-import { LoggerProxy, TriggerCloseError, WorkflowActivationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { LoggerProxy, TriggerCloseError, WorkflowActivationError } from 'workflow-automation-workflow';
 
 import type { ErrorReporter } from '@/errors/error-reporter';
 

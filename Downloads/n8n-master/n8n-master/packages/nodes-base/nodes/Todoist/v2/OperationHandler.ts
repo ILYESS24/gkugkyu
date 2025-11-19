@@ -1,10 +1,10 @@
-import type { IDataObject, INode } from 'n8n-workflow';
+﻿import type { IDataObject, INode } from 'workflow-automation-workflow';
 import {
 	assertParamIsString,
 	assertParamIsNumber,
 	assertParamIsOfAnyTypes,
 	validateNodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import type { TodoistResponse } from './Service';

@@ -1,4 +1,4 @@
-import { useDataSchema } from '@/app/composables/useDataSchema';
+﻿import { useDataSchema } from '@/app/composables/useDataSchema';
 import { useDebounce } from '@/app/composables/useDebounce';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { autocompletableNodeNames } from '@/features/shared/editors/plugins/codemirror/completions/utils';
@@ -13,7 +13,7 @@ import { LanguageSupport } from '@codemirror/language';
 import { Text, type Extension } from '@codemirror/state';
 import { EditorView, hoverTooltip } from '@codemirror/view';
 import * as Comlink from 'comlink';
-import { NodeConnectionTypes, type CodeExecutionMode, type INodeExecutionData } from 'n8n-workflow';
+import { NodeConnectionTypes, type CodeExecutionMode, type INodeExecutionData } from 'workflow-automation-workflow';
 import { onBeforeUnmount, ref, toRef, toValue, watch, type MaybeRefOrGetter } from 'vue';
 import type { LanguageServiceWorker, RemoteLanguageServiceWorkerInit } from '../types';
 import { typescriptCompletionSource } from './completions';

@@ -1,11 +1,11 @@
-import {
+﻿import {
 	dataTableColumnNameSchema,
 	DATA_TABLE_COLUMN_ERROR_MESSAGE,
 	type DataTableCreateColumnSchema,
-} from '@n8n/api-types';
-import { GlobalConfig } from '@n8n/config';
-import { DslColumn } from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { GlobalConfig } from '@workflow-automation/config';
+import { DslColumn } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { DataSourceOptions } from '@n8n/typeorm';
 import type {
 	DataTableColumnJsType,
@@ -13,8 +13,8 @@ import type {
 	DataTableRawRowsReturn,
 	DataTableRowReturn,
 	DataTableRowsReturn,
-} from 'n8n-workflow';
-import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, UnexpectedError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP, UnexpectedError } from 'workflow-automation-workflow';
 
 import type { DataTableColumn } from '../data-table-column.entity';
 import type { DataTableUserTableName } from '../data-table.types';

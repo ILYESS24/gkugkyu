@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
@@ -6,8 +6,8 @@ import type {
 	INodePropertyOptions,
 	INode,
 	ResourceMapperField,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import type { GoogleSheet } from './GoogleSheet';
 import type {

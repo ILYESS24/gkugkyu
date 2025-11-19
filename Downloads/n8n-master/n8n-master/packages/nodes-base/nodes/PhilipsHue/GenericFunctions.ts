@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	JsonObject,
 	IDataObject,
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function philipsHueApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

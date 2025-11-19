@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type INodeListSearchItems,
 	type ILoadOptionsFunctions,
 	type INodeListSearchResult,
@@ -11,7 +11,7 @@ import {
 	type IWebhookResponseData,
 	type IBinaryKeyData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { downloadFile, getChannelInfo, getUserInfo, verifySignature } from './SlackTriggerHelpers';
 import { slackApiRequestAllItems } from './V2/GenericFunctions';

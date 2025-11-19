@@ -1,5 +1,5 @@
-import type { TestCaseExecutionRepository, TestRun, TestRunRepository, User } from '@n8n/db';
-import type { InstanceSettings } from 'n8n-core';
+﻿import type { TestCaseExecutionRepository, TestRun, TestRunRepository, User } from '@workflow-automation/db';
+import type { InstanceSettings } from 'workflow-automation-core';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';
 import type { TestRunnerService } from '@/evaluation.ee/test-runner/test-runner.service.ee';

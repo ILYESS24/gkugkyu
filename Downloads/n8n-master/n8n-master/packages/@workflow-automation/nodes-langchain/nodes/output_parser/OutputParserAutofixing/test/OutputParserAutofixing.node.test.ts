@@ -1,16 +1,16 @@
-/* eslint-disable @typescript-eslint/unbound-method */
+﻿/* eslint-disable @typescript-eslint/unbound-method */
 
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { OutputParserException } from '@langchain/core/output_parsers';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { normalizeItems } from 'n8n-core';
+import { normalizeItems } from 'workflow-automation-core';
 import type {
 	ISupplyDataFunctions,
 	IWorkflowDataProxyData,
 	NodeConnectionType,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import type {
 	N8nOutputFixingParser,

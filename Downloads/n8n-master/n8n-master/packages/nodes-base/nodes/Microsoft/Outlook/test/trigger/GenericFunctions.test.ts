@@ -1,6 +1,6 @@
-import { mockDeep } from 'jest-mock-extended';
-import type { IDataObject, INode, IPollFunctions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import type { IDataObject, INode, IPollFunctions } from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 import { getPollResponse } from '../../trigger/GenericFunctions';
 
 jest.mock('../../v2/helpers/utils', () => ({

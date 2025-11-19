@@ -1,6 +1,6 @@
-import { DataTableFilter, ListDataTableContentQueryDto } from '@n8n/api-types';
-import { withTransaction } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { DataTableFilter, ListDataTableContentQueryDto } from '@workflow-automation/api-types';
+import { withTransaction } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import {
 	DataSource,
 	DataSourceOptions,
@@ -22,7 +22,7 @@ import {
 	DataTableInsertRowsResult,
 	DataTableRowReturnWithState,
 	DataTableRawRowReturn,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DataTableColumn } from './data-table-column.entity';
 import { DataTableUserTableName } from './data-table.types';

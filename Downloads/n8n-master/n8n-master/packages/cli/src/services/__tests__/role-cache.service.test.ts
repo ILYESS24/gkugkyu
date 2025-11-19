@@ -1,8 +1,8 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { RoleRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { staticRolesWithScope } from '@n8n/permissions';
+import { RoleRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { staticRolesWithScope } from '@workflow-automation/permissions';
 import { mock } from 'jest-mock-extended';
 
 import type { CacheService } from '@/services/cache/cache.service';

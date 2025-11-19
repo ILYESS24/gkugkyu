@@ -1,6 +1,6 @@
-import { CreateRoleDto, RoleGetQueryDto, RoleListQueryDto, UpdateRoleDto } from '@n8n/api-types';
-import { LICENSE_FEATURES } from '@n8n/constants';
-import { AuthenticatedRequest } from '@n8n/db';
+﻿import { CreateRoleDto, RoleGetQueryDto, RoleListQueryDto, UpdateRoleDto } from '@workflow-automation/api-types';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
+import { AuthenticatedRequest } from '@workflow-automation/db';
 import {
 	Body,
 	Delete,
@@ -12,8 +12,8 @@ import {
 	Post,
 	Query,
 	RestController,
-} from '@n8n/decorators';
-import { Role as RoleDTO } from '@n8n/permissions';
+} from '@workflow-automation/decorators';
+import { Role as RoleDTO } from '@workflow-automation/permissions';
 
 import { RoleService } from '@/services/role.service';
 

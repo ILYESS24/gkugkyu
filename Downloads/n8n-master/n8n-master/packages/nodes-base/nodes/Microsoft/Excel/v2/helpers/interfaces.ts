@@ -1,4 +1,4 @@
-import type { IDataObject } from 'n8n-workflow';
+﻿import type { IDataObject } from 'workflow-automation-workflow';
 
 export type SheetRow = Array<string | number | null>;
 export type SheetData = SheetRow[];

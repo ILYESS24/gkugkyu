@@ -1,6 +1,6 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import { MongoClient } from 'mongodb';
-import type { ILoadOptionsFunctions, ISupplyDataFunctions } from 'n8n-workflow';
+import type { ILoadOptionsFunctions, ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import {
 	EMBEDDING_NAME,

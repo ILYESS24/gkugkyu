@@ -1,11 +1,11 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // PD denotes that the node has pinned data
 
@@ -17,8 +17,8 @@ import type {
 	IWaitingForExecutionSource,
 	IPinData,
 	IRunData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { createNodeData, toITaskData } from './helpers';
 import { DirectedGraph } from '../directed-graph';
@@ -30,10 +30,10 @@ import {
 } from '../recreate-node-execution-stack';
 
 describe('recreateNodeExecutionStack', () => {
-	//                   ►►
-	//  ┌───────┐1      ┌────┐
-	//  │Trigger├──────►│Node│
-	//  └───────┘       └────┘
+	//                   â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1      â”Œâ”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºâ”‚Nodeâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”˜
 	test('all nodes except destination node have data', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -77,10 +77,10 @@ describe('recreateNodeExecutionStack', () => {
 		expect(waitingExecutionSource).toEqual({});
 	});
 
-	//                   ►►
-	//  ┌───────┐0      ┌────┐
-	//  │Trigger├──────►│Node│
-	//  └───────┘       └────┘
+	//                   â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”0      â”Œâ”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºâ”‚Nodeâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”˜
 	test('no nodes have data', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -111,10 +111,10 @@ describe('recreateNodeExecutionStack', () => {
 		expect(waitingExecutionSource).toEqual({});
 	});
 
-	//  PinData          ►►
-	//  ┌───────┐1      ┌────┐
-	//  │Trigger├──────►│Node│
-	//  └───────┘       └────┘
+	//  PinData          â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1      â”Œâ”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºâ”‚Nodeâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”˜
 	test('node before destination node has pinned data', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -157,10 +157,10 @@ describe('recreateNodeExecutionStack', () => {
 		expect(waitingExecutionSource).toEqual({});
 	});
 
-	//                  XX            ►►
-	//  ┌───────┐1     ┌─────┐       ┌─────┐
-	//  │Trigger├─────►│Node1├──────►│Node2│
-	//  └───────┘      └─────┘       └─────┘
+	//                  XX            â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”       â”Œâ”€â”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”€â”€â”€â–ºâ”‚Node1â”œâ”€â”€â”€â”€â”€â”€â–ºâ”‚Node2â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”€â”˜
 	test('throws if a disabled node is found', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -183,14 +183,14 @@ describe('recreateNodeExecutionStack', () => {
 		);
 	});
 
-	//                                ►►
-	//  ┌───────┐1     ┌─────┐1      ┌─────┐
-	//  │Trigger├──┬──►│Node1├──┬───►│Node3│
-	//  └───────┘  │   └─────┘  │    └─────┘
-	//             │            │
-	//             │   ┌─────┐1 │
-	//             └──►│Node2├──┘
-	//                 └─────┘
+	//                                â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”1      â”Œâ”€â”€â”€â”€â”€â”
+	//  â”‚Triggerâ”œâ”€â”€â”¬â”€â”€â–ºâ”‚Node1â”œâ”€â”€â”¬â”€â”€â”€â–ºâ”‚Node3â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚   â””â”€â”€â”€â”€â”€â”˜  â”‚    â””â”€â”€â”€â”€â”€â”˜
+	//             â”‚            â”‚
+	//             â”‚   â”Œâ”€â”€â”€â”€â”€â”1 â”‚
+	//             â””â”€â”€â–ºâ”‚Node2â”œâ”€â”€â”˜
+	//                 â””â”€â”€â”€â”€â”€â”˜
 	test('multiple incoming connections', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -256,13 +256,13 @@ describe('recreateNodeExecutionStack', () => {
 		expect(waitingExecutionSource).toEqual({});
 	});
 
-	//                ┌─────┐1       ►►
-	//             ┌─►│node1├───┐   ┌─────┐
-	//  ┌───────┐1 │  └─────┘   └──►│     │
-	//  │Trigger├──┤                │node3│
-	//  └───────┘  │  ┌─────┐1  ┌──►│     │
-	//             └─►│node2├───┘   └─────┘
-	//                └─────┘
+	//                â”Œâ”€â”€â”€â”€â”€â”1       â–ºâ–º
+	//             â”Œâ”€â–ºâ”‚node1â”œâ”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1 â”‚  â””â”€â”€â”€â”€â”€â”˜   â””â”€â”€â–ºâ”‚     â”‚
+	//  â”‚Triggerâ”œâ”€â”€â”¤                â”‚node3â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚  â”Œâ”€â”€â”€â”€â”€â”1  â”Œâ”€â”€â–ºâ”‚     â”‚
+	//             â””â”€â–ºâ”‚node2â”œâ”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”˜
+	//                â””â”€â”€â”€â”€â”€â”˜
 	test('multiple inputs', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -308,15 +308,15 @@ describe('recreateNodeExecutionStack', () => {
 		expect(waitingExecutionSource).toEqual({});
 	});
 
-	//               ┌─────┐           ┌─────┐
-	//            ┌──►node1┼────┬──────►     │
-	//            │  └─────┘    │      │merge│
-	//            │             │  ┌───►     │
-	//            ├─────────────┘  │   └─────┘
-	//            │                │
-	//┌───────┐   │    ┌─────┐     │
-	//│trigger├───┴────►node2├─────┘
-	//└───────┘        └─────┘
+	//               â”Œâ”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”
+	//            â”Œâ”€â”€â–ºnode1â”¼â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â–º     â”‚
+	//            â”‚  â””â”€â”€â”€â”€â”€â”˜    â”‚      â”‚mergeâ”‚
+	//            â”‚             â”‚  â”Œâ”€â”€â”€â–º     â”‚
+	//            â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚   â””â”€â”€â”€â”€â”€â”˜
+	//            â”‚                â”‚
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”   â”‚    â”Œâ”€â”€â”€â”€â”€â”     â”‚
+	//â”‚triggerâ”œâ”€â”€â”€â”´â”€â”€â”€â”€â–ºnode2â”œâ”€â”€â”€â”€â”€â”˜
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”˜
 	describe('multiple inputs', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });

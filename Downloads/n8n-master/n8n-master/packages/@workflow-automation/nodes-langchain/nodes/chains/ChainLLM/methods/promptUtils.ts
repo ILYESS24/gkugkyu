@@ -1,4 +1,4 @@
-import { HumanMessage } from '@langchain/core/messages';
+﻿import { HumanMessage } from '@langchain/core/messages';
 import type { BaseMessagePromptTemplateLike } from '@langchain/core/prompts';
 import {
 	AIMessagePromptTemplate,
@@ -7,8 +7,8 @@ import {
 	HumanMessagePromptTemplate,
 	ChatPromptTemplate,
 } from '@langchain/core/prompts';
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { OperationalError } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'workflow-automation-workflow';
+import { OperationalError } from 'workflow-automation-workflow';
 
 import { isChatInstance } from '@utils/helpers';
 

@@ -1,12 +1,12 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, ref, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { PLACEHOLDER_EMPTY_WORKFLOW_ID, WORKFLOW_SETTINGS_MODAL_KEY } from '@/app/constants';
-import type { IWorkflowSettings } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import type { IWorkflowSettings } from 'workflow-automation-workflow';
+import { deepCopy } from 'workflow-automation-workflow';
 import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { useI18n } from '@n8n/i18n';
 import { useWorkflowSaving } from '@/app/composables/useWorkflowSaving';

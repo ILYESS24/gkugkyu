@@ -1,9 +1,9 @@
-import {
+﻿import {
 	NodeApiError,
 	NodeOperationError,
 	type IExecuteFunctions,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getCustomErrorMessage } from '../../helpers/error-handling';
 import type { OpenAiType } from './node.type';

@@ -1,6 +1,6 @@
-import type { TableForeignKeyOptions, TableIndexOptions, QueryRunner } from '@n8n/typeorm';
+﻿import type { TableForeignKeyOptions, TableIndexOptions, QueryRunner } from '@n8n/typeorm';
 import { Table, TableColumn, TableForeignKey, TableUnique } from '@n8n/typeorm';
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 import LazyPromise from 'p-lazy';
 
 import { Column } from './column';

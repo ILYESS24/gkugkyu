@@ -1,8 +1,8 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import TimeAgo from '@/app/components/TimeAgo.vue';
 import ResourceFiltersDropdown from '@/app/components/forms/ResourceFiltersDropdown.vue';
 import { VIEWS } from '@/app/constants';
-import type { BreakingChangeWorkflowRuleResult } from '@n8n/api-types';
+import type { BreakingChangeWorkflowRuleResult } from '@workflow-automation/api-types';
 import {
 	N8nDataTableServer,
 	N8nIcon,

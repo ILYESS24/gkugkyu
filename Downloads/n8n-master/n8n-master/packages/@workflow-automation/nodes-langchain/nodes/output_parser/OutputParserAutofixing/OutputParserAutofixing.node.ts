@@ -1,12 +1,12 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { PromptTemplate } from '@langchain/core/prompts';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type {
 	ISupplyDataFunctions,
 	INodeType,
 	INodeTypeDescription,
 	SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	N8nOutputFixingParser,

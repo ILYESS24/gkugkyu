@@ -1,9 +1,9 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { JsonToSpreadsheetBinaryOptions, JsonToSpreadsheetBinaryFormat } from '@utils/binary';
 import { convertJsonToSpreadsheetBinary } from '@utils/binary';

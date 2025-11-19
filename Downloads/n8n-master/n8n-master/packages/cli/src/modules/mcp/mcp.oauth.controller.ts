@@ -1,9 +1,9 @@
-import { authorizationHandler } from '@modelcontextprotocol/sdk/server/auth/handlers/authorize.js';
+﻿import { authorizationHandler } from '@modelcontextprotocol/sdk/server/auth/handlers/authorize.js';
 import { clientRegistrationHandler } from '@modelcontextprotocol/sdk/server/auth/handlers/register.js';
 import { revocationHandler } from '@modelcontextprotocol/sdk/server/auth/handlers/revoke.js';
 import { tokenHandler } from '@modelcontextprotocol/sdk/server/auth/handlers/token.js';
-import { Get, Options, RootLevelController, StaticRouterMetadata } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+import { Get, Options, RootLevelController, StaticRouterMetadata } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import type { Response, Request, Router } from 'express';
 
 import { UrlService } from '@/services/url.service';

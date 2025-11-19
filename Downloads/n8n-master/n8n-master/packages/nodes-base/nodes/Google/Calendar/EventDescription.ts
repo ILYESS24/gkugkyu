@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { TIMEZONE_VALIDATION_REGEX } from './GenericFunctions';
 
@@ -81,14 +81,14 @@ export const eventFields: INodeProperties[] = [
 						properties: {
 							// calendar ids are emails. W3C email regex with optional trailing whitespace.
 							regex:
-								'(^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*(?:[ \t]+)*$)',
+								'(^[a-zA-Z0-9.!#$%&â€™*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*(?:[ \t]+)*$)',
 							errorMessage: 'Not a valid Google Calendar ID',
 						},
 					},
 				],
 				extractValue: {
 					type: 'regex',
-					regex: '(^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*)',
+					regex: '(^[a-zA-Z0-9.!#$%&â€™*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*)',
 				},
 				placeholder: 'name@google.com',
 			},

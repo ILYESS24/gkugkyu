@@ -1,12 +1,12 @@
-import { setActivePinia } from 'pinia';
+﻿import { setActivePinia } from 'pinia';
 import type {
 	ExecutionStatus,
 	IRunData,
 	INode,
 	INodeTypeDescription,
 	Workflow,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeHelpers } from 'workflow-automation-workflow';
 import { createTestingPinia } from '@pinia/testing';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { createTestNode, createMockEnterpriseSettings } from '@/__tests__/mocks';

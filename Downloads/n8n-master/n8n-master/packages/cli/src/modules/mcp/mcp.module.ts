@@ -1,6 +1,6 @@
-import type { ModuleInterface } from '@n8n/decorators';
-import { BackendModule, OnShutdown } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import type { ModuleInterface } from '@workflow-automation/decorators';
+import { BackendModule, OnShutdown } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 
 /**
  * Handles instance-level MCP access.

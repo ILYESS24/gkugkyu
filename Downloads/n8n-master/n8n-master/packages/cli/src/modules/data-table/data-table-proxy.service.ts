@@ -1,6 +1,6 @@
-import type { DataTableListOptions } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { Service } from '@n8n/di';
+﻿import type { DataTableListOptions } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { Service } from '@workflow-automation/di';
 import {
 	AddDataTableColumnOptions,
 	CreateDataTableOptions,
@@ -20,7 +20,7 @@ import {
 	UpdateDataTableRowOptions,
 	UpsertDataTableRowOptions,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DataTableService } from './data-table.service';
 

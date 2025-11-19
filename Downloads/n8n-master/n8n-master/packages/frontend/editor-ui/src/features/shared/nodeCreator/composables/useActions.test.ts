@@ -1,4 +1,4 @@
-import { setActivePinia } from 'pinia';
+﻿import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
@@ -17,7 +17,7 @@ import {
 	TRIGGER_NODE_CREATOR_VIEW,
 	WEBHOOK_NODE_TYPE,
 } from '@/app/constants';
-import { CHAT_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+import { CHAT_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
 
 describe('useActions', () => {
 	beforeAll(() => {

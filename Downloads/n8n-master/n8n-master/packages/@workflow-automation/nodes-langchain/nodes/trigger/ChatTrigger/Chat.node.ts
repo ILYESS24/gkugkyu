@@ -1,11 +1,11 @@
-/* eslint-disable n8n-nodes-base/node-dirname-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-dirname-against-convention */
 import type { BaseChatMemory } from 'langchain/memory';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
 	CHAT_WAIT_USER_REPLY,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -14,7 +14,7 @@ import type {
 	INodeProperties,
 	NodeTypeAndVersion,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { configureInputs, configureWaitTillDate } from './util';
 

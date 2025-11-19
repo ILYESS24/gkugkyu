@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, ILoadOptionsFunctions, INodeListSearchItems } from 'n8n-workflow';
+﻿import type { IExecuteFunctions, ILoadOptionsFunctions, INodeListSearchItems } from 'workflow-automation-workflow';
 
 export function prepareMessage(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

@@ -1,4 +1,4 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { AgentExecutor, ChatAgent, ZeroShotAgent } from 'langchain/agents';
@@ -7,7 +7,7 @@ import {
 	type INodeExecutionData,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectedTools, getPromptInputByType, isChatInstance } from '@utils/helpers';
 import { getOptionalOutputParser } from '@utils/output_parsers/N8nOutputParser';
@@ -92,7 +92,7 @@ export async function reActAgentAgentExecute(
 			}
 
 			if (input === undefined) {
-				throw new NodeOperationError(this.getNode(), 'The ‘text‘ parameter is empty.');
+				throw new NodeOperationError(this.getNode(), 'The â€˜textâ€˜ parameter is empty.');
 			}
 
 			if (prompt) {

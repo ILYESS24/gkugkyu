@@ -1,7 +1,7 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import type { ValueTransformer, FindOperator } from '@n8n/typeorm';
-import { jsonParse } from 'n8n-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 
 export const idStringifier = {
 	from: (value?: number): string | undefined => value?.toString(),

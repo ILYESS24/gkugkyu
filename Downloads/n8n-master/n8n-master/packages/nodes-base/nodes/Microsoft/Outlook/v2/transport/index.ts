@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IDataObject,
@@ -7,7 +7,7 @@ import type {
 	ILoadOptionsFunctions,
 	INodeExecutionData,
 	IPollFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { prepareApiError } from '../helpers/utils';
 

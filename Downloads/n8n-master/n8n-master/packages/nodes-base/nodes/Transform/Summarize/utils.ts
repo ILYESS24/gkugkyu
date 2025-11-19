@@ -1,10 +1,10 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import {
 	type GenericValue,
 	type IDataObject,
 	type IExecuteFunctions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 type AggregationType =
 	| 'append'

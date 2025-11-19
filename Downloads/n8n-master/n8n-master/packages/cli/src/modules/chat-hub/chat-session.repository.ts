@@ -1,5 +1,5 @@
-import { withTransaction } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { withTransaction } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { DataSource, EntityManager, Repository } from '@n8n/typeorm';
 
 import { ChatHubSession } from './chat-hub-session.entity';

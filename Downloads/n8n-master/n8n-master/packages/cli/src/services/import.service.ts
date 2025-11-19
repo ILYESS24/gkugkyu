@@ -1,5 +1,5 @@
-import { Logger, safeJoinPath } from '@n8n/backend-common';
-import type { TagEntity, ICredentialsDb, IWorkflowDb } from '@n8n/db';
+﻿import { Logger, safeJoinPath } from '@workflow-automation/backend-common';
+import type { TagEntity, ICredentialsDb, IWorkflowDb } from '@workflow-automation/db';
 import {
 	Project,
 	WorkflowEntity,
@@ -7,22 +7,22 @@ import {
 	WorkflowTagMapping,
 	CredentialsRepository,
 	TagRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { DataSource, EntityManager } from '@n8n/typeorm';
-import { Service } from '@n8n/di';
-import { type INode, type INodeCredentialsDetails, type IWorkflowBase } from 'n8n-workflow';
+import { Service } from '@workflow-automation/di';
+import { type INode, type INodeCredentialsDetails, type IWorkflowBase } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 import { readdir, readFile } from 'fs/promises';
 
 import { replaceInvalidCredentials } from '@/workflow-helpers';
 import { validateDbTypeForImportEntities } from '@/utils/validate-database-type';
-import { Cipher } from 'n8n-core';
+import { Cipher } from 'workflow-automation-core';
 import { decompressFolder } from '@/utils/compression.util';
 import { z } from 'zod';
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
 import { WorkflowIndexService } from '@/modules/workflow-index/workflow-index.service';
-import { DatabaseConfig } from '@n8n/config';
+import { DatabaseConfig } from '@workflow-automation/config';
 
 @Service()
 export class ImportService {
@@ -188,12 +188,12 @@ export class ImportService {
 
 		if (nonEmptyTables.length > 0) {
 			this.logger.info(
-				`📊 Found ${nonEmptyTables.length} table(s) with existing data: ${nonEmptyTables.join(', ')}`,
+				`ðŸ“Š Found ${nonEmptyTables.length} table(s) with existing data: ${nonEmptyTables.join(', ')}`,
 			);
 			return false;
 		}
 
-		this.logger.info('✅ All tables are empty');
+		this.logger.info('âœ… All tables are empty');
 		return true;
 	}
 
@@ -203,11 +203,11 @@ export class ImportService {
 	 * @returns Promise that resolves when the table is truncated
 	 */
 	async truncateEntityTable(tableName: string, transactionManager: EntityManager): Promise<void> {
-		this.logger.info(`🗑️  Truncating table: ${tableName}`);
+		this.logger.info(`ðŸ—‘ï¸  Truncating table: ${tableName}`);
 
 		await transactionManager.createQueryBuilder().delete().from(tableName, tableName).execute();
 
-		this.logger.info(`   ✅ Table ${tableName} truncated successfully`);
+		this.logger.info(`   âœ… Table ${tableName} truncated successfully`);
 	}
 
 	/**
@@ -238,7 +238,7 @@ export class ImportService {
 					);
 
 					if (!entityMetadata) {
-						this.logger.warn(`⚠️  No entity metadata found for ${entityName}, skipping...`);
+						this.logger.warn(`âš ï¸  No entity metadata found for ${entityName}, skipping...`);
 						continue;
 					}
 
@@ -306,9 +306,9 @@ export class ImportService {
 			throw new Error(`entities.zip file not found in ${inputDir}.`);
 		}
 
-		this.logger.info(`\n🗜️  Found entities.zip file, decompressing to ${inputDir}...`);
+		this.logger.info(`\nðŸ—œï¸  Found entities.zip file, decompressing to ${inputDir}...`);
 		await decompressFolder(entitiesZipPath, inputDir);
-		this.logger.info('✅ Successfully decompressed entities.zip');
+		this.logger.info('âœ… Successfully decompressed entities.zip');
 	}
 
 	async importEntities(inputDir: string, truncateTables: boolean, keyFilePath?: string) {
@@ -320,7 +320,7 @@ export class ImportService {
 			try {
 				const keyFileContent = await readFile(keyFilePath, 'utf8');
 				customEncryptionKey = keyFileContent.trim();
-				this.logger.info(`🔑 Using custom encryption key from: ${keyFilePath}`);
+				this.logger.info(`ðŸ”‘ Using custom encryption key from: ${keyFilePath}`);
 			} catch (error) {
 				throw new Error(
 					`Failed to read encryption key file at ${keyFilePath}: ${error instanceof Error ? error.message : 'Unknown error'}`,
@@ -340,7 +340,7 @@ export class ImportService {
 			const entityNames = Object.keys(entityFiles);
 
 			if (truncateTables) {
-				this.logger.info('\n🗑️  Truncating tables before import...');
+				this.logger.info('\nðŸ—‘ï¸  Truncating tables before import...');
 
 				this.logger.info(`Found ${tableNames.length} tables to truncate: ${tableNames.join(', ')}`);
 
@@ -350,12 +350,12 @@ export class ImportService {
 					),
 				);
 
-				this.logger.info('✅ All tables truncated successfully');
+				this.logger.info('âœ… All tables truncated successfully');
 			}
 
 			if (!truncateTables && !(await this.areAllEntityTablesEmpty(tableNames))) {
 				this.logger.info(
-					'\n🗑️  Not all tables are empty, skipping import, you can use --truncateTables to truncate tables before import if needed',
+					'\nðŸ—‘ï¸  Not all tables are empty, skipping import, you can use --truncateTables to truncate tables before import if needed',
 				);
 				return;
 			}
@@ -381,7 +381,7 @@ export class ImportService {
 				this.logger.info(`   Removed: ${file}`);
 			}
 		}
-		this.logger.info(`\n🗑️  Cleaned up decompressed files in ${inputDir}`);
+		this.logger.info(`\nðŸ—‘ï¸  Cleaned up decompressed files in ${inputDir}`);
 	}
 
 	/**
@@ -400,39 +400,39 @@ export class ImportService {
 		entityFiles: Record<string, string[]>,
 		customEncryptionKey?: string,
 	): Promise<void> {
-		this.logger.info(`\n🚀 Starting entity import from directory: ${inputDir}`);
+		this.logger.info(`\nðŸš€ Starting entity import from directory: ${inputDir}`);
 
 		if (entityNames.length === 0) {
 			this.logger.warn('No entity files found in input directory');
 			return;
 		}
 
-		this.logger.info(`📋 Found ${entityNames.length} entity types to import:`);
+		this.logger.info(`ðŸ“‹ Found ${entityNames.length} entity types to import:`);
 
 		let totalEntitiesImported = 0;
 
 		await Promise.all(
 			entityNames.map(async (entityName) => {
 				const files = entityFiles[entityName];
-				this.logger.info(`   • ${entityName}: ${files.length} file(s)`);
-				this.logger.info(`\n📊 Importing ${entityName} entities...`);
+				this.logger.info(`   â€¢ ${entityName}: ${files.length} file(s)`);
+				this.logger.info(`\nðŸ“Š Importing ${entityName} entities...`);
 
 				const entityMetadata = this.dataSource.entityMetadatas.find(
 					(meta) => meta.name.toLowerCase() === entityName,
 				);
 
 				if (!entityMetadata) {
-					this.logger.warn(`   ⚠️  No entity metadata found for ${entityName}, skipping...`);
+					this.logger.warn(`   âš ï¸  No entity metadata found for ${entityName}, skipping...`);
 					return;
 				}
 
 				const tableName = this.dataSource.driver.escape(entityMetadata.tableName);
-				this.logger.info(`   📋 Target table: ${tableName}`);
+				this.logger.info(`   ðŸ“‹ Target table: ${tableName}`);
 
 				let entityCount = 0;
 				await Promise.all(
 					files.map(async (filePath) => {
-						this.logger.info(`   📁 Reading file: ${filePath}`);
+						this.logger.info(`   ðŸ“ Reading file: ${filePath}`);
 
 						const entities: Array<Record<string, unknown>> = await this.readEntityFile(
 							filePath,
@@ -460,15 +460,15 @@ export class ImportService {
 					}),
 				);
 
-				this.logger.info(`   ✅ Completed ${entityName}: ${entityCount} entities imported`);
+				this.logger.info(`   âœ… Completed ${entityName}: ${entityCount} entities imported`);
 				totalEntitiesImported += entityCount;
 			}),
 		);
 
-		this.logger.info('\n📊 Import Summary:');
+		this.logger.info('\nðŸ“Š Import Summary:');
 		this.logger.info(`   Total entities imported: ${totalEntitiesImported}`);
 		this.logger.info(`   Entity types processed: ${entityNames.length}`);
-		this.logger.info('✅ Import completed successfully!');
+		this.logger.info('âœ… Import completed successfully!');
 	}
 
 	/**
@@ -502,7 +502,7 @@ export class ImportService {
 
 		this.logger.debug(`Executing: ${disableCommand}`);
 		await transactionManager.query(disableCommand);
-		this.logger.info('✅ Foreign key constraints disabled');
+		this.logger.info('âœ… Foreign key constraints disabled');
 	}
 
 	async enableForeignKeyConstraints(transactionManager: EntityManager) {
@@ -516,7 +516,7 @@ export class ImportService {
 
 		this.logger.debug(`Executing: ${enableCommand}`);
 		await transactionManager.query(enableCommand);
-		this.logger.info('✅ Foreign key constraints re-enabled');
+		this.logger.info('âœ… Foreign key constraints re-enabled');
 	}
 
 	/**
@@ -612,7 +612,7 @@ export class ImportService {
 		}
 
 		this.logger.info(
-			'✅ Migration validation passed - import data matches target database migration state',
+			'âœ… Migration validation passed - import data matches target database migration state',
 		);
 	}
 }

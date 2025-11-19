@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IHookFunctions,
 	IExecuteFunctions,
 	IExecuteSingleFunctions,
@@ -6,7 +6,7 @@ import type {
 	IHttpRequestMethods,
 	IDataObject,
 	IHttpRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export async function githubApiRequest(
 	this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions,

@@ -1,4 +1,4 @@
-import type { ExecutionSummary, RelatedExecution } from 'n8n-workflow';
+﻿import type { ExecutionSummary, RelatedExecution } from 'workflow-automation-workflow';
 import { convertToDisplayDate } from '@/app/utils/formatters/dateFormatter';
 import { useI18n } from '@n8n/i18n';
 import { useRouter } from 'vue-router';

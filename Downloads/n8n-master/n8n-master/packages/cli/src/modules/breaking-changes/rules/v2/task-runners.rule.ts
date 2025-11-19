@@ -1,5 +1,5 @@
-import { TaskRunnersConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { TaskRunnersConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 
 import type {
 	BreakingChangeRuleMetadata,

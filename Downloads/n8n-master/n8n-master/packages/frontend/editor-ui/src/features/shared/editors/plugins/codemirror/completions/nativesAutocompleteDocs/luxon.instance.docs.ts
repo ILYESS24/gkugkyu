@@ -1,4 +1,4 @@
-import type { NativeDoc } from 'n8n-workflow';
+﻿import type { NativeDoc } from 'workflow-automation-workflow';
 import { i18n } from '@n8n/i18n';
 
 // Autocomplete documentation definition for DateTime instance props and methods
@@ -106,7 +106,7 @@ export const luxonInstanceDocs: Required<NativeDoc> = {
 					},
 					{
 						example: "dt = '2024-03-30T18:49:07.234'.toDateTime()\ndt.setLocale('de-DE').monthLong",
-						evaluated: "'März'",
+						evaluated: "'MÃ¤rz'",
 					},
 				],
 			},
@@ -126,7 +126,7 @@ export const luxonInstanceDocs: Required<NativeDoc> = {
 					{
 						example:
 							"dt = '2024-03-30T18:49:07.234'.toDateTime()\ndt.setLocale('de-DE').monthShort",
-						evaluated: "'Mär'",
+						evaluated: "'MÃ¤r'",
 					},
 				],
 			},

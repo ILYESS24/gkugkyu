@@ -1,4 +1,4 @@
-import { PostgresChatMessageHistory } from '@langchain/community/stores/message/postgres';
+﻿import { PostgresChatMessageHistory } from '@langchain/community/stores/message/postgres';
 import { BufferMemory, BufferWindowMemory } from 'langchain/memory';
 import { configurePostgres } from 'n8n-nodes-base/dist/nodes/Postgres/transport/index';
 import type { PostgresNodeCredentials } from 'n8n-nodes-base/dist/nodes/Postgres/v2/helpers/interfaces';
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	SupplyData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type pg from 'pg';
 
 import { getSessionId } from '@utils/helpers';

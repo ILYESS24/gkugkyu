@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+﻿import isEmpty from 'lodash/isEmpty';
 import {
 	type IExecuteFunctions,
 	type IDataObject,
@@ -7,7 +7,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { campaignFields, campaignOperations } from './CampaignDescription';
 import { contactListFields, contactListOperations } from './ContactListDescription';

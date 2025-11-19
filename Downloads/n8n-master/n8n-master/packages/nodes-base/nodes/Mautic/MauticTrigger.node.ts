@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IHookFunctions,
 	type IWebhookFunctions,
 	type IDataObject,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { parse as urlParse } from 'url';
 
 import { mauticApiRequest } from './GenericFunctions';
@@ -98,7 +98,7 @@ export class MauticTrigger implements INodeType {
 						value: 'DESC',
 					},
 				],
-				description: 'Order direction for queued events in one webhook. Can be “DESC” or “ASC”.',
+				description: 'Order direction for queued events in one webhook. Can be â€œDESCâ€ or â€œASCâ€.',
 			},
 		],
 	};

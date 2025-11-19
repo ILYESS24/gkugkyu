@@ -1,4 +1,4 @@
-import type { LicenseState } from '@n8n/backend-common';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
 import {
 	createTeamProject,
 	createWorkflow,
@@ -6,15 +6,15 @@ import {
 	testDb,
 	testModules,
 } from '@n8n/backend-test-utils';
-import type { InstanceType } from '@n8n/constants';
-import type { IWorkflowDb, Project, WorkflowEntity } from '@n8n/db';
-import type { WorkflowExecuteAfterContext } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+import type { InstanceType } from '@workflow-automation/constants';
+import type { IWorkflowDb, Project, WorkflowEntity } from '@workflow-automation/db';
+import type { WorkflowExecuteAfterContext } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
-import type { InstanceSettings } from 'n8n-core';
-import { UserError, type IRun } from 'n8n-workflow';
+import type { InstanceSettings } from 'workflow-automation-core';
+import { UserError, type IRun } from 'workflow-automation-workflow';
 
 import {
 	createCompactedInsightsEvent,

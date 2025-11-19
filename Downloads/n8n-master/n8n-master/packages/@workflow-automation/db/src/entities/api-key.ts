@@ -1,6 +1,6 @@
-import type { ApiKeyScope } from '@n8n/permissions';
+﻿import type { ApiKeyScope } from '@workflow-automation/permissions';
 import { Column, Entity, Index, ManyToOne, Unique } from '@n8n/typeorm';
-import { ApiKeyAudience } from 'n8n-workflow';
+import { ApiKeyAudience } from 'workflow-automation-workflow';
 
 import { JsonColumn, WithTimestampsAndStringId } from './abstract-entity';
 import { User } from './user';

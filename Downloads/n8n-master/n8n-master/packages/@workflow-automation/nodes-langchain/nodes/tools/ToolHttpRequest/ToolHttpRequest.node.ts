@@ -1,4 +1,4 @@
-import { DynamicTool } from '@langchain/core/tools';
+﻿import { DynamicTool } from '@langchain/core/tools';
 import type {
 	INodeType,
 	INodeTypeDescription,
@@ -6,12 +6,12 @@ import type {
 	SupplyData,
 	IHttpRequestMethods,
 	IHttpRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeConnectionTypes,
 	NodeOperationError,
 	tryToParseAlphanumericString,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { N8nTool } from '@utils/N8nTool';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

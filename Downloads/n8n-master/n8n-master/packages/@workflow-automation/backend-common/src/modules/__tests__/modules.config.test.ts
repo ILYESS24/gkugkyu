@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 
 import { UnknownModuleError } from '../errors/unknown-module.error';
 import { ModulesConfig } from '../modules.config';

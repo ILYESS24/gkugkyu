@@ -1,4 +1,4 @@
-import { UserError } from 'n8n-workflow';
+﻿import { UserError } from 'workflow-automation-workflow';
 
 export class CredentialNotFoundError extends UserError {
 	constructor(credentialId: string, credentialType: string) {

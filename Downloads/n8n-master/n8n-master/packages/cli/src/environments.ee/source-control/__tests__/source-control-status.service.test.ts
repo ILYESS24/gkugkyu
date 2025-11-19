@@ -1,4 +1,4 @@
-import { mockLogger } from '@n8n/backend-test-utils';
+﻿import { mockLogger } from '@n8n/backend-test-utils';
 import {
 	GLOBAL_ADMIN_ROLE,
 	GLOBAL_MEMBER_ROLE,
@@ -8,10 +8,10 @@ import {
 	type TagRepository,
 	type User,
 	type Variables,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 
 import { ForbiddenError } from '@/errors/response-errors/forbidden.error';
 import type { EventService } from '@/events/event.service';
@@ -346,7 +346,7 @@ describe('getStatus', () => {
 				id: 'project1',
 				name: 'Test Project 1',
 				description: 'Test Description 1',
-				icon: { type: 'emoji', value: '🚀' },
+				icon: { type: 'emoji', value: 'ðŸš€' },
 				type: 'team',
 				owner: {
 					type: 'team',

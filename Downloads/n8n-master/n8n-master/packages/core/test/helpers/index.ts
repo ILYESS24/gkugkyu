@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'fs';
+﻿import { readdirSync, readFileSync } from 'fs';
 import { mock } from 'jest-mock-extended';
 import type {
 	IDataObject,
@@ -12,8 +12,8 @@ import type {
 	NodeLoadingDetails,
 	WorkflowTestData,
 	INodeTypeData,
-} from 'n8n-workflow';
-import { ApplicationError, NodeHelpers } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, NodeHelpers } from 'workflow-automation-workflow';
 import path from 'path';
 
 import { UnrecognizedNodeTypeError } from '@/errors';

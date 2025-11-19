@@ -1,17 +1,17 @@
-import type {
+﻿import type {
 	OptionsRequestDto,
 	ResourceLocatorRequestDto,
 	ResourceMapperFieldsRequestDto,
 	ActionResultRequestDto,
-} from '@n8n/api-types';
-import type { AuthenticatedRequest } from '@n8n/db';
+} from '@workflow-automation/api-types';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 import type {
 	ILoadOptions,
 	IWorkflowExecuteAdditionalData,
 	INodePropertyOptions,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { DynamicNodeParametersController } from '@/controllers/dynamic-node-parameters.controller';
 import type { DynamicNodeParametersService } from '@/services/dynamic-node-parameters.service';

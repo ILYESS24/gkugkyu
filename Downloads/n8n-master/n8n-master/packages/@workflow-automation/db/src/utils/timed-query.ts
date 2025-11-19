@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { Timed } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Timed } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 
 /**
  * Decorator that warns when database queries exceed a duration threshold.

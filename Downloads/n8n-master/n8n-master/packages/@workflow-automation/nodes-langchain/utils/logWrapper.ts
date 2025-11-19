@@ -1,4 +1,4 @@
-import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
+﻿import type { BaseChatMemory } from '@langchain/community/memory/chat_memory';
 import type { BaseCallbackConfig, Callbacks } from '@langchain/core/callbacks/manager';
 import type { BaseChatMessageHistory } from '@langchain/core/chat_history';
 import type { Document } from '@langchain/core/documents';
@@ -19,13 +19,13 @@ import type {
 	ISupplyDataFunctions,
 	ITaskMetadata,
 	NodeConnectionType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeOperationError,
 	NodeConnectionTypes,
 	parseErrorMetadata,
 	deepCopy,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logAiEvent, isToolsInstance, isBaseChatMemory, isBaseChatMessageHistory } from './helpers';
 import { N8nBinaryLoader } from './N8nBinaryLoader';

@@ -1,11 +1,11 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import snakeCase from 'lodash/snakeCase';
 import { useSessionStorage } from '@vueuse/core';
 
 import { N8nButton, N8nCircleLoader, N8nIcon, N8nInput, N8nTooltip } from '@n8n/design-system';
-import { randomInt } from 'n8n-workflow';
-import type { CodeExecutionMode, INodeExecutionData } from 'n8n-workflow';
+import { randomInt } from 'workflow-automation-workflow';
+import type { CodeExecutionMode, INodeExecutionData } from 'workflow-automation-workflow';
 
 import type { BaseTextKey } from '@n8n/i18n';
 import type { INodeUi, Schema } from '@/Interface';

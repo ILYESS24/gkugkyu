@@ -1,5 +1,5 @@
-import { CredentialsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { CredentialsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type {
 	IDataObject,
 	INodeCredentialsDetails,
@@ -7,7 +7,7 @@ import type {
 	ITaskData,
 	IWorkflowBase,
 	RelatedExecution,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { VariablesService } from '@/environments.ee/variables/variables.service.ee';

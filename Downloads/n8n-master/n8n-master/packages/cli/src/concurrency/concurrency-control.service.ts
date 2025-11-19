@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { ExecutionRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import capitalize from 'lodash/capitalize';
-import type { WorkflowExecuteMode as ExecutionMode } from 'n8n-workflow';
+import type { WorkflowExecuteMode as ExecutionMode } from 'workflow-automation-workflow';
 
 import { InvalidConcurrencyLimitError } from '@/errors/invalid-concurrency-limit.error';
 import { UnknownExecutionModeError } from '@/errors/unknown-execution-mode.error';

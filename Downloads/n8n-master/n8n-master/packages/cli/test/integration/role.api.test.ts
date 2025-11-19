@@ -1,5 +1,5 @@
-import { ALL_ROLES } from '@n8n/permissions';
-import type { Role } from '@n8n/permissions';
+﻿import { ALL_ROLES } from '@workflow-automation/permissions';
+import type { Role } from '@workflow-automation/permissions';
 
 import { createMember } from './shared/db/users';
 import type { SuperAgentTest } from './shared/types';

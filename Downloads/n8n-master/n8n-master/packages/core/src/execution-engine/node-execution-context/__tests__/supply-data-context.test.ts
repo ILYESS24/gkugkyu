@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import type {
 	INode,
 	IWorkflowExecuteAdditionalData,
@@ -15,8 +15,8 @@ import type {
 	ICredentialDataDecryptedObject,
 	NodeConnectionType,
 	IRunData,
-} from 'n8n-workflow';
-import { ApplicationError, ManualExecutionCancelledError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, ManualExecutionCancelledError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { describeCommonTests } from './shared-tests';
 import { SupplyDataContext } from '../supply-data-context';

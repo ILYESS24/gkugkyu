@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	AiAskRequestDto,
 	AiApplySuggestionRequestDto,
 	AiChatRequestDto,
-} from '@n8n/api-types';
-import type { GlobalConfig } from '@n8n/config';
+} from '@workflow-automation/api-types';
+import type { GlobalConfig } from '@workflow-automation/config';
 import { AiAssistantClient, type AiAssistantSDK } from '@n8n_io/ai-assistant-sdk';
 import { mock } from 'jest-mock-extended';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 
 import { N8N_VERSION } from '@/constants';
 import type { License } from '@/license';

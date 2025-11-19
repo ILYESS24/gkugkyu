@@ -1,4 +1,4 @@
-import { randomEmail, randomName, randomValidPassword } from '@n8n/backend-test-utils';
+﻿import { randomEmail, randomName, randomValidPassword } from '@n8n/backend-test-utils';
 import {
 	AuthIdentity,
 	AuthIdentityRepository,
@@ -7,11 +7,11 @@ import {
 	GLOBAL_OWNER_ROLE,
 	type Role,
 	UserRepository,
-} from '@n8n/db';
-import { type User } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ApiKeyScope } from '@n8n/permissions';
-import { getApiKeyScopesForRole } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { ApiKeyScope } from '@workflow-automation/permissions';
+import { getApiKeyScopesForRole } from '@workflow-automation/permissions';
 import { hash } from 'bcryptjs';
 
 import { MfaService } from '@/mfa/mfa.service';

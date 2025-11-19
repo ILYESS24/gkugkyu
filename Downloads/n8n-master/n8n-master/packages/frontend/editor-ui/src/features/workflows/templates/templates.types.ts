@@ -1,5 +1,5 @@
-import type { INodeUi } from '@/Interface';
-import type { INodeCredentialDescription, INodeCredentialsDetails } from 'n8n-workflow';
+﻿import type { INodeUi } from '@/Interface';
+import type { INodeCredentialDescription, INodeCredentialsDetails } from 'workflow-automation-workflow';
 import type { TemplateCredentialKey } from './utils/templateTransforms';
 
 export type NodeCredentials = {

@@ -1,4 +1,4 @@
-import { json as generateSchemaFromExample, type SchemaObject } from 'generate-schema';
+﻿import { json as generateSchemaFromExample, type SchemaObject } from 'generate-schema';
 import type { JSONSchema7 } from 'json-schema';
 import pickBy from 'lodash/pickBy';
 import type {
@@ -12,8 +12,8 @@ import type {
 	WorkflowInputsData,
 	IExecuteFunctions,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
-import { jsonParse, NodeOperationError, EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeOperationError, EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
 
 import {
 	JSON_EXAMPLE,

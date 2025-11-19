@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import { useLoadingService } from '@/app/composables/useLoadingService';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useToast } from '@/app/composables/useToast';
@@ -15,7 +15,7 @@ import {
 	getStatusTheme,
 	notifyUserAboutPullWorkFolderOutcome,
 } from '../sourceControl.utils';
-import { type SourceControlledFile, SOURCE_CONTROL_FILE_TYPE } from '@n8n/api-types';
+import { type SourceControlledFile, SOURCE_CONTROL_FILE_TYPE } from '@workflow-automation/api-types';
 import { useI18n } from '@n8n/i18n';
 import type { EventBus } from '@n8n/utils/event-bus';
 import dateformat from 'dateformat';

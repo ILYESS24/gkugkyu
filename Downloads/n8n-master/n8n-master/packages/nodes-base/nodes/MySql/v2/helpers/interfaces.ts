@@ -1,5 +1,5 @@
-import type mysql2 from 'mysql2/promise';
-import type { IDataObject, INodeExecutionData, SSHCredentials } from 'n8n-workflow';
+﻿import type mysql2 from 'mysql2/promise';
+import type { IDataObject, INodeExecutionData, SSHCredentials } from 'workflow-automation-workflow';
 
 export type Mysql2Connection = mysql2.Connection;
 export type Mysql2Pool = mysql2.Pool;

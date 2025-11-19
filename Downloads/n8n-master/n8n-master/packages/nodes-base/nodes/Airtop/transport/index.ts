@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	ILoadOptionsFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IAirtopResponse } from './types';
 import { BASE_URL, N8N_VERSION } from '../constants';

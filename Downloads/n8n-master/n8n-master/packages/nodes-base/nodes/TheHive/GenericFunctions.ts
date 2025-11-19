@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
 	IHookFunctions,
@@ -6,8 +6,8 @@ import type {
 	IDataObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, jsonParse } from 'workflow-automation-workflow';
 
 import { Eq } from './QueryFunctions';
 

@@ -1,4 +1,4 @@
-import { ITriggerFunctions, INodeType, INodeTypeDescription, ITriggerResponse } from 'n8n-workflow';
+﻿import { ITriggerFunctions, INodeType, INodeTypeDescription, ITriggerResponse } from 'workflow-automation-workflow';
 
 export class ClassNameReplace implements INodeType {
 	description: INodeTypeDescription = {

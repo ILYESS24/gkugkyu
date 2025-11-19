@@ -1,4 +1,4 @@
-import type { INodeExecutionData, INodeProperties } from 'n8n-workflow';
+﻿import type { INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
 import { valid as isValidSemver } from 'semver';
 
 interface PackageJson {

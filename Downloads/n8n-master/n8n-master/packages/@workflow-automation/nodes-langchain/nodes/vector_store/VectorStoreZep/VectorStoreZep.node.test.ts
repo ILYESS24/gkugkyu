@@ -1,7 +1,7 @@
-import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
+﻿import { ZepVectorStore } from '@langchain/community/vectorstores/zep';
 import { ZepCloudVectorStore } from '@langchain/community/vectorstores/zep_cloud';
 import { mock } from 'jest-mock-extended';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import { VectorStoreZep } from './VectorStoreZep.node';
 

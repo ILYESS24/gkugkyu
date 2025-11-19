@@ -1,9 +1,9 @@
-import { reactive } from 'vue';
+﻿import { reactive } from 'vue';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { waitFor } from '@testing-library/vue';
 import { useRouter } from 'vue-router';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@workflow-automation/api-types';
 import { createProjectListItem } from '@/features/collaboration/projects/__tests__/utils';
 import type { MockedStore } from '@/__tests__/utils';
 import { mockedStore, getDropdownItems } from '@/__tests__/utils';

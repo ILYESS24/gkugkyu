@@ -1,8 +1,8 @@
-import { ApiKey, ApiKeyRepository, User, UserRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { ApiKey, ApiKeyRepository, User, UserRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { EntityManager } from '@n8n/typeorm';
 import { randomUUID } from 'crypto';
-import { ApiKeyAudience } from 'n8n-workflow';
+import { ApiKeyAudience } from 'workflow-automation-workflow';
 
 import { JwtService } from '@/services/jwt.service';
 

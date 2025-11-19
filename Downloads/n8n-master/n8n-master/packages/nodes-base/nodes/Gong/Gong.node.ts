@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -6,7 +6,7 @@ import {
 	type INodeListSearchResult,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { callFields, callOperations, userFields, userOperations } from './descriptions';
 import { gongApiRequest } from './GenericFunctions';

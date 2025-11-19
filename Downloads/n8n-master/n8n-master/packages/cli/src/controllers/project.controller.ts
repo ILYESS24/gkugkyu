@@ -1,12 +1,12 @@
-import {
+﻿import {
 	CreateProjectDto,
 	DeleteProjectDto,
 	UpdateProjectDto,
 	AddUsersToProjectDto,
 	ChangeUserRoleInProject,
-} from '@n8n/api-types';
-import type { Project } from '@n8n/db';
-import { AuthenticatedRequest, ProjectRepository } from '@n8n/db';
+} from '@workflow-automation/api-types';
+import type { Project } from '@workflow-automation/db';
+import { AuthenticatedRequest, ProjectRepository } from '@workflow-automation/db';
 import {
 	Get,
 	Post,
@@ -19,9 +19,9 @@ import {
 	Body,
 	Param,
 	Query,
-} from '@n8n/decorators';
-import { combineScopes, getAuthPrincipalScopes, hasGlobalScope } from '@n8n/permissions';
-import type { Scope } from '@n8n/permissions';
+} from '@workflow-automation/decorators';
+import { combineScopes, getAuthPrincipalScopes, hasGlobalScope } from '@workflow-automation/permissions';
+import type { Scope } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In, Not } from '@n8n/typeorm';
 import { Response } from 'express';

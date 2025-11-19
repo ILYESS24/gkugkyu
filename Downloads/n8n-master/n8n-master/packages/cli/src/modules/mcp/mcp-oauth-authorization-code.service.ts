@@ -1,5 +1,5 @@
-import { Time } from '@n8n/constants';
-import { Service } from '@n8n/di';
+﻿import { Time } from '@workflow-automation/constants';
+import { Service } from '@workflow-automation/di';
 import { randomBytes } from 'node:crypto';
 
 import type { AuthorizationCode } from './database/entities/oauth-authorization-code.entity';

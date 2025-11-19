@@ -1,7 +1,7 @@
-import { useToast } from '@/app/composables/useToast';
+﻿import { useToast } from '@/app/composables/useToast';
 import { useI18n } from '@n8n/i18n';
-import type { INodeExecutionData, IPinData, Workflow } from 'n8n-workflow';
-import { jsonParse, jsonStringify, NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+import type { INodeExecutionData, IPinData, Workflow } from 'workflow-automation-workflow';
+import { jsonParse, jsonStringify, NodeConnectionTypes, NodeHelpers } from 'workflow-automation-workflow';
 import {
 	MAX_EXPECTED_REQUEST_SIZE,
 	MAX_PINNED_DATA_SIZE,

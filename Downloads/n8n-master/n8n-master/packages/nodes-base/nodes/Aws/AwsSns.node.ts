@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { awsApiRequestSOAP } from './GenericFunctions';
 import { awsNodeAuthOptions, awsNodeCredentials } from './utils';

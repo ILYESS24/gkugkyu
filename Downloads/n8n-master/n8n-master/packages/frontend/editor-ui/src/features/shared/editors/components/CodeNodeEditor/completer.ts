@@ -1,4 +1,4 @@
-import type { Completion, CompletionContext, CompletionResult } from '@codemirror/autocomplete';
+﻿import type { Completion, CompletionContext, CompletionResult } from '@codemirror/autocomplete';
 import { autocompletion } from '@codemirror/autocomplete';
 import { localCompletionSource } from '@codemirror/lang-javascript';
 import type { Extension } from '@codemirror/state';
@@ -9,7 +9,7 @@ import { useBaseCompletions } from './completions/base.completions';
 import { jsSnippets } from './completions/js.snippets';
 
 import type { EditorView } from '@codemirror/view';
-import type { CodeExecutionMode } from 'n8n-workflow';
+import type { CodeExecutionMode } from 'workflow-automation-workflow';
 import { useExecutionCompletions } from './completions/execution.completions';
 import { useItemFieldCompletions } from './completions/itemField.completions';
 import { useItemIndexCompletions } from './completions/itemIndex.completions';

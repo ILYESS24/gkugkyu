@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import type { Operation, Resource, LanguageOptions } from '../types';
 
@@ -156,7 +156,7 @@ export const eventAdditionalFieldsOptions: INodeProperties['options'] = [
 		name: 'browser_url',
 		type: 'string',
 		default: '',
-		description: 'URL to this event’s page on the Action Network or a third party',
+		description: 'URL to this eventâ€™s page on the Action Network or a third party',
 	},
 	{
 		displayName: 'Description',
@@ -177,7 +177,7 @@ export const eventAdditionalFieldsOptions: INodeProperties['options'] = [
 		name: 'featured_image_url',
 		type: 'string',
 		default: '',
-		description: 'URL to this event’s featured image on the Action Network',
+		description: 'URL to this eventâ€™s featured image on the Action Network',
 	},
 	{
 		displayName: 'Instructions',
@@ -227,14 +227,14 @@ export const personAdditionalFieldsOptions: INodeProperties['options'] = [
 		name: 'family_name',
 		type: 'string',
 		default: '',
-		description: 'Person’s last name',
+		description: 'Personâ€™s last name',
 	},
 	{
 		displayName: 'Given Name',
 		name: 'given_name',
 		type: 'string',
 		default: '',
-		description: 'Person’s first name',
+		description: 'Personâ€™s first name',
 	},
 	{
 		displayName: 'Language Spoken',
@@ -325,14 +325,14 @@ export const petitionAdditionalFieldsOptions: INodeProperties[] = [
 		name: 'browser_url',
 		type: 'string',
 		default: '',
-		description: 'URL to this petition’s page on the Action Network or a third party',
+		description: 'URL to this petitionâ€™s page on the Action Network or a third party',
 	},
 	{
 		displayName: 'Featured Image URL',
 		name: 'featured_image_url',
 		type: 'string',
 		default: '',
-		description: 'URL to this action’s featured image on the Action Network',
+		description: 'URL to this actionâ€™s featured image on the Action Network',
 	},
 	{
 		displayName: 'Name',
@@ -346,7 +346,7 @@ export const petitionAdditionalFieldsOptions: INodeProperties[] = [
 		name: 'petition_text',
 		type: 'string',
 		default: '',
-		description: 'Text of the letter to the petition’s target',
+		description: 'Text of the letter to the petitionâ€™s target',
 	},
 	{
 		displayName: 'Targets',

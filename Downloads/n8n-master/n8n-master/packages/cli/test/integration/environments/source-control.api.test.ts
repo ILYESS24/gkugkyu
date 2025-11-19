@@ -1,7 +1,7 @@
-import type { SourceControlledFile } from '@n8n/api-types';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
 import { mockInstance } from '@n8n/backend-test-utils';
-import { GLOBAL_OWNER_ROLE, type User } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GLOBAL_OWNER_ROLE, type User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import { SourceControlPreferencesService } from '@/environments.ee/source-control/source-control-preferences.service.ee';
 import { SourceControlService } from '@/environments.ee/source-control/source-control.service.ee';

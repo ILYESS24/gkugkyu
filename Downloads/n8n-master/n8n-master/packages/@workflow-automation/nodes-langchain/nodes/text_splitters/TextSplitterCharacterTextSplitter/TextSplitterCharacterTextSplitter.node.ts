@@ -1,4 +1,4 @@
-import type { CharacterTextSplitterParams } from '@langchain/textsplitters';
+﻿import type { CharacterTextSplitterParams } from '@langchain/textsplitters';
 import { CharacterTextSplitter } from '@langchain/textsplitters';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

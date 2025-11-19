@@ -1,10 +1,10 @@
-import { Command } from '@n8n/decorators';
+﻿import { Command } from '@workflow-automation/decorators';
 import { z } from 'zod';
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 
 import { BaseCommand } from '../base-command';
 import { ImportService } from '../../services/import.service';
-import { safeJoinPath } from '@n8n/backend-common';
+import { safeJoinPath } from '@workflow-automation/backend-common';
 
 const flagsSchema = z.object({
 	inputDir: z
@@ -38,16 +38,16 @@ export class ImportEntitiesCommand extends BaseCommand<z.infer<typeof flagsSchem
 		const truncateTables = this.flags.truncateTables;
 		const keyFilePath = this.flags.keyFile ? safeJoinPath(this.flags.keyFile) : undefined;
 
-		this.logger.info('\n⚠️⚠️ This feature is currently under development. ⚠️⚠️');
-		this.logger.info('\n🚀 Starting entity import...');
-		this.logger.info(`📁 Input directory: ${inputDir}`);
-		this.logger.info(`🗑️  Truncate tables: ${truncateTables}`);
+		this.logger.info('\nâš ï¸âš ï¸ This feature is currently under development. âš ï¸âš ï¸');
+		this.logger.info('\nðŸš€ Starting entity import...');
+		this.logger.info(`ðŸ“ Input directory: ${inputDir}`);
+		this.logger.info(`ðŸ—‘ï¸  Truncate tables: ${truncateTables}`);
 
 		await Container.get(ImportService).importEntities(inputDir, truncateTables, keyFilePath);
 	}
 
 	catch(error: Error) {
-		this.logger.error('❌ Error importing entities. See log messages for details. \n');
+		this.logger.error('âŒ Error importing entities. See log messages for details. \n');
 		this.logger.error('Error details:');
 		this.logger.error('\n====================================\n');
 		this.logger.error(`${error.message} \n`);

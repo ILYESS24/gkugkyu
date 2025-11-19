@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type NodeExecutionWithMetadata,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { contactFields, contactOperations } from './ContactDescription';
 import { automizyApiRequest, automizyApiRequestAllItems } from './GenericFunctions';

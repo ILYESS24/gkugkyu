@@ -1,4 +1,4 @@
-import { useUIStore } from '@/app/stores/ui.store';
+﻿import { useUIStore } from '@/app/stores/ui.store';
 import { MODAL_CANCEL, MODAL_CONFIRM, PLACEHOLDER_EMPTY_WORKFLOW_ID, VIEWS } from '@/app/constants';
 import { useWorkflowSaving } from './useWorkflowSaving';
 import router from '@/app/router';
@@ -9,7 +9,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
 import { mockedStore } from '@/__tests__/utils';
 import { createTestNode, createTestWorkflow, mockNodeTypeDescription } from '@/__tests__/mocks';
-import { CHAT_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+import { CHAT_TRIGGER_NODE_TYPE } from 'workflow-automation-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 
 const modalConfirmSpy = vi.fn();

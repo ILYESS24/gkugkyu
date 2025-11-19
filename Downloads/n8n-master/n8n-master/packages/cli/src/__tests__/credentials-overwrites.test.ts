@@ -1,11 +1,11 @@
-import type { Logger } from '@n8n/backend-common';
+﻿import type { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { GlobalConfig } from '@n8n/config';
-import { SettingsRepository } from '@n8n/db';
+import type { GlobalConfig } from '@workflow-automation/config';
+import { SettingsRepository } from '@workflow-automation/db';
 import type { NextFunction, Request, Response } from 'express';
 import { mock } from 'jest-mock-extended';
-import { Cipher, UnrecognizedCredentialTypeError } from 'n8n-core';
-import type { ICredentialType } from 'n8n-workflow';
+import { Cipher, UnrecognizedCredentialTypeError } from 'workflow-automation-core';
+import type { ICredentialType } from 'workflow-automation-workflow';
 
 import type { CredentialTypes } from '@/credential-types';
 import { CredentialsOverwrites } from '@/credentials-overwrites';

@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import isEqual from 'lodash/isEqual';
 import lt from 'lodash/lt';
 import type {
@@ -6,8 +6,8 @@ import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { shuffleArray, updateDisplayOptions } from '@utils/utilities';
 

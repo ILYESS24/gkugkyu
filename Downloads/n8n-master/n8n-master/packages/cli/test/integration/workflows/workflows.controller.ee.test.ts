@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	getPersonalProject,
 	linkUserToProject,
@@ -11,17 +11,17 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User, WorkflowWithSharingsMetaDataAndCredentials } from '@n8n/db';
+import type { Project, User, WorkflowWithSharingsMetaDataAndCredentials } from '@workflow-automation/db';
 import {
 	ProjectRepository,
 	WorkflowHistoryRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
 	GLOBAL_MEMBER_ROLE,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ProjectRole } from '@n8n/permissions';
-import { ApplicationError, WorkflowActivationError, type INode } from 'n8n-workflow';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { ProjectRole } from '@workflow-automation/permissions';
+import { ApplicationError, WorkflowActivationError, type INode } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';

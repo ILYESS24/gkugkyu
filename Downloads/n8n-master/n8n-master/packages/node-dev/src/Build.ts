@@ -1,11 +1,11 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+﻿/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import { spawn } from 'child_process';
 import glob from 'fast-glob';
 import { copyFile, mkdir, readFile, writeFile } from 'fs/promises';
-import { InstanceSettings } from 'n8n-core';
-import { jsonParse } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { jsonParse } from 'workflow-automation-workflow';
 import { join, dirname, resolve as resolvePath } from 'path';
 import { file as tmpFile } from 'tmp-promise';
 

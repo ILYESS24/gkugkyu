@@ -1,4 +1,4 @@
-import { BaseCallbackHandler } from '@langchain/core/callbacks/base';
+﻿import { BaseCallbackHandler } from '@langchain/core/callbacks/base';
 import type { SerializedFields } from '@langchain/core/dist/load/map_keys';
 import type {
 	Serialized,
@@ -8,8 +8,8 @@ import type {
 import type { BaseMessage } from '@langchain/core/messages';
 import type { LLMResult } from '@langchain/core/outputs';
 import pick from 'lodash/pick';
-import type { IDataObject, ISupplyDataFunctions, JsonObject } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeError, NodeOperationError } from 'n8n-workflow';
+import type { IDataObject, ISupplyDataFunctions, JsonObject } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeError, NodeOperationError } from 'workflow-automation-workflow';
 
 import { logAiEvent } from '@utils/helpers';
 

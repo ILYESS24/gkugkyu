@@ -1,4 +1,4 @@
-import type { ListQueryDb } from '@n8n/db';
+﻿import type { ListQueryDb } from '@workflow-automation/db';
 import {
 	GLOBAL_OWNER_ROLE,
 	Project,
@@ -8,8 +8,8 @@ import {
 	UserRepository,
 	Role,
 	Scope,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 import { CacheService } from '@/services/cache/cache.service';
 

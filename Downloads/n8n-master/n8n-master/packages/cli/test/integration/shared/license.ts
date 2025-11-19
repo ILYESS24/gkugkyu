@@ -1,5 +1,5 @@
-import type { LicenseProvider, LicenseState } from '@n8n/backend-common';
-import type { BooleanLicenseFeature, NumericLicenseFeature } from '@n8n/constants';
+﻿import type { LicenseProvider, LicenseState } from '@workflow-automation/backend-common';
+import type { BooleanLicenseFeature, NumericLicenseFeature } from '@workflow-automation/constants';
 
 import type { License } from '@/license';
 

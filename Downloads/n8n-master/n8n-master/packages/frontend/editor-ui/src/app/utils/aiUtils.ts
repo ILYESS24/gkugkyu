@@ -1,7 +1,7 @@
-import { CHAT_TRIGGER_NODE_TYPE, MANUAL_CHAT_TRIGGER_NODE_TYPE } from '@/app/constants';
+﻿import { CHAT_TRIGGER_NODE_TYPE, MANUAL_CHAT_TRIGGER_NODE_TYPE } from '@/app/constants';
 import type { INodeUi, LlmTokenUsageData } from '@/Interface';
-import type { IDataObject, INodeExecutionData, NodeConnectionType } from 'n8n-workflow';
-import { isObjectEmpty, NodeConnectionTypes } from 'n8n-workflow';
+import type { IDataObject, INodeExecutionData, NodeConnectionType } from 'workflow-automation-workflow';
+import { isObjectEmpty, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 interface MemoryMessage {
 	lc: number;
@@ -37,7 +37,7 @@ const outputTypeParsers: {
 		const response = (execData.response as IDataObject) ?? execData;
 		if (!response) throw new Error('No response from Language Model');
 
-		// Simple LLM output — single string message item
+		// Simple LLM output â€” single string message item
 		if (
 			Array.isArray(response?.messages) &&
 			response?.messages.length === 1 &&

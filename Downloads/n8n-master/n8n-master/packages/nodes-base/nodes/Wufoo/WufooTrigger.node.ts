@@ -1,4 +1,4 @@
-import { randomBytes } from 'crypto';
+﻿import { randomBytes } from 'crypto';
 import type {
 	IHookFunctions,
 	IWebhookFunctions,
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, jsonParse } from 'workflow-automation-workflow';
 
 import { wufooApiRequest } from './GenericFunctions';
 import type { IField, IWebhook } from './Interface';

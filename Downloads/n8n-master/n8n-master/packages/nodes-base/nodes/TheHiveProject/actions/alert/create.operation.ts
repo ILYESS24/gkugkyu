@@ -1,11 +1,11 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import set from 'lodash/set';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions, wrapData } from '@utils/utilities';
 

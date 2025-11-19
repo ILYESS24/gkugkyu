@@ -1,4 +1,4 @@
-import { WorkflowSharingRole } from '@n8n/permissions';
+﻿import { WorkflowSharingRole } from '@workflow-automation/permissions';
 import { Column, Entity, ManyToOne, PrimaryColumn } from '@n8n/typeorm';
 
 import { WithTimestamps } from './abstract-entity';

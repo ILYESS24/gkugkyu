@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionRepository } from '@n8n/db';
-import { OnLeaderStepdown, OnLeaderTakeover } from '@n8n/decorators';
-import { Service } from '@n8n/di';
-import { InstanceSettings } from 'n8n-core';
-import { UnexpectedError, type IWorkflowExecutionDataProcess } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionRepository } from '@workflow-automation/db';
+import { OnLeaderStepdown, OnLeaderTakeover } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
+import { InstanceSettings } from 'workflow-automation-core';
+import { UnexpectedError, type IWorkflowExecutionDataProcess } from 'workflow-automation-workflow';
 
 import { ActiveExecutions } from '@/active-executions';
 import { OwnershipService } from '@/services/ownership.service';

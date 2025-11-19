@@ -1,5 +1,5 @@
-import { CredentialsEntity, CredentialsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { CredentialsEntity, CredentialsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 
 import { mockEntityManager } from '@test/mocking';

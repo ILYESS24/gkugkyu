@@ -1,4 +1,4 @@
-import { paramCase, snakeCase } from 'change-case';
+﻿import { paramCase, snakeCase } from 'change-case';
 import { createHash } from 'crypto';
 import type {
 	IDataObject,
@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 import { Builder } from 'xml2js';
 

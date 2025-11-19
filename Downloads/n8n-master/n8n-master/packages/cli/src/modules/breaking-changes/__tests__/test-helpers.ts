@@ -1,5 +1,5 @@
-import type { WorkflowEntity, WorkflowStatistics } from '@n8n/db';
-import type { INode } from 'n8n-workflow';
+﻿import type { WorkflowEntity, WorkflowStatistics } from '@workflow-automation/db';
+import type { INode } from 'workflow-automation-workflow';
 
 export const createWorkflow = (id: string, name: string, nodes: INode[], active = true) => ({
 	workflow: {

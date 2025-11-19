@@ -1,10 +1,10 @@
-import { render, waitFor } from '@testing-library/vue';
+﻿import { render, waitFor } from '@testing-library/vue';
 import NDVSubConnections from './NDVSubConnections.vue';
 import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import type { INodeUi } from '@/Interface';
-import type { INodeTypeDescription, WorkflowParameters } from 'n8n-workflow';
-import { NodeConnectionTypes, Workflow } from 'n8n-workflow';
+import type { INodeTypeDescription, WorkflowParameters } from 'workflow-automation-workflow';
+import { NodeConnectionTypes, Workflow } from 'workflow-automation-workflow';
 import { nextTick } from 'vue';
 
 const nodeType: INodeTypeDescription = {

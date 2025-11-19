@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const notificationOperations: INodeProperties[] = [
 	{
@@ -83,7 +83,7 @@ export const notificationFields: INodeProperties[] = [
 										binaryData: [false],
 									},
 								},
-								description: 'HTTP/HTTPS URL. Maximum size of 2048×2048px JPEG.',
+								description: 'HTTP/HTTPS URL. Maximum size of 2048Ã—2048px JPEG.',
 							},
 							{
 								displayName: 'Image Thumbnail',
@@ -95,7 +95,7 @@ export const notificationFields: INodeProperties[] = [
 									},
 								},
 								default: '',
-								description: 'HTTP/HTTPS URL. Maximum size of 240×240px JPEG.',
+								description: 'HTTP/HTTPS URL. Maximum size of 240Ã—240px JPEG.',
 							},
 							{
 								displayName: 'Input Binary Field',

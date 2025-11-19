@@ -1,12 +1,12 @@
-import basicAuth from 'basic-auth';
+﻿import basicAuth from 'basic-auth';
 import jwt from 'jsonwebtoken';
-import { WorkflowConfigurationError } from 'n8n-workflow';
+import { WorkflowConfigurationError } from 'workflow-automation-workflow';
 import type {
 	IWebhookFunctions,
 	INodeExecutionData,
 	IDataObject,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { WebhookAuthorizationError } from './error';
 import { formatPrivateKey } from '../../utils/utilities';
@@ -161,7 +161,7 @@ export const checkResponseModeConfiguration = (context: IWebhookFunctions) => {
 			new Error('No Respond to Webhook node found in the workflow'),
 			{
 				description:
-					'Insert a Respond to Webhook node to your workflow to respond to the webhook or choose another option for the “Respond” parameter',
+					'Insert a Respond to Webhook node to your workflow to respond to the webhook or choose another option for the â€œRespondâ€ parameter',
 			},
 		);
 	}
@@ -172,7 +172,7 @@ export const checkResponseModeConfiguration = (context: IWebhookFunctions) => {
 			new Error('Unused Respond to Webhook node found in the workflow'),
 			{
 				description:
-					'Set the “Respond” parameter to “Using Respond to Webhook Node” or remove the Respond to Webhook node',
+					'Set the â€œRespondâ€ parameter to â€œUsing Respond to Webhook Nodeâ€ or remove the Respond to Webhook node',
 			},
 		);
 	}

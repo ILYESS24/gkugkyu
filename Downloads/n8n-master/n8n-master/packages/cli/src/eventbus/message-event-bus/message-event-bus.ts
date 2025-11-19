@@ -1,15 +1,15 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { EventDestinationsRepository, ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { OnPubSubEvent } from '@n8n/decorators';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { EventDestinationsRepository, ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { OnPubSubEvent } from '@workflow-automation/decorators';
+import { Service } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { DeleteResult } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In } from '@n8n/typeorm';
 import EventEmitter from 'events';
 import uniqby from 'lodash/uniqBy';
-import type { MessageEventBusDestinationOptions } from 'n8n-workflow';
+import type { MessageEventBusDestinationOptions } from 'workflow-automation-workflow';
 
 import { License } from '@/license';
 import { Publisher } from '@/scaling/pubsub/publisher.service';

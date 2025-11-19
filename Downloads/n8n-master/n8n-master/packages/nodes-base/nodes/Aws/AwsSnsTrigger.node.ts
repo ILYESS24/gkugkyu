@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IHookFunctions,
 	IWebhookFunctions,
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { jsonParse, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { awsApiRequestSOAP } from './GenericFunctions';
 import { awsNodeAuthOptions, awsNodeCredentials } from './utils';

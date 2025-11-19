@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IUpdateInformation, InputSize } from '@/Interface';
 import ParameterInput from './ParameterInput.vue';
 import InputHint from './ParameterInputHint.vue';
@@ -9,7 +9,7 @@ import {
 	type INodePropertyMode,
 	type IParameterLabel,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { useResolvedExpression } from '@/app/composables/useResolvedExpression';
 import useEnvironmentsStore from '@/features/settings/environments.ee/environments.store';

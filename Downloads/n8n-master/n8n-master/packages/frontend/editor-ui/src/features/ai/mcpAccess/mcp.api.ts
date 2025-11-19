@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	ApiKey,
 	ListOAuthClientsResponseDto,
 	DeleteOAuthClientResponseDto,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import type { IWorkflowSettings } from '@/Interface';
 import type { IRestApiContext } from '@n8n/rest-api-client';
 import { makeRestApiRequest } from '@n8n/rest-api-client';

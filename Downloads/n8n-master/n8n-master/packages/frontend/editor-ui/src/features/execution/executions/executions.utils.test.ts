@@ -1,4 +1,4 @@
-import type { MockInstance } from 'vitest';
+﻿import type { MockInstance } from 'vitest';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import {
 	displayForm,
@@ -15,7 +15,7 @@ import type {
 	ExecutionError,
 	INodeTypeDescription,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { type INodeUi } from '@/Interface';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
@@ -603,7 +603,7 @@ describe('getExecutionErrorToastConfiguration', () => {
 				node: { name: 'TestNode' },
 			}),
 		});
-		expect(result.title).toBe('Error in sub-node ‘TestNode‘');
+		expect(result.title).toBe('Error in sub-node â€˜TestNodeâ€˜');
 		expect((result.message as VNode).props).toEqual({
 			errorMessage: 'Bad configuration',
 			nodeName: 'TestNode',
@@ -638,7 +638,7 @@ describe('getExecutionErrorToastConfiguration', () => {
 		});
 
 		expect(result).toEqual({
-			title: 'Problem in node ‘NodeX‘',
+			title: 'Problem in node â€˜NodeXâ€˜',
 			message: 'Something broke',
 		});
 	});

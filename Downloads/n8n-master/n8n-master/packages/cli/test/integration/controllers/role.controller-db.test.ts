@@ -1,4 +1,4 @@
-import type { CreateRoleDto, UpdateRoleDto } from '@n8n/api-types';
+﻿import type { CreateRoleDto, UpdateRoleDto } from '@workflow-automation/api-types';
 import { testDb } from '@n8n/backend-test-utils';
 
 import { cleanupRolesAndScopes } from '../shared/db/roles';
@@ -11,8 +11,8 @@ import {
 	PROJECT_OWNER_ROLE,
 	PROJECT_VIEWER_ROLE,
 	RoleRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 describe('RoleController - Integration Tests', () => {
 	const testServer = setupTestServer({ endpointGroups: ['role'] });

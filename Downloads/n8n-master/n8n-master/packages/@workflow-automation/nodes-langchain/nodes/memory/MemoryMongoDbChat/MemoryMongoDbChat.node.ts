@@ -1,4 +1,4 @@
-import { MongoDBChatMessageHistory } from '@langchain/mongodb';
+﻿import { MongoDBChatMessageHistory } from '@langchain/mongodb';
 import { BufferWindowMemory } from 'langchain/memory';
 import { MongoClient } from 'mongodb';
 import type {
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	SupplyData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { getSessionId } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const teamRLC: INodeProperties = {
 	displayName: 'Team',
@@ -23,7 +23,7 @@ export const teamRLC: INodeProperties = {
 			displayName: 'From URL',
 			name: 'url',
 			type: 'string',
-			placeholder: 'e.g. https://teams.microsoft.com/l/team/19%3AP8l9gXd6oqlgq…',
+			placeholder: 'e.g. https://teams.microsoft.com/l/team/19%3AP8l9gXd6oqlgqâ€¦',
 			extractValue: {
 				type: 'regex',
 				regex: 'groupId=([a-f0-9-]+)\\&',

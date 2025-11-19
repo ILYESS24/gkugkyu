@@ -1,8 +1,8 @@
-import { DynamicTool, type Tool } from '@langchain/core/tools';
+﻿import { DynamicTool, type Tool } from '@langchain/core/tools';
 import { Toolkit } from 'langchain/agents';
 import { createMockExecuteFunction } from 'n8n-nodes-base/test/nodes/Helpers';
-import { NodeOperationError } from 'n8n-workflow';
-import type { ISupplyDataFunctions, IExecuteFunctions, INode } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { ISupplyDataFunctions, IExecuteFunctions, INode } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import {
@@ -584,7 +584,7 @@ describe('hasLongSequentialRepeat', () => {
 	});
 
 	it('should detect unicode character repeats', () => {
-		const text = '😀'.repeat(100);
+		const text = 'ðŸ˜€'.repeat(100);
 		expect(hasLongSequentialRepeat(text, 100)).toBe(true);
 	});
 

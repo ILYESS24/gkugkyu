@@ -1,5 +1,5 @@
-import type { GlobalConfig } from '@n8n/config';
-import type { Project, User, WorkflowEntity, WorkflowRepository } from '@n8n/db';
+﻿import type { GlobalConfig } from '@workflow-automation/config';
+import type { Project, User, WorkflowEntity, WorkflowRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 import {
 	NodeConnectionTypes,
@@ -9,7 +9,7 @@ import {
 	type IWorkflowBase,
 	type IWorkflowExecuteAdditionalData,
 	type ExecutionError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { IWorkflowErrorData } from '@/interfaces';
 import type { NodeTypes } from '@/node-types';

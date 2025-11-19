@@ -1,9 +1,9 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import { makeResolverFromLegacyOptions } from '@n8n/vm2';
 import { JavaScriptSandbox } from 'n8n-nodes-base/dist/nodes/Code/JavaScriptSandbox';
 import { getSandboxContext } from 'n8n-nodes-base/dist/nodes/Code/Sandbox';
 import { standardizeOutput } from 'n8n-nodes-base/dist/nodes/Code/utils';
-import { NodeOperationError, NodeConnectionTypes } from 'n8n-workflow';
+import { NodeOperationError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -12,7 +12,7 @@ import type {
 	INodeOutputConfiguration,
 	SupplyData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 // TODO: Add support for execute function. Got already started but got commented out
 

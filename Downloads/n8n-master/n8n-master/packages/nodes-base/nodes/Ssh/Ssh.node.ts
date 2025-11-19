@@ -1,4 +1,4 @@
-import { writeFile } from 'fs/promises';
+﻿import { writeFile } from 'fs/promises';
 import type {
 	ICredentialTestFunctions,
 	ICredentialsDecrypted,
@@ -8,8 +8,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 import type { Config } from 'node-ssh';
 import { NodeSSH } from 'node-ssh';
 import type { Readable } from 'stream';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	ICredentialTestFunctions,
 	IDataObject,
@@ -9,8 +9,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export function getSchemaHeader(
 	context: IExecuteFunctions | ILoadOptionsFunctions,

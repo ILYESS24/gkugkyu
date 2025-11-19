@@ -1,5 +1,5 @@
-import type { ModuleInterface } from '@n8n/decorators';
-import { BackendModule } from '@n8n/decorators';
+﻿import type { ModuleInterface } from '@workflow-automation/decorators';
+import { BackendModule } from '@workflow-automation/decorators';
 
 @BackendModule({ name: 'breaking-changes' })
 export class BreakingChangesModule implements ModuleInterface {

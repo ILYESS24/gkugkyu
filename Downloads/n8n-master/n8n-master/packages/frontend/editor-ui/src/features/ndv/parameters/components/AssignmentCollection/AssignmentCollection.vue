@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useDebounce } from '@/app/composables/useDebounce';
 import { useI18n } from '@n8n/i18n';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
@@ -8,7 +8,7 @@ import type {
 	FieldTypeMap,
 	INode,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, inject, reactive, useTemplateRef, watch } from 'vue';
 import DropArea from '@/app/components/DropArea/DropArea.vue';
 import ParameterOptions from '../ParameterOptions.vue';

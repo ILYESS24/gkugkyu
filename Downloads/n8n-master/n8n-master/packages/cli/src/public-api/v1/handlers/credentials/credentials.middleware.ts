@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-invalid-void-type */
+﻿/* eslint-disable @typescript-eslint/no-invalid-void-type */
 
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import type express from 'express';
 import { validate } from 'jsonschema';
 

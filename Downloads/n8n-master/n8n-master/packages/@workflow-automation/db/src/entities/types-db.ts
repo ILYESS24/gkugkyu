@@ -1,4 +1,4 @@
-import type { Scope } from '@n8n/permissions';
+﻿import type { Scope } from '@workflow-automation/permissions';
 import type { FindOperator } from '@n8n/typeorm';
 import type express from 'express';
 import type {
@@ -15,7 +15,7 @@ import type {
 	IDataObject,
 	IBinaryKeyData,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type { CredentialsEntity } from './credentials-entity';

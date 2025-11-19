@@ -1,4 +1,4 @@
-import {
+﻿import {
 	HTTP_REQUEST_NODE_TYPE,
 	PLACEHOLDER_EMPTY_WORKFLOW_ID,
 	PLACEHOLDER_FILLED_AT_EXECUTION_TIME,
@@ -21,7 +21,7 @@ import type {
 	IWorkflowDataProxyAdditionalKeys,
 	NodeParameterValue,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
 	createEmptyRunExecutionData,
@@ -29,7 +29,7 @@ import {
 	NodeConnectionTypes,
 	NodeHelpers,
 	WEBHOOK_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import * as workflowUtils from 'n8n-workflow/common';
 
 import type { INodeTypesMaxCount, INodeUi, IWorkflowDb, TargetItem, XYPosition } from '@/Interface';

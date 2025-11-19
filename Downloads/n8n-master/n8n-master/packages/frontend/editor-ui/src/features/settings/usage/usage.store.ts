@@ -1,6 +1,6 @@
-import { computed, reactive } from 'vue';
+﻿import { computed, reactive } from 'vue';
 import { defineStore } from 'pinia';
-import type { UsageState } from '@n8n/api-types';
+import type { UsageState } from '@workflow-automation/api-types';
 import * as usageApi from '@n8n/rest-api-client/api/usage';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { useSettingsStore } from '@/app/stores/settings.store';

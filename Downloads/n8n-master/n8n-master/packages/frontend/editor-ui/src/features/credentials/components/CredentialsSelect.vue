@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿<script setup lang="ts">
+import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 import { computed, ref } from 'vue';
 import ScopesNotice from './ScopesNotice.vue';
 import NodeCredentials from './NodeCredentials.vue';

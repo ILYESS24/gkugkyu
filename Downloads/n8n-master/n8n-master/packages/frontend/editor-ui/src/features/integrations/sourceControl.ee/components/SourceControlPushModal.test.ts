@@ -1,10 +1,10 @@
-import { within, waitFor } from '@testing-library/dom';
+﻿import { within, waitFor } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import SourceControlPushModal from './SourceControlPushModal.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { createEventBus } from '@n8n/utils/event-bus';
-import type { SourceControlledFile } from '@n8n/api-types';
+import type { SourceControlledFile } from '@workflow-automation/api-types';
 import { useSourceControlStore } from '../sourceControl.store';
 import { mockedStore } from '@/__tests__/utils';
 import { VIEWS } from '@/app/constants';

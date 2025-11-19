@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ActionTypeDescription,
 	INodeCreateElement,
 	NodeCreateElement,
@@ -41,8 +41,8 @@ import { useI18n } from '@n8n/i18n';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import { AI_TRANSFORM_NODE_TYPE } from 'n8n-workflow';
-import type { NodeConnectionType, INodeInputFilter } from 'n8n-workflow';
+import { AI_TRANSFORM_NODE_TYPE } from 'workflow-automation-workflow';
+import type { NodeConnectionType, INodeInputFilter } from 'workflow-automation-workflow';
 import { useCanvasStore } from '@/app/stores/canvas.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 

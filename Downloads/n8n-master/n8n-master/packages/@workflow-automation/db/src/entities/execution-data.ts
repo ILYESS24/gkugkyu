@@ -1,5 +1,5 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from '@n8n/typeorm';
-import { IWorkflowBase } from 'n8n-workflow';
+﻿import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from '@n8n/typeorm';
+import { IWorkflowBase } from 'workflow-automation-workflow';
 
 import { JsonColumn } from './abstract-entity';
 import { ExecutionEntity } from './execution-entity';

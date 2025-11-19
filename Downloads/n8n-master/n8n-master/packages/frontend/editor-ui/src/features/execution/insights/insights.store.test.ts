@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+﻿import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { createTestingPinia } from '@pinia/testing';
 import { useInsightsStore } from '@/features/execution/insights/insights.store';
 import * as insightsApi from '@/features/execution/insights/insights.api';
@@ -8,7 +8,7 @@ import { useSettingsStore } from '@/app/stores/settings.store';
 import { mockedStore, type MockedStore } from '@/__tests__/utils';
 import type { IUser } from '@n8n/rest-api-client/api/users';
 import { reactive } from 'vue';
-import type { FrontendModuleSettings } from '@n8n/api-types';
+import type { FrontendModuleSettings } from '@workflow-automation/api-types';
 
 vi.mock('vue-router', async (importOriginal) => ({
 	...(await importOriginal()),

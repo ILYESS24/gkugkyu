@@ -1,6 +1,6 @@
-import { testDb, mockInstance } from '@n8n/backend-test-utils';
-import { WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb, mockInstance } from '@n8n/backend-test-utils';
+import { WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import { v4 as uuid } from 'uuid';
 

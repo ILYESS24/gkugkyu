@@ -1,11 +1,11 @@
-jest.mock('@n8n/backend-common', () => {
+﻿jest.mock('@n8n/backend-common', () => {
 	return {
 		...jest.requireActual('@n8n/backend-common'),
 		inProduction: true,
 	};
 });
 
-import type { GlobalConfig } from '@n8n/config';
+import type { GlobalConfig } from '@workflow-automation/config';
 import {
 	ControllerRegistryMetadata,
 	Param,
@@ -13,8 +13,8 @@ import {
 	Licensed,
 	RestController,
 	RootLevelController,
-} from '@n8n/decorators';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import express from 'express';
 import { mock } from 'jest-mock-extended';
 import { agent as testAgent } from 'supertest';

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	COMMUNITY_PACKAGE_INSTALL_MODAL_KEY,
 	COMMUNITY_NODES_INSTALLATION_DOCS_URL,
@@ -6,7 +6,7 @@ import {
 import CommunityPackageCard from '../components/CommunityPackageCard.vue';
 import { useToast } from '@/app/composables/useToast';
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
-import type { PublicInstalledPackage } from 'n8n-workflow';
+import type { PublicInstalledPackage } from 'workflow-automation-workflow';
 
 import { useCommunityNodesStore } from '../communityNodes.store';
 import { useUIStore } from '@/app/stores/ui.store';

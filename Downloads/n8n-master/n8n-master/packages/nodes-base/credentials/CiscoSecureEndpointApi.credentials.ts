@@ -1,11 +1,11 @@
-import axios from 'axios';
+﻿import axios from 'axios';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class CiscoSecureEndpointApi implements ICredentialType {
 	name = 'ciscoSecureEndpointApi';

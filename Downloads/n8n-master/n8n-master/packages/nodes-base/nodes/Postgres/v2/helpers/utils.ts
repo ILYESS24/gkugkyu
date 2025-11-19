@@ -1,12 +1,12 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	INodePropertyOptions,
 	NodeParameterValueType,
-} from 'n8n-workflow';
-import { NodeOperationError, jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError, jsonParse } from 'workflow-automation-workflow';
 
 import type {
 	ColumnInfo,

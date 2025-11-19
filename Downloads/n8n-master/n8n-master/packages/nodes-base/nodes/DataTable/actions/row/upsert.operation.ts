@@ -1,10 +1,10 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IDisplayOptions,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { makeAddRow, getAddRow } from '../../common/addRow';
 import { DRY_RUN } from '../../common/fields';

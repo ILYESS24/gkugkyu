@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	INodeExecutionData,
 	IPairedItemData,
 	IRunExecutionData,
 	ISourceData,
 	ITaskData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { previousTaskData, findPairedItemThroughWorkflowData } from './workflow-backtracking';
 

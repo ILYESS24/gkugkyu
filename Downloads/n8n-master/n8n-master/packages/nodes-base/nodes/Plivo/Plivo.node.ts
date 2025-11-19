@@ -1,11 +1,11 @@
-import {
+﻿import {
 	type IExecuteFunctions,
 	type IDataObject,
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { callFields, callOperations } from './CallDescription';
 import { plivoApiRequest } from './GenericFunctions';

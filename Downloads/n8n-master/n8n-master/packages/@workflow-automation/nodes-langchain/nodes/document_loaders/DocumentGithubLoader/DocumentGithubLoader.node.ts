@@ -1,4 +1,4 @@
-import { GithubRepoLoader } from '@langchain/community/document_loaders/web/github';
+﻿import { GithubRepoLoader } from '@langchain/community/document_loaders/web/github';
 import type { TextSplitter } from '@langchain/textsplitters';
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
 import { logWrapper } from '@utils/logWrapper';
@@ -11,7 +11,7 @@ import {
 	type SupplyData,
 	type IDataObject,
 	type INodeInputConfiguration,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 function getInputs(parameters: IDataObject) {
 	const inputs: INodeInputConfiguration[] = [];

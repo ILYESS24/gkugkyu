@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	ITriggerFunctions,
 	INodeType,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 export class ManualTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -17,7 +17,7 @@ export class ManualTrigger implements INodeType {
 		eventTriggerDescription: '',
 		maxNodes: 1,
 		defaults: {
-			name: 'When clicking ‘Execute workflow’',
+			name: 'When clicking â€˜Execute workflowâ€™',
 			color: '#909298',
 		},
 
@@ -26,7 +26,7 @@ export class ManualTrigger implements INodeType {
 		properties: [
 			{
 				displayName:
-					'This node is where the workflow execution starts (when you click the ‘test’ button on the canvas).<br><br> <a data-action="showNodeCreator">Explore other ways to trigger your workflow</a> (e.g on a schedule, or a webhook)',
+					'This node is where the workflow execution starts (when you click the â€˜testâ€™ button on the canvas).<br><br> <a data-action="showNodeCreator">Explore other ways to trigger your workflow</a> (e.g on a schedule, or a webhook)',
 				name: 'notice',
 				type: 'notice',
 				default: '',

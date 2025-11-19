@@ -1,7 +1,7 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IUpdateInformation } from '@/Interface';
 
-import { type INodeProperties } from 'n8n-workflow';
+import { type INodeProperties } from 'workflow-automation-workflow';
 import { buildValueFromOverride, type FromAIOverride } from '../../utils/fromAIOverride.utils';
 import { computed } from 'vue';
 import { N8nSelectableList } from '@n8n/design-system';

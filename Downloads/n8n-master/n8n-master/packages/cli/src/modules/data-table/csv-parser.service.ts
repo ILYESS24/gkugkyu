@@ -1,5 +1,5 @@
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { parse } from 'csv-parse';
 import { createReadStream } from 'fs';
 import path from 'path';

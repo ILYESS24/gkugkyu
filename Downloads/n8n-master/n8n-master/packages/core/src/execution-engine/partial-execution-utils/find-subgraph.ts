@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INode } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, type INode } from 'workflow-automation-workflow';
 
 import type { GraphConnection } from './directed-graph';
 import { DirectedGraph } from './directed-graph';
@@ -29,12 +29,12 @@ function findSubgraphRecursive(
 
 	const parentConnections = graph.getDirectParentConnections(current);
 
-	// If the current node has no parents, don’t keep this branch.
+	// If the current node has no parents, donâ€™t keep this branch.
 	if (parentConnections.length === 0) {
 		return;
 	}
 
-	// If the current node is the destination node again, don’t keep this branch.
+	// If the current node is the destination node again, donâ€™t keep this branch.
 	const isCycleWithDestinationNode =
 		current === destinationNode && currentBranch.some((c) => c.to === destinationNode);
 	if (isCycleWithDestinationNode) {
@@ -75,8 +75,8 @@ function findSubgraphRecursive(
  *   Start with Destination Node
  *
  *   1. if the current node is the chosen trigger keep this branch
- *   2. if the current node has no parents, don’t keep this branch
- *   3. if the current node is the destination node again, don’t keep this
+ *   2. if the current node has no parents, donâ€™t keep this branch
+ *   3. if the current node is the destination node again, donâ€™t keep this
  *      branch
  *   4. if the current node was already visited, keep this branch
  *   5. Recurse on each parent

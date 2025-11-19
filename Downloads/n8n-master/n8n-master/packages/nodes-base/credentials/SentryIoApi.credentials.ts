@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IAuthenticate,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class SentryIoApi implements ICredentialType {
 	name = 'sentryIoApi';

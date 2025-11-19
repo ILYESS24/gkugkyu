@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
 	computed,
 	defineAsyncComponent,
@@ -78,14 +78,14 @@ import {
 	EVALUATION_NODE_TYPE,
 	isTriggerNode,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	NodeConnectionType,
 	IDataObject,
 	ExecutionSummary,
 	IConnection,
 	INodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useToast } from '@/app/composables/useToast';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
@@ -120,7 +120,7 @@ import { nodeViewEventBus } from '@/app/event-bus';
 import type { PinDataSource } from '@/app/composables/usePinnedData';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useBeforeUnload } from '@/app/composables/useBeforeUnload';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import NodeViewUnfinishedWorkflowMessage from '@/app/components/NodeViewUnfinishedWorkflowMessage.vue';
 import { shouldIgnoreCanvasShortcut } from '@/features/workflows/canvas/canvas.utils';
 import { getSampleWorkflowByTemplateId } from '@/features/workflows/templates/utils/workflowSamples';

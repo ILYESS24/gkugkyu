@@ -1,5 +1,5 @@
-import { createTeamProject, createWorkflow, testDb, testModules } from '@n8n/backend-test-utils';
-import { Container } from '@n8n/di';
+﻿import { createTeamProject, createWorkflow, testDb, testModules } from '@n8n/backend-test-utils';
+import { Container } from '@workflow-automation/di';
 import { DateTime } from 'luxon';
 
 import { InsightsRawRepository } from '@/modules/insights/database/repositories/insights-raw.repository';
@@ -230,7 +230,7 @@ describe('BigInt migration validation', () => {
 			// become indistinguishable due to JavaScript Number precision limits.
 			//
 			// To properly handle values > MAX_SAFE_INTEGER, we would need:
-			// 1. TypeORM transformer to convert bigint ↔ BigInt (not Number)
+			// 1. TypeORM transformer to convert bigint â†” BigInt (not Number)
 			// 2. Application-level validation to reject values > MAX_SAFE_INTEGER
 			// 3. OR: Change entity type from 'number' to 'bigint' with proper transformers
 		});

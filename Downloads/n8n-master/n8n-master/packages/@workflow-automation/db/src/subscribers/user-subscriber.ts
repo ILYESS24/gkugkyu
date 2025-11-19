@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
 import type { EntitySubscriberInterface, UpdateEvent } from '@n8n/typeorm';
 import { EventSubscriber } from '@n8n/typeorm';
-import { ErrorReporter } from 'n8n-core';
-import { UnexpectedError } from 'n8n-workflow';
+import { ErrorReporter } from 'workflow-automation-core';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { Project, User } from '../entities';
 import { UserRepository } from '../repositories/user.repository';

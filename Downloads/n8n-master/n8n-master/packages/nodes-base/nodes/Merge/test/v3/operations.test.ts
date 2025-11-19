@@ -1,4 +1,4 @@
-import type { IDataObject, INode } from 'n8n-workflow';
+﻿import type { IDataObject, INode } from 'workflow-automation-workflow';
 
 import { createMockExecuteFunction } from '@test/nodes/Helpers';
 

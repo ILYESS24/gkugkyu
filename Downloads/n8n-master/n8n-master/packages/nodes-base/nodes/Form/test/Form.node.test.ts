@@ -1,4 +1,4 @@
-import type { Response, Request } from 'express';
+﻿import type { Response, Request } from 'express';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
 import type {
@@ -7,7 +7,7 @@ import type {
 	INodeExecutionData,
 	IWebhookFunctions,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { Form } from '../Form.node';
 

@@ -1,4 +1,4 @@
-import set from 'lodash/set';
+﻿import set from 'lodash/set';
 import {
 	NodeConnectionTypes,
 	type IDataObject,
@@ -10,7 +10,7 @@ import {
 	type INodePropertyOptions,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { alertFields, alertOperations } from './descriptions/AlertDescription';
 import { caseFields, caseOperations } from './descriptions/CaseDescription';

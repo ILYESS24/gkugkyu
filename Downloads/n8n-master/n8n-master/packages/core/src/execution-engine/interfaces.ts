@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	INode,
 	IPollFunctions,
 	ITriggerFunctions,
@@ -6,7 +6,7 @@ import type {
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export interface IGetExecutePollFunctions {
 	(

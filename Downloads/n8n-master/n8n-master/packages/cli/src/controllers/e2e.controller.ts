@@ -1,16 +1,16 @@
-import type { PushMessage } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { BooleanLicenseFeature, NumericLicenseFeature } from '@n8n/constants';
-import { LICENSE_FEATURES, LICENSE_QUOTAS, UNLIMITED_LICENSE_QUOTA } from '@n8n/constants';
+﻿import type { PushMessage } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { BooleanLicenseFeature, NumericLicenseFeature } from '@workflow-automation/constants';
+import { LICENSE_FEATURES, LICENSE_QUOTAS, UNLIMITED_LICENSE_QUOTA } from '@workflow-automation/constants';
 import {
 	GLOBAL_ADMIN_ROLE,
 	GLOBAL_MEMBER_ROLE,
 	GLOBAL_OWNER_ROLE,
 	SettingsRepository,
 	UserRepository,
-} from '@n8n/db';
-import { Get, Patch, Post, RestController } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Get, Patch, Post, RestController } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { Request } from 'express';
 import { v4 as uuid } from 'uuid';
 
@@ -25,7 +25,7 @@ import { Push } from '@/push';
 import { CacheService } from '@/services/cache/cache.service';
 import { FrontendService } from '@/services/frontend.service';
 import { PasswordUtility } from '@/services/password.utility';
-import { ExecutionsConfig } from '@n8n/config';
+import { ExecutionsConfig } from '@workflow-automation/config';
 
 if (!inE2ETests) {
 	Container.get(Logger).error('E2E endpoints only allowed during E2E tests');

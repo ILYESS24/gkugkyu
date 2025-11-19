@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { BrevoNode } from './GenericFunctions';
 

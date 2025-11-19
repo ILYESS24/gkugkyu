@@ -1,4 +1,4 @@
-import { type Component, computed, type Ref } from 'vue';
+﻿import { type Component, computed, type Ref } from 'vue';
 import { useI18n } from '@n8n/i18n';
 import { N8nIcon } from '@n8n/design-system';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
@@ -10,7 +10,7 @@ import { type CommandBarItem } from '@n8n/design-system/components/N8nCommandBar
 import type { CommandGroup } from '../types';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import { getResourcePermissions } from '@n8n/permissions';
+import { getResourcePermissions } from '@workflow-automation/permissions';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import CommandBarItemTitle from '@/features/shared/commandBar/components/CommandBarItemTitle.vue';
 import type { INodeUi, SimplifiedNodeType } from '@/Interface';

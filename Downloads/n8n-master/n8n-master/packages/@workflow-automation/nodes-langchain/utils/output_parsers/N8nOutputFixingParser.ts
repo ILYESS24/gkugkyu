@@ -1,10 +1,10 @@
-import type { Callbacks } from '@langchain/core/callbacks/manager';
+﻿import type { Callbacks } from '@langchain/core/callbacks/manager';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import type { AIMessage } from '@langchain/core/messages';
 import { BaseOutputParser, OutputParserException } from '@langchain/core/output_parsers';
 import type { PromptTemplate } from '@langchain/core/prompts';
-import type { ISupplyDataFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { ISupplyDataFunctions } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import type { N8nStructuredOutputParser } from './N8nStructuredOutputParser';
 import { logAiEvent } from '../helpers';

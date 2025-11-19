@@ -1,4 +1,4 @@
-import { faker } from '@faker-js/faker';
+﻿import { faker } from '@faker-js/faker';
 import {
 	createWorkflow,
 	getWorkflowSharing,
@@ -9,11 +9,11 @@ import {
 	testDb,
 	mockInstance,
 } from '@n8n/backend-test-utils';
-import type { Project, User } from '@n8n/db';
-import { FolderRepository, ProjectRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ProjectRole } from '@n8n/permissions';
-import { PROJECT_EDITOR_ROLE_SLUG, PROJECT_VIEWER_ROLE_SLUG } from '@n8n/permissions';
+import type { Project, User } from '@workflow-automation/db';
+import { FolderRepository, ProjectRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { ProjectRole } from '@workflow-automation/permissions';
+import { PROJECT_EDITOR_ROLE_SLUG, PROJECT_VIEWER_ROLE_SLUG } from '@workflow-automation/permissions';
 import {
 	createCredentials,
 	getCredentialSharings,
@@ -24,7 +24,7 @@ import {
 import { createFolder } from '@test-integration/db/folders';
 import { createTag } from '@test-integration/db/tags';
 import { DateTime } from 'luxon';
-import { ApplicationError, PROJECT_ROOT } from 'n8n-workflow';
+import { ApplicationError, PROJECT_ROOT } from 'workflow-automation-workflow';
 
 import { createOwner, createMember, createUser, createAdmin } from '../shared/db/users';
 import type { SuperAgentTest } from '../shared/types';
@@ -908,8 +908,8 @@ describe('PATCH /projects/:projectId/folders/:folderId', () => {
 		const project = await createTeamProject(undefined, owner);
 
 		// A
-		// └── B
-		//     └── C
+		// â””â”€â”€ B
+		//     â””â”€â”€ C
 		const folderA = await createFolder(project, { name: 'A' });
 		const folderB = await createFolder(project, {
 			name: 'B',
@@ -947,9 +947,9 @@ describe('PATCH /projects/:projectId/folders/:folderId', () => {
 		const project = await createTeamProject(undefined, owner);
 
 		// A
-		// └── B
-		//     └── C
-		//         └── D
+		// â””â”€â”€ B
+		//     â””â”€â”€ C
+		//         â””â”€â”€ D
 		const folderA = await createFolder(project, { name: 'A' });
 		const folderB = await createFolder(project, {
 			name: 'B',

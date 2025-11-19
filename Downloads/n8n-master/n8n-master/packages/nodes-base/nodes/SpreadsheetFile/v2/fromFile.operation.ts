@@ -1,6 +1,6 @@
-import { parse as createCSVParser, type Options as CSVOptions } from 'csv-parse';
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError } from 'n8n-workflow';
+﻿import { parse as createCSVParser, type Options as CSVOptions } from 'csv-parse';
+import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeOperationError } from 'workflow-automation-workflow';
 import type { Sheet2JSONOpts, ParsingOptions } from 'xlsx';
 import { read as xlsxRead, utils as xlsxUtils } from 'xlsx';
 

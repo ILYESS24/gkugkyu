@@ -1,4 +1,4 @@
-import {
+﻿import {
 	AI_CODE_TOOL_LANGCHAIN_NODE_TYPE,
 	AI_MCP_TOOL_NODE_TYPE,
 	WIKIPEDIA_TOOL_NODE_TYPE,
@@ -9,8 +9,8 @@ import type {
 	INodeCredentialDescription,
 	FromAIArgument,
 	INodePropertyOptions,
-} from 'n8n-workflow';
-import { NodeHelpers, traverseNodeParameters } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeHelpers, traverseNodeParameters } from 'workflow-automation-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 
 /**

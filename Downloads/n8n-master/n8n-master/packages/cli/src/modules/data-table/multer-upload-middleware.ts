@@ -1,6 +1,6 @@
-/* eslint-disable id-denylist */
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿/* eslint-disable id-denylist */
+import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import type { Request, RequestHandler } from 'express';
 import { mkdir } from 'fs/promises';
 import multer from 'multer';

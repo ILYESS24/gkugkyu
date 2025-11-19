@@ -1,13 +1,13 @@
-import {
+﻿import {
 	AddUsersToProjectDto,
 	ChangeUserRoleInProject,
 	CreateProjectDto,
 	DeleteProjectDto,
 	UpdateProjectWithRelationsDto,
-} from '@n8n/api-types';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { ProjectRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { ProjectRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import type { Response } from 'express';
 
 import { ProjectController } from '@/controllers/project.controller';

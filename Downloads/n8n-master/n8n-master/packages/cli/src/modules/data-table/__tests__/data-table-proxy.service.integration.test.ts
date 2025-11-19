@@ -1,6 +1,6 @@
-import type { Logger } from '@n8n/backend-common';
+﻿import type { Logger } from '@workflow-automation/backend-common';
 import { testDb, testModules } from '@n8n/backend-test-utils';
-import type { Project } from '@n8n/db';
+import type { Project } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 import type {
 	AddDataTableColumnOptions,
@@ -9,7 +9,7 @@ import type {
 	MoveDataTableColumnOptions,
 	UpsertDataTableRowOptions,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { OwnershipService } from '@/services/ownership.service';
 

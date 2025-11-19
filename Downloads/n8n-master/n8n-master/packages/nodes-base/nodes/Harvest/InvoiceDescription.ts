@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 const resource = ['invoice'];
 
@@ -247,7 +247,7 @@ export const invoiceFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The currency used by the invoice. If not provided, the client’s currency will be used. See a list of supported currencies',
+					'The currency used by the invoice. If not provided, the clientâ€™s currency will be used. See a list of supported currencies',
 			},
 			{
 				displayName: 'Discount',
@@ -277,7 +277,7 @@ export const invoiceFields: INodeProperties[] = [
 				name: 'issue_date',
 				type: 'dateTime',
 				default: '',
-				description: 'Date the invoice was issued. Defaults to today’s date.',
+				description: 'Date the invoice was issued. Defaults to todayâ€™s date.',
 			},
 			{
 				displayName: 'Notes',
@@ -385,7 +385,7 @@ export const invoiceFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The currency used by the invoice. If not provided, the client’s currency will be used. See a list of supported currencies',
+					'The currency used by the invoice. If not provided, the clientâ€™s currency will be used. See a list of supported currencies',
 			},
 			{
 				displayName: 'Discount',
@@ -415,7 +415,7 @@ export const invoiceFields: INodeProperties[] = [
 				name: 'issue_date',
 				type: 'dateTime',
 				default: '',
-				description: 'Date the invoice was issued. Defaults to today’s date.',
+				description: 'Date the invoice was issued. Defaults to todayâ€™s date.',
 			},
 			{
 				displayName: 'Notes',

@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'workflow-automation-workflow';
 import { issueDescription } from './resources/issue';
 import { issueCommentDescription } from './resources/issueComment';
 import { getRepositories } from './listSearch/getRepositories';

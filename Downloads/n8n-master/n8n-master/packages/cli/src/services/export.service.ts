@@ -1,12 +1,12 @@
-import { Logger, safeJoinPath } from '@n8n/backend-common';
+﻿import { Logger, safeJoinPath } from '@workflow-automation/backend-common';
 import { mkdir, rm, readdir, appendFile, readFile } from 'fs/promises';
 
-import { Service } from '@n8n/di';
+import { Service } from '@workflow-automation/di';
 
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { DataSource } from '@n8n/typeorm';
 import { validateDbTypeForExportEntities } from '@/utils/validate-database-type';
-import { Cipher } from 'n8n-core';
+import { Cipher } from 'workflow-automation-core';
 import { compressFolder } from '@/utils/compression.util';
 
 @Service()
@@ -25,7 +25,7 @@ export class ExportService {
 
 		if (entityFiles.length > 0) {
 			this.logger.info(
-				`   🗑️  Found ${entityFiles.length} existing file(s) for ${entityName}, deleting...`,
+				`   ðŸ—‘ï¸  Found ${entityFiles.length} existing file(s) for ${entityName}, deleting...`,
 			);
 			for (const file of entityFiles) {
 				await rm(safeJoinPath(outputDir, file));
@@ -38,7 +38,7 @@ export class ExportService {
 		outputDir: string,
 		customEncryptionKey?: string,
 	): Promise<number> {
-		this.logger.info('\n🔧 Exporting migrations table:');
+		this.logger.info('\nðŸ”§ Exporting migrations table:');
 		this.logger.info('==============================');
 
 		// Get the table prefix from DataSource options
@@ -54,7 +54,7 @@ export class ExportService {
 				`SELECT id FROM ${this.dataSource.driver.escape(migrationsTableName)} LIMIT 1`,
 			);
 
-			this.logger.info(`\n📊 Processing system table: ${migrationsTableName}`);
+			this.logger.info(`\nðŸ“Š Processing system table: ${migrationsTableName}`);
 
 			// Clear existing files for migrations
 			await this.clearExistingEntityFiles(outputDir, 'migrations');
@@ -76,13 +76,13 @@ export class ExportService {
 			);
 
 			this.logger.info(
-				`   ✅ Completed export for ${migrationsTableName}: ${allMigrations.length} entities in 1 file`,
+				`   âœ… Completed export for ${migrationsTableName}: ${allMigrations.length} entities in 1 file`,
 			);
 
 			systemTablesExported = 1; // Successfully exported migrations table
 		} catch (error) {
 			this.logger.info(
-				`   ⚠️  Migrations table ${migrationsTableName} not found or not accessible, skipping...`,
+				`   âš ï¸  Migrations table ${migrationsTableName} not found or not accessible, skipping...`,
 				{ error },
 			);
 		}
@@ -95,12 +95,12 @@ export class ExportService {
 		excludedTables: Set<string> = new Set(),
 		keyFilePath?: string,
 	) {
-		this.logger.info('\n⚠️⚠️ This feature is currently under development. ⚠️⚠️');
+		this.logger.info('\nâš ï¸âš ï¸ This feature is currently under development. âš ï¸âš ï¸');
 
 		validateDbTypeForExportEntities(this.dataSource.options.type);
 
-		this.logger.info('\n🚀 Starting entity export...');
-		this.logger.info(`📁 Output directory: ${outputDir}`);
+		this.logger.info('\nðŸš€ Starting entity export...');
+		this.logger.info(`ðŸ“ Output directory: ${outputDir}`);
 
 		// Read custom encryption key from file if provided
 		let customEncryptionKey: string | undefined;
@@ -108,7 +108,7 @@ export class ExportService {
 			try {
 				const keyFileContent = await readFile(keyFilePath, 'utf8');
 				customEncryptionKey = keyFileContent.trim();
-				this.logger.info(`🔑 Using custom encryption key from: ${keyFilePath}`);
+				this.logger.info(`ðŸ”‘ Using custom encryption key from: ${keyFilePath}`);
 			} catch (error) {
 				throw new Error(
 					`Failed to read encryption key file at ${keyFilePath}: ${error instanceof Error ? error.message : 'Unknown error'}`,
@@ -123,7 +123,7 @@ export class ExportService {
 		// Get DataSource from Container and fetch all repositories
 		const entityMetadatas = this.dataSource.entityMetadatas;
 
-		this.logger.info('\n📋 Exporting entities from all tables:');
+		this.logger.info('\nðŸ“‹ Exporting entities from all tables:');
 		this.logger.info('====================================');
 
 		let totalTablesProcessed = 0;
@@ -139,14 +139,14 @@ export class ExportService {
 
 			if (excludedTables.has(tableName)) {
 				this.logger.info(
-					`   💭 Skipping table: ${tableName} (${metadata.name}) as it exists as an exclusion`,
+					`   ðŸ’­ Skipping table: ${tableName} (${metadata.name}) as it exists as an exclusion`,
 				);
 				continue;
 			}
 
 			const entityName = metadata.name.toLowerCase();
 
-			this.logger.info(`\n📊 Processing table: ${tableName} (${entityName})`);
+			this.logger.info(`\nðŸ“Š Processing table: ${tableName} (${entityName})`);
 
 			// Clear existing files for this entity
 			await this.clearExistingEntityFiles(outputDir, entityName);
@@ -154,7 +154,7 @@ export class ExportService {
 			// Get column information for this table
 			const columnNames = metadata.columns.map((col) => col.databaseName);
 			const columns = columnNames.map(this.dataSource.driver.escape).join(', ');
-			this.logger.info(`   💭 Columns: ${columnNames.join(', ')}`);
+			this.logger.info(`   ðŸ’­ Columns: ${columnNames.join(', ')}`);
 
 			let offset = 0;
 			let totalEntityCount = 0;
@@ -187,7 +187,7 @@ export class ExportService {
 
 				// If we've moved to a new file, log the completion of the previous file
 				if (targetFileIndex > fileIndex) {
-					this.logger.info(`   ✅ Completed file ${fileIndex}: ${currentFileEntityCount} entities`);
+					this.logger.info(`   âœ… Completed file ${fileIndex}: ${currentFileEntityCount} entities`);
 					fileIndex = targetFileIndex;
 					currentFileEntityCount = 0;
 				}
@@ -221,11 +221,11 @@ export class ExportService {
 
 			// Log completion of the final file
 			if (currentFileEntityCount > 0) {
-				this.logger.info(`   ✅ Completed file ${fileIndex}: ${currentFileEntityCount} entities`);
+				this.logger.info(`   âœ… Completed file ${fileIndex}: ${currentFileEntityCount} entities`);
 			}
 
 			this.logger.info(
-				`   ✅ Completed export for ${tableName}: ${totalEntityCount} entities in ${fileIndex} file(s)`,
+				`   âœ… Completed export for ${tableName}: ${totalEntityCount} entities in ${fileIndex} file(s)`,
 			);
 			totalTablesProcessed++;
 			totalEntitiesExported += totalEntityCount;
@@ -233,7 +233,7 @@ export class ExportService {
 
 		// Compress the output directory to entities.zip
 		const zipPath = safeJoinPath(outputDir, 'entities.zip');
-		this.logger.info(`\n🗜️  Compressing export to ${zipPath}...`);
+		this.logger.info(`\nðŸ—œï¸  Compressing export to ${zipPath}...`);
 
 		await compressFolder(outputDir, zipPath, {
 			level: 6,
@@ -242,7 +242,7 @@ export class ExportService {
 		});
 
 		// Clean up individual JSONL files, keeping only the ZIP
-		this.logger.info('🗑️  Cleaning up individual entity files...');
+		this.logger.info('ðŸ—‘ï¸  Cleaning up individual entity files...');
 		const files = await readdir(outputDir);
 		for (const file of files) {
 			if (file.endsWith('.jsonl') && file !== 'entities.zip') {
@@ -250,11 +250,11 @@ export class ExportService {
 			}
 		}
 
-		this.logger.info('\n📊 Export Summary:');
+		this.logger.info('\nðŸ“Š Export Summary:');
 		this.logger.info(`   Tables processed: ${totalTablesProcessed}`);
 		this.logger.info(`   Total entities exported: ${totalEntitiesExported}`);
 		this.logger.info(`   Output directory: ${outputDir}`);
 		this.logger.info(`   Compressed archive: ${zipPath}`);
-		this.logger.info('✅ Task completed successfully! \n');
+		this.logger.info('âœ… Task completed successfully! \n');
 	}
 }

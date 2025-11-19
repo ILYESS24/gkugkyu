@@ -1,6 +1,6 @@
-import { CredentialsEntity, type CredentialsRepository } from '@n8n/db';
+﻿import { CredentialsEntity, type CredentialsRepository } from '@workflow-automation/db';
 import { EntityNotFoundError } from '@n8n/typeorm';
-import { Container } from '@n8n/di';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import type {
 	IAuthenticateGeneric,
@@ -11,9 +11,9 @@ import type {
 	INodeProperties,
 	INodeTypes,
 	INodeCredentialsDetails,
-} from 'n8n-workflow';
-import { deepCopy, Workflow } from 'n8n-workflow';
-import { type InstanceSettings, Cipher } from 'n8n-core';
+} from 'workflow-automation-workflow';
+import { deepCopy, Workflow } from 'workflow-automation-workflow';
+import { type InstanceSettings, Cipher } from 'workflow-automation-core';
 
 import { CredentialTypes } from '@/credential-types';
 import { CredentialsHelper } from '@/credentials-helper';

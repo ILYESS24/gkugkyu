@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const contactOperations: INodeProperties[] = [
 	{
@@ -1126,7 +1126,7 @@ export const contactFields: INodeProperties[] = [
 						value: 'bi',
 					},
 					{
-						name: 'Bokmål, Norwegian; Norwegian Bokmål',
+						name: 'BokmÃ¥l, Norwegian; Norwegian BokmÃ¥l',
 						value: 'nb',
 					},
 					{
@@ -1738,7 +1738,7 @@ export const contactFields: INodeProperties[] = [
 						value: 'vi',
 					},
 					{
-						name: 'Volapük',
+						name: 'VolapÃ¼k',
 						value: 'vo',
 					},
 					{
@@ -2088,7 +2088,7 @@ export const contactFields: INodeProperties[] = [
 				displayName: 'Time Zone',
 				name: 'timeZone',
 				description:
-					'The contact’s time zone. This can be set automatically by HubSpot based on other contact properties. It can also be set manually for each contact.',
+					'The contactâ€™s time zone. This can be set automatically by HubSpot based on other contact properties. It can also be set manually for each contact.',
 				type: 'options',
 				default: '',
 				options: [
@@ -3469,7 +3469,7 @@ export const contactFields: INodeProperties[] = [
 						value: 'asia_slash_tel_aviv',
 					},
 					{
-						name: 'UTC +03:00 Asia Türkiye',
+						name: 'UTC +03:00 Asia TÃ¼rkiye',
 						value: 'turkey',
 					},
 					{
@@ -4212,7 +4212,7 @@ export const contactFields: INodeProperties[] = [
 			{
 				displayName: 'WhatsApp Phone Number',
 				name: 'whatsappPhoneNumber',
-				description: 'The phone number associated with the contact’s WhatsApp account',
+				description: 'The phone number associated with the contactâ€™s WhatsApp account',
 				type: 'string',
 				default: '',
 			},

@@ -1,4 +1,4 @@
-import * as changeCase from 'change-case';
+﻿import * as changeCase from 'change-case';
 import { createHash } from 'crypto';
 import upperFirst from 'lodash/upperFirst';
 import type {
@@ -9,8 +9,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { analyzerFields, analyzersOperations } from './AnalyzerDescriptions';
 import type { IJob } from './AnalyzerInterface';

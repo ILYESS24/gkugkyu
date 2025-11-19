@@ -1,4 +1,4 @@
-import type { ILocalLoadOptionsFunctions, ResourceMapperFields } from 'n8n-workflow';
+﻿import type { ILocalLoadOptionsFunctions, ResourceMapperFields } from 'workflow-automation-workflow';
 
 import { loadWorkflowInputMappings } from '@utils/workflowInputsResourceMapping/GenericFunctions';
 
@@ -11,8 +11,8 @@ export async function loadSubWorkflowInputs(
 		const { triggerId, workflowId } = subworkflowInfo ?? {};
 		const path = (workflowId ?? '') + (triggerId ? `/${triggerId.slice(0, 6)}` : '');
 		const subworkflowLink = workflowId
-			? `<a href="/workflow/${path}" target="_blank">sub-workflow’s trigger</a>`
-			: 'sub-workflow’s trigger';
+			? `<a href="/workflow/${path}" target="_blank">sub-workflowâ€™s trigger</a>`
+			: 'sub-workflowâ€™s trigger';
 
 		switch (dataMode) {
 			case 'passthrough':

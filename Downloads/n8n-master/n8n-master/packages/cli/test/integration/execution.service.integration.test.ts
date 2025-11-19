@@ -1,8 +1,8 @@
-import { createTeamProject, createWorkflow, testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { ExecutionSummaries } from '@n8n/db';
-import { ExecutionMetadataRepository, ExecutionRepository, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { createTeamProject, createWorkflow, testDb } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { ExecutionSummaries } from '@workflow-automation/db';
+import { ExecutionMetadataRepository, ExecutionRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 
 import { ExecutionService } from '@/executions/execution.service';

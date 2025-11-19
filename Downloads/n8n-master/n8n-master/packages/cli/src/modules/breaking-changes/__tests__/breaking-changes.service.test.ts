@@ -1,8 +1,8 @@
-import type { BreakingChangeWorkflowRuleResult } from '@n8n/api-types';
+﻿import type { BreakingChangeWorkflowRuleResult } from '@workflow-automation/api-types';
 import { mockLogger } from '@n8n/backend-test-utils';
-import type { WorkflowRepository } from '@n8n/db';
+import type { WorkflowRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
+import type { ErrorReporter } from 'workflow-automation-core';
 
 import type { CacheService } from '@/services/cache/cache.service';
 

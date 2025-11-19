@@ -1,5 +1,5 @@
-import type { IHttpRequestOptions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IHttpRequestOptions } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	preprocessTags,

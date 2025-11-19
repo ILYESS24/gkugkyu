@@ -1,6 +1,6 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers';
-import { NodeOperationError, NodeConnectionTypes, sleep } from 'n8n-workflow';
+import { NodeOperationError, NodeConnectionTypes, sleep } from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -8,7 +8,7 @@ import type {
 	INodeParameters,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { getBatchingOptionFields } from '@utils/sharedFields';
@@ -126,7 +126,7 @@ export class TextClassifier implements INodeType {
 						name: 'fallback',
 						type: 'options',
 						default: 'discard',
-						description: 'What to do with items that don’t match the categories exactly',
+						description: 'What to do with items that donâ€™t match the categories exactly',
 						options: [
 							{
 								name: 'Discard Item',

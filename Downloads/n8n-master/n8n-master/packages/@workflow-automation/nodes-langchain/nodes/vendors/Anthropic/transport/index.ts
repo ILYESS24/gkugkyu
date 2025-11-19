@@ -1,10 +1,10 @@
-import type FormData from 'form-data';
+﻿import type FormData from 'form-data';
 import type {
 	IDataObject,
 	IExecuteFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 type RequestParameters = {
 	headers?: IDataObject;

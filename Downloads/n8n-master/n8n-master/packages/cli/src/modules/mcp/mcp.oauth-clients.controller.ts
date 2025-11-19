@@ -1,11 +1,11 @@
-import {
+﻿import {
 	DeleteOAuthClientResponseDto,
 	ListOAuthClientsResponseDto,
 	OAuthClientResponseDto,
-} from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Delete, Get, GlobalScope, Param, RestController } from '@n8n/decorators';
+} from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Delete, Get, GlobalScope, Param, RestController } from '@workflow-automation/decorators';
 import type { Response } from 'express';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

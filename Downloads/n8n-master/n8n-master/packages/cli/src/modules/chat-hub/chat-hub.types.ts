@@ -1,5 +1,5 @@
-import type { ChatHubConversationModel, ChatMessageId, ChatSessionId } from '@n8n/api-types';
-import type { INode, INodeCredentials } from 'n8n-workflow';
+﻿import type { ChatHubConversationModel, ChatMessageId, ChatSessionId } from '@workflow-automation/api-types';
+import type { INode, INodeCredentials } from 'workflow-automation-workflow';
 
 export interface BaseMessagePayload {
 	userId: string;

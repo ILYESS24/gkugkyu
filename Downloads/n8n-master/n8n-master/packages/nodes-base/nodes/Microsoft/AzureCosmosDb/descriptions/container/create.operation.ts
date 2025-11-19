@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
-import { OperationalError, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { OperationalError, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { HeaderConstants } from '../../helpers/constants';
 import { processJsonInput } from '../../helpers/utils';

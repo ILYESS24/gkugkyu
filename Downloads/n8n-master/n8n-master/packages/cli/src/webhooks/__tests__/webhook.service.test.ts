@@ -1,8 +1,8 @@
-import { WebhookEntity } from '@n8n/db';
-import type { WebhookRepository } from '@n8n/db';
+﻿import { WebhookEntity } from '@workflow-automation/db';
+import type { WebhookRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { INode, INodeType, IWebhookData, IWorkflowExecuteAdditionalData } from 'n8n-workflow';
-import { Workflow } from 'n8n-workflow';
+import type { INode, INodeType, IWebhookData, IWorkflowExecuteAdditionalData } from 'workflow-automation-workflow';
+import { Workflow } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import config from '@/config';

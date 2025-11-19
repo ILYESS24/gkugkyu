@@ -1,11 +1,11 @@
-import { sleep, jsonParse, NodeOperationError, NodeConnectionTypes } from 'n8n-workflow';
+﻿import { sleep, jsonParse, NodeOperationError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
 	IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	executionDurationProperty,

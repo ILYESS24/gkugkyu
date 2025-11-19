@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
 	NodeApiError,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions, wrapData } from '../../../../../utils/utilities';
 import { processAirtableError } from '../../helpers/utils';

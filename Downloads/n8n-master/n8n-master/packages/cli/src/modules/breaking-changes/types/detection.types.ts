@@ -1,8 +1,8 @@
-import type {
+﻿import type {
 	BreakingChangeInstanceIssue,
 	BreakingChangeRecommendation,
 	BreakingChangeWorkflowIssue,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 
 export interface WorkflowDetectionReport {
 	isAffected: boolean;

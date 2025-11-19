@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+﻿import type { ICredentialType, INodeProperties } from 'workflow-automation-workflow';
 
 const scopes = ['identity', 'edit', 'history', 'mysubreddits', 'read', 'save', 'submit'];
 

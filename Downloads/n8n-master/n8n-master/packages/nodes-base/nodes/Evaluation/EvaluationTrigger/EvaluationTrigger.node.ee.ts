@@ -1,12 +1,12 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import type {
 	INodeType,
 	INodeTypeDescription,
 	IExecuteFunctions,
 	INodeExecutionData,
 	NodeExecutionWithMetadata,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import {
 	getSelectFields as dataTableFilters,

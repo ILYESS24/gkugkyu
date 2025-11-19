@@ -1,4 +1,4 @@
-import {
+﻿import {
 	ADD_FORM_NOTICE,
 	type INodePropertyOptions,
 	NodeConnectionTypes,
@@ -7,7 +7,7 @@ import {
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	type IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	appendAttributionToForm,

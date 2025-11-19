@@ -1,6 +1,6 @@
-import type { DeepMockProxy } from 'jest-mock-extended';
+﻿import type { DeepMockProxy } from 'jest-mock-extended';
 import { mock, mockDeep } from 'jest-mock-extended';
-import { constructExecutionMetaData } from 'n8n-core';
+import { constructExecutionMetaData } from 'workflow-automation-core';
 import {
 	BINARY_ENCODING,
 	WAIT_NODE_TYPE,
@@ -9,7 +9,7 @@ import {
 	type INodeExecutionData,
 	type NodeTypeAndVersion,
 	CHAT_TRIGGER_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { RespondToWebhook } from '../RespondToWebhook.node';
 

@@ -1,4 +1,4 @@
-import { ChatHubProvider } from '@n8n/api-types';
+﻿import { ChatHubProvider } from '@workflow-automation/api-types';
 import {
 	JsonColumn,
 	WithTimestamps,
@@ -6,7 +6,7 @@ import {
 	User,
 	CredentialsEntity,
 	WorkflowEntity,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import {
 	Column,
 	Entity,
@@ -16,7 +16,7 @@ import {
 	type Relation,
 	PrimaryGeneratedColumn,
 } from '@n8n/typeorm';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 import type { ChatHubMessage } from './chat-hub-message.entity';
 

@@ -1,4 +1,4 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import { ApplicationError } from '@n8n/errors';
 import type {
 	Workflow,
@@ -12,7 +12,7 @@ import type {
 	IDeferredPromise,
 	IExecuteResponsePromiseData,
 	IRun,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import type { IGetExecuteTriggerFunctions } from './interfaces';

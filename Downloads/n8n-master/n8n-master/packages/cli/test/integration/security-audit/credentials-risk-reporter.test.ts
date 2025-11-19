@@ -1,13 +1,13 @@
-import { testDb } from '@n8n/backend-test-utils';
-import type { SecurityConfig } from '@n8n/config';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import type { SecurityConfig } from '@workflow-automation/config';
 import {
 	generateNanoId,
 	CredentialsRepository,
 	ExecutionDataRepository,
 	ExecutionRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import { v4 as uuid } from 'uuid';
 

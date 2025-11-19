@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { Logger } from '@n8n/backend-common';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { Logger } from '@workflow-automation/backend-common';
 import type { OAuthClient } from '../database/entities/oauth-client.entity';
 import { mock } from 'jest-mock-extended';
 

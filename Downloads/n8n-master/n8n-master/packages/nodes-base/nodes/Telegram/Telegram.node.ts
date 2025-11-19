@@ -1,4 +1,4 @@
-import { lookup } from 'mime-types';
+﻿import { lookup } from 'mime-types';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -7,13 +7,13 @@ import type {
 	INodeTypeDescription,
 	IHttpRequestMethods,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	BINARY_ENCODING,
 	SEND_AND_WAIT_OPERATION,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import {
@@ -1259,7 +1259,7 @@ export class Telegram implements INodeType {
 						type: 'boolean',
 						default: false,
 						description:
-							'Whether to show reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply',
+							'Whether to show reply interface to the user, as if they manually selected the botâ€˜s message and tapped â€™Reply',
 					},
 					{
 						displayName: 'Selective',
@@ -1342,7 +1342,7 @@ export class Telegram implements INodeType {
 														type: 'string',
 														default: '',
 														description:
-															"If set, pressing the button will insert the bot‘s username and the specified inline query in the current chat's input field.Can be empty, in which case only the bot’s username will be inserted",
+															"If set, pressing the button will insert the botâ€˜s username and the specified inline query in the current chat's input field.Can be empty, in which case only the botâ€™s username will be inserted",
 													},
 													{
 														displayName: 'Switch Inline Query',
@@ -1350,7 +1350,7 @@ export class Telegram implements INodeType {
 														type: 'string',
 														default: '',
 														description:
-															'If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the bot‘s username and the specified inline query in the input field. Can be empty, in which case just the bot’s username will be inserted.',
+															'If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the botâ€˜s username and the specified inline query in the input field. Can be empty, in which case just the botâ€™s username will be inserted.',
 													},
 													{
 														displayName: 'URL',
@@ -1580,7 +1580,7 @@ export class Telegram implements INodeType {
 					{
 						...appendAttributionOption,
 						description:
-							'Whether to include the phrase “This message was sent automatically with n8n” to the end of the message',
+							'Whether to include the phrase â€œThis message was sent automatically with n8nâ€ to the end of the message',
 						displayOptions: {
 							show: {
 								'/operation': ['sendMessage'],
@@ -1785,7 +1785,7 @@ export class Telegram implements INodeType {
 						},
 						default: '',
 						description:
-							'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail‘s width and height should not exceed 320.',
+							'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnailâ€˜s width and height should not exceed 320.',
 					},
 					{
 						displayName: 'Width',
@@ -1820,8 +1820,8 @@ export class Telegram implements INodeType {
 				undefined,
 				{
 					noButtonStyle: true,
-					defaultApproveLabel: '✅ Approve',
-					defaultDisapproveLabel: '❌ Decline',
+					defaultApproveLabel: 'âœ… Approve',
+					defaultDisapproveLabel: 'âŒ Decline',
 				},
 			).filter((p) => p.name !== 'subject'),
 		],

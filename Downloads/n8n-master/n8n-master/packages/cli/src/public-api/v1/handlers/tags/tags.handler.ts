@@ -1,6 +1,6 @@
-import type { TagEntity } from '@n8n/db';
-import { TagRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import type { TagEntity } from '@workflow-automation/db';
+import { TagRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { FindManyOptions } from '@n8n/typeorm';
 import type express from 'express';

@@ -1,12 +1,12 @@
-import { AiWorkflowBuilderService } from '@n8n/ai-workflow-builder';
+﻿import { AiWorkflowBuilderService } from '@n8n/ai-workflow-builder';
 import { ChatPayload } from '@n8n/ai-workflow-builder/dist/workflow-builder-agent';
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { AiAssistantClient } from '@n8n_io/ai-assistant-sdk';
-import { InstanceSettings } from 'n8n-core';
-import type { IUser } from 'n8n-workflow';
-import { ITelemetryTrackProperties } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import type { IUser } from 'workflow-automation-workflow';
+import { ITelemetryTrackProperties } from 'workflow-automation-workflow';
 
 import { N8N_VERSION } from '@/constants';
 import { License } from '@/license';

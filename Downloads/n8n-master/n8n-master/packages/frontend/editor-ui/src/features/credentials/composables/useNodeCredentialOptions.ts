@@ -1,4 +1,4 @@
-import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
+﻿import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { KEEP_AUTH_IN_NDV_FOR_NODES } from '@/app/constants';
 import type { INodeUi } from '@/Interface';
 import type { ICredentialsResponse } from '../credentials.types';
@@ -13,7 +13,7 @@ import {
 	type INodeCredentialDescription,
 	type INodeTypeDescription,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, unref, type ComputedRef, type MaybeRef } from 'vue';
 
 export interface CredentialDropdownOption extends ICredentialsResponse {

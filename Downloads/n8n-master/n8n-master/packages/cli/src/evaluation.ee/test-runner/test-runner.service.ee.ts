@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { ExecutionsConfig } from '@n8n/config';
-import type { User, TestRun } from '@n8n/db';
-import { TestCaseExecutionRepository, TestRunRepository, WorkflowRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { ExecutionsConfig } from '@workflow-automation/config';
+import type { User, TestRun } from '@workflow-automation/db';
+import { TestCaseExecutionRepository, TestRunRepository, WorkflowRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
 import {
 	EVALUATION_NODE_TYPE,
 	EVALUATION_TRIGGER_NODE_TYPE,
@@ -13,7 +13,7 @@ import {
 	DEFAULT_EVALUATION_METRIC,
 	ManualExecutionCancelledError,
 	createRunExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type {
 	IDataObject,
 	IRun,
@@ -22,7 +22,7 @@ import type {
 	INodeExecutionData,
 	AssignmentCollectionValue,
 	GenericValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import assert from 'node:assert';
 import { JsonObject } from 'openid-client';
 

@@ -1,7 +1,7 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { OutputParserException } from '@langchain/core/output_parsers';
 import { mock, type MockProxy } from 'jest-mock-extended';
-import { normalizeItems } from 'n8n-core';
+import { normalizeItems } from 'workflow-automation-core';
 import {
 	jsonParse,
 	NodeConnectionTypes,
@@ -9,7 +9,7 @@ import {
 	type INode,
 	type ISupplyDataFunctions,
 	type IWorkflowDataProxyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	N8nStructuredOutputParser,

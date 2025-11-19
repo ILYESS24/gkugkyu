@@ -1,4 +1,4 @@
-import type { IHttpRequestOptions, IRequestOptions } from 'n8n-workflow';
+﻿import type { IHttpRequestOptions, IRequestOptions } from 'workflow-automation-workflow';
 
 export const getUrl = (options: IHttpRequestOptions | IRequestOptions) => {
 	// FIXME: HTTP node uses old IRequestOptions interface

@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import get from 'lodash/get';
 import type {
 	DeclarativeRestApiSettings,
@@ -18,8 +18,8 @@ import type {
 	IRunExecutionData,
 	ITaskDataConnections,
 	IWorkflowExecuteAdditionalData,
-} from 'n8n-workflow';
-import { Workflow, createEmptyRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Workflow, createEmptyRunExecutionData } from 'workflow-automation-workflow';
 import type { ICredentialsDecrypted } from 'n8n-workflow/src';
 
 import * as executionContexts from '@/execution-engine/node-execution-context';

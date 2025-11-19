@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const affiliateOperations: INodeProperties[] = [
 	{
@@ -58,7 +58,7 @@ export const affiliateFields: INodeProperties[] = [
 				resource: ['affiliate'],
 			},
 		},
-		description: 'The affiliate’s email',
+		description: 'The affiliateâ€™s email',
 	},
 	{
 		displayName: 'First Name',
@@ -72,7 +72,7 @@ export const affiliateFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'The affiliate’s firstname',
+		description: 'The affiliateâ€™s firstname',
 	},
 	{
 		displayName: 'Last Name',
@@ -86,7 +86,7 @@ export const affiliateFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'The affiliate’s lastname',
+		description: 'The affiliateâ€™s lastname',
 	},
 	{
 		displayName: 'Additional Fields',
@@ -151,7 +151,7 @@ export const affiliateFields: INodeProperties[] = [
 								type: 'string',
 								default: '',
 								description:
-									'The country’s ISO_3166-1 code. <a href="https://en.wikipedia.org/wiki/ISO_3166-1">Codes</a>.',
+									'The countryâ€™s ISO_3166-1 code. <a href="https://en.wikipedia.org/wiki/ISO_3166-1">Codes</a>.',
 							},
 						],
 					},
@@ -162,7 +162,7 @@ export const affiliateFields: INodeProperties[] = [
 				name: 'companyName',
 				type: 'string',
 				default: '',
-				description: 'The affiliate’s company data',
+				description: 'The affiliateâ€™s company data',
 			},
 		],
 	},
@@ -284,7 +284,7 @@ export const affiliateFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				description:
-					'An affiliate’s referral code. This corresponds to the value of ref= in their referral link.',
+					'An affiliateâ€™s referral code. This corresponds to the value of ref= in their referral link.',
 			},
 			{
 				displayName: 'Source ID',

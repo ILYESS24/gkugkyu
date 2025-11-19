@@ -1,9 +1,9 @@
-import { ShutdownMetadata } from '@n8n/decorators';
-import type { ShutdownServiceClass } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { ShutdownMetadata } from '@workflow-automation/decorators';
+import type { ShutdownServiceClass } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
-import { UnexpectedError } from 'n8n-workflow';
+import type { ErrorReporter } from 'workflow-automation-core';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { ShutdownService } from '../shutdown.service';
 

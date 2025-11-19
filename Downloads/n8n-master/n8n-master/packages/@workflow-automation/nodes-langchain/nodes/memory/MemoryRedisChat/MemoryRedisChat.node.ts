@@ -1,4 +1,4 @@
-import type { RedisChatMessageHistoryInput } from '@langchain/redis';
+﻿import type { RedisChatMessageHistoryInput } from '@langchain/redis';
 import { RedisChatMessageHistory } from '@langchain/redis';
 import { BufferMemory, BufferWindowMemory } from 'langchain/memory';
 import {
@@ -8,7 +8,7 @@ import {
 	type ISupplyDataFunctions,
 	type SupplyData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { RedisClientOptions } from 'redis';
 import { createClient } from 'redis';
 

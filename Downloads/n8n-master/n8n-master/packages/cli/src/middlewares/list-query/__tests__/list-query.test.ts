@@ -1,4 +1,4 @@
-import type { ListQueryDb } from '@n8n/db';
+﻿import type { ListQueryDb } from '@workflow-automation/db';
 import type { Response, NextFunction } from 'express';
 
 import { filterListQueryMiddleware } from '@/middlewares/list-query/filter';

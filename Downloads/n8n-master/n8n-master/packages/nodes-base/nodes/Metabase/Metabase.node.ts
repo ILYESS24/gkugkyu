@@ -1,5 +1,5 @@
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { alertsFields, alertsOperations } from './AlertsDescription';
 import { databasesFields, databasesOperations } from './DatabasesDescription';

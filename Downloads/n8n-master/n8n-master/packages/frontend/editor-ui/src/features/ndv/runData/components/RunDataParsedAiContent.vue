@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useI18n } from '@n8n/i18n';
 import { useToast } from '@/app/composables/useToast';
 import { type ParsedAiContent } from '@/app/utils/aiUtils';
-import { type IDataObject } from 'n8n-workflow';
+import { type IDataObject } from 'workflow-automation-workflow';
 import VueMarkdown from 'vue-markdown-render';
 import hljs from 'highlight.js/lib/core';
 import { computed } from 'vue';
@@ -79,7 +79,7 @@ function jsonToMarkdown(data: JsonMarkdown): string {
 	}
 
 	if (typeof data === 'string') {
-		// If data is a valid JSON string – format it as JSON markdown
+		// If data is a valid JSON string â€“ format it as JSON markdown
 		if (isJsonString(data)) {
 			return formatToJsonMarkdown(data);
 		}

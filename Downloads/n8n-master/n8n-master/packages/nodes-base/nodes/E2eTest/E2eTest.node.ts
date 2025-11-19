@@ -1,4 +1,4 @@
-import {
+﻿import {
 	NodeConnectionTypes,
 	type IExecuteFunctions,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	type ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { remoteOptions, resourceMapperFields, returnData, searchOptions } from './mock';
 

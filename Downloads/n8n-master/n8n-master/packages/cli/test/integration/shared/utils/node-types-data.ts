@@ -1,4 +1,4 @@
-import type { INodeTypeData } from 'n8n-workflow';
+﻿import type { INodeTypeData } from 'workflow-automation-workflow';
 
 export function mockNodeTypesData(
 	nodeNames: string[],

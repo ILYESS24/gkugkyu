@@ -1,7 +1,7 @@
-import { screen } from '@testing-library/vue';
+﻿import { screen } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
-import type { ProjectRole, AllRolesMap } from '@n8n/permissions';
+import type { ProjectRole, AllRolesMap } from '@workflow-automation/permissions';
 import type { ActionDropdownItem } from '@n8n/design-system';
 import ProjectMembersRoleCell from './ProjectMembersRoleCell.vue';
 import { createComponentRenderer } from '@/__tests__/render';

@@ -1,5 +1,5 @@
-import { createWriteStream } from 'fs';
-import { BINARY_ENCODING, NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+﻿import { createWriteStream } from 'fs';
+import { BINARY_ENCODING, NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialsDecrypted,
@@ -11,7 +11,7 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { basename, dirname } from 'path';
 import ftpClient from 'promise-ftp';
 import sftpClient from 'ssh2-sftp-client';

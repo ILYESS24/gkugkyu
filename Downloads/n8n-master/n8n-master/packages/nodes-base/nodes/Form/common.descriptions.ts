@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { appendAttributionOption } from '../../utils/descriptions';
 
@@ -555,5 +555,5 @@ export const respondWithOptions: INodeProperties = {
 
 export const appendAttributionToForm: INodeProperties = {
 	...appendAttributionOption,
-	description: 'Whether to include the link “Form automated with n8n” at the bottom of the form',
+	description: 'Whether to include the link â€œForm automated with n8nâ€ at the bottom of the form',
 };

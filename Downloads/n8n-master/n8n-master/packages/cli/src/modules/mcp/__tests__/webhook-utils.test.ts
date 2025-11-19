@@ -1,13 +1,13 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { User } from '@n8n/db';
-import type { SharedCredentials } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { User } from '@workflow-automation/db';
+import type { SharedCredentials } from '@workflow-automation/db';
 import type {
 	INode,
 	INodeCredentials,
 	INodeParameters,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
-import { WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
 
 import { buildWebhookPath, getWebhookDetails } from '../tools/webhook-utils';
 

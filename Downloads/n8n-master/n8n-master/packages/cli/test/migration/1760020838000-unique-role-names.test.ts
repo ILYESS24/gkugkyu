@@ -1,12 +1,12 @@
-import {
+﻿import {
 	createTestMigrationContext,
 	initDbUpToMigration,
 	runSingleMigration,
 	undoLastSingleMigration,
 	type TestMigrationContext,
 } from '@n8n/backend-test-utils';
-import { DbConnection } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { DbConnection } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { DataSource } from '@n8n/typeorm';
 
 const MIGRATION_NAME = 'UniqueRoleNames1760020838000';

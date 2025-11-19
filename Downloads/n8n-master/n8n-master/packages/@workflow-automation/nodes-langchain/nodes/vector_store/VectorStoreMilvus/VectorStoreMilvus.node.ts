@@ -1,7 +1,7 @@
-import { Milvus } from '@langchain/community/vectorstores/milvus';
+﻿import { Milvus } from '@langchain/community/vectorstores/milvus';
 import type { MilvusLibArgs } from '@langchain/community/vectorstores/milvus';
 import { MilvusClient } from '@zilliz/milvus2-sdk-node';
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { createVectorStoreNode } from '../shared/createVectorStoreNode/createVectorStoreNode';
 import { milvusCollectionsSearch } from '../shared/createVectorStoreNode/methods/listSearch';

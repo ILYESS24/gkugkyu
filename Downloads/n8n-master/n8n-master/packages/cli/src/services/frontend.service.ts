@@ -1,18 +1,18 @@
-import type {
+﻿import type {
 	FrontendSettings,
 	IEnterpriseSettings,
 	ITelemetrySettings,
 	N8nEnvFeatFlags,
-} from '@n8n/api-types';
-import { LicenseState, Logger, ModuleRegistry } from '@n8n/backend-common';
-import { GlobalConfig, SecurityConfig } from '@n8n/config';
-import { LICENSE_FEATURES } from '@n8n/constants';
-import { Container, Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { LicenseState, Logger, ModuleRegistry } from '@workflow-automation/backend-common';
+import { GlobalConfig, SecurityConfig } from '@workflow-automation/config';
+import { LICENSE_FEATURES } from '@workflow-automation/constants';
+import { Container, Service } from '@workflow-automation/di';
 import { createWriteStream } from 'fs';
 import { mkdir } from 'fs/promises';
 import uniq from 'lodash/uniq';
-import { BinaryDataConfig, InstanceSettings } from 'n8n-core';
-import type { ICredentialType, INodeTypeBaseDescription } from 'n8n-workflow';
+import { BinaryDataConfig, InstanceSettings } from 'workflow-automation-core';
+import type { ICredentialType, INodeTypeBaseDescription } from 'workflow-automation-workflow';
 import path from 'path';
 
 import { UrlService } from './url.service';

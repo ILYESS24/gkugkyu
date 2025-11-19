@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDisplayOptions,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ROWS_LIMIT_DEFAULT } from '../../common/constants';
 import { executeSelectMany, getSelectFields } from '../../common/selectMany';

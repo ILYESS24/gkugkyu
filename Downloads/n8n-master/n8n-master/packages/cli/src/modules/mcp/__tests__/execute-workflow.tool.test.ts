@@ -1,5 +1,5 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { User } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { User } from '@workflow-automation/db';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
 	FORM_TRIGGER_NODE_TYPE,
@@ -9,7 +9,7 @@ import {
 	type IWorkflowExecutionDataProcess,
 	UnexpectedError,
 	UserError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createWorkflow } from './mock.utils';
 import { createExecuteWorkflowTool, executeWorkflow } from '../tools/execute-workflow.tool';

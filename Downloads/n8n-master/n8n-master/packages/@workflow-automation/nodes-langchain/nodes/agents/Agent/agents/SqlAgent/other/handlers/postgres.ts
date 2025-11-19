@@ -1,6 +1,6 @@
-import { DataSource } from '@n8n/typeorm';
+﻿import { DataSource } from '@n8n/typeorm';
 import type { PostgresNodeCredentials } from 'n8n-nodes-base/dist/nodes/Postgres/v2/helpers/interfaces';
-import { type IExecuteFunctions } from 'n8n-workflow';
+import { type IExecuteFunctions } from 'workflow-automation-workflow';
 import type { TlsOptions } from 'tls';
 
 export async function getPostgresDataSource(this: IExecuteFunctions): Promise<DataSource> {

@@ -1,4 +1,4 @@
-import { RuleTester } from '@typescript-eslint/rule-tester';
+﻿import { RuleTester } from '@typescript-eslint/rule-tester';
 
 import { NodeUsableAsToolRule } from './node-usable-as-tool.js';
 
@@ -17,7 +17,7 @@ function createNodeCode(
 
 	if (!hasDescription) {
 		return `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	displayName = 'Test Node';
@@ -25,7 +25,7 @@ export class TestNode implements INodeType {
 	}
 
 	return `
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'workflow-automation-workflow';
 
 export class TestNode implements INodeType {
 	description: INodeTypeDescription = {

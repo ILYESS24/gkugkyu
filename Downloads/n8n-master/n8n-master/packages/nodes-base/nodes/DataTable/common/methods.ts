@@ -1,11 +1,11 @@
-import {
+﻿import {
 	DATA_TABLE_SYSTEM_COLUMN_TYPE_MAP,
 	type ILoadOptionsFunctions,
 	type INodeListSearchResult,
 	type INodePropertyOptions,
 	type ResourceMapperField,
 	type ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getDataTableAggregateProxy, getDataTableProxyLoadOptions } from './utils';
 

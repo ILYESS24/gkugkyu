@@ -1,6 +1,6 @@
-import type { LicenseState } from '@n8n/backend-common';
+﻿import type { LicenseState } from '@workflow-automation/backend-common';
 import { mockLogger } from '@n8n/backend-test-utils';
-import { Time } from '@n8n/constants';
+import { Time } from '@workflow-automation/constants';
 import { mock } from 'jest-mock-extended';
 
 import type { InsightsByPeriodRepository } from '../database/repositories/insights-by-period.repository';

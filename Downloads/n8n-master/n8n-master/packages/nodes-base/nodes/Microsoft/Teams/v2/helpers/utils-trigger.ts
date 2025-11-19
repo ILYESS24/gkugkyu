@@ -1,5 +1,5 @@
-import type { IHookFunctions, IDataObject } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IHookFunctions, IDataObject } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import type { TeamResponse, ChannelResponse, SubscriptionResponse } from './types';
 import { microsoftApiRequest } from '../transport';

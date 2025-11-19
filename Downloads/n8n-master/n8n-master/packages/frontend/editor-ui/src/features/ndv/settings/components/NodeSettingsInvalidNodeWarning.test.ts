@@ -1,4 +1,4 @@
-import { mockNode } from '@/__tests__/mocks';
+﻿import { mockNode } from '@/__tests__/mocks';
 import { renderComponent } from '@/__tests__/render';
 import { mockedStore, type MockedStore } from '@/__tests__/utils';
 import { useInstallNode } from '@/features/settings/communityNodes/composables/useInstallNode';
@@ -8,7 +8,7 @@ import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.s
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import type { CommunityNodeType } from '@n8n/api-types';
+import type { CommunityNodeType } from '@workflow-automation/api-types';
 import type { TestingPinia } from '@pinia/testing';
 import { createTestingPinia } from '@pinia/testing';
 import { waitFor } from '@testing-library/vue';

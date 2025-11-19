@@ -1,5 +1,5 @@
-import type { LdapConfig } from '@n8n/constants';
-import type { AuthenticatedRequest, RunningMode } from '@n8n/db';
+﻿import type { LdapConfig } from '@workflow-automation/constants';
+import type { AuthenticatedRequest, RunningMode } from '@workflow-automation/db';
 
 export declare namespace LdapConfiguration {
 	type Update = AuthenticatedRequest<{}, {}, LdapConfig, {}>;

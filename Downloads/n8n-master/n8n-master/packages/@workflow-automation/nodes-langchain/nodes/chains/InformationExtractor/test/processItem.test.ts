@@ -1,6 +1,6 @@
-import { FakeLLM, FakeListChatModel } from '@langchain/core/utils/testing';
+﻿import { FakeLLM, FakeListChatModel } from '@langchain/core/utils/testing';
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { makeZodSchemaFromAttributes } from '../helpers';
 import { processItem } from '../processItem';

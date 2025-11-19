@@ -1,9 +1,9 @@
-import { Logger } from '@n8n/backend-common';
-import { TaskRunnersConfig } from '@n8n/config';
-import { OnShutdown } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
-import { ErrorReporter } from 'n8n-core';
-import { sleep } from 'n8n-workflow';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { TaskRunnersConfig } from '@workflow-automation/config';
+import { OnShutdown } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
+import { ErrorReporter } from 'workflow-automation-core';
+import { sleep } from 'workflow-automation-workflow';
 import * as a from 'node:assert/strict';
 
 import { EventService } from '@/events/event.service';

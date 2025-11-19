@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	AssignmentCollectionValue,
 	FieldType,
 	IDataObject,
@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import type { SetField, SetNodeOptions } from './helpers/interfaces';
 import {

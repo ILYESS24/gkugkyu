@@ -1,7 +1,7 @@
-import { SecurityConfig } from '@n8n/config';
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
-import { UserError } from 'n8n-workflow';
+﻿import { SecurityConfig } from '@workflow-automation/config';
+import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
+import { UserError } from 'workflow-automation-workflow';
 import z from 'zod';
 
 import { RISK_CATEGORIES } from '@/security-audit/constants';

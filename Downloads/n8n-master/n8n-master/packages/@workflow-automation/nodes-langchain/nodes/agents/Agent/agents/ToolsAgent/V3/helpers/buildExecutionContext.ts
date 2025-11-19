@@ -1,7 +1,7 @@
-import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
+﻿import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { BaseChatMemory } from 'langchain/memory';
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, ISupplyDataFunctions, INodeExecutionData } from 'n8n-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
+import type { IExecuteFunctions, ISupplyDataFunctions, INodeExecutionData } from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import { getChatModel, getOptionalMemory } from '../../common';

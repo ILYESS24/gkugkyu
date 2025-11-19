@@ -1,5 +1,5 @@
-import { mockDeep } from 'jest-mock-extended';
-import { NodeOperationError, type IExecuteFunctions, type INode } from 'n8n-workflow';
+﻿import { mockDeep } from 'jest-mock-extended';
+import { NodeOperationError, type IExecuteFunctions, type INode } from 'workflow-automation-workflow';
 
 import * as image from './image';
 import * as text from './text';

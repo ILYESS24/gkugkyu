@@ -1,12 +1,12 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	GenericValue,
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

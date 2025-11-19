@@ -1,6 +1,6 @@
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
-import { DataTableSizeStatus, DataTablesSizeData } from 'n8n-workflow';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
+import { DataTableSizeStatus, DataTablesSizeData } from 'workflow-automation-workflow';
 
 import { Telemetry } from '@/telemetry';
 

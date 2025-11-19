@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	ICredentialDataDecryptedObject,
 	INode,
 	IPollFunctions,
@@ -6,8 +6,8 @@ import type {
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { ApplicationError, createDeferredPromise } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ApplicationError, createDeferredPromise } from 'workflow-automation-workflow';
 
 import { NodeExecutionContext } from './node-execution-context';
 import { getBinaryHelperFunctions } from './utils/binary-helper-functions';

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/unbound-method */
+﻿/* eslint-disable @typescript-eslint/unbound-method */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import type { DocumentInterface } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
@@ -10,7 +10,7 @@ import type {
 	ISupplyDataFunctions,
 	NodeParameterValueType,
 	INodeExecutionData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createVectorStoreNode } from './createVectorStoreNode';
 import type { VectorStoreNodeConstructorArgs } from './types';

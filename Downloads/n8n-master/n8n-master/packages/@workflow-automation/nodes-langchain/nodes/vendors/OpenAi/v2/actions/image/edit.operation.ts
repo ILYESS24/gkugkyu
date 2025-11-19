@@ -1,12 +1,12 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import type {
 	IBinaryData,
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { getBinaryDataFile } from '../../../helpers/binary-data';
 import { apiRequest } from '../../../transport';
@@ -20,7 +20,7 @@ export const properties: INodeProperties[] = [
 		description: 'The model to use for image generation',
 		options: [
 			{
-				name: 'DALL·E 2',
+				name: 'DALLÂ·E 2',
 				value: 'dall-e-2',
 			},
 			{

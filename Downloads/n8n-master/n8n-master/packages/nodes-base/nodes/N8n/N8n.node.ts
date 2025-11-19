@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { auditFields, auditOperations } from './AuditDescription';
 import { credentialFields, credentialOperations } from './CredentialDescription';

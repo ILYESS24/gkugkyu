@@ -1,7 +1,7 @@
-import type { BaseChatMemory } from 'langchain/memory';
+﻿import type { BaseChatMemory } from 'langchain/memory';
 import omit from 'lodash/omit';
-import { jsonParse } from 'n8n-workflow';
-import type { INodeExecutionData } from 'n8n-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
+import type { INodeExecutionData } from 'workflow-automation-workflow';
 
 import type { N8nOutputParser } from '@utils/output_parsers/N8nOutputParser';
 

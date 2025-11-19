@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useI18n } from '@n8n/i18n';
-import type { FilterTypeCombinator } from 'n8n-workflow';
+import type { FilterTypeCombinator } from 'workflow-automation-workflow';
 
 import { N8nOption, N8nSelect } from '@n8n/design-system';
 interface Props {

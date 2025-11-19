@@ -1,4 +1,4 @@
-import { Logger } from '@n8n/backend-common';
+﻿import { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
 import type { Response } from 'express';
 import { mock } from 'jest-mock-extended';

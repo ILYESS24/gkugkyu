@@ -1,11 +1,11 @@
-import {
+﻿import {
 	FORM_TRIGGER_PATH_IDENTIFIER,
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	type IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	formDescription,

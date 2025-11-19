@@ -1,4 +1,4 @@
-import { mock } from 'jest-mock-extended';
+﻿import { mock } from 'jest-mock-extended';
 import {
 	type IDataTableProjectService,
 	NodeOperationError,
@@ -6,7 +6,7 @@ import {
 	type IExecuteFunctions,
 	type INodeTypes,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { GoogleSheet } from '../../Google/Sheet/v2/helpers/GoogleSheet';
 import { Evaluation } from '../Evaluation/Evaluation.node.ee';

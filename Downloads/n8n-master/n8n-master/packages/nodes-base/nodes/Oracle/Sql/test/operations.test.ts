@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import {
 	type IDataObject,
 	type IExecuteFunctions,
@@ -6,7 +6,7 @@ import {
 	type INode,
 	type INodeExecutionData,
 	type INodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import * as oracleDBTypes from 'oracledb';
 
 import * as deleteTable from '../actions/database/deleteTable.operation';
@@ -359,7 +359,7 @@ VALUES (
 		}
 
 		for (const [baseKey, values] of Object.entries(groupMap)) {
-			// If there’s only one scalar value, store it directly
+			// If thereâ€™s only one scalar value, store it directly
 			normalized[baseKey] = values.length === 1 ? values[0] : [...values].sort();
 		}
 

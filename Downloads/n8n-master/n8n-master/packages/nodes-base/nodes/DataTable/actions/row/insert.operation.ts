@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataTableProjectService,
 	IDisplayOptions,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getAddRow, makeAddRow } from '../../common/addRow';
 import { getDataTableProxyExecute } from '../../common/utils';

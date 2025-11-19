@@ -1,9 +1,9 @@
-import type { CreateApiKeyRequestDto, UnixTimestamp, UpdateApiKeyRequestDto } from '@n8n/api-types';
-import type { AuthenticatedRequest, User } from '@n8n/db';
-import { ApiKey, ApiKeyRepository, UserRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
-import type { ApiKeyScope, AuthPrincipal } from '@n8n/permissions';
-import { getApiKeyScopesForRole, getOwnerOnlyApiKeyScopes } from '@n8n/permissions';
+﻿import type { CreateApiKeyRequestDto, UnixTimestamp, UpdateApiKeyRequestDto } from '@workflow-automation/api-types';
+import type { AuthenticatedRequest, User } from '@workflow-automation/db';
+import { ApiKey, ApiKeyRepository, UserRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import type { ApiKeyScope, AuthPrincipal } from '@workflow-automation/permissions';
+import { getApiKeyScopesForRole, getOwnerOnlyApiKeyScopes } from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { EntityManager } from '@n8n/typeorm';
 import type { NextFunction, Request, Response } from 'express';

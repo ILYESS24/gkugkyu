@@ -1,4 +1,4 @@
-import omit from 'lodash/omit';
+﻿import omit from 'lodash/omit';
 import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
@@ -8,8 +8,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import { v4 as uuid } from 'uuid';
 
 import {

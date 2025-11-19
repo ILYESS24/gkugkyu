@@ -1,5 +1,5 @@
-<script lang="ts" setup="">
-import type { ExecutionStatus } from 'n8n-workflow';
+﻿<script lang="ts" setup="">
+import type { ExecutionStatus } from 'workflow-automation-workflow';
 import { useI18n } from '@n8n/i18n';
 import { I18nT } from 'vue-i18n';
 

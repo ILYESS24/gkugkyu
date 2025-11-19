@@ -1,9 +1,9 @@
-import type { SourceControlledFile } from '@n8n/api-types';
-import { isContainedWithin } from '@n8n/backend-common';
-import { GLOBAL_ADMIN_ROLE, GLOBAL_MEMBER_ROLE, User, type WorkflowEntity } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import type { SourceControlledFile } from '@workflow-automation/api-types';
+import { isContainedWithin } from '@workflow-automation/backend-common';
+import { GLOBAL_ADMIN_ROLE, GLOBAL_MEMBER_ROLE, User, type WorkflowEntity } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 import type { PushResult } from 'simple-git';
 
 import { SourceControlPreferencesService } from '@/environments.ee/source-control/source-control-preferences.service.ee';

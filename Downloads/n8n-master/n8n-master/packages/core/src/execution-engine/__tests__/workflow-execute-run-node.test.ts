@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Tests for the actual WorkflowExecute.runNode method
  * These tests ensure the real implementation behavior is preserved
  * during refactoring
@@ -55,8 +55,8 @@ jest.mock('@/node-execute-functions', () => ({
 }));
 
 // Now import the real classes
-import { GlobalConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
 import type {
 	ExecutionBaseError,
@@ -67,8 +67,8 @@ import type {
 	ITaskDataConnections,
 	IWorkflowExecuteAdditionalData,
 	Workflow,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, Node, createRunExecutionData } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeOperationError, Node, createRunExecutionData } from 'workflow-automation-workflow';
 
 import { ExecuteContext, PollContext } from '../node-execution-context';
 import { RoutingNode } from '../routing-node';

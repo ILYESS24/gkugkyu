@@ -1,5 +1,5 @@
-import { ChangeSet } from '@codemirror/state';
-import { type CodeExecutionMode } from 'n8n-workflow';
+﻿import { ChangeSet } from '@codemirror/state';
+import { type CodeExecutionMode } from 'workflow-automation-workflow';
 
 export const fnPrefix = (mode: CodeExecutionMode) => `(
 /**

@@ -1,6 +1,6 @@
-import type { Logger } from '@n8n/backend-common';
+﻿import type { Logger } from '@workflow-automation/backend-common';
 import { mockInstance } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
+import type { User } from '@workflow-automation/db';
 import type { Application } from 'express';
 import { captor, mock } from 'jest-mock-extended';
 import type { Server, ServerResponse } from 'node:http';

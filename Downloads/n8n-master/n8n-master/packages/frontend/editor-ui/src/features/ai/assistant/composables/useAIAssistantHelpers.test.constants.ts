@@ -1,6 +1,6 @@
-import { VIEWS } from '@/app/constants';
+﻿import { VIEWS } from '@/app/constants';
 import type { ChatRequest } from '../assistant.types';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 export const PAYLOAD_SIZE_FOR_1_PASS = 4;
 export const PAYLOAD_SIZE_FOR_2_PASSES = 2;
@@ -107,10 +107,10 @@ export const SUPPORT_CHAT_TEST_PAYLOAD: ChatRequest.RequestPayload = {
 				referencedNodes: [],
 			},
 			currentWorkflow: {
-				name: '🧪 Assistant context test',
+				name: 'ðŸ§ª Assistant context test',
 				active: false,
 				connections: {
-					'When clicking ‘Execute workflow’': {
+					'When clicking â€˜Execute workflowâ€™': {
 						main: [
 							[
 								{
@@ -154,7 +154,7 @@ export const SUPPORT_CHAT_TEST_PAYLOAD: ChatRequest.RequestPayload = {
 							notice: '',
 						},
 						id: 'c457ff96-3b0c-4dbc-b47f-dc88396a46ae',
-						name: 'When clicking ‘Execute workflow’',
+						name: 'When clicking â€˜Execute workflowâ€™',
 						type: 'n8n-nodes-base.manualTrigger',
 						position: [-60, 200],
 						typeVersion: 1,
@@ -274,7 +274,7 @@ export const SUPPORT_CHAT_TEST_PAYLOAD: ChatRequest.RequestPayload = {
 			},
 			executionData: {
 				runData: {
-					'When clicking ‘Execute workflow’': [
+					'When clicking â€˜Execute workflowâ€™': [
 						{
 							hints: [],
 							startTime: 1737540693122,
@@ -292,7 +292,7 @@ export const SUPPORT_CHAT_TEST_PAYLOAD: ChatRequest.RequestPayload = {
 							executionTime: 2,
 							source: [
 								{
-									previousNode: 'When clicking ‘Execute workflow’',
+									previousNode: 'When clicking â€˜Execute workflowâ€™',
 								},
 							],
 							executionStatus: 'success',

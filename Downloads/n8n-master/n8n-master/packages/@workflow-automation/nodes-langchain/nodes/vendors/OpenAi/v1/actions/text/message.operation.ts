@@ -1,12 +1,12 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import _omit from 'lodash/omit';
 import type {
 	INodeProperties,
 	IExecuteFunctions,
 	INodeExecutionData,
 	IDataObject,
-} from 'n8n-workflow';
-import { jsonParse, updateDisplayOptions } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse, updateDisplayOptions } from 'workflow-automation-workflow';
 
 import { getConnectedTools } from '@utils/helpers';
 

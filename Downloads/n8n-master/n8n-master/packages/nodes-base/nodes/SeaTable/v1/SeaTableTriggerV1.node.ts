@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import {
 	type IPollFunctions,
 	type ILoadOptionsFunctions,
@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	NodeConnectionTypes,
 	type INodeTypeBaseDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getColumns, rowFormatColumns, seaTableApiRequest, simplify } from './GenericFunctions';
 import type { ICtx, IRow, IRowResponse } from './Interfaces';

@@ -1,5 +1,5 @@
-import { SearxngSearch } from '@langchain/community/tools/searxng_search';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { SearxngSearch } from '@langchain/community/tools/searxng_search';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -7,7 +7,7 @@ import type {
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { logWrapper } from '@utils/logWrapper';
 import { getConnectionHintNoticeField } from '@utils/sharedFields';

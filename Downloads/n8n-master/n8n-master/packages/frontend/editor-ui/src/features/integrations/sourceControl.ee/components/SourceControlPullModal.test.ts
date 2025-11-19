@@ -1,4 +1,4 @@
-import SourceControlPullModalEe from './SourceControlPullModal.vue';
+﻿import SourceControlPullModalEe from './SourceControlPullModal.vue';
 import { createComponentRenderer } from '@/__tests__/render';
 import { createTestingPinia } from '@pinia/testing';
 import { createEventBus } from '@n8n/utils/event-bus';
@@ -9,7 +9,7 @@ import { waitFor } from '@testing-library/dom';
 import { reactive } from 'vue';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { defaultSettings } from '@/__tests__/defaults';
-import type { SourceControlledFile } from '@n8n/api-types';
+import type { SourceControlledFile } from '@workflow-automation/api-types';
 
 const eventBus = createEventBus();
 

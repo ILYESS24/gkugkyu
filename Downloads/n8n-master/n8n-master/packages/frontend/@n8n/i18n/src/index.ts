@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-this-alias */
-import type { INodeProperties, INodePropertyCollection, INodePropertyOptions } from 'n8n-workflow';
+﻿/* eslint-disable @typescript-eslint/no-this-alias */
+import type { INodeProperties, INodePropertyCollection, INodePropertyOptions } from 'workflow-automation-workflow';
 import { ref } from 'vue';
 import { createI18n } from 'vue-i18n';
 

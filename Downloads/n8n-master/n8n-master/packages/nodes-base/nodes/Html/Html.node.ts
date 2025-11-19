@@ -1,4 +1,4 @@
-import cheerio from 'cheerio';
+﻿import cheerio from 'cheerio';
 import get from 'lodash/get';
 import type {
 	INodeExecutionData,
@@ -7,8 +7,8 @@ import type {
 	INodeTypeDescription,
 	IDataObject,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'workflow-automation-workflow';
 
 import { getResolvables, sanitizeDataPathKey } from '@utils/utilities';
 

@@ -1,4 +1,4 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import { createComponentRenderer } from '@/__tests__/render';
 import WorkflowActivationConflictingWebhookModal from '@/app/components/WorkflowActivationConflictingWebhookModal.vue';
 import {
@@ -7,7 +7,7 @@ import {
 } from '@/app/constants';
 
 import { waitFor } from '@testing-library/vue';
-import { CHAT_TRIGGER_NODE_TYPE, FORM_TRIGGER_NODE_TYPE, WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+import { CHAT_TRIGGER_NODE_TYPE, FORM_TRIGGER_NODE_TYPE, WEBHOOK_NODE_TYPE } from 'workflow-automation-workflow';
 
 vi.mock('@/app/stores/ui.store', () => {
 	return {

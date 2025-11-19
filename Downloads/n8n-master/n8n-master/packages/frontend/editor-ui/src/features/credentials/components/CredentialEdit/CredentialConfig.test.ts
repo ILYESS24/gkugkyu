@@ -1,6 +1,6 @@
-import CredentialConfig from './CredentialConfig.vue';
+﻿import CredentialConfig from './CredentialConfig.vue';
 import { screen } from '@testing-library/vue';
-import type { ICredentialDataDecryptedObject, ICredentialType } from 'n8n-workflow';
+import type { ICredentialDataDecryptedObject, ICredentialType } from 'workflow-automation-workflow';
 import { createTestingPinia } from '@pinia/testing';
 import type { RenderOptions } from '@/__tests__/render';
 import { createComponentRenderer } from '@/__tests__/render';

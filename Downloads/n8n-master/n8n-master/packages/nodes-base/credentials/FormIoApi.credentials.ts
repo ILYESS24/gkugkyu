@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IAuthenticate,
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
@@ -6,7 +6,7 @@ import type {
 	IHttpRequestHelper,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class FormIoApi implements ICredentialType {
 	name = 'formIoApi';

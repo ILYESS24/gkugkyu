@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { IUpdateInformation } from '@/Interface';
 import InputTriple from '../InputTriple/InputTriple.vue';
 import ParameterInputFull from '../ParameterInputFull.vue';
@@ -10,7 +10,7 @@ import type {
 	FilterOptionsValue,
 	INodeProperties,
 	NodeParameterValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, ref, watch } from 'vue';
 import OperatorSelect from './OperatorSelect.vue';
 import { type FilterOperatorId, DEFAULT_OPERATOR_BY_TYPE } from './constants';

@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+﻿import crypto from 'crypto';
 import type {
 	IHookFunctions,
 	IWebhookFunctions,
@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { apiRequest, getSecretToken } from './GenericFunctions';
 import type { IEvent } from './IEvent';
@@ -69,7 +69,7 @@ export class TelegramTrigger implements INodeType {
 						name: 'Channel Post',
 						value: 'channel_post',
 						description:
-							'Trigger on new incoming channel post of any kind — text, photo, sticker, etc',
+							'Trigger on new incoming channel post of any kind â€” text, photo, sticker, etc',
 					},
 					{
 						name: 'Edited Channel Post',
@@ -91,7 +91,7 @@ export class TelegramTrigger implements INodeType {
 					{
 						name: 'Message',
 						value: 'message',
-						description: 'Trigger on new incoming message of any kind — text, photo, sticker, etc',
+						description: 'Trigger on new incoming message of any kind â€” text, photo, sticker, etc',
 					},
 					{
 						name: 'Poll',

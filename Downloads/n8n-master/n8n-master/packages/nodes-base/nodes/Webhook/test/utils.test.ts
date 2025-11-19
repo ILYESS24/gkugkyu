@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken';
-import { ApplicationError, type IWebhookFunctions } from 'n8n-workflow';
+﻿import jwt from 'jsonwebtoken';
+import { ApplicationError, type IWebhookFunctions } from 'workflow-automation-workflow';
 
 import type { WebhookParameters } from '../utils';
 import {

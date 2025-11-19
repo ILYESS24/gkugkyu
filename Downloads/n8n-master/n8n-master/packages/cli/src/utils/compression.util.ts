@@ -1,8 +1,8 @@
-import * as fflate from 'fflate';
+﻿import * as fflate from 'fflate';
 import { readFile, readdir, writeFile, mkdir } from 'fs/promises';
 import * as path from 'path';
 import { createWriteStream, createReadStream } from 'fs';
-import { safeJoinPath } from '@n8n/backend-common';
+import { safeJoinPath } from '@workflow-automation/backend-common';
 
 // Reuse the same compression levels as the Compression node
 const ALREADY_COMPRESSED = [

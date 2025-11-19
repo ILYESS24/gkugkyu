@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+﻿import jwt from 'jsonwebtoken';
 import moment from 'moment-timezone';
 import type {
 	IExecuteFunctions,
@@ -12,8 +12,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'workflow-automation-workflow';
 
 import {
 	// attachmentFields,
@@ -149,8 +149,8 @@ export class GoogleChat implements INodeType {
 			...spaceFields,
 			...getSendAndWaitProperties([spaceIdProperty], 'message', undefined, {
 				noButtonStyle: true,
-				defaultApproveLabel: '✅ Approve',
-				defaultDisapproveLabel: '❌ Decline',
+				defaultApproveLabel: 'âœ… Approve',
+				defaultDisapproveLabel: 'âŒ Decline',
 			}).filter((p) => p.name !== 'subject'),
 		],
 	};

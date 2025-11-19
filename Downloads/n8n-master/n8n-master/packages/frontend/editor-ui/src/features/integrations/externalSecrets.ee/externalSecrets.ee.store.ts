@@ -1,4 +1,4 @@
-import { computed, reactive } from 'vue';
+﻿import { computed, reactive } from 'vue';
 import { defineStore } from 'pinia';
 import { EnterpriseEditionFeature } from '@/app/constants';
 import { useRootStore } from '@n8n/stores/useRootStore';
@@ -6,7 +6,7 @@ import { useSettingsStore } from '@/app/stores/settings.store';
 import * as externalSecretsApi from '@n8n/rest-api-client';
 import { connectProvider } from '@n8n/rest-api-client';
 import { useRBACStore } from '@/app/stores/rbac.store';
-import type { ExternalSecretsProvider } from '@n8n/api-types';
+import type { ExternalSecretsProvider } from '@workflow-automation/api-types';
 
 export const useExternalSecretsStore = defineStore('externalSecrets', () => {
 	const rootStore = useRootStore();

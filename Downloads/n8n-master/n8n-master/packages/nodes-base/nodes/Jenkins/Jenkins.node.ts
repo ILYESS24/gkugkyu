@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { jenkinsApiRequest, tolerateTrailingSlash } from './GenericFunctions';
 
@@ -221,7 +221,7 @@ export class Jenkins implements INodeType {
 			},
 			{
 				displayName:
-					'To get the XML of an existing job, add ‘config.xml’ to the end of the job URL',
+					'To get the XML of an existing job, add â€˜config.xmlâ€™ to the end of the job URL',
 				name: 'createNotice',
 				type: 'notice',
 				default: '',

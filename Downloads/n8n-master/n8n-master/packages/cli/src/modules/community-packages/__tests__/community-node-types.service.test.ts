@@ -1,4 +1,4 @@
-import { inProduction } from '@n8n/backend-common';
+﻿import { inProduction } from '@workflow-automation/backend-common';
 
 import { getCommunityNodeTypes } from '../community-node-types-utils';
 import { CommunityNodeTypesService } from '../community-node-types.service';

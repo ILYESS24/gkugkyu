@@ -1,10 +1,10 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import KeyboardShortcutTooltip from '@/app/components/KeyboardShortcutTooltip.vue';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { type INodeUi } from '@/Interface';
 import { truncateBeforeLast } from '@n8n/utils/string/truncate';
 import { useI18n } from '@n8n/i18n';
-import { type INodeTypeDescription } from 'n8n-workflow';
+import { type INodeTypeDescription } from 'workflow-automation-workflow';
 import { computed } from 'vue';
 import { isChatNode } from '@/app/utils/aiUtils';
 import { I18nT } from 'vue-i18n';
@@ -83,7 +83,7 @@ function getNodeTypeByName(name: string): INodeTypeDescription | null {
 	<div :class="[$style.component, isSplitButton ? $style.split : '']">
 		<KeyboardShortcutTooltip
 			:label="label"
-			:shortcut="{ metaKey: true, keys: ['↵'] }"
+			:shortcut="{ metaKey: true, keys: ['â†µ'] }"
 			:disabled="executing || hideTooltip"
 		>
 			<N8nButton

@@ -1,6 +1,6 @@
-import { NodeTestHarness } from '@nodes-testing/node-test-harness';
+﻿import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import { readFileSync } from 'fs';
-import type { WorkflowTestData } from 'n8n-workflow';
+import type { WorkflowTestData } from 'workflow-automation-workflow';
 import path from 'path';
 
 describe('Execute Spreadsheet File Node', () => {
@@ -184,10 +184,10 @@ describe('Execute Spreadsheet File Node', () => {
 			output: {
 				nodeData: {
 					'Parse UTF8 v1': [
-						[{ json: { A: 1, B: '株式会社', C: 3 } }, { json: { A: 4, B: 5, C: '🐛' } }],
+						[{ json: { A: 1, B: 'æ ªå¼ä¼šç¤¾', C: 3 } }, { json: { A: 4, B: 5, C: 'ðŸ›' } }],
 					],
 					'Parse UTF8 v2': [
-						[{ json: { A: '1', B: '株式会社', C: '3' } }, { json: { A: '4', B: '5', C: '🐛' } }],
+						[{ json: { A: '1', B: 'æ ªå¼ä¼šç¤¾', C: '3' } }, { json: { A: '4', B: '5', C: 'ðŸ›' } }],
 					],
 				},
 			},

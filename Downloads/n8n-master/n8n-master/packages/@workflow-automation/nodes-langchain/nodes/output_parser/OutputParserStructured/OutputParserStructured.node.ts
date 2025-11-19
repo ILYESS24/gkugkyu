@@ -1,4 +1,4 @@
-import type { BaseLanguageModel } from '@langchain/core/language_models/base';
+﻿import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { PromptTemplate } from '@langchain/core/prompts';
 import type { JSONSchema7 } from 'json-schema';
 import {
@@ -9,7 +9,7 @@ import {
 	type SupplyData,
 	NodeOperationError,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { z } from 'zod';
 
 import {

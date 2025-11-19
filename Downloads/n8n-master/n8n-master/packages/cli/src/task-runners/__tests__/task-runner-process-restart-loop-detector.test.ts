@@ -1,5 +1,5 @@
-import type { Logger } from '@n8n/backend-common';
-import { TaskRunnersConfig } from '@n8n/config';
+﻿import type { Logger } from '@workflow-automation/backend-common';
+import { TaskRunnersConfig } from '@workflow-automation/config';
 import { mock } from 'jest-mock-extended';
 
 import { TaskRunnerRestartLoopError } from '@/task-runners/errors/task-runner-restart-loop-error';

@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+﻿import type { ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
 
 export async function getNodeTypes(this: ILoadOptionsFunctions): Promise<INodePropertyOptions[]> {
 	const types = this.getKnownNodeTypes() as {

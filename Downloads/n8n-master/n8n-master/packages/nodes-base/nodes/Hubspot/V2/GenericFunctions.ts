@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+﻿import moment from 'moment-timezone';
 import type {
 	ICredentialDataDecryptedObject,
 	ICredentialTestFunctions,
@@ -9,8 +9,8 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeApiError } from 'workflow-automation-workflow';
 
 export async function hubspotApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

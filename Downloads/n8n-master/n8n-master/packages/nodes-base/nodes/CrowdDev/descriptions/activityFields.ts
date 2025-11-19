@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { emailsField } from './shared';
 import { getAdditionalOptions, mapWith, showFor } from './utils';

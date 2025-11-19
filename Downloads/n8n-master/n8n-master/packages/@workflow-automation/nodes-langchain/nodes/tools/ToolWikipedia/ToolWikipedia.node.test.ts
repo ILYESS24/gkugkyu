@@ -1,11 +1,11 @@
-import { WikipediaQueryRun } from '@langchain/community/tools/wikipedia_query_run';
+﻿import { WikipediaQueryRun } from '@langchain/community/tools/wikipedia_query_run';
 import { mock } from 'jest-mock-extended';
 import type {
 	IExecuteFunctions,
 	INode,
 	INodeExecutionData,
 	ISupplyDataFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { ToolWikipedia } from './ToolWikipedia.node';
 

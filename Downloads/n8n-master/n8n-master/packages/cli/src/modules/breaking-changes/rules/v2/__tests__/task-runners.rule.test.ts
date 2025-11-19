@@ -1,4 +1,4 @@
-import type { TaskRunnersConfig } from '@n8n/config';
+﻿import type { TaskRunnersConfig } from '@workflow-automation/config';
 
 import { TaskRunnersRule } from '../task-runners.rule';
 

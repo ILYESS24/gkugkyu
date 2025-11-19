@@ -1,7 +1,7 @@
-import { DatabaseConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { DatabaseConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { DataSource, EntityManager, In, Repository } from '@n8n/typeorm';
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'workflow-automation-workflow';
 
 import { ProjectRelation, Role, User } from '../entities';
 

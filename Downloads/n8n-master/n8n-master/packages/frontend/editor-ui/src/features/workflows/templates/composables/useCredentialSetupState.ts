@@ -1,4 +1,4 @@
-import type { Ref } from 'vue';
+﻿import type { Ref } from 'vue';
 import { computed, ref } from 'vue';
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
@@ -9,7 +9,7 @@ import {
 	keyFromCredentialTypeAndName,
 	normalizeTemplateNodeCredentials,
 } from '../utils/templateTransforms';
-import type { INodeCredentialsDetails } from 'n8n-workflow';
+import type { INodeCredentialsDetails } from 'workflow-automation-workflow';
 import type { NodeTypeProvider } from '@/app/utils/nodeTypes/nodeTypeTransforms';
 import { getNodeTypeDisplayableCredentials } from '@/app/utils/nodes/nodeTransforms';
 import sortBy from 'lodash/sortBy';

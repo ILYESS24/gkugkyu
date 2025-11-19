@@ -1,9 +1,9 @@
-import {
+﻿import {
 	NodeOperationError,
 	type IExecuteFunctions,
 	type INode,
 	type ResourceMapperField,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { GOOGLE_SHEETS_SHEET_URL_REGEX } from '../../../../constants';
 import { GoogleSheet } from '../../../v2/helpers/GoogleSheet';

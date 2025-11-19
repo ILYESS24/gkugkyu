@@ -1,4 +1,4 @@
-import type { GenericValue, IDataObject, INodeProperties } from 'n8n-workflow';
+﻿import type { GenericValue, IDataObject, INodeProperties } from 'workflow-automation-workflow';
 
 import type { IDependency } from '@/public-api/types';
 

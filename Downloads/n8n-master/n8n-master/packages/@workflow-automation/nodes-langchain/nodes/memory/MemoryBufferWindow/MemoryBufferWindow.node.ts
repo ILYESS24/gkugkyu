@@ -1,4 +1,4 @@
-import type { BufferWindowMemoryInput } from 'langchain/memory';
+﻿import type { BufferWindowMemoryInput } from 'langchain/memory';
 import { BufferWindowMemory } from 'langchain/memory';
 import {
 	NodeConnectionTypes,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getSessionId } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

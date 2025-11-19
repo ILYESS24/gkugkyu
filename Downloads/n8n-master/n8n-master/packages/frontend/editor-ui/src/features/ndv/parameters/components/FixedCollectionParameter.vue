@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+﻿<script lang="ts" setup>
 import type { IUpdateInformation } from '@/Interface';
 
 import type {
@@ -6,8 +6,8 @@ import type {
 	INodeProperties,
 	INodePropertyCollection,
 	NodeParameterValueType,
-} from 'n8n-workflow';
-import { deepCopy, isINodePropertyCollectionList } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, isINodePropertyCollectionList } from 'workflow-automation-workflow';
 
 import get from 'lodash/get';
 

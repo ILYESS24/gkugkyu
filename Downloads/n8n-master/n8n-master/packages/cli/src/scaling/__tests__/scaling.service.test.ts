@@ -1,11 +1,11 @@
-import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { ExecutionRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { ExecutionRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import * as BullModule from 'bull';
 import { mock } from 'jest-mock-extended';
-import { InstanceSettings } from 'n8n-core';
-import { ApplicationError, ManualExecutionCancelledError } from 'n8n-workflow';
+import { InstanceSettings } from 'workflow-automation-core';
+import { ApplicationError, ManualExecutionCancelledError } from 'workflow-automation-workflow';
 
 import type { ActiveExecutions } from '@/active-executions';
 

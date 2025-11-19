@@ -1,5 +1,5 @@
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError } from 'n8n-workflow';
+﻿import type { IDataObject, IExecuteFunctions } from 'workflow-automation-workflow';
+import { BINARY_ENCODING, NodeOperationError } from 'workflow-automation-workflow';
 import type { Readable } from 'stream';
 
 import { RLC_DRIVE_DEFAULT, RLC_FOLDER_DEFAULT, UPLOAD_CHUNK_SIZE } from './interfaces';

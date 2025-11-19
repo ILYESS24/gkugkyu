@@ -1,5 +1,5 @@
-import { isSerializedBuffer, toBuffer } from 'n8n-core';
-import { ApplicationError, ensureError, randomInt } from 'n8n-workflow';
+﻿import { isSerializedBuffer, toBuffer } from 'workflow-automation-core';
+import { ApplicationError, ensureError, randomInt } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 import { EventEmitter } from 'node:events';
 import { type MessageEvent, WebSocket } from 'ws';

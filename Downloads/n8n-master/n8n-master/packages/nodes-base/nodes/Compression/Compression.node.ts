@@ -1,4 +1,4 @@
-import * as fflate from 'fflate';
+﻿import * as fflate from 'fflate';
 import * as mime from 'mime-types';
 import {
 	NodeConnectionTypes,
@@ -8,7 +8,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { promisify } from 'util';
 
 const gunzip = promisify(fflate.gunzip);

@@ -1,5 +1,5 @@
-import type { SamlPreferences } from '@n8n/api-types';
-import { Container } from '@n8n/di';
+﻿import type { SamlPreferences } from '@workflow-automation/api-types';
+import { Container } from '@workflow-automation/di';
 import type { ServiceProviderInstance } from 'samlify';
 
 import { UrlService } from '@/services/url.service';

@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import type { INodeUi } from '@/Interface';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { computed, ref, watch } from 'vue';
-import { NodeHelpers } from 'n8n-workflow';
+import { NodeHelpers } from 'workflow-automation-workflow';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import TitledList from '@/app/components/TitledList.vue';
@@ -12,7 +12,7 @@ import type {
 	INodeInputConfiguration,
 	INodeTypeDescription,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { useDebounce } from '@/app/composables/useDebounce';
 import { OnClickOutside } from '@vueuse/components';
 import { useI18n } from '@n8n/i18n';

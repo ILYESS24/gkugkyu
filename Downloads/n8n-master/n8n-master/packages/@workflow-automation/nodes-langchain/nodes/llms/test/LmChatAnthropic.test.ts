@@ -1,8 +1,8 @@
-/* eslint-disable n8n-nodes-base/node-filename-against-convention */
+﻿/* eslint-disable n8n-nodes-base/node-filename-against-convention */
 /* eslint-disable @typescript-eslint/unbound-method */
 import { ChatAnthropic } from '@langchain/anthropic';
 import { createMockExecuteFunction } from 'n8n-nodes-base/test/nodes/Helpers';
-import type { ILoadOptionsFunctions, INode, ISupplyDataFunctions } from 'n8n-workflow';
+import type { ILoadOptionsFunctions, INode, ISupplyDataFunctions } from 'workflow-automation-workflow';
 
 import { LmChatAnthropic } from '../LMChatAnthropic/LmChatAnthropic.node';
 import { N8nLlmTracing } from '../N8nLlmTracing';

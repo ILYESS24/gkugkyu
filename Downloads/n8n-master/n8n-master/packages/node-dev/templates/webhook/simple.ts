@@ -1,10 +1,10 @@
-import {
+﻿import {
 	IDataObject,
 	IWebhookFunctions,
 	INodeTypeDescription,
 	INodeType,
 	IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class ClassNameReplace implements INodeType {
 	description: INodeTypeDescription = {

@@ -1,13 +1,13 @@
-import { testDb } from '@n8n/backend-test-utils';
-import type { AuthenticatedRequest } from '@n8n/db';
-import { ApiKeyRepository, GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import { getOwnerOnlyApiKeyScopes, type ApiKeyScope } from '@n8n/permissions';
+﻿import { testDb } from '@n8n/backend-test-utils';
+import type { AuthenticatedRequest } from '@workflow-automation/db';
+import { ApiKeyRepository, GLOBAL_MEMBER_ROLE, GLOBAL_OWNER_ROLE, UserRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import { getOwnerOnlyApiKeyScopes, type ApiKeyScope } from '@workflow-automation/permissions';
 import type { Response, NextFunction } from 'express';
 import { mock, mockDeep } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
-import type { InstanceSettings } from 'n8n-core';
-import { randomString } from 'n8n-workflow';
+import type { InstanceSettings } from 'workflow-automation-core';
+import { randomString } from 'workflow-automation-workflow';
 import type { OpenAPIV3 } from 'openapi-types';
 
 import type { EventService } from '@/events/event.service';

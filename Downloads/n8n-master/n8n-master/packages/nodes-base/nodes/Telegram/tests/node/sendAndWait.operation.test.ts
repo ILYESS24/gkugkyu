@@ -1,6 +1,6 @@
-import type { MockProxy } from 'jest-mock-extended';
+﻿import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { type INode, SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'n8n-workflow';
+import { type INode, SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'workflow-automation-workflow';
 
 import * as genericFunctions from '../../GenericFunctions';
 import { Telegram } from '../../Telegram.node';

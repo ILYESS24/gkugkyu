@@ -1,11 +1,11 @@
-jest.mock('n8n-workflow', () => ({
+﻿jest.mock('n8n-workflow', () => ({
 	...jest.requireActual('n8n-workflow'),
 	LoggerProxy: { init: jest.fn() },
 }));
 
-import type { GlobalConfig, InstanceSettingsConfig } from '@n8n/config';
+import type { GlobalConfig, InstanceSettingsConfig } from '@workflow-automation/config';
 import { mock, captor } from 'jest-mock-extended';
-import { LoggerProxy } from 'n8n-workflow';
+import { LoggerProxy } from 'workflow-automation-workflow';
 import winston from 'winston';
 
 import { Logger } from '../logger';

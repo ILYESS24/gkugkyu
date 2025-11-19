@@ -1,11 +1,11 @@
-import { MotorheadMemory } from '@langchain/community/memory/motorhead_memory';
+﻿import { MotorheadMemory } from '@langchain/community/memory/motorhead_memory';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getSessionId } from '@utils/helpers';
 import { logWrapper } from '@utils/logWrapper';

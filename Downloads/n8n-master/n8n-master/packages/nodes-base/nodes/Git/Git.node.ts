@@ -1,11 +1,11 @@
-import { access, mkdir } from 'fs/promises';
+﻿import { access, mkdir } from 'fs/promises';
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, assertParamIsBoolean, assertParamIsString } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, assertParamIsBoolean, assertParamIsString } from 'workflow-automation-workflow';
 import type { LogOptions, SimpleGit, SimpleGitOptions } from 'simple-git';
 import simpleGit from 'simple-git';
 import { URL } from 'url';
@@ -20,8 +20,8 @@ import {
 	switchBranchFields,
 	tagFields,
 } from './descriptions';
-import { Container } from '@n8n/di';
-import { DeploymentConfig, SecurityConfig } from '@n8n/config';
+import { Container } from '@workflow-automation/di';
+import { DeploymentConfig, SecurityConfig } from '@workflow-automation/config';
 
 export class Git implements INodeType {
 	description: INodeTypeDescription = {

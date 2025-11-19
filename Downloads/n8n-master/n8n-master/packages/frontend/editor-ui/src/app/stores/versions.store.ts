@@ -1,4 +1,4 @@
-import type { IVersionNotificationSettings } from '@n8n/api-types';
+﻿import type { IVersionNotificationSettings } from '@workflow-automation/api-types';
 import * as versionsApi from '@n8n/rest-api-client/api/versions';
 import {
 	LOCAL_STORAGE_DISMISSED_WHATS_NEW_CALLOUT,
@@ -17,7 +17,7 @@ import { computed, ref } from 'vue';
 import { useSettingsStore } from './settings.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useStorage } from '@/app/composables/useStorage';
-import { jsonParse } from 'n8n-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 
 type SetVersionParams = { versions: Version[]; currentVersion: string };

@@ -1,8 +1,8 @@
-import type { BannerName } from '@n8n/api-types';
-import type { SettingsRepository } from '@n8n/db';
+﻿import type { BannerName } from '@workflow-automation/api-types';
+import type { SettingsRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
-import { UnexpectedError } from 'n8n-workflow';
+import type { ErrorReporter } from 'workflow-automation-core';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { BannerService } from '@/services/banner.service';
 

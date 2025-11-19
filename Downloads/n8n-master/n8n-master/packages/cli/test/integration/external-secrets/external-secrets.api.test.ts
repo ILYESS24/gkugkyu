@@ -1,10 +1,10 @@
-import { LicenseState } from '@n8n/backend-common';
+﻿import { LicenseState } from '@workflow-automation/backend-common';
 import { mockLogger, mockInstance } from '@n8n/backend-test-utils';
-import { SettingsRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { SettingsRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { mock } from 'jest-mock-extended';
-import { Cipher } from 'n8n-core';
-import type { IDataObject } from 'n8n-workflow';
+import { Cipher } from 'workflow-automation-core';
+import type { IDataObject } from 'workflow-automation-workflow';
 
 import config from '@/config';
 import { CREDENTIAL_BLANKING_VALUE } from '@/constants';

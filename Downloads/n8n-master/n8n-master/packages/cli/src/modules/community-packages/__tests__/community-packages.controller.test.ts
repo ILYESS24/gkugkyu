@@ -1,4 +1,4 @@
-import type { CommunityNodeType } from '@n8n/api-types';
+﻿import type { CommunityNodeType } from '@workflow-automation/api-types';
 import { mock } from 'jest-mock-extended';
 
 import { CommunityPackagesController } from '@/modules/community-packages/community-packages.controller';

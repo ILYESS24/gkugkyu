@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { useI18n } from '@n8n/i18n';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
 import { ProjectTypes } from '@/features/collaboration/projects/projects.types';
@@ -7,7 +7,7 @@ import { type PathItem } from '@n8n/design-system/components/N8nBreadcrumbs/Brea
 import { computed, onBeforeUnmount, ref, watch } from 'vue';
 import { useFoldersStore } from '../folders.store';
 import type { FolderPathItem, FolderShortInfo } from '../folders.types';
-import type { IUser } from 'n8n-workflow';
+import type { IUser } from 'workflow-automation-workflow';
 import ProjectBreadcrumb from '@/features/core/folders/components/ProjectBreadcrumb.vue';
 
 import { N8nActionToggle, N8nBreadcrumbs } from '@n8n/design-system';

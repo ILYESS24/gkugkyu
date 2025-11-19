@@ -1,9 +1,9 @@
-process.argv[2] = 'worker';
+﻿process.argv[2] = 'worker';
 
 import { mockInstance } from '@n8n/backend-test-utils';
-import { ExecutionsConfig, TaskRunnersConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
-import { BinaryDataService } from 'n8n-core';
+import { ExecutionsConfig, TaskRunnersConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
+import { BinaryDataService } from 'workflow-automation-core';
 
 import { Worker } from '@/commands/worker';
 import config from '@/config';

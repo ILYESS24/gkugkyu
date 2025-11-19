@@ -1,4 +1,4 @@
-import { createTestingPinia } from '@pinia/testing';
+﻿import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
 import { waitFor, fireEvent } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
@@ -16,7 +16,7 @@ import {
 	createTestWorkflowObject,
 	defaultNodeDescriptions,
 } from '@/__tests__/mocks';
-import type { Workflow } from 'n8n-workflow';
+import type { Workflow } from 'workflow-automation-workflow';
 
 vi.mock('vue-router', () => ({
 	useRouter: () => ({}),

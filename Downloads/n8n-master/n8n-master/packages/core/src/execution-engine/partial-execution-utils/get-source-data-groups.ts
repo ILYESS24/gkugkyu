@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INode, type IPinData, type IRunData } from 'n8n-workflow';
+﻿import { NodeConnectionTypes, type INode, type IPinData, type IRunData } from 'workflow-automation-workflow';
 
 import type { GraphConnection, DirectedGraph } from './directed-graph';
 
@@ -40,15 +40,15 @@ function newGroup(): SourceConnectionGroup {
  * nodes with multiple inputs.
  *
  * # Example 1:
- * ┌───────┐1
- * │source1├────┐
- * └───────┘    │   ┌────┐
- * ┌───────┐1   ├──►│    │
- * │source2├────┘   │node│
- * └───────┘    ┌──►│    │
- * ┌───────┐1   │   └────┘
- * │source3├────┘
- * └───────┘
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”1
+ * â”‚source1â”œâ”€â”€â”€â”€â”
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚   â”Œâ”€â”€â”€â”€â”
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”œâ”€â”€â–ºâ”‚    â”‚
+ * â”‚source2â”œâ”€â”€â”€â”€â”˜   â”‚nodeâ”‚
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”Œâ”€â”€â–ºâ”‚    â”‚
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”‚   â””â”€â”€â”€â”€â”˜
+ * â”‚source3â”œâ”€â”€â”€â”€â”˜
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜
  *
  * Given this workflow, and assuming all sources have run data or pinned data,
  * it's possible to run `node` with the data of `source1` and `source3` and
@@ -65,15 +65,15 @@ function newGroup(): SourceConnectionGroup {
  * 2. source2
  *
  * # Example 2:
- * ┌───────┐0
- * │source1├────┐
- * └───────┘    │   ┌────┐
- * ┌───────┐1   ├──►│    │
- * │source2├────┘   │node│
- * └───────┘    ┌──►│    │
- * ┌───────┐1   │   └────┘
- * │source3├────┘
- * └───────┘
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”0
+ * â”‚source1â”œâ”€â”€â”€â”€â”
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚   â”Œâ”€â”€â”€â”€â”
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”œâ”€â”€â–ºâ”‚    â”‚
+ * â”‚source2â”œâ”€â”€â”€â”€â”˜   â”‚nodeâ”‚
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”Œâ”€â”€â–ºâ”‚    â”‚
+ * â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”‚   â””â”€â”€â”€â”€â”˜
+ * â”‚source3â”œâ”€â”€â”€â”€â”˜
+ * â””â”€â”€â”€â”€â”€â”€â”€â”˜
  *
  * Since `source1` has no run data and no pinned data it's skipped in favor of
  * `source2` for the for input.

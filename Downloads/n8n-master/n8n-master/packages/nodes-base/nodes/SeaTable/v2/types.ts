@@ -1,4 +1,4 @@
-// ----------------------------------
+﻿// ----------------------------------
 //         SeaTable
 // ----------------------------------
 
@@ -9,7 +9,7 @@ export type TSeaTableServerEdition = 'enterprise edition';
 //         dtable
 // ----------------------------------
 
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
+import type { ICredentialDataDecryptedObject } from 'workflow-automation-workflow';
 
 import type {
 	IDtableMetadataColumn,

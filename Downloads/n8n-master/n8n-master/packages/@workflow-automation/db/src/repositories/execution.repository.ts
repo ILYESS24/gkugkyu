@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import type {
 	FindManyOptions,
 	FindOneOptions,
@@ -23,14 +23,14 @@ import {
 import { DateUtils } from '@n8n/typeorm/util/DateUtils';
 import { parse, stringify } from 'flatted';
 import pick from 'lodash/pick';
-import { BinaryDataService, ErrorReporter } from 'n8n-core';
+import { BinaryDataService, ErrorReporter } from 'workflow-automation-core';
 import type {
 	AnnotationVote,
 	ExecutionStatus,
 	ExecutionSummary,
 	IRunExecutionData,
-} from 'n8n-workflow';
-import { ManualExecutionCancelledError, UnexpectedError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { ManualExecutionCancelledError, UnexpectedError } from 'workflow-automation-workflow';
 
 import { ExecutionDataRepository } from './execution-data.repository';
 import {

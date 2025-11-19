@@ -1,12 +1,12 @@
-import { OpenAI, type ClientOptions } from '@langchain/openai';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import { OpenAI, type ClientOptions } from '@langchain/openai';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	INodeType,
 	INodeTypeDescription,
 	ISupplyDataFunctions,
 	SupplyData,
 	ILoadOptionsFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getProxyAgent } from '@utils/httpProxyAgent';
 

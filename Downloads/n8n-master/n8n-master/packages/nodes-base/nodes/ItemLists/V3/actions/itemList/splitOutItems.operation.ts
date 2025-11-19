@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import unset from 'lodash/unset';
 import type {
 	IBinaryData,
@@ -6,8 +6,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { deepCopy, NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, NodeOperationError } from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

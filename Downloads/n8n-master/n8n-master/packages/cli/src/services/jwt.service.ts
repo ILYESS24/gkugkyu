@@ -1,8 +1,8 @@
-import { GlobalConfig } from '@n8n/config';
-import { Container, Service } from '@n8n/di';
+﻿import { GlobalConfig } from '@workflow-automation/config';
+import { Container, Service } from '@workflow-automation/di';
 import { createHash } from 'crypto';
 import jwt from 'jsonwebtoken';
-import { InstanceSettings } from 'n8n-core';
+import { InstanceSettings } from 'workflow-automation-core';
 
 @Service()
 export class JwtService {

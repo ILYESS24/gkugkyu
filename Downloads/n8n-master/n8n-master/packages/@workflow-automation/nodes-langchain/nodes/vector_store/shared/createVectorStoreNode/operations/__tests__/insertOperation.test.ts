@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/unbound-method */
+﻿/* eslint-disable @typescript-eslint/unbound-method */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 import type { Document } from '@langchain/core/documents';
 import type { Embeddings } from '@langchain/core/embeddings';
 import type { VectorStore } from '@langchain/core/vectorstores';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { logAiEvent } from '@utils/helpers';
 import type { N8nBinaryLoader } from '@utils/N8nBinaryLoader';

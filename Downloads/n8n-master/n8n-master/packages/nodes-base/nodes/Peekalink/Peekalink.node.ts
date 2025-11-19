@@ -1,4 +1,4 @@
-import {
+﻿import {
 	Node,
 	NodeApiError,
 	type IExecuteFunctions,
@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type JsonObject,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export const apiUrl = 'https://api.peekalink.io';
 

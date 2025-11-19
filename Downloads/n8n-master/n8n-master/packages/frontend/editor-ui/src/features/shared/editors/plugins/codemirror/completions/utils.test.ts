@@ -1,10 +1,10 @@
-import { createTestNode, createTestWorkflowObject } from '@/__tests__/mocks';
+﻿import { createTestNode, createTestWorkflowObject } from '@/__tests__/mocks';
 import * as ndvStore from '@/features/ndv/shared/ndv.store';
 import { CompletionContext, insertCompletionText } from '@codemirror/autocomplete';
 import { javascriptLanguage } from '@codemirror/lang-javascript';
 import { EditorState } from '@codemirror/state';
 import { EditorView } from '@codemirror/view';
-import { NodeConnectionTypes, type IConnections } from 'n8n-workflow';
+import { NodeConnectionTypes, type IConnections } from 'workflow-automation-workflow';
 import type { MockInstance } from 'vitest';
 import {
 	autocompletableNodeNames,

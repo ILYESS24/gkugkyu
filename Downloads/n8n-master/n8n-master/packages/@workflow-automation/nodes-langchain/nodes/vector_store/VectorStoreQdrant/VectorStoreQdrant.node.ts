@@ -1,9 +1,9 @@
-import type { Callbacks } from '@langchain/core/callbacks/manager';
+﻿import type { Callbacks } from '@langchain/core/callbacks/manager';
 import type { Embeddings } from '@langchain/core/embeddings';
 import type { QdrantLibArgs } from '@langchain/qdrant';
 import { QdrantVectorStore } from '@langchain/qdrant';
 import { type Schemas as QdrantSchemas } from '@qdrant/js-client-rest';
-import { assertParamIsString, type IDataObject, type INodeProperties } from 'n8n-workflow';
+import { assertParamIsString, type IDataObject, type INodeProperties } from 'workflow-automation-workflow';
 
 import { createQdrantClient, type QdrantCredential } from './Qdrant.utils';
 import { createVectorStoreNode } from '../shared/createVectorStoreNode/createVectorStoreNode';

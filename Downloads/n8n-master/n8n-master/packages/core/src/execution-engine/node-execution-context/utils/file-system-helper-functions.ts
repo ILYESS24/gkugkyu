@@ -1,7 +1,7 @@
-import { isContainedWithin, safeJoinPath } from '@n8n/backend-common';
-import { Container } from '@n8n/di';
-import type { FileSystemHelperFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import { isContainedWithin, safeJoinPath } from '@workflow-automation/backend-common';
+import { Container } from '@workflow-automation/di';
+import type { FileSystemHelperFunctions, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 import { createReadStream } from 'node:fs';
 import {
 	access as fsAccess,

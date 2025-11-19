@@ -1,13 +1,13 @@
-import type { CredentialPayload } from '@n8n/backend-test-utils';
-import type { Project, User, ICredentialsDb } from '@n8n/db';
+﻿import type { CredentialPayload } from '@n8n/backend-test-utils';
+import type { Project, User, ICredentialsDb } from '@workflow-automation/db';
 import {
 	CredentialsEntity,
 	CredentialsRepository,
 	ProjectRepository,
 	SharedCredentialsRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { CredentialSharingRole } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { CredentialSharingRole } from '@workflow-automation/permissions';
 
 export async function encryptCredentialData(
 	credential: CredentialsEntity,

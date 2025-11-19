@@ -1,4 +1,4 @@
-import { createComponentRenderer } from '@/__tests__/render';
+﻿import { createComponentRenderer } from '@/__tests__/render';
 import CredentialEdit from './CredentialEdit.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { CREDENTIAL_EDIT_MODAL_KEY } from '../../credentials.constants';
@@ -7,7 +7,7 @@ import { retry, mockedStore } from '@/__tests__/utils';
 import { useCredentialsStore } from '../../credentials.store';
 import type { ICredentialsResponse } from '../../credentials.types';
 import { within } from '@testing-library/vue';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'workflow-automation-workflow';
 
 const oAuth2Api: ICredentialType = {
 	name: 'oAuth2Api',

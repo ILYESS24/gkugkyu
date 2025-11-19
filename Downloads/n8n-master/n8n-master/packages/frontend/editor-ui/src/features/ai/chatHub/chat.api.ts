@@ -1,4 +1,4 @@
-import { makeRestApiRequest, streamRequest } from '@n8n/rest-api-client';
+﻿import { makeRestApiRequest, streamRequest } from '@n8n/rest-api-client';
 import type { IRestApiContext } from '@n8n/rest-api-client';
 import type {
 	ChatHubSendMessageRequest,
@@ -15,7 +15,7 @@ import type {
 	ChatHubUpdateAgentRequest,
 	ChatHubUpdateConversationRequest,
 	EnrichedStructuredChunk,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 
 // Workflows stream data as newline separated JSON objects (jsonl)
 const STREAM_SEPARATOR = '\n';

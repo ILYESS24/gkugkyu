@@ -1,6 +1,6 @@
-import type { User } from '@n8n/db';
-import { WorkflowStatisticsRepository } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import type { User } from '@workflow-automation/db';
+import { WorkflowStatisticsRepository } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 
 @Service()
 export class CtaService {

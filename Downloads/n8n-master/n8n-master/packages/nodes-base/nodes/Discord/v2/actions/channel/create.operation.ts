@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { updateDisplayOptions } from '../../../../../utils/utilities';
 import { parseDiscordError, prepareErrorData } from '../../helpers/utils';
@@ -113,7 +113,7 @@ const properties: INodeProperties[] = [
 					rows: 2,
 				},
 				description: 'The channel topic description (0-1024 characters)',
-				placeholder: 'e.g. This channel is about…',
+				placeholder: 'e.g. This channel is aboutâ€¦',
 				displayOptions: {
 					hide: {
 						'/type': ['4'],

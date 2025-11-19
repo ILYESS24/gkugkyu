@@ -1,4 +1,4 @@
-// Disable task runners until we have fixed the "run test workflows" test
+﻿// Disable task runners until we have fixed the "run test workflows" test
 // to mock the Code Node execution
 process.env.N8N_RUNNERS_ENABLED = 'false';
 
@@ -9,7 +9,7 @@ process.env.N8N_RUNNERS_ENABLED = 'false';
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // DR denotes that the node is dirty
 // PD denotes that the node has pinned data
@@ -34,7 +34,7 @@ import type {
 	RelatedExecution,
 	IExecuteFunctions,
 	IDataObject,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	createDeferredPromise,
@@ -44,7 +44,7 @@ import {
 	NodeHelpers,
 	NodeOperationError,
 	Workflow,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import assert from 'node:assert';
 
 import * as Helpers from '@test/helpers';
@@ -437,10 +437,10 @@ describe('WorkflowExecute', () => {
 	});
 
 	describe('runPartialWorkflow2', () => {
-		//                Dirty         ►
-		// ┌───────┐1     ┌─────┐1     ┌─────┐
-		// │trigger├──────►node1├──────►node2│
-		// └───────┘      └─────┘      └─────┘
+		//                Dirty         â–º
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºnode1â”œâ”€â”€â”€â”€â”€â”€â–ºnode2â”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜
 		test("deletes dirty nodes' run data", async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -481,13 +481,13 @@ describe('WorkflowExecute', () => {
 		});
 
 		//
-		// ┌───────┐1  ┌────┐1
-		// │trigger├───►set1├─┐ ┌─────┐    ►►
-		// └───────┘   └────┘ └─►     │1  ┌───────────┐
-		//              DR      │merge├───►destination│
-		//             ┌────┐1┌─►     │   └───────────┘
-		//             │set2├─┘ └─────┘
-		//             └────┘
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1  â”Œâ”€â”€â”€â”€â”1
+		// â”‚triggerâ”œâ”€â”€â”€â–ºset1â”œâ”€â” â”Œâ”€â”€â”€â”€â”€â”    â–ºâ–º
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”˜ â””â”€â–º     â”‚1  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//              DR      â”‚mergeâ”œâ”€â”€â”€â–ºdestinationâ”‚
+		//             â”Œâ”€â”€â”€â”€â”1â”Œâ”€â–º     â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		//             â”‚set2â”œâ”€â”˜ â””â”€â”€â”€â”€â”€â”˜
+		//             â””â”€â”€â”€â”€â”˜
 		test('deletes run data of children of dirty nodes as well', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -545,10 +545,10 @@ describe('WorkflowExecute', () => {
 			);
 		});
 
-		//                 XX           ►►
-		// ┌───────┐1     ┌─────┐1     ┌─────┐
-		// │trigger├──────►node1├──────►node2│
-		// └───────┘      └─────┘      └─────┘
+		//                 XX           â–ºâ–º
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºnode1â”œâ”€â”€â”€â”€â”€â”€â–ºnode2â”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜
 		test('removes disabled nodes from the runNodeFilter, but not the graph', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -598,16 +598,16 @@ describe('WorkflowExecute', () => {
 			expect(nodes).toContain(node1.name);
 		});
 
-		//                             ►►
-		//                ┌────┐0     ┌─────────┐
-		// ┌───────┐1     │    ├──────►afterLoop│
-		// │trigger├───┬──►loop│1     └─────────┘
-		// └───────┘   │  │    ├─┐
-		//             │  └────┘ │
-		//             │         │ ┌──────┐1
-		//             │         └─►inLoop├─┐
-		//             │           └──────┘ │
-		//             └────────────────────┘
+		//                             â–ºâ–º
+		//                â”Œâ”€â”€â”€â”€â”0     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”‚    â”œâ”€â”€â”€â”€â”€â”€â–ºafterLoopâ”‚
+		// â”‚triggerâ”œâ”€â”€â”€â”¬â”€â”€â–ºloopâ”‚1     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚  â”‚    â”œâ”€â”
+		//             â”‚  â””â”€â”€â”€â”€â”˜ â”‚
+		//             â”‚         â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”1
+		//             â”‚         â””â”€â–ºinLoopâ”œâ”€â”
+		//             â”‚           â””â”€â”€â”€â”€â”€â”€â”˜ â”‚
+		//             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('passes filtered run data to `recreateNodeExecutionStack`', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -664,12 +664,12 @@ describe('WorkflowExecute', () => {
 			);
 		});
 
-		// ┌───────┐    ┌─────┐
-		// │trigger├┬──►│node1│
-		// └───────┘│   └─────┘
-		//          │   ┌─────┐
-		//          └──►│node2│
-		//              └─────┘
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”¬â”€â”€â–ºâ”‚node1â”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜â”‚   â””â”€â”€â”€â”€â”€â”˜
+		//          â”‚   â”Œâ”€â”€â”€â”€â”€â”
+		//          â””â”€â”€â–ºâ”‚node2â”‚
+		//              â””â”€â”€â”€â”€â”€â”˜
 		test('passes subgraph to `cleanRunData`', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -726,10 +726,10 @@ describe('WorkflowExecute', () => {
 			);
 		});
 
-		//  DR          ►►              DR
-		// ┌───────┐   ┌───────────┐   ┌─────────┐
-		// │trigger├───►destination├───►dirtyNode│
-		// └───────┘   └───────────┘   └─────────┘
+		//  DR          â–ºâ–º              DR
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”€â”€â”€â–ºdestinationâ”œâ”€â”€â”€â–ºdirtyNodeâ”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('passes pruned dirty nodes to `cleanRunData`', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -774,13 +774,13 @@ describe('WorkflowExecute', () => {
 			);
 		});
 
-		//                 ►►
-		//                ┌──────┐
-		//                │orphan│
-		//                └──────┘
-		//  ┌───────┐     ┌───────────┐
-		//  │trigger├────►│destination│
-		//  └───────┘     └───────────┘
+		//                 â–ºâ–º
+		//                â”Œâ”€â”€â”€â”€â”€â”€â”
+		//                â”‚orphanâ”‚
+		//                â””â”€â”€â”€â”€â”€â”€â”˜
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('works with a single node', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -823,12 +823,12 @@ describe('WorkflowExecute', () => {
 			);
 		});
 
-		//  ┌───────┐     ┌───────────┐
-		//  │trigger├────►│agentNode  │
-		//  └───────┘     └───────────┘
-		//                       │ ┌──────┐
-		//                       └─│ Tool │
-		//                         └──────┘
+		//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚agentNode  â”‚
+		//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		//                       â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”
+		//                       â””â”€â”‚ Tool â”‚
+		//                         â””â”€â”€â”€â”€â”€â”€â”˜
 		it('rewires graph for partial execution of tools', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -899,10 +899,10 @@ describe('WorkflowExecute', () => {
 			expect(processRunExecutionDataSpy).toHaveBeenCalledWith(expectedGraph);
 		});
 
-		//                             ►►
-		// ┌───────┐1     ┌─────┐1     ┌─────┐
-		// │trigger├──────►node1├──────►node2│
-		// └───────┘      └─────┘      └─────┘
+		//                             â–ºâ–º
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºnode1â”œâ”€â”€â”€â”€â”€â”€â–ºnode2â”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜
 		test('increments partial execution index starting with max index of previous runs', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -950,10 +950,10 @@ describe('WorkflowExecute', () => {
 			]);
 		});
 
-		//                ►►
-		// ┌───────┐1     ┌─────┐1
-		// │trigger├──────►node1|
-		// └───────┘      └─────┘
+		//                â–ºâ–º
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”1
+		// â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â–ºnode1|
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜
 		test('increments partial execution index starting with max index of 0 of previous runs', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();
@@ -999,10 +999,10 @@ describe('WorkflowExecute', () => {
 			]);
 		});
 
-		//                    ►►
-		// ┌─────┐1     ┌─────┐
-		// │node1├──────►node2│
-		// └─────┘      └─────┘
+		//                    â–ºâ–º
+		// â”Œâ”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”
+		// â”‚node1â”œâ”€â”€â”€â”€â”€â”€â–ºnode2â”‚
+		// â””â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”˜
 		test('should find closest parent with run data when no trigger exists', async () => {
 			// ARRANGE
 			const waitPromise = createDeferredPromise<IRun>();

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import isEmpty from 'lodash/isEmpty';
 import isEqual from 'lodash/isEqual';
 
@@ -10,7 +10,7 @@ import {
 	type INode,
 	type NodeParameterValue,
 	type FilterOptionsValue,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, reactive, watch } from 'vue';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import {

@@ -1,4 +1,4 @@
-import {
+﻿import {
 	createTeamProject,
 	findProject,
 	getPersonalProject,
@@ -11,8 +11,8 @@ import {
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import { EntityNotFoundError } from '@n8n/typeorm';
 import { v4 as uuid } from 'uuid';
 

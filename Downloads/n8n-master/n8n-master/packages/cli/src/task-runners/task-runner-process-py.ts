@@ -1,6 +1,6 @@
-import { Logger } from '@n8n/backend-common';
-import { TaskRunnersConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+﻿import { Logger } from '@workflow-automation/backend-common';
+import { TaskRunnersConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import { exec, spawn } from 'node:child_process';
 import { access } from 'node:fs/promises';
 import path from 'node:path';

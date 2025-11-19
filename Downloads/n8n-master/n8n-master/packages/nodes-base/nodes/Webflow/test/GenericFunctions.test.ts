@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IHookFunctions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	INode,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { webflowApiRequest, webflowApiRequestAllItems } from '../GenericFunctions';
 

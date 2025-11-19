@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import { defineStore } from 'pinia';
 import { useUIStore } from './ui.store';
 import {
@@ -9,7 +9,7 @@ import {
 	CONTACT_PROMPT_MODAL_KEY,
 } from '@/app/constants';
 import { useRootStore } from '@n8n/stores/useRootStore';
-import type { IUserSettings, NpsSurveyState } from 'n8n-workflow';
+import type { IUserSettings, NpsSurveyState } from 'workflow-automation-workflow';
 import { useSettingsStore } from './settings.store';
 import { updateNpsSurveyState } from '@n8n/rest-api-client/api/npsSurvey';
 import type { N8nPrompts } from '@n8n/rest-api-client/api/prompts';

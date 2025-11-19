@@ -1,7 +1,7 @@
-import type { Tool } from '@langchain/core/tools';
+﻿import type { Tool } from '@langchain/core/tools';
 import type { Request, Response } from 'express';
 import { mock } from 'jest-mock-extended';
-import type { INode, IWebhookFunctions } from 'n8n-workflow';
+import type { INode, IWebhookFunctions } from 'workflow-automation-workflow';
 
 import * as helpers from '@utils/helpers';
 

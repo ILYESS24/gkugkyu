@@ -1,4 +1,4 @@
-import type { ICredentialsDataImap } from '@credentials/Imap.credentials';
+﻿import type { ICredentialsDataImap } from '@credentials/Imap.credentials';
 import { isCredentialsDataImap } from '@credentials/Imap.credentials';
 import type {
 	ImapSimple,
@@ -23,8 +23,8 @@ import type {
 	ITriggerResponse,
 	JsonObject,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, TriggerCloseError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, NodeOperationError, TriggerCloseError } from 'workflow-automation-workflow';
 import rfc2047 from 'rfc2047';
 
 import { getNewEmails } from './utils';
@@ -51,7 +51,7 @@ const versionDescription: INodeTypeDescription = {
 				"<b>While building your workflow</b>, click the 'execute step' button, then send an email to make an event happen. This will trigger an execution, which will show up in this editor.<br /> <br /><b>Your workflow will also execute automatically</b>, since it's activated. Every time an email is received, this node will trigger an execution. These executions will show up in the <a data-key='executions'>executions list</a>, but not in the editor.",
 		},
 		activationHint:
-			"Once you’ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just won’t see those executions here).",
+			"Once youâ€™ve finished building your workflow, <a data-key='activate'>activate</a> it to have it also listen continuously (you just wonâ€™t see those executions here).",
 	},
 	usableAsTool: true,
 	inputs: [],

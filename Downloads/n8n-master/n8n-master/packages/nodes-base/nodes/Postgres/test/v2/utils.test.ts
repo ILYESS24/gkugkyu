@@ -1,5 +1,5 @@
-import type { IDataObject, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+﻿import type { IDataObject, INode } from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 import pgPromise from 'pg-promise';
 
 import type { ColumnInfo } from '../../v2/helpers/interfaces';

@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	IExecuteFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import type { OperationType } from './Service';
 import { TodoistService } from './Service';
@@ -315,7 +315,7 @@ const versionDescription: INodeTypeDescription = {
 					type: 'string',
 					default: '',
 					description:
-						'Human defined task due date (ex.: “next Monday”, “Tomorrow”). Value is set using local (not UTC) time.',
+						'Human defined task due date (ex.: â€œnext Mondayâ€, â€œTomorrowâ€). Value is set using local (not UTC) time.',
 				},
 				{
 					displayName: 'Parent Name or ID',
@@ -517,7 +517,7 @@ const versionDescription: INodeTypeDescription = {
 					type: 'string',
 					default: '',
 					description:
-						'Human defined task due date (ex.: “next Monday”, “Tomorrow”). Value is set using local (not UTC) time.',
+						'Human defined task due date (ex.: â€œnext Mondayâ€, â€œTomorrowâ€). Value is set using local (not UTC) time.',
 				},
 				{
 					displayName: 'Due String Locale',

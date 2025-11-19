@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue';
-import { NodeConnectionTypes, type IRunData, type Workflow } from 'n8n-workflow';
+import { NodeConnectionTypes, type IRunData, type Workflow } from 'workflow-automation-workflow';
 import RunData from '@/features/ndv/runData/components/RunData.vue';
 import RunInfo from '@/features/ndv/runData/components/RunInfo.vue';
 import { storeToRefs } from 'pinia';

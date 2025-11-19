@@ -1,6 +1,6 @@
-import { Service } from '@n8n/di';
+﻿import { Service } from '@workflow-automation/di';
 import glob from 'fast-glob';
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
 import * as path from 'path';
 
 import { LoadNodesAndCredentials } from '@/load-nodes-and-credentials';

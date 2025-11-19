@@ -1,4 +1,4 @@
-import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+﻿import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
 
 import { microsoftApiRequest } from '../transport';
 import { parseAddress } from '../helpers/utils';

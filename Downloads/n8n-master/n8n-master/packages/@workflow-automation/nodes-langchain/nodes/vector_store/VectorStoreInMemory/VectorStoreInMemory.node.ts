@@ -1,4 +1,4 @@
-import type { Embeddings } from '@langchain/core/embeddings';
+﻿import type { Embeddings } from '@langchain/core/embeddings';
 import type { MemoryVectorStore } from 'langchain/vectorstores/memory';
 import {
 	type INodeProperties,
@@ -9,7 +9,7 @@ import {
 	type IExecuteFunctions,
 	type ISupplyDataFunctions,
 	ApplicationError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createVectorStoreNode } from '../shared/createVectorStoreNode/createVectorStoreNode';
 import { MemoryVectorStoreManager } from '../shared/MemoryManager/MemoryVectorStoreManager';

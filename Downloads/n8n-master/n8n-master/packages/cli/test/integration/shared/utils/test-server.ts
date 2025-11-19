@@ -1,8 +1,8 @@
-import { LicenseState, ModuleRegistry } from '@n8n/backend-common';
+﻿import { LicenseState, ModuleRegistry } from '@workflow-automation/backend-common';
 import { mockInstance, mockLogger, testModules, testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { APIRequest, User } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { APIRequest, User } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import type superagent from 'superagent';
@@ -26,7 +26,7 @@ import type { SetupProps, TestServer } from '../types';
 /**
  * Plugin to prefix a path segment into a request URL pathname.
  *
- * Example: http://127.0.0.1:62100/me/password → http://127.0.0.1:62100/rest/me/password
+ * Example: http://127.0.0.1:62100/me/password â†’ http://127.0.0.1:62100/rest/me/password
  */
 function prefix(pathSegment: string) {
 	return async function (request: superagent.SuperAgentRequest) {

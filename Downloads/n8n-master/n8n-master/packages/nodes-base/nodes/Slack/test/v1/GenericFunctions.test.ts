@@ -1,4 +1,4 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
+﻿import type { IExecuteFunctions } from 'workflow-automation-workflow';
 
 import { slackApiRequest, slackApiRequestAllItems, validateJSON } from '../../V1/GenericFunctions';
 

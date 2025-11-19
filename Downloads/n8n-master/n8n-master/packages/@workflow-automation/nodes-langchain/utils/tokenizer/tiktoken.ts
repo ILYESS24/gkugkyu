@@ -1,7 +1,7 @@
-import { readFile } from 'fs/promises';
+﻿import { readFile } from 'fs/promises';
 import type { TiktokenBPE, TiktokenEncoding, TiktokenModel } from 'js-tiktoken/lite';
 import { Tiktoken, getEncodingNameForModel } from 'js-tiktoken/lite';
-import { jsonParse } from 'n8n-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 import { join } from 'path';
 
 const cache: Record<string, Promise<Tiktoken>> = {};

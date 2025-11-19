@@ -1,8 +1,8 @@
-import type { Project, User, ProjectRelation } from '@n8n/db';
-import { ProjectRelationRepository, ProjectRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { AssignableProjectRole } from '@n8n/permissions';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+﻿import type { Project, User, ProjectRelation } from '@workflow-automation/db';
+import { ProjectRelationRepository, ProjectRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
+import type { AssignableProjectRole } from '@workflow-automation/permissions';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 
 import { randomName } from '../random';
 

@@ -1,6 +1,6 @@
-import { CreateVariableRequestDto, VariableListRequestDto } from '@n8n/api-types';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Body, Delete, Get, Licensed, Patch, Post, Query, RestController } from '@n8n/decorators';
+﻿import { CreateVariableRequestDto, VariableListRequestDto } from '@workflow-automation/api-types';
+import { AuthenticatedRequest } from '@workflow-automation/db';
+import { Body, Delete, Get, Licensed, Patch, Post, Query, RestController } from '@workflow-automation/decorators';
 import type { Response } from 'express';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

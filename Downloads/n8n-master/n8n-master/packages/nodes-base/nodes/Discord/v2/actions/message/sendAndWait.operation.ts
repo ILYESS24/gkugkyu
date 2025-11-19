@@ -1,9 +1,9 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getSendAndWaitProperties } from '../../../../../utils/sendAndWait/utils';
 import {
@@ -20,8 +20,8 @@ export const description: INodeProperties[] = getSendAndWaitProperties(
 	undefined,
 	{
 		noButtonStyle: true,
-		defaultApproveLabel: '✓ Approve',
-		defaultDisapproveLabel: '✗ Decline',
+		defaultApproveLabel: 'âœ“ Approve',
+		defaultDisapproveLabel: 'âœ— Decline',
 	},
 ).filter((p) => p.name !== 'subject');
 

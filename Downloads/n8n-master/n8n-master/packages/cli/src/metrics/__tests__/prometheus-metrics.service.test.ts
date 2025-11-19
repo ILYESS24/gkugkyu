@@ -1,11 +1,11 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import type { WorkflowRepository, LicenseMetricsRepository } from '@n8n/db';
+﻿import { mockInstance } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import type { WorkflowRepository, LicenseMetricsRepository } from '@workflow-automation/db';
 import type express from 'express';
 import promBundle from 'express-prom-bundle';
 import { mock } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
-import { EventMessageTypeNames } from 'n8n-workflow';
+import type { InstanceSettings } from 'workflow-automation-core';
+import { EventMessageTypeNames } from 'workflow-automation-workflow';
 import promClient from 'prom-client';
 
 import type { MessageEventBus } from '@/eventbus/message-event-bus/message-event-bus';

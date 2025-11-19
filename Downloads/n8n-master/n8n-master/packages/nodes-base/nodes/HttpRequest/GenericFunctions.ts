@@ -1,4 +1,4 @@
-import FormData from 'form-data';
+﻿import FormData from 'form-data';
 import get from 'lodash/get';
 import isPlainObject from 'lodash/isPlainObject';
 import set from 'lodash/set';
@@ -11,7 +11,7 @@ import {
 	type INodeProperties,
 	type IOAuth2Options,
 	type IRequestOptions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import type { SecureContextOptions } from 'tls';
 
 import type { HttpSslAuthCredentials } from './interfaces';

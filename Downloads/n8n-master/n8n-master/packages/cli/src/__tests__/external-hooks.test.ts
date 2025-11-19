@@ -1,15 +1,15 @@
-import type { Logger } from '@n8n/backend-common';
-import type { GlobalConfig } from '@n8n/config';
+﻿import type { Logger } from '@workflow-automation/backend-common';
+import type { GlobalConfig } from '@workflow-automation/config';
 import type {
 	WorkflowRepository,
 	CredentialsRepository,
 	SettingsRepository,
 	UserRepository,
-} from '@n8n/db';
+} from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
-import type { ErrorReporter } from 'n8n-core';
-import type { IWorkflowBase } from 'n8n-workflow';
-import { UnexpectedError } from 'n8n-workflow';
+import type { ErrorReporter } from 'workflow-automation-core';
+import type { IWorkflowBase } from 'workflow-automation-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import { ExternalHooks } from '@/external-hooks';
 

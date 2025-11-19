@@ -1,15 +1,15 @@
-// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
+﻿// NOTE: Diagrams in this file have been created with https://asciiflow.com/#/
 // If you update the tests, please update the diagrams as well.
 // If you add a test, please create a new diagram.
 //
 // Map
 // 0  means the output has no run data
 // 1  means the output has run data
-// ►► denotes the node that the user wants to execute to
+// â–ºâ–º denotes the node that the user wants to execute to
 // XX denotes that the node is disabled
 // PD denotes that the node has pinned data
 
-import { type IPinData, type IRunData } from 'n8n-workflow';
+import { type IPinData, type IRunData } from 'workflow-automation-workflow';
 
 import { createNodeData, toITaskData } from './helpers';
 import { DirectedGraph } from '../directed-graph';
@@ -38,10 +38,10 @@ describe('isDirty', () => {
 });
 
 describe('findStartNodes', () => {
-	//   ►►
-	//  ┌───────┐
-	//  │trigger│
-	//  └───────┘
+	//   â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('finds the start node if there is only a trigger', () => {
 		const node = createNodeData({ name: 'Basic Node' });
 		const graph = new DirectedGraph().addNode(node);
@@ -58,10 +58,10 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node);
 	});
 
-	//                 ►►
-	//  ┌───────┐     ┌───────────┐
-	//  │trigger├────►│destination│
-	//  └───────┘     └───────────┘
+	//                 â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â–ºâ”‚destinationâ”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('finds the start node in a simple graph', () => {
 		const trigger = createNodeData({ name: 'trigger' });
 		const destination = createNodeData({ name: 'destination' });
@@ -102,11 +102,11 @@ describe('findStartNodes', () => {
 		}
 	});
 
-	//  ┌───────┐       ►►
-	//  │       │1──┐  ┌────┐
-	//  │trigger│   ├─►│node│
-	//  │       │1──┘  └────┘
-	//  └───────┘
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”       â–ºâ–º
+	//  â”‚       â”‚1â”€â”€â”  â”Œâ”€â”€â”€â”€â”
+	//  â”‚triggerâ”‚   â”œâ”€â–ºâ”‚nodeâ”‚
+	//  â”‚       â”‚1â”€â”€â”˜  â””â”€â”€â”€â”€â”˜
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜
 	//  All nodes have run data. `findStartNodes` should return node twice
 	//  because it has 2 input connections.
 	test('multiple outputs', () => {
@@ -143,19 +143,19 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node);
 	});
 
-	//             ┌─────┐              ┌─────┐          ►►
-	//┌───────┐    │     ├────┬────────►│     │         ┌─────┐
-	//│trigger├───►│node1│    │         │node2├────┬───►│node4│
-	//└───────┘    │     ├────┼────┬───►│     │    │    └─────┘
-	//             └─────┘    │    │    └─────┘    │
-	//                        │    │               │
-	//                        │    │               │
-	//                        │    │               │
-	//                        │    │    ┌─────┐    │
-	//                        │    └───►│     │    │
-	//                        │         │node3├────┘
-	//                        └────────►│     │
-	//                                  └─────┘
+	//             â”Œâ”€â”€â”€â”€â”€â”              â”Œâ”€â”€â”€â”€â”€â”          â–ºâ–º
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”    â”‚     â”œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚     â”‚         â”Œâ”€â”€â”€â”€â”€â”
+	//â”‚triggerâ”œâ”€â”€â”€â–ºâ”‚node1â”‚    â”‚         â”‚node2â”œâ”€â”€â”€â”€â”¬â”€â”€â”€â–ºâ”‚node4â”‚
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚     â”œâ”€â”€â”€â”€â”¼â”€â”€â”€â”€â”¬â”€â”€â”€â–ºâ”‚     â”‚    â”‚    â””â”€â”€â”€â”€â”€â”˜
+	//             â””â”€â”€â”€â”€â”€â”˜    â”‚    â”‚    â””â”€â”€â”€â”€â”€â”˜    â”‚
+	//                        â”‚    â”‚               â”‚
+	//                        â”‚    â”‚               â”‚
+	//                        â”‚    â”‚               â”‚
+	//                        â”‚    â”‚    â”Œâ”€â”€â”€â”€â”€â”    â”‚
+	//                        â”‚    â””â”€â”€â”€â–ºâ”‚     â”‚    â”‚
+	//                        â”‚         â”‚node3â”œâ”€â”€â”€â”€â”˜
+	//                        â””â”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚     â”‚
+	//                                  â””â”€â”€â”€â”€â”€â”˜
 	test('complex example with multiple outputs and inputs', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -216,12 +216,12 @@ describe('findStartNodes', () => {
 		}
 	});
 
-	//                     ►►
-	//  ┌───────┐1        ┌────┐
-	//  │       ├────────►│    │
-	//  │trigger│         │node│
-	//  │       ├────────►│    │
-	//  └───────┘0        └────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1        â”Œâ”€â”€â”€â”€â”
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â”‚triggerâ”‚         â”‚nodeâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜0        â””â”€â”€â”€â”€â”˜
 	//  The merge node only gets data on one input, so the it should only be once
 	//  in the start nodes
 	test('multiple connections with the first one having data', () => {
@@ -252,12 +252,12 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node);
 	});
 
-	//                     ►►
-	//  ┌───────┐0        ┌────┐
-	//  │       ├────────►│    │
-	//  │trigger│         │node│
-	//  │       ├────────►│    │
-	//  └───────┘1        └────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”0        â”Œâ”€â”€â”€â”€â”
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â”‚triggerâ”‚         â”‚nodeâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜1        â””â”€â”€â”€â”€â”˜
 	//  The merge node only gets data on one input, so the it should only be once
 	//  in the start nodes
 	test('multiple connections with the second one having data', () => {
@@ -288,12 +288,12 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node);
 	});
 
-	//                     ►►
-	//  ┌───────┐1        ┌────┐
-	//  │       ├────────►│    │
-	//  │trigger│         │node│
-	//  │       ├────────►│    │
-	//  └───────┘1        └────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”1        â”Œâ”€â”€â”€â”€â”
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â”‚triggerâ”‚         â”‚nodeâ”‚
+	//  â”‚       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜1        â””â”€â”€â”€â”€â”˜
 	//  The merge node gets data on both inputs, so the it should be in the start
 	//  nodes twice.
 	test('multiple connections with both having data', () => {
@@ -329,12 +329,12 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node);
 	});
 
-	//                     ►►
-	//  ┌───────┐         ┌────┐
-	//  │       │1  ┌────►│    │
-	//  │trigger├───┤     │node│
-	//  │       │   └────►│    │
-	//  └───────┘         └────┘
+	//                     â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”
+	//  â”‚       â”‚1  â”Œâ”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â”‚triggerâ”œâ”€â”€â”€â”¤     â”‚nodeâ”‚
+	//  â”‚       â”‚   â””â”€â”€â”€â”€â–ºâ”‚    â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”˜
 	test('multiple connections with both having data', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -368,12 +368,12 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node3);
 	});
 
-	//                                    ►►
-	//  ┌───────┐        ┌─────┐0        ┌─────┐
-	//  │       │1       │     ├────────►│     │
-	//  │trigger├───────►│node1│         │node2│
-	//  │       │        │     ├────────►│     │
-	//  └───────┘        └─────┘1        └─────┘
+	//                                    â–ºâ–º
+	//  â”Œâ”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”0        â”Œâ”€â”€â”€â”€â”€â”
+	//  â”‚       â”‚1       â”‚     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚     â”‚
+	//  â”‚triggerâ”œâ”€â”€â”€â”€â”€â”€â”€â–ºâ”‚node1â”‚         â”‚node2â”‚
+	//  â”‚       â”‚        â”‚     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚     â”‚
+	//  â””â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”˜1        â””â”€â”€â”€â”€â”€â”˜
 	test('multiple connections with trigger', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -405,12 +405,12 @@ describe('findStartNodes', () => {
 		expect(startNodes).toContainEqual(node2);
 	});
 
-	//                              ►►
-	//┌───────┐1      ┌─────┐1     ┌─────┐
-	//│Trigger├───┬──►│Node1├───┬─►│Node2│
-	//└───────┘   │   └─────┘   │  └─────┘
-	//            │             │
-	//            └─────────────┘
+	//                              â–ºâ–º
+	//â”Œâ”€â”€â”€â”€â”€â”€â”€â”1      â”Œâ”€â”€â”€â”€â”€â”1     â”Œâ”€â”€â”€â”€â”€â”
+	//â”‚Triggerâ”œâ”€â”€â”€â”¬â”€â”€â–ºâ”‚Node1â”œâ”€â”€â”€â”¬â”€â–ºâ”‚Node2â”‚
+	//â””â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚   â””â”€â”€â”€â”€â”€â”˜   â”‚  â””â”€â”€â”€â”€â”€â”˜
+	//            â”‚             â”‚
+	//            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 	test('terminates when called with graph that contains cycles', () => {
 		// ARRANGE
 		const trigger = createNodeData({ name: 'trigger' });
@@ -444,10 +444,10 @@ describe('findStartNodes', () => {
 	});
 
 	describe('pinData', () => {
-		//               PD              ►►
-		// ┌───────┐1   ┌──────────┐0   ┌───────────┐
-		// │trigger├────►pinnedNode├────►destination│
-		// └───────┘    └──────────┘    └───────────┘
+		//               PD              â–ºâ–º
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”0   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”‚triggerâ”œâ”€â”€â”€â”€â–ºpinnedNodeâ”œâ”€â”€â”€â”€â–ºdestinationâ”‚
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		test('does not stop recursing when the first node that has no run data has pinned data', () => {
 			// ARRANGE
 			const trigger = createNodeData({ name: 'trigger' });
@@ -477,14 +477,14 @@ describe('findStartNodes', () => {
 	});
 
 	describe('custom loop logic', () => {
-		//                       ►►
-		//             ┌────┐0  ┌─────────┐
-		// ┌───────┐1  │    ├───►afterLoop│
-		// │trigger├─┬─►loop│1  └─────────┘
-		// └───────┘ │ │    ├─┐ ┌──────┐1
-		//           │ └────┘ └─►inLoop├──┐
-		//           │          └──────┘  │
-		//           └────────────────────┘
+		//                       â–ºâ–º
+		//             â”Œâ”€â”€â”€â”€â”0  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1  â”‚    â”œâ”€â”€â”€â–ºafterLoopâ”‚
+		// â”‚triggerâ”œâ”€â”¬â”€â–ºloopâ”‚1  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚ â”‚    â”œâ”€â” â”Œâ”€â”€â”€â”€â”€â”€â”1
+		//           â”‚ â””â”€â”€â”€â”€â”˜ â””â”€â–ºinLoopâ”œâ”€â”€â”
+		//           â”‚          â””â”€â”€â”€â”€â”€â”€â”˜  â”‚
+		//           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		//
 		test('if the last run of loop node has no data (null) on the done output, then the loop is the start node', () => {
 			// ARRANGE
@@ -524,14 +524,14 @@ describe('findStartNodes', () => {
 			expect(startNodes).toContainEqual(loop);
 		});
 
-		//                       ►►
-		//             ┌────┐0  ┌─────────┐
-		// ┌───────┐1  │    ├───►afterLoop│
-		// │trigger├─┬─►loop│1  └─────────┘
-		// └───────┘ │ │    ├─┐ ┌──────┐1
-		//           │ └────┘ └─►inLoop├──┐
-		//           │          └──────┘  │
-		//           └────────────────────┘
+		//                       â–ºâ–º
+		//             â”Œâ”€â”€â”€â”€â”0  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1  â”‚    â”œâ”€â”€â”€â–ºafterLoopâ”‚
+		// â”‚triggerâ”œâ”€â”¬â”€â–ºloopâ”‚1  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚ â”‚    â”œâ”€â” â”Œâ”€â”€â”€â”€â”€â”€â”1
+		//           â”‚ â””â”€â”€â”€â”€â”˜ â””â”€â–ºinLoopâ”œâ”€â”€â”
+		//           â”‚          â””â”€â”€â”€â”€â”€â”€â”˜  â”‚
+		//           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		//
 		test('if the last run of loop node has no data (empty array) on the done output, then the loop is the start  node', () => {
 			// ARRANGE
@@ -579,14 +579,14 @@ describe('findStartNodes', () => {
 			expect(startNodes).toContainEqual(loop);
 		});
 
-		//                       ►►
-		//             ┌────┐1  ┌─────────┐
-		// ┌───────┐1  │    ├───►afterLoop│
-		// │trigger├─┬─►loop│1  └─────────┘
-		// └───────┘ │ │    ├─┐ ┌──────┐1
-		//           │ └────┘ └─►inLoop├──┐
-		//           │          └──────┘  │
-		//           └────────────────────┘
+		//                       â–ºâ–º
+		//             â”Œâ”€â”€â”€â”€â”1  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+		// â”Œâ”€â”€â”€â”€â”€â”€â”€â”1  â”‚    â”œâ”€â”€â”€â–ºafterLoopâ”‚
+		// â”‚triggerâ”œâ”€â”¬â”€â–ºloopâ”‚1  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+		// â””â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚ â”‚    â”œâ”€â” â”Œâ”€â”€â”€â”€â”€â”€â”1
+		//           â”‚ â””â”€â”€â”€â”€â”˜ â””â”€â–ºinLoopâ”œâ”€â”€â”
+		//           â”‚          â””â”€â”€â”€â”€â”€â”€â”˜  â”‚
+		//           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 		//
 		test('if the loop has data on the done output in the last run it does not become a start node', () => {
 			// ARRANGE

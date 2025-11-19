@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IDataObject,
 	IHttpRequestOptions,
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IExecuteSingleFunctions,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { ICosmosDbCredentials } from '../helpers/interfaces';
 

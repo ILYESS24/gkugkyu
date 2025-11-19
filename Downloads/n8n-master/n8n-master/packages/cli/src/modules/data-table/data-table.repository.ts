@@ -1,14 +1,14 @@
-import {
+﻿import {
 	DATA_TABLE_COLUMN_ERROR_MESSAGE,
 	type DataTableCreateColumnSchema,
 	type ListDataTableQueryDto,
-} from '@n8n/api-types';
-import { GlobalConfig } from '@n8n/config';
-import { Project, withTransaction } from '@n8n/db';
-import { Service } from '@n8n/di';
+} from '@workflow-automation/api-types';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Project, withTransaction } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { DataSource, EntityManager, Repository, SelectQueryBuilder } from '@n8n/typeorm';
-import { UnexpectedError } from 'n8n-workflow';
-import type { DataTableInfo, DataTablesSizeData } from 'n8n-workflow';
+import { UnexpectedError } from 'workflow-automation-workflow';
+import type { DataTableInfo, DataTablesSizeData } from 'workflow-automation-workflow';
 
 import { DataTableColumn } from './data-table-column.entity';
 import { DataTableDDLService } from './data-table-ddl.service';

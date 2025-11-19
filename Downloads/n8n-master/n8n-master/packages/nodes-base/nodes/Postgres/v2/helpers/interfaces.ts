@@ -1,4 +1,4 @@
-import type { IDataObject, INodeExecutionData, SSHCredentials } from 'n8n-workflow';
+﻿import type { IDataObject, INodeExecutionData, SSHCredentials } from 'workflow-automation-workflow';
 import type pgPromise from 'pg-promise';
 import { type IFormattingOptions } from 'pg-promise';
 import type pg from 'pg-promise/typescript/pg-subset';

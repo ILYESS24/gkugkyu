@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const leadOperations: INodeProperties[] = [
 	{
@@ -248,7 +248,7 @@ export const leadFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether the lead doesn’t want to receive email from Salesforce (true) or does (false). Label is Email Opt Out.',
+					'Whether the lead doesnâ€™t want to receive email from Salesforce (true) or does (false). Label is Email Opt Out.',
 			},
 			{
 				displayName: 'Has Opted Out of Fax',
@@ -256,7 +256,7 @@ export const leadFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether the lead doesn’t want to receive fax from Salesforce (true) or does (false). Label is Email Opt Out.',
+					'Whether the lead doesnâ€™t want to receive fax from Salesforce (true) or does (false). Label is Email Opt Out.',
 			},
 			{
 				displayName: 'Industry',
@@ -297,14 +297,14 @@ export const leadFields: INodeProperties[] = [
 				name: 'mobilePhone',
 				type: 'string',
 				default: '',
-				description: 'Contact’s mobile phone number',
+				description: 'Contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Number Of Employees',
 				name: 'numberOfEmployees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees at the lead’s company. Label is Employees.',
+				description: 'Number of employees at the leadâ€™s company. Label is Employees.',
 			},
 			{
 				displayName: 'Owner Name or ID',
@@ -532,7 +532,7 @@ export const leadFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether the lead doesn’t want to receive email from Salesforce (true) or does (false). Label is Email Opt Out.',
+					'Whether the lead doesnâ€™t want to receive email from Salesforce (true) or does (false). Label is Email Opt Out.',
 			},
 			{
 				displayName: 'Has Opted Out of Fax',
@@ -540,7 +540,7 @@ export const leadFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether the lead doesn’t want to receive fax from Salesforce (true) or does (false). Label is Fax Opt Out.',
+					'Whether the lead doesnâ€™t want to receive fax from Salesforce (true) or does (false). Label is Fax Opt Out.',
 			},
 			{
 				displayName: 'Industry',
@@ -588,14 +588,14 @@ export const leadFields: INodeProperties[] = [
 				name: 'mobilePhone',
 				type: 'string',
 				default: '',
-				description: 'Contact’s mobile phone number',
+				description: 'Contactâ€™s mobile phone number',
 			},
 			{
 				displayName: 'Number Of Employees',
 				name: 'numberOfEmployees',
 				type: 'number',
 				default: '',
-				description: 'Number of employees at the lead’s company. Label is Employees.',
+				description: 'Number of employees at the leadâ€™s company. Label is Employees.',
 			},
 			{
 				displayName: 'Owner Name or ID',
@@ -962,7 +962,7 @@ export const leadFields: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether true, only the note owner or a user with the “Modify All Data” permission can view the note or query it via the API',
+					'Whether true, only the note owner or a user with the â€œModify All Dataâ€ permission can view the note or query it via the API',
 			},
 			{
 				displayName: 'Owner Name or ID',

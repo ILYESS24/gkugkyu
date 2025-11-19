@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Canvas V2 Only
  * @TODO Remove this notice when Canvas V2 is the only one in use
  */
@@ -102,14 +102,14 @@ import type {
 	Workflow,
 	NodeConnectionType,
 	INodeParameters,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	deepCopy,
 	NodeConnectionTypes,
 	NodeHelpers,
 	TelemetryHelpers,
 	isCommunityPackageName,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import { computed, nextTick, ref } from 'vue';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useUniqueNodeName } from '@/app/composables/useUniqueNodeName';

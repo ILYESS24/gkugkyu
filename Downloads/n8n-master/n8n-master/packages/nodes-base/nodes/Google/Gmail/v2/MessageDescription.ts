@@ -1,4 +1,4 @@
-import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'n8n-workflow';
+﻿import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'workflow-automation-workflow';
 
 import { appendAttributionOption } from '../../../../utils/descriptions';
 
@@ -209,7 +209,7 @@ export const messageFields: INodeProperties[] = [
 			{
 				...appendAttributionOption,
 				description:
-					'Whether to include the phrase “This email was sent automatically with n8n” to the end of the email',
+					'Whether to include the phrase â€œThis email was sent automatically with n8nâ€ to the end of the email',
 			},
 			{
 				displayName: 'Attachments',

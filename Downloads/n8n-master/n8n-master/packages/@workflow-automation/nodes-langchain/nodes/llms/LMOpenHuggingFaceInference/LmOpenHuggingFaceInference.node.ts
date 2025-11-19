@@ -1,11 +1,11 @@
-import { HuggingFaceInference } from '@langchain/community/llms/hf';
+﻿import { HuggingFaceInference } from '@langchain/community/llms/hf';
 import {
 	NodeConnectionTypes,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
 	type SupplyData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { getConnectionHintNoticeField } from '@utils/sharedFields';
 

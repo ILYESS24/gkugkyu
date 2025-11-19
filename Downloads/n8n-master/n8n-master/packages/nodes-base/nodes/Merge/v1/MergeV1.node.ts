@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+﻿import get from 'lodash/get';
 import type {
 	IExecuteFunctions,
 	GenericValue,
@@ -7,8 +7,8 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	IPairedItemData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeConnectionTypes, deepCopy } from 'workflow-automation-workflow';
 
 import { oldVersionNotice } from '@utils/descriptions';
 
@@ -124,7 +124,7 @@ export class MergeV1 implements INodeType {
 					name: 'propertyName1',
 					type: 'string',
 					default: '',
-					hint: 'The name of the field as text (e.g. “id”)',
+					hint: 'The name of the field as text (e.g. â€œidâ€)',
 					required: true,
 					displayOptions: {
 						show: {
@@ -138,7 +138,7 @@ export class MergeV1 implements INodeType {
 					name: 'propertyName2',
 					type: 'string',
 					default: '',
-					hint: 'The name of the field as text (e.g. “id”)',
+					hint: 'The name of the field as text (e.g. â€œidâ€)',
 					required: true,
 					displayOptions: {
 						show: {

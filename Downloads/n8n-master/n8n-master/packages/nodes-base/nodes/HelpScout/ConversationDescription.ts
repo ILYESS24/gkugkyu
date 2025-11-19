@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 export const conversationOperations: INodeProperties[] = [
 	{
@@ -103,7 +103,7 @@ export const conversationFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'Conversation’s subject',
+		description: 'Conversationâ€™s subject',
 	},
 	{
 		displayName: 'Type',

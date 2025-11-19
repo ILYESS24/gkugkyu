@@ -1,5 +1,5 @@
-import { SecurityConfig } from '@n8n/config';
-import { Container } from '@n8n/di';
+﻿import { SecurityConfig } from '@workflow-automation/config';
+import { Container } from '@workflow-automation/di';
 
 export const isWebhookHtmlSandboxingDisabled = () => {
 	return Container.get(SecurityConfig).disableWebhookHtmlSandboxing;

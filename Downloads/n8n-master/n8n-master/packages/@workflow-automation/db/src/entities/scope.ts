@@ -1,4 +1,4 @@
-import type { Scope as ScopeType } from '@n8n/permissions';
+﻿import type { Scope as ScopeType } from '@workflow-automation/permissions';
 import { Column, Entity, PrimaryColumn } from '@n8n/typeorm';
 
 @Entity({

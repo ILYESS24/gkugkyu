@@ -1,10 +1,10 @@
-import type {
+﻿import type {
 	IAuthenticateGeneric,
 	Icon,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 export class GithubIssuesApi implements ICredentialType {
 	name = 'githubIssuesApi';

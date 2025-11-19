@@ -1,7 +1,7 @@
-import type { IInviteResponse, InvitableRoleName } from './users.types';
+﻿import type { IInviteResponse, InvitableRoleName } from './users.types';
 import type { CurrentUserResponse } from '@n8n/rest-api-client/api/users';
 import type { IRestApiContext } from '@n8n/rest-api-client';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'workflow-automation-workflow';
 import { makeRestApiRequest } from '@n8n/rest-api-client';
 
 type AcceptInvitationParams = {

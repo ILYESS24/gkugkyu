@@ -1,8 +1,8 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+﻿import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
-import { NodeHelpers } from 'n8n-workflow';
-import type { INodePropertyOptions, INodeTypeDescription } from 'n8n-workflow';
+import { NodeHelpers } from 'workflow-automation-workflow';
+import type { INodePropertyOptions, INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { getParameterDisplayableOptions } from './nodeTransforms';
 import type { INodeUi } from '@/Interface';

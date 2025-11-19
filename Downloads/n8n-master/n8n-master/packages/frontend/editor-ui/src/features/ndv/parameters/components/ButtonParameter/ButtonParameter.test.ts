@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
 import { createTestingPinia } from '@pinia/testing';
@@ -8,7 +8,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { usePostHog } from '@/app/stores/posthog.store';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { useToast } from '@/app/composables/useToast';
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
 
 vi.mock('@/features/ndv/shared/ndv.store');
 vi.mock('@/app/stores/workflows.store');

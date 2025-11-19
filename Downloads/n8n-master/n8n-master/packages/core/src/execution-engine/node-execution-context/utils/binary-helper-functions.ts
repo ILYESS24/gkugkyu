@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+﻿import { Container } from '@workflow-automation/di';
 import chardet from 'chardet';
 import FileType from 'file-type';
 import { IncomingMessage } from 'http';
@@ -11,13 +11,13 @@ import type {
 	INode,
 	ITaskDataConnections,
 	IWorkflowExecuteAdditionalData,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	NodeOperationError,
 	fileTypeFromMimeType,
 	ApplicationError,
 	UnexpectedError,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import path from 'path';
 import type { Readable } from 'stream';
 import { URL } from 'url';

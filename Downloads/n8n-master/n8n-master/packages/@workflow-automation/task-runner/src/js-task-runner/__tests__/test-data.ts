@@ -1,5 +1,5 @@
-import type { IDataObject, INode, INodeExecutionData, ITaskData } from 'n8n-workflow';
-import { createRunExecutionData, NodeConnectionTypes } from 'n8n-workflow';
+﻿import type { IDataObject, INode, INodeExecutionData, ITaskData } from 'workflow-automation-workflow';
+import { createRunExecutionData, NodeConnectionTypes } from 'workflow-automation-workflow';
 import { nanoid } from 'nanoid';
 
 import type { JSExecSettings } from '@/js-task-runner/js-task-runner';

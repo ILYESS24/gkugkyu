@@ -1,4 +1,4 @@
-import { defineComponent, reactive } from 'vue';
+﻿import { defineComponent, reactive } from 'vue';
 import { createComponentRenderer } from '@/__tests__/render';
 import InsightsDashboard from './InsightsDashboard.vue';
 import { createTestingPinia } from '@pinia/testing';
@@ -20,7 +20,7 @@ import type {
 	InsightsByTime,
 	InsightsByWorkflow,
 	InsightsSummaryType,
-} from '@n8n/api-types';
+} from '@workflow-automation/api-types';
 import { INSIGHT_TYPES } from '@/features/execution/insights/insights.constants';
 import type { InsightsSummaryDisplay } from '@/features/execution/insights/insights.types';
 import { vi } from 'vitest';

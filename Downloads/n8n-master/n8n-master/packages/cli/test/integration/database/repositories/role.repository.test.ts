@@ -1,7 +1,7 @@
-import { testDb, linkUserToProject, createTeamProject } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { AuthRolesService, RoleRepository, ScopeRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+﻿import { testDb, linkUserToProject, createTeamProject } from '@n8n/backend-test-utils';
+import { GlobalConfig } from '@workflow-automation/config';
+import { AuthRolesService, RoleRepository, ScopeRepository } from '@workflow-automation/db';
+import { Container } from '@workflow-automation/di';
 
 import {
 	createRole,

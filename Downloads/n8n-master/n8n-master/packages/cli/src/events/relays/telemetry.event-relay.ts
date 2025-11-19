@@ -1,16 +1,16 @@
-import { GlobalConfig } from '@n8n/config';
+﻿import { GlobalConfig } from '@workflow-automation/config';
 import {
 	CredentialsRepository,
 	ProjectRelationRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Service } from '@n8n/di';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+} from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
+import { PROJECT_OWNER_ROLE_SLUG } from '@workflow-automation/permissions';
 import { snakeCase } from 'change-case';
-import { BinaryDataConfig, InstanceSettings } from 'n8n-core';
-import type { ExecutionStatus, INodesGraphResult, ITelemetryTrackProperties } from 'n8n-workflow';
-import { TelemetryHelpers } from 'n8n-workflow';
+import { BinaryDataConfig, InstanceSettings } from 'workflow-automation-core';
+import type { ExecutionStatus, INodesGraphResult, ITelemetryTrackProperties } from 'workflow-automation-workflow';
+import { TelemetryHelpers } from 'workflow-automation-workflow';
 import os from 'node:os';
 import { get as pslGet } from 'psl';
 

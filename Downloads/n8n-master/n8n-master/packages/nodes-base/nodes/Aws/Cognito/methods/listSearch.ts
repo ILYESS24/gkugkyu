@@ -1,11 +1,11 @@
-import type {
+﻿import type {
 	IDataObject,
 	IExecuteSingleFunctions,
 	ILoadOptionsFunctions,
 	INodeListSearchItems,
 	INodeListSearchResult,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { NodeOperationError } from 'workflow-automation-workflow';
 
 import type { IGroup, IUser, IUserAttribute, IUserPool } from '../helpers/interfaces';
 import { getUserNameFromExistingUsers, getUserPool } from '../helpers/utils';

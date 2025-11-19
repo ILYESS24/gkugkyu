@@ -1,4 +1,4 @@
-import { createCanvasGraphNode } from '@/features/workflows/canvas/__tests__/utils';
+﻿import { createCanvasGraphNode } from '@/features/workflows/canvas/__tests__/utils';
 import { createTestNode, createTestWorkflow, mockNodeTypeDescription } from '@/__tests__/mocks';
 import { createComponentRenderer } from '@/__tests__/render';
 import { mockedStore } from '@/__tests__/utils';
@@ -8,7 +8,7 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { createTestingPinia } from '@pinia/testing';
 import { useVueFlow } from '@vue-flow/core';
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'workflow-automation-workflow';
 import { setActivePinia } from 'pinia';
 import { reactive } from 'vue';
 import { useExperimentalNdvStore } from '@/features/workflows/canvas/experimental/experimentalNdv.store';

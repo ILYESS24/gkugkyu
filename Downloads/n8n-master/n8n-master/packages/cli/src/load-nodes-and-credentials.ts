@@ -1,10 +1,10 @@
-import { inTest, isContainedWithin, Logger, ModuleRegistry } from '@n8n/backend-common';
-import { GlobalConfig } from '@n8n/config';
-import { Container, Service } from '@n8n/di';
+﻿import { inTest, isContainedWithin, Logger, ModuleRegistry } from '@workflow-automation/backend-common';
+import { GlobalConfig } from '@workflow-automation/config';
+import { Container, Service } from '@workflow-automation/di';
 import type ParcelWatcher from '@parcel/watcher';
 import glob from 'fast-glob';
 import fsPromises from 'fs/promises';
-import type { Class, DirectoryLoader, Types } from 'n8n-core';
+import type { Class, DirectoryLoader, Types } from 'workflow-automation-core';
 import {
 	CUSTOM_EXTENSION_ENV,
 	ErrorReporter,
@@ -14,7 +14,7 @@ import {
 	LazyPackageDirectoryLoader,
 	UnrecognizedCredentialTypeError,
 	UnrecognizedNodeTypeError,
-} from 'n8n-core';
+} from 'workflow-automation-core';
 import type {
 	KnownNodesAndCredentials,
 	INodeTypeBaseDescription,
@@ -25,8 +25,8 @@ import type {
 	IVersionedNodeType,
 	INodeProperties,
 	LoadedNodesAndCredentials,
-} from 'n8n-workflow';
-import { deepCopy, NodeConnectionTypes, UnexpectedError, UserError } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { deepCopy, NodeConnectionTypes, UnexpectedError, UserError } from 'workflow-automation-workflow';
 import path from 'path';
 import picocolors from 'picocolors';
 

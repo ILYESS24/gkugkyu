@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type IHookFunctions,
 	type IWebhookFunctions,
 	type ICredentialsDecrypted,
@@ -12,7 +12,7 @@ import {
 	type IWebhookResponseData,
 	type IRequestOptions,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { bitbucketApiRequest, bitbucketApiRequestAllItems } from './GenericFunctions';
 

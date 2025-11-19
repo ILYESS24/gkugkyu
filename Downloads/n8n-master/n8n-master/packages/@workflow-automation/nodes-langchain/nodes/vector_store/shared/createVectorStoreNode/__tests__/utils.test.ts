@@ -1,6 +1,6 @@
-import type { VectorStore } from '@langchain/core/vectorstores';
-import type { INodeProperties } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+﻿import type { VectorStore } from '@langchain/core/vectorstores';
+import type { INodeProperties } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import { DEFAULT_OPERATION_MODES } from '../constants';
 import type { VectorStoreNodeConstructorArgs, NodeOperationMode } from '../types';

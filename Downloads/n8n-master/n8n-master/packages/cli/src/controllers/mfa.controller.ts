@@ -1,5 +1,5 @@
-import { AuthenticatedRequest, UserRepository } from '@n8n/db';
-import { Get, GlobalScope, Post, RestController } from '@n8n/decorators';
+﻿import { AuthenticatedRequest, UserRepository } from '@workflow-automation/db';
+import { Get, GlobalScope, Post, RestController } from '@workflow-automation/decorators';
 import { Response } from 'express';
 
 import { AuthService } from '@/auth/auth.service';

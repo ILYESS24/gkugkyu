@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+﻿import type { INodeProperties } from 'workflow-automation-workflow';
 
 import { TLPs } from '../interfaces/AlertInterface';
 
@@ -615,7 +615,7 @@ export const caseFields: INodeProperties[] = [
 				displayName: 'Sort',
 				name: 'sort',
 				type: 'string',
-				placeholder: '±Attribut, exp +status',
+				placeholder: 'Â±Attribut, exp +status',
 				description: 'Specify the sorting attribut, + for asc, - for desc',
 				default: '',
 			},

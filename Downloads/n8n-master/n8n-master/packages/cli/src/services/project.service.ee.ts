@@ -1,8 +1,8 @@
-import type { CreateProjectDto, ProjectType, UpdateProjectDto } from '@n8n/api-types';
-import { LicenseState, ModuleRegistry } from '@n8n/backend-common';
-import { DatabaseConfig } from '@n8n/config';
-import { UNLIMITED_LICENSE_QUOTA } from '@n8n/constants';
-import type { User } from '@n8n/db';
+﻿import type { CreateProjectDto, ProjectType, UpdateProjectDto } from '@workflow-automation/api-types';
+import { LicenseState, ModuleRegistry } from '@workflow-automation/backend-common';
+import { DatabaseConfig } from '@workflow-automation/config';
+import { UNLIMITED_LICENSE_QUOTA } from '@workflow-automation/constants';
+import type { User } from '@workflow-automation/db';
 import {
 	Project,
 	ProjectRelation,
@@ -10,8 +10,8 @@ import {
 	ProjectRepository,
 	SharedCredentialsRepository,
 	SharedWorkflowRepository,
-} from '@n8n/db';
-import { Container, Service } from '@n8n/di';
+} from '@workflow-automation/db';
+import { Container, Service } from '@workflow-automation/di';
 import {
 	hasGlobalScope,
 	type Scope,
@@ -19,12 +19,12 @@ import {
 	PROJECT_OWNER_ROLE_SLUG,
 	PROJECT_ADMIN_ROLE_SLUG,
 	isAssignableProjectRoleSlug,
-} from '@n8n/permissions';
+} from '@workflow-automation/permissions';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import type { FindOptionsWhere, EntityManager } from '@n8n/typeorm';
 // eslint-disable-next-line n8n-local-rules/misplaced-n8n-typeorm-import
 import { In } from '@n8n/typeorm';
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'workflow-automation-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 import { ForbiddenError } from '@/errors/response-errors/forbidden.error';

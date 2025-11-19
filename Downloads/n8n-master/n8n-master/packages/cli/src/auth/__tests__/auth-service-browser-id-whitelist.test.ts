@@ -1,5 +1,5 @@
-import type { GlobalConfig } from '@n8n/config';
-import type { InvalidAuthTokenRepository, UserRepository } from '@n8n/db';
+﻿import type { GlobalConfig } from '@workflow-automation/config';
+import type { InvalidAuthTokenRepository, UserRepository } from '@workflow-automation/db';
 import { mock } from 'jest-mock-extended';
 
 import { AuthService } from '@/auth/auth.service';

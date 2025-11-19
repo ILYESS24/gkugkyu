@@ -1,7 +1,7 @@
-import { ChatModelsResponse } from '@n8n/api-types';
-import { Logger } from '@n8n/backend-common';
-import type { User } from '@n8n/db';
-import { Service } from '@n8n/di';
+﻿import { ChatModelsResponse } from '@workflow-automation/api-types';
+import { Logger } from '@workflow-automation/backend-common';
+import type { User } from '@workflow-automation/db';
+import { Service } from '@workflow-automation/di';
 import { v4 as uuidv4 } from 'uuid';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';
@@ -9,7 +9,7 @@ import { NotFoundError } from '@/errors/response-errors/not-found.error';
 import type { ChatHubAgent } from './chat-hub-agent.entity';
 import { ChatHubAgentRepository } from './chat-hub-agent.repository';
 import { ChatHubCredentialsService } from './chat-hub-credentials.service';
-import { INode } from 'n8n-workflow';
+import { INode } from 'workflow-automation-workflow';
 
 @Service()
 export class ChatHubAgentService {

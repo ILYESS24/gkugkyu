@@ -1,5 +1,5 @@
-import moment from 'moment-timezone';
-import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+﻿import moment from 'moment-timezone';
+import type { IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'workflow-automation-workflow';
 
 import {
 	extractPageId,

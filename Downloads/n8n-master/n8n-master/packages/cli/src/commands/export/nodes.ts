@@ -1,8 +1,8 @@
-import { Command } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+﻿import { Command } from '@workflow-automation/decorators';
+import { Container } from '@workflow-automation/di';
 import { createWriteStream } from 'fs';
 import { mkdir } from 'fs/promises';
-import type { INodeTypeBaseDescription } from 'n8n-workflow';
+import type { INodeTypeBaseDescription } from 'workflow-automation-workflow';
 import path from 'path';
 import z from 'zod';
 

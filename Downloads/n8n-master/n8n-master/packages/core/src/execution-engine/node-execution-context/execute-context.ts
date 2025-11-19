@@ -1,4 +1,4 @@
-import type {
+﻿import type {
 	AINodeConnectionType,
 	CallbackManager,
 	ChunkType,
@@ -18,13 +18,13 @@ import type {
 	Workflow,
 	WorkflowExecuteMode,
 	EngineResponse,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import {
 	ApplicationError,
 	createDeferredPromise,
 	jsonParse,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { BaseExecuteContext } from './base-execute-context';
 import {
