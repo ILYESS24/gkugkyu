@@ -105,7 +105,7 @@
     "@workflow-automation/decorators": "workspace:*",
     "@workflow-automation/di": "workspace:*",
     "@workflow-automation/errors": "workspace:*",
-    "@workflow-automation/localtunnel": "3.0.0",
+    "@n8n/localtunnel": "3.0.0",
     "@workflow-automation/nodes-langchain": "workspace:*",
     "@workflow-automation/permissions": "workspace:*",
     "@workflow-automation/task-runner": "workspace:*",
