@@ -85,6 +85,25 @@ CREATE INDEX IF NOT EXISTS idx_agents_user_id ON ai_agents(user_id);
 CREATE INDEX IF NOT EXISTS idx_analytics_user_id ON analytics(user_id);
 CREATE INDEX IF NOT EXISTS idx_analytics_created_at ON analytics(created_at);
 
+-- Video generation jobs (Mochi / Open Sora / Wan)
+CREATE TABLE IF NOT EXISTS video_jobs (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  tool VARCHAR(50) NOT NULL CHECK (tool IN ('mochi', 'open-sora', 'wan')),
+  prompt TEXT NOT NULL,
+  config JSONB DEFAULT '{}',
+  status VARCHAR(50) NOT NULL DEFAULT 'queued' CHECK (status IN ('queued', 'processing', 'completed', 'failed')),
+  result_url TEXT,
+  thumbnail_url TEXT,
+  metadata JSONB DEFAULT '{}',
+  error TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_video_jobs_user_id ON video_jobs(user_id);
+CREATE INDEX IF NOT EXISTS idx_video_jobs_status ON video_jobs(status);
+
 -- RLS (Row Level Security) Policies
 ALTER TABLE projects ENABLE ROW LEVEL SECURITY;
 ALTER TABLE content_items ENABLE ROW LEVEL SECURITY;
@@ -92,6 +111,7 @@ ALTER TABLE ai_agents ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE component_usage ENABLE ROW LEVEL SECURITY;
 ALTER TABLE analytics ENABLE ROW LEVEL SECURITY;
+ALTER TABLE video_jobs ENABLE ROW LEVEL SECURITY;
 
 -- Policies: Users can only see their own data
 CREATE POLICY "Users can view own projects" ON projects
@@ -148,6 +168,15 @@ CREATE POLICY "Users can view own analytics" ON analytics
 CREATE POLICY "Users can insert own analytics" ON analytics
   FOR INSERT WITH CHECK (auth.uid() = user_id);
 
+CREATE POLICY "Users can view own video jobs" ON video_jobs
+  FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own video jobs" ON video_jobs
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can update own video jobs" ON video_jobs
+  FOR UPDATE USING (auth.uid() = user_id);
+
 -- Function to automatically create user profile on signup
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
@@ -184,5 +213,8 @@ CREATE TRIGGER update_ai_agents_updated_at BEFORE UPDATE ON ai_agents
   FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
 CREATE TRIGGER update_user_profiles_updated_at BEFORE UPDATE ON user_profiles
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_video_jobs_updated_at BEFORE UPDATE ON video_jobs
   FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 

@@ -99,3 +99,12 @@ export const componentsApi = {
   },
 };
 
+export const videoApi = {
+  listJobs: () => apiRequest('/api/video/jobs'),
+  getJob: (id: string) => apiRequest(`/api/video/jobs/${id}`),
+  createJob: (data: { tool: 'mochi' | 'open-sora' | 'wan'; prompt: string; config?: Record<string, any> }) =>
+    apiRequest('/api/video/jobs', { method: 'POST', body: JSON.stringify(data) }),
+  updateJob: (id: string, data: { status?: string; result_url?: string; thumbnail_url?: string; metadata?: Record<string, any>; error?: string | null }) =>
+    apiRequest(`/api/video/jobs/${id}`, { method: 'PATCH', body: JSON.stringify(data) }),
+};
+

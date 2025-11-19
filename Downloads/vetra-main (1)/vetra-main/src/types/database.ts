@@ -114,7 +114,7 @@ export interface Database {
           id: string;
           name: string | null;
           avatar_url: string | null;
-          plan: 'starter' | 'pro';
+          plan: 'basic' | 'starter' | 'pro';
           usage_stats: Record<string, any>;
           created_at: string;
           updated_at: string;
@@ -123,7 +123,7 @@ export interface Database {
           id: string;
           name?: string | null;
           avatar_url?: string | null;
-          plan?: 'starter' | 'pro';
+          plan?: 'basic' | 'starter' | 'pro';
           usage_stats?: Record<string, any>;
           created_at?: string;
           updated_at?: string;
@@ -132,7 +132,7 @@ export interface Database {
           id?: string;
           name?: string | null;
           avatar_url?: string | null;
-          plan?: 'starter' | 'pro';
+          plan?: 'basic' | 'starter' | 'pro';
           usage_stats?: Record<string, any>;
           created_at?: string;
           updated_at?: string;
@@ -285,6 +285,50 @@ export interface Database {
           activity_type?: string;
           activity_data?: Record<string, any>;
           created_at?: string;
+        };
+      };
+      video_jobs: {
+        Row: {
+          id: string;
+          user_id: string;
+          tool: 'mochi' | 'open-sora' | 'wan';
+          prompt: string;
+          config: Record<string, any>;
+          status: 'queued' | 'processing' | 'completed' | 'failed';
+          result_url: string | null;
+          thumbnail_url: string | null;
+          metadata: Record<string, any>;
+          error: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          tool: 'mochi' | 'open-sora' | 'wan';
+          prompt: string;
+          config?: Record<string, any>;
+          status?: 'queued' | 'processing' | 'completed' | 'failed';
+          result_url?: string | null;
+          thumbnail_url?: string | null;
+          metadata?: Record<string, any>;
+          error?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          tool?: 'mochi' | 'open-sora' | 'wan';
+          prompt?: string;
+          config?: Record<string, any>;
+          status?: 'queued' | 'processing' | 'completed' | 'failed';
+          result_url?: string | null;
+          thumbnail_url?: string | null;
+          metadata?: Record<string, any>;
+          error?: string | null;
+          created_at?: string;
+          updated_at?: string;
         };
       };
     };

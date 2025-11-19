@@ -32,6 +32,7 @@ import { MorphPanel } from "@/components/morph-panel";
 import { IntegratedToolsPanel } from "@/components/integrated-tools-panel";
 import { AIAutonomousGenerator } from "@/components/ai-autonomous-generator";
 import { SubscriptionUsage } from "@/components/subscription-usage";
+import { VideoStudioPanel } from "@/components/video-studio-panel";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -301,6 +302,9 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
           </section>
+
+          {/* Studio vidéo IA */}
+          <VideoStudioPanel />
 
           {/* Outils intégrés et Activité */}
           <IntegratedToolsPanel />
