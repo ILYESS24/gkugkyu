@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/stores",
+  "name": "@workflow-automation/stores",
   "type": "module",
   "version": "1.28.0",
   "files": [
