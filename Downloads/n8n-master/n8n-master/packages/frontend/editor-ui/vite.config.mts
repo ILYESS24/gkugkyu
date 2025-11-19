@@ -7,7 +7,7 @@ import svgLoader from 'vite-svg-loader';
 import istanbul from 'vite-plugin-istanbul';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
 
-import { vitestConfig } from '@n8n/vitest-config/frontend';
+import { vitestConfig } from '@workflow-automation/vitest-config/frontend';
 import icons from 'unplugin-icons/vite';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 import legacy from '@vitejs/plugin-legacy';
