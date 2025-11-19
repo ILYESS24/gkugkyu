@@ -52,7 +52,7 @@
   "dependencies": {
     "@internationalized/date": "^3.9.0",
     "@n8n/composables": "workspace:*",
-    "@n8n/utils": "workspace:*",
+    "@workflow-automation/utils": "workspace:*",
     "@tanstack/vue-table": "^8.21.2",
     "element-plus": "catalog:frontend",
     "is-emoji-supported": "^0.0.5",

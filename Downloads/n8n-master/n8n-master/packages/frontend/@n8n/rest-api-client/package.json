@@ -36,7 +36,7 @@
     "@n8n/api-types": "workspace:*",
     "@n8n/constants": "workspace:*",
     "@n8n/permissions": "workspace:*",
-    "@n8n/utils": "workspace:*",
+    "@workflow-automation/utils": "workspace:*",
     "js-base64": "catalog:",
     "n8n-workflow": "workspace:*",
     "axios": "catalog:",
