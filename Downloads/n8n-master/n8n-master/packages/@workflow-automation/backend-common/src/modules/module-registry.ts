@@ -1,7 +1,7 @@
-import type { InstanceType } from '@n8n/constants';
-import { ModuleMetadata } from '@n8n/decorators';
-import type { EntityClass, ModuleContext, ModuleSettings } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+import type { InstanceType } from '@workflow-automation/constants';
+import { ModuleMetadata } from '@workflow-automation/decorators';
+import type { EntityClass, ModuleContext, ModuleSettings } from '@workflow-automation/decorators';
+import { Container, Service } from '@workflow-automation/di';
 import { existsSync } from 'fs';
 import path from 'path';
 

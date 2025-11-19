@@ -1,15 +1,15 @@
-import type { LogScope } from '@n8n/config';
-import { GlobalConfig, InstanceSettingsConfig } from '@n8n/config';
-import { Service } from '@n8n/di';
+import type { LogScope } from '@workflow-automation/config';
+import { GlobalConfig, InstanceSettingsConfig } from '@workflow-automation/config';
+import { Service } from '@workflow-automation/di';
 import callsites from 'callsites';
 import type { TransformableInfo } from 'logform';
-import { LoggerProxy, LOG_LEVELS } from 'n8n-workflow';
+import { LoggerProxy, LOG_LEVELS } from 'workflow-automation-workflow';
 import type {
 	Logger as LoggerType,
 	LogLocationMetadata,
 	LogLevel,
 	LogMetadata,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 import path, { basename } from 'node:path';
 import pc from 'picocolors';
 import winston from 'winston';

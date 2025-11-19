@@ -1,4 +1,4 @@
-import type { BooleanLicenseFeature, NumericLicenseFeature } from '@n8n/constants';
+import type { BooleanLicenseFeature, NumericLicenseFeature } from '@workflow-automation/constants';
 
 export type FeatureReturnType = Partial<
 	{

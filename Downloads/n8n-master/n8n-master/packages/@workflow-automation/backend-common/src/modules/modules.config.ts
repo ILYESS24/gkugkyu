@@ -1,4 +1,4 @@
-import { CommaSeparatedStringArray, Config, Env } from '@n8n/config';
+import { CommaSeparatedStringArray, Config, Env } from '@workflow-automation/config';
 
 import { UnknownModuleError } from './errors/unknown-module.error';
 

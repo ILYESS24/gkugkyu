@@ -1,7 +1,7 @@
-import type { BooleanLicenseFeature } from '@n8n/constants';
-import { LICENSE_FEATURES, UNLIMITED_LICENSE_QUOTA } from '@n8n/constants';
-import { Service } from '@n8n/di';
-import { UnexpectedError } from 'n8n-workflow';
+import type { BooleanLicenseFeature } from '@workflow-automation/constants';
+import { LICENSE_FEATURES, UNLIMITED_LICENSE_QUOTA } from '@workflow-automation/constants';
+import { Service } from '@workflow-automation/di';
+import { UnexpectedError } from 'workflow-automation-workflow';
 
 import type { FeatureReturnType, LicenseProvider } from './types';
 
