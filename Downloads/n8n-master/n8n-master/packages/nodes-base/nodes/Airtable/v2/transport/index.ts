@@ -1,4 +1,4 @@
-﻿import type {
+import type {
 	IBinaryKeyData,
 	IDataObject,
 	IExecuteFunctions,
@@ -9,7 +9,7 @@
 	IHttpRequestMethods,
 	IRequestOptions,
 } from 'workflow-automation-workflow';
-import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@workflow-automation/errors';
 
 import type { IAttachment, IRecord } from '../helpers/interfaces';
 import { flattenOutput } from '../helpers/utils';

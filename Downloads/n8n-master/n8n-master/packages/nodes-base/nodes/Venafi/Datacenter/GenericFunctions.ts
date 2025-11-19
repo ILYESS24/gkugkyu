@@ -1,5 +1,5 @@
-﻿import get from 'lodash/get';
-import { ApplicationError } from '@n8n/errors';
+import get from 'lodash/get';
+import { ApplicationError } from '@workflow-automation/errors';
 import type {
 	IDataObject,
 	IExecuteFunctions,

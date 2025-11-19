@@ -1,4 +1,4 @@
-﻿import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@workflow-automation/errors';
 import type { IExecuteFunctions, IDataObject, INodeExecutionData, JsonObject } from 'workflow-automation-workflow';
 import type pgPromise from 'pg-promise';
 import type pg from 'pg-promise/typescript/pg-subset';
