@@ -1,5 +1,5 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import type { WorkflowBuilderAgent } from '../../src/workflow-builder-agent';
 import { evaluateWorkflow } from '../chains/workflow-evaluator';

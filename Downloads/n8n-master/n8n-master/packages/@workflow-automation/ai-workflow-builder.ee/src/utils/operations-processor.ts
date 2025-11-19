@@ -1,4 +1,4 @@
-import type { INode, IConnections } from 'n8n-workflow';
+import type { INode, IConnections } from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow, WorkflowOperation } from '../types/workflow';
 import type { WorkflowState } from '../workflow-state';

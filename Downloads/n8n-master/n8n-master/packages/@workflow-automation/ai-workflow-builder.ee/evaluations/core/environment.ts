@@ -2,7 +2,7 @@ import type { BaseChatModel } from '@langchain/core/language_models/chat_models'
 import { LangChainTracer } from '@langchain/core/tracers/tracer_langchain';
 import { MemorySaver } from '@langchain/langgraph';
 import { Client } from 'langsmith/client';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { anthropicClaudeSonnet45 } from '../../src/llm-config.js';
 import { WorkflowBuilderAgent } from '../../src/workflow-builder-agent.js';

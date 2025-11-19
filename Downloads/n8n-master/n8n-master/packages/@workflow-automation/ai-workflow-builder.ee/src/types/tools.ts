@@ -1,4 +1,4 @@
-import type { INodeParameters } from 'n8n-workflow';
+import type { INodeParameters } from 'workflow-automation-workflow';
 import type { ZodIssue } from 'zod';
 
 import type { PromptCategorization } from './categorization';

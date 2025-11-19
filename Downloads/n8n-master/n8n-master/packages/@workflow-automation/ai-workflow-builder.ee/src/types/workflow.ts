@@ -1,4 +1,4 @@
-import type { IWorkflowBase, INode, IConnections } from 'n8n-workflow';
+import type { IWorkflowBase, INode, IConnections } from 'workflow-automation-workflow';
 
 /**
  * Simplified workflow representation containing only nodes and connections

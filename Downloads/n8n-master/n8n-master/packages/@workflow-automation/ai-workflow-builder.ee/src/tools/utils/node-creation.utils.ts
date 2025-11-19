@@ -3,7 +3,7 @@ import {
 	type INode,
 	type INodeTypeDescription,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 /**
  * Generate a unique node name by appending numbers if necessary

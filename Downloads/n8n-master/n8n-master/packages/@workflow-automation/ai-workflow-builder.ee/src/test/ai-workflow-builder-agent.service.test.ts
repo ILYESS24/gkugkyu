@@ -4,7 +4,7 @@ import type { Logger } from '@workflow-automation/backend-common';
 import type { AiAssistantClient } from '@workflow-automation_io/ai-assistant-sdk';
 import { mock } from 'jest-mock-extended';
 import { Client as TracingClient } from 'langsmith';
-import type { IUser, INodeTypeDescription } from 'n8n-workflow';
+import type { IUser, INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { AiWorkflowBuilderService } from '@/ai-workflow-builder-agent.service';
 import { LLMServiceError } from '@/errors';

@@ -1,4 +1,4 @@
-import type { INodeParameters, INodeProperties, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeParameters, INodeProperties, INodeTypeDescription } from 'workflow-automation-workflow';
 
 /**
  * Detailed information about a node type

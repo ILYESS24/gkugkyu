@@ -2,7 +2,7 @@ import {
 	NodeConnectionTypes,
 	type INodeTypeDescription,
 	type NodeConnectionType,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import { createNodeType } from '../../../../test/test-utils';
 import { NodeSearchEngine, SCORE_WEIGHTS } from '../node-search-engine';

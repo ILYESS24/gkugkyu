@@ -3,7 +3,7 @@ import { LangChainTracer } from '@langchain/core/tracers/tracer_langchain';
 import { MemorySaver } from '@langchain/langgraph';
 import { mkdirSync, writeFileSync } from 'fs';
 import { Client } from 'langsmith';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import { join } from 'path';
 import pc from 'picocolors';
 

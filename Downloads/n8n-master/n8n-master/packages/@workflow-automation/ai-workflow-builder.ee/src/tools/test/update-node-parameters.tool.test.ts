@@ -1,6 +1,6 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { getCurrentTaskInput } from '@langchain/langgraph';
-import type { INode, INodeTypeDescription } from 'n8n-workflow';
+import type { INode, INodeTypeDescription } from 'workflow-automation-workflow';
 
 import {
 	createNode,

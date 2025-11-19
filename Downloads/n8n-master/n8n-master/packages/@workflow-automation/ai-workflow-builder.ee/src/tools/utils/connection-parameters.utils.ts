@@ -1,4 +1,4 @@
-import type { INodeParameters } from 'n8n-workflow';
+import type { INodeParameters } from 'workflow-automation-workflow';
 
 /**
  * Whitelist of parameter names that commonly affect node connections

@@ -12,7 +12,7 @@ import {
 	type IRunExecutionData,
 	type IWorkflowBase,
 	type NodeExecutionSchema,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import {
 	DEFAULT_AUTO_COMPACT_THRESHOLD_TOKENS,

@@ -1,5 +1,5 @@
 import type { DynamicStructuredTool } from '@langchain/core/tools';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import type { WorkflowState } from '@/workflow-state';
 

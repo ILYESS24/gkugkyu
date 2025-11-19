@@ -1,4 +1,4 @@
-import type { INodeTypeDescription, INodeParameters } from 'n8n-workflow';
+import type { INodeTypeDescription, INodeParameters } from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow } from '@/types';
 

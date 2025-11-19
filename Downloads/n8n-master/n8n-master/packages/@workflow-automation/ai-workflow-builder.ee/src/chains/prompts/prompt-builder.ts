@@ -1,4 +1,4 @@
-import type { INodeTypeDescription, INodeProperties } from 'n8n-workflow';
+import type { INodeTypeDescription, INodeProperties } from 'workflow-automation-workflow';
 
 import { COMMON_PATTERNS } from './base/common-patterns';
 import { CORE_INSTRUCTIONS } from './base/core-instructions';

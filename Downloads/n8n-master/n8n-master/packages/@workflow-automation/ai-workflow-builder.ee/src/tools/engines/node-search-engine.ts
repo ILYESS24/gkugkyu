@@ -1,6 +1,6 @@
-import { sublimeSearch } from '@n8n/utils';
-import type { INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { sublimeSearch } from '@workflow-automation/utils';
+import type { INodeTypeDescription, NodeConnectionType } from 'workflow-automation-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 
 import type { NodeSearchResult } from '../../types/nodes';
 

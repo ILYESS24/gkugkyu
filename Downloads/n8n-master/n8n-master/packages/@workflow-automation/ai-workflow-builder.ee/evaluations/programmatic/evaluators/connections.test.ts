@@ -1,11 +1,11 @@
 import { mock } from 'jest-mock-extended';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'workflow-automation-workflow';
 import type {
 	NodeConnectionType,
 	INodeInputConfiguration,
 	ExpressionString,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow } from '@/types';
 import { resolveConnections } from '@/validation/utils/resolve-connections';

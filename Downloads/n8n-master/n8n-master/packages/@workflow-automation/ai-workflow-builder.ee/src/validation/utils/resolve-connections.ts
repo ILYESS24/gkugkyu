@@ -3,8 +3,8 @@ import type {
 	INodeInputConfiguration,
 	NodeConnectionType,
 	IDataObject,
-} from 'n8n-workflow';
-import { Expression } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { Expression } from 'workflow-automation-workflow';
 
 import type { NodeResolvedConnectionTypesInfo } from '../types';
 

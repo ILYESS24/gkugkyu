@@ -1,5 +1,5 @@
-import type { INodeParameters } from 'n8n-workflow';
-import { isExpression } from 'n8n-workflow';
+import type { INodeParameters } from 'workflow-automation-workflow';
+import { isExpression } from 'workflow-automation-workflow';
 
 export function containsExpression(value: unknown): boolean {
 	if (!isExpression(value)) {

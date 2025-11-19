@@ -1,7 +1,7 @@
 import { tool } from '@langchain/core/tools';
 import type { Logger } from '@n8n/backend-common';
 import get from 'lodash/get';
-import type { INode, NodeParameterValueType } from 'n8n-workflow';
+import type { INode, NodeParameterValueType } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import { MAX_PARAMETER_VALUE_LENGTH } from '@/constants';

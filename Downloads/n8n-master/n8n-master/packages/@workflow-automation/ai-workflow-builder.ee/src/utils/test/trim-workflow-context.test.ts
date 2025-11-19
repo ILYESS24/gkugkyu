@@ -1,4 +1,4 @@
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 import { createNode, createWorkflow } from '../../../test/test-utils';
 import type { SimpleWorkflow } from '../../types/workflow';

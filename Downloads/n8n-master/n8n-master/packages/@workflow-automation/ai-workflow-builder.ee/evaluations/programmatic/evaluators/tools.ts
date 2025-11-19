@@ -1,4 +1,4 @@
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow } from '@/types';
 import { validateTools } from '@/validation/checks';

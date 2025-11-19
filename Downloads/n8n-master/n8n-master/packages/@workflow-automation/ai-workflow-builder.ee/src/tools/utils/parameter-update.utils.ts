@@ -1,4 +1,4 @@
-import type { INode, INodeParameters } from 'n8n-workflow';
+import type { INode, INodeParameters } from 'workflow-automation-workflow';
 
 /**
  * Extract current parameters from a node

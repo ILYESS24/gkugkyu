@@ -1,4 +1,4 @@
-import type { INode, NodeConnectionType } from 'n8n-workflow';
+import type { INode, NodeConnectionType } from 'workflow-automation-workflow';
 
 /**
  * Result of creating a connection between nodes

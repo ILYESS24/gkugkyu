@@ -1,5 +1,5 @@
-import type { INodeConnections, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
-import { mapConnectionsByDestination } from 'n8n-workflow';
+import type { INodeConnections, INodeTypeDescription, NodeConnectionType } from 'workflow-automation-workflow';
+import { mapConnectionsByDestination } from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow } from '@/types';
 import { isSubNode } from '@/utils/node-helpers';

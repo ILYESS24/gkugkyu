@@ -1,7 +1,7 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { SystemMessage } from '@langchain/core/messages';
 import { ChatPromptTemplate, HumanMessagePromptTemplate } from '@langchain/core/prompts';
-import { OperationalError } from 'n8n-workflow';
+import { OperationalError } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type { TestCase } from '../types/evaluation';

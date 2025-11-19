@@ -1,4 +1,4 @@
-import type { INodeParameters, NodeParameterValueType } from 'n8n-workflow';
+import type { INodeParameters, NodeParameterValueType } from 'workflow-automation-workflow';
 
 import { MAX_WORKFLOW_LENGTH_TOKENS } from '@/constants';
 import type { SimpleWorkflow } from '@/types';

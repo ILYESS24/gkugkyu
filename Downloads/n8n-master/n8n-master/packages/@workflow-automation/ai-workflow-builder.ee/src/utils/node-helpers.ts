@@ -1,4 +1,4 @@
-import { type INode, NodeConnectionTypes, type INodeTypeDescription } from 'n8n-workflow';
+import { type INode, NodeConnectionTypes, type INodeTypeDescription } from 'workflow-automation-workflow';
 
 /**
  * Determines if a node is a sub-node (has no main input connections)

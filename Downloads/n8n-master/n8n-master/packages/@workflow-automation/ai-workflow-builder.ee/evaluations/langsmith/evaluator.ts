@@ -1,7 +1,7 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { EvaluationResult as LangsmithEvaluationResult } from 'langsmith/evaluation';
 import type { Run, Example } from 'langsmith/schemas';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import type { SimpleWorkflow } from '../../src/types/workflow.js';
 import { evaluateWorkflow } from '../chains/workflow-evaluator.js';

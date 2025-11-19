@@ -1,6 +1,6 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { tool } from '@langchain/core/tools';
-import type { INode, INodeTypeDescription, INodeParameters, Logger } from 'n8n-workflow';
+import type { INode, INodeTypeDescription, INodeParameters, Logger } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type { BuilderTool, BuilderToolBase } from '@/utils/stream-processor';

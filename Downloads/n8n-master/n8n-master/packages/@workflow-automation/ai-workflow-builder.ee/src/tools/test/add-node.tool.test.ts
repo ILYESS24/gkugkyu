@@ -1,5 +1,5 @@
 import { getCurrentTaskInput } from '@langchain/langgraph';
-import type { INodeTypeDescription, INode } from 'n8n-workflow';
+import type { INodeTypeDescription, INode } from 'workflow-automation-workflow';
 
 import {
 	createNode,

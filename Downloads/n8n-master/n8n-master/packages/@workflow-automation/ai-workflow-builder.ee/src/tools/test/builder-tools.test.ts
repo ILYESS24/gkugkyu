@@ -1,7 +1,7 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { Logger } from '@workflow-automation/backend-common';
 import { mock } from 'jest-mock-extended';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { createRemoveConnectionTool, REMOVE_CONNECTION_TOOL } from '@/tools/remove-connection.tool';
 

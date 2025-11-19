@@ -9,8 +9,8 @@ import type {
 	INodeParameters,
 	IConnection,
 	NodeConnectionType,
-} from 'n8n-workflow';
-import { jsonParse } from 'n8n-workflow';
+} from 'workflow-automation-workflow';
+import { jsonParse } from 'workflow-automation-workflow';
 
 import type { ProgrammaticEvaluationResult } from '@/validation/types';
 

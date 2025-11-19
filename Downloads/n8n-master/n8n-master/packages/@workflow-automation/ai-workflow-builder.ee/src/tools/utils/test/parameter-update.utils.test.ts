@@ -1,5 +1,5 @@
 /* eslint-disable id-denylist */
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'workflow-automation-workflow';
 
 import {
 	extractNodeParameters,

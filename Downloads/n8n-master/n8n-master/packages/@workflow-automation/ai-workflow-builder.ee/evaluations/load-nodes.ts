@@ -1,5 +1,5 @@
 import { readFileSync, existsSync } from 'fs';
-import { jsonParse, type INodeTypeDescription } from 'n8n-workflow';
+import { jsonParse, type INodeTypeDescription } from 'workflow-automation-workflow';
 import { join } from 'path';
 
 interface NodeWithVersion extends INodeTypeDescription {

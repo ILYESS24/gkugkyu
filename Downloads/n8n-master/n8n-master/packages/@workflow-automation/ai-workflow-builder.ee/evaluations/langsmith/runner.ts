@@ -1,7 +1,7 @@
 import type { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import type { LangChainTracer } from '@langchain/core/tracers/tracer_langchain';
 import { evaluate } from 'langsmith/evaluation';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import pc from 'picocolors';
 
 import { createLangsmithEvaluator } from './evaluator';

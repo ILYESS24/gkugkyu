@@ -2,7 +2,7 @@ import { RunnableConfig } from '@langchain/core/runnables';
 import { MemorySaver } from '@langchain/langgraph';
 import { Logger } from '@workflow-automation/backend-common';
 import { Service } from '@workflow-automation/di';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 
 import { formatMessages } from '@/utils/stream-processor';
 

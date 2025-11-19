@@ -1,5 +1,5 @@
 import { tool } from '@langchain/core/tools';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'workflow-automation-workflow';
 import { z } from 'zod';
 
 import type { BuilderToolBase } from '@/utils/stream-processor';
