@@ -51,7 +51,7 @@
     "@workflow-automation/config": "workspace:*",
     "@workflow-automation/di": "workspace:*",
     "@workflow-automation/utils": "workspace:*",
-    "@workflow-automation_io/ai-assistant-sdk": "catalog:",
+    "@n8n_io/ai-assistant-sdk": "catalog:",
     "csv-parse": "5.5.0",
     "langsmith": "^0.3.45",
     "lodash": "catalog:",

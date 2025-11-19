@@ -4,7 +4,7 @@ import type { BaseMessage } from '@langchain/core/messages';
 import { LangChainTracer } from '@langchain/core/tracers/tracer_langchain';
 import { Logger } from '@workflow-automation/backend-common';
 import { Service } from '@workflow-automation/di';
-import { AiAssistantClient, AiAssistantSDK } from '@workflow-automation_io/ai-assistant-sdk';
+import { AiAssistantClient, AiAssistantSDK } from '@n8n_io/ai-assistant-sdk';
 import assert from 'assert';
 import { Client as TracingClient } from 'langsmith';
 import type { IUser, INodeTypeDescription, ITelemetryTrackProperties } from 'workflow-automation-workflow';
