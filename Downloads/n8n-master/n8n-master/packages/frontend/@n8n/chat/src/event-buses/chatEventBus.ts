@@ -1,3 +1,3 @@
-import { createEventBus } from '@workflow-automation/chat/utils';
+import { createEventBus } from '../utils';
 
 export const chatEventBus = createEventBus();
