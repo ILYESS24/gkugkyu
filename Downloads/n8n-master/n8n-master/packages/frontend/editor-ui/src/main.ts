@@ -7,7 +7,7 @@ import '@vue-flow/minimap/dist/style.css';
 import '@vue-flow/node-resizer/dist/style.css';
 
 import 'vue-json-pretty/lib/styles.css';
-import '../@n8n/design-system/src/css/index.scss';
+import '../../@n8n/design-system/src/css/index.scss';
 // import '@workflow-automation/design-system/css/tailwind/index.css';
 
 import '@/main.scss';
