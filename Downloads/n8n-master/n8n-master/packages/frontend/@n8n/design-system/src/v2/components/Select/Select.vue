@@ -24,7 +24,7 @@ import {
 } from 'reka-ui';
 import { computed, useCssModule, useTemplateRef } from 'vue';
 
-import Icon from '@workflow-automation/design-system/components/N8nIcon/Icon.vue';
+import Icon from '../../../components/N8nIcon/Icon.vue';
 import { get } from '@workflow-automation/design-system/v2/utils';
 import type { GetItemKeys, GetModelValue } from '@workflow-automation/design-system/v2/utils/types';
 

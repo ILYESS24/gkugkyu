@@ -2,7 +2,7 @@
 import { SelectItem, SelectItemIndicator, SelectItemText, type AcceptableValue } from 'reka-ui';
 import { computed, useCssModule } from 'vue';
 
-import Icon from '@workflow-automation/design-system/components/N8nIcon/Icon.vue';
+import Icon from '../../../components/N8nIcon/Icon.vue';
 
 import type { SelectItemProps, SelectValue } from './Select.types';
 
