@@ -117,7 +117,7 @@ import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 import { isPresent, tryToParseNumber } from '@/app/utils/typesUtils';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
 import type { CanvasLayoutEvent } from '@/features/workflows/canvas/composables/useCanvasLayout';
-import { chatEventBus } from '@workflow-automation/chat/event-buses';
+import { chatEventBus } from '../../../../@n8n/chat/src/event-buses';
 import { useLogsStore } from '@/app/stores/logs.store';
 import { isChatNode } from '@/app/utils/aiUtils';
 import cloneDeep from 'lodash/cloneDeep';

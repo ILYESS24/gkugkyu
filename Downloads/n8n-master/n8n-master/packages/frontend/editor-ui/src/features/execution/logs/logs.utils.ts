@@ -22,7 +22,7 @@ import type {
 	LogTreeFilter,
 } from './logs.types';
 import { CHAT_TRIGGER_NODE_TYPE, MANUAL_CHAT_TRIGGER_NODE_TYPE } from '@/app/constants';
-import { type ChatMessage } from '@workflow-automation/chat/types';
+import { type ChatMessage } from '../../../../../../@n8n/chat/src/types';
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import { v4 as uuid } from 'uuid';

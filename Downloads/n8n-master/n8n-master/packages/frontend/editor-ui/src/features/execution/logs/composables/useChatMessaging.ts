@@ -1,7 +1,7 @@
 import type { ComputedRef, Ref } from 'vue';
 import { computed, ref } from 'vue';
 import { v4 as uuid } from 'uuid';
-import type { ChatMessage } from '@workflow-automation/chat/types';
+import type { ChatMessage } from '../../../../../../@n8n/chat/src/types';
 import type {
 	ITaskData,
 	INodeExecutionData,

@@ -6,9 +6,9 @@ import { useRunWorkflow } from '@/app/composables/useRunWorkflow';
 import { PLACEHOLDER_EMPTY_WORKFLOW_ID, VIEWS } from '@/app/constants';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useRootStore } from '@workflow-automation/stores/useRootStore';
-import { ChatOptionsSymbol } from '@workflow-automation/chat/constants';
-import { chatEventBus } from '@workflow-automation/chat/event-buses';
-import type { Chat, ChatMessage, ChatOptions } from '@workflow-automation/chat/types';
+import { ChatOptionsSymbol } from '../../../../../../@n8n/chat/src/constants';
+import { chatEventBus } from '../../../../../../@n8n/chat/src/event-buses';
+import type { Chat, ChatMessage, ChatOptions } from '../../../../../../@n8n/chat/src/types';
 import { v4 as uuid } from 'uuid';
 import type { InjectionKey, Ref } from 'vue';
 import { computed, provide, ref, watch } from 'vue';
@@ -17,7 +17,7 @@ import { useLogsStore } from '@/app/stores/logs.store';
 import { restoreChatHistory } from '@/features/execution/logs/logs.utils';
 import type { INodeParameters } from 'workflow-automation-workflow';
 import { isChatNode } from '@/app/utils/aiUtils';
-import { constructChatWebsocketUrl } from '@workflow-automation/chat/utils';
+import { constructChatWebsocketUrl } from '../../../../../../@n8n/chat/src/utils';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 
 type IntegratedChat = Omit<Chat, 'sendMessage'> & {
