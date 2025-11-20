@@ -9,6 +9,8 @@ import { createDefaultMountingTarget } from '@workflow-automation/chat/utils';
 
 import App from './App.vue';
 
+export { chatEventBus } from './event-buses';
+
 export function createChat(options?: Partial<ChatOptions>) {
 	const resolvedOptions: ChatOptions = {
 		...defaultOptions,

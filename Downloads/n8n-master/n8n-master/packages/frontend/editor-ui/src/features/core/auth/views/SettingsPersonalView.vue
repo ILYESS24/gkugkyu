@@ -17,7 +17,7 @@ import { useUIStore } from '@/app/stores/ui.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useCloudPlanStore } from '@/app/stores/cloudPlan.store';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import type { MfaModalEvents } from '../auth.eventBus';
 import { promptMfaCodeBus } from '../auth.eventBus';
 import type { BaseTextKey } from '@workflow-automation/i18n';
