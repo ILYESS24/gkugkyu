@@ -69,13 +69,20 @@ function fixImports(content, filePath) {
 	});
 
 	// Étape 2: Remplacer tous les @n8n/ restants par @workflow-automation/
-	// MAIS ignorer les chemins relatifs (../@n8n/ ou ./@n8n/) car les dossiers physiques s'appellent toujours @n8n
+	// MAIS ignorer:
+	// - Les chemins relatifs (../@n8n/ ou ./@n8n/) car les dossiers physiques s'appellent toujours @n8n
+	// - Les imports SCSS (@use/@import) qui référencent design-system car SASS ne peut pas résoudre @workflow-automation
 	// On remplace ligne par ligne pour mieux détecter les chemins relatifs
 	const lines = newContent.split('\n');
 	let contentModified = false;
 	const newLines = lines.map((line) => {
 		// Si la ligne contient un chemin relatif avec @n8n/, on ne le modifie pas
 		if (line.match(/['"]\.\.\/.*@n8n\//) || line.match(/['"]\.\/.*@n8n\//)) {
+			return line;
+		}
+		// Si la ligne contient un import SCSS avec design-system, on ne le modifie pas
+		// (SASS ne peut pas résoudre @workflow-automation, il faut @n8n pour les chemins de fichiers)
+		if (line.match(/@use\s+['"]@n8n\/design-system/) || line.match(/@import\s+['"]@n8n\/design-system/)) {
 			return line;
 		}
 		// Sinon, on remplace @n8n/ par @workflow-automation/
