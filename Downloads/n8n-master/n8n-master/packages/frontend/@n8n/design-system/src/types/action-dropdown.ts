@@ -1,4 +1,4 @@
-import type { KeyboardShortcut } from '@workflow-automation/design-system/types/keyboardshortcut';
+import type { KeyboardShortcut } from './keyboardshortcut';
 
 import type { IconName } from '../components/N8nIcon/icons';
 

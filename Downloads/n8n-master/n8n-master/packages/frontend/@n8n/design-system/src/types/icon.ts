@@ -1,4 +1,4 @@
-import type { TextColor } from '@workflow-automation/design-system/types/text';
+import type { TextColor } from './text';
 
 const ICON_SIZE = ['xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] as const;
 export type IconSize = (typeof ICON_SIZE)[number];

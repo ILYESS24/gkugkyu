@@ -3,7 +3,7 @@ import { ElMenu, ElSubMenu, ElMenuItem, type MenuItemRegistered } from 'element-
 import { ref } from 'vue';
 import type { RouteLocationRaw } from 'vue-router';
 
-import type { IconSize } from '@workflow-automation/design-system/types';
+import type { IconSize } from '../../types';
 
 import ConditionalRouterLink from '../ConditionalRouterLink';
 import N8nIcon from '../N8nIcon';

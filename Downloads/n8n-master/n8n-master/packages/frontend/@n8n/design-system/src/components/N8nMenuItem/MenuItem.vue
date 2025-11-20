@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import type { IMenuItem } from '@workflow-automation/design-system/types';
+import type { IMenuItem } from '../../types';
 
 import N8nIcon from '../N8nIcon';
 import type { IconName } from '../N8nIcon/icons';

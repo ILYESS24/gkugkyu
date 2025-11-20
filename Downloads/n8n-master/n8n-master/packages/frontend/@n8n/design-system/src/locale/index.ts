@@ -1,4 +1,4 @@
-import type { N8nLocale, N8nLocaleTranslateFn } from '@workflow-automation/design-system/types';
+import type { N8nLocale, N8nLocaleTranslateFn } from '../types';
 
 import createFormatTemplate from './format';
 import defaultLang from '../locale/lang/en';

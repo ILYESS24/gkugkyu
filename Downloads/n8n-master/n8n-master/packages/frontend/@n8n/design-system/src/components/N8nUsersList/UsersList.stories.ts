@@ -1,7 +1,7 @@
 import type { StoryFn } from '@storybook/vue3-vite';
 import { action } from 'storybook/actions';
 
-import type { IUser } from '@workflow-automation/design-system/types';
+import type { IUser } from '../../types';
 
 import N8nUsersList from './UsersList.vue';
 

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import type { N8nLocale } from '@workflow-automation/design-system/types';
+import type { N8nLocale } from '../../types';
 
 export default {
 	'generic.retry': 'Retry',
