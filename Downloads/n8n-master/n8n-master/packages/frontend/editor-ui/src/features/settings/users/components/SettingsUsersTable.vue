@@ -2,14 +2,14 @@
 import { computed, ref } from 'vue';
 import { ROLE, type Role, type UsersList } from '@workflow-automation/api-types';
 import { useI18n } from '@workflow-automation/i18n';
-import type { TableHeader, TableOptions } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableHeader, TableOptions } from '@workflow-automation/design-system';
 import type { IUser } from '@workflow-automation/rest-api-client/api/users';
 import SettingsUsersRoleCell from './SettingsUsersRoleCell.vue';
 import SettingsUsersProjectsCell from './SettingsUsersProjectsCell.vue';
 import SettingsUsersActionsCell from './SettingsUsersActionsCell.vue';
 import SettingsUsersLastActiveCell from './SettingsUsersLastActiveCell.vue';
 import { hasPermission } from '@/app/utils/rbac/permissions';
-import type { UsersInfoProps } from '@workflow-automation/design-system/components/N8nUserInfo/UserInfo.vue';
+import type { UsersInfoProps } from '@workflow-automation/design-system';
 
 import {
 	N8nDataTableServer,

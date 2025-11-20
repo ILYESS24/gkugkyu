@@ -13,7 +13,7 @@ import {
 	N8nTooltip,
 } from '@workflow-automation/design-system';
 import { ref } from 'vue';
-import type { TableHeader } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableHeader } from '@workflow-automation/design-system';
 import TimeAgo from '@/app/components/TimeAgo.vue';
 
 const i18n = useI18n();

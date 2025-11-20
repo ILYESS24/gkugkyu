@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { useI18n } from '@workflow-automation/i18n';
 import { type Project, ProjectTypes } from '@/features/collaboration/projects/projects.types';
-import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system';
 
 import { N8nLink, N8nText } from '@workflow-automation/design-system';
 import ProjectIcon from '@/features/collaboration/projects/components/ProjectIcon.vue';

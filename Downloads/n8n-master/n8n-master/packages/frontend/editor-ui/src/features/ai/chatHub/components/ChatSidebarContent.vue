@@ -10,7 +10,7 @@ import { useChatHubSidebarState } from '@/features/ai/chatHub/composables/useCha
 import { CHAT_VIEW, CHAT_AGENTS_VIEW } from '@/features/ai/chatHub/constants';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { N8nIconButton, N8nScrollArea, N8nText } from '@workflow-automation/design-system';
-import Logo from '@workflow-automation/design-system/components/N8nLogo';
+import Logo from '@workflow-automation/design-system';
 import { computed, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import ChatSessionMenuItem from './ChatSessionMenuItem.vue';

@@ -43,7 +43,7 @@ import { storeToRefs } from 'pinia';
 import { useCalloutHelpers } from '@/app/composables/useCalloutHelpers';
 import { getParameterTypeOption } from '@/features/ndv/shared/ndv.utils';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import type { IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import type { IconName } from '@workflow-automation/design-system';
 
 import {
 	N8nCallout,

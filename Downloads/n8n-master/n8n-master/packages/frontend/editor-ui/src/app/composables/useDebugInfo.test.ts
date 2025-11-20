@@ -4,7 +4,7 @@ import type { RootStoreState } from '@workflow-automation/stores/useRootStore';
 import type { useSettingsStore as useSettingsStoreType } from '@/app/stores/settings.store';
 import type { RecursivePartial } from '@/app/types/utils';
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: (): Partial<RootStoreState> => ({
 		versionCli: '0.123.0',
 	}),
@@ -50,7 +50,7 @@ vi.mock('@/app/stores/settings.store', () => ({
 	useSettingsStore,
 }));
 
-vi.mock('@n8n/composables/useDeviceSupport', () => ({
+vi.mock('@workflow-automation/composables/useDeviceSupport', () => ({
 	useDeviceSupport: () => ({
 		isTouchDevice: false,
 		userAgent: 'Mozilla/5.0',

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
-import type { SelectSize } from '@workflow-automation/design-system/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system';
+import type { SelectSize } from '@workflow-automation/design-system';
 import { useI18n } from '@workflow-automation/i18n';
 import type { AllRolesMap } from '@workflow-automation/permissions';
 import orderBy from 'lodash/orderBy';

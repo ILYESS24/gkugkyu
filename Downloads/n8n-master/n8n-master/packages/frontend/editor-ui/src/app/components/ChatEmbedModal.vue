@@ -86,18 +86,18 @@ function indentLines(code: string, indent: string = '	') {
 
 const importCode = 'import'; // To avoid vite from parsing the import statement
 const commonCode = computed(() => ({
-	import: `${importCode} '@n8n/chat/style.css';
+	import: `${importCode} '@workflow-automation/chat/style.css';
 ${importCode} { createChat } from '@workflow-automation/chat';`,
 	createChat: `createChat({
 	webhookUrl: '${webhookUrl.value}'
 });`,
-	install: 'npm install @n8n/chat',
+	install: 'npm install @workflow-automation/chat',
 }));
 
 const cdnCode = computed(
-	() => `<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+	() => `<link href="https://cdn.jsdelivr.net/npm/@workflow-automation/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
-${importCode} { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+${importCode} { createChat } from 'https://cdn.jsdelivr.net/npm/@workflow-automation/chat/dist/chat.bundle.es.js';
 
 ${commonCode.value.createChat}
 </${'script'}>`,

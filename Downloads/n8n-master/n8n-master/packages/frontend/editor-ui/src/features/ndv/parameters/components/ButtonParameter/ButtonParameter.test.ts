@@ -13,7 +13,7 @@ import type { INodeProperties } from 'workflow-automation-workflow';
 vi.mock('@/features/ndv/shared/ndv.store');
 vi.mock('@/app/stores/workflows.store');
 vi.mock('@/app/stores/posthog.store');
-vi.mock('@n8n/stores/useRootStore');
+vi.mock('@workflow-automation/stores/useRootStore');
 vi.mock('@/features/ai/assistant/assistant.api');
 vi.mock('@workflow-automation/i18n', async (importOriginal) => ({
 	...(await importOriginal()),

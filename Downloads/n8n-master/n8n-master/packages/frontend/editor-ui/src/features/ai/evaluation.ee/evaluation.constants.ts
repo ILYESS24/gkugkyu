@@ -1,6 +1,6 @@
 import type { TestRunRecord } from './evaluation.api';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
-import type { IconColor } from '@workflow-automation/design-system/types/icon';
+import { type IconName } from '@workflow-automation/design-system';
+import type { IconColor } from '@workflow-automation/design-system';
 
 import type { BaseTextKey } from '@workflow-automation/i18n';
 

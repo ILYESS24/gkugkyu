@@ -7,7 +7,7 @@ import { useRoute, useRouter } from 'vue-router';
 import { VIEWS } from '@/app/constants';
 import type { UserAction, FolderResource } from '@/Interface';
 import { ResourceType } from '@/features/collaboration/projects/projects.utils';
-import type { PathItem } from '@workflow-automation/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
+import type { PathItem } from '@workflow-automation/design-system';
 import { useFoldersStore } from '../folders.store';
 import { type IUser } from 'workflow-automation-workflow';
 import TimeAgo from '@/app/components/TimeAgo.vue';

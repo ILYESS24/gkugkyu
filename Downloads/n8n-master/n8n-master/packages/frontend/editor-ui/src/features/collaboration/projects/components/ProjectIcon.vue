@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { type IconOrEmoji } from '@workflow-automation/design-system';
 
 import { N8nIcon, N8nText } from '@workflow-automation/design-system';
 type Props = {

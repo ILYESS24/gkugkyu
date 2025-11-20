@@ -1,9 +1,9 @@
-﻿import type { VIEWS } from '@/app/constants';
+import type { VIEWS } from '@/app/constants';
 import { DEFAULT_NEW_WORKFLOW_NAME, PLACEHOLDER_EMPTY_WORKFLOW_ID } from '@/app/constants';
 import { BUILDER_ENABLED_VIEWS } from './constants';
 import { STORES } from '@workflow-automation/stores';
-import type { ChatUI } from '@workflow-automation/design-system/types/assistant';
-import { isToolMessage, isWorkflowUpdatedMessage } from '@workflow-automation/design-system/types/assistant';
+import type { ChatUI } from '@workflow-automation/design-system';
+import { isToolMessage, isWorkflowUpdatedMessage } from '@workflow-automation/design-system';
 import { defineStore } from 'pinia';
 import { computed, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
@@ -20,8 +20,8 @@ import {
 	getSessionsMetadata,
 } from '@/features/ai/assistant/assistant.api';
 import { generateMessageId, createBuilderPayload } from './builder.utils';
-import { useRootStore } from '@n8n/stores/useRootStore';
-import type { WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
+import { useRootStore } from '@workflow-automation/stores/useRootStore';
+import type { WorkflowDataUpdate } from '@workflow-automation/rest-api-client/api/workflows';
 import pick from 'lodash/pick';
 import { jsonParse } from 'workflow-automation-workflow';
 import { useToast } from '@/app/composables/useToast';

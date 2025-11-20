@@ -11,8 +11,8 @@ import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { useI18n } from '@workflow-automation/i18n';
 import { useWorkflowSaving } from '@/app/composables/useWorkflowSaving';
 import type { IconColor } from '@workflow-automation/design-system';
-import { type IAccordionItem } from '@workflow-automation/design-system/components/N8nInfoAccordion/InfoAccordion.vue';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IAccordionItem } from '@workflow-automation/design-system';
+import { type IconName } from '@workflow-automation/design-system';
 
 import { N8nInfoAccordion, N8nLink, N8nTooltip } from '@workflow-automation/design-system';
 interface IWorkflowSaveSettings {

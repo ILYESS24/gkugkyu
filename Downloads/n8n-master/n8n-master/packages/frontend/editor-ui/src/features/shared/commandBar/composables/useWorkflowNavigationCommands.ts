@@ -16,7 +16,7 @@ import { useTagsStore } from '@/features/shared/tags/tags.store';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 import { useFoldersStore } from '@/features/core/folders/folders.store';
 import CommandBarItemTitle from '@/features/shared/commandBar/components/CommandBarItemTitle.vue';
-import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system';
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { getResourcePermissions } from '@workflow-automation/permissions';
 

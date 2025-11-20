@@ -612,13 +612,13 @@ const onDragEnd = (el: HTMLElement) => {
 	color: var(--color--text);
 	font-size: var(--font-size--2xs);
 	line-height: var(--line-height--lg);
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	margin-left: calc(var(--spacing--lg) * var(--schema-level));
 }
 
 .empty-schema {
 	padding-bottom: var(--spacing--xs);
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	margin-left: calc((var(--spacing--xl) * var(--schema-level)));
 }
 </style>

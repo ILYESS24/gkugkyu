@@ -1,4 +1,4 @@
-﻿/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { describe, it, expect, beforeEach, vi } from 'vitest';
@@ -29,7 +29,7 @@ import {
 	type WorkflowState,
 } from '@/app/composables/useWorkflowState';
 import type { Telemetry } from '@/app/plugins/telemetry';
-import type { ChatUI } from '@n8n/design-system/types/assistant';
+import type { ChatUI } from '@workflow-automation/design-system';
 import { type INodeTypeDescription } from 'workflow-automation-workflow';
 import { mockedStore } from '@/__tests__/utils';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -37,7 +37,7 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 
 // Mock useI18n to return the keys instead of translations
-vi.mock('@n8n/i18n', () => ({
+vi.mock('@workflow-automation/i18n', () => ({
 	useI18n: () => ({
 		baseText: (key: string) => key,
 	}),

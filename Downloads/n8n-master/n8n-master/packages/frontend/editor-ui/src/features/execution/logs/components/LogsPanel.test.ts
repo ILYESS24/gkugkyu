@@ -25,11 +25,11 @@ import { createTestTaskData } from '@/__tests__/mocks';
 import { useLogsStore } from '@/app/stores/logs.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { LOGS_PANEL_STATE } from '../logs.constants';
-import { ChatOptionsSymbol, ChatSymbol } from '@workflow-automation/chat/constants';
+import { ChatOptionsSymbol, ChatSymbol } from '@workflow-automation/chat';
 import { userEvent } from '@testing-library/user-event';
-import type { ChatMessage } from '@workflow-automation/chat/types';
+import type { ChatMessage } from '@workflow-automation/chat';
 import * as useChatMessaging from '@/features/execution/logs/composables/useChatMessaging';
-import { chatEventBus } from '@workflow-automation/chat/event-buses';
+import { chatEventBus } from '@workflow-automation/chat';
 import { useToast } from '@/app/composables/useToast';
 import { useWorkflowState, type WorkflowState } from '@/app/composables/useWorkflowState';
 

@@ -4,7 +4,7 @@ import { useToast } from '@/app/composables/useToast';
 import { CHANGE_PASSWORD_MODAL_KEY } from '@/app/constants';
 import Modal from '@/app/components/Modal.vue';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import { createEventBus } from '@workflow-automation/utils/event-bus';
 import type { IFormInputs, IFormInput, FormFieldValueUpdate, FormValues } from '@/Interface';
 import { useI18n } from '@workflow-automation/i18n';

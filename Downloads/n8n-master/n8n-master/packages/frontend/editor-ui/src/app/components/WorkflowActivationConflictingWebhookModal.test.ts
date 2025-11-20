@@ -1,4 +1,4 @@
-﻿import { createTestingPinia } from '@pinia/testing';
+import { createTestingPinia } from '@pinia/testing';
 import { createComponentRenderer } from '@/__tests__/render';
 import WorkflowActivationConflictingWebhookModal from '@/app/components/WorkflowActivationConflictingWebhookModal.vue';
 import {
@@ -16,7 +16,7 @@ vi.mock('@/app/stores/ui.store', () => {
 		})),
 	};
 });
-vi.mock('@n8n/stores/useRootStore', () => {
+vi.mock('@workflow-automation/stores/useRootStore', () => {
 	return {
 		useRootStore: vi.fn(() => ({
 			webhookUrl: 'http://webhook-base',

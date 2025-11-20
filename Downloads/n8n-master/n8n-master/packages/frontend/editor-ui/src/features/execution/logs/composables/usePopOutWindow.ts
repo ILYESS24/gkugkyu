@@ -1,6 +1,6 @@
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import { PopOutWindowKey } from '@/app/constants';
-import { useProvideTooltipAppendTo } from '@workflow-automation/design-system/composables/useTooltipAppendTo';
+import { useProvideTooltipAppendTo } from '@workflow-automation/design-system';
 import {
 	computed,
 	type ComputedRef,

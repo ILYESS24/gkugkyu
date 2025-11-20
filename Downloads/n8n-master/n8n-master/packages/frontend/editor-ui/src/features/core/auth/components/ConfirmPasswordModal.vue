@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { CONFIRM_PASSWORD_MODAL_KEY } from '@/app/constants';
 import Modal from '@/app/components/Modal.vue';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import type { IFormInputs, IFormInput, FormValues } from '@/Interface';
 import { useI18n } from '@workflow-automation/i18n';
 import { confirmPasswordEventBus } from '../auth.eventBus';

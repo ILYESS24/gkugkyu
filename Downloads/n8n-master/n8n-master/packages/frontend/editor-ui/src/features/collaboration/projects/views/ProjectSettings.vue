@@ -18,8 +18,8 @@ import { useCloudPlanStore } from '@/app/stores/cloudPlan.store';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
 import ProjectHeader from '../components/ProjectHeader.vue';
-import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
-import type { TableOptions } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system';
+import type { TableOptions } from '@workflow-automation/design-system';
 import type { UserAction } from '@workflow-automation/design-system';
 import { isProjectRole } from '@/app/utils/typeGuards';
 

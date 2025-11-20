@@ -14,6 +14,8 @@ export type PathItem = {
 	href?: string;
 };
 
+// Réexporter PathItem depuis le point d'entrée principal
+
 type Props = {
 	items: PathItem[];
 	hiddenItems?: PathItem[] | Promise<PathItem[]>;

@@ -9,7 +9,7 @@ import MigrationRuleDetail from './MigrationRuleDetail.vue';
 import * as breakingChangesApi from '@workflow-automation/rest-api-client/api/breaking-changes';
 import type { BreakingChangeWorkflowRuleResult } from '@workflow-automation/api-types';
 
-vi.mock('@n8n/rest-api-client/api/breaking-changes', () => ({
+vi.mock('@workflow-automation/rest-api-client/api/breaking-changes', () => ({
 	getReportForRule: vi.fn(),
 }));
 

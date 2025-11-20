@@ -57,13 +57,13 @@ vi.mock('@/app/stores/workflows.store', () => ({
 	}),
 }));
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: () => ({
 		restApiContext: mocks.restApiContext,
 	}),
 }));
 
-vi.mock('@n8n/rest-api-client/api/users', () => ({
+vi.mock('@workflow-automation/rest-api-client/api/users', () => ({
 	updateCurrentUserSettings: vi.fn(),
 }));
 

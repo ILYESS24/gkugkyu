@@ -71,7 +71,7 @@ import {
 	TemplateClickSource,
 	trackTemplatesClick,
 } from '@/experiments/utils';
-import type { PathItem } from '@workflow-automation/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
+import type { PathItem } from '@workflow-automation/design-system';
 import { useI18n } from '@workflow-automation/i18n';
 import { getResourcePermissions } from '@workflow-automation/permissions';
 import { createEventBus } from '@workflow-automation/utils/event-bus';

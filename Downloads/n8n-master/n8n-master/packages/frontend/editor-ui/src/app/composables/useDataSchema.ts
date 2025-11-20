@@ -15,7 +15,7 @@ import {
 	NodeConnectionTypes,
 } from 'workflow-automation-workflow';
 import { ref } from 'vue';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IconName } from '@workflow-automation/design-system';
 import { DATA_TYPE_ICON_MAP } from '@/app/constants';
 
 export function useDataSchema() {

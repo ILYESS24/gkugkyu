@@ -6,7 +6,7 @@ import type { Project } from '../projects.types';
 import { ProjectTypes } from '../projects.types';
 import type { CredentialsResource, FolderResource, WorkflowResource } from '@/Interface';
 import { VIEWS } from '@/app/constants';
-import { type IconOrEmoji, isIconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { type IconOrEmoji, isIconOrEmoji } from '@workflow-automation/design-system';
 import ProjectIcon from './ProjectIcon.vue';
 import { N8nBadge, N8nTooltip } from '@workflow-automation/design-system';
 type Props = {

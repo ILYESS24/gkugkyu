@@ -281,7 +281,7 @@ function onActivate(event: MouseEvent) {
 	 */
 
 	&.selected {
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		box-shadow: 0 0 0 calc(8px * var(--canvas-zoom-compensation-factor, 1))
 			var(--canvas--color--selected-transparent);
 	}

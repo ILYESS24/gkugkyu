@@ -8,7 +8,7 @@ import '@vue-flow/node-resizer/dist/style.css';
 
 import 'vue-json-pretty/lib/styles.css';
 import '../../@n8n/design-system/src/css/index.scss';
-// import '@workflow-automation/design-system/css/tailwind/index.css';
+// import '@workflow-automation/design-system';
 
 import '@/main.scss';
 // Ensure i18n HMR owner is evaluated as early as possible in dev

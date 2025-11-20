@@ -20,7 +20,7 @@ import type { EnvironmentVariable } from '../environments.types';
 import { useEnvironmentsStore } from '../environments.store';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
 import { useI18n } from '@workflow-automation/i18n';
-import type { IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import type { IconOrEmoji } from '@workflow-automation/design-system';
 
 const props = withDefaults(
 	defineProps<{

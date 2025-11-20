@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { useI18n } from '@workflow-automation/i18n';
 import type { INodeUi } from '@/Interface';
-import type { IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import type { IconName } from '@workflow-automation/design-system';
 
 import { N8nIcon, N8nText } from '@workflow-automation/design-system';
 

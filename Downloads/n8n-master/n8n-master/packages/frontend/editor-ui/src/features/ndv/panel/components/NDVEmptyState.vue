@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import type { IconName } from '@workflow-automation/design-system';
 
 import { N8nIcon } from '@workflow-automation/design-system';
 const { icon } = defineProps<{ title?: string; wide?: boolean; icon?: IconName }>();

@@ -3,7 +3,7 @@ import { useI18n } from '@workflow-automation/i18n';
 import type { BaseTextKey } from '@workflow-automation/i18n';
 import { ASSIGNMENT_TYPES } from './constants';
 import { computed } from 'vue';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IconName } from '@workflow-automation/design-system';
 
 import { N8nIcon, N8nOption, N8nSelect } from '@workflow-automation/design-system';
 interface Props {

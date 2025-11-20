@@ -1,4 +1,4 @@
-import type { CommandBarItem } from '@workflow-automation/design-system/components/N8nCommandBar/types';
+import type { CommandBarItem } from '@workflow-automation/design-system';
 import type { ComputedRef, Ref } from 'vue';
 
 export type { CommandBarItem };

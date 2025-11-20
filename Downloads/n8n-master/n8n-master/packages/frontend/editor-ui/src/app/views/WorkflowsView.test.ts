@@ -23,7 +23,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { useReadyToRunStore } from '@/features/workflows/readyToRun/stores/readyToRun.store';
 
 vi.mock('@/features/collaboration/projects/projects.api');
-vi.mock('@n8n/rest-api-client/api/users');
+vi.mock('@workflow-automation/rest-api-client/api/users');
 vi.mock('@/features/integrations/sourceControl.ee/sourceControl.api');
 vi.mock('@/app/composables/useGlobalEntityCreation', () => ({
 	useGlobalEntityCreation: () => ({
@@ -71,7 +71,7 @@ const router = createRouter({
 	],
 });
 
-vi.mock('@n8n/rest-api-client/api/usage', () => ({
+vi.mock('@workflow-automation/rest-api-client/api/usage', () => ({
 	getLicense: vi.fn(),
 }));
 

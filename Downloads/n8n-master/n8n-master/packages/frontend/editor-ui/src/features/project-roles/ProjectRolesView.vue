@@ -16,7 +16,7 @@ import {
 	N8nIcon,
 	N8nText,
 } from '@workflow-automation/design-system';
-import type { TableHeader } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableHeader } from '@workflow-automation/design-system';
 import { useI18n } from '@workflow-automation/i18n';
 import type { Role } from '@workflow-automation/permissions';
 import dateformat from 'dateformat';

@@ -422,7 +422,7 @@ defineExpose({
 	user-select: none;
 	justify-content: space-between;
 	display: grid;
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	grid-template-columns: repeat(var(--possible-connections), 1fr);
 }
 .connectionType {
@@ -505,7 +505,7 @@ defineExpose({
 .connectedNodes {
 	display: flex;
 	justify-content: center;
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	margin-right: calc(
 		(var(--nodes-length) - 1) * (-1 * (var(--node--size) - var(--collapsed--offset)))
 	);
@@ -531,7 +531,7 @@ defineExpose({
 	}
 
 	&:not(:first-child) {
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		transform: translateX(
 			calc(var(--node-index) * (-1 * (var(--node--size) - var(--collapsed--offset))))
 		);

@@ -129,7 +129,7 @@ async function handleClickExecute() {
 		transition:
 			translate 0.1s ease-in,
 			opacity 0.1s ease-in;
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		transform: scale(var(--canvas-zoom-compensation-factor, 1));
 		transform-origin: center right;
 	}

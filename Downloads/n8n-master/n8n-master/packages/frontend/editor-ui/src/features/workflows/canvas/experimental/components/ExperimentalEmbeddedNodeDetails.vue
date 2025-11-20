@@ -200,7 +200,7 @@ watchOnce(isVisible, (visible) => {
 	}
 
 	& > * {
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		zoom: var(--canvas-zoom-compensation-factor, 1);
 		flex-grow: 0;
 		flex-shrink: 0;
@@ -223,7 +223,7 @@ watchOnce(isVisible, (visible) => {
 
 .settingsView {
 	& > * {
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		zoom: var(--canvas-zoom-compensation-factor, 1);
 	}
 }

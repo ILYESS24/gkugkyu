@@ -19,7 +19,7 @@ vi.mock('./evaluation.api', () => ({
 	deleteTestRun,
 }));
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: vi.fn(() => ({
 		restApiContext: { instanceId: 'test-instance-id' },
 	})),

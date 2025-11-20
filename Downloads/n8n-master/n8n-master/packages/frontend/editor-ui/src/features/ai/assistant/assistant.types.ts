@@ -10,7 +10,7 @@ import type {
 	IRunExecutionData,
 	ITaskData,
 } from 'workflow-automation-workflow';
-import type { ChatUI } from '@workflow-automation/design-system/types/assistant';
+import type { ChatUI } from '@workflow-automation/design-system';
 
 export namespace ChatRequest {
 	export interface NodeExecutionSchema {

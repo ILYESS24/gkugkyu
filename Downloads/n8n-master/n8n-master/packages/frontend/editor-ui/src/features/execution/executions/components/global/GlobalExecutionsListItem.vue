@@ -7,11 +7,11 @@ import { useI18n } from '@workflow-automation/i18n';
 import { VIEWS } from '@/app/constants';
 import type { PermissionsRecord } from '@workflow-automation/permissions';
 import { convertToDisplayDate } from '@/app/utils/formatters/dateFormatter';
-import type { IconColor } from '@workflow-automation/design-system/types/icon';
+import type { IconColor } from '@workflow-automation/design-system';
 import type { ExecutionStatus, ExecutionSummary } from 'workflow-automation-workflow';
 import { WAIT_INDEFINITELY } from 'workflow-automation-workflow';
 import { computed, ref, useCssModule } from 'vue';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IconName } from '@workflow-automation/design-system';
 
 import { ElDropdown, ElDropdownItem, ElDropdownMenu } from 'element-plus';
 import {

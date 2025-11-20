@@ -1,4 +1,4 @@
-﻿import { createPinia, setActivePinia } from 'pinia';
+import { createPinia, setActivePinia } from 'pinia';
 import { vi } from 'vitest';
 
 import * as vcApi from './sourceControl.api';
@@ -8,7 +8,7 @@ import type { SourceControlledFile } from '@workflow-automation/api-types';
 
 vi.mock('./sourceControl.api');
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: vi.fn(() => ({
 		restApiContext: {},
 	})),

@@ -7,7 +7,7 @@ import type { INodeUi } from '@/Interface';
 import type { IExecutionPushResponse } from '@/features/execution/executions/executions.types';
 import type { RunWorkflowChatPayload } from '../composables/useChatMessaging';
 import { vi } from 'vitest';
-import type { ChatMessage } from '@workflow-automation/chat/types';
+import type { ChatMessage } from '@workflow-automation/chat';
 
 vi.mock('../logs.utils', () => {
 	return {

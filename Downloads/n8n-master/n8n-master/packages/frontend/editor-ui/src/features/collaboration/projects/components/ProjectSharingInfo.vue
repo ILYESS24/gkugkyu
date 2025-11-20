@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import type { ProjectListItem, ProjectSharingData } from '../projects.types';
 import { splitName } from '../projects.utils';
-import { isIconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji } from '@workflow-automation/design-system';
 import ProjectIcon from './ProjectIcon.vue';
 import { N8nAvatar } from '@workflow-automation/design-system';
 type Props = {

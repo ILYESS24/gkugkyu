@@ -9,7 +9,7 @@ import MigrationRules from './MigrationRules.vue';
 import * as breakingChangesApi from '@workflow-automation/rest-api-client/api/breaking-changes';
 import type { BreakingChangeLightReportResult } from '@workflow-automation/api-types';
 
-vi.mock('@n8n/rest-api-client/api/breaking-changes', () => ({
+vi.mock('@workflow-automation/rest-api-client/api/breaking-changes', () => ({
 	getReport: vi.fn(),
 	refreshReport: vi.fn(),
 }));

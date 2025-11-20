@@ -4,7 +4,7 @@ import { computed, useSlots } from 'vue';
 import type { BannerName } from '@workflow-automation/api-types';
 import { useI18n } from '@workflow-automation/i18n';
 import type { CalloutTheme } from '@workflow-automation/design-system';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IconName } from '@workflow-automation/design-system';
 
 import { N8nCallout, N8nIcon } from '@workflow-automation/design-system';
 interface Props {

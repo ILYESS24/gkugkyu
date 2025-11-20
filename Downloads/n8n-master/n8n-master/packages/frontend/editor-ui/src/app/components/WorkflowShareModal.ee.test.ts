@@ -50,7 +50,7 @@ vi.mock('@workflow-automation/permissions', () => ({
 		workflow: { share: true },
 	}),
 }));
-vi.mock('@n8n/utils/event-bus', () => ({
+vi.mock('@workflow-automation/utils/event-bus', () => ({
 	createEventBus: () => ({
 		emit: vi.fn(),
 	}),

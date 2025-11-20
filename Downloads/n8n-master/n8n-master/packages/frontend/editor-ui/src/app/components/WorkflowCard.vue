@@ -29,7 +29,7 @@ import {
 	type ProjectSharingData,
 	ProjectTypes,
 } from '@/features/collaboration/projects/projects.types';
-import type { PathItem } from '@workflow-automation/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
+import type { PathItem } from '@workflow-automation/design-system';
 import { useFoldersStore } from '@/features/core/folders/folders.store';
 
 import {

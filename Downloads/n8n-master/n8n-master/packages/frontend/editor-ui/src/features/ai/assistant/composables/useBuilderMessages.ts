@@ -1,4 +1,4 @@
-import type { ChatUI } from '@workflow-automation/design-system/types/assistant';
+import type { ChatUI } from '@workflow-automation/design-system';
 import type { ChatRequest } from '../assistant.types';
 import { useI18n } from '@workflow-automation/i18n';
 import { isTextMessage, isWorkflowUpdatedMessage, isToolMessage } from '../assistant.types';

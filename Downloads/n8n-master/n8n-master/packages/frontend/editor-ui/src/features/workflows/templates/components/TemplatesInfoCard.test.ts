@@ -14,7 +14,7 @@ const TEST_COLLECTION: ITemplatesCollection = {
 		{
 			id: 1119,
 			icon: 'fa:robot',
-			name: '@n8n/n8n-nodes-langchain.agent',
+			name: '@workflow-automation/n8n-nodes-langchain.agent',
 			iconData: {
 				icon: 'robot',
 				type: 'icon',
@@ -25,7 +25,7 @@ const TEST_COLLECTION: ITemplatesCollection = {
 		{
 			id: 1121,
 			icon: 'fa:link',
-			name: '@n8n/n8n-nodes-langchain.chainSummarization',
+			name: '@workflow-automation/n8n-nodes-langchain.chainSummarization',
 			iconData: {
 				icon: 'link',
 				type: 'icon',
@@ -36,7 +36,7 @@ const TEST_COLLECTION: ITemplatesCollection = {
 		{
 			id: 1123,
 			icon: 'fa:link',
-			name: '@n8n/n8n-nodes-langchain.chainLlm',
+			name: '@workflow-automation/n8n-nodes-langchain.chainLlm',
 			iconData: {
 				icon: 'link',
 				type: 'icon',

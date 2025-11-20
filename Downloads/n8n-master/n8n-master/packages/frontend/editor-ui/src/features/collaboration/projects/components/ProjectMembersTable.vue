@@ -6,8 +6,8 @@ import {
 	type ActionDropdownItem,
 	type UserAction,
 } from '@workflow-automation/design-system';
-import type { TableHeader, TableOptions } from '@workflow-automation/design-system/components/N8nDataTableServer';
-import type { UsersInfoProps } from '@workflow-automation/design-system/components/N8nUserInfo/UserInfo.vue';
+import type { TableHeader, TableOptions } from '@workflow-automation/design-system';
+import type { UsersInfoProps } from '@workflow-automation/design-system';
 import { useI18n } from '@workflow-automation/i18n';
 import type { AllRolesMap, Role } from '@workflow-automation/permissions';
 import { computed, ref } from 'vue';

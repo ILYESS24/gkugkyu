@@ -10,7 +10,7 @@ import { INVITE_USER_MODAL_KEY } from '../users.constants';
 import { ROLE } from '@workflow-automation/api-types';
 import { useUsersStore } from '../users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import { createEventBus } from '@workflow-automation/utils/event-bus';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useI18n } from '@workflow-automation/i18n';

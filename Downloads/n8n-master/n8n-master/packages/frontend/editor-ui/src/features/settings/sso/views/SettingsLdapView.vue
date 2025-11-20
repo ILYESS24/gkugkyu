@@ -14,7 +14,7 @@ import humanizeDuration from 'humanize-duration';
 import type { Events } from 'v3-infinite-loading';
 import InfiniteLoading from 'v3-infinite-loading';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import type { TableColumnCtx } from 'element-plus';
 import { useI18n } from '@workflow-automation/i18n';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';

@@ -2,7 +2,7 @@ import { screen } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
 import type { ProjectRole, AllRolesMap } from '@workflow-automation/permissions';
-import type { TableOptions } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableOptions } from '@workflow-automation/design-system';
 import ProjectMembersTable from './ProjectMembersTable.vue';
 import { createComponentRenderer } from '@/__tests__/render';
 import type { ProjectMemberData } from '../projects.types';

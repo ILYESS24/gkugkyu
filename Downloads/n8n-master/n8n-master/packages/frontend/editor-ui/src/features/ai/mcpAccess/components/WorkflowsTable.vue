@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { useI18n } from '@workflow-automation/i18n';
 import type { WorkflowListItem, UserAction } from '@/Interface';
-import { type TableHeader } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import { type TableHeader } from '@workflow-automation/design-system';
 import {
 	N8nActionBox,
 	N8nActionToggle,
@@ -18,7 +18,7 @@ import {
 import ProjectIcon from '@/features/collaboration/projects/components/ProjectIcon.vue';
 import { VIEWS } from '@/app/constants';
 import router from '@/app/router';
-import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@workflow-automation/design-system';
 
 type Props = {
 	workflows: WorkflowListItem[];

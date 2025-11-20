@@ -7,7 +7,7 @@ import {
 	transformInsightsTimeSaved,
 } from '@/features/execution/insights/insights.utils';
 import type { InsightsByWorkflow } from '@workflow-automation/api-types';
-import type { TableHeader } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableHeader } from '@workflow-automation/design-system';
 import { smartDecimal } from '@workflow-automation/utils/number/smartDecimal';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { VIEWS } from '@/app/constants';

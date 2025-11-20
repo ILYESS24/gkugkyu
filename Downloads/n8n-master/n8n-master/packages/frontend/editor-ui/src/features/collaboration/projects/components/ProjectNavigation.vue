@@ -4,7 +4,7 @@ import { VIEWS } from '@/app/constants';
 import { sourceControlEventBus } from '@/features/integrations/sourceControl.ee/sourceControl.eventBus';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import type { IMenuItem } from '@workflow-automation/design-system/types';
+import type { IMenuItem } from '@workflow-automation/design-system';
 import { useI18n } from '@workflow-automation/i18n';
 import { computed, onBeforeMount, onBeforeUnmount } from 'vue';
 import { useProjectsStore } from '../projects.store';

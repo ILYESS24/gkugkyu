@@ -1,4 +1,4 @@
-﻿import {
+import {
 	createTestNode,
 	defaultNodeDescriptions,
 	mockNodeTypeDescription,
@@ -65,7 +65,7 @@ const ifNode = createTestNode({
 
 const aiTool = createTestNode({
 	name: 'AI Tool',
-	type: '@n8n/n8n-nodes-langchain.memoryBufferWindow',
+	type: '@workflow-automation/n8n-nodes-langchain.memoryBufferWindow',
 	typeVersion: 1,
 	disabled: false,
 });

@@ -16,9 +16,9 @@ type Props = {
 
 const props = defineProps<Props>();
 
-const LANGCHAIN_NODES_PREFIX = '@n8n/n8n-nodes-langchain.';
+const LANGCHAIN_NODES_PREFIX = '@workflow-automation/n8n-nodes-langchain.';
 
-const N8N_NODES_PREFIX = '@n8n/n8n-nodes.';
+const N8N_NODES_PREFIX = '@workflow-automation/n8n-nodes.';
 
 const NODES_WITH_OPEN_AI_API_CREDENTIAL = [
 	`${LANGCHAIN_NODES_PREFIX}openAi`,

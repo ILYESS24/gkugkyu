@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T extends string">
 import { N8nActionDropdown, N8nIcon, N8nIconButton, N8nText } from '@workflow-automation/design-system';
-import type { IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
-import type { ActionDropdownItem } from '@workflow-automation/design-system/types';
+import type { IconName } from '@workflow-automation/design-system';
+import type { ActionDropdownItem } from '@workflow-automation/design-system';
 import { type RouteLocationRaw } from 'vue-router';
 
 const {

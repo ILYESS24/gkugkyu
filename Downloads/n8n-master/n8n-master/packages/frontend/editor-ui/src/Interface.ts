@@ -55,14 +55,14 @@ import type { CREDENTIAL_EDIT_MODAL_KEY } from '@/features/credentials/credentia
 import type { BulkCommand, Undoable } from '@/app/models/history';
 
 import type { ProjectSharingData } from '@/features/collaboration/projects/projects.types';
-import type { IconName } from '@workflow-automation/design-system/src/components/N8nIcon/icons';
+import type { IconName } from '@workflow-automation/design-system';
 import type {
 	BaseFolderItem,
 	FolderListItem,
 	ResourceParentFolder,
 } from '@/features/core/folders/folders.types';
 
-export * from '../../@n8n/design-system/src/types';
+export * from '../../@workflow-automation/design-system/src/types';
 
 declare global {
 	interface Window {

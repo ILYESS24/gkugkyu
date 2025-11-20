@@ -721,7 +721,7 @@ const modifiers = [
 </template>
 
 <style module lang="scss">
-/* Diff colors are now centralized in @n8n/design-system tokens */
+/* Diff colors are now centralized in @workflow-automation/design-system tokens */
 
 .workflowDiffModal {
 	margin-bottom: 0;

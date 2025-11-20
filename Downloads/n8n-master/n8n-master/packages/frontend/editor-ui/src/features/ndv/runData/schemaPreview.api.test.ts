@@ -54,7 +54,7 @@ describe('API: schemaPreview', () => {
 			vi.spyOn(apiUtils, 'request').mockResolvedValue(schema);
 
 			await getSchemaPreview('http://test.com', {
-				nodeType: '@n8n/n8n-nodes-base.asana',
+				nodeType: '@workflow-automation/n8n-nodes-base.asana',
 				version: 1,
 				resource: 'resource',
 				operation: 'operation',

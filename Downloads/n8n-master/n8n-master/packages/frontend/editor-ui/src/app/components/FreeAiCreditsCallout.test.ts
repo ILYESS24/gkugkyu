@@ -40,7 +40,7 @@ vi.mock('@/features/collaboration/projects/projects.store', () => ({
 	useProjectsStore: vi.fn(),
 }));
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: vi.fn(),
 }));
 
@@ -92,7 +92,7 @@ describe('FreeAiCreditsCallout', () => {
 		});
 
 		(useNDVStore as any).mockReturnValue({
-			activeNode: { type: '@n8n/n8n-nodes-langchain.openAi' },
+			activeNode: { type: '@workflow-automation/n8n-nodes-langchain.openAi' },
 		});
 
 		(useProjectsStore as any).mockReturnValue({
@@ -176,7 +176,7 @@ describe('FreeAiCreditsCallout', () => {
 
 	it('should not be able to claim credits if active node it is not a valid node', async () => {
 		(useNDVStore as any).mockReturnValue({
-			activeNode: { type: '@n8n/n8n-nodes.jira' },
+			activeNode: { type: '@workflow-automation/n8n-nodes.jira' },
 		});
 
 		renderComponent(FreeAiCreditsCallout);

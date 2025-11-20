@@ -1,4 +1,4 @@
-﻿import { createPinia, setActivePinia } from 'pinia';
+import { createPinia, setActivePinia } from 'pinia';
 import { useSchemaPreviewStore } from './schemaPreview.store';
 import * as schemaPreviewApi from './schemaPreview.api';
 import type { JSONSchema7 } from 'json-schema';
@@ -18,7 +18,7 @@ vi.mock('@/app/composables/useTelemetry', () => {
 	};
 });
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: vi.fn(() => ({
 		baseUrl: 'https://test.com',
 	})),

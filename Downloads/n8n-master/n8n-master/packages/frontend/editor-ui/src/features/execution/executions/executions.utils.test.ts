@@ -32,7 +32,7 @@ const WAIT_NODE_TYPE = 'waitNode';
 
 const windowOpenSpy = vi.spyOn(window, 'open');
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: () => ({
 		formWaitingUrl: 'http://localhost:5678/form-waiting',
 		webhookWaitingUrl: 'http://localhost:5678/webhook-waiting',

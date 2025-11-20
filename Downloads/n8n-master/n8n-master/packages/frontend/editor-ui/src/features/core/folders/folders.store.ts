@@ -15,7 +15,7 @@ import * as workflowsEEApi from '@/app/api/workflows.ee';
 import { useRootStore } from '@workflow-automation/stores/useRootStore';
 import { ref } from 'vue';
 import { useI18n } from '@workflow-automation/i18n';
-import type { PathItem } from '@workflow-automation/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
+import type { PathItem } from '@workflow-automation/design-system';
 
 const BREADCRUMBS_MIN_LOADING_TIME = 300;
 

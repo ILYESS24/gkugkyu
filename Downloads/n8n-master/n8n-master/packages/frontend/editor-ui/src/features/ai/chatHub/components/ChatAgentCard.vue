@@ -4,7 +4,7 @@ import { getAgentRoute } from '@/features/ai/chatHub/chat.utils';
 import ChatAgentAvatar from '@/features/ai/chatHub/components/ChatAgentAvatar.vue';
 import type { ChatModelDto } from '@workflow-automation/api-types';
 import { N8nActionDropdown, N8nBadge, N8nIconButton, N8nText } from '@workflow-automation/design-system';
-import type { ActionDropdownItem } from '@workflow-automation/design-system/types';
+import type { ActionDropdownItem } from '@workflow-automation/design-system';
 import { RouterLink } from 'vue-router';
 
 const { agent } = defineProps<{

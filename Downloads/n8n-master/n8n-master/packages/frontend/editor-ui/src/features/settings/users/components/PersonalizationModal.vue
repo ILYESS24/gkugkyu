@@ -87,7 +87,7 @@ import type { IFormInputs } from '@/Interface';
 import type { IPersonalizationLatestVersion } from '@workflow-automation/rest-api-client/api/users';
 import { useRootStore } from '@workflow-automation/stores/useRootStore';
 import { useUsersStore } from '../users.store';
-import { createFormEventBus } from '@workflow-automation/design-system/utils';
+import { createFormEventBus } from '@workflow-automation/design-system';
 import { createEventBus } from '@workflow-automation/utils/event-bus';
 import { usePostHog } from '@/app/stores/posthog.store';
 import { useExternalHooks } from '@/app/composables/useExternalHooks';

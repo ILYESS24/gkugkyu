@@ -14,7 +14,7 @@ import {
 	N8nTag,
 	N8nText,
 } from '@workflow-automation/design-system';
-import type { TableHeader } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableHeader } from '@workflow-automation/design-system';
 import * as breakingChangesApi from '@workflow-automation/rest-api-client/api/breaking-changes';
 import { useI18n } from '@workflow-automation/i18n';
 import { useRootStore } from '@workflow-automation/stores/useRootStore';

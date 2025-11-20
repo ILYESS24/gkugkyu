@@ -1,4 +1,4 @@
-﻿import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
+import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { removePreviewToken } from '@/features/shared/nodeCreator/nodeCreator.utils';
 import type { INode } from 'workflow-automation-workflow';
@@ -12,7 +12,7 @@ import {
 } from './nodeIcon';
 import { getThemedValue } from './nodeTypesUtils';
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@workflow-automation/stores/useRootStore', () => ({
 	useRootStore: vi.fn(() => ({
 		baseUrl: 'https://example.com/',
 	})),

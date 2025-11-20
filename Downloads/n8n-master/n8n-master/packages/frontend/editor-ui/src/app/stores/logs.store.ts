@@ -13,7 +13,7 @@ import {
 	LOG_DETAILS_PANEL_STATE,
 	LOGS_PANEL_STATE,
 } from '@/features/execution/logs/logs.constants';
-import type { ChatMessage } from '../../../../@n8n/chat/src/types';
+import type { ChatMessage } from '../../../../@workflow-automation/chat/src/types';
 import { v4 as uuid } from 'uuid';
 
 export const useLogsStore = defineStore('logs', () => {

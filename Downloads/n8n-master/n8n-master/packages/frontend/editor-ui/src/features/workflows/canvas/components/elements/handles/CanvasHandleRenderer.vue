@@ -1,4 +1,4 @@
-﻿<script lang="ts" setup>
+<script lang="ts" setup>
 import { computed, h, provide, toRef, useCssModule } from 'vue';
 import type { CanvasConnectionPort, CanvasElementPortWithRenderData } from '../../../canvas.types';
 import { CanvasConnectionMode } from '../../../canvas.types';
@@ -166,9 +166,9 @@ provide(CanvasNodeHandleKey, {
 
 <style lang="scss" module>
 .handle {
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	--handle--indicator--width: calc(16px * var(--canvas-zoom-compensation-factor, 1));
-	/* stylelint-disable-next-line @n8n/css-var-naming */
+	/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 	--handle--indicator--height: calc(16px * var(--canvas-zoom-compensation-factor, 1));
 
 	width: var(--handle--indicator--width);
@@ -183,7 +183,7 @@ provide(CanvasNodeHandleKey, {
 
 	&.inputs {
 		&.main {
-			/* stylelint-disable-next-line @n8n/css-var-naming */
+			/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 			--handle--indicator--width: calc(8px * var(--canvas-zoom-compensation-factor, 1));
 		}
 	}

@@ -30,7 +30,7 @@ export const getSchemaPreview = async (
 ): Promise<JSONSchema7> => {
 	const { nodeType, version, resource, operation } = options;
 	const versionString = padVersion(version);
-	const path = ['schemas', nodeType.replace('@n8n/', ''), versionString, resource, operation]
+	const path = ['schemas', nodeType.replace('@workflow-automation/', ''), versionString, resource, operation]
 		.filter(Boolean)
 		.join('/');
 	const response = await request({

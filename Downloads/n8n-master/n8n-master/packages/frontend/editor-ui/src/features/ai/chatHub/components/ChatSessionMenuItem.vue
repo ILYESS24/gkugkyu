@@ -6,7 +6,7 @@ import { useAgent } from '@/features/ai/chatHub/composables/useAgent';
 import { CHAT_CONVERSATION_VIEW } from '@/features/ai/chatHub/constants';
 import { type ChatHubSessionDto } from '@workflow-automation/api-types';
 import { N8nInput } from '@workflow-automation/design-system';
-import type { ActionDropdownItem } from '@workflow-automation/design-system/types';
+import type { ActionDropdownItem } from '@workflow-automation/design-system';
 import { computed, nextTick, ref, useTemplateRef, watch } from 'vue';
 
 const { session, isRenaming, active } = defineProps<{

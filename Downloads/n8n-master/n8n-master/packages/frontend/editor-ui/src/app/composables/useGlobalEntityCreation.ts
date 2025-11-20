@@ -12,7 +12,7 @@ import { getResourcePermissions } from '@workflow-automation/permissions';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
 import type { Scope } from '@workflow-automation/permissions';
 import type { RouteLocationRaw } from 'vue-router';
-import { updatedIconSet, type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { updatedIconSet, type IconName } from '@workflow-automation/design-system';
 
 type ProjectIcon = IconName | { type: 'icon'; value: IconName } | { type: 'emoji'; value: string };
 

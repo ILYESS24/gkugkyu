@@ -49,7 +49,7 @@ import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { ProjectTypes } from '@/features/collaboration/projects/projects.types';
 import { sanitizeFilename } from '@/app/utils/fileUtils';
 import { hasPermission } from '@/app/utils/rbac/permissions';
-import type { PathItem } from '@workflow-automation/design-system/components/N8nBreadcrumbs/Breadcrumbs.vue';
+import type { PathItem } from '@workflow-automation/design-system';
 import { type BaseTextKey, useI18n } from '@workflow-automation/i18n';
 import { getResourcePermissions } from '@workflow-automation/permissions';
 import type { WorkflowDataUpdate } from '@workflow-automation/rest-api-client/api/workflows';

@@ -374,7 +374,7 @@ function onBackButton() {
 @each $node-type in $supplemental-node-types {
 	.nodes-list-panel-#{$node-type} .nodes-list-panel-header {
 		.n8n-node-icon svg {
-			/* stylelint-disable-next-line @n8n/css-var-naming */
+			/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 			color: var(--node-type-#{$node-type}-color);
 		}
 	}

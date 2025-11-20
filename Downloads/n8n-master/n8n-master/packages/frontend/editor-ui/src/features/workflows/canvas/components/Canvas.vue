@@ -1081,7 +1081,7 @@ defineExpose({
 	}
 
 	&.isExperimentalNdvActive {
-		/* stylelint-disable-next-line @n8n/css-var-naming */
+		/* stylelint-disable-next-line @workflow-automation/css-var-naming */
 		--canvas-zoom-compensation-factor: 0.5;
 	}
 }

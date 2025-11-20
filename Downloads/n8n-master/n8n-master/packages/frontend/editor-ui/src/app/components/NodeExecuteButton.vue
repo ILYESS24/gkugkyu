@@ -31,7 +31,7 @@ import { generateCodeForAiTransform } from '@/features/ndv/parameters/utils/butt
 import { needsAgentInput } from '@/app/utils/nodes/nodeTransforms';
 import { useUIStore } from '@/app/stores/ui.store';
 import type { ButtonType } from '@workflow-automation/design-system';
-import { type IconName } from '@workflow-automation/design-system/components/N8nIcon/icons';
+import { type IconName } from '@workflow-automation/design-system';
 
 import { N8nButton, N8nTooltip } from '@workflow-automation/design-system';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';

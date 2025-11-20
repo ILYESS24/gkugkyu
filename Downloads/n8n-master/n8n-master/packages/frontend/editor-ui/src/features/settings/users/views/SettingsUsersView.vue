@@ -9,7 +9,7 @@ import {
 	USERS_LIST_SORT_OPTIONS,
 } from '@workflow-automation/api-types';
 import type { UserAction } from '@workflow-automation/design-system';
-import type { TableOptions } from '@workflow-automation/design-system/components/N8nDataTableServer';
+import type { TableOptions } from '@workflow-automation/design-system';
 import { EnterpriseEditionFeature } from '@/app/constants';
 import { DELETE_USER_MODAL_KEY, INVITE_USER_MODAL_KEY } from '../users.constants';
 import EnterpriseEdition from '@/app/components/EnterpriseEdition.ee.vue';
