@@ -111,7 +111,23 @@ export class GlobalConfig {
 
 	/** HTTP port n8n can be reached */
 	@Env('N8N_PORT')
-	port: number = 5678;
+	get port(): number {
+		// Use N8N_PORT if set, otherwise fallback to PORT (for Render compatibility)
+		const n8nPort = process.env.N8N_PORT;
+		if (n8nPort) return Number(n8nPort);
+		const port = process.env.PORT;
+		if (port) return Number(port);
+		return 5678;
+	}
+	set port(value: number) {
+		// This is needed for the decorator to work, but we use the getter above
+		Object.defineProperty(this, 'port', {
+			value,
+			writable: true,
+			enumerable: true,
+			configurable: true,
+		});
+	}
 
 	/** IP address n8n should listen on */
 	@Env('N8N_LISTEN_ADDRESS')

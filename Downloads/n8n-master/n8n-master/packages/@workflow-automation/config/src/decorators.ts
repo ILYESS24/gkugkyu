@@ -19,6 +19,11 @@ const globalMetadata = new Map<Class, Map<PropertyKey, PropertyMetadata>>();
 const readEnv = (envName: string) => {
 	if (envName in process.env) return process.env[envName];
 
+	// Special case: N8N_PORT can fallback to PORT for Render compatibility
+	if (envName === 'N8N_PORT' && 'PORT' in process.env) {
+		return process.env.PORT;
+	}
+
 	// Read the value from a file, if "_FILE" environment variable is defined
 	const filePath = process.env[`${envName}_FILE`];
 	if (filePath) return readFileSync(filePath, 'utf8');
