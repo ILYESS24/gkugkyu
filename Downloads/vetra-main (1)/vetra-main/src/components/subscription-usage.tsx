@@ -440,8 +440,19 @@ export function SubscriptionUsage() {
       </Card>
 
       {/* Alerte si limite atteinte */}
-      {(Object.values(stats.usagePercentages).some((p) => p >= 100) ||
-        Object.values(stats.usagePercentages).some((p) => p >= 90)) && (
+      {(() => {
+        const percentages = [
+          stats.usagePercentages.projects,
+          stats.usagePercentages.contentItems,
+          stats.usagePercentages.aiAgents,
+          stats.usagePercentages.aiGenerations.text,
+          stats.usagePercentages.aiGenerations.image,
+          stats.usagePercentages.aiGenerations.video,
+          stats.usagePercentages.apiCalls,
+          stats.usagePercentages.storage,
+        ];
+        return percentages.some((p) => p >= 100) || percentages.some((p) => p >= 90);
+      })() && (
         <Alert variant="destructive" className="bg-red-500/10 border-red-500/50">
           <AlertTriangle className="h-4 w-4 text-red-400" />
           <AlertTitle className="text-red-400">Limite atteinte ou proche</AlertTitle>
