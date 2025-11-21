@@ -2,7 +2,7 @@ services:
   - type: web
     name: workflow-automation
     env: node
-    nodeVersion: 22.16.0
+    nodeVersion: 20
     region: oregon
     plan: starter
     buildCommand: pnpm install --frozen-lockfile && node scripts/fix-imports.mjs && node scripts/fix-subpath-imports.mjs && pnpm build
