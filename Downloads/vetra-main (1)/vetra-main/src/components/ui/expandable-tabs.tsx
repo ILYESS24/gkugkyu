@@ -3,7 +3,7 @@
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOnClickOutside } from "usehooks-ts";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 import { useRouter } from "next/navigation";
 import { LucideIcon } from "lucide-react";
 

@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowUpRight, Star, Check, Sparkles, Lightbulb, Target, Palette, Monitor, Megaphone, PenTool, BarChart3, Image, Video, FileText, Bot, Layers, Zap } from "lucide-react";
+import { ArrowUpRight, Star, Check, Sparkles, Lightbulb, Target, Palette, Monitor, Megaphone, PenTool, BarChart3, Image, Video, FileText, Bot, Layers, Zap, LayoutDashboard, Home, Code as CodeIcon, Workflow, Settings, MessageSquare } from "lucide-react";
 import { LogoCloud } from "@/components/logo-cloud-3";
 import { motion } from "framer-motion";
 import { Skiper19 } from "@/components/svg-follow-scroll";
@@ -13,7 +13,6 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, NavigationMenuTrigger, NavigationMenuContent, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { MorphPanel } from "@/components/morph-panel";
 import { ExpandableTabs } from "@/components/ui/expandable-tabs";
-import { LayoutDashboard, Home, Code, FileText, Bot, Workflow, Sparkles, Settings, Image, Video, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 // Animation variants for scroll animations
