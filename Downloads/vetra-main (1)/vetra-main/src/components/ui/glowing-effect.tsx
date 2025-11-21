@@ -2,7 +2,8 @@
 
 import { memo, useCallback, useEffect, useRef } from "react";
 import { cn } from "@/lib/cn";
-import { animate } from "framer-motion";
+// Note: Using motion/react for animate function, framer-motion doesn't have animate directly
+import { animate } from "motion/react";
 
 interface GlowingEffectProps {
   blur?: number;
