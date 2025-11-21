@@ -91,7 +91,7 @@ export function VerticalNavbar({
     <div
       ref={outsideClickRef}
       className={cn(
-        "flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-[#05070F]/80 backdrop-blur-xl p-2 shadow-lg fixed left-4 top-1/2 -translate-y-1/2 z-50",
+        "flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-[#05070F]/90 backdrop-blur-xl p-2 shadow-lg fixed left-4 top-1/2 -translate-y-1/2 z-[100] min-w-[60px]",
         className
       )}
     >

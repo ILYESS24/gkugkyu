@@ -215,7 +215,7 @@ export default function DashboardPage() {
         </header>
 
         {/* Main */}
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 ml-20">
           {/* Hero */}
           <section className="grid gap-6 lg:grid-cols-[2fr,1fr]">
             <Card className="bg-white/5 border-white/10 overflow-hidden">
