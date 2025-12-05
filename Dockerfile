@@ -10,13 +10,14 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copier les fichiers de dépendances (utiliser un wildcard pour éviter les problèmes de chemins avec espaces)
-COPY Downloads/flo-ai-develop*/flo-ai-develop/aurora_ai/requirements.txt .
+# Copier les fichiers de dépendances
+# Note: Le chemin doit correspondre à la structure du repository cloné
+COPY "Downloads/flo-ai-develop (2)/flo-ai-develop/aurora_ai/requirements.txt" .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copier le code de l'application
-COPY Downloads/flo-ai-develop*/flo-ai-develop/aurora_ai/ ./aurora_ai/
-COPY Downloads/flo-ai-develop*/flo-ai-develop/api.py .
+COPY "Downloads/flo-ai-develop (2)/flo-ai-develop/aurora_ai/" ./aurora_ai/
+COPY "Downloads/flo-ai-develop (2)/flo-ai-develop/api.py" .
 
 # Créer un utilisateur non-root
 RUN useradd --create-home --shell /bin/bash app \
