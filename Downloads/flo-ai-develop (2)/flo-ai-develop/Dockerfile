@@ -45,4 +45,3 @@ EXPOSE 8000
 
 # Commande de démarrage
 CMD ["python", "api.py"]
-
