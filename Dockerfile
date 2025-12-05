@@ -13,17 +13,27 @@ RUN apt-get update && apt-get install -y \
 # Copier d'abord le dossier parent pour éviter les problèmes de chemins avec espaces
 COPY Downloads/ ./Downloads/
 
-# Lister la structure pour debug (peut être supprimé après)
-RUN ls -la Downloads/ && \
-    find Downloads/ -name "requirements.txt" -type f | head -5
+# Lister la structure pour debug
+RUN ls -la "Downloads/flo-ai-develop (2)/" && \
+    find Downloads/ -name "requirements.txt" -type f | head -5 && \
+    find Downloads/ -name "api.py" -type f | head -5
 
-# Copier les fichiers de dépendances depuis le dossier copié (utiliser des guillemets pour les espaces)
-RUN find Downloads/ -name "requirements.txt" -path "*/aurora_ai/*" | head -1 | xargs -I {} cp {} . && \
-    pip install --no-cache-dir -r requirements.txt
+# Copier les fichiers de dépendances depuis le dossier copié
+RUN REQ_FILE=$(find Downloads/ -name "requirements.txt" -path "*aurora_ai*" | head -1) && \
+    if [ -n "$REQ_FILE" ]; then \
+        cp "$REQ_FILE" . && \
+        pip install --no-cache-dir -r requirements.txt; \
+    else \
+        echo "ERROR: requirements.txt not found" && \
+        find Downloads/ -name "*.txt" | head -10 && \
+        exit 1; \
+    fi
 
 # Copier le code de l'application
-RUN find Downloads/ -type d -name "aurora_ai" -path "*/flo-ai-develop/*" | head -1 | xargs -I {} cp -r {} ./aurora_ai/ && \
-    find Downloads/ -name "api.py" -path "*/flo-ai-develop/*" | head -1 | xargs -I {} cp {} .
+RUN AURORA_DIR=$(find Downloads/ -type d -name "aurora_ai" | head -1) && \
+    API_FILE=$(find Downloads/ -name "api.py" | head -1) && \
+    if [ -n "$AURORA_DIR" ]; then cp -r "$AURORA_DIR" ./aurora_ai/; fi && \
+    if [ -n "$API_FILE" ]; then cp "$API_FILE" .; fi
 
 # Créer un utilisateur non-root
 RUN useradd --create-home --shell /bin/bash app \
