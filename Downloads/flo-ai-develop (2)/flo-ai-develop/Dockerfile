@@ -11,11 +11,12 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copier les fichiers de dépendances
-COPY flo_ai/requirements.txt .
+COPY aurora_ai/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copier le code de l'application
-COPY flo_ai/ ./flo_ai/
+COPY aurora_ai/ ./aurora_ai/
+COPY api.py .
 
 # Créer un utilisateur non-root
 RUN useradd --create-home --shell /bin/bash app \
@@ -26,4 +27,4 @@ USER app
 EXPOSE 8000
 
 # Commande de démarrage
-CMD ["python", "flo_ai/api.py"]
+CMD ["python", "api.py"]
