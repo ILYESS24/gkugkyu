@@ -13,13 +13,13 @@ RUN apt-get update && apt-get install -y \
 # Copier d'abord le dossier parent pour éviter les problèmes de chemins avec espaces
 COPY Downloads/ ./Downloads/
 
-# Copier les fichiers de dépendances depuis le dossier copié
-RUN cp Downloads/flo-ai-develop\ \(2\)/flo-ai-develop/aurora_ai/requirements.txt . && \
+# Copier les fichiers de dépendances depuis le dossier copié (utiliser des guillemets pour les espaces)
+RUN cp "Downloads/flo-ai-develop (2)/flo-ai-develop/aurora_ai/requirements.txt" . && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copier le code de l'application
-RUN cp -r Downloads/flo-ai-develop\ \(2\)/flo-ai-develop/aurora_ai/ ./aurora_ai/ && \
-    cp Downloads/flo-ai-develop\ \(2\)/flo-ai-develop/api.py .
+RUN cp -r "Downloads/flo-ai-develop (2)/flo-ai-develop/aurora_ai/" ./aurora_ai/ && \
+    cp "Downloads/flo-ai-develop (2)/flo-ai-develop/api.py" .
 
 # Créer un utilisateur non-root
 RUN useradd --create-home --shell /bin/bash app \
