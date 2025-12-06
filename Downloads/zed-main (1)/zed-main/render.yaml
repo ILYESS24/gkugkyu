@@ -1,0 +1,96 @@
+services:
+  - type: web
+    name: zed-collab
+    runtime: docker
+    dockerfilePath: ./Dockerfile-collab-render
+    dockerContext: .
+    plan: starter  # 512 MB RAM - changez à "standard" (1GB) pour de meilleures performances
+    region: oregon  # ou frankfurt, singapore, ohio, virginia
+    envVars:
+      # Port HTTP (Render définit automatiquement PORT, mais on utilise HTTP_PORT)
+      - key: HTTP_PORT
+        value: 10000
+      
+      # Base de données PostgreSQL (OBLIGATOIRE)
+      # Remplacez par l'URL de votre base de données Render Postgres
+      - key: DATABASE_URL
+        sync: false  # À définir manuellement dans le dashboard Render
+      
+      # Configuration de la base de données
+      - key: DATABASE_MAX_CONNECTIONS
+        value: "20"  # Limité pour économiser la mémoire
+      
+      # Token API (OBLIGATOIRE - générez un token sécurisé)
+      # Vous devez définir cette variable manuellement dans le dashboard Render
+      # Générez un token avec: openssl rand -hex 32
+      - key: API_TOKEN
+        sync: false  # À définir manuellement dans le dashboard Render
+      
+      # Préfixe pour les liens d'invitation
+      - key: INVITE_LINK_PREFIX
+        value: "https://zed.dev/invite/"
+      
+      # Environnement
+      - key: ZED_ENVIRONMENT
+        value: "production"
+      
+      # Logging
+      - key: RUST_LOG
+        value: "info"  # ou "warn" pour réduire les logs
+      
+      - key: LOG_JSON
+        value: "true"
+      
+      # Migrations (définies automatiquement par le Dockerfile)
+      # MIGRATIONS_PATH et LLM_DATABASE_MIGRATIONS_PATH sont déjà définies
+      
+      # LiveKit (optionnel - laissez vide si vous n'utilisez pas LiveKit)
+      # - key: LIVEKIT_SERVER
+      #   value: ""
+      # - key: LIVEKIT_KEY
+      #   value: ""
+      # - key: LIVEKIT_SECRET
+      #   value: ""
+      
+      # Blob Store (optionnel - pour le stockage de fichiers)
+      # - key: BLOB_STORE_URL
+      #   value: ""
+      # - key: BLOB_STORE_REGION
+      #   value: ""
+      # - key: BLOB_STORE_ACCESS_KEY
+      #   value: ""
+      # - key: BLOB_STORE_SECRET_KEY
+      #   value: ""
+      # - key: BLOB_STORE_BUCKET
+      #   value: ""
+      
+      # LLM Database (optionnel - pour les fonctionnalités IA)
+      # - key: LLM_DATABASE_URL
+      #   value: ""
+      # - key: LLM_DATABASE_MAX_CONNECTIONS
+      #   value: "10"
+      # - key: LLM_API_SECRET
+      #   value: ""
+      
+      # Clés API pour les modèles IA (optionnel)
+      # - key: OPENAI_API_KEY
+      #   value: ""
+      # - key: GOOGLE_AI_API_KEY
+      #   value: ""
+      # - key: ANTHROPIC_API_KEY
+      #   value: ""
+    
+    # Health check
+    healthCheckPath: /healthz
+    
+    # Build command (géré par Dockerfile)
+    # Start command (géré par Dockerfile ENTRYPOINT)
+
+databases:
+  - name: zed-postgres
+    plan: starter  # 256 MB - changez à "standard" (1GB) pour de meilleures performances
+    region: oregon
+    # PostgreSQL 15 par défaut sur Render
+    # La DATABASE_URL sera automatiquement fournie comme variable d'environnement
+    # DATABASE_URL sera au format: postgresql://user:password@host:port/dbname
+
